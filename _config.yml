@@ -1,0 +1,21 @@
+pygments: true
+permalink: none
+navigation:
+- text: Work
+  title: "Web design and development work"
+  url: /work
+  layout: work
+- text: Articles
+  title: "Essays and long-winded opinions"
+  url: /articles
+  layout: article
+- text: Bits
+  title: "Bits of code, art, links and updates."
+  url: /bits
+  layout: bit
+- text: About
+  title: "About Staydecent web design and development"
+  url: /about
+- text: Contact
+  title: "Say hello!"
+  url: /contact

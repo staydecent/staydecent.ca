@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Installing App Engine On Windows &middot; Staydecent</title>
+
+    <meta name="author" content="Adrian Unger">
+
+    <link rel="stylesheet" href="/assets/css/main-180.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="/assets/js/respond.min.js"></script>
+</head>
+<body class="home">
+
+<a class="move" href="#main">Skip to content</a>
+
+<div class="container">
+
+    <header class="cf" role="banner">
+        <h1 id="wordmark"><a href="/" title="Go to the homepage"><img src="/assets/i/wordmark-stacked-small-white.png" alt="Staydecent"></a></h1>
+
+        <nav role="navigation">
+            <ul class="cf">
+            
+                
+                
+
+                <li><a href="/work" title="Web design and development work">Work</a></li>
+            
+                
+                
+
+                <li><a href="/articles" title="Essays and long-winded opinions">Articles</a></li>
+            
+                
+                
+                    
+                
+
+                <li><a class="current" href="/bits" title="Bits of code, art, links and updates.">Bits</a></li>
+            
+                
+                
+
+                <li><a href="/about" title="About Staydecent web design and development">About</a></li>
+            
+                
+                
+
+                <li><a href="/contact" title="Say hello!">Contact</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <div role="main" id="main" class="cf">
+        <div id="post" class="inner">
+    <article class="bit">
+    <p class='big'>The most difficult part of installing Google App Engine on
+Windows is the SSL module. But I've decided to compile a very simple guide
+for the whole process.</p>
+<p>I am not going to cover any sort of usage guides. This is just a list to installing everything required(on Windows) to deploy an App to the GAE cloud.</p>
+
+<ol>
+<li>Download &amp; Install <a href='http://www.python.org/download/releases/2.5'>Python25)</a></li>
+
+<li>Download &amp; Install <a href='http://code.google.com/appengine/downloads.html'>App Engine</a></li>
+
+<li>Download &amp; Install <a href='http://beautifulisbetterthanugly.com/s/uploads/python/ssl-1.15.win32-py2.5.exe'>Python25 SSL Installer</a></li>
+</ol>
+
+<p>The hardest part: Installing the SSL Module. Python25, unlike 26 and newer, does not come with the SSL Module and must be installed. The normal route of <code>python setup.py install</code> will produce errors. Something about wrong compilers. There are <a href='
+http://malei39.blogspot.com/2010/02/install-ssl-module-for-pyhon-254.html'>tutorials</a> out there for installing all the dependencies manually. Luckily, someone has created an installer exe. I have tested this on WindowsXP and Windows7 and it works.</p>
+
+<h3 id='32bit_versus_64bit'>32bit Versus 64bit</h3>
+
+<p>Do not install the 64 bit version of Python on Windows. If you do you will have to compile everything yourself. Including that installer, that installer is 32bit only. I really don&#8217;t know any benefit to installing the 64bit version of Python.</p>
+
+<p>Unless I am forgetting something, that is all you need.</p>
+    </article>
+
+    <div id="related">
+        <h2>Related Bits</h2>
+        <ul class="posts">
+        
+            <li><span>04 May 2011</span> &raquo; <a href="/bits/omtask-simpler-task-list.html">Omtask, A Simpler Task List</a></li>
+        
+            <li><span>01 Sep 2010</span> &raquo; <a href="/bits/minor-update-task-thing.html">Minor Update to Task Thing</a></li>
+        
+            <li><span>03 Jul 2010</span> &raquo; <a href="/bits/publishing-by-email-app-engine.html">Publishing By Email With Google App Engine</a></li>
+        
+        </ul>
+    </div>
+</div>
+
+
+    </div>
+
+    <footer class="lined">
+        <p class="centre">Based in beautiful British Columbia, Canada.</p>
+        <p class="centre note"><a href="http://twitter.com/staydecent" title="Adrian Unger on Twitter">@staydecent</a> &middot; <a href="/colophon" title="Colophon">Colophon</a></p>
+    </footer>
+
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script src="/assets/js/main-010.js"></script>
+
+</body>
+</html>

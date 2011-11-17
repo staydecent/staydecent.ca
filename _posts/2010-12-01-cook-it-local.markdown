@@ -1,0 +1,10 @@
+---
+category: work
+layout: work
+title: Cook It Local
+client: Self-initiated
+responsibilities: Concept, Design, Front & Back-end development
+technology: Google App Engine
+---
+
+<p>

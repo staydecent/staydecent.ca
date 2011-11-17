@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Staying Productive With Task Thing &middot; Staydecent</title>
+
+    <meta name="author" content="Adrian Unger">
+
+    <link rel="stylesheet" href="/assets/css/main-180.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="/assets/js/respond.min.js"></script>
+</head>
+<body class="home">
+
+<a class="move" href="#main">Skip to content</a>
+
+<div class="container">
+
+    <header class="cf" role="banner">
+        <h1 id="wordmark"><a href="/" title="Go to the homepage"><img src="/assets/i/wordmark-stacked-small-white.png" alt="Staydecent"></a></h1>
+
+        <nav role="navigation">
+            <ul class="cf">
+            
+                
+                
+
+                <li><a href="/work" title="Web design and development work">Work</a></li>
+            
+                
+                
+
+                <li><a href="/articles" title="Essays and long-winded opinions">Articles</a></li>
+            
+                
+                
+                    
+                
+
+                <li><a class="current" href="/bits" title="Bits of code, art, links and updates.">Bits</a></li>
+            
+                
+                
+
+                <li><a href="/about" title="About Staydecent web design and development">About</a></li>
+            
+                
+                
+
+                <li><a href="/contact" title="Say hello!">Contact</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <div role="main" id="main" class="cf">
+        <div id="post" class="inner">
+    <article class="bit">
+    <p class='big'>I have recently jumped back into the freelance world. And I need ways to stay productive.</p>
+<h3 id='why_i_am_freelancing'>Why I am freelancing</h3>
+
+<p>Growing sick of the <em>office</em> &amp; meetings &amp; commuting &amp; packed lunches &amp; disagreements, I decided to get back into freelancing—effectively taking control of my life. The first day I sat down at my desk, I asked “What the fuck am I supposed to do today?” I needed a list of things(tasks) to keep me in check.</p>
+
+<h3 id='available_tools'>Available tools</h3>
+
+<p>Of course, the first thing I did was consider all of the to-do lists and task lists I have used in the past or just heard of(there are lots): <a href='http://todoist.com/'>Todoist</a>, too much; <a href='http://tadalist.com/'>Ta-da List</a>, I may as well used pen &amp; paper; <a href='http://teuxdeux.com/'>Teux Deux</a>, this was a close winner, but I don&#8217;t like the multiple lists concept, or the small font-size. Naturally, if I wanted something I wouldn&#8217;t complain about and could use every day, I needed to create my own.</p>
+
+<h3 id='introducing_task_thing'>Introducing Task Thing</h3>
+
+<p>This brings us to <a href='http://taskthing.appspot.com'>Task Thing</a>! I would say this is very similar to Ta-da List, but with actual benefits over using just pen &amp; paper. I say so because of drag &amp; drop, inline editing and an understandable interface. Maybe I&#8217;m wrong, but feel free to <a href='http://taskthing.appspot.com'>give it a try</a> yourself!</p>
+<div style='background:url(http://taskthing.appspot.com/goods/png/screen.png);width:500px;height:200px;margin:0 auto 2em;-webkit-box-shadow: rgba(0, 0, 0, 0.199219) 0px 0px 15px;' />
+<h3 id='building_task_thing'>Building Task Thing</h3>
+
+<p>I built Task Thing over the better part of a day. This was possible because I was using a bunch of code I had written for another concept of mine(Hint: Panic Status Board). I won&#8217;t go into too much detail, but Task Things&#8217; functionality is broken up into two models: list &amp; task. The list model represents the page which gets one owner and any amount of tasks(owned by the same owner). A task has two editable fields, title &amp; description as well as some other internal data(dates, priority, etc). Linking the tasks to the proper list is rather simple: the list attributes a unique slug and owner. When you view that list, you must login as the owner(logging in, you are redirected to your list). The tasks also have an owner field, which is matched with the list. Learning how to link different values in the App Engine datastore has been a lot of fun and so much lighter than MySQL joins. Also, I <a href='http://noahstokes.com/'>Ajaxed</a> the shit out of it.</p>
+
+<h3 id='staying_productive'>Staying Productive</h3>
+
+<p>Creating a task list was the first step I took in helping myself <em>stay productive</em>, and I am sure there will be more. So, if you care, <a href='http://feeds.feedburner.com/staydecent' title='the Staydecent™ Blog feed'>check this blog often</a> as I post more things.</p>
+    </article>
+
+    <div id="related">
+        <h2>Related Bits</h2>
+        <ul class="posts">
+        
+            <li><span>04 May 2011</span> &raquo; <a href="/bits/omtask-simpler-task-list.html">Omtask, A Simpler Task List</a></li>
+        
+            <li><span>01 Sep 2010</span> &raquo; <a href="/bits/minor-update-task-thing.html">Minor Update to Task Thing</a></li>
+        
+            <li><span>03 Jul 2010</span> &raquo; <a href="/bits/publishing-by-email-app-engine.html">Publishing By Email With Google App Engine</a></li>
+        
+        </ul>
+    </div>
+</div>
+
+
+    </div>
+
+    <footer class="lined">
+        <p class="centre">Based in beautiful British Columbia, Canada.</p>
+        <p class="centre note"><a href="http://twitter.com/staydecent" title="Adrian Unger on Twitter">@staydecent</a> &middot; <a href="/colophon" title="Colophon">Colophon</a></p>
+    </footer>
+
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script src="/assets/js/main-010.js"></script>
+
+</body>
+</html>

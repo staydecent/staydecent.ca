@@ -1,0 +1,19 @@
+---
+layout: default
+title: Web design and development by Adrian Unger
+---
+<div id="recent" class="inner">
+    <h3>Recently, I launched</h3>
+
+    {% for post in site.categories.work limit:1 %}
+
+    <article class="entry">
+        <img class="scale" data-replace="http://placehold.it/800x600" src="http://placehold.it/320x400" alt="Some Project Image">
+        <header>
+            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        </header>
+
+        <p>{{ post.date }}</p>
+    </article>
+    {% endfor %}
+</div>

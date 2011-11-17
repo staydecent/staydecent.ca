@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>jQuery Random Each() Function &middot; Staydecent</title>
+
+    <meta name="author" content="Adrian Unger">
+
+    <link rel="stylesheet" href="/assets/css/main-180.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="/assets/js/respond.min.js"></script>
+</head>
+<body class="home">
+
+<a class="move" href="#main">Skip to content</a>
+
+<div class="container">
+
+    <header class="cf" role="banner">
+        <h1 id="wordmark"><a href="/" title="Go to the homepage"><img src="/assets/i/wordmark-stacked-small-white.png" alt="Staydecent"></a></h1>
+
+        <nav role="navigation">
+            <ul class="cf">
+            
+                
+                
+
+                <li><a href="/work" title="Web design and development work">Work</a></li>
+            
+                
+                
+
+                <li><a href="/articles" title="Essays and long-winded opinions">Articles</a></li>
+            
+                
+                
+                    
+                
+
+                <li><a class="current" href="/bits" title="Bits of code, art, links and updates.">Bits</a></li>
+            
+                
+                
+
+                <li><a href="/about" title="About Staydecent web design and development">About</a></li>
+            
+                
+                
+
+                <li><a href="/contact" title="Say hello!">Contact</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <div role="main" id="main" class="cf">
+        <div id="post" class="inner">
+    <article class="bit">
+    <p class='big'>Fading in elements incrementally in order of the dom tree is cool, but so is fading in elements in random order.</p>
+<p>The former is pretty simple, you iterate through each element while setting a timeout for fading in:</p>
+
+<pre><code>$(&quot;div&quot;).each(function(i) {
+    var e = $(this);
+    e.fadeTo(0, 0.05);
+    setTimeout(function(){
+        e.fadeTo(250, 1);
+    }, i*25);
+});</code></pre>
+
+<p><code>i</code> is the index of each found element in order of the dom tree. As we get further down the tree the timeout is longer and longer—since the animation lasts longer than a couple timeouts the animations will overlap.</p>
+
+<p>To make it random, we still follow the dom tree in order, but we set the timeouts at differentiating lengths(randomly). Say we have 10 elements total, we can assume the indices are <code>0,1,2,3,4,5,6,7,8,9</code>, We just need to sort those numbers randomly. Enter <code>randsort()</code>:</p>
+
+<pre><code>function randsort(c) {
+    var o = new Array();
+    for (var i = 0; i &lt; c; i++) {
+        var n = Math.floor(Math.random()*c);
+        if( jQuery.inArray(n, o) &gt; 0 ) --i;
+        else o.push(n);
+    }
+    return o;
+}</code></pre>
+
+<p>We pass the function the number of found elements and it loops through them creating new numbers(within the range of <code>c</code>). To avoid duplicated numbers we use jQuery&#8217;s <code>inArray</code> and “skip” it if true. In the end, you have those indices in a random order. Moving along:</p>
+
+<pre><code>var e = $(&#39;div&#39;) // The elements we&#39;re searching
+var c = e.size() // Total number of those elements
+var r = randsort(c) // an array of the element indices in random order</code></pre>
+
+<p>Now an ever so slight variance on that original each function:</p>
+
+<pre><code>// the jQuery selector could be replaced with e
+$(&quot;div&quot;).each(function(i) {
+    var e = $(this);
+    e.fadeTo(0, 0.05);
+    setTimeout(function(){
+        e.fadeTo(250, 1);
+    }, r[i]*10);
+});</code></pre>
+
+<p>So what&#8217;s different? <code>r[i]*10</code>. We are using the <code>i</code> index to call the <code>r</code> array in order, but since the values are a random representation of the element indices the timeouts differentiate. Boom!</p>
+
+<p>Check out a <a href='http://staydecent.nfshost.com/demos/js/randomeach.htm'>demo here.</a></p>
+    </article>
+
+    <div id="related">
+        <h2>Related Bits</h2>
+        <ul class="posts">
+        
+            <li><span>04 May 2011</span> &raquo; <a href="/bits/omtask-simpler-task-list.html">Omtask, A Simpler Task List</a></li>
+        
+            <li><span>01 Sep 2010</span> &raquo; <a href="/bits/minor-update-task-thing.html">Minor Update to Task Thing</a></li>
+        
+            <li><span>03 Jul 2010</span> &raquo; <a href="/bits/publishing-by-email-app-engine.html">Publishing By Email With Google App Engine</a></li>
+        
+        </ul>
+    </div>
+</div>
+
+
+    </div>
+
+    <footer class="lined">
+        <p class="centre">Based in beautiful British Columbia, Canada.</p>
+        <p class="centre note"><a href="http://twitter.com/staydecent" title="Adrian Unger on Twitter">@staydecent</a> &middot; <a href="/colophon" title="Colophon">Colophon</a></p>
+    </footer>
+
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script src="/assets/js/main-010.js"></script>
+
+</body>
+</html>

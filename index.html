@@ -1,112 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+---
+layout: default
+title: Web design and development by Adrian Unger
+---
+<div id="recent" class="inner">
 
-    <title>Staydecent &middot; Web design &amp; development by Adrian Unger</title>
+    <div class="column">
+        <h3>Recently, I launched</h3>
 
-    <meta name="description" content="Staydecent is the freelance web design &amp; development studio of Adrian Unger. Based in Vancouver, British Columbia, Adrian works with agencies, startups, organizations and individuals.">
-    <meta name="author" content="Adrian Unger">
+        {% for post in site.categories.work limit:1 %}
+        <article class="entry">
+            <img class="scale" data-replace="http://placehold.it/800x600" src="http://placehold.it/320x400" alt="Some Project Image">
+            <header>
+                <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+            </header>
 
-    <link rel="stylesheet" href="assets/css/main-180.css">
+            <p>{{ post.date }}</p>
+        </article>
+        {% endfor %}
 
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <script src="assets/js/respond.min.js"></script>
-</head>
-<body class="home">
-
-<a class="move" href="#main">Skip to content</a>
-
-<div class="container">
-
-    <header class="cf" role="banner">
-        <h1 id="wordmark"><a href="/" title="Go to the homepage"><img src="assets/i/wordmark-stacked-small-white.png" alt="Staydecent"></a></h1>
-
-        <nav role="navigation">
-            <ul class="cf">
-                <li><a class="current" href="/work" title="Web design &amp; development by Adrian Unger.">Work</a></li>
-                <li><a href="/articles" title="A collection of code snippets, links and updates.">Articles</a></li>
-                <li><a href="/bits" title="A collection of code snippets, links and updates.">Bits</a></li>
-                <li><a href="/about" title="About Staydecent and Adrian Unger.">About</a></li>
-                <li><a href="/contact" title="Say hello!">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div role="main" id="main" class="cf">
-        <div id="recent" class="inner">
-            <h3>Recently, I launched</h3>
-
-            <article id="gamechangers500" class="entry">
-                <img class="scale" data-replace="http://placehold.it/800x600" src="http://placehold.it/320x400" alt="Some Project Image">
-                <header>
-                    <h1>Game Changers 500</h1>
-                </header>
-
-                <p>Recognizing purpose-driven organizations instead of profit-driven, GameChangers 500 is the antithesis of the Fortune 500. I was brought on as the developer, utilizing WordPress for an easy to update backend.</p>
-            </article><!-- /gamechangers500 -->
-        </div><!-- /recent -->
-
-        <div id="currentwork" class="inner">
-            <h3>Current Work</h3>
-
-            <article id="cookitlocal" class="entry">
-                <div class="media cf">
-                    <div class="browser_frame scale"><img src="https://s3.amazonaws.com/staydecent_images/aadc0803-97af-4f21-b8a5-58502ec298af" alt="Some Project Image"></div>
-
-                    <div class="browser_frame scale"><img src="https://s3.amazonaws.com/staydecent_images/aadc0803-97af-4f21-b8a5-58502ec298af" alt="Some Project Image"></div>
-                </div>
-
-                <div class="text cf">
-                    <header class="column">
-                        <h1>Cook It Local</h1>
-                    </header>
-
-                    <div class="column">
-                        <p>Almost a year ago I launched my Seasonal Recipe Reminder, to help me (and hopefully others) eat seasonally. Now, it is an evolving platform that embodies my passion for local, organic food.</p>
-                    </div>
-                </div>
-            </article><!-- /cookitlocal -->
-
-            <article id="uicache" class="entry">
-                <header>
-                    <h1>UI Cache</h1>
-                </header>
-
-                <p>A free and open collection of high-quality, bleeding-edge HTML, CSS and JavaScript modules for modern UI patterns.</p>
-            </article><!-- /uicache -->
-
-            <article id="lessthings" class="entry">
-                <header>
-                    <h1>Less Things</h1>
-                </header>
-
-                <p>Based on Leo Baluta's <a href="#" title="50 Things Challenge">50 Things Challenge</a>, Less Things will feed on this challenge by data analysis.</p>
-            </article><!-- /lessthings -->
-        </div><!-- /currentwork -->
-
-        <div id="who" class="inner">
-            <h3>Who Am I?</h3>
-
-            <p>Staydecent is the freelance studio of Adrian Unger. I'm an agency experienced web designer and developer focused on helping passionate people communicate. With an iterative approach, I design effective front-ends and functional back-ends for websites and applications.</p>
-
-            <p>Since 2007, I've freelanced for various startups, businesses and individuals as well as some longer stints with agencies like: Pallian Creative, Engine Digital and Shane &amp; Peter.</p>
-        </div><!-- /who -->
+        <a href="/work">All work</a>
     </div>
 
-    <footer class="lined">
-        <p class="centre">Based in beautiful British Columbia, Canada.</p>
-        <p class="centre note"><a href="http://aiso.net" title="AISO.net 100% Solar Powered Hosting">Solar Powered</a> &middot; <a href="/colophon" title="Colophon">Colophon</a></p>
-    </footer>
+    <div class="column">
+        <h3>Recently, I wrote</h3>
 
+        {% for post in site.categories.articles limit:1 %}
+        <article class="entry">
+            <header>
+                <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+            </header>
+
+            <p>{{ post.date }}</p>
+        </article>
+        {% endfor %}
+
+        <a href="/articles">All articles</a>
+    </div>
+
+    <div class="column">
+        <h3>Recently, I posted</h3>
+
+        {% for post in site.categories.bits limit:1 %}
+        <article class="entry">
+            <header>
+                <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+            </header>
+
+            <p>{{ post.date }}</p>
+        </article>
+        {% endfor %}
+
+        <a href="/bits">All bits</a>
+    </div>
 </div>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-<script src="assets/js/main-010.js"></script>
-
-</body>
-</html>

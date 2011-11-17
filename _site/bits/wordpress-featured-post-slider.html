@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wordpress Featured Post Slider &middot; Staydecent</title>
+
+    <meta name="author" content="Adrian Unger">
+
+    <link rel="stylesheet" href="/assets/css/main-180.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="/assets/js/respond.min.js"></script>
+</head>
+<body class="home">
+
+<a class="move" href="#main">Skip to content</a>
+
+<div class="container">
+
+    <header class="cf" role="banner">
+        <h1 id="wordmark"><a href="/" title="Go to the homepage"><img src="/assets/i/wordmark-stacked-small-white.png" alt="Staydecent"></a></h1>
+
+        <nav role="navigation">
+            <ul class="cf">
+            
+                
+                
+
+                <li><a href="/work" title="Web design and development work">Work</a></li>
+            
+                
+                
+
+                <li><a href="/articles" title="Essays and long-winded opinions">Articles</a></li>
+            
+                
+                
+                    
+                
+
+                <li><a class="current" href="/bits" title="Bits of code, art, links and updates.">Bits</a></li>
+            
+                
+                
+
+                <li><a href="/about" title="About Staydecent web design and development">About</a></li>
+            
+                
+                
+
+                <li><a href="/contact" title="Say hello!">Contact</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <div role="main" id="main" class="cf">
+        <div id="post" class="inner">
+    <article class="bit">
+    <p class='big'>WordPress 3 is out: And it makes developing feature rich, user maintainable websites possible with the just the core.</p>
+<p>WordPress is already known for its ease of development, deployment &amp; maintainability. Well, maybe not always the last one due to unmaintained plugins. This is addressed in WordPress 3.0 by <a href='http://codex.wordpress.org/Version_3.0'>adding</a> to the expansive core. Anyway, here&#8217;s an example of how to build a common blog feature with just core functions and some jQuery.</p>
+
+<h3 id='featured_image_slider'>Featured Image Slider</h3>
+<div class='aside'>Note: Featured Image—as it's called within the admin UI—is synonymous with Post Thumbnail—as it's called in the function references.</div>
+<p>What is it? It&#8217;s a way of showcasing all of the posts with a <a href='http://markjaquith.wordpress.com/2009/12/23/new-in-wordpress-2-9-post-thumbnail-images/'>featured image</a> in a simple slider (or other jQuery animation). All we have to do, is add support for post thumbnails and display them within the loop, and jQuery will handle the animation.</p>
+
+<h3 id='the_wordpress_code'>The WordPress Code</h3>
+
+<p>For a deeper explanation of post thumbnails, read <a href='http://markjaquith.wordpress.com/2009/12/23/new-in-wordpress-2-9-post-thumbnail-images/'>Mark Jaquith&#8217;s Post</a>. For now, here is the code to add support and define the sizes of our post thumbnails:</p>
+
+<pre><code>add_theme_support( &#39;post-thumbnails&#39; );
+set_post_thumbnail_size( 300, 100, true ); // Normal thumb size
+add_image_size( &#39;featured-image&#39;, 900, 300, true ); // Slider size</code></pre>
+
+<p>I displayed the slider on the homepage only, but pick a theme file and add the following within the loop:</p>
+
+<pre><code>&lt;?php if (in_category(&#39;10&#39;) &amp;&amp; has_post_thumbnail()) : // Category 10 is my &#39;Featured&#39; category ?&gt;
+&lt;a href=&quot;&lt;?php the_permalink() ?&gt;&quot; title=&quot;Permalink to &lt;?php the_title() ?&gt;&quot; rel=&quot;bookmark&quot;&gt;
+    &lt;?php the_post_thumbnail(&#39;featured-image&#39;); // Make sure you call the image size you defined in functions.php ?&gt;
+&lt;/a&gt;
+&lt;?php endif; ?&gt;</code></pre>
+
+<h3 id='the_jquery_code'>The jQuery Code</h3>
+
+<p>This is covered everywhere. You can use <a href='http://sorgalla.com/projects/jcarousel/'>jCarousel</a> or any other jQuery(or other framework) plugin. Otherwise, check out my live <a href='http://highfivecamp.com'>implementation</a> and feel free to view the source.</p>
+    </article>
+
+    <div id="related">
+        <h2>Related Bits</h2>
+        <ul class="posts">
+        
+            <li><span>04 May 2011</span> &raquo; <a href="/bits/omtask-simpler-task-list.html">Omtask, A Simpler Task List</a></li>
+        
+            <li><span>01 Sep 2010</span> &raquo; <a href="/bits/minor-update-task-thing.html">Minor Update to Task Thing</a></li>
+        
+            <li><span>03 Jul 2010</span> &raquo; <a href="/bits/publishing-by-email-app-engine.html">Publishing By Email With Google App Engine</a></li>
+        
+        </ul>
+    </div>
+</div>
+
+
+    </div>
+
+    <footer class="lined">
+        <p class="centre">Based in beautiful British Columbia, Canada.</p>
+        <p class="centre note"><a href="http://twitter.com/staydecent" title="Adrian Unger on Twitter">@staydecent</a> &middot; <a href="/colophon" title="Colophon">Colophon</a></p>
+    </footer>
+
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script src="/assets/js/main-010.js"></script>
+
+</body>
+</html>
