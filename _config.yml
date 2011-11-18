@@ -1,5 +1,5 @@
 pygments: true
-permalink: none
+permalink: /:categories/:title
 navigation:
 - text: Work
   title: "Web design and development work"
