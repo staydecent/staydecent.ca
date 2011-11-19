@@ -18,7 +18,8 @@ $config = array(
     'ignore' => array(
         ROOT . 'parse.php',
         ROOT . 'markdown.php',
-        ROOT . 'build.php'
+        ROOT . 'build.php',
+        ROOT . '.git'
     ),
 );
 // #END: CONFIG
@@ -109,4 +110,40 @@ foreach ($dir as $fileinfo)
 
         Parse::new_file($new_dir, $out);
     }
+}
+
+// Copy everything else
+$staticIterator = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator(ROOT));
+
+function ignore($path, $config) {
+    foreach ($config['ignore'] as $ignore) {
+        if (strpos($path, $ignore) !== false) 
+            return true;
+    }
+}
+
+while ($staticIterator->valid())
+{
+    if (!$staticIterator->isDot()
+    && !ignore($staticIterator->getPathname(), $config)
+    && substr($staticIterator->getBasename(), '0', 1) !== '.') 
+    {
+        $new_file = $config['dirs']['build'] . DS . str_replace(ROOT, '', $staticIterator->getPathname());
+
+        if (strstr($staticIterator->getBasename(), '.php')) {
+            ob_start();
+            include $staticIterator->getPathname();
+            $out = ob_get_contents();
+            ob_end_clean();
+
+            Parse::new_file($new_file, $out, $staticIterator->getBasename());
+        }
+        else {
+            Parse::copy_file($staticIterator->getPathname(), $new_file, $staticIterator->getBasename());
+        }
+
+
+    }
+
+    $staticIterator->next();
 }

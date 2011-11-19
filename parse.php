@@ -159,12 +159,16 @@ class Parse {
         return $entry;
     }
 
-    public static function new_file($new_dir, $out)
+    public static function new_file($new_dir, $out, $filename = false)
     {
-        $new_file = $new_dir . DS . 'index.html';
-
-        if (!is_dir($new_dir)) {
-            mkdir($new_dir, 0777, true);
+        if (!$filename) {
+            $new_file = $new_dir . DS . 'index.html';
+            if (!is_dir($new_dir)) {
+                mkdir($new_dir, 0777, true);
+            }
+        }
+        else {
+            $new_file = $new_dir;
         }
 
         @$fh = fopen($new_file, 'w');
@@ -178,8 +182,17 @@ class Parse {
             printf("Could not open file (check permissions): \"%s\"\n", $new_file);
         }
     }
+
+    public static function copy_file($source, $dest, $filename)
+    {
+        $dir = str_replace($filename, '', $dest);
+
+        if (!is_dir($dir)) {
+            mkdir($dir, 0777, true);
+        }
+
+        if (!copy($source, $dest)) {
+            printf("Could not copy file: \"%s\"\n", $source);
+        }
+    }
 }
-
-
-
-
