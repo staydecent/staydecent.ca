@@ -104,7 +104,7 @@ foreach ($dir as $fileinfo)
         $new_dir = $config['dirs']['build'] . DS;
         
         if ($fileinfo->getBasename() !== 'index.php') {
-            $new_dir = $new_dir . str_replace('.'.$fileinfo->getExtension(), '', $fileinfo->getBasename());
+            $new_dir = $new_dir . str_replace('.php', '', $fileinfo->getBasename());
         }
 
         Parse::new_file($new_dir, $out);
