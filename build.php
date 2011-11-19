@@ -57,6 +57,11 @@ while ($entryIterator->valid())
             $layout = $entry['category'];
         }
 
+        // save entry for template data
+        $entries['all'][$entry['date']] = $entry;
+        $entries[$entry['category']][$entry['date']] = $entry;
+
+        // save static file
         $layout = $config['dirs']['layout'] . DS . $layout . '.php';
 
         ob_start();
@@ -77,6 +82,11 @@ while ($entryIterator->valid())
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * Process Pages
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+// sort entries for template data
+foreach ($entries as $cat => $array) {
+    krsort($entries[$cat]);
+}
+
 $dir = new DirectoryIterator($config['dirs']['pages']);
 
 foreach ($dir as $fileinfo)

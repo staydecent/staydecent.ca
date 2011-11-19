@@ -133,7 +133,7 @@ class Parse {
             $entry['category'] = $path_parts[$path_count-2];
 
             // make sure parent follow date-slug dir naming
-            if (!preg_match($config['date_re'], $entry['parent']))
+            if (!preg_match($config['date_re'], $entry['parent'], $date_match))
             {
                 return false;
             }
@@ -147,6 +147,10 @@ class Parse {
             // ensure title
             if (!isset($entry['title']))
                 $entry['title'] = ucwords(str_replace('-', ' ', $entry['slug']));
+            // ensure date
+            if (!isset($entry['date'])) {
+                $entry['date'] = strtotime(substr($date_match[0], 0, -1));
+            }
         }
         else {
             return false;
