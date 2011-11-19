@@ -151,6 +151,10 @@ class Parse {
             if (!isset($entry['date'])) {
                 $entry['date'] = strtotime(substr($date_match[0], 0, -1));
             }
+            // ensure url
+            if (!isset($entry['url'])) {
+                $entry['url'] = $entry['category'] . DS . $entry['slug'];
+            }
         }
         else {
             return false;

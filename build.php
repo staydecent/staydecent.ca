@@ -26,10 +26,15 @@ $config = array(
 
 // check for all required arguments
 // first argument is always name of script!
-if ($argc === 2) {
+if ($argc >= 2) {
     array_shift($argv);
+    // first arg is build dir
     $config['dirs']['build'] = $argv[0];
+    // set SITE_URL
+    $site_url = (isset($argv[1])) ? $argv[1] : '';
 }
+
+define('SITE_URL', $site_url);
 
 $config['ignore'] = array_merge($config['ignore'], array_values($config['dirs']));
 
