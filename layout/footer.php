@@ -1,8 +1,8 @@
 
-    <footer class="lined">
-        <p class="centre">Based in beautiful British Columbia, Canada.</p>
-        <p class="centre note"><a href="http://twitter.com/staydecent" title="Adrian Unger on Twitter">@staydecent</a> &middot; <a href="/colophon" title="Colophon">Colophon</a></p>
-    </footer>
+    <footer><div class="inner">
+        <div class="column">Made in beautiful British Columbia.</div>
+        <div class="column note"><a href="http://twitter.com/staydecent" title="Adrian Unger on Twitter">@staydecent</a> &middot; <a href="/colophon" title="Colophon">Colophon</a></div>
+    </div></footer>
 
 </div>
 

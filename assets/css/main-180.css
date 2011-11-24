@@ -29,6 +29,16 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {
 object {
     outline:none;
 }
+@font-face {
+    font-family: 'FjordOne';
+    src: url('../font/FjordOne-Regular-webfont.eot');
+    src: url('../font/FjordOne-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/FjordOne-Regular-webfont.woff') format('woff'),
+         url('../font/FjordOne-Regular-webfont.ttf') format('truetype'),
+         url('../font/FjordOne-Regular-webfont.svg#FjordOne') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*
     02 - Structure
@@ -40,8 +50,8 @@ html {
     -ms-text-size-adjust:100%;
 }
 body {
-    font:1.6em/1.5 sans-serif;
-    background:#ddd;
+    font:1.6em/1.5 'Open Sans', sans-serif;
+    background:#dfdfdf;
 }
 .container {
     padding:0 20px;
@@ -51,7 +61,6 @@ body {
     /* yo, dawg, define yer grid */
     max-width:1140px;
     min-width:260px;
-    margin:0 auto;
     padding:2em;
     position:relative;
     -webkit-border-radius:12px;
@@ -64,6 +73,9 @@ body {
     position:relative;
     max-width:40em;
 }
+.section {
+    padding:2em 0;
+}
 header[role="banner"],
 footer {
     padding:1em 0;
@@ -75,7 +87,7 @@ footer {
 footer {
     position:relative;
     z-index:3;
-    padding-top:1em;
+    padding:0 0 4em;
     border-bottom:0;
 }
 
@@ -92,13 +104,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-family:sans-serif;
-    font-weight:800;
+    font-family:'Open Sans', sans-serif;
+    font-weight:600;
     color:#4a4a4a;
     line-height:1.2;
 }
 h1 {
-    font-size:3.0em;
+    font-size:1.0em;
+    margin-bottom:0.5em;
 }
 h2 {
     font-size:2.4em;
@@ -133,7 +146,11 @@ a:visited {
     color:#777;
 }
 a:hover {
-    color:@base-colour;
+    color:#000;
+}
+a:active {
+    background:#222;
+    color:#eee;
 }
 a:focus {
     outline:thin dotted;
@@ -146,7 +163,6 @@ nav a {
     display:block;
     padding:0.4em 1em;
     margin:0;
-    font-family:sans-serif;
     text-decoration:none;
 }
 nav a:hover {
@@ -221,16 +237,17 @@ sub {
     bottom:-0.25em;
 }
 p {
+    font-family:'Open Sans', serif;
     text-indent:0;
     margin-bottom:24px;
     color:#404040;
 }
 .intro, 
 .big {
-    font-size:1.2em;
-    font-family:serif;
-    margin-top:1em;
+    font:400 1.4em/1.4 'Open Sans', sans-serif;
     color:#222;
+    padding-bottom:2em;
+    border-bottom:1px solid #eee;
 }
 .serif {
     font-family:'Garamond Pro', serif;
@@ -325,10 +342,6 @@ svg:not(:root) {
 figure {
     margin:0;
 }
-h1 img {
-    filter: alpha(opacity=80);
-    opacity:0.8;
-}
 .browser_frame {
     position:relative;
     width:auto;
@@ -413,13 +426,17 @@ hr.thick { background:#ccc; height:2empx; width:48%; border-radius:2px; }
         top:0;
         left:0;
         width:20%;
-        height:100%;
         z-index:0;
         -webkit-transition:all 0.3s ease;
         -moz-transition:all 0.3s ease;
         -o-transition:all 0.3s ease;
         -ms-transition:all 0.3s ease;
         transition:all 0.3s ease;
+    }
+    footer {
+        text-align:left;
+        margin-left:20%;
+        width:auto;
     }
     nav li {
         display:block;
@@ -434,37 +451,43 @@ hr.thick { background:#ccc; height:2empx; width:48%; border-radius:2px; }
     #main {
         position:relative;
         margin-left:20%;
-        -webkit-border-radius:4px;
-        -moz-border-radius:4px;
-        border-radius:4px;
-        -webkit-box-shadow:-2px 2px 4px rgba(0,0,0,0.1);
-        -moz-box-shadow:-2px 2px 4px rgba(0,0,0,0.1);
-        box-shadow:-2px 2px 4px rgba(0,0,0,0.1);
-        background:#fbfbfb;
+        border-left:1px solid #fff;
+        border-radius:2px 0 2px 0;
+        box-shadow:-1px 1px 4px rgba(0,0,0,0.1);
+        background:#fafafa;
         z-index:1;
-        -webkit-transition:margin 0.3s ease;
-        -moz-transition:margin 0.3s ease;
-        -o-transition:margin 0.3s ease;
-        -ms-transition:margin 0.3s ease;
         transition:margin 0.3s ease;
     }
-    .column {
-        width:23%;
-        margin-right:2%;
+    .col1,
+    .col2,
+    .col3,
+    .colhalf {
+        margin-right:4%;
         float:left;
     }
-    .column.last {
+    .col1 {
+        width:29.333%;
+    }
+    .col2 {
+        width:62.667%;
+    }
+    .col3 {
+        width:96%;
+    }
+    .colhalf {
+        width:46%;
+    }
+    .last {
         margin-right:0;
+    }
+    .skip {
+        padding-left:33.333%;
     }
     .container {
         padding:0;
     }
 }
 @media only screen and (min-width: 1320px) {
-    .inner {
-        margin-left:auto;
-        margin-right:auto;
-    }
 }
 
 /* Print Styles (www.phpied.com/delay-loading-your-print-css/) */
