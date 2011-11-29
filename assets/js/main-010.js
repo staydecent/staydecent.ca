@@ -78,7 +78,7 @@ jQuery(document).ready(function($) {
     $(window).bind('scroll load', function(event) {
         var fold = $(window).height() + $(window).scrollTop();
 
-        $('.entry').find('.scale').each(function(i) {
+        $('.scale').each(function(i) {
             var e = $(this);
 
             if (fold >= e.offset().top + 100) {

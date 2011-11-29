@@ -153,7 +153,7 @@ class Parse {
             }
             // ensure url
             if (!isset($entry['url'])) {
-                $entry['url'] = $entry['category'] . DS . $entry['slug'];
+                $entry['url'] = SITE_URL . DS . $entry['category'] . DS . $entry['slug'];
             }
         }
         else {
