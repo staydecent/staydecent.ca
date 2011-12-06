@@ -66,13 +66,16 @@ body {
 }
 .section {
     max-width:500px;
-    padding:2em 0;
+    padding:2em 0 4em;
     margin:0 auto;
+}
+#navigation {
+    padding-top:1em;
 }
 footer {
     padding-top:2em;
-    background:#f44;
-    color:#fff;
+    background:#222;
+    color:#eee;
 }
 
 /*
@@ -123,7 +126,7 @@ h6 {
     04 - Links
 */
 a {
-    color:#f44;
+    color:#222;
     -webkit-transition:color 0.3s ease;
     -moz-transition:color 0.3s ease;
     -o-transition:color 0.3s ease;
@@ -131,7 +134,7 @@ a {
     transition:color 0.3s ease;
 }
 a:visited {
-    color:#f44;
+    color:#606060;
 }
 a:active {
     background:#222;
@@ -164,7 +167,7 @@ a.button {
 nav a {
     display:block;
     font-family:'Andale Mono', 'Consolas', monospace;
-    font-size:5em;
+    font-size:1em;
     padding:0 0.5em;
     text-decoration:none;
 }
@@ -291,6 +294,9 @@ dd {
     padding:0 0 1em 1.5em;
     margin:0 0 1em;
 }
+li {
+    margin-bottom:0.5em;
+}
 article ul {
     padding:0 0 1em 2em;
 }
@@ -377,9 +383,9 @@ figure {
 }
 #wordmark {
     margin:0 auto;
-    padding:4em 0 2em;
+    padding:6em 0 5em;
     border:0;
-    /*opacity:0.8;*/
+    /*opacity:0.6;*/
 }
 .browser_frame {
     position:relative;
@@ -387,7 +393,7 @@ figure {
     padding:1em 0.1em 0.2em;
     margin:0 0.85%;
     max-width:48%;
-    background:#f44;
+    background:#222;
     -webkit-border-radius:4px;
     -moz-border-radius:4px;
     border-radius:4px;
@@ -401,7 +407,7 @@ figure {
     width:0.4em;
     height:0.4em;
     border-radius:999px;
-    border:1px solid #fff;
+    border:1px solid #eee;
     z-index:1;
     position:absolute;
     top:0.3em;
@@ -413,7 +419,7 @@ figure {
     width:0.6em;
     height:0.05em;
     border-radius:999px;
-    border:1px solid #fff;
+    border:1px solid #eee;
     z-index:1;
     position:absolute;
     top:0.5em;

@@ -9,11 +9,11 @@
 
         <div id="launched" class="cf">
             <?php $c=0; foreach ($entries['work'] as $e): ++$c; if ($c>2) break; ?>
-                <div class="browser_frame left scale"><img src="http://placekitten.com/800/600"></div>
+                <div class="browser_frame left scale"><img src="http://placehold.it/800x600"></div>
             <?php endforeach; ?>
         </div>
 
-        <div class="section"><p class="intro">I&rsquo;m Adrian Unger, a freelance web designer, developer and consultant living in Vancouver. I founded <a href="//www.cookitlocal.com">Cook It Local</a>.</p></div>
+        <div class="section"><p class="intro">I&rsquo;m Adrian Unger, a freelance web <em>generalist</em> helping ambitious clients execute ideas on the web. <a href="<?php ECHO SITE_URL ?>/about">Learn more &rarr;</a></p></div>
 
         <div id="latest" class="section cf">
             <div class="col2">

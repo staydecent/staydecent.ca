@@ -45,7 +45,7 @@ require 'markdown.php';
 // content vars
 $entries = array();
 $pages = array();
-$title = 'default';
+$title = 'Web Generalist, Adrian Unger';
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * Iterate Entries
