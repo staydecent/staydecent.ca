@@ -45,7 +45,7 @@ require 'markdown.php';
 // content vars
 $entries = array();
 $pages = array();
-$title = 'Web Generalist, Adrian Unger';
+$title = 'Adrian Unger, Web Designer';
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * Iterate Entries
@@ -62,6 +62,8 @@ while ($entryIterator->valid())
         else {
             $layout = $entry['category'];
         }
+
+        $title = $entry['title'];
 
         // save entry for template data
         $entries['all'][$entry['date']] = $entry;

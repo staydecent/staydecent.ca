@@ -11,7 +11,7 @@
 
     <footer><div class="inner">
         <div class="column">Made in beautiful British Columbia.</div>
-        <div class="column note"><a class="white" href="http://twitter.com/staydecent" title="Adrian Unger on Twitter">@staydecent</a> &middot; <a class="white" href="/colophon" title="Colophon">Colophon</a></div>
+        <div class="column note"><a class="whites" href="http://twitter.com/staydecent" title="Adrian Unger on Twitter">@staydecent</a> &middot; <a class="whites" href="/colophon" title="Colophon">Colophon</a></div>
     </div></footer>
 
 </div>

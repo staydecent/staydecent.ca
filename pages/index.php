@@ -13,7 +13,7 @@
             <?php endforeach; ?>
         </div>
 
-        <div class="section"><p class="intro">I&rsquo;m Adrian Unger, a freelance web <em>generalist</em> helping ambitious clients execute ideas on the web. <a href="<?php ECHO SITE_URL ?>/about">Learn more &rarr;</a></p></div>
+        <div class="section"><p class="intro">I&rsquo;m Adrian Unger, a freelance web designer helping ambitious, forward&ndash;thinking clients do things on the web. <a href="<?php ECHO SITE_URL ?>/about">Learn more &rarr;</a></p></div>
 
         <div id="latest" class="section cf">
             <div class="col2">
