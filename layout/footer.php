@@ -10,8 +10,15 @@
     </nav>
 
     <footer><div class="inner">
-        <div class="column">Made in beautiful British Columbia.</div>
-        <div class="column note"><a class="whites" href="http://twitter.com/staydecent" title="Adrian Unger on Twitter">@staydecent</a> &middot; <a class="whites" href="/colophon" title="Colophon">Colophon</a></div>
+        <div class="col4">
+            <p>I&rsquo;m Adrian Unger, a freelance web designer helping purpose-driven clients build things on the web.</p>
+        </div>  
+
+        <div class="skip4 col4 last">
+            <p>Made in beautiful British Columbia.<br>
+
+            <a class="whites" href="http://twitter.com/staydecent" title="Adrian Unger on Twitter">@staydecent</a> &middot; <a class="whites" href="/colophon" title="Colophon">Colophon</a></p>
+        </div>
     </div></footer>
 
 </div>

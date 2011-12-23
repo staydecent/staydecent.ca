@@ -2,7 +2,9 @@
 
 <div role="main" id="main" class="inner cf">
     <article class="bit">
-        <h1><?php echo $entry['title'] ?></h1>
+        <hgroup class="cf">
+            <h1 class="col8"><?php echo $entry['title'] ?></h1>
+        </hgroup>
 
         <div class"body"><?php echo $entry['body'] ?></div>
     </article>
