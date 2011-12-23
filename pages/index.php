@@ -1,46 +1,6 @@
-<?php include $config['dirs']['layout'].'/header.php' ?>
+<h1>Relaunching in the new year.</h1>
 
-<div role="main" id="main" class="cf">
-    <div class="inner">
+<p>Staydecent is having a slight rebrand and facelift in the new year.</p>
+<p>I'm currently booked until February 1st, 2012. If you'd like to discuss a project, email me at <a href="mailto:hello&#64;staydecent.ca">hello&#64;staydecent.ca</a>.</p>
 
-<!--         <div class="cf">
-            <p class="intro col2">I'm Adrian Unger, a freelance web designer and developer living in Vancouver. I founded <a href="http://www.cookitlocal.com">Cook It Local</a>.</p>
-        </div> -->
-
-        <div id="launched" class="cf">
-            <?php $c=0; foreach ($entries['work'] as $e): ++$c; if ($c>2) break; ?>
-                <div class="browser_frame left scale"><img src="http://placehold.it/800x600"></div>
-            <?php endforeach; ?>
-        </div>
-
-        <div class="section"><p class="intro">I&rsquo;m Adrian Unger, a freelance web designer helping ambitious, forward&ndash;thinking clients do things on the web. <a href="<?php ECHO SITE_URL ?>/about">Learn more &rarr;</a></p></div>
-
-        <div id="latest" class="section cf">
-            <div class="col2">
-                <h1>Latest Articles</h1>
-                <?php $c=0; foreach ($entries['articles'] as $e): ++$c; if ($c>2) break; ?>
-                    <article class="colhalf">
-                        <h2><a class="black" href="<?php echo $e['url'] ?>"><?php echo $e['title'] ?></a></h2>
-                        <p><?php echo $e['excerpt'] ?> <a href="<?php echo $e['url'] ?>">Continue reading &rarr;</a></p>
-                    </article>                
-                <?php endforeach; ?>
-                <a class="button" href="<?php echo SITE_URL ?>/articles">View all articles &rarr;</a>
-            </div>
-        </div>
-
-        <div id="latest" class="section cf">
-            <div class="col1 last">
-                <h1>Latest Bits</h1>
-                <ol class="cf">
-                <?php $c=0; foreach ($entries['bits'] as $e): ++$c; if ($c>8) break; ?>
-                    <li><a class="black" href="<?php echo $e['url'] ?>"><?php echo $e['title'] ?></a></li>
-                <?php endforeach; ?>
-                </ol>
-                <a class="button" href="<?php echo SITE_URL ?>/bits">View all bits &rarr;</a>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<?php include $config['dirs']['layout'].'/footer.php' ?>
+<p><a href="http://twitter.com/staydecent">@staydecent</a></p>
