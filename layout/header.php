@@ -9,7 +9,7 @@
     <title><?php echo $title ?> &middot; Staydecent</title>
 
     <link rel="stylesheet" href="<?php echo SITE_URL ?>/assets/css/main-180.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,800' rel='stylesheet' type='text/css'>
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -18,23 +18,8 @@
 </head>
 <body class="home">
 
-<div class="container">
+<header id="header" class="inner">
 
-    <header id="header" class="inner cf">
-
-        <div class="col4">
-            <h1 id="wordmark"><a href="<?php echo SITE_URL ?>/" title="Go to the homepage">Staydecent</a></h1>
-        </div>
-
-        <div class="col4 centre">Adrian Unger designs and builds for the web.</div>
-
-        <nav id="navigation" role="navigation" class="col4 last">
-            <ul class="cf">
-                <li><a href="<?php echo SITE_URL ?>/work" title="View all work">work</a></li>
-                <li><a href="<?php echo SITE_URL ?>/articles" title="View all articles covering many topics">blog</a></li>
-                <li><a href="<?php echo SITE_URL ?>/about" title="Learn more about Adrian Unger">about</a></li>
-                <li><a href="<?php echo SITE_URL ?>/contact" title="Contact Adrian Unger">contact</a></li>
-            </ul>
-        </nav>
-        
-    </header>
+    <h1 id="wordmark" class="centre"><a class="nostyle" href="<?php echo SITE_URL ?>/" title="Staydecent, design and web development by Adrian Unger"><img src="<?php echo SITE_URL ?>assets/i/wordmark-fat-white.png" alt="Staydecent, design and web development by Adrian Unger"></a></h1>
+    
+</header>

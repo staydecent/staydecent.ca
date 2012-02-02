@@ -1,8 +1,87 @@
-<?php 
+<?php if ( ! defined('SITE_URL')) exit('No direct script access allowed');
 
 /**
-* Parse Frontmatter and Markdown!
-*/
+ * ------------------------------------------------------------------------
+ * Utility and helper functions
+ * ------------------------------------------------------------------------
+ */
+function get_title($filename)
+{
+    return ucwords(substr($filename, 0, -4));
+}
+
+function current_class($str)
+{
+    global $title;
+    echo (stripos($title, $str) !== FALSE) ? ' class="current"' : ''; 
+}
+
+function render($layout)
+{
+    global $title, $entry, $entries, $config;
+    ob_start();
+    include $layout;
+    $out = ob_get_contents();
+    ob_end_clean();
+
+    return $out;
+}
+
+function ignore($path, $config) 
+{
+    foreach ($config['ignore'] as $ignore) 
+    {
+        if (strpos($path, $ignore) !== false) 
+        {
+            return TRUE;
+        }
+    }
+
+    return FALSE;
+}
+
+function plural( $num ) 
+{
+    /*
+    Returns "s" unless $num is "1"
+    Used by `relative_date`.
+    */
+    if ($num != 1)
+        return "s";
+}
+
+function get_relative_date( $date ) 
+{
+    /*
+    Returns relative(more human) date string.
+    Uses: `plural`.
+
+    Usage:
+    `get_relative_date(get_the_date())`
+    */
+    $diff = time() - strtotime($date);
+    if ($diff < 60)
+        return $diff." second".plural($diff)." ago";
+    $diff = round($diff / 60);
+    if ($diff < 60)
+        return $diff." minute".plural($diff)." ago";
+    $diff = round($diff / 60);
+    if ($diff < 24)
+        return $diff." hour".plural($diff)." ago";
+    $diff = round($diff / 24);
+    if ($diff < 7)
+        return $diff." day".plural($diff)." ago";
+    $diff = round($diff / 7);
+    if ($diff < 4)
+        return $diff." week".plural($diff)." ago";
+    return date("F j, Y", strtotime($date));
+}
+
+/**
+ * ------------------------------------------------------------------------
+ * Parse FrontMatter and Markdown
+ * ------------------------------------------------------------------------
+ */
 class Parse {
 
     /**

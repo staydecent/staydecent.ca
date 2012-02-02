@@ -4,89 +4,100 @@ jQuery(document).ready(function($) {
     /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
     * Responsive Media / Content                                             *
     * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-    var do_position = false;
-
-    $(window).bind('load resize', function() {
-        if ($.browser.webkit) {
+    $(window).bind('load resize', function() 
+    {
+        if ($.browser.webkit) 
+        {
             var width = document.body.clientWidth;
         }
-        else {
+        else 
+        {
             var width = window.innerWidth;
         }
 
-        if (width >= 540) {
+        if (width >= 540) 
+        {
             // .column in use, add .last (method for IE support)
             $('.column:last-child').addClass('last');
             // replace w/ hi-res image
             replaceData('img', 'data-replace');
-
-            if (!do_position) {
-                position_frames();
-                do_position = true;
-            }
         }
-        else {
+        else 
+        {
             // revert
             replaceData('img', 'data-original');
-
-            if (do_position) do_position = false;
         }
     });
 
     // replace img src's
-    var replaceData = function(selector, attr) {
-        $(selector + '[' + attr + ']').each(function() {
+    var replaceData = function(selector, attr) 
+    {
+        $(selector + '[' + attr + ']').each(function() 
+        {
             var e = $(this),
                 d = $(this).attr(attr);
 
-            if (!e.attr('data-original')) {
+            if (!e.attr('data-original')) 
+            {
                 // if we haven't saved the src
                 e.attr('data-original', $(this).attr('src'));
             }
 
-            if (d !== e.attr('src')) {
+            if (d !== e.attr('src')) 
+            {
                 // only update if diff
                 e.attr('src', d);
             }
         });
     }
 
-    // position media
-    var position_frames = function() {
-        $('.entry').find('.browser_frame').each(function(i) {
-            var e = $(this);
-
-            // position text below frames
-            e.parent('.media').css({
-                'float': 'none',
-                'height': e.height()*1.5,
-                'z-index': '12'
-            });
-            // position the frames w/ variance
-            e.css({
-                'float': 'left',
-                'margin-left': -i*100 + '%',
-                'margin-top': i*10 + '%',
-                'z-index': 10-i
-            });
-        });
-    }
-
     /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
     * Trigger Scale Animations                                               *
     * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-    $(window).bind('scroll load', function(event) {
+    $(window).bind('scroll load', function(event) 
+    {
         var fold = $(window).height() + $(window).scrollTop();
 
-        $('.scale').each(function(i) {
+        $('.scale').each(function(i) 
+        {
             var e = $(this);
 
-            if (fold >= e.offset().top + 100) {
+            if (fold >= e.offset().top + 100) 
+            {
                 window.setTimeout(function() {
                     e.addClass('animate');
                 }, i*100);
             }
         });
+
+        $('.invisible').each(function(i) 
+        {
+            var e = $(this);
+
+            if (fold >= e.offset().top + 100) 
+            {
+                window.setTimeout(function() {
+                    e.css({
+                        visibility:'visible'
+                    });
+                }, i*200);
+            }
+        });
     });
 
+    /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+    * Hover effects and such                                                 *
+    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+    var thumb_index = 0;
+    $('.thumb').hover(
+        function() 
+        {
+            thumb_index = $(this).css('z-index');
+            $(this).css('z-index', '11');
+        },
+        function()
+        {
+            $(this).css('z-index', thumb_index);
+        }
+    );
 });

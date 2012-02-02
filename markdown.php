@@ -1,4 +1,5 @@
-<?php
+<?php if ( ! defined('SITE_URL')) exit('No direct script access allowed');
+
 #
 # Markdown Extra  -  A text-to-HTML conversion tool for web writers
 #

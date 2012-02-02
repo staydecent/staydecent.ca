@@ -1,23 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php include $config['dirs']['layout'].'/header.php' ?>
 
-    <title>Staydecent</title>
+<div role="main" id="main" class="container">
 
-    <meta name="description" content="Staydecent is the web design and development studio of Adrian Unger.">
-    <meta name="author" content="Adrian Unger">
-</head>
-<body>
+    <div id="gc500" class="neato inner cf spacing">
+        <div class="thumb col6">
+            <a href="http://gamechangers500.com">
+                <div class="browser_frame scale"><img src="http://dl.dropbox.com/u/3067484/Website/cookitlocal.jpg" alt="Screenshot of "></div>
+            </a>
+        </div>
+        <div class="thumb col6 last">
+            <a href="http://gamechangers500.com">
+                <div class="browser_frame scale"><img src="http://dl.dropbox.com/u/3067484/Website/cookitlocal2.jpg" alt="Screenshot of "></div>
+            </a>
+        </div>
+        <div class="thumb col6 last">
+            <a href="http://gamechangers500.com">
+                <div class="browser_frame scale"><img src="http://dl.dropbox.com/u/3067484/Website/cookitlocal2.jpg" alt="Screenshot of "></div>
+            </a>
+        </div>
 
-<h1>Relaunching in the new year.</h1>
+        <div id="intro" class="cf">
+            <header class="col3">
+                <h1>The Game Changers 500</h1>
+            </header>
 
-<p>Staydecent is having a slight rebrand and facelift in the new year.</p>
-<p>I'm currently booked until February 1st, 2012. If you'd like to discuss a project, email me at <a href="mailto:hello&#64;staydecent.ca">hello&#64;staydecent.ca</a>.</p>
+            <p class="col6">The GameChangers 500 profiles organizations that are reinventing the world and redefining the rules of business around fun, fulfillment and fairness to all life. I&rsquo;ve been their web developer and designer since October of 2011. I&rsquo;m currently working on progressing the <a href="http://www.paulmichaelsparks.com/" title="Designed by Paul Michael Sparks">design</a> as well as developing their mobile solution.</p>
 
-<p><a href="http://twitter.com/staydecent">@staydecent</a></p>
+            <p class="col3 last centre"><a href="" class="button">Visit website</a><br> &nbsp;<em class="serif">or</em>&nbsp; <br><a href="<?php echo SITE_URL ?>/work">See more work</a></p>
+        </div>
+    </div>
 
-</body>
-</html>
+</div>
+
+
+<?php include $config['dirs']['layout'].'/footer.php' ?>
