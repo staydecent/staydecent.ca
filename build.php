@@ -39,6 +39,7 @@ if ($argc >= 2)
     $config['dirs']['build'] = $argv[0];
     // set SITE_URL
     $site_url = (isset($argv[1])) ? $argv[1] : '';
+    $site_url = (substr($site_url,-1) === '/') ? $site_url : $site_url.'/';
 }
 
 define('SITE_URL', $site_url);

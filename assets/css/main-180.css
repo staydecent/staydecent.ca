@@ -39,23 +39,15 @@ html {
     -ms-text-size-adjust:100%;
 }
 body {
-    font:400 15px/1.4 'Open Sans', sans-serif;
+    font:16px/1.8 'Open Sans', sans-serif;
     color:#222;
-    background:#ebefea; /* AFECB5 */
-background: -moz-linear-gradient(top,  #ebefea 0%, #cface5 200%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebefea), color-stop(200%,#cface5));
-background: -webkit-linear-gradient(top,  #ebefea 0%,#cface5 200%);
-background: -o-linear-gradient(top,  #ebefea 0%,#cface5 200%);
-background: -ms-linear-gradient(top,  #ebefea 0%,#cface5 200%);
-background: linear-gradient(top,  #ebefea 0%,#cface5 200%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebefea', endColorstr='#cface5',GradientType=0 );
+    background:#F5F8F9;
 }
 .container {
     padding:0 20px;
 }
 .inner {
     width:auto;
-    /* yo, dawg, define yer grid */
     max-width:1020px;
     min-width:260px;
     margin:0 auto;
@@ -68,6 +60,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebefea', end
 }
 footer {
     margin:100px 0 160px 0;
+    font-size:15px;
 }
 
 /*
@@ -89,27 +82,27 @@ h6 {
 }
 h1 {
     font-weight:800;
-    font-size:24px;
+    font-size:1.4em;
     text-transform:uppercase;
     margin-bottom:15px;
 }
 h2 {
-    font-size:18px;
+    font-size:1.2em;
     margin-bottom:20px;
 }
 h3 {
-    font-size:24px;
+    font-size:1em;
     margin-bottom:20px;
 }
 h4 {
-    font-size:16px;
+    font-size:0.9em;
     margin-bottom:10px;
 }
 h5 {
-    font-size:16px;
+    font-size:0.8em;
 }
 h6 {
-    font-size:14px;
+    font-size:0.8em;
     color:#bfbfbf;
     text-transform:uppercase;
 }
@@ -137,8 +130,8 @@ a:focus {
 a:hover,
 a:active {
     outline:0;
-    color:#fff;
-    border-color:rgba(255,255,255,0.4);
+    color:#f44;
+    border-color:#fff;
 }
 a.nostyle {
     text-decoration:none;
@@ -155,7 +148,7 @@ a.nostyle {
     border:0;
 }
 #navigation a:hover {
-    color:#fff;
+    color:#f44;
 }
 .button {
     position:relative;
@@ -166,13 +159,13 @@ a.nostyle {
     font-size:12px;
     font-weight:800;
     text-transform:uppercase;
-    border-bottom:3px solid rgba(50,50,50,0.1);
+    border-bottom:3px solid rgba(120,120,120,0.2);
     -webkit-border-radius:4px;
     -moz-border-radius:4px;
     border-radius:4px;
-    -webkit-box-shadow:0px 2px 12px rgba(0,0,0,0.1);
-    -moz-box-shadow:0px 2px 12px rgba(0,0,0,0.1);
-    box-shadow:0px 2px 12px rgba(0,0,0,0.1);
+    -webkit-box-shadow:0px 2px 12px rgba(88,88,88,0.1);
+    -moz-box-shadow:0px 2px 12px rgba(88,88,88,0.1);
+    box-shadow:0px 2px 12px rgba(88,88,88,0.1);
 }
 .button:hover {
     background:#f44;
@@ -270,31 +263,28 @@ sub {
 p {
     text-indent:0;
     margin-bottom:20px;
-    line-height:1.6;
-
 }
 .intro, 
 .big {
-    font:300 24px 'Open Sans', sans-serif;
+    font:300 1.5em 'Open Sans', sans-serif;
     line-height:1.5;
-    color:#4a4a4a;
-}
-.big.ger {
-    font-size:24px;
+    color:#666;
 }
 .serif {
     font-family:'Garamond Pro', Garamond, Georgia, serif;
-}
-.serif.big {
-    font-size:24px;
-    line-height:0;
 }
 .meta {
     color:rgba(0,0,0,0.5);
     font-style:italic;
 }
 article .meta {
-    padding-top:10px;
+    padding-top:0.4em;
+}
+aside,
+.aside {
+    font-size:0.8em;
+    color:#666;
+    padding:0 12px 0 6px;
 }
 
 /*
@@ -394,6 +384,9 @@ img {
     -webkit-transition:opacity 0.3s ease;
     -moz-transition:opacity 0.3s ease;
     -o-transition:opacity 0.3s ease;
+}
+.photo {
+    padding:10px 0;
 }
 svg:not(:root) {
     overflow:hidden;
@@ -553,7 +546,22 @@ header hr { height:0; border:2px solid #4a4a4a; margin:1% 20% 5%; }
     .right { float:right !important;}
     .left { float:left !important;}
 }
-@media only screen and (min-width: 1320px) {
+@media screen and (max-width: 680px) {
+    body {font-size:15px;}
+    aside,
+    .aside {
+        font-size:0.8em;
+        color:#666;
+        padding:20px 0;
+        text-align:center;
+    }
+    .photo {
+        display:block;
+        margin:0 auto;
+    }
+}
+@media screen and (max-width: 480px) {
+    body {font-size:14px;}
 }
 
 /* Print Styles (www.phpied.com/delay-loading-your-print-css/) */

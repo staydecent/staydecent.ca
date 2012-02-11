@@ -20,6 +20,6 @@
 
 <header id="header" class="inner">
 
-    <h1 id="wordmark" class="centre"><a class="nostyle" href="<?php echo SITE_URL ?>/" title="Staydecent, design and web development by Adrian Unger"><img src="<?php echo SITE_URL ?>assets/i/wordmark-fat-white.png" alt="Staydecent, design and web development by Adrian Unger"></a></h1>
+    <h1 id="wordmark" class="centre"><a class="nostyle" href="<?php echo SITE_URL ?>/" title="Staydecent, design and web development by Adrian Unger"><img src="<?php echo SITE_URL ?>assets/i/wordmark-fat.png" alt="Staydecent, design and web development by Adrian Unger"></a></h1>
     
 </header>

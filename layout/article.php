@@ -1,7 +1,7 @@
 <?php include 'header.php' ?>
 
 <div role="main" id="main" class="container">
-<div class="inner">
+<div class="inner cf">
     <article class="article col7 skip3 last">
         <h1><?php echo $entry['title'] ?></h1>
 

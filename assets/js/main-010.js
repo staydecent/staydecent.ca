@@ -80,7 +80,7 @@ jQuery(document).ready(function($) {
                     e.css({
                         visibility:'visible'
                     });
-                }, i*200);
+                }, i*300);
             }
         });
     });
