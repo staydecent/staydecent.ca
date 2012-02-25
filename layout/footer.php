@@ -40,7 +40,7 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <?php echo (isset($scripts)) ? $scripts : ''; ?>
-<script src="<?php echo SITE_URL ?>assets/js/main-010.js"></script>
+<script src="<?php echo SITE_URL ?>assets/js/main-011.js"></script>
 
 </body>
 </html>
