@@ -3,7 +3,7 @@
 <div role="main" id="main" class="container-fluid">
 
     <article id="gc500">
-        <img class="centre" src="<?php echo SITE_URL ?>assets/i/IBM_PC_jr_full.png">
+        <img class="centre" src="<?php echo SITE_URL ?>assets/i/PC-GC500.png">
 
         <div class="row-fluid">
             <header class="span3">
