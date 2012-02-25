@@ -9,11 +9,11 @@
 
         <ul class="grossly-massive">
             <li>Designed in-browser</li>
-            <li>Type set in <a href="">Open Sans</a> &amp; serverd by <a href="">Google</a></li>
-            <li><a href="">Bootstrap</a> &amp; <a href="">Less</a> for CSS organization</li>
-            <li>Written with <a href="">Sublime Text 2</a></li>
-            <li>Powered by my <a href="">ridiculous build script</a></li>
-            <li>Hosted by <a href="">Web Faction</a></li>
+            <li>Type set in <a target="_blank" href="http://www.google.com/webfonts/specimen/Open+Sans">Open Sans</a> &amp; serverd by <a target="_blank" href="http://google.com/webfonts">Google</a></li>
+            <li><a target="_blank" href="http://twitter.github.com/bootstrap/">Bootstrap</a> &amp; <a target="_blank" href="http://lesscss.org/">Less</a> for CSS organization</li>
+            <li>Written with <a target="_blank" href="http://www.sublimetext.com/2">Sublime Text 2</a></li>
+            <li>Powered by my <a target="_blank" href="https://github.com/staydecent/staydecent.ca">ridiculous build script</a></li>
+            <li>Hosted by <a target="_blank" href="http://www.webfaction.com?affiliate=staydecent">Web Faction</a></li>
         </ul>
 
         <p><a href="http://github.com/staydecent/staydecent.ca" target="_blank"><i class="icon-bookmark"></i>View source on Github</a></p>

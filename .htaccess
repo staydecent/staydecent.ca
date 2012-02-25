@@ -1,4 +1,4 @@
-DirectoryIndex public/index.html
+DirectoryIndex index.html
 
 RewriteEngine on
 
@@ -6,4 +6,4 @@ RewriteCond %{HTTPS} !=on
 RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
 RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 
-RewriteRule ^([A-Za-z0-9-\/]+)/?$         public/$1/index.html [L]
+RewriteRule ^([A-Za-z0-9-\/]+)/?$         $1index.html [L]
