@@ -1,48 +1,68 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-<div class="container">
+<div role="main" id="main" class="container-fluid">
 
-    <div class="inner cf spacing">
-        <div class="col3 right last">
-        </div>
-        <div class="col6 right">
-            <p class="big">Obsessed with food, nature and sustainability. I often create things with the web (and sometimes with my hands).</p>
-            <p>Since 2008, I&rsquo;ve freelanced as a web designer and developer for an array of clients and agencies. At the beginning of 2012 my girlfriend and I started living as caretakers at the UBC Farm, in a 28' x 8' 5th Wheeler, where I continue to freelance for select clients.</p>
+    <div id="colophon" class="marketing">
+        <header>
+            <h2>Adrian Unger</h2>
+        </header>
 
-            <div class="col6 border">
-                <h2>Services</h2>
+        <ul id="about-me" class="grossly-massive">
+            <li>Vancouver based web designer &amp; developer</li>
+            <li>Freelancing since 2008</li>
+            <li>Lives in a trailer on a farm in the city</li>
+            <li>I&rsquo;m the founder of <a href="http://www.cookitlocal.com">Cook It Local</a> and <a href="http://fullioapp.com">Fullio App</a></a></li>
+            <li>College dropout.</li>
+        </ul>
+
+        <div class="row-fluid">
+            <div class="span4">
+                <h3>Services</h3>
+                <p class="meta">
+                    <span class="tag">Product &amp; Web design</span> 
+                    <span class="tag">Front-end development</span> 
+                    <span class="tag">Mobile development</span> 
+                    <span class="tag">WordPress development</span> 
+                    <span class="tag">Web app development</span>
+                    <span class="tag">Rapid prototyping</span>
+                </p>
+            </div>
+            <div class="span3">
+                <h3>Tools</h3>
                 <ul>
-                    <li>Web, UX, UI and Product Design</li>
-                    <li>Mobile development</li>
-                    <li>WordPress themes, plugins and maintenance</li>
-                    <li>Front-end development</li>
-                    <li>Custom web applications</li>
-                    <li>Rapid Prototyping</li>
-                    <li>&hellip;</li>
+                    <li>Thinkpad T410</li>
+                    <li>Sublime Text 2</li>
+                    <li>Console2</li>
+                    <li>WinLess</li>
                 </ul>
             </div>
-            <div class="col6 border last">
-                <h2>Tools &amp; Technologies</h2>
+            <div class="span3">
+                <h3>Technologies</h3>
                 <ul>
-                    <li><a href="http://github.com/staydecent/Gum" target="_blank">Gum</a></li>
                     <li>CodeIgniter</li>
                     <li>Google App Engine</li>
                     <li>jQuery</li>
                     <li>WordPress</li>
                     <li>MongoDB</li>
-                    <li>Sublime Text</li>
-                    <li>&hellip;</li>
                 </ul>
             </div>
-        </div>
-
-        <div class="col3">
-            <img class="photo" src="<?php echo SITE_URL ?>assets/i/kokanee.jpg" alt="Mean muggin' Adrian Unger at the Kokanee Glacier Park.">
-
-            <aside>I have quite a few public profiles associated with various internet websites and &ldquo;social&rdquo; networks. But, the only one that really matters is <a href="http://twitter.com/staydecent" title="Staydecent Tweets about things" target="_blank">Twitter</a>&hellip; and maybe <a href="http://github.com/staydecent/" title="I am a web designer who codes and shares these codes on GitHub" target="_blank">Github</a>.</aside>
+            <div class="span2">
+                <h4>Learning</h4>
+                <ul>
+                    <li>Backbone.js</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
         </div>
     </div>
 
 </div>
+
+<?php 
+$next = array();
+
+$next['url'] = 'contact';
+$next['text'] = 'Say hello!';
+?>          
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>

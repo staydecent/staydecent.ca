@@ -47,7 +47,6 @@ define('SITE_URL', $site_url);
 $config['ignore'] = array_merge($config['ignore'], array_values($config['dirs']));
 $entries = array();
 $pages = array();
-$title = 'Adrian Unger, Web Designer';
 
 
 /**

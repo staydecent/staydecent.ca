@@ -7,6 +7,11 @@
  */
 function get_title($filename)
 {
+    if (stristr($filename, 'index'))
+    {
+        return 'Adrian Unger';
+    }
+
     return ucwords(substr($filename, 0, -4));
 }
 
@@ -62,18 +67,29 @@ function get_relative_date( $date )
     $diff = time() - strtotime($date);
     if ($diff < 60)
         return $diff." second".plural($diff)." ago";
+
     $diff = round($diff / 60);
+
     if ($diff < 60)
         return $diff." minute".plural($diff)." ago";
+
     $diff = round($diff / 60);
+
     if ($diff < 24)
         return $diff." hour".plural($diff)." ago";
+
     $diff = round($diff / 24);
+
+    if ($diff == 1)
+        return "Today";
     if ($diff < 7)
         return $diff." day".plural($diff)." ago";
+
     $diff = round($diff / 7);
+
     if ($diff < 4)
         return $diff." week".plural($diff)." ago";
+
     return date("F j, Y", strtotime($date));
 }
 
@@ -211,6 +227,11 @@ class Parse {
             $entry['parent'] = $path_parts[$path_count-1];
             $entry['category'] = $path_parts[$path_count-2];
 
+            if ($entry['category'] === 'drafts') 
+            {
+                return FALSE;
+            }
+
             // make sure parent follow date-slug dir naming
             if (!preg_match($config['date_re'], $entry['parent'], $date_match))
             {
@@ -232,7 +253,7 @@ class Parse {
             }
             // ensure url
             if (!isset($entry['url'])) {
-                $entry['url'] = SITE_URL . DS . $entry['category'] . DS . $entry['slug'];
+                $entry['url'] = SITE_URL . $entry['category'] . DS . $entry['slug'];
             }
         }
         else {

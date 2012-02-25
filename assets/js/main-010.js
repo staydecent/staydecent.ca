@@ -2,54 +2,23 @@
 jQuery(document).ready(function($) {
 
     /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-    * Responsive Media / Content                                             *
+    * Animated Scroll to Menu                                                *
     * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-    $(window).bind('load resize', function() 
-    {
-        if ($.browser.webkit) 
-        {
-            var width = document.body.clientWidth;
-        }
-        else 
-        {
-            var width = window.innerWidth;
-        }
 
-        if (width >= 540) 
-        {
-            // .column in use, add .last (method for IE support)
-            $('.column:last-child').addClass('last');
-            // replace w/ hi-res image
-            replaceData('img', 'data-replace');
-        }
-        else 
-        {
-            // revert
-            replaceData('img', 'data-original');
-        }
+    if (menu_selector = window.location.hash) {
+        $('body').animate({scrollTop:$(document).height()}, 800);
+    }
+    $('#menu-anchor').click(function(e){
+        $('body').animate({scrollTop:$(document).height()}, 800);
+        e.preventDefault();
     });
 
-    // replace img src's
-    var replaceData = function(selector, attr) 
-    {
-        $(selector + '[' + attr + ']').each(function() 
-        {
-            var e = $(this),
-                d = $(this).attr(attr);
 
-            if (!e.attr('data-original')) 
-            {
-                // if we haven't saved the src
-                e.attr('data-original', $(this).attr('src'));
-            }
+    /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+    * Fit Text                                                               *
+    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-            if (d !== e.attr('src')) 
-            {
-                // only update if diff
-                e.attr('src', d);
-            }
-        });
-    }
+    $(".fitText").fitText(1.2, { maxFontSize: '96px' })
 
     /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
     * Trigger Scale Animations                                               *
@@ -85,19 +54,4 @@ jQuery(document).ready(function($) {
         });
     });
 
-    /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-    * Hover effects and such                                                 *
-    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-    var thumb_index = 0;
-    $('.thumb').hover(
-        function() 
-        {
-            thumb_index = $(this).css('z-index');
-            $(this).css('z-index', '11');
-        },
-        function()
-        {
-            $(this).css('z-index', thumb_index);
-        }
-    );
 });

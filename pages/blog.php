@@ -1,8 +1,7 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-<div role="main" id="main" class="container">
+<div role="main" id="main" class="container-fluid">
 
-    <div class="inner cf">
     <?php
     $posts = $entries['articles'] + $entries['bits'];
     krsort($posts);
@@ -12,22 +11,33 @@
     {
         if (++$limit > 44) break;
         ?>
-        <article class="cf spacing">
-            <div class="col3 meta tright">
-                <small>Published <?php echo get_relative_date(date("Y M D", $date)) ?><br>
-                <a href="<?php echo SITE_URL . $entry['category'] ?>"><?php echo ucwords(substr($entry['category'], 0, -1)) ?></a>
-            </small></div>
+        <div class="padding row-fluid">
+            <div class="span3 meta padding">
+                <a href="<?php echo $entry['url']; ?>">Published <?php echo get_relative_date(date("r",$date)) ?></a>
+                <p>
+                    <i class="icon-align-left"></i> <?php echo str_word_count($entry['body']) ?> words
+                </p>
+            </div>
 
-            <div class="col6 last">
-                <header><h1><a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h1></header>
+            <div class="span6">
+                <header><h1><a class="black" href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h1></header>
             
                 <p><?php echo $entry['excerpt'] ?></p>
+
+                <a class="btn-small" href="<?php echo $entry['url']; ?>" title="Permalink to <?php echo $entry['title'] ?>">Continue reading&hellip;</a>
             </div>
-        </article>
+        </div>
         <?php
     }
     ?>
-    </div>
+
 </div>
+
+<?php 
+$next = array();
+
+$next['url'] = 'about';
+$next['text'] = 'About me';
+?>  
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>
