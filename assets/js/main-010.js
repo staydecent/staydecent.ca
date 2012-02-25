@@ -12,13 +12,7 @@ jQuery(document).ready(function($) {
         $('body').animate({scrollTop:$(document).height()}, 800);
         e.preventDefault();
     });
-
-
-    /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-    * Fit Text                                                               *
-    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-    $(".fitText").fitText(1.2, { maxFontSize: '96px' })
+    
 
     /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
     * Trigger Scale Animations                                               *

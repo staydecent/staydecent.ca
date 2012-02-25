@@ -22,6 +22,12 @@ $next['url'] = '';
 $next['text'] = 'Selected work';
 
 $scripts = '<script src="'.SITE_URL.'assets/js/jquery.fittext.js"></script>';
+$scripts.= '<script>';
+$scripts.= 'jQuery(document).ready(function($) {';
+$scripts.= '$(".fitText").fitText(1.2, { maxFontSize: \'96px\' });';
+$scripts.= '});';
+$scripts.= '</script>';
+
 ?>
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>
