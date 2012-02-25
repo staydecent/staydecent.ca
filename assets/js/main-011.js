@@ -1,15 +1,17 @@
-/*! main-010.js: Staydecent.ca website enhancements. (c) Adrian Unger. Public Domain. */
+/*! main-011.js: Staydecent.ca website enhancements. (c) Adrian Unger. Public Domain. */
 jQuery(document).ready(function($) {
 
     /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
     * Animated Scroll to Menu                                                *
     * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-    if (menu_selector = window.location.hash) {
-        $('body').animate({scrollTop:$(document).height()}, 800);
+    var menu_selector = window.location.hash;
+    if (menu_selector) {
+        $("html,body").animate({scrollTop:$(document).height()}, 800);
     }
+
     $('#menu-anchor').click(function(e){
-        $('body').animate({scrollTop:$(document).height()}, 800);
+        $("html,body").animate({scrollTop:$(document).height()}, 800);
         e.preventDefault();
     });
     
