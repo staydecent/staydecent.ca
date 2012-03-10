@@ -13,7 +13,7 @@
         ?>
         <div class="padding row-fluid">
             <div class="span3 meta padding">
-                <a href="<?php echo $entry['url']; ?>">Published <?php echo get_relative_date(date("r",$date)) ?></a>
+                <a href="<?php echo $entry['url']; ?>">Published <?php echo date("F j, Y", $date) ?></a>
                 <p>
                     <i class="icon-align-left"></i> <?php echo str_word_count($entry['body']) ?> words
                 </p>

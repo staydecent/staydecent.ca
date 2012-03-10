@@ -5,7 +5,7 @@
     <article class="row-fluid">
         <header class="span3">
             <h1><?php echo $entry['title'] ?></h1>
-            <div class="date meta">Published <?php echo get_relative_date(date("r",$entry['date'])) ?></div>
+            <div class="date meta">Published <?php echo date("F j, Y", $entry['date']); ?></div>
             <p class="meta">
                 <i class="icon-align-left"></i> <?php echo str_word_count($entry['body']) ?> words
             </p>

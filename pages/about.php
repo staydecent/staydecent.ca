@@ -31,9 +31,9 @@
                 <h3>Tools</h3>
                 <ul>
                     <li>Thinkpad T410</li>
+                    <li>Ubuntu 11.10</li>
                     <li>Sublime Text 2</li>
-                    <li>Console2</li>
-                    <li>WinLess</li>
+                    <li>Git, Git, Git</li>
                 </ul>
             </div>
             <div class="span3">
@@ -47,7 +47,7 @@
                 </ul>
             </div>
             <div class="span2">
-                <h4>Learning</h4>
+                <h3>Learning</h3>
                 <ul>
                     <li>Backbone.js</li>
                     <li>Node.js</li>

@@ -9,7 +9,7 @@
     <title><?php echo $title ?> &middot; Staydecent</title>
 
     <link rel="stylesheet" href="<?php echo SITE_URL ?>assets/css/bootstrap.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,800' rel='stylesheet' type='text/css'>  
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
