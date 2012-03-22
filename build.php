@@ -2,6 +2,7 @@
 
 define('DS', DIRECTORY_SEPARATOR);
 define('ROOT', getcwd() . DS);
+define('SOURCE', ROOT . 'src' . DS);
 
 
 /**
@@ -13,16 +14,17 @@ $config = array(
       'date_re' => '/[\d]+-[\d]+-[\d]+-/'
     , 'content_file' => 'content.txt'
     , 'dirs' => array(
-          'entries' => ROOT . 'entries'   // Posts go in here
-        , 'pages' => ROOT . 'pages'       // Pages go in here
-        , 'layout' => ROOT . 'layout'     // layout files (header.php, footer.php etc.)
-        , 'build' => ROOT . 'public'      // output dir
+          'entries' => SOURCE . 'entries'   // Posts go in here
+        , 'pages'   => SOURCE . 'pages'     // Pages go in here
+        , 'layout'  => SOURCE . 'layout'    // layout files (header.php, footer.php etc.)
+        , 'build'   => ROOT   . 'public'    // output dir
     )
     , 'ignore' => array(
           ROOT . 'functions.php'
         , ROOT . 'markdown.php'
         , ROOT . 'build.php'
         , ROOT . '.git'
+        , 'less'
     )
 );
 
@@ -139,7 +141,7 @@ foreach ($dir as $fileinfo)
  * Copy everything else (Assets, static files, etc.)
  * ------------------------------------------------------------------------
  */
-$staticIterator = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator(ROOT));
+$staticIterator = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator(SOURCE));
 
 while ($staticIterator->valid())
 {
@@ -147,7 +149,7 @@ while ($staticIterator->valid())
         && ! ignore($staticIterator->getPathname(), $config)
         && substr($staticIterator->getBasename(), '0', 1) !== '.') 
     {
-        $new_file = $config['dirs']['build'] . DS . str_replace(ROOT, '', $staticIterator->getPathname());
+        $new_file = $config['dirs']['build'] . DS . str_replace(SOURCE, '', $staticIterator->getPathname());
 
         if (strstr($staticIterator->getBasename(), '.php')) 
         {

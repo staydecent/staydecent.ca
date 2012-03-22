@@ -9,7 +9,7 @@ function get_title($filename)
 {
     if (stristr($filename, 'index'))
     {
-        return 'Adrian Unger';
+        return 'Adrian Unger &middot; Design, nature, technology, etc.';
     }
 
     return ucwords(substr($filename, 0, -4));

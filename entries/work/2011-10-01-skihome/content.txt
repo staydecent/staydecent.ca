@@ -1,6 +1,0 @@
-client: SkiHome Ltd.
-role: Design, Information Architecture, Front-end Development, WordPress Development
-images: http://dl.dropbox.com/u/3067484/Website/skihome.jpg
----
-
-The client wanted a modern, informative website that they could edit themselves with new project photos and updated company information. I rapidly produced a more useful design and WordPress build to get the clients' website up-to-date and ready to help sales.
