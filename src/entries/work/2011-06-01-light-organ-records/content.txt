@@ -1,0 +1,6 @@
+client: Theory Design
+role: Front-end Development, WordPress Development
+images: http://dl.dropbox.com/u/3067484/Website/lightorganrecords.jpg
+---
+
+Light Organ Records is a complete record label CMS and the website is one of the most advanced WordPress themes I've ever built. With it, they are able to manage Artists, Tour Dates, Media and Releases with ease.

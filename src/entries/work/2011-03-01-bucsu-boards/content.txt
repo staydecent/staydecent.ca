@@ -1,0 +1,6 @@
+client: Theory Design
+role: Front-end Development, WordPress Development
+images: http://dl.dropbox.com/u/3067484/Website/bucsuboards.jpg
+---
+
+Bucsu Boards is another WordPress site I built for Ryan McMaster, this one featuring eCommerce functionality and custom JavaScript.

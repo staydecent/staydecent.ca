@@ -1,0 +1,6 @@
+client: Theory Design
+role: Front-end Development, WordPress Development
+images: http://dl.dropbox.com/u/3067484/Website/patrickortman.jpg
+---
+
+This custom theme features many jQuery based animations and enhancements, as well as secure forms for quote requests. The theme was built from my own [theme framework](https://github.com/staydecent/sourdough).

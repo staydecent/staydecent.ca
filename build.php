@@ -65,7 +65,7 @@ require 'markdown.php';
  * Begin build, by iterating Entries
  * ------------------------------------------------------------------------
  */
-$entryIterator = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($config['dirs']['entries']));
+$entryIterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($config['dirs']['entries']));
 
 while ($entryIterator->valid())
 {
@@ -141,7 +141,7 @@ foreach ($dir as $fileinfo)
  * Copy everything else (Assets, static files, etc.)
  * ------------------------------------------------------------------------
  */
-$staticIterator = new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator(SOURCE));
+$staticIterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator(SOURCE));
 
 while ($staticIterator->valid())
 {

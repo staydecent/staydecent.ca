@@ -1,0 +1,6 @@
+client: Modern Tribe Inc.
+role: Front-end Development, WordPress Development
+images: http://dl.dropbox.com/u/3067484/Website/eventbrite.jpg
+---
+
+Working with <del>Shane and Peter, Inc.</del> <ins>Modern Tribe Inc.</ins>, I turned their redesign of the Eventbrite blog into a cross-browser compliant WordPress theme using the powerful Carrington Framework, featuring custom widgets and plugins.

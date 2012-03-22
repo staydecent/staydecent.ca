@@ -1,0 +1,48 @@
+# Adrian Unger
+Web design and development
+
+    staydecent.ca
+    hello@staydecent.ca
+    778 847 6782
+
+# Services
+- User Experience Design
+- Visual Design
+- Front-end Engineering
+- Product Development
+- Rapid Prototyping
+
+# Languages & Technologies
+- HTML and CSS (Latest and greatest)
+- JavaScript
+- PHP
+- Python
+- MySQL
+- MongoDB
+- AWS (S3, SimpleDB, etc.)
+- Google App Engine
+- Many APIs
+
+# Experience
+
+Freelance Designer and Web Developer at Staydecent (2007 - Present)
+---
+Various web projects for a wide-array of clients. Experience working in 
+remote teams with Shawn Johnston, tri.be and others.
+
+Jr. Developer at Engine Digital (2009 - 2010)
+---
+Front-end development for a wide-array of websites, apps, emails and intranets.
+
+WordPress Developer at Pallian Creative Inc. (2008 - 2009)
+---
+Created WordPress themes for various start-ups and stock trading websites.
+
+Intern at We The Collective (2007 - 2008)
+---
+Completed mock illustrations, layouts for print and advertising. 
+Learned about the printing process and fonts.
+
+
+For examples or a complete work history,
+please get in contact.

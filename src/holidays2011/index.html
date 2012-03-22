@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Holidays 2011 from Adrian Unger</title>
+
+    <meta name="description" content="Adrian Unger wishing you Happy Holidays in 2011!">
+    <meta name="author" content="Adrian Unger">
+
+    <link rel="stylesheet" href="assets/css/main-010.css">
+    <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="assets/js/respond.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+    <div class="inner">
+        <header>
+            <hgroup>
+                <h1>Happy Holidays</h1>
+                <h2>From Adrian Unger</h2>
+            </hgroup>
+        </header>
+
+        <div id="body">
+            <div id="card" class="drop">
+                <p>Hey Everyone,</p>
+                <p>Hope you had a great year! Thanks to everybody who had a hand in making my 2011 awesome.</p>
+                <p>See you in 2012,<br>Adrian</p>
+                <img id="stamp" src="assets/i/canadian-stamp.png">
+                <img id="lines" src="assets/i/lines.png">
+            </div>
+        </div>
+
+        <footer>
+            Uses <a href="http://letteringjs.com/">lettering.js</a> and <a href="http://fittextjs.com">fittext.js</a>. Follow @<a href="http://twitter.com/staydecent">Staydecent</a>!
+
+            <span style="margin:5px 0 0 10px;"><a href="https://twitter.com/share" class="twitter-share-button" data-via="staydecent" data-related="staydecent">Tweet</a></span>
+            
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </footer>
+    </div>
+
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script src="assets/js/plugins.js"></script>
+
+<script>
+$(document).ready(function() {
+    $("h1").lettering().fitText(0.8, { minFontSize: '64px', maxFontSize: '128px' });
+    $('h2').fitText(1.6, { minFontSize: '12px', maxFontSize: '36px' });
+
+    var title_count = $('h1 span').size();
+
+    $('h1 span').addClass('blur').each(function(i) {
+        var e = $(this);
+        e.fadeTo(0, 0.05);
+        setTimeout(function(){
+            e.fadeTo(500, 1).addClass('animate');
+        }, i*25);
+    });
+
+    setTimeout(function(){
+        $('h2').animate({
+            'opacity':'1',
+            'margin-top':'0px'
+        }, 600);
+        
+        $('.drop').addClass('animate');
+    }, title_count*25);
+});
+</script>
+</body>
+</html>
