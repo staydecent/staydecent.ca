@@ -7,6 +7,6 @@
 
         <p>I make money by designing and developing A+ quality websites. </p>
 
-        <p>I am currently <strong>not</strong> accepting new work.</p>
+        <p>I&rsquo;m available for select projects starting in June.</p>
     </div>
 </div></div>
