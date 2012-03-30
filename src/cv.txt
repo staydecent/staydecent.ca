@@ -1,48 +1,70 @@
-# Adrian Unger
-Web design and development
+ADRIAN UNGER
 
     staydecent.ca
     hello@staydecent.ca
-    778 847 6782
 
-# Services
-- User Experience Design
-- Visual Design
-- Front-end Engineering
-- Product Development
-- Rapid Prototyping
+    Vancouver, BC
 
-# Languages & Technologies
-- HTML and CSS (Latest and greatest)
-- JavaScript
-- PHP
-- Python
-- MySQL
-- MongoDB
-- AWS (S3, SimpleDB, etc.)
-- Google App Engine
-- Many APIs
 
-# Experience
+SERVICES
 
-Freelance Designer and Web Developer at Staydecent (2007 - Present)
+    - User Experience Design
+    - Multi-Device Web Development
+    - User Interface Development
+    - Front-end Engineering
+    - Product Development
+    - Rapid Prototyping
+
+
+LANGUAGES & TECHNOLOGIES
+
+    - HTML and CSS (Latest and greatest)
+    - JavaScript (jQuery)
+    - PHP (Many frameworks)
+    - Python (Django)
+    - MySQL
+    - MongoDB
+    - AWS (S3, SimpleDB, etc.)
+    - Google App Engine
+    - Many APIs
+
+
+EXPERIENCE
+
+    Freelance Designer and Web Developer at Staydecent 
+    2007 - Present
+
+        Design and built various web projects for a wide-array of clients. 
+        Experience working in remote teams (Shawn Johnston, tri.be and others).
+
+
+    Battlecache (Lead Developer) at Domogeneous Creative, Inc.
+    2011 - Present
+
+        Plan and implement the technical aspect of all web-based projects.
+
+
+    Jr. Developer at Engine Digital 
+    2009 - 2010
+
+        Front-end development for a wide-array of websites, apps, emails 
+        and intranets.
+
+
+    WordPress Developer at Pallian Creative Inc. 
+    2008 - 2009
+
+        Built WordPress themes for various start-ups and stock 
+        trading websites.
+
+
+    Intern at We The Collective 
+    2007 - 2008
+
+        Completed mock illustrations, layouts for print and advertising. 
+        Learned about the print process and typography.
+
+
 ---
-Various web projects for a wide-array of clients. Experience working in 
-remote teams with Shawn Johnston, tri.be and others.
-
-Jr. Developer at Engine Digital (2009 - 2010)
----
-Front-end development for a wide-array of websites, apps, emails and intranets.
-
-WordPress Developer at Pallian Creative Inc. (2008 - 2009)
----
-Created WordPress themes for various start-ups and stock trading websites.
-
-Intern at We The Collective (2007 - 2008)
----
-Completed mock illustrations, layouts for print and advertising. 
-Learned about the printing process and fonts.
-
-
-For examples or a complete work history,
+For examples or any questions,
 please get in contact.

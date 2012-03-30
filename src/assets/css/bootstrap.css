@@ -99,6 +99,8 @@ pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word;margin-bottom:2em;
 .gist pre{color:#000;}
 footer .meta{text-align:right;}
 ol.styled{padding:0;}ol.styled li{border-bottom:1px solid #f3f6f7;color:#e3e3e3;}ol.styled li .date{color:#7d7d7d;}
+dl{font-size:16px;}dl dt{font-weight:700;font-size:75%;}
+dl dd{margin:0 0 1em;}
 img{max-width:100%;}
 @-webkit-keyframes scale{from{-webkit-transform:scale(0);} 60%{-webkit-transform:scale(1.1);} 90%{-webkit-transform:scale(1);} to{-webkit-transform:scale(1);}}.scale,.invisible{visibility:hidden;}
 .scale.animate{visibility:visible;-webkit-animation:scale 0.6s;}
