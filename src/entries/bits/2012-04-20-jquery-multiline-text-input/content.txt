@@ -1,7 +1,7 @@
 title: jQuery Multiline Text Input
 ---
 
-<p class="big">A jQuery plugin that replaces a textarea with multiple text inputs, automatically appending a new input when the last is filled with content. On submit, the inputs are combined into a single textarea.</p>
+<p class="big">A jQuery plugin that replaces a textarea with multiple text inputs, automatically appending a new input when the last is filled with content.</p>
 
 I created this plugin as part of a provisionary coding task for an unnamed startup. The idea is to simplify server-side processing while having more control of the user input&mdash;And, hopefully, a better experience for the user. 
 
