@@ -27,6 +27,12 @@ function get_entries($cat, $desc = TRUE)
         $entries[$date]['slug']  = preg_replace($config['date_re'], '', $filename);
         $entries[$date]['title'] = ucwords(str_replace('-', ' ', $entries[$date]['slug']));
         $entries[$date]['url']   = SITE_URL . $cat . DS . $entries[$date]['slug'];
+
+        $content_file = $config['dirs']['entries'].DS.$cat.DS.$filename.DS. $config['content_file'];
+        $parsed = Parse::contents(file_get_contents($content_file));
+
+        if (array_key_exists('title', $parsed))
+            $entries[$date]['title'] = $parsed['title'];
     }
 
     if ($desc) krsort($entries);
