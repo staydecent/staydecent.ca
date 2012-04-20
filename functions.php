@@ -12,7 +12,7 @@ function get_entries($cat, $desc = TRUE)
     global $config;
 
     $files = scandir($config['dirs']['entries'].DS.$cat);
-    $entries = [];
+    $entries = array();
 
     foreach ($files as $filename) 
     {
