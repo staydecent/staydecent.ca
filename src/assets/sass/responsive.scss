@@ -17,8 +17,8 @@
 // -------------------------
 // Required since we compile the responsive stuff separately
 
-@import "variables.less"; // Modify this for custom colors, font-sizes, etc
-@import "mixins.less";
+@import "variables"; // Modify this for custom colors, font-sizes, etc
+@import "mixins";
 
 
 // RESPONSIVE CLASSES
@@ -42,45 +42,24 @@
   }
 
   .grossly-massive, .big {
-    font-size:@baseFontSize * 1;
+    font-size:$baseFontSize * 1;
   }
 
   .date {
     font-size:12px;
   }
 
-  #author {
-    .padding {
-      padding:0.2em 1.83em 0.4em;
-      text-align:center;
-      .clearfix();
-
-      img {
-        margin:1.83em 0 0;
-        max-width:100%;
-        float:none;
-        .border-radius(4px);
-      }
-
-      .content {
-        max-width:100%;
-        float:none;
-        text-align:left;
-      }
-    }
-  }
-
   blockquote {
     padding-left:2.4em;
     padding-bottom:0.4em;
-    font-size:@baseFontSize;
+    font-size:$baseFontSize;
     font-style:italic;
 
     &:before {
       top:-70px;
       left:-40px;
       content:'\201C';
-      font-size:@baseFontSize * 6;
+      font-size:$baseFontSize * 6;
     }
   }
 
@@ -97,7 +76,28 @@
   }
  
   .grossly-massive, .big {
-    font-size:@baseFontSize * 2;
+    font-size:$baseFontSize * 2;
+  }
+
+  #author {
+    .padding {
+      padding:0.2em 1.83em 0.4em;
+      text-align:center;
+      @include clearfix();
+
+      img {
+        margin:1.83em 0 0;
+        max-width:100%;
+        float:none;
+        @include border-radius(4px);
+      }
+
+      .content {
+        max-width:100%;
+        float:none;
+        text-align:left;
+      }
+    }
   }
 
 }

@@ -3,9 +3,10 @@
     
     <div class="content">
         <h6>About Adrian Unger</h6>
+
         <p>I live in a trailer on the <a href="http://ubcfarm.ubc.ca/" title="Website for UBC Farm">UBC Farm</a> in Vancouver, BC.</p>
 
-        <p>I make money by designing and developing A+ quality websites. </p>
+        <p>I work as a freelance web developer and product designer.</p>
 
         <p>I&rsquo;m available for select projects starting in June.</p>
     </div>

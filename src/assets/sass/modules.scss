@@ -1,3 +1,5 @@
+@import "variables";
+
 @-webkit-keyframes scale {
     from    { -webkit-transform:scale(0); }
     60%     { -webkit-transform:scale(1.1); }
@@ -18,12 +20,12 @@
 .tag {
     display: inline-block;
     font-size:12px;
-    background:@grayLight;
+    background:$grayLight;
     position:relative;
     margin-left:16px;
     padding:0px 8px 0px 4px;
     margin-top:0.5em;
-    .box-shadow(1px 1px 1px white);
+    @include box-shadow(1px 1px 1px white);
     opacity:0.85;
     
     &:before {
@@ -32,67 +34,67 @@
         width: 0;
         height: 0;
         border-top: 11px solid transparent;
-        border-right: 11px solid @grayLight;
+        border-right: 11px solid $grayLight;
         border-bottom: 11px solid transparent;
         margin: 0px 0 0 -15px;
     }
 
     &:after {
         content:"\2022";
-        color:@white;
+        color:$white;
         position: absolute;
         left:-5px;
     }
 
     &:hover {
-        .box-shadow(1px 1px 2px rgba(0,0,0,0.2));
+        @include box-shadow(1px 1px 2px rgba(0,0,0,0.2));
         opacity:1;
     }
 }
 
 // colors
 .tag:first-child {
-    background:@red;
+    background:$red;
 
     &:before {
-        border-right-color:@red;
+        border-right-color:$red;
     }
 }
 .tag:nth-child(2) {
-    background:@green;
+    background:$green;
 
     &:before {
-        border-right-color:@green;
+        border-right-color:$green;
     }
 }
 .tag:nth-child(3) {
-    background:@blue;
+    background:$blue;
 
     &:before {
-        border-right-color:@blue;
+        border-right-color:$blue;
     }
 }
 .tag:nth-child(4) {
-    background:@yellow;
+    background:$yellow;
 
     &:before {
-        border-right-color:@yellow;
+        border-right-color:$yellow;
     }
 }
 .tag:nth-child(5) {
-    background:@purple;
+    background:$purple;
 
     &:before {
-        border-right-color:@purple;
+        border-right-color:$purple;
     }
 }
 
 .tag:nth-child(6) {
-    background:@gray;
-    color:@white;
+    background:$gray;
+    color:$white;
 
     &:before {
-        border-right-color:@gray;
+        border-right-color:$gray;
     }
 }
 
@@ -104,7 +106,7 @@
   padding:1em 1.5em;
   margin:2em auto;
   color:rgba(0,0,0,0.6);
-  background:@yellow;
+  background:$yellow;
   overflow:hidden;
 
   &:before {
@@ -114,11 +116,11 @@
     left:0;
     border-width:0 0 16px 16px; /* This trick side-steps a webkit bug */
     border-style:solid;
-    border-color:#fff  darken(@yellow, 5%) darken(@yellow, 5%) #fff; /* A bit more verbose to work with .rounded too */
-    background:darken(@yellow, 5%); /* For when also applying a border-radius */
+    border-color:#fff  darken($yellow, 5%) darken($yellow, 5%) #fff; /* A bit more verbose to work with .rounded too */
+    background:darken($yellow, 5%); /* For when also applying a border-radius */
     display:block; width:0; /* Only for Firefox 3.0 damage limitation */
     /* Optional: shadow */
-    .box-shadow(0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2));
+    @include box-shadow(0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2));
   }
 }
 
@@ -148,7 +150,7 @@
   background-repeat: no-repeat;
   margin-top: 2px;
 
-  .ie7-restore-right-whitespace();
+  @include ie7-restore-right-whitespace();
 }
 .icon-white {
   background-image: url(../i/glyphicons-halflings-white.png);
@@ -292,9 +294,9 @@
   background-image: url(../images/custom/arrows_sprite.png);
   background-position: 0 0;
   background-repeat: no-repeat;
-  z-index:@zindexFixedNavbar;
+  z-index:$zindexFixedNavbar;
 
-  .ie7-restore-right-whitespace();
+  @include ie7-restore-right-whitespace();
 }
 
 .arrow-next {

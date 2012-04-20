@@ -5,6 +5,52 @@
  * Utility and helper functions
  * ------------------------------------------------------------------------
  */
+
+function get_entries($cat, $desc = TRUE)
+{
+    // exposes title, date, slug, url for entries
+    global $config;
+
+    $files = scandir($config['dirs']['entries'].DS.$cat);
+    $entries = [];
+
+    foreach ($files as $filename) 
+    {
+        if ( ! preg_match($config['date_re'], $filename, $date_match)) 
+        {
+            unset($files[array_search($filename, $files)]);
+            continue;
+        }
+
+        $date = strtotime(substr($date_match[0], 0, -1));
+
+        $entries[$date]['slug']  = preg_replace($config['date_re'], '', $filename);
+        $entries[$date]['title'] = ucwords(str_replace('-', ' ', $entries[$date]['slug']));
+        $entries[$date]['url']   = SITE_URL . $cat . DS . $entries[$date]['slug'];
+    }
+
+    if ($desc) krsort($entries);
+    return $entries;
+}
+
+function next_entry($entry)
+{
+    $entries = get_entries('articles') + get_entries('bits');
+    ksort($entries);
+
+    $current = $entry['date'];
+    $keys = array_keys($entries);
+    $ordinal = (array_search($current, $keys)-1) % count($keys);
+
+    if (array_key_exists($ordinal, $keys))
+    {
+        $next = $keys[$ordinal];
+        return $entries[$next];
+    }
+
+    return FALSE;
+}
+
 function get_title($filename)
 {
     if (stristr($filename, 'index'))

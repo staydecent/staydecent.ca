@@ -1,0 +1,68 @@
+// GLOBAL VALUES
+// --------------------------------------------------
+
+// Monoschrome
+$black:                 #1a1a1a;
+$grayDarker:            #4a4a4a;
+$grayDark:              #555;
+$gray:                  #7D7D7D;
+$grayLight:             #e3e3e3;
+$grayLighter:           #F3F6F7;
+$white:                 #FaFaFa;
+
+// Accent colors
+$blue:                  #049cdb;
+$green:                 #2BB673;
+$red:                   #f44;
+$yellow:                #Faf3c7;
+$orange:                #f89406;
+$pink:                  #F37966;
+$purple:                #7979D1;
+
+// Links
+$linkColor:             $red;
+$linkColorHover:        darken($red, 15%);
+
+// Typography
+$baseFontSize:          18px;
+$baseFontFamily:        'Open Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+$baseLineHeight:        1.8;
+$textColor:             $gray;
+
+$serif:                 Georgia, Times, serif;
+$monospace:             'Menlo', 'Monaco', 'Consolas', monospace;
+
+// Buttons
+$primaryButtonBackground:    $grayLighter;
+
+
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+
+// Z-index master list
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+$zindexDropdown:        1000;
+$zindexPopover:         1010;
+$zindexTooltip:         1020;
+$zindexFixedNavbar:     1030;
+$zindexModalBackdrop:   1040;
+$zindexModal:           1050;
+
+// Input placeholder text color
+$placeholderText:       $grayLight;
+
+
+
+// GRID
+// --------------------------------------------------
+
+// Default 940px grid
+$gridColumns:             12;
+$gridColumnWidth:         60px;
+$gridGutterWidth:         20px;
+
+// Fluid grid
+$fluidGridColumnWidth:    6.382978723%;
+$fluidGridGutterWidth:    2.127659574%;

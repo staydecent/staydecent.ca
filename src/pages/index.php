@@ -34,16 +34,20 @@
 
     <?php include $config['dirs']['layout'].'/author-part.php'; ?>
 
-    <h4>Recent posts</h4>
-    <ol class="styled">
-    <?php $limit = 0; foreach ($posts as $date => $entry) : if (++$limit > 5) break; ?>
-        <li>
-            <a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a>
-            &nbsp;&middot;
-            <span class="meta date"><?php echo date("M j, Y", $date) ?></span>
-        </li>
-    <?php endforeach; ?>
-    </ol>
+    <div class="post-navigation">
+        <h4 class="padding">Previous posts</h4>
+        <?php $posts = get_entries('articles') + get_entries('bits'); krsort($posts); ?>
+        <ol class="styled">
+        <?php $limit = 0; foreach ($posts as $date => $entry) : if (++$limit > 6) break; ?>
+            <?php if ($limit === 1) continue; ?>
+            <li>
+                <a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a>
+                &nbsp;&middot;
+                <span class="meta date"><?php echo date("M j, Y", $date) ?></span>
+            </li>
+        <?php endforeach; ?>
+        </ol>
+    </div>
 
 </div>
 
