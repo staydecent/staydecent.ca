@@ -15,6 +15,13 @@
     -webkit-animation:scale 0.6s;
 }
 
+.caption {
+  display:none;
+  font-size:75%;
+  font-style:italic;
+  color:$gray;
+}
+
 // AND SHAPES
 // ----------
 .tag {
