@@ -30,7 +30,6 @@
             </footer>
         </article>  
 
-        <?php include $config['dirs']['layout'].'/author-part.php'; ?>
 
 </div>
 

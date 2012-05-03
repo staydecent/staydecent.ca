@@ -1,6 +1,7 @@
 
+<footer id="foot"><div class="container-fluid">
 
-<footer id="foot" class="container-fluid">
+    <?php include $config['dirs']['layout'].'/author-part.php'; ?>
     
     <nav class="centre"><small>
         <a href="<?php echo SITE_URL ?>archives" title="View all posts by Adrian Unger">Archives</a>&nbsp;&middot;
@@ -8,7 +9,7 @@
         <a href="http://twitter.com/staydecent" target="_blank" title="Adrian Unger on Twitter">Twitter</a>
     </small></nav>  
 
-</footer>
+</div></footer>
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>

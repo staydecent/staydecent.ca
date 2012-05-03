@@ -18,7 +18,6 @@
             </footer>
         </article>  
 
-        <?php include $config['dirs']['layout'].'/author-part.php'; ?>
         <?php include $config['dirs']['layout'].'/post-navigation-part.php'; ?>
 
 </div>

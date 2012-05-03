@@ -32,8 +32,6 @@
     }
     ?>
 
-    <?php include $config['dirs']['layout'].'/author-part.php'; ?>
-
     <div class="post-navigation">
         <h4 class="padding">Previous posts</h4>
         <?php $posts = get_entries('articles') + get_entries('bits'); krsort($posts); ?>
