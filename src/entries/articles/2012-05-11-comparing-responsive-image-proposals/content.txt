@@ -27,7 +27,7 @@ With many voicing their preference for the latter. Mainly because:
 - It's easier to read
 - It's familiar (see the `<video>` and `<source>` tags)
 
-And, I agree. But, [Simon Pieters](link) brings up some points on the [complexity of implementation](http://lists.whatwg.org/pipermail/whatwg-whatwg.org/2012-May/035784.html). In brief, the `srcset` attribute is easier to implement in the spec, and would  avoid some pitfalls that the `<picture>` element would create for JavaScript developers. Read the above link for details.
+And, I agree. But, [Simon Pieters](https://twitter.com/#!/zcorpan) brings up some points on the [complexity of implementation](http://lists.whatwg.org/pipermail/whatwg-whatwg.org/2012-May/035784.html). In brief, the `srcset` attribute is easier to implement in the spec, and would  avoid some pitfalls that the `<picture>` element would create for JavaScript developers. Read the above link for details.
 
 ## Pick one
 
