@@ -327,6 +327,13 @@ samp {
     font-size:1em;
 }
 
+p code,
+li code {
+  color:#000;
+  background:$grayLighter;
+  @include border-radius(6px);
+}
+
 pre {
     white-space:pre;
     white-space:pre-wrap;
