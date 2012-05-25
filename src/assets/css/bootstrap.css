@@ -152,18 +152,18 @@ body { font-family: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", sans-se
 
 #head { padding: 1.5em 0 2em 0; border-bottom: 1px solid #e3e3e3; }
 
-#foot { padding: 2em 0; background: #e3e3e3; color: #0a0a0a; }
+#foot { padding: 2em 0; background: #f5f8f9; color: #0a0a0a; }
 
 #foot nav { margin-top: 2em; }
 
 .padding { margin-top: 2.5em; }
 
 article { padding-top: 2em; }
-article footer { opacity: 0.8; padding: 0.4em 0 0; border-top: 4px solid #f3f6f7; }
+article footer { opacity: 0.8; padding: 0.4em 0 0; border-top: 4px solid #f5f8f9; }
 
 article > p:not(.big), article h2, article h3, article h4, article h5, article h6, article ol, article ul, article footer, article .note, article .aside, #author { width: 64%; max-width: 600px; min-width: 300px; margin-left: auto; margin-right: auto; }
 
-.post-navigation { margin-top: 4em; margin-bottom: 4em; border-left: 4px solid #f3f6f7; padding-left: 1em; }
+.post-navigation { margin-top: 4em; margin-bottom: 4em; border-left: 4px solid #f5f8f9; padding-left: 1em; }
 .post-navigation .styled { padding-left: 1.4em; }
 
 .container-fluid { position: relative; width: auto; max-width: 1020px; min-width: 260px; padding-left: 20px; padding-right: 20px; *zoom: 1; display: block; margin-left: auto; margin-right: auto; }
@@ -178,23 +178,23 @@ h6 { margin-top: 2.4em; margin-bottom: 0.6em; }
 
 #site-title { font-family: "Droid Serif", serif; font-weight: 400; text-transform: none; margin-bottom: 0; }
 
-a { color: #2bb673; text-decoration: none; }
+a { color: #f37966; text-decoration: none; }
 
-a:hover { color: #001a9f; }
+a:hover { color: #ed3b1f; }
 
 a > i { margin-top: 3px; }
 
 a.title { color: inherit; }
 
-.btn, [class^="btn-"] { position: relative; display: inline-block; padding: 0px 8px; margin-bottom: 2px; color: #2bb673; line-height: 1.8; background: white; border: 8px solid #2bb673; -webkit-box-shadow: 1px 1px 1px white; -moz-box-shadow: 1px 1px 1px white; box-shadow: 1px 1px 1px white; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }
-.btn:hover, [class^="btn-"]:hover { color: white; background: #2bb673; -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
+.btn, [class^="btn-"] { position: relative; display: inline-block; padding: 0px 8px; margin-bottom: 2px; color: #f37966; line-height: 1.8; background: white; border: 8px solid #f37966; -webkit-box-shadow: 1px 1px 1px white; -moz-box-shadow: 1px 1px 1px white; box-shadow: 1px 1px 1px white; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }
+.btn:hover, [class^="btn-"]:hover { color: white; background: #f37966; -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
 .btn:active, [class^="btn-"]:active { margin-top: 2px; margin-bottom: 0; }
 
 .btn-small { border-width: 0; background: #e3e3e3; color: #0a0a0a; }
 
 .grossly-massive, .big { font-family: "Droid Serif", serif; font-size: 54px; font-weight: 700; font-style: italic; line-height: 1.385; color: #0a0a0a; list-style: none; margin: 0; padding: 0; }
 .grossly-massive li, .big li { display: inline; }
-.grossly-massive li + li:before, .big li + li:before { content: '\2014'; color: #26a166; }
+.grossly-massive li + li:before, .big li + li:before { content: '\2014'; color: #f1644e; }
 
 .meta { font-family: "Menlo", "Monaco", "Consolas", monospace; font-size: 16px; line-height: -0.2; }
 
@@ -220,7 +220,7 @@ small { font-size: 15px; }
 
 pre, code, kbd, samp { font-family: 'Andale Mono', 'Consolas', monospace; _font-family: 'courier new', monospace; font-size: 1em; }
 
-p code, li code { color: #000; background: #f3f6f7; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
+p code, li code { color: #000; background: #f5f8f9; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
 
 pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; margin-bottom: 2em; background: #4a4a4a; border-bottom: 1px solid rgba(255, 255, 255, 0.9); color: #fff; padding: 1.5em 2em; }
 
@@ -229,7 +229,7 @@ pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; margin-bot
 footer .meta { text-align: right; }
 
 ol.styled { padding: 0; }
-ol.styled li { border-bottom: 1px solid #f3f6f7; color: #e3e3e3; }
+ol.styled li { border-bottom: 1px solid #f5f8f9; color: #e3e3e3; }
 ol.styled li .date { color: #7d7d7d; }
 
 dl { font-size: 16px; }

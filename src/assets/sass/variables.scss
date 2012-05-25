@@ -7,7 +7,7 @@ $grayDarker:            #4a4a4a;
 $grayDark:              #555;
 $gray:                  #7D7D7D;
 $grayLight:             #e3e3e3;
-$grayLighter:           #F3F6F7;
+$grayLighter:           #F5F8F9;
 $white:                 #fff;
 
 // Accent colors
@@ -15,13 +15,13 @@ $blue:                  #0027eb;
 $green:                 #2BB673;
 $red:                   #ff002c;
 $yellow:                #Faf3c7;
-$orange:                #f89406;
+$orange:                #F37966;
 $pink:                  #f33949;
 $purple:                #3c00ff;
 
 // Links
-$linkColor:             $green;
-$linkColorHover:        darken($blue, 15%);
+$linkColor:             $orange;
+$linkColorHover:        darken($orange, 15%);
 
 // Typography
 $baseFontSize:          18px;
