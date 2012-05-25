@@ -11,17 +11,21 @@ body {
   line-height:$baseLineHeight;
   color:$black;
   background:$white;
-  border-top:4px solid $pink;
 }
 
 #head { 
-  margin:2em 0 0;
+  padding:1.5em 0 2em 0;
+  border-bottom:1px solid $grayLight;
 }
 
 #foot {
   padding:2em 0;
-  background:$grayLighter;
-  border-bottom:8px solid $white;
+  background:$grayLight;
+  color:$black;
+}
+
+#foot nav {
+  margin-top:2em;
 }
 
 .padding {
@@ -71,62 +75,6 @@ article .aside,
   }
 }
 
-#author {
-  position:relative;
-  margin-top:-40px;
-  margin-bottom:40px;
-  font-size:$baseFontSize - 4;
-  color:$grayDark;
-  @include clearfix;
-
-  .content {
-    position:relative;
-    max-width:64%;
-    padding:0 20px;
-    margin-top:16%;
-    margin-left:auto;
-    margin-right:auto;
-    background:$white;
-    border: 1px solid $grayLight;
-    @include border-radius(6px);
-
-    h6 {
-      margin-top:1em;
-    }
-
-    .arrow {
-      position: absolute;
-      top: -13px;
-      left: 46%;
-      width: 32px;
-      height: 14px;
-      background:transparent url(../i/author-arrow.png) no-repeat top left;
-      z-index: 1030;
-    }
-  }
-
-  img {
-    position:absolute;
-    top:-6em;
-    left:40%;
-    margin:20px auto 0px auto;
-    max-width:24%;
-    @include border-radius(6em);
-    -webkit-box-shadow:1px 1px 0px $white, 2px 2px 0px $white, 3px 3px 0px $white, 4px 4px 0px $white,
-    -1px -1px 0px $white, -2px -2px 0px $white, -3px -3px 0px $white, -4px -4px 0px $white,
-    -1px 1px 0px $white, -2px 2px 0px $white, -3px 3px 0px $white, -4px 4px 0px $white,
-    1px -1px 0px $white, 2px -2px 0px $white, 3px -3px 0px $white, 4px -4px 0px $white;
-    -moz-box-shadow:1px 1px 0px $white, 2px 2px 0px $white, 3px 3px 0px $white, 4px 4px 0px $white,
-    -1px -1px 0px $white, -2px -2px 0px $white, -3px -3px 0px $white, -4px -4px 0px $white,
-    -1px 1px 0px $white, -2px 2px 0px $white, -3px 3px 0px $white, -4px 4px 0px $white,
-    1px -1px 0px $white, 2px -2px 0px $white, 3px -3px 0px $white, 4px -4px 0px $white;
-    box-shadow:1px 1px 0px $white, 2px 2px 0px $white, 3px 3px 0px $white, 4px 4px 0px $white,
-    -1px -1px 0px $white, -2px -2px 0px $white, -3px -3px 0px $white, -4px -4px 0px $white,
-    -1px 1px 0px $white, -2px 2px 0px $white, -3px 3px 0px $white, -4px 4px 0px $white,
-    1px -1px 0px $white, 2px -2px 0px $white, 3px -3px 0px $white, 4px -4px 0px $white;
-  }
-}
-
 
 //
 // Layouts
@@ -154,15 +102,18 @@ h3,
 h4,
 h5,
 h6 {
+  font-family:$serif;
   font-weight:700;
   line-height:1.6;
   margin:1.66em 0 0.83em 0;
 }
 
 h1 {
+  font-family:$baseFontFamily;
   font-size:$baseFontSize;
   font-weight:800;
   text-transform:uppercase;
+  color:$gray;
   margin:0.83em 0;
 }
 
@@ -172,7 +123,7 @@ h6 {
 }
 
 #site-title {
-  font-family:'Chivo';
+  font-family:$serif;
   font-weight:400;
   text-transform:none;
   margin-bottom:0;
@@ -180,15 +131,17 @@ h6 {
 // LINKS
 // -----
 a {
-  color:$pink;
+  color:$linkColor;
   text-decoration:none;
 }
 a:hover {
-  color:$red;
+  color:$linkColorHover;
 }
-
 a > i {
   margin-top:3px;
+}
+a.title {
+  color:inherit;
 }
 
 .btn,
@@ -197,16 +150,16 @@ a > i {
   display:inline-block;
   padding:0px 8px;
   margin-bottom:2px;
-  color:$red;
+  color:$linkColor;
   line-height:$baseLineHeight;
   background:$white;
-  border:8px solid $red;
+  border:8px solid $linkColor;
   @include box-shadow(1px 1px 1px white);
   @include border-radius(2px);
 
   &:hover {
     color:$white;
-    background:$red;
+    background:$linkColor;
     @include box-shadow(1px 1px 2px rgba(0,0,0,0.2));
   }
 
@@ -227,11 +180,12 @@ a > i {
 
 .grossly-massive,
 .big {
-  font-family:'Chivo', 'Open Sans', sans-serif;
+  font-family:$serif;
   font-size:$baseFontSize * 3;
-  font-weight:900;
+  font-weight:700;
+  font-style:italic;
   line-height:$baseLineHeight / 1.3;
-  color:$grayDark;
+  color:$black;
   list-style:none;
   margin:0;
   padding:0;
@@ -244,7 +198,7 @@ a > i {
     content:'\2014'; // mdash
     // content:'\21D2'; // dbl arrow
     // content:' \00D7'; // x
-    color:darken($red, 5%);
+    color:darken($linkColor, 5%);
   }
 
 }
@@ -264,7 +218,7 @@ p {
 }
 
 article > p:not(.big) {
-  color:$grayDarker;
+  color:$black;
 }
 
 blockquote {
@@ -288,7 +242,7 @@ blockquote {
     left:0;
     content:'\201C';
     font-size:$baseFontSize * 8;
-    font-family:'Chivo';
+    font-family:$serif;
     color:$grayLight;
   }
 }

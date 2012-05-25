@@ -1,5 +1,7 @@
 <?php 
 
+date_default_timezone_set('America/Vancouver');
+
 define('DS', DIRECTORY_SEPARATOR);
 define('ROOT', getcwd() . DS);
 define('SOURCE', ROOT . 'src' . DS);
