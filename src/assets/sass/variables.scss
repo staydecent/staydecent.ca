@@ -7,7 +7,7 @@ $grayDarker:            #4a4a4a;
 $grayDark:              #555;
 $gray:                  #7D7D7D;
 $grayLight:             #e3e3e3;
-$grayLighter:           #F5F8F9;
+$grayLighter:           #ebf9f9;
 $white:                 #fff;
 
 // Accent colors
@@ -25,12 +25,13 @@ $linkColorHover:        darken($orange, 15%);
 
 // Typography
 $baseFontSize:          18px;
-$baseFontFamily:        'Open Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+$baseFontFamily:        'gentium book basic', serif;
 $baseLineHeight:        1.8;
 $textColor:             $gray;
 
-$serif:                 'Droid Serif', serif;
+$serif:                 'gentium book basic', serif;
 $monospace:             'Menlo', 'Monaco', 'Consolas', monospace;
+$accentFamily:          'lato', 'lucida grande', 'lucida sans unicode', sans-serif;
 
 // Buttons
 $primaryButtonBackground:    $grayLighter;

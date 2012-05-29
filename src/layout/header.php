@@ -15,8 +15,8 @@
     ?></title>
 
     <link rel="stylesheet" href="<?php echo SITE_URL ?>assets/css/bootstrap.css">
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700,800' rel='stylesheet' type='text/css'>  
+    <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>  
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
