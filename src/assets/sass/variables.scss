@@ -3,16 +3,16 @@
 
 // Monoschrome
 $black:                 #0a0a0a;
-$grayDarker:            #4a4a4a;
+$grayDarker:            #1a1a1a;
 $grayDark:              #555;
 $gray:                  #7D7D7D;
 $grayLight:             #e3e3e3;
-$grayLighter:           #ebf9f9;
+$grayLighter:           #f5ffff;
 $white:                 #fff;
 
 // Accent colors
 $blue:                  #0027eb;
-$green:                 #2BB673;
+$green:                 #7eab65;
 $red:                   #ff002c;
 $yellow:                #Faf3c7;
 $orange:                #F37966;
@@ -24,12 +24,12 @@ $linkColor:             $orange;
 $linkColorHover:        darken($orange, 15%);
 
 // Typography
-$baseFontSize:          18px;
-$baseFontFamily:        'gentium book basic', serif;
+$baseFontSize:          16px;
+$baseFontFamily:        helvetica, arial, sans-serif;
 $baseLineHeight:        1.8;
-$textColor:             $gray;
+$textColor:             $grayDarker;
 
-$serif:                 'gentium book basic', serif;
+$serif:                 Garamond, serif;
 $monospace:             'Menlo', 'Monaco', 'Consolas', monospace;
 $accentFamily:          'lato', 'lucida grande', 'lucida sans unicode', sans-serif;
 

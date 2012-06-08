@@ -9,19 +9,12 @@ body {
   font-family:$baseFontFamily;
   font-size:$baseFontSize;
   line-height:$baseLineHeight;
-  color:$black;
+  color:$textColor;
   background:$grayLighter;
 }
 
-#head { 
-  padding:1.5em 0 2em 0;
-  background:$white;
-}
-
 #foot {
-  padding:2em 0;
-  background:$grayDarker;
-  color:$white;
+  padding-bottom:1em;
 }
 
 #foot nav {
@@ -35,43 +28,36 @@ body {
 // PAGE ELEMENTS
 // -------------
 
+#tree {
+  width:85px;
+  height:102px;
+  background:url(../i/tree-scaled.png) no-repeat;
+  display:block;
+  margin:3em auto 0;
+  overflow:hidden;
+  text-indent:-9999em;
+  @include transition(all .2s ease-in-out);
+
+  &:hover {
+    cursor:pointer;
+    @include scale(1.1)
+  }
+}
+
 article {
-  padding-top:2em;
 
   footer {
-    opacity:0.8;
     padding:0.4em 0 0;
     border-top:4px solid $grayLighter;
   }
 }
 
-article > p:not(.big),
-article h2,
-article h3,
-article h4,
-article h5,
-article h6,
-article ol,
-article ul,
-article footer,
-article .note,
-article .aside,
-#author {
-  width:64%;
-  max-width:600px;
-  min-width:300px;
-  margin-left:auto;
-  margin-right:auto;
-}
-
 .post-navigation {
   margin-top:4em;
   margin-bottom:4em;
-  border-left:4px solid $grayLighter;
-  padding-left:1em;
 
-  .styled {
-    padding-left:1.4em;
+  h4 {
+    margin:0;
   }
 }
 
@@ -85,7 +71,7 @@ article .aside,
 .container-fluid {
   position:relative;
   width:auto;
-  max-width:1020px;
+  max-width:600px;
   min-width:260px;
   padding-left: $gridGutterWidth;
   padding-right: $gridGutterWidth;
@@ -103,18 +89,10 @@ h4,
 h5,
 h6 {
   font-family:$accentFamily;
-  font-weight:700;
-  line-height:1.6;
+  font-weight:900;
+  line-height:1.4;
   margin:1.66em 0 0.83em 0;
-}
-
-h1 {
-  font-family:$baseFontFamily;
-  font-size:$baseFontSize;
-  font-weight:800;
-  text-transform:uppercase;
-  color:$gray;
-  display:inline;
+  color:$black;
 }
 
 h6 {
@@ -122,13 +100,7 @@ h6 {
   margin-bottom:0.6em;
 }
 
-#site-title {
-  font-family:$accentFamily;
-  font-size:$baseFontSize - 2;
-  font-weight:900;
-  text-transform:uppercase;
-  margin-bottom:0;
-}
+
 // LINKS
 // -----
 a {
@@ -181,11 +153,11 @@ a.title {
 
 .grossly-massive,
 .big {
-  font-family:$accentFamily;
-  font-size:$baseFontSize * 3;
-  font-weight:900;
-  line-height:$baseLineHeight / 1.3;
-  color:$black;
+  font-size:$baseFontSize + 2;
+  font-weight:400;
+  line-height:$baseLineHeight;
+  color:$textColor;
+  border-bottom:1px solid $white;
   list-style:none;
   margin:0;
   padding:0;
@@ -215,11 +187,6 @@ a.title {
 
 p {
   margin:1em 0;
-}
-
-article > p:not(.big) {
-  font-size:$baseFontSize + 2;
-  color:$black;
 }
 
 blockquote {
@@ -259,32 +226,18 @@ blockquote > p {
   margin:0;
 }
 
-strong {
-  font-weight:600;
-  color:#000;
-}
-
-strong.extra {
-  font-weight:800;
-  font-size:$baseFontSize + 1;
-}
-
-small {
-  font-size:$baseFontSize - 3;
-}
-
 pre,
 code,
 kbd,
 samp {
-    font-family:'Andale Mono', 'Consolas', monospace;
-    _font-family:'courier new', monospace;
-    font-size:1em;
+    font-family:$monospace;
+    font-size:.8em;
+    line-height:1.4;
 }
 
 p code,
 li code {
-  color:#000;
+  color:$black;
   background:$grayLighter;
   @include border-radius(6px);
 }
@@ -294,13 +247,13 @@ pre {
     white-space:pre-wrap;
     word-wrap:break-word;
     margin-bottom:2em;
-    background:$grayDarker;
+    background:$black;
     border-bottom:1px solid rgba(255,255,255,0.9);
-    color:#fff;
+    color:$white;
     padding:1.5em 2em;
 }
 .gist pre {
-    color:#000;
+    color:$black;
 }
 
 footer .meta {
@@ -312,10 +265,17 @@ footer .meta {
 
 ol.styled {
   padding:0;
+  list-style:none;
 
   li {
-    border-bottom:1px solid $grayLighter;
     color:$grayLight;
+    margin:0;
+    padding:0;
+
+    a {
+      border-bottom:1px solid $grayLight;
+      font-size:$baseFontSize + 2;
+    }
 
     .date {
       color:$gray;

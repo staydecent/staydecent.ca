@@ -41,14 +41,6 @@
     font-size:14px;
   }
 
-  .grossly-massive, .big {
-    font-size:$baseFontSize * 1;
-  }
-
-  .date {
-    font-size:12px;
-  }
-
   blockquote {
     padding-left:2.4em;
     padding-bottom:0.4em;
@@ -63,13 +55,19 @@
     }
   }
 
+  article > p:not(.big),
+  article h2,
+  article h3,
+  article h4,
+  article h5,
+  article h6,
+  article ol,
+  article ul,
+  article footer,
+  article .note,
+  article .aside,
   #author {
-    .content {
-      margin-top:24%;
-    }
-    img {
-      top:-4em;
-    }
+    width:auto;
   }
 
 }
@@ -82,31 +80,6 @@
 
   body {
     font-size:16px;
-  }
- 
-  .grossly-massive, .big {
-    font-size:$baseFontSize * 2;
-  }
-
-  #author {
-    .padding {
-      padding:0.2em 1.83em 0.4em;
-      text-align:center;
-      @include clearfix();
-
-      img {
-        margin:1.83em 0 0;
-        max-width:100%;
-        float:none;
-        @include border-radius(4px);
-      }
-
-      .content {
-        max-width:100%;
-        float:none;
-        text-align:left;
-      }
-    }
   }
 
 }

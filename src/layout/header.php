@@ -15,8 +15,7 @@
     ?></title>
 
     <link rel="stylesheet" href="<?php echo SITE_URL ?>assets/css/bootstrap.css">
-    <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>  
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic' rel='stylesheet' type='text/css'>
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -40,7 +39,6 @@
 
 <header id="head" class="centre">
 
-  <h1 id="site-title"><a class="black" href="<?php echo SITE_URL ?>" title="Homepage">Adrian Unger</a></h1> 
-  <small>Design, nature, technology, etc.</small>
+    <a id="tree" href="<?php echo SITE_URL ?>" title="Home" rel="home">Home</a>
 
 </header>

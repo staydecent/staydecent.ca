@@ -2,42 +2,21 @@
 
 <div role="main" id="main" class="container-fluid">
 
-    <?php
-    $posts = $entries['articles'] + $entries['bits'];
-    krsort($posts);
+    <article>
+        <header>
+            <h1>I&rsquo;m Adrian Unger</h1>  
+        </header>
+        
+        <p>I&rsquo;m a software developer at <a href="//ecquire.com" target="_blank">Ecquire</a>. Previously, I ran a freelance design practice under the alias <em>Staydecent</em>. I currently live in a trailer on a <a href="//ubcfarm.ca" target="_blank">farm</a> in a <a href="//wikitravel.org/en/Vancouver" target="_blank">city</a>.</p>
 
-    $limit = 0;
-    foreach ($posts as $date => $entry)
-    {
-        if (++$limit > 1) break;
-        // remove this post from $posts
-        unset($posts[$date]);
-        ?>
-        <article>
-            <header>
-                <h1><a class="black" href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h1>  
-            </header>
-            
-            <?php echo $entry['body'] ?>
-
-            <footer class="meta">
-                <i class="icon-calendar"></i> Published <a href="<?php echo $entry['url']; ?>"><?php echo date("F j, Y", $date) ?></a>
-                <i class="icon-align-left"></i> <?php echo str_word_count($entry['body']) ?> words
-
-                <a href="https://twitter.com/intent/tweet?screen_name=staydecent" class="twitter-mention-button" data-related="staydecent">Tweet to @staydecent</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            </footer>
-        </article>        
-        <?php
-    }
-    ?>
+        <p>I enjoy homesteading, hiking and learning&mdash;among other things.</p>
+    </article>          
 
     <div class="post-navigation">
-        <h4 class="padding">Previous posts</h4>
+        <h4>Writing</h4>
         <?php $posts = get_entries('articles') + get_entries('bits'); krsort($posts); ?>
         <ol class="styled">
         <?php $limit = 0; foreach ($posts as $date => $entry) : if (++$limit > 6) break; ?>
-            <?php if ($limit === 1) continue; ?>
             <li>
                 <a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a>
                 &nbsp;&middot;
