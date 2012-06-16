@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="<?php echo SITE_URL ?>assets/css/bootstrap.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic' rel='stylesheet' type='text/css'>
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>

@@ -6,19 +6,15 @@
 // ---------
 
 body {
-  font-family:$baseFontFamily;
+  font-family:$serif;
   font-size:$baseFontSize;
   line-height:$baseLineHeight;
   color:$textColor;
-  background:$grayLighter;
+  background:$white;
 }
 
 #foot {
-  padding-bottom:1em;
-}
-
-#foot nav {
-  margin-top:2em;
+  padding-bottom:2em;
 }
 
 .padding {
@@ -49,10 +45,15 @@ article {
   footer {
     padding:0.4em 0 0;
     border-top:4px solid $grayLighter;
+
+    [class^="icon-"] {
+      margin-top:1px;
+    }
   }
 }
 
 .post-navigation {
+  font-size:$baseFontSize + 6;
   margin-top:4em;
   margin-bottom:4em;
 
@@ -71,7 +72,7 @@ article {
 .container-fluid {
   position:relative;
   width:auto;
-  max-width:600px;
+  max-width:680px;
   min-width:260px;
   padding-left: $gridGutterWidth;
   padding-right: $gridGutterWidth;
@@ -91,7 +92,7 @@ h6 {
   font-family:$accentFamily;
   font-weight:900;
   line-height:1.4;
-  margin:1.66em 0 0.83em 0;
+  margin:1.66em 0 0.23em 0;
   color:$black;
 }
 
@@ -153,11 +154,8 @@ a.title {
 
 .grossly-massive,
 .big {
-  font-size:$baseFontSize + 2;
   font-weight:400;
   line-height:$baseLineHeight;
-  color:$textColor;
-  border-bottom:1px solid $white;
   list-style:none;
   margin:0;
   padding:0;
@@ -177,7 +175,7 @@ a.title {
 
 .meta {
   font-family:$monospace;
-  font-size:$baseFontSize - 2;
+  font-size:$baseFontSize - 3;
   line-height:$baseLineHeight - 2;
 }
 
@@ -191,39 +189,30 @@ p {
 
 blockquote {
   position:relative;
-  color:$gray;
+  color:$grayDarker;
   margin-left:0;
   margin-right:0;
-  padding-left:5em;
-  padding-bottom:1em;
+  padding-left:2em;
+  padding-bottom:0;
   font-size:$baseFontSize * 1.4;
   font-style:italic;
+  border-left:4px solid $grayLighter;
+
+  p {
+    position:relative;
+    font-style:italic;
+    color:lighten($textColor, 25%);
+    margin:0;
+  }
 
   footer {
     font-size:$baseFontSize - 2;
     line-height:$baseLineHeight - 4;
   }
-
-  &:before {
-    position:absolute;
-    top:-100px;
-    left:0;
-    content:'\201C';
-    font-size:$baseFontSize * 8;
-    font-family:$serif;
-    color:$grayLight;
-  }
 }
 
 article blockquote > p {
   font-size:$baseFontSize + 2;
-}
-
-blockquote > p {
-  position:relative;
-  font-style:italic;
-  color:$gray;
-  margin:0;
 }
 
 pre,
