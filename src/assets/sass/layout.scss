@@ -27,9 +27,10 @@ body {
 #tree {
   width:85px;
   height:102px;
-  background:url(../i/tree-scaled.png) no-repeat;
+  background:url(../i/tree-scaled.png) no-repeat 0 50px;
   display:block;
-  margin:3em auto 0;
+  margin:0 auto;
+  padding-top:50px;
   overflow:hidden;
   text-indent:-9999em;
   @include transition(all .2s ease-in-out);
@@ -56,6 +57,7 @@ article {
   font-size:$baseFontSize + 6;
   margin-top:4em;
   margin-bottom:4em;
+  text-align:center;
 
   h4 {
     margin:0;
@@ -89,11 +91,37 @@ h3,
 h4,
 h5,
 h6 {
-  font-family:$accentFamily;
+  font-family:$baseFontFamily;
   font-weight:900;
   line-height:1.4;
+  text-transform:uppercase;
+  text-align:center;
   margin:1.66em 0 0.23em 0;
   color:$black;
+}
+
+#site-title {
+  color:$linkColor;
+  font-size:200px;
+  font-weight:400;
+  font-family:'Caesar Dressing';
+  line-height:.7;
+  text-transform:lowercase;
+  text-align:left;
+  margin:0;
+
+  span:nth-child(1n+1) {
+    color:$orange;
+  }
+  span:nth-child(2n+2) {
+    color:$blue;
+  }
+  span:nth-child(3n+3) {
+    color:$yellow;
+  }
+  span:nth-child(4n+4) {
+    color:$green;
+  }
 }
 
 h6 {
@@ -248,6 +276,11 @@ pre {
 footer .meta {
   text-align:right;
 }
+
+.orange {color:$orange !important;}
+.yellow {color:$yellow !important;}
+.green {color:$green !important;}
+.blue {color:$blue !important;}
 
 // LISTS
 // -----

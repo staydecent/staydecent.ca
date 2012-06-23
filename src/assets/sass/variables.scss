@@ -11,11 +11,11 @@ $grayLighter:           #f1f4ea;
 $white:                 #fff;
 
 // Accent colors
-$blue:                  #0027eb;
-$green:                 #00722d;
+$blue:                  #56b3a9;
+$green:                 #7eab65;
 $red:                   #ff002c;
-$yellow:                #faf3c7;
-$orange:                #f37966;
+$yellow:                #dfa503;
+$orange:                #fd6651;
 $pink:                  #f33949;
 $purple:                #3c00ff;
 
@@ -25,13 +25,13 @@ $linkColorHover:        darken($orange, 15%);
 
 // Typography
 $baseFontSize:          19px;
-$baseFontFamily:        helvetica, arial, sans-serif;
+$baseFontFamily:        'Open Sans', helvetica, arial, sans-serif;
 $baseLineHeight:        1.8;
 $textColor:             $grayDarker;
 
-$serif:                 'Gentium Basic', Garamond, serif;
+$serif:                 Georgia, serif, Georgia, serif;
 $monospace:             'Menlo', 'Monaco', 'Consolas', monospace;
-$accentFamily:          'lato', 'lucida grande', 'lucida sans unicode', sans-serif;
+$accentFamily:          'lucida grande', 'lucida sans unicode', sans-serif;
 
 // Buttons
 $primaryButtonBackground:    $grayLighter;

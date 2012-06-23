@@ -15,9 +15,9 @@
     ?></title>
 
     <link rel="stylesheet" href="<?php echo SITE_URL ?>assets/css/bootstrap.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic' rel='stylesheet' type='text/css'>
-
+    <link href='http://fonts.googleapis.com/css?family=Caesar+Dressing' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700' rel='stylesheet' type='text/css'>
+    
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -38,8 +38,22 @@
 </head>
 <body>
 
-<header id="head" class="centre">
+<header id="head" class="container-fluid clearfix">
 
-    <a id="tree" href="<?php echo SITE_URL ?>" title="Home" rel="home">Home</a>
+    <a href="<?php echo SITE_URL ?>" title="Home" rel="home">
+        <h1 id="site-title">
+            <span>S</span>
+            <span>t</span>
+            <span>a</span>
+            <span>y</span>
+            <br>
+            <span style="padding-left:25%">d</span>
+            <span>e</span>
+            <span>c</span>
+            <span>e</span>
+            <span>n</span>
+            <span>t</span>
+        </h1>
+    </a>
 
 </header>
