@@ -1,42 +1,50 @@
-title: Same Apps, Different Marketing
+title: Growing Food is Complex
 ---
 
-<p class="big">I recently came across two apps whose core products seemed almost identical, while the marketing was drastically different. Let's take a look!</p>
+<p class="big">The food industry may be the largest, most complex and currupted industry we have. And, without an improved food culture, we're at risk of net negative environmental, social and even ethical impacts on humanity.</p>
 
-## Same apps
+The only way to target these negative impacts is by education and awareness. Which, I hope to accomplish&mdash;even just slightly&mdash;by writing this first post in a series of two. First up, I'll be covering the growing of food. 
 
-[Dropmark](//dropmark.com/?ref=staydecent) and [Gimmebar](//gimmebar.com/) both start by saving content from the web. A JavaScript bookmarklet pops open a frame, where you can drag recognizable media from the page. Both, Dropmark and Gimmebar, have private and public *collections*. And, it appears you can have as many collections as you wish.
+If you're wondering why you should listen to a web developer when it comes to the food industry. All I can say is this: my life is *mostly* centered around food culture. And, most of my knowledge and experience should be accredited to my girlfriend&mdash;who doesn't blog, yet! Briefly: we live on a farm; we want to own a farm; she cooks great food; I like to eat said food; we care about the well-being of all humans.
 
-<div><img src="http://i.imgur.com/gjqyb.png" alt="Comparing the bookmarklets for Dropmark and Gimmebar"></div>
+## Large, complex and currupted
 
-The apps do differ at a closer look: Dropmark can integrate with some desktop apps, and Gimmebar has more organizational features.
+Aprox. 7 billion mouths to feed. That's large. 
 
-## Different marketing
+And, with that large number, comes unmistakable complexity. Unfavourable growing conditions, dessertification, erosion, limited water sources, exploited labour, food trends, globalization, fossil fuels, education (lack of), pollution, chemical fertilizers, pesticides, herbacides, genetically-modified organisms&hellip;Damn! A seemingly endless number of choices when it comes to growing food for a group of people.
 
-So, hopefully we agree that these apps are pretty darn similar. But, what's *fascinating* is how different their copy is. Dropmark's homepage:
+Like any industry&mdash;especially one of this size&mdash;curruption can be found. No person should be able to make a fortune off of food. Food is not a commodity. It is a right and freedom for all people in every part of the world. And, until the majority of us start treating food this way, there will always be someone exploiting the land and people (and government subsidies!) for personal financial gain.
 
-> Dead simple collaboration in the cloud.
+## Conventional Farming
 
-And Gimmebar's:
+What the western world calls *conventional* farming, which is the most wide-spread and responsible for the majority of your supermarket foods, is a practice that requires a large amount of fossil fuels through petroleum-based chemical fertilizers, pesticides and farm machinery. Western agriculture relies *very* heavily on fossil fuels. And, that's before we even consider transporting. 
 
-> Save the Web
+Negative impacts of conventional farming:
+monocultures, degradation, cheap labour, trucking, shipping, posiounous, food waste, packaging, etc.
 
-I'm no copywriter, but there is a *huge* difference here. Gimmebar talks directly about their product and its' features. Dropmark talks about its' targeted user&mdash;They use an interactive slider to showoff the features.
+The positives arguments are empty
+High-yields of low-nutrition, empty calories is not a good thing. the amount of food waste of this conventional food producing and shipping may exceed the increased yields. Risk risk risk, of crop failure.
 
-<div><img src="http://i.imgur.com/cm0Cp.png" alt="Dropmark does some namedropping"></div>
+## Alternatives
 
-After getting passed my initial confusion, Dropmark's slick homepage and targeted copy got me excited about, well, collaborating with clients!
+Right off the bat, there will be some people who lay the claim that an alternative is alternative because it's a lesser option than what's conventional. I don't know about other industries, but I can assure you in food that is not the case. *Alternative* farming methods are alternative for a few reasons:
 
-### Let's looks at Gimmebar's copy
+1. No single person or company is going to make a fortune via these practices.
+2. What's different is scary.
 
-I consider pricing as part of a products marketing&mdash;at least for this blog post&mdash;so let's talk about pricing! Both Gimmebar and Dropmark have *pro accounts*. Dropmark offers increased storage (25gb up from 1gb) for $4/month, seems like a good deal. With Gimmebar, you don't get anything in terms of increased storage. Well, not yet at least. Again, Gimme's snarky copy tells us:
+Whoa, that's actually pretty simple! Let's learn about a couple alternatives:
 
-> Want to look cool but don’t have access to sunglasses or a popped collar? Why not try our pro badge on for size. Yeah, that looks nice.
+### Organic Farming
 
-You also get a *first-look* at new features and *Mystery Love*. Oh yeah, and that's $2/month.
+The Canadian Government puts it well:
 
-What's the take-away?
+> Organic production is a holistic system designed to optimize the productivity and fitness of diverse communities within the agro-ecosystem, including soil organisms, plants, livestock and people. The principal goal of organic production is to develop enterprises that are sustainable and harmonious with the environment.
 
-Fuck, no idea. Perhaps, highlights the importance of marketing. Specifically copywriting. Gimmebar being light-hearted, snarky, perhaps silly. But, service is serious. Dropmark talks in direct, business way: they speak to *productive people and teams*.
+http://www.tpsgc-pwgsc.gc.ca/ongc-cgsb/programme-program/norms-standards/internet/bio-org/principes-principles-eng.html#a1
 
-In any case, both Dropmark and Gimmebar are worthwhile apps. I personally stuck with Gimmebar as it has more organizational prowess.
+I highly recommend reading the standards. But summarized highlights:
+
+- The use of non-organic, chemical fertilizers, pesticides and herbicides is not alowed. Refer to the [permitted substances list](http://www.tpsgc-pwgsc.gc.ca/ongc-cgsb/programme-program/norms-standards/internet/bio-org/permises-permitted-eng.html).
+- Instead, crop-rotation, compost and tilling is used to [maintain soil fertility](http://www.tpsgc-pwgsc.gc.ca/ongc-cgsb/programme-program/norms-standards/internet/bio-org/principes-principles-eng.html#a064).
+- And weeds and pests are managed by creating a balanced ecosystem via rotation, resistent plant varities, trap crops (crops that attract pests away from another), crops that repel pests, grazing or manual weeding. More details here: http://www.tpsgc-pwgsc.gc.ca/ongc-cgsb/programme-program/norms-standards/internet/bio-org/principes-principles-eng.html#a066
+
