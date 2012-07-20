@@ -13,8 +13,11 @@ body {
   background:$white;
 }
 
-#foot {
-  padding-bottom:2em;
+#foot > div {
+  padding:2em 0;
+  font-size:$baseFontSize - 3;
+  border-top:4px solid $green;
+  background:$grayLighter;
 }
 
 .padding {
@@ -145,6 +148,15 @@ a > i {
 a.title {
   color:inherit;
 }
+a.monochrome {
+  color:$grayDark;
+  text-decoration:underline;
+
+  &:hover {
+    color:$grayDarker;
+    text-decoration:none;
+  }
+}
 
 .btn,
 [class^="btn-"] {
@@ -273,8 +285,8 @@ pre {
     color:$black;
 }
 
-footer .meta {
-  text-align:right;
+#foot p.meta {
+  margin:0 0 2em;
 }
 
 .orange {color:$orange !important;}
