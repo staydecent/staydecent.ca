@@ -24,7 +24,7 @@
             </li>
         <?php endforeach; ?>
         </ol>
-        <p><em>View the <a href="//staydecent.local/public/archives">archives</a> for all posts.</em><p>
+        <p><em>View the <a href="<?php echo SITE_URL ?>archives">archives</a> for all posts.</em><p>
     </div>        
 
 </div>
