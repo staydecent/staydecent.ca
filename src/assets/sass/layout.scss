@@ -95,12 +95,23 @@ h4,
 h5,
 h6 {
   font-family:$baseFontFamily;
-  font-weight:900;
+  font-weight:800;
   line-height:1.4;
   text-transform:uppercase;
   text-align:center;
   margin:1.66em 0 0.23em 0;
   color:$black;
+}
+
+article {
+  h4,
+  h5,
+  h6 {
+    font-weight:700;
+    text-align:left;
+    text-transform:none;
+    margin:.23em 0;
+  }
 }
 
 #site-title {
@@ -194,7 +205,9 @@ a.monochrome {
 
 .grossly-massive,
 .big {
-  font-weight:400;
+  font-family:$baseFontFamily;
+  font-weight:300;
+  font-size:1.2em;
   line-height:$baseLineHeight;
   list-style:none;
   margin:0;
@@ -283,6 +296,11 @@ pre {
 }
 .gist pre {
     color:$black;
+}
+
+dfn {
+  border-bottom:1px dotted $blue;
+  cursor:help;
 }
 
 #foot p.meta {

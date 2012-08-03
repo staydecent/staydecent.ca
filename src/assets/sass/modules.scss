@@ -15,11 +15,14 @@
 .note,
 .aside {
   position:relative;
-  width:100%;
+  width:90%;
   padding:1em 1.5em;
   margin:2em auto;
   color:rgba(0,0,0,0.6);
-  background:$yellow;
+  font-family:$monospace;
+  font-size:$baseFontSize - 5;
+  line-height:$baseLineHeight - 3;
+  background:lighten($yellow, 25%);
   overflow:hidden;
 
   &:before {
