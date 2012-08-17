@@ -1,31 +1,38 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-<div role="main" id="main" class="container-fluid">
+<?php unset($entry); ?>
 
+<div role="main" id="main" class="container-fluid">
+<?php
+$posts = $entries['articles'] + $entries['bits'];
+krsort($posts);
+
+$limit = 0;
+$global_entry = false;
+foreach ($posts as $date => $entry) {
+    if (++$limit > 1) break;
+    $global_entry = $entry;
+    ?>
     <article>
         <header>
-            <h1>I&rsquo;m Adrian Unger</h1>  
+            <h1><?php echo $entry['title'] ?></h1>  
+
+            <div class="meta centre">
+            <i class="icon-calendar"></i> Published <?php echo date("F j, Y", $entry['date']) ?>
+            <i class="icon-align-left"></i> <?php echo str_word_count($entry['body']) ?> words
+            </div>
         </header>
         
-        <p>I&rsquo;m a software developer at <a href="//ecquire.com" target="_blank">Ecquire</a>. Previously, I ran a freelance web development practice under the alias <em>Staydecent</em>. I currently live in a trailer on a <a href="//ubcfarm.ca" target="_blank">farm</a> in a <a href="//wikitravel.org/en/Vancouver" target="_blank">city</a>.</p>
+        <?php echo $entry['body'] ?>
 
-        <p>I enjoy homesteading, hiking and learning&mdash;among other things.</p>
-    </article>  
-
-    <div class="post-navigation">
-        <h4>Writing</h4>
-        <?php $posts = get_entries('articles') + get_entries('bits'); krsort($posts); ?>
-        <ol class="styled">
-        <?php $limit = 0; foreach ($posts as $date => $entry) : if (++$limit > 6) break; ?>
-            <li>
-                <a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a>
-                &nbsp;&middot;
-                <span class="meta date"><?php echo date("M j, Y", $date) ?></span>
-            </li>
-        <?php endforeach; ?>
-        </ol>
-        <p><em>View the <a href="<?php echo SITE_URL ?>archives">archives</a> for all posts.</em><p>
-    </div>        
+        <footer class="meta centre"><small>
+            <a href="<?php echo $entry['url']; ?>" title="Permalink for <?php echo $entry['title'] ?>">
+            <i class="icon-bookmark"></i> Permalink</a>
+        </small></footer>
+    </article>
+<?php } ?> 
+    <?php $entry = $global_entry; var_dump($entry['title']) ?>
+    <?php include $config['dirs']['layout'].'/post-navigation-part.php'; ?>
 
 </div>
 

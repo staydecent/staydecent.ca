@@ -32,7 +32,7 @@
     left:0;
     border-width:0 0 16px 16px; /* This trick side-steps a webkit bug */
     border-style:solid;
-    border-color:#fff  darken($yellow, 5%) darken($yellow, 5%) #fff; /* A bit more verbose to work with .rounded too */
+    border-color:$white  darken($yellow, 5%) darken($yellow, 5%) $white; /* A bit more verbose to work with .rounded too */
     background:darken($yellow, 5%); /* For when also applying a border-radius */
     display:block; width:0; /* Only for Firefox 3.0 damage limitation */
     /* Optional: shadow */

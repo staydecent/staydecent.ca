@@ -38,22 +38,6 @@
 </head>
 <body>
 
-<header id="head" class="container-fluid clearfix">
-
-    <a href="<?php echo SITE_URL ?>" title="Home" rel="home">
-        <h1 id="site-title">
-            <span>S</span>
-            <span>t</span>
-            <span>a</span>
-            <span>y</span>
-            <br>
-            <span style="padding-left:25%">d</span>
-            <span>e</span>
-            <span>c</span>
-            <span>e</span>
-            <span>n</span>
-            <span>t</span>
-        </h1>
-    </a>
-
+<header id="head">
+    <h1 id="site-title">Staydecent</h1>
 </header>

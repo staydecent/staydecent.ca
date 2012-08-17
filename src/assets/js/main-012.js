@@ -8,13 +8,4 @@ Zepto(function($) {
         $(e).after('<div class="caption">'+title+'</div>')
         $(e).next('.caption').show()
     })
-    /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-    * Randomly recolour site title                                           *
-    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-    var titleCharLength = $('#site-title > span').length
-    var colourClasses = ['blue','green','orange','yellow']
-    $('#site-title > span').each(function(i,e) {
-        var colourIndex = Math.floor(Math.random()*4)
-        $(e).addClass(colourClasses[colourIndex])
-    })
 })

@@ -13,11 +13,26 @@ body {
   background:$white;
 }
 
-#foot > div {
-  padding:2em 0;
-  font-size:$baseFontSize - 3;
-  border-top:4px solid $grayDarker;
-  background:$grayLighter;
+#head {
+  position:absolute;
+  width:100%;
+  top:0;
+  z-index:-1;
+}
+
+#foot {
+  background:$grayDarker;
+  color:$gray;
+  text-shadow:0 -1px 0 $black;
+  padding:.5em 0 3.5em;
+
+  article {
+    font-size:$baseFontSize - 3;
+  }
+
+  nav {
+    margin-top:1.5em;
+  }
 }
 
 .padding {
@@ -46,13 +61,29 @@ body {
 
 article {
 
-  footer {
-    padding:0.4em 0 0;
-    border-top:4px solid $grayLighter;
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  aside,
+  .note,
+  pre,
+  blockquote,
+  p,
+  ol,
+  ul {
+    max-width:680px;
+    margin-right:auto;
+    margin-left:auto;
+  }
 
-    [class^="icon-"] {
-      margin-top:1px;
-    }
+  header .meta {
+    margin:3em 0 0;
+    font-size:75%;
+    font-style:italic;
+    font-family:$serif;
+    font-style:italic;
   }
 }
 
@@ -77,7 +108,7 @@ article {
 .container-fluid {
   position:relative;
   width:auto;
-  max-width:680px;
+  max-width:1140px;
   min-width:260px;
   padding-left: $gridGutterWidth;
   padding-right: $gridGutterWidth;
@@ -103,6 +134,11 @@ h6 {
   color:$black;
 }
 
+h1 {
+  font-size:4em;
+  line-height:1.2;
+}
+
 article {
   h4,
   h5,
@@ -110,32 +146,45 @@ article {
     font-weight:700;
     text-align:left;
     text-transform:none;
-    margin:.23em 0;
+    margin-top:.23em;
+    margin-bottom:.23em;
   }
 }
 
 #site-title {
-  color:$linkColor;
-  font-size:200px;
+  color:white;
+  font-size:256px;
   font-weight:400;
   font-family:'Caesar Dressing';
-  line-height:.7;
-  text-transform:lowercase;
+  line-height:.9;
   text-align:left;
-  margin:0;
+  text-transform:lowercase;
+  letter-spacing:-4px;
+  padding:0;
+  margin:-20px 0 0;
 
-  span:nth-child(1n+1) {
-    color:$orange;
+  span {
+    // opacity:0.6;
+    color:white;
+
+    &:hover {
+      opacity:1;
+      z-index:2;
+    }
   }
-  span:nth-child(2n+2) {
-    color:$blue;
-  }
-  span:nth-child(3n+3) {
-    color:$yellow;
-  }
-  span:nth-child(4n+4) {
-    color:$green;
-  }
+
+  // span:nth-child(1n+1) {
+  //   color:$orange;
+  // }
+  // span:nth-child(2n+2) {
+  //   color:$blue;
+  // }
+  // span:nth-child(3n+3) {
+  //   color:$yellow;
+  // }
+  // span:nth-child(4n+4) {
+  //   color:$green;
+  // }
 }
 
 h6 {
@@ -160,44 +209,27 @@ a.title {
   color:inherit;
 }
 a.monochrome {
-  color:$grayDark;
+  color:$grayLight;
   text-decoration:underline;
 
   &:hover {
-    color:$grayDarker;
+    color:$grayLighter;
     text-decoration:none;
   }
 }
 
-.btn,
-[class^="btn-"] {
-  position:relative;
-  display:inline-block;
-  padding:0px 8px;
-  margin-bottom:2px;
-  color:$linkColor;
-  line-height:$baseLineHeight;
-  background:$white;
-  border:8px solid $linkColor;
-  @include box-shadow(1px 1px 1px white);
-  @include border-radius(2px);
-
-  &:hover {
-    color:$white;
-    background:$linkColor;
-    @include box-shadow(1px 1px 2px rgba(0,0,0,0.2));
-  }
-
-  &:active {
-    margin-top:2px;
-    margin-bottom:0;
-  }
+.bordered {
+  padding:.5em 1em;
+  border:4px solid white;
 }
 
-.btn-small {
-  border-width:0;
-  background:$grayLight;
-  color:$black;
+#skipto {
+  display:inline-block;
+  margin-top:-6px;
+  margin-left:64%;
+  padding:.25em .5em;
+  background:white;
+  font-size:$baseFontSize - 6;
 }
 
 // TYPE
@@ -207,10 +239,11 @@ a.monochrome {
 .big {
   font-family:$baseFontFamily;
   font-weight:300;
-  font-size:1.2em;
+  font-size:1.4em;
   line-height:$baseLineHeight;
   list-style:none;
-  margin:0;
+  margin-top:3em;
+  margin-bottom:0;
   padding:0;
 
   li {

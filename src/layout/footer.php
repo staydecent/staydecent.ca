@@ -1,16 +1,15 @@
 
 <footer id="foot"><div class="container-fluid">
 
-    <nav class="centre">
-        <a href="<?php echo SITE_URL ?>" title="About Adrian Unger" rel="home">About</a>&nbsp;&middot;        
-        <a href="<?php echo SITE_URL ?>archives" title="View all posts by Adrian Unger">Archives</a>&nbsp;&middot;
-        <a href="http://twitter.com/staydecent" target="_blank" title="Adrian Unger on Twitter">Twitter</a>&nbsp;&middot;
-        <a href="mailto:hello&#64;staydecent.ca" title="Email Adrian Unger">Email</a>
-    </nav>  
+    <article>
+        <p class="big">I&rsquo;m Adrian Unger. I build <a class="monochrome" href="//ecquire.com" target="_blank">Ecquire</a> while living in a trailer on a <a class="monochrome" href="//ubcfarm.ca" target="_blank">farm</a> in a <a class="monochrome" href="//wikitravel.org/en/Vancouver" target="_blank">city</a>. I write about design, nature, technology, etc.</p>
 
-    <p class="meta centre"><small>In Vancouver? Tweet <a class="monochrome" href="//twitter.com/staydecent" rel="me" target="_blank">@staydecent</a> and let's grab a coffee!</small></p>
-
-    <img class="centre" src="<?php echo SITE_URL ?>assets/i/tree.png" alt="Love Nature.">
+        <nav id="navigation" class="centre"><p>
+            <a href="<?php echo SITE_URL ?>" title="Homepage" rel="home">Home</a>&nbsp;&middot;        
+            <a href="<?php echo SITE_URL ?>archives" title="View all posts by Adrian Unger">Archives</a>&nbsp;&middot;
+            <a href="mailto:hello&#64;staydecent.ca" title="Email Adrian Unger">Email</a>
+        </p></nav>  
+    </article>
 
 </div></footer>
 
