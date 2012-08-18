@@ -16,6 +16,7 @@
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0rc1/zepto.min.js"></script>
 <?php echo (isset($scripts)) ? $scripts : ''; ?>
+<script src="<?php echo SITE_URL ?>assets/js/plugins.min.js"></script>
 <script src="<?php echo SITE_URL ?>assets/js/main-012.js"></script>
 
 </body>

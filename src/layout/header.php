@@ -39,5 +39,5 @@
 <body>
 
 <header id="head">
-    <h1 id="site-title">Staydecent</h1>
+    <h1 id="site-title">Stay decent</h1>
 </header>

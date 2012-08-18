@@ -18,6 +18,7 @@ body {
   width:100%;
   top:0;
   z-index:-1;
+  overflow:hidden;
 }
 
 #foot {
@@ -159,13 +160,19 @@ article {
   line-height:.9;
   text-align:left;
   text-transform:lowercase;
-  letter-spacing:-4px;
+  letter-spacing:.1em;
   padding:0;
   margin:-20px 0 0;
+
+  .word2 {
+    padding-left:11%;
+  }
 
   span {
     // opacity:0.6;
     color:white;
+    display:block;
+    width:100%;
 
     &:hover {
       opacity:1;

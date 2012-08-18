@@ -8,4 +8,9 @@ Zepto(function($) {
         $(e).after('<div class="caption">'+title+'</div>')
         $(e).next('.caption').show()
     })
+    /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+    * Logo/title treatments                                                  *
+    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+    $("#site-title").css('opacity', '0').lettering('words')
+    setTimeout(function() { $('#site-title').fitText(0.35).animate({'opacity':'1'}, 200) }, 100)
 })
