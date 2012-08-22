@@ -8,11 +8,11 @@ $grayDark:              #534c47;
 $gray:                  #6c6c6a;
 $grayLight:             #aaafaf;
 $grayLighter:           #cdd0d1;
-$white:                 #f1f1ed;
+$white:                 #fff;
 
 // Accent colors
-$blue:                  #56b3a9;
-$green:                 #7eab65;
+$blue:                  #004bfa;
+$green:                 #4e940d;
 $red:                   #ff002c;
 $yellow:                #dfa503;
 $orange:                #fd6651;
@@ -20,8 +20,8 @@ $pink:                  #f33949;
 $purple:                #3c00ff;
 
 // Links
-$linkColor:             $orange;
-$linkColorHover:        darken($orange, 15%);
+$linkColor:             $blue;
+$linkColorHover:        darken($blue, 15%);
 
 // Typography
 $baseFontSize:          21px;

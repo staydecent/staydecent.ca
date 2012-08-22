@@ -11,6 +11,6 @@ Zepto(function($) {
     /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
     * Logo/title treatments                                                  *
     * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-    $("#site-title").css('opacity', '0').lettering('words')
-    setTimeout(function() { $('#site-title').fitText(0.35).animate({'opacity':'1'}, 200) }, 100)
+    // $("#site-title").css('opacity', '0').lettering('words')
+    // setTimeout(function() { $('#site-title').fitText(0.35).animate({'opacity':'.6'}, 200) }, 100)
 })
