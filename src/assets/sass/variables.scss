@@ -2,17 +2,17 @@
 // --------------------------------------------------
 
 // Monoschrome
-$black:                 #2c2f31;
-$grayDarker:            #37322e;
-$grayDark:              #534c47;
-$gray:                  #6c6c6a;
-$grayLight:             #aaafaf;
-$grayLighter:           #cdd0d1;
+$black:                 #000;
+$grayDarker:            #373737;
+$grayDark:              #555;
+$gray:                  #bebebe;
+$grayLight:             #e6e6e6;
+$grayLighter:           #F5F8F9;
 $white:                 #fff;
 
 // Accent colors
-$blue:                  #004bfa;
-$green:                 #4e940d;
+$blue:                  #56b3a9;
+$green:                 #7eab65;
 $red:                   #ff002c;
 $yellow:                #dfa503;
 $orange:                #fd6651;
@@ -20,8 +20,8 @@ $pink:                  #f33949;
 $purple:                #3c00ff;
 
 // Links
-$linkColor:             $blue;
-$linkColorHover:        darken($blue, 15%);
+$linkColor:             $orange;
+$linkColorHover:        darken($orange, 15%);
 
 // Typography
 $baseFontSize:          21px;

@@ -9,8 +9,12 @@ Zepto(function($) {
         $(e).next('.caption').show()
     })
     /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-    * Logo/title treatments                                                  *
+    * Randomly recolour page title                                           *
     * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-    // $("#site-title").css('opacity', '0').lettering('words')
-    // setTimeout(function() { $('#site-title').fitText(0.35).animate({'opacity':'.6'}, 200) }, 100)
+    var titleCharLength = $('#site-title > span').length
+    var colourClasses = ['blue','green','orange','yellow']
+    $('article > header > h1').lettering().find('span').each(function(i,e) {
+        var colourIndex = Math.floor(Math.random()*4)
+        $(e).addClass(colourClasses[colourIndex])
+    })
 })
