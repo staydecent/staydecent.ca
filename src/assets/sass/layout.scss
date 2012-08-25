@@ -21,7 +21,7 @@ body {
     font-size:$baseFontSize - 3;
 
     .big {
-      // color:$white;
+      color:$black;
     }
   }
 
@@ -242,7 +242,7 @@ a.monochrome {
   margin-top:2.5em;
   margin-bottom:0;
   padding:0;
-  color:$black;
+  color:$grayDarker;
 
   li {
     display:inline;
@@ -320,7 +320,7 @@ pre {
     white-space:pre-wrap;
     word-wrap:break-word;
     margin-bottom:2em;
-    background:$black;
+    background:$grayDarker;
     border-bottom:1px solid rgba(255,255,255,0.9);
     color:$white;
     padding:1.5em 2em;
