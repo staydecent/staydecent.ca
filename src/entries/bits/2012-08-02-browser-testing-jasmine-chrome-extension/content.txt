@@ -15,9 +15,11 @@ Sigh, but headless browsers were a dead-end, as our code needs to run on pages o
 
 ## Cool, let's inject some tests!
 
+The following will assume you are familiar with [Jasmine](//jasmine) and JavaScript in general. If anything is unclear, let me know, and I'll try to clarify.
+
 The biggest barrier for this to work, was the <em title="the output of our test results">reporting</em>. I didn't want to spend much more time on this, so I did some [DDGing](//duckduckgo.com) and found this awesome [Console Reporter](https://github.com/larrymyers/jasmine-reporters).
 
-<div class="note">Note: turns out Jasmine comes with its own Console Reporter inspired by Larry Myers. I prefer Larry's output style, so I stuck with it. Here's a comparison of the two.</div>
+<div class="note">Note: turns out Jasmine comes with its own Console Reporter inspired by Larry Myers. I prefer Larry's output style, so I stuck with it.</div>
 
 Great. The unfamiliar territory is taken care of. Now, to write the Chrome Extension code that actually runs the Jasmine specs inside an active tab, outputting the test results to console!
 
@@ -85,4 +87,4 @@ We'll also need an event listener for when the page action is clicked. Check out
 
 With this, you can now test your JavaScript against *real* webpages, and actually see the output. It's not as automated as using headless browsers, but it's pretty much 1-click. And, I'm guessing the same idea can be brought to Safari and FireFox extensions.
 
-If your curious about use-cases, this is the main one I've identified: Simulating user actions and testing the results of the UI. It's rather easy to use JavaScript to fill out a form, submit, and test for an expected result (existence of a welcome dialogue?).
+Though the use-case for this is pretty specific to Ecquire, I thought it was pretty neat&mdash;and worth sharing. Would love to hear any reactions or thoughts on this!
