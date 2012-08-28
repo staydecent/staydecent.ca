@@ -15,7 +15,7 @@ Sigh, but headless browsers were a dead-end, as our code needs to run on pages o
 
 ## Cool, let's inject some tests!
 
-The following will assume you are familiar with [Jasmine](//jasmine) and JavaScript in general. If anything is unclear, let me know, and I'll try to clarify.
+The following will assume you are familiar with [Jasmine](http://pivotal.github.com/jasmine/) and JavaScript in general. If anything is unclear, let me know, and I'll try to clarify.
 
 The biggest barrier for this to work, was the <em title="the output of our test results">reporting</em>. I didn't want to spend much more time on this, so I did some [DDGing](//duckduckgo.com) and found this awesome [Console Reporter](https://github.com/larrymyers/jasmine-reporters).
 
@@ -25,7 +25,7 @@ Great. The unfamiliar territory is taken care of. Now, to write the Chrome Exten
 
 ### The Chrome Extension
 
-I wrote a boilerplate Chrome Extension, for [Browser Testing with Jasmine](//github.com). Here's an explanation of what it does:
+I wrote a boilerplate Chrome Extension, for [Browser Testing with Jasmine](https://github.com/staydecent/jasmine-chrome-extension). Here's an explanation of what it does:
 
 #### 1. Whitelist some domains, where we want our tests to run. For Ecquire, that meant mail.google.com, twitter.com, etc.
 Google is cracking down on security when it comes the Chrome Web Store. Which means we have to whitelist *everything* in our <dfn title="Every chrome extension needs one, it declares unique attributes about the app or extension.">manifest.json</dfn> file. Since our test extension won't be public-facing, we can be overly zealous in our whitelisting:
@@ -75,7 +75,7 @@ In *background.js* we'll listen for any changes to the URL of any tab.
     });
 
 #### 4. When are page action is clicked, run some Jasmine specs! 
-We'll also need an event listener for when the page action is clicked. Check out the full [background.js](//github.com) file to see that (it's the same idea as jQuery click events). When clicked, we'll inject our Jasmine specs and run them via Chrome's Extension APIs:
+We'll also need an event listener for when the page action is clicked. Check out the full [background.js](https://github.com/staydecent/jasmine-chrome-extension/blob/master/background.js) file to see that (it's the same idea as jQuery click events). When clicked, we'll inject our Jasmine specs and run them via Chrome's Extension APIs:
 
     // load our spec file
     chrome.tabs.executeScript(tab.id, { file: 'my_spec_file.js' }, function() {

@@ -76,7 +76,7 @@ article {
   header {
     h1 {
       margin-top:.5em;
-      color:$green;
+      color:$yellow;
 
       span:nth-child(1n+1) {
         color:$orange;
@@ -86,9 +86,6 @@ article {
       }
       span:nth-child(3n+3) {
         color:$yellow;
-      }
-      span:nth-child(4n+4) {
-        color:$green;
       }
     }
 
@@ -205,14 +202,6 @@ a > i {
 }
 a.title {
   color:inherit;
-}
-a.monochrome {
-  color:$grayLight;
-
-  &:hover {
-    color:$green;
-    text-decoration:none;
-  }
 }
 
 .bordered {
@@ -341,6 +330,7 @@ dfn {
 .orange {color:$orange !important;}
 .yellow {color:$yellow !important;}
 .green {color:$green !important;}
+.purple {color:$purple !important;}
 .blue {color:$blue !important;}
 
 // LISTS
