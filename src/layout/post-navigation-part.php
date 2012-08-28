@@ -1,5 +1,4 @@
 <div class="post-navigation">
-<?php var_dump($entry['title']); ?>
 <?php $next_entry = next_entry($entry); if ($next_entry): ?>
     <h4>Next up</h4>
     <a href="<?php echo $next_entry['url']; ?>"><?php echo $next_entry['title'] ?></a>
