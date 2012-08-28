@@ -41,10 +41,6 @@
     font-size:14px;
   }
 
-  #site-title {
-    font-size:100px !important;
-  }
-
   blockquote {
     padding-left:2.4em;
     padding-bottom:0.4em;
@@ -74,6 +70,12 @@
     width:auto;
   }
 
+  .post-navigation {
+    ol.styled li a {
+      font-size:$baseFontSize - 2;
+    }
+  }
+
 }
 
 
@@ -87,7 +89,20 @@
   }
 
   #site-title {
-    font-size:160px;
+    padding-top:1em;
+  }
+
+  .post-navigation {
+    font-size:$baseFontSize - 2;
+
+    ol.styled li a {
+      font-size:$baseFontSize;
+    }
+
+    .meta {
+      display:block;
+      font-size:64%;
+    }
   }
 
 }
