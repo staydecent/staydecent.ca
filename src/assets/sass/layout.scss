@@ -13,6 +13,12 @@ body {
   background:$white;
 }
 
+#main {
+  p:not(.big) {
+    font-size:$baseFontSize - 2;
+  }
+}
+
 #foot {
   background:$grayLight;
   padding:.5em 0 3.5em;
@@ -143,7 +149,7 @@ h6 {
   text-transform:uppercase;
   text-align:center;
   margin:1.66em 0 0.23em 0;
-  color:$black;
+  color:$grayDarker;
 }
 
 h1 {
