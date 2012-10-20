@@ -2,36 +2,36 @@
 // --------------------------------------------------
 
 // Monoschrome
-$black:                 #1a1a1a;
-$grayDarker:            #3a3a3a;
-$grayDark:              #4a4a4a;
-$gray:                  #bebebe;
-$grayLight:             #e6e6e6;
-$grayLighter:           #F5F8F9;
+$black:                 #1e2625;
+$grayDarker:            #333b3b;
+$grayDark:              #46403b;
+$gray:                  #bdc1c4;
+$grayLight:             #eceae7;
+$grayLighter:           #f9f9f7;
 $white:                 #fff;
 
 // Accent colors
-$blue:                  #3d598c;
-$green:                 #5e9526;
-$red:                   #e73824;
-$yellow:                #f7bc40;
-$orange:                #e95543;
-$pink:                  #d24b6a;
-$purple:                #5a4afb;
+$blue:                  #035FE7;
+$green:                 #68c077;
+$red:                   #ff6a4c;
+$yellow:                #ffa800;
+$orange:                #ef6b30;
+$pink:                  #ed6975;
+$purple:                #a68bd6;
 
 // Links
-$linkColor:             $orange;
+$linkColor:             $red;
 $linkColorHover:        $blue;
 
 // Typography
 $baseFontSize:          21px;
-$baseFontFamily:        'Open Sans', helvetica, arial, sans-serif;
+$baseFontFamily:        'PT Serif', times, serif;
 $baseLineHeight:        1.8;
 $textColor:             $grayDarker;
 
-$serif:                 Georgia, serif, Georgia, serif;
+$sans:                  Helvetica, arial, sans-serif;
 $monospace:             'Menlo', 'Monaco', 'Consolas', monospace;
-$accentFamily:          'lucida grande', 'lucida sans unicode', sans-serif;
+$accentFamily:          'Open Sans', helvetica, sans-serif;
 
 // Buttons
 $primaryButtonBackground:    $grayLighter;

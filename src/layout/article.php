@@ -7,8 +7,8 @@
                 <h1><?php echo $entry['title'] ?></h1>  
 
                 <div class="meta centre">
-                <i class="icon-calendar"></i> Published <?php echo date("F j, Y", $entry['date']) ?>
-                <i class="icon-align-left"></i> <?php echo str_word_count($entry['body']) ?> words
+                <i class="icon-calendar icon-white"></i> Published <?php echo date("F j, Y", $entry['date']) ?>
+                <i class="icon-align-left icon-white"></i> <?php echo str_word_count($entry['body']) ?> words
                 </div>
             </header>
             

@@ -6,11 +6,11 @@
 // ---------
 
 body {
-  font-family:$serif;
+  font-family:$baseFontFamily;
   font-size:$baseFontSize;
   line-height:$baseLineHeight;
   color:$textColor;
-  background:$white;
+  background:$grayLighter url(../i/noise.png);
 }
 
 #main {
@@ -20,13 +20,16 @@ body {
 }
 
 #foot {
-  background:$grayLight;
+  background:$white;
   padding:.5em 0 3.5em;
+  border-top:1px solid $grayLight;
 
   article {
     font-size:$baseFontSize - 3;
 
     .big {
+      font-family:$accentFamily;
+      font-weight:400;
       color:$black;
     }
   }
@@ -80,26 +83,26 @@ article {
   }
 
   header {
+    background:$black;
+    padding-top:1.66em;
+    padding-bottom:1.84em;
+    -webkit-transition:background-color 0.5s ease;
+    -moz-transition:background-color 0.5s ease;
+    -o-transition:background-color 0.5s ease;
+    -ms-transition:background-color 0.5s ease;
+    transition:background-color 0.5s ease;
+
     h1 {
       margin-top:.5em;
-      color:$yellow;
-
-      span:nth-child(1n+1) {
-        color:$orange;
-      }
-      span:nth-child(2n+2) {
-        color:$blue;
-      }
-      span:nth-child(3n+3) {
-        color:$yellow;
-      }
+      color:$grayLighter;
     }
 
     .meta {
       margin:3em 0 0;
       font-size:70%;
       line-height:1;
-      font-family:$baseFontFamily;
+      font-family:$accentFamily;
+      color:$gray;
       opacity:0.7;
     }
   }
@@ -143,13 +146,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family:$baseFontFamily;
+  font-family:$accentFamily;
   font-weight:800;
   line-height:1.4;
   text-transform:uppercase;
   text-align:center;
-  margin:1.66em 0 0.23em 0;
+  margin:1.66em 0 .23em 0;
   color:$grayDarker;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
 }
 
 h1 {
@@ -157,32 +163,45 @@ h1 {
   line-height:1.2;
 }
 
+
 article {
+  h2 {
+    font-size:1.66em;
+  }
+
   h4,
   h5,
   h6 {
+    font-family:$baseFontFamily;
     font-weight:700;
     text-align:left;
     text-transform:none;
+    letter-spacing: 0;
     margin-top:.23em;
     margin-bottom:.23em;
+  }
+
+  p + h4,
+  p + h5,
+  p + h6 {
+    margin-top:1.66em;
   }
 }
 
 #site-title {
-  font-size:$baseFontSize - 4;
-  font-weight:700;
-  line-height:.9;
-  text-align:left;
-  text-transform:none;
-  padding:4em 0 .5em;
   max-width:680px;
   margin-right:auto;
   margin-left:auto;
-  border-bottom:1px solid $grayLight;
+  font-family:$accentFamily;
+  font-size:$baseFontSize - 2;
+  font-weight:400;
+  line-height:.9;
+  text-align:left;
+  text-transform:none;
+  padding:1.66em 0 0.66em;
 
   a {
-    color:$grayDark;
+    color:$gray;
     border:0;
   }
 }
@@ -229,15 +248,15 @@ a.title {
 
 .grossly-massive,
 .big {
-  font-family:$baseFontFamily;
-  font-weight:700;
+  font-family:$accentFamily;
+  font-weight:400;
   font-size:1.4em;
-  line-height:$baseLineHeight;
+  line-height:1.5;
   list-style:none;
   margin-top:2.5em;
-  margin-bottom:0;
+  margin-bottom:0.33em;
   padding:0;
-  color:$grayDarker;
+  color:$grayDark;
 
   li {
     display:inline;
@@ -263,7 +282,15 @@ a.title {
 }
 
 p {
-  margin:1em 0;
+  margin:0;
+}
+p:not(.big) + p {
+  text-indent:2em;
+}
+
+p.nodent {
+  text-indent:0 !important;
+  margin-top:.66em;
 }
 
 blockquote {
@@ -271,16 +298,16 @@ blockquote {
   color:$grayDarker;
   margin-left:0;
   margin-right:0;
-  padding-left:2em;
   padding-bottom:0;
   font-size:$baseFontSize * 1.4;
   font-style:italic;
-  border-left:4px solid $grayLighter;
 
   p {
     position:relative;
     font-style:italic;
     color:lighten($textColor, 25%);
+    padding-left:1.8em;
+    border-left:4px solid $white;
     margin:0;
   }
 
@@ -333,11 +360,13 @@ dfn {
   margin:0 0 2em;
 }
 
-.orange {color:$orange !important;}
-.yellow {color:$yellow !important;}
-.green {color:$green !important;}
-.purple {color:$purple !important;}
-.blue {color:$blue !important;}
+.blue {color:$grayLighter !important;background:$blue !important;}
+.green {color:$grayLighter !important;background:$green !important;}
+.red {color:$grayLighter !important;background:$red !important;}
+.yellow {color:$grayLighter !important;background:$yellow !important;}
+.orange {color:$grayLighter !important;background:$orange !important;}
+.pink {color:$grayLighter !important;background:$pink !important;}
+.purple {color:$grayLighter !important;background:$purple !important;}
 
 // LISTS
 // -----

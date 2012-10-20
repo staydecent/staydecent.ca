@@ -2,7 +2,7 @@
 <footer id="foot"><div class="container-fluid">
 
     <article>
-        <p class="big">I&rsquo;m Adrian Unger. I build <a class="orange" href="//ecquire.com" target="_blank">Ecquire</a> while living in a trailer on a <a class="yellow" href="//ubcfarm.ca" target="_blank">farm</a> in a <a class="blue" href="//wikitravel.org/en/Vancouver" target="_blank">city</a>. I write about design, nature, technology, etc.</p>
+        <p class="big">I&rsquo;m Adrian Unger. I build <a href="//ecquire.com" target="_blank">Ecquire</a> while living in a trailer on a <a href="//ubcfarm.ca" target="_blank">farm</a> in a <a href="//wikitravel.org/en/Vancouver" target="_blank">city</a>. I write about design, nature, technology, etc.</p>
 
         <nav id="navigation" class="centre"><p>
             <a href="<?php echo SITE_URL ?>" title="Homepage" rel="home">Home</a>&nbsp;&middot;        

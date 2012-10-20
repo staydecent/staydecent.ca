@@ -11,7 +11,7 @@
         
         <p>Previously, I ran a freelance web development practice under the alias <em>Staydecent</em>. Currently, I live in a trailer on a <a href="//ubcfarm.ca" target="_blank">farm</a> in a <a href="//wikitravel.org/en/Vancouver" target="_blank">city</a>.</p>
 
-        <p>I enjoy homesteading, hiking and learning&mdash;among other things.</p>
+        <p class="nodent">I enjoy homesteading, hiking and learning&mdash;among other things.</p>
     </article>  
 
     <div class="post-navigation">

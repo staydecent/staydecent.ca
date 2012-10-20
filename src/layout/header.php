@@ -14,10 +14,7 @@
             echo $title.' &middot; Adrian Unger';
     ?></title>
 
-    <link rel="stylesheet" href="<?php echo SITE_URL ?>assets/css/bootstrap.css">
-    <link href='http://fonts.googleapis.com/css?family=Caesar+Dressing' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
-    
+    <link rel="stylesheet" href="<?php echo SITE_URL ?>assets/css/bootstrap.css">    
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->

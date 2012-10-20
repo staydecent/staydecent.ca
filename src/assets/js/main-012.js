@@ -11,10 +11,10 @@ Zepto(function($) {
     /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
     * Randomly recolour page title                                           *
     * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-    var titleCharLength = $('#site-title > span').length
-    var colourClasses = ['blue','orange','yellow']
-    $('article > header > h1').lettering('words').find('span').each(function(i,e) {
-        var colourIndex = Math.floor(Math.random()*3)
-        $(e).addClass(colourClasses[colourIndex])
-    })
+    // var titleCharLength = $('#site-title > span').length
+    var colourClasses = ['blue','green','red','yellow']
+    // $('article > header > h1').lettering('words').find('span').each(function(i,e) {
+    //     var colourIndex = Math.floor(Math.random()*3)
+    //     $(e).addClass(colourClasses[colourIndex])
+    // })
 })
