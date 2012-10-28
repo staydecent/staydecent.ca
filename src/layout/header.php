@@ -35,6 +35,8 @@
 </head>
 <body>
 
-<header id="head" class="container-fluid">
-    <h1 id="site-title"><a href="<?php echo SITE_URL ?>" rel="home">Adrian Unger</a></h1>
+<header id="head">
+    <div class="container-fluid">
+        <h1 id="site-title"><a href="<?php echo SITE_URL ?>" rel="home">From the desk of Adrian Unger</a></h1>
+    </div>
 </header>

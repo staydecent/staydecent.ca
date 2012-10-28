@@ -1,17 +1,21 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-<div role="main" id="main" class="container-fluid">
+<div role="main" id="main">
 
     <article>
         <header>
+        <div class="container-fluid">
             <h1>Hello,</h1>  
+        </div>
         </header>
 
-        <p class="big">My name is Adrian Unger and I am a software developer at <a href="//ecquire.com" target="_blank">Ecquire</a>.</p>
-        
-        <p>Previously, I ran a freelance web development practice under the alias <em>Staydecent</em>. Currently, I live in a trailer on a <a href="//ubcfarm.ca" target="_blank">farm</a> in a <a href="//wikitravel.org/en/Vancouver" target="_blank">city</a>.</p>
+        <div class="container-fluid">
+            <p class="big">My name is Adrian Unger and I am a software developer at <a href="//ecquire.com" target="_blank">Ecquire</a>.</p>
+            
+            <p>Previously, I ran a freelance web development practice under the alias <em>Staydecent</em>. Currently, I live in a trailer on a <a href="//ubcfarm.ca" target="_blank">farm</a> in a <a href="//wikitravel.org/en/Vancouver" target="_blank">city</a>.</p>
 
-        <p class="nodent">I enjoy homesteading, hiking and learning&mdash;among other things.</p>
+            <p class="nodent">I enjoy homesteading, hiking and learning&mdash;among other things.</p>
+        </div>
     </article>  
 
     <div class="post-navigation">

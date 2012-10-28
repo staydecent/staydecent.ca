@@ -13,7 +13,12 @@ body {
   background:$grayLighter url(../i/noise.png);
 }
 
+#head {
+  background:$white;
+}
+
 #main {
+  
   p:not(.big) {
     font-size:$baseFontSize - 2;
   }
@@ -83,18 +88,13 @@ article {
   }
 
   header {
-    background:$black;
     padding-top:1.66em;
     padding-bottom:1.84em;
-    -webkit-transition:background-color 0.5s ease;
-    -moz-transition:background-color 0.5s ease;
-    -o-transition:background-color 0.5s ease;
-    -ms-transition:background-color 0.5s ease;
-    transition:background-color 0.5s ease;
+    background:$white;
 
     h1 {
       margin-top:.5em;
-      color:$grayLighter;
+      color:$grayDark;
     }
 
     .meta {
@@ -102,7 +102,7 @@ article {
       font-size:70%;
       line-height:1;
       font-family:$accentFamily;
-      color:$gray;
+      color:$grayDark;
       opacity:0.7;
     }
   }
@@ -192,16 +192,17 @@ article {
   max-width:680px;
   margin-right:auto;
   margin-left:auto;
-  font-family:$accentFamily;
-  font-size:$baseFontSize - 2;
+  font-family:$baseFontFamily;
+  font-size:$baseFontSize - 4;
   font-weight:400;
-  line-height:.9;
+  line-height:1.2;
   text-align:left;
   text-transform:none;
-  padding:1.66em 0 0.66em;
+  padding:1.66em 0 1.33em;
+  border-bottom:1px solid $grayLight;
 
   a {
-    color:$gray;
+    color:$grayDark;
     border:0;
   }
 }
@@ -217,7 +218,7 @@ h6 {
 a {
   color:$linkColor;
   text-decoration:none;
-  border-bottom:1px solid $gray;
+  border-bottom:1px solid $grayLight;
 }
 a:hover {
   color:$linkColorHover;
@@ -381,7 +382,6 @@ ol.styled {
     padding:0;
 
     a {
-      border-bottom:1px solid $grayLight;
       font-size:$baseFontSize + 2;
     }
 
