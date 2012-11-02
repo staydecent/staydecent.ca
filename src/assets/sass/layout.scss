@@ -10,11 +10,12 @@ body {
   font-size:$baseFontSize;
   line-height:$baseLineHeight;
   color:$textColor;
-  background:$grayLighter url(../i/noise.png);
+  background:$white;
 }
 
 #head {
-  background:$white;
+  border-bottom:1px solid $grayLight;
+  padding:.5em 0;
 }
 
 #main {
@@ -26,21 +27,28 @@ body {
 
 #foot {
   background:$white;
-  padding:.5em 0 3.5em;
+  padding:0;
   border-top:1px solid $grayLight;
 
   article {
     font-size:$baseFontSize - 3;
 
     .big {
-      font-family:$accentFamily;
+      font-family:$baseFontFamily;
       font-weight:400;
       color:$black;
     }
   }
 
   nav {
-    margin-top:1.5em;
+    margin-top:.66em;
+    color:$grayLight;
+
+    a {
+      padding:1em 2.66em;
+      border:0;
+      color:$grayDark;
+    }
   }
 }
 
@@ -94,14 +102,14 @@ article {
 
     h1 {
       margin-top:.5em;
-      color:$grayDark;
+      color:$grayDarker;
     }
 
     .meta {
       margin:3em 0 0;
       font-size:70%;
       line-height:1;
-      font-family:$accentFamily;
+      font-family:$baseFontFamily;
       color:$grayDark;
       opacity:0.7;
     }
@@ -146,10 +154,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family:$accentFamily;
+  font-family:$baseFontFamily;
   font-weight:800;
   line-height:1.4;
-  text-transform:uppercase;
   text-align:center;
   margin:1.66em 0 .23em 0;
   color:$grayDarker;
@@ -159,7 +166,7 @@ h6 {
 }
 
 h1 {
-  font-size:4em;
+  font-size:5em;
   line-height:1.2;
 }
 
@@ -188,22 +195,25 @@ article {
   }
 }
 
-#site-title {
+#intro {
   max-width:680px;
   margin-right:auto;
   margin-left:auto;
   font-family:$baseFontFamily;
-  font-size:$baseFontSize - 4;
+  font-size:70%;
   font-weight:400;
-  line-height:1.2;
+  line-height:1.4;
   text-align:left;
   text-transform:none;
-  padding:1.66em 0 1.33em;
-  border-bottom:1px solid $grayLight;
+  color:$grayDark;
+  padding:1.66em 0;
 
-  a {
-    color:$grayDark;
-    border:0;
+  p {
+    width:54%;
+
+    a {
+      color:$grayDark;
+    }
   }
 }
 
@@ -249,15 +259,15 @@ a.title {
 
 .grossly-massive,
 .big {
-  font-family:$accentFamily;
+  font-family:$baseFontFamily;
   font-weight:400;
   font-size:1.4em;
   line-height:1.5;
   list-style:none;
-  margin-top:2.5em;
+  margin-top:0;
   margin-bottom:0.33em;
   padding:0;
-  color:$grayDark;
+  color:$grayDarker;
 
   li {
     display:inline;
@@ -273,7 +283,7 @@ a.title {
 }
 
 .meta {
-  font-family:$monospace;
+  font-family:$baseFontFamily;
   font-size:$baseFontSize - 3;
   line-height:$baseLineHeight - 2;
 }
@@ -306,7 +316,7 @@ blockquote {
   p {
     position:relative;
     font-style:italic;
-    color:lighten($textColor, 25%);
+    color:$gray;
     padding-left:1.8em;
     border-left:4px solid $white;
     margin:0;

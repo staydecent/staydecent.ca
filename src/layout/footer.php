@@ -1,15 +1,11 @@
 
 <footer id="foot"><div class="container-fluid">
 
-    <article>
-        <p class="big">I&rsquo;m Adrian Unger. I build <a href="//ecquire.com" target="_blank">Ecquire</a> while living in a trailer on a <a href="//ubcfarm.ca" target="_blank">farm</a> in a <a href="//wikitravel.org/en/Vancouver" target="_blank">city</a>. I write about design, nature, technology, etc.</p>
-
-        <nav id="navigation" class="centre"><p>
-            <a href="<?php echo SITE_URL ?>" title="Homepage" rel="home">Home</a>&nbsp;&middot;        
-            <a href="<?php echo SITE_URL ?>archives" title="View all posts by Adrian Unger">Archives</a>&nbsp;&middot;
-            <a href="mailto:hello&#64;staydecent.ca" title="Email Adrian Unger">Email</a>
-        </p></nav>  
-    </article>
+    <nav id="navigation" class="centre"><p>
+        <a href="<?php echo SITE_URL ?>" title="Homepage" rel="home">Home</a>&nbsp;&middot;        
+        <a href="<?php echo SITE_URL ?>archives" title="View all posts by Adrian Unger">Archives</a>&nbsp;&middot;
+        <a href="mailto:hello&#64;staydecent.ca" title="Email Adrian Unger">Email</a>
+    </p></nav>  
 
 </div></footer>
 

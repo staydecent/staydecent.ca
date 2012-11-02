@@ -35,8 +35,10 @@
 </head>
 <body>
 
-<header id="head">
-    <div class="container-fluid">
-        <h1 id="site-title"><a href="<?php echo SITE_URL ?>" rel="home">From the desk of Adrian Unger</a></h1>
+<header id="head"><div class="container-fluid">
+    <div id="intro">
+        <p>
+            I&rsquo;m <a href="<?php echo SITE_URL ?>" rel="home">Adrian Unger</a>. I build <a href="//ecquire.com" target="_blank">Ecquire</a> while living in a trailer on a <a href="//ubcfarm.ca" target="_blank">farm</a> in a <a href="//wikitravel.org/en/Vancouver" target="_blank">city</a>. I write about design, nature, technology, etc.
+        </p>
     </div>
-</header>
+</div></header>
