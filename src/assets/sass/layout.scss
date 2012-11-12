@@ -231,7 +231,7 @@ a {
   border-bottom:1px solid $grayLight;
 }
 a:hover {
-  color:$linkColorHover;
+  color:$linkColorHover !important;
 }
 a > i {
   margin-top:3px;
