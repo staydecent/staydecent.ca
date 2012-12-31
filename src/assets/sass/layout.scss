@@ -10,23 +10,24 @@ body {
   font-size:$baseFontSize;
   line-height:$baseLineHeight;
   color:$textColor;
-  background:$white;
+  background:#fff;
 }
 
 #head {
-  border-bottom:1px solid $grayLight;
-  padding:.5em 0;
+  border-top:1em solid $white;
+  padding-top:1em;
 }
 
 #main {
   
   p:not(.big) {
-    font-size:$baseFontSize - 2;
+    font-size:$baseFontSize - 3;
+    line-height:1.6;
   }
 }
 
 #foot {
-  background:$white;
+  background:#fff;
   padding:0;
   border-top:1px solid $grayLight;
 
@@ -59,23 +60,6 @@ body {
 // PAGE ELEMENTS
 // -------------
 
-#tree {
-  width:85px;
-  height:102px;
-  background:url(../i/tree-scaled.png) no-repeat 0 50px;
-  display:block;
-  margin:0 auto;
-  padding-top:50px;
-  overflow:hidden;
-  text-indent:-9999em;
-  @include transition(all .2s ease-in-out);
-
-  &:hover {
-    cursor:pointer;
-    @include scale(1.1)
-  }
-}
-
 article {
 
   h2,
@@ -96,31 +80,28 @@ article {
   }
 
   header {
-    padding-top:1.66em;
-    padding-bottom:1.84em;
-    background:$white;
 
     h1 {
-      margin-top:.5em;
+      padding:.2em 0;
+      margin-top:0;
       color:$grayDarker;
+      line-height:1;
+      display:block;
+      width:100%;
     }
+  }
 
-    .meta {
-      margin:3em 0 0;
-      font-size:64%;
-      line-height:1.2;
-      font-family:$baseFontFamily;
-      color:$grayDarker;
-      text-transform: uppercase;
-      opacity:0.7;
+  .meta {
+    width:100%;
+    padding-top:.66em;
+    font-size:64%;
+    line-height:1.2;
+    font-family:$baseFontFamily;
+    color:$gray;
 
-      [class^="icon-"] {
-        margin-top:0;
-
-        &:last-child {
-          margin-left: 10px;
-        }
-      }
+    [class^="icon-"] {
+      margin-top:0;
+      opacity:0.3;
     }
   }
 }
@@ -146,7 +127,7 @@ article {
 .container-fluid {
   position:relative;
   width:auto;
-  max-width:1140px;
+  max-width:860px;
   min-width:260px;
   padding-left: $gridGutterWidth;
   padding-right: $gridGutterWidth;
@@ -164,9 +145,8 @@ h4,
 h5,
 h6 {
   font-family:$baseFontFamily;
-  font-weight:800;
+  font-weight:700;
   line-height:1.4;
-  text-align:center;
   margin:1.66em 0 .23em 0;
   color:$grayDarker;
   -webkit-font-smoothing: antialiased;
@@ -176,6 +156,7 @@ h6 {
 
 h1 {
   font-size:5em;
+  font-weight:800;
   line-height:1.2;
 }
 
@@ -204,25 +185,35 @@ article {
   }
 }
 
-#intro {
-  max-width:680px;
-  margin-right:auto;
-  margin-left:auto;
+#intro,
+#top-nav {
   font-family:$baseFontFamily;
-  font-size:70%;
+  font-size:64%;
   font-weight:400;
-  line-height:1.4;
+  line-height:1.5;
   text-align:left;
   text-transform:none;
-  color:$grayDark;
+  color:$grayDarker;
   padding:1.66em 0;
 
-  p {
-    width:54%;
+  a {
+    color:$grayDarker;
+  }
+}
 
-    a {
-      color:$grayDark;
-    }
+#intro {
+  width:33%;
+  max-width:680px;
+  margin-right:16%;
+}
+
+#top-nav {
+  width:16%;
+  line-height:1.2;
+  
+  a {
+    display:block;
+    border:0;
   }
 }
 
@@ -268,14 +259,17 @@ a.title {
 
 .grossly-massive,
 .big {
+  display:block;
+  max-width:100%;
+  width:100%;
   font-family:$baseFontFamily;
-  font-weight:400;
+  font-weight:300;
   font-size:1.4em;
   line-height:1.5;
   list-style:none;
   margin-top:0;
   margin-bottom:0.33em;
-  padding:0;
+  padding:.2em 0;
   color:$grayDarker;
 
   li {
@@ -305,7 +299,13 @@ p {
   margin:0;
 }
 p:not(.big) + p {
-  text-indent:2em;
+  text-indent:0;
+
+  &::before {
+    font-weight:300;
+    content:"\2014\2014";
+    color:$grayLight;
+  }
 }
 
 p.nodent {
@@ -324,10 +324,9 @@ blockquote {
 
   p {
     position:relative;
+    font-weight:300;
     font-style:italic;
     color:$grayDark;
-    padding-left:1.8em;
-    border-left:4px solid $grayDarker;
     margin:0;
   }
 

@@ -4,9 +4,7 @@
 
     <article>
         <header>
-            <div class="container-fluid">
-                <h1>Archives</h1>  
-            </div>
+            <h1>Archives</h1>  
         </header>
 
         <div class="container-fluid">

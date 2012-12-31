@@ -8,7 +8,7 @@ $grayDark:              #7b8187;
 $gray:                  #bdc1c4;
 $grayLight:             #eceae7;
 $grayLighter:           #f6f8f8;
-$white:                 #fff;
+$white:                 #f4faf6;
 
 // Accent colors
 $blue:                  #206fb3;
@@ -25,11 +25,11 @@ $linkColorHover:        $blue;
 
 // Typography
 $baseFontSize:          21px;
-$baseFontFamily:        'PT Serif', times, serif;
+$baseFontFamily:        'PT Serif', helvetica, sans-serif;
 $baseLineHeight:        1.8;
 $textColor:             $grayDarker;
 
-$sans:                  Helvetica, arial, sans-serif;
+$serif:                 serif;
 $monospace:             'Menlo', 'Monaco', 'Consolas', monospace;
 $accentFamily:          'Open Sans', helvetica, sans-serif;
 

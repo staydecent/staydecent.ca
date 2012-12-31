@@ -36,9 +36,16 @@
 <body>
 
 <header id="head"><div class="container-fluid">
-    <div id="intro">
+    <div id="intro" class="pull-left">
         <p>
-            I&rsquo;m <a href="<?php echo SITE_URL ?>" rel="home">Adrian Unger</a>. I build <a href="//ecquire.com" target="_blank">Ecquire</a> while living in a trailer on a <a href="//ubcfarm.ca" target="_blank">farm</a> in a <a href="//wikitravel.org/en/Vancouver" target="_blank">city</a>. I write about design, nature, technology, etc.
+            I&rsquo;m <a href="<?php echo SITE_URL ?>" rel="home">Adrian Unger</a>. I build <a href="//ecquire.com" target="_blank">Ecquire</a> while living a sort-of nomadic lifestyle. I write about design, nature, technology, etc.
         </p>
+    </div>
+    <div id="top-nav" class="pull-left">
+        <nav>
+            <a href="<?php echo SITE_URL ?>" title="Homepage" rel="home">Home</a>&nbsp;   
+            <a href="<?php echo SITE_URL ?>archives" title="View all posts by Adrian Unger">Archives</a>&nbsp;
+            <a href="mailto:hello&#64;staydecent.ca" title="Email Adrian Unger">Email</a>
+        </nav>  
     </div>
 </div></header>

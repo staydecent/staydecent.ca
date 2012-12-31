@@ -17,4 +17,9 @@ Zepto(function($) {
     //     var colourIndex = Math.floor(Math.random()*3)
     //     $(e).addClass(colourClasses[colourIndex])
     // })
+    /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+    * Fit Text!                                                              *
+    * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+    $("article header h1").fitText(0.9);
+    $(".big").fitText(1, { maxFontSize: '32px' });
 })
