@@ -28,7 +28,7 @@
             $limit = 0; 
             foreach ($posts as $date => $entry) : 
             // if (++$limit > 6) break; 
-            if ($limit == 1)  continue;
+            if (++$limit == 1)  continue;
         ?>
             <li>
                 <a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a>
