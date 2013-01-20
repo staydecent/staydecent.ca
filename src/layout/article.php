@@ -3,7 +3,7 @@
 <div role="main" id="main">
 
     <article>
-        <header>
+        <header class="container-fluid">
             <h1><?php echo $entry['title'] ?></h1>  
         </header>
         

@@ -31,6 +31,9 @@ function get_entries($cat, $desc = TRUE)
         $content_file = $config['dirs']['entries'].DS.$cat.DS.$filename.DS. $config['content_file'];
         $parsed = Parse::contents(file_get_contents($content_file));
 
+        if (array_key_exists('excerpt', $parsed))
+          $entries[$date]['excerpt'] = $parsed['excerpt'];
+
         if (array_key_exists('title', $parsed))
             $entries[$date]['title'] = $parsed['title'];
     }

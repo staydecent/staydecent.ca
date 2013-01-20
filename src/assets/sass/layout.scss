@@ -16,6 +16,7 @@ body {
 #head {
   border-top:1em solid $white;
   padding-top:1em;
+  padding-bottom:2em;
 }
 
 #main {
@@ -82,18 +83,23 @@ article {
   header {
 
     h1 {
-      padding:.2em 0;
+      padding:.2em 0 0;
       margin-top:0;
       color:$grayDarker;
       line-height:1;
       display:block;
       width:100%;
+      
+      a {
+        color:$grayDarker;
+        border:0;
+      }
     }
   }
 
   .meta {
     width:100%;
-    padding-top:.66em;
+    padding-bottom:.66em;
     font-size:64%;
     line-height:1.2;
     font-family:$baseFontFamily;
@@ -145,7 +151,8 @@ h4,
 h5,
 h6 {
   font-family:$baseFontFamily;
-  font-weight:700;
+  font-weight:400;
+  font-style: italic;
   line-height:1.4;
   margin:1.66em 0 .23em 0;
   color:$grayDarker;
@@ -155,8 +162,7 @@ h6 {
 }
 
 h1 {
-  font-size:5em;
-  font-weight:800;
+  font-size:2em;
   line-height:1.2;
 }
 
@@ -170,7 +176,6 @@ article {
   h5,
   h6 {
     font-family:$baseFontFamily;
-    font-weight:700;
     text-align:left;
     text-transform:none;
     letter-spacing: 0;
@@ -185,35 +190,18 @@ article {
   }
 }
 
-#intro,
-#top-nav {
+#intro {
   font-family:$baseFontFamily;
   font-size:64%;
   font-weight:400;
   line-height:1.5;
-  text-align:left;
+  text-align:center;
   text-transform:none;
   color:$grayDarker;
   padding:1.66em 0;
 
   a {
     color:$grayDarker;
-  }
-}
-
-#intro {
-  width:33%;
-  max-width:680px;
-  margin-right:16%;
-}
-
-#top-nav {
-  width:16%;
-  line-height:1.2;
-  
-  a {
-    display:block;
-    border:0;
   }
 }
 
@@ -264,7 +252,7 @@ a.title {
   width:100%;
   font-family:$baseFontFamily;
   font-weight:300;
-  font-size:1.4em;
+  font-size:1.2em;
   line-height:1.5;
   list-style:none;
   margin-top:0;

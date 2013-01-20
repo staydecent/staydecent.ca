@@ -3,7 +3,7 @@
 
     <nav id="navigation" class="centre"><p>
         <a href="<?php echo SITE_URL ?>" title="Homepage" rel="home">Home</a>&nbsp;&middot;        
-        <a href="<?php echo SITE_URL ?>archives" title="View all posts by Adrian Unger">Archives</a>&nbsp;&middot;
+        <a href="<?php echo SITE_URL ?>about" title="About Adrian Unger">About</a>&nbsp;&middot;
         <a href="mailto:hello&#64;staydecent.ca" title="Email Adrian Unger">Email</a>
     </p></nav>  
 

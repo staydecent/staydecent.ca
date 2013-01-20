@@ -2,23 +2,34 @@
 
 <div role="main" id="main">
 
+    <?php 
+        $posts = get_entries('articles') + get_entries('bits'); krsort($posts); 
+        $keys = array_keys($posts);
+    ?>
+
     <article>
-        <header>
-            <h1>Hello, nice to meet you.</h1>  
+        <?php $first_post = $posts[$keys[0]] ?>
+        <header class="container-fluid">
+            <h1><a href="<?php echo $first_post['url']; ?>"><?php echo $first_post['title'] ?></a></h1>
+            <div class="meta">
+                Published <?php echo date("F j, Y", $keys[0]) ?>
+            </div>
         </header>
 
-        <div class="container-fluid">            
-            <p class="big">I&rsquo;m a software developer at <a href="http://ecquire.com" target="_blank">Ecquire</a>. Previously, I ran a freelance web development practice under the alias <em>Staydecent</em>. Currently, I&rsquo;m trying out this <a href="https://en.wikipedia.org/wiki/Digital_nomad" target="_blank">Digital Nomad</a> thing down in <a href="//wikitravel.org/en/Mexico" target="_blank">Mexico</a>.</p>
-
-            <p class="nodent">I enjoy homesteading, hiking and learning&mdash;among other things.</p>
+        <div class="container-fluid">
+            <p class="big"><?php echo $first_post['excerpt'] ?> <small><em><a href="<?php echo $first_post['url']; ?>">Keep reading &rarr;</a></em></small></p>
         </div>
-    </article>  
+    </article>
 
     <article>
-        <h2>Writing</h2>
-        <?php $posts = get_entries('articles') + get_entries('bits'); krsort($posts); ?>
+        <h4>More posts</h4>
         <ol class="styled">
-        <?php $limit = 0; foreach ($posts as $date => $entry) : if (++$limit > 6) break; ?>
+        <?php 
+            $limit = 0; 
+            foreach ($posts as $date => $entry) : 
+            // if (++$limit > 6) break; 
+            if ($limit == 1)  continue;
+        ?>
             <li>
                 <a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a>
                 &nbsp;&middot;
@@ -26,7 +37,6 @@
             </li>
         <?php endforeach; ?>
         </ol>
-        <p><em>View the <a href="<?php echo SITE_URL ?>archives">archives</a> for all posts.</em><p>
     </article>        
 
 </div>

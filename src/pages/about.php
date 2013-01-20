@@ -1,22 +1,16 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-<div role="main" id="main" class="container-fluid">
+<div role="main" id="main">
 
-    <div id="colophon" class="marketing">
-        <header>
-            <h2>Adrian Unger</h2>
+    <article>
+        <header class="container-fluid">
+            <h1>Hello, nice to meet you.</h1>  
         </header>
 
-        <ul id="about-me" class="grossly-massive">
-            <li>Vancouver based web designer &amp; developer</li>
-            <li>Freelancing since 2008</li>
-            <li>Lives in a trailer on a farm in the city</li>
-            <li>I&rsquo;m the founder of <a href="http://www.cookitlocal.com">Cook It Local</a> and <a href="http://fullioapp.com">Fullio App</a></a></li>
-            <li>College dropout.</li>
-        </ul>
-
-        <p><a href="<?php echo SITE_URL ?>cv.txt" target="_blank"><i class="icon-bookmark"></i>View my CV</a></p>
-    </div>
+        <div class="container-fluid">            
+            <p class="big">I&rsquo;m a software developer at <a href="http://ecquire.com" target="_blank">Ecquire</a>. Previously, I ran a freelance web development practice under the alias <em>Staydecent</em>. Currently, I&rsquo;m hanging out in <a href="http://vivaoaxaca2013.wordpress.com" target="_blank">Mexico</a>.</p>
+        </div>
+    </article>  
 
 </div>
 

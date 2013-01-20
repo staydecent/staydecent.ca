@@ -36,16 +36,10 @@
 <body>
 
 <header id="head"><div class="container-fluid">
-    <div id="intro" class="pull-left">
+    <div id="intro">
+        <a href="<?php echo SITE_URL ?>" rel="home" alt="Home"><img src="<?php echo SITE_URL ?>/favicon.ico" alt="Trees are pretty great."></a>
         <p>
-            I&rsquo;m <a href="<?php echo SITE_URL ?>" rel="home">Adrian Unger</a>. I build <a href="//ecquire.com" target="_blank">Ecquire</a> while living a sort-of nomadic lifestyle. I write about design, nature, technology, etc.
+            Hey, I&rsquo;m <a href="<?php echo SITE_URL ?>/about" rel="home">Adrian</a>. I build <a href="//ecquire.com" target="_blank">Ecquire</a> and love <a href="http://vivaoaxaca2013.wordpress.com" target="_blank">Mexico</a>. <br>Why not <a href="mailto:hello&#64;staydecent.ca">say hello!</a>
         </p>
-    </div>
-    <div id="top-nav" class="pull-left">
-        <nav>
-            <a href="<?php echo SITE_URL ?>" title="Homepage" rel="home">Home</a>&nbsp;   
-            <a href="<?php echo SITE_URL ?>archives" title="View all posts by Adrian Unger">Archives</a>&nbsp;
-            <a href="mailto:hello&#64;staydecent.ca" title="Email Adrian Unger">Email</a>
-        </nav>  
     </div>
 </div></header>
