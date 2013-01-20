@@ -37,9 +37,9 @@
 
 <header id="head"><div class="container-fluid">
     <div id="intro">
-        <a href="<?php echo SITE_URL ?>" rel="home" alt="Home"><img src="<?php echo SITE_URL ?>/favicon.ico" alt="Trees are pretty great."></a>
+        <a href="<?php echo SITE_URL ?>" rel="home" alt="Home"><img src="<?php echo SITE_URL ?>favicon.ico" alt="Trees are pretty great."></a>
         <p>
-            Hey, I&rsquo;m <a href="<?php echo SITE_URL ?>/about" rel="home">Adrian</a>. I build <a href="//ecquire.com" target="_blank">Ecquire</a> and love <a href="http://vivaoaxaca2013.wordpress.com" target="_blank">Mexico</a>. <br>Why not <a href="mailto:hello&#64;staydecent.ca">say hello!</a>
+            Hey, I&rsquo;m <a href="<?php echo SITE_URL ?>about" rel="home">Adrian</a>. I build <a href="//ecquire.com" target="_blank">Ecquire</a> and love <a href="http://vivaoaxaca2013.wordpress.com" target="_blank">Mexico</a>. <br>Why not <a href="mailto:hello&#64;staydecent.ca">say hello!</a>
         </p>
     </div>
 </div></header>
