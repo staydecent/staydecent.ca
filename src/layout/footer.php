@@ -1,5 +1,5 @@
 
-<footer id="foot"><div class="container-fluid">
+<footer id="foot">
 
     <article class="container-fluid">
         <nav id="navigation"><p>
@@ -9,7 +9,7 @@
         </p></nav>
     </article>
 
-</div></footer>
+</footer>
 
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0rc1/zepto.min.js"></script>

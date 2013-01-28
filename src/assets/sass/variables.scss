@@ -21,7 +21,7 @@ $purple:                #a68bd6;
 
 // Links
 $linkColor:             $black;
-$linkColorHover:        $blue;
+$linkColorHover:        lighten($blue, 15%);
 
 // Typography
 $baseFontSize:          20px;
@@ -32,7 +32,7 @@ $textColor:             $grayDarker;
 
 $serif:                 serif;
 $monospace:             'Menlo', 'Monaco', 'Consolas', monospace;
-$accentFamily:          'Open Sans', helvetica, sans-serif;
+$accentFamily:          'Source Sans Pro', helvetica, sans-serif;
 
 // Buttons
 $primaryButtonBackground:    $grayLighter;
