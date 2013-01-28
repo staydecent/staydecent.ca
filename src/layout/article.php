@@ -8,11 +8,11 @@
         </header>
         
         <div class="container-fluid">
-            <div class="meta">
-                Published <?php echo date("F j, Y", $entry['date']) ?>&nbsp;&middot;&nbsp;
-                <?php echo ucfirst(convertNumber(str_word_count($entry['body']))) ?> words
-            </div>
             <?php echo $entry['body'] ?>
+
+            <p><span class="meta">
+                <?php echo ucfirst(convertNumber(str_word_count($entry['body']))) ?> words published on <?php echo date("F j, Y", $entry['date']) ?>
+            </span></p>
         </div>
     </article>  
 

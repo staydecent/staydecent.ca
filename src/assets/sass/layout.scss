@@ -13,10 +13,24 @@ body {
   background:#fff;
 }
 
+#tree {
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 25px;
+  padding:10px 5px 0 0;
+  border:0 !important;
+}
+
 #head {
-  border-top:1em solid $white;
-  padding-top:1em;
-  padding-bottom:2em;
+  padding:25px 0 50px;
+  opacity: .5;
+  -webkit-transition: 0.5s opacity ease;
+  transition: 0.5s opacity ease;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 #main {
@@ -28,34 +42,19 @@ body {
 }
 
 #foot {
-  background:#fff;
   padding:0;
-  border-top:1px solid $grayLight;
-
-  article {
-    font-size:$baseFontSize - 3;
-
-    .big {
-      font-family:$baseFontFamily;
-      font-weight:400;
-      color:$black;
-    }
-  }
+  border-top:2px solid white;
+  background: $white;
 
   nav {
-    margin-top:.66em;
-    color:$grayLight;
+    margin:15px 0;
 
-    a {
-      padding:1em 2.66em;
-      border:0;
-      color:$grayDark;
-    }
+    a { font-size: 14px; }
   }
 }
 
-.padding {
-  margin-top:2.5em;
+.spaced {
+  margin-top:50px;
 }
 
 // PAGE ELEMENTS
@@ -63,6 +62,7 @@ body {
 
 article {
 
+  h1,
   h2,
   h3,
   h4,
@@ -96,27 +96,15 @@ article {
       }
     }
   }
-
-  .meta {
-    width:100%;
-    padding-bottom:.66em;
-    font-size:64%;
-    line-height:1.2;
-    font-family:$baseFontFamily;
-    color:$gray;
-
-    [class^="icon-"] {
-      margin-top:0;
-      opacity:0.3;
-    }
-  }
 }
 
 .post-navigation {
-  font-size:$baseFontSize + 6;
-  margin-top:4em;
-  margin-bottom:4em;
-  text-align:center;
+  font-size: $baseFontSize + 3;
+  margin-top: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  background: $white;
 
   h4 {
     margin:0;
@@ -150,64 +138,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family:$baseFontFamily;
-  font-weight:400;
-  font-style: italic;
+  font-family:$accentFamily;
   line-height:1.4;
-  margin:1.66em 0 .23em 0;
   color:$grayDarker;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
 
-h1 {
-  font-size:2em;
-  line-height:1.2;
-}
-
-
 article {
-  h2 {
-    font-size:1.66em;
-  }
 
-  h4,
-  h5,
-  h6 {
-    font-family:$baseFontFamily;
-    text-align:left;
-    text-transform:none;
-    letter-spacing: 0;
-    margin-top:.23em;
-    margin-bottom:.23em;
-  }
-
-  p + h4,
-  p + h5,
-  p + h6 {
-    margin-top:1.66em;
-  }
-}
-
-#intro {
-  font-family:$baseFontFamily;
-  font-size:64%;
-  font-weight:400;
-  line-height:1.5;
-  text-align:center;
-  text-transform:none;
-  color:$grayDarker;
-  padding:1.66em 0;
-
-  a {
-    color:$grayDarker;
-  }
-}
-
-h6 {
-  margin-top:2.4em;
-  margin-bottom:0.6em;
 }
 
 
@@ -228,36 +168,34 @@ a.title {
   color:inherit;
 }
 
-.bordered {
-  padding:.5em 1em;
-  border:4px solid white;
-}
-
-#skipto {
-  display:inline-block;
-  margin-top:-6px;
-  margin-left:64%;
-  padding:.25em .5em;
-  background:white;
-  font-size:$baseFontSize - 6;
-}
 
 // TYPE
 // ----
 
+#intro {
+  font-family:$accentFamily;
+  font-size:12px;
+  font-weight:400;
+  line-height:1.5;
+  text-align:center;
+  text-transform:none;
+  color:$grayDarker;
+
+  a {
+    color:$grayDarker;
+  }
+}
+
 .grossly-massive,
 .big {
-  display:block;
-  max-width:100%;
-  width:100%;
-  font-family:$baseFontFamily;
-  font-weight:300;
-  font-size:1.2em;
-  line-height:1.5;
-  list-style:none;
-  margin-top:0;
-  margin-bottom:0.33em;
-  padding:.2em 0;
+  font-family: $accentFamily;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1.4;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom:25px;
+  padding: 10px 0;
   color:$grayDarker;
 
   li {
@@ -274,9 +212,8 @@ a.title {
 }
 
 .meta {
-  font-family:$baseFontFamily;
-  font-size:$baseFontSize - 3;
-  line-height:$baseLineHeight - 2;
+  font-style: italic;
+  color: $gray;
 }
 
 .black  {
@@ -284,38 +221,29 @@ a.title {
 }
 
 p {
-  margin:0;
-}
-p:not(.big) + p {
-  text-indent:0;
-
-  &::before {
-    font-weight:300;
-    content:"\2014\2014";
-    color:$grayLight;
-  }
-}
-
-p.nodent {
-  text-indent:0 !important;
-  margin-top:.66em;
 }
 
 blockquote {
   position:relative;
   color:$grayDarker;
-  margin-left:0;
-  margin-right:0;
-  padding-bottom:0;
-  font-size:$baseFontSize * 1.4;
-  font-style:italic;
 
   p {
     position:relative;
-    font-weight:300;
+    font-family: $baseFontFamily;
+    font-weight: 400;
     font-style:italic;
     color:$grayDark;
     margin:0;
+    padding-left:15px;
+
+    &::before {
+      position: absolute;
+      content:'| ';
+      margin-left:-15px;
+      font-style: normal;
+      font-weight: 800;
+      opacity: .2;
+    }
   }
 
   footer {
@@ -354,6 +282,7 @@ pre {
     color:$white;
     padding:1.5em 2em;
 }
+
 .gist pre {
     color:$black;
 }

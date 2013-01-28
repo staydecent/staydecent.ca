@@ -21,5 +21,5 @@ Zepto(function($) {
     * Fit Text!                                                              *
     * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
     $("article header h1").fitText(0.9, { maxFontSize: '24px' });
-    $(".big").fitText(1, { maxFontSize: '48px' });
+    $(".big").fitText(1, { maxFontSize: '36px' });
 })

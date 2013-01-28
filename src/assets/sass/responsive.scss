@@ -41,22 +41,9 @@
     font-size:14px;
   }
 
-  blockquote {
-    padding-left:2.4em;
-    padding-bottom:0.4em;
-    font-size:$baseFontSize;
-    font-style:italic;
-
-    &:before {
-      top:-70px;
-      left:-40px;
-      content:'\201C';
-      font-size:$baseFontSize * 6;
-    }
-  }
-
-  article h1 {
-    font-size:3em;
+  #tree {
+    right:45%;
+    z-index:2;
   }
 
   article > p:not(.big),
@@ -92,20 +79,11 @@
     font-size:16px;
   }
 
-  #site-title {
-    padding-top:1em;
-  }
-
   .post-navigation {
     font-size:$baseFontSize - 2;
 
     ol.styled li a {
       font-size:$baseFontSize;
-    }
-
-    .meta {
-      display:block;
-      font-size:64%;
     }
   }
 

@@ -1,11 +1,13 @@
 
 <footer id="foot"><div class="container-fluid">
 
-    <nav id="navigation" class="centre"><p>
-        <a href="<?php echo SITE_URL ?>" title="Homepage" rel="home">Home</a>&nbsp;&middot;        
-        <a href="<?php echo SITE_URL ?>about" title="About Adrian Unger">About</a>&nbsp;&middot;
-        <a href="mailto:hello&#64;staydecent.ca" title="Email Adrian Unger">Email</a>
-    </p></nav>  
+    <article class="container-fluid">
+        <nav id="navigation"><p>
+            <a href="<?php echo SITE_URL ?>" title="Homepage" rel="home">Home</a>&nbsp;     
+            <a href="<?php echo SITE_URL ?>about" title="About Adrian Unger">About</a>&nbsp;
+            <a href="mailto:hello&#64;staydecent.ca" title="Email Adrian Unger">Email</a>
+        </p></nav>
+    </article>
 
 </div></footer>
 
