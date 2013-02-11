@@ -3,6 +3,14 @@
 // -----------------------------------------------------------------
 
 
+@mixin full-circle($size: 150px) {
+  display: inline-block;
+  width: $size;
+  height: $size;
+  -moz-border-radius: $size / 2;
+  -webkit-border-radius: $size / 2;
+}
+
 // UTILITY MIXINS
 // --------------------------------------------------
 

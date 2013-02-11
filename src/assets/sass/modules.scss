@@ -11,6 +11,35 @@
 // AND SHAPES
 // ----------
 
+.social-icon {
+  $icon-width: 32px;
+  @include full-circle($icon-width);
+
+  position: relative;
+  text-align: center;
+  color: $white;
+  background-color: $gray;
+  -webkit-transition: 0.5s background-color ease;
+  transition: 0.5s background-color ease;
+
+  &:hover {
+    color: $white !important;
+
+    &.twitter { background: rgb(0, 172, 237); }
+    &.github { background: #333; }
+    &.flickr { background: rgb(255, 0, 132); }
+  }
+
+  .letter {
+    position: absolute;
+    top: 0; left: 0;
+    margin-top: $icon-width / 4.5;
+    margin-left: $icon-width / 2.5;
+    font-family: $monospace;
+    font-size: 10px;
+  }
+}
+
 // From: http://nicolasgallagher.com/pure-css-folded-corner-effect/
 .note,
 .aside {
@@ -218,3 +247,5 @@
 .arrow-next {
   background-position:-12px 0;
 }
+
+.t-right { text-align:right; }

@@ -46,9 +46,15 @@ body {
   border-top:2px solid white;
   background: $white;
 
-  nav {
-    margin:15px 0;
+  .pull-left {
+    width:33.3%;
+  }
 
+  small {
+    font-size: 70%;
+  }
+
+  nav {
     a { font-size: 14px; }
   }
 }
