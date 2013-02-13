@@ -35,7 +35,8 @@ body {
 
 #main {
   
-  p:not(.big) {
+  p:not(.big),
+  li {
     font-size:$baseFontSize - 3;
     line-height:1.6;
   }
