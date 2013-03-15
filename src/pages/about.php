@@ -5,7 +5,7 @@
     <article class="spaced">
         <header class="container-fluid">
             <h1>Hi, nice to meet you.</h1>
-            <p class="meta centre">You can reach me via <a href="mailto:hello&364;staydecent.ca">Email</a> or <a href="http://twitter.com/staydecent" target="_blank">Twitter</a>.</p>
+            <p class="meta centre">You can reach me via <a href="mailto:hello&#64;staydecent.ca">Email</a> or <a href="http://twitter.com/staydecent" target="_blank">Twitter</a>.</p>
         </header>
 
         <div class="container-fluid">            
