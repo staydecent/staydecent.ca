@@ -5,6 +5,7 @@
         <article>
             <header>
                 <h1><?php echo $entry['title'] ?></h1>  
+                <p class="meta centre"><a href="<?php echo SITE_URL ?>about" title="About Adrian Unger">Adrian Unger</a>, <?php echo date("F j, Y", $entry['date']) ?></p>
             </header>
 
             <?php 
@@ -20,11 +21,6 @@
             <?php endif; ?>
             
             <?php echo $entry['body'] ?>
-
-            <footer class="meta">
-                <i class="icon-calendar"></i> Published <a href="<?php echo $entry['url']; ?>"><?php echo date("F j, Y", $entry['date']) ?></a>
-                <i class="icon-align-left"></i> <?php echo str_word_count($entry['body']) ?> words
-            </footer>
         </article>  
 
 

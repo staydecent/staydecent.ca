@@ -4,15 +4,12 @@
 
     <article>
         <header class="container-fluid">
-            <h1><?php echo $entry['title'] ?></h1>  
+            <h1><?php echo $entry['title'] ?></h1>
+            <p class="meta centre"><a href="<?php echo SITE_URL ?>about" title="About Adrian Unger">Adrian Unger</a>, <?php echo date("F j, Y", $entry['date']) ?></p>
         </header>
         
         <div class="container-fluid">
             <?php echo $entry['body'] ?>
-
-            <p><span class="meta">
-                <?php echo ucfirst(convertNumber(str_word_count($entry['body']))) ?> words published on <?php echo date("F j, Y", $entry['date']) ?>
-            </span></p>
         </div>
     </article>  
 

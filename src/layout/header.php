@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Adrian Unger">
-    <meta name="description" content="Adrian Unger is a web developer living out of a trailer in beautiful Vancouver, BC. He writes about design, nature, technology, etc.">
+    <meta name="description" content="Adrian Unger is a web developer living in the beautiful west coast of BC. He writes about design, nature, technology, etc.">
 
     <title><?php 
         if (stristr($title, 'adrian'))
@@ -20,7 +20,6 @@
     <![endif]-->
     <script src="<?php echo SITE_URL ?>assets/js/respond.min.js"></script>
     <script type="text/javascript">
-
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-4203135-1']);
       _gaq.push(['_trackPageview']);
@@ -30,17 +29,6 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-
     </script>
 </head>
 <body>
-
-<a id="tree" class="pull-right" href="<?php echo SITE_URL ?>" rel="home" alt="Home"><img src="<?php echo SITE_URL ?>favicon.ico" alt="Trees are pretty great."></a>
-
-<header id="head"><div class="container-fluid">
-    <div id="intro">
-        <p>
-            Hey, I&rsquo;m <a href="<?php echo SITE_URL ?>about" rel="home">Adrian</a>. I build <a href="http://ecquire.com" target="_blank">Ecquire</a> while exploring <a href="http://vivaoaxaca2013.wordpress.com" target="_blank">Mexico</a>.</a>
-        </p>
-    </div>
-</div></header>

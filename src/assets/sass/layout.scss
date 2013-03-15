@@ -13,27 +13,9 @@ body {
   background:#fff;
 }
 
-#tree {
-  display: block;
-  position: absolute;
-  top: 5px;
-  right: 25px;
-  padding:10px 5px 0 0;
-  border:0 !important;
-}
-
-#head {
-  padding:25px 0 50px;
-  opacity: .5;
-  -webkit-transition: 0.5s opacity ease;
-  transition: 0.5s opacity ease;
-
-  &:hover {
-    opacity: 1;
-  }
-}
-
 #main {
+  background:$white;
+  padding-top:50px;
   
   p:not(.big),
   li {
@@ -43,25 +25,24 @@ body {
 }
 
 #foot {
-  padding:0;
-  border-top:2px solid white;
-  background: $white;
+  padding:4em 0 5em;
+  text-align:center;
+  background: $green;
+  color:$white;
 
-  .pull-left {
-    width:33.3%;
-  }
+  p {
+    font-family: $accentFamily;
+    max-width:340px;
+    font-size:.9em;
 
-  small {
-    font-size: 70%;
-  }
-
-  nav {
-    a { font-size: 14px; }
+    a, a:hover {
+      color:$white !important;
+    }
   }
 }
 
 .spaced {
-  margin-top:50px;
+  margin-bottom:50px;
 }
 
 // PAGE ELEMENTS
@@ -82,7 +63,7 @@ article {
   p,
   ol,
   ul {
-    max-width:680px;
+    max-width:640px;
     margin-right:auto;
     margin-left:auto;
   }
@@ -90,11 +71,14 @@ article {
   header {
 
     h1 {
+      font-size: 3em;
       padding:.2em 0 0;
       margin-top:0;
+      margin-bottom:0;
       color:$grayDarker;
       line-height:1;
       display:block;
+      text-align: center;
       width:100%;
       
       a {
@@ -106,12 +90,9 @@ article {
 }
 
 .post-navigation {
-  font-size: $baseFontSize + 3;
-  margin-top: 25px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: center;
-  border-top: 1px solid $grayLighter;
+  font-size: $baseFontSize - 5;
+  padding:10px;
+  background:$grayLight;
 
   a,
   h4 {
@@ -129,7 +110,7 @@ article {
 .container-fluid {
   position:relative;
   width:auto;
-  max-width:860px;
+  max-width:940px;
   min-width:260px;
   padding-left: $gridGutterWidth;
   padding-right: $gridGutterWidth;
@@ -147,17 +128,13 @@ h4,
 h5,
 h6 {
   font-family:$accentFamily;
+  font-weight:900;
   line-height:1.4;
   color:$grayDarker;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
-
-article {
-
-}
-
 
 // LINKS
 // -----
@@ -180,20 +157,6 @@ a.title {
 // TYPE
 // ----
 
-#intro {
-  font-family:$accentFamily;
-  font-size:12px;
-  font-weight:400;
-  line-height:1.5;
-  text-align:center;
-  text-transform:none;
-  color:$grayDarker;
-
-  a {
-    color:$grayDarker;
-  }
-}
-
 .grossly-massive,
 .big {
   font-family: $accentFamily;
@@ -201,10 +164,11 @@ a.title {
   font-size: 1.2em;
   line-height: 1.4;
   list-style: none;
-  margin-top: 0;
-  margin-bottom:25px;
-  padding: 10px 0;
+  margin-top: 8px;
+  margin-bottom:0;
+  padding-top: 10px;
   color:$grayDarker;
+  border-top: 1px solid $grayLight;
 
   li {
     display:inline;
@@ -220,8 +184,8 @@ a.title {
 }
 
 .meta {
-  font-style: italic;
-  color: $gray;
+  opacity:.8;
+  font-size:0.6em !important;
 }
 
 .black  {

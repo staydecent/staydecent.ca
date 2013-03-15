@@ -11,10 +11,11 @@
         <?php $first_post = $posts[$keys[0]] ?>
         <header class="container-fluid">
             <h1><a href="<?php echo $first_post['url']; ?>"><?php echo $first_post['title'] ?></a></h1>
+            <p class="meta centre"><a href="<?php echo SITE_URL ?>about" title="About Adrian Unger">Adrian Unger</a>, <?php echo date("F j, Y", $keys[0]) ?></p>
         </header>
 
         <div class="container-fluid">
-            <p class="big"><?php echo $first_post['excerpt'] ?> <small><em><a href="<?php echo $first_post['url']; ?>">Keep reading &rarr;</a></em></small></p>
+            <p class="big"><?php echo $first_post['excerpt'] ?> &nbsp;<small><a href="<?php echo $first_post['url']; ?>">Keep reading &rarr;</a></small></p>
         </div>
     </article>
 

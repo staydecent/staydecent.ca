@@ -2,23 +2,9 @@
 <footer id="foot">
 
     <article class="container-fluid">
-        <nav id="navigation" class="pull-left"><p>
-            <a href="<?php echo SITE_URL ?>" title="Homepage" rel="home">Home</a>&nbsp;     
-            <a href="<?php echo SITE_URL ?>about" title="About Adrian Unger">About</a>&nbsp;
-            <a href="mailto:hello&#64;staydecent.ca" title="Email Adrian Unger">Email</a>
-        </p></nav>
-
-        <div class="centre pull-left">
-            <p>
-                <a class="social-icon twitter" href="http://twitter.com/staydecent" title="Twitter" target="_blank"><span class="letter">t</span></a>
-                <a class="social-icon github" href="http://github.com/staydecent" title="Github" target="_blank"><span class="letter">g</span></a>
-                <a class="social-icon flickr" href="http://flickr.com/photos/staydecent" title="Flickr" target="_blank"><span class="letter">f</span></a>
-            </p>
-        </div>
-
-        <div class="pull-left t-right">
-            <p><small class="meta"><a href="http://ecquire.com" target="_blank">Add a day back to your week</a></small></p>
-        </div>
+        <p class="centre"><img src="<?php echo SITE_URL ?>favicon.ico" alt="Trees are pretty great."></p>
+        <p>I&rsquo;m Adrian Unger, proudly Cascadian. I build <a href="http://ecquire.com" target="_blank">Ecquire</a> and do other things too. Generally, I spend more time among trees than people.</p>
+        <p><small><a href="<?php echo SITE_URL ?>about" title="about adrian unger">Say hello</a></small></p>
     </article>
 
 </footer>
