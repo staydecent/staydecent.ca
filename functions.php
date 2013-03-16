@@ -34,6 +34,9 @@ function get_entries($cat, $desc = TRUE)
         if (array_key_exists('excerpt', $parsed))
           $entries[$date]['excerpt'] = $parsed['excerpt'];
 
+        if (array_key_exists('body', $parsed))
+            $entries[$date]['body'] = $parsed['body'];
+
         if (array_key_exists('title', $parsed))
             $entries[$date]['title'] = $parsed['title'];
     }

@@ -284,16 +284,12 @@ ol.styled {
   list-style:none;
 
   li {
-    color:$grayLight;
-    margin:0;
+    margin:0 0 1em;
     padding:0;
 
-    a {
-      font-size:$baseFontSize + 2;
-    }
-
-    .date {
-      color:$gray;
+    p, h2 {
+      padding:0;
+      margin-bottom:0;
     }
   }
 }
