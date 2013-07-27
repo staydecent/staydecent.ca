@@ -19,9 +19,11 @@
                 if (++$limit > 44) break;
                 ?>
                 <li>
-                    <a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a>
-                    &nbsp;&middot;
-                    <span class="meta date"><?php echo date("M j, Y", $date) ?></span>
+                    <h1><a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h1>
+
+                    <p><?php echo $entry['excerpt'] ?><p>
+                    <span class="meta"><a href="<?php echo $entry['url'] ?>">Continue reading&hellip;</a></span>
+		    <br>
                 </li>
                 <?php
             }

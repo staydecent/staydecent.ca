@@ -1,6 +1,7 @@
 <article>
     <div class="container-fluid">
         <p>
+	<span class="pull-left"><small><a href="<?php echo SITE_URL ?>archives">Archives</a></small></span>
         <span class="post-navigation pull-right">
         <?php $next_entry = next_entry($entry); if ($next_entry): ?>
             <strong>Next up </strong>
