@@ -1,7 +1,0 @@
-client: Engine Digital
-role: Concept, Design, Front-end Development, Back-end Development
-technology: Google App Engine
-images: http://dl.dropbox.com/u/3067484/Website/poop-the-world.jpg
----
-
-Product website for the bowel-based iPhone app, Poop The World.

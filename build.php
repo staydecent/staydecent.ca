@@ -82,6 +82,11 @@ while ($entryIterator->valid())
             $layout = $entry['category'];
         }
 
+        // override layout for "Link" posts
+        if (array_key_exists('link', $entry)) {
+            $layout = 'link';
+        }
+
         $title = $entry['title'];
 
         // save entry for template data

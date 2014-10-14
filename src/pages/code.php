@@ -2,10 +2,11 @@
 
 <div role="main" id="main" class="container-fluid">
 
-    <h1>Archive: <em>Articles</em></h1>
+    <h1>Code</h1>
+    <p class="centre">More technical thoughts on programming, bits of code etc.</p>
 
     <?php
-    $posts = $entries['articles'];
+    $posts = $entries['code'];
     krsort($posts);
 
     $limit = 0;

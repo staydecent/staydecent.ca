@@ -2,14 +2,15 @@
 
 <div role="main" id="main" class="container-fluid">
 
-    <h1>Archives</h1>
+    <h1>Blog</h1>
+    <p class="centre">Ongoing stream of thoughts on design, nature, technology, etc.</p>
 
     <ol class="styled">
     <?php
-    $posts = $entries['articles'] + $entries['bits'];
+    $posts = $entries['blog'];
     krsort($posts);
-
     $limit = 0;
+
     foreach ($posts as $date => $entry)
     {
         if (++$limit > 44) break;

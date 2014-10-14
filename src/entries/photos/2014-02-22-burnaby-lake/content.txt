@@ -1,5 +1,5 @@
-title: burnaby-lake
 ---
+
 <img class="size-full wp-image-172" src="http://staydecent.ca/wp-content/uploads/2014/02/blake1.jpg" alt="Burnaby lake" width="1280" height="960" />
 
 <img class="size-full wp-image-173" src="http://staydecent.ca/wp-content/uploads/2014/02/blake2.jpg" alt="Burnaby lake" width="960" height="1280" />

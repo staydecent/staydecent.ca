@@ -10,9 +10,7 @@
         <div class="container-fluid">
             <ol class="styled">
             <?php
-            $posts = $entries['articles'] + $entries['bits'];
-            krsort($posts);
-
+            $posts = all_entries();
             $limit = 0;
             foreach ($posts as $date => $entry)
             {

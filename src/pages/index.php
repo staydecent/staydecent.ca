@@ -3,7 +3,7 @@
 <div role="main" id="main">
 
     <?php 
-        $posts = get_entries('articles') + get_entries('bits'); krsort($posts); 
+        $posts = all_entries(); 
         $keys = array_keys($posts);
         $first_post = $posts[$keys[0]];
         $entry = $first_post;

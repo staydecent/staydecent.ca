@@ -68,6 +68,10 @@ article {
     margin-left:auto;
   }
 
+  p + img {
+    margin-top: 1em;
+  }
+
   header {
 
     h1 {
@@ -264,6 +268,12 @@ dfn {
   cursor:help;
 }
 
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #foot p.meta {
   margin:0 0 2em;
 }
@@ -311,7 +321,8 @@ dl {
 // -----
 
 img {
-  max-width:100%;
+  max-width: 100%;
+  height: auto;
 }
 
 iframe {
