@@ -1,4 +1,4 @@
 .DS_Store
-*/.sass-chache/*
-public/
+.sass-chache
+public
 shawn.html
