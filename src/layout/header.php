@@ -9,53 +9,57 @@
 
   <title><?php 
     if (stristr($title, 'adrian'))
-      echo $title;
+      echo 'staydecent.ca';
     else
-      echo $title.' &middot; Adrian Unger';
+      echo $title.' ~ staydecent.ca';
   ?></title>
 
   <style type="text/css">
   body { 
-    font-family: Arial, Helvetica, Verdana, sans-serif;
-    background: #eee;
-    color: #333;
+    font: 14px/1.4 'menlo', 'monaco', 'consolas', 'inconsolata', monospace;
+    background: #fff;
+    color: #555;
     padding: 1em 3em;
   }
   a {
-    color: rgb(13, 10, 104);
+    color: black;
+    text-decoration: none;
   }
-  a:hover {
+  a:hover,
+  #site-title {
     color: white;
     background: black;
   }
   h1,h2,h3,h4,h5 {
     font-weight: 400;
   }
-  p {
-    line-height: 1.6;
-  }
   #main {
     margin-top: 4em;
-    max-width: 680px;
+    max-width: 1180px;
   }
   #main p {
-    max-width: 480px;
+    font: 18px/1.7 georgia, serif;
+    max-width: 510px;
   }
   header h1, header h2 {
     margin: 0;
   }
-  .meta {
+  #main p.meta {
     margin: 0;
-    font-size: 75%;
+    font-size: 85%;
   }
   #foot {
     margin-top: 8em;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
   }
   </style>
 </head>
 <body>
 
 <p>
-  <strong><a href="/" class="no-bg-link">staydecent.ca</a></strong><br>
+  <a href="/" id="site-title">staydecent.ca</a><br>
   programming, biodiversity, travel, etc.
 </p>
