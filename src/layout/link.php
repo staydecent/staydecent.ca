@@ -9,7 +9,7 @@
       
       <div class="container-fluid">
         <p class="big">
-          <a href="<?php echo $entry['link'] ?>" target="_blank"><?php echo $entry['link'] ?></a>
+          <span class="mark">&rarr;</span> <a href="<?php echo $entry['link'] ?>" target="_blank"><?php echo (array_key_exists('link_title', $entry)) ? $entry['link_title'] : 'Source' ?></a>
         </p>
         <?php echo $entry['body'] ?>
       </div>

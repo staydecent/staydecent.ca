@@ -17,7 +17,7 @@
   <style type="text/css">
   body { 
     font: 14px/1.4 'Lucida Grande', sans-serif;
-    background: #fff;
+    background: #fefefe;
     color: #555;
     padding: 1em 3em;
   }
@@ -73,6 +73,9 @@ background-image: linear-gradient(to left bottom, #FFDEC9 0%, #E47964 100%);
     border-left: 4px solid #FFDEC9;
     margin: 0;
     padding-left: 4em;
+  }
+  .mark {
+    color: #FFDEC9;
   }
   </style>
 </head>
