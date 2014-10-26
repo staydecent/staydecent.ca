@@ -6,7 +6,7 @@
       <small>
         <a href="<?php echo SITE_URL ?>archives" title="view all posts">Archives</a>
         /
-        <a href="<?php echo SITE_URL ?>about" title="about adrian unger">More information</a>
+        <a href="<?php echo SITE_URL ?>about" title="about adrian unger">Information</a>
       </small>
     </p>
   </article>
