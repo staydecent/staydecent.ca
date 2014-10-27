@@ -1,9 +1,0 @@
-/*
- * Bootstrap Responsive v2.0.0
- *
- * Copyright 2012 Twitter, Inc
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world @twitter by @mdo and @fat.
- */.hidden{display:none;visibility:hidden}@media (max-width: 480px){body{font-size:14px}#tree{right:45%;z-index:2}article>p:not(.big),article h2,article h3,article h4,article h5,article h6,article ol,article ul,article footer,article .note,article .aside,#author{width:auto}.post-navigation ol.styled li a{font-size:18px}}@media (max-width: 768px){body{font-size:16px}.post-navigation{font-size:18px}.post-navigation ol.styled li a{font-size:20px}}
