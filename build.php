@@ -100,10 +100,6 @@ while ($entryIterator->valid())
 
         Parse::new_file($new_dir, $out);
     }
-    else 
-    {
-        echo 'Invalid entry: ', $entryIterator->getBasename(), "\n";
-    }
 
     $entryIterator->next();
 }
