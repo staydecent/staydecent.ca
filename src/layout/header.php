@@ -16,17 +16,21 @@
 
   <style type="text/css">
   body { 
-    font: 14px/1.4 'Lucida Grande', sans-serif;
-    background: #fefefe;
-    color: #555;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 21px;
+    line-height: 1.6;
+    color: black;
+    background: #fff;
     padding: 1em 3em;
   }
   a {
     color: black;
+    border-bottom: 1px solid black;
     text-decoration: none;
   }
   a:hover {
     color: white;
+    border-color: #FFDEC9;
 background-image: -o-linear-gradient(left bottom, #FFDEC9 0%, #E47964 100%);
 background-image: -moz-linear-gradient(left bottom, #FFDEC9 0%, #E47964 100%);
 background-image: -webkit-linear-gradient(left bottom, #FFDEC9 0%, #E47964 100%);
@@ -36,19 +40,15 @@ background-image: linear-gradient(to left bottom, #FFDEC9 0%, #E47964 100%);
   h1,h2,h3,h4,h5 {
     font-weight: 400;
   }
-  #site-title {
-    border-bottom: 1px solid black;
-  }
   #main {
     margin-top: 4em;
     max-width: 1180px;
   }
   #main p {
-    font: 18px/1.7 georgia, serif;
-    max-width: 510px;
+    max-width: 640px;
   }
   #main blockquote > p {
-    font: italic 18px/1.7 georgia, serif;
+    font: italic 18px/1.7 'Georgia', serif;
   }
   header h1, header h2 {
     margin: 0;
@@ -60,7 +60,6 @@ background-image: linear-gradient(to left bottom, #FFDEC9 0%, #E47964 100%);
   .post-navigation {
     display: block;
     margin-top: 4em;
-    font-family: 'Lucida Grande', sans-serif;
   }
   #foot {
     margin-top: 2em;
@@ -72,7 +71,7 @@ background-image: linear-gradient(to left bottom, #FFDEC9 0%, #E47964 100%);
   blockquote {
     border-left: 4px solid #FFDEC9;
     margin: 0;
-    padding-left: 4em;
+    padding-left: 2em;
   }
   .mark {
     color: #FFDEC9;
