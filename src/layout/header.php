@@ -16,15 +16,16 @@
   
   <style type="text/css">
     body { 
-      font-family: 'Monaco', 'Consolas', 'Menlo', monospace;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 16px;
       line-height: 1.6;
-      color: black;
+      color: #333;
       background: #fff;
       padding: 1em 3em;
     }
     a {
       color: black;
+      text-decoration: underline;
       border-radius: 4px;
       transition-property: color, background-color, box-shadow, opacity;
       transition-duration: 0.2s;
@@ -37,13 +38,9 @@
       box-shadow: 0 0 7px #4433AA;
     }
     h1,h2,h3,h4,h5 {
-      font-weight: 400;
-    }
-    nav > ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      font-size: 75%;
+      font-size: 1em;
+      font-weight: 700;
+      color: black;
     }
     nav a {
       text-decoration: none;
@@ -55,8 +52,6 @@
       clear: both;
     }
     #main p {
-      font-size: 18px;
-      font-family: 'georgia', serif;
       max-width: 640px;
     }
     #main blockquote > p {
@@ -87,9 +82,9 @@
 <body>
 
 <nav class="container">
-<ul>
-  <li><a href="/" id="site-title">Home</a></li>
-  <li><a href="<?php echo SITE_URL ?>archives" title="view all posts">Archives</a></li>
-  <li><a href="<?php echo SITE_URL ?>about" title="about adrian unger">Information</a></li>
-</ul>
+  <a href="/" id="site-title">Staydecent.ca</a> &mdash;
+  <br />
+  <a href="<?php echo SITE_URL ?>archives" title="view all posts">Archives</a>
+  &nbsp;
+  <a href="<?php echo SITE_URL ?>about" title="about adrian unger">Information</a>
 </nav>
