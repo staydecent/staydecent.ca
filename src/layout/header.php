@@ -82,9 +82,14 @@
 <body>
 
 <nav class="container">
-  <a href="/" id="site-title">Staydecent.ca</a> &mdash;
+  <a href="/" id="site-title">staydecent.ca</a> &mdash;
   <br />
-  <a href="<?php echo SITE_URL ?>archives" title="view all posts">Archives</a>
+  <a target="_blank" href="http://instagram.com/staydecent">Photos</a>
   &nbsp;
-  <a href="<?php echo SITE_URL ?>about" title="about adrian unger">Information</a>
+  <a target="_blank" href="http://customersbeforecode.tumblr.com/">Blog</a>
+  &nbsp;
+  <a target="_blank" href="http://chaosboogie.tumblr.com/">Visual inspiration</a>
+  &nbsp;
+  <a target="_blank" href="<?php echo SITE_URL ?>archives" title="view older posts">Old posts</a>
+  &nbsp;
 </nav>

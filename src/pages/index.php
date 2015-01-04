@@ -1,33 +1,28 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
 <div role="main" id="main">
-  <?php 
-    $posts = all_entries(); 
-    $keys = array_keys($posts);
-    $first_post = $posts[$keys[0]];
-    $entry = $first_post;
-    $entry['date'] = $keys[0];
-  ?>
 
-  <article>
-    <header class="container-fluid">
-      <h2><a href="<?php echo $first_post['url']; ?>"><?php echo $first_post['title'] ?></a></h2>
-      <p class="meta centre"><?php echo date("F j, Y", $keys[0]) ?></p>
-    </header>
+    <article class="spaced">
+        <div class="container-fluid">
+            <img src="http://i.imgur.com/IemFV8v.jpg" alt="Me, doing crow position in minus 10 degrees." />
 
-    <div class="container-fluid">
-      <?php echo $first_post['body'] ?>
-    </div>
-  </article>     
+            <p>Hi, my name is Adrian Unger. I really enjoy food and nature, am probably a neophile, and definitely CTO <a href="http://ecquire.com" target="_blank">Ecquire</a>.</p>
 
-  <?php include $config['dirs']['layout'].'/post-navigation-part.php'; ?>
+            <p>I disagree with institutionalized education, offices and economics. That&rsquo;s why I dropped out of college, work remotely and support small-time makers&mdash;and growers! Moreover, I&rsquo;d say I'm an advocate for biodiversity.</p>
+
+            <p>This website is&nbsp;<a href="http://greenqloud.com/">100% carbon neutral</a> and <a href="http://github.com/staydecent/staydecent.ca" target="_blank">open source</a>.</p>
+
+            <p class="centre">I can be reached via <a href="mailto:hello&#64;staydecent.ca">Email</a> or <a href="http://twitter.com/staydecent" target="_blank">Twitter</a>.</p>
+        </div>
+    </article>
+
 </div>
 
-<?php 
+<?php
 $next = array();
 
-$next['url'] = 'about';
-$next['text'] = 'About me';
-?>  
+$next['url'] = 'contact';
+$next['text'] = 'Say hello!';
+?>
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>
