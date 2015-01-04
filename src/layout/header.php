@@ -86,7 +86,7 @@
   <br />
   <a target="_blank" href="http://instagram.com/staydecent">Photos</a>
   &nbsp;
-  <a target="_blank" href="http://customersbeforecode.tumblr.com/">Blog</a>
+  <a target="_blank" href="http://unexpectedcto.tumblr.com/">Blog</a>
   &nbsp;
   <a target="_blank" href="http://chaosboogie.tumblr.com/">Visual inspiration</a>
   &nbsp;
