@@ -74,7 +74,7 @@ In *background.js* we'll listen for any changes to the URL of any tab.
         }
     });
 
-#### 4. When are page action is clicked, run some Jasmine specs! 
+#### 4. When our page action is clicked, run some Jasmine specs! 
 We'll also need an event listener for when the page action is clicked. Check out the full [background.js](https://github.com/staydecent/jasmine-chrome-extension/blob/master/background.js) file to see that (it's the same idea as jQuery click events). When clicked, we'll inject our Jasmine specs and run them via Chrome's Extension APIs:
 
     // load our spec file
