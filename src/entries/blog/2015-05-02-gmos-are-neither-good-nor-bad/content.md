@@ -1,3 +1,6 @@
+title: GMOs Are Neither Good Nor Bad
+---
+
 I came across [How I Got Converted to GMOs](http://www.nytimes.com/2015/04/25/opinion/sunday/how-i-got-converted-to-gmo-food.html) via [ma.tt](http://ma.tt/2015/05/more-on-gmos). This is a response to that article. 
 
 I think it’s wrong to assume this is black and white or that the issue of GMOs is the centre of feeding the world. There are actual issues threatening how we feed everyone going forward. The UN has pretty much got [it](http://www.unep.org/wed/2013/quickfacts/) [covered](http://www.un.org/en/events/desertificationday/background.shtml). But agriculture is not the same the world over, issues in America may not translate to Brazil. 

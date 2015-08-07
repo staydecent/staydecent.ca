@@ -125,16 +125,22 @@ foreach ($dir as $fileinfo)
     {
         $title = get_title($fileinfo->getFilename());
         $out = render($fileinfo->getPathname());
+        $is_filename = FALSE;
 
         // leave index.php in root
         $new_dir = $config['dirs']['build'] . DS;
-        
-        if ($fileinfo->getBasename() !== 'index.php') 
+
+        // 200.html should not be a dir
+        if ($fileinfo->getBasename() === '200.php') {
+            $new_dir = $new_dir . str_replace('.php', '.html', $fileinfo->getBasename());
+            $is_filename = TRUE;
+        }
+        elseif ($fileinfo->getBasename() !== 'index.php') 
         {
             $new_dir = $new_dir . str_replace('.php', '', $fileinfo->getBasename());
         }
 
-        Parse::new_file($new_dir, $out);
+        Parse::new_file($new_dir, $out, $is_filename);
     }
 }
 

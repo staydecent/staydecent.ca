@@ -14,7 +14,7 @@
             $limit = 0;
             foreach ($posts as $date => $entry)
             {
-                if (++$limit > 44) break;
+                if (++$limit > 100) break;
                 ?>
                 <li>
                     <h3><a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h3>
