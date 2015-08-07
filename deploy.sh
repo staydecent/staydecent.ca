@@ -1,3 +1,3 @@
 rm -rf public
-php build.php public http://staydecent.surge.sh
-surge ./public/ staydecent.surge.sh
+php build.php public http://staydecent.ca
+surge ./public/ staydecent.ca
