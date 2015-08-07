@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Adrian Unger">
-  <meta name="description" content="Adrian Unger is the CTO of Ecquire. He lives in Canada, but thinks lovingly of México. He also enjoys gardening.">
 
   <title><?php 
     if (stristr($title, 'adrian'))
@@ -28,14 +27,12 @@
       text-decoration: underline;
       border-radius: 4px;
       transition-property: color, background-color, box-shadow, opacity;
-      transition-duration: 0.2s;
+      transition-duration: 0.1s;
       transition-timing-function: ease-out;
     }
     a:hover {
       text-decoration: none;
-      color: #FFDEC9;
-      background-color: #4433AA;
-      box-shadow: 0 0 7px #4433AA;
+      color: #4433AA;
     }
     h1,h2,h3,h4,h5 {
       font-size: 1em;
@@ -64,6 +61,13 @@
       margin: 0;
       font-size: 85%;
     }
+    ol.styled {
+      list-style-type: none;
+      padding: 0;;
+    }
+    ol.styled > li {
+      padding-bottom: 1em;;
+    }
     .post-navigation {
       display: block;
       margin-top: 4em;
@@ -84,12 +88,10 @@
 <nav class="container">
   <a href="/" id="site-title">staydecent.ca</a> &mdash;
   <br />
-  <a target="_blank" href="http://instagram.com/staydecent">Photos</a>
+  <a href="<?php echo SITE_URL ?>archives" title="Infrequent blog">Blog posts</a>
   &nbsp;
-  <a target="_blank" href="http://unexpectedcto.tumblr.com/">Blog</a>
+  <a target="_blank" href="http://instagram.com/staydecent">Instagram</a>
   &nbsp;
-  <a target="_blank" href="http://chaosboogie.tumblr.com/">Visual inspiration</a>
-  &nbsp;
-  <a target="_blank" href="<?php echo SITE_URL ?>archives" title="view older posts">Old posts</a>
+  <a target="_blank" href="http://chaosboogie.tumblr.com/">Tumblr</a>
   &nbsp;
 </nav>

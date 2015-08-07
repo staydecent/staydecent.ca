@@ -20,8 +20,6 @@
                     <h3><a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h3>
 
                     <p><?php echo $entry['excerpt'] ?><p>
-                    <span class="meta"><a href="<?php echo $entry['url'] ?>">Continue reading&hellip;</a></span>
-		    <br>
                 </li>
                 <?php
             }
