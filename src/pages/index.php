@@ -6,13 +6,11 @@
         <div class="container-fluid">
             <img src="http://i.imgur.com/IemFV8v.jpg" alt="Me, doing crow position in minus 10 degrees." />
 
-            <p>Hi, my name is Adrian Unger. I really enjoy food and nature, am probably a neophile, and definitely CTO <a href="http://ecquire.com" target="_blank">Ecquire</a>.</p>
+            <p>Hey, I'm Adrian. I enjoy food, nature, am probably a neophile, and I make web and mobile apps <a href="http://inputlogic.ca" title="Input Logic Inc." target="_blank">for a living</a>.</p>
 
-            <p>I disagree with institutionalized education, offices and economics. That&rsquo;s why I dropped out of college, work remotely and support small-time makers&mdash;and growers! Moreover, I&rsquo;d say I'm an advocate for biodiversity.</p>
+            <p>This site is powered by <a href="http://www.hydroquebec.com/about-hydro-quebec/our-energy/" target="_blank" title="Hydro-Québec">99% renewables</a> and is <a href="http://github.com/staydecent/staydecent.ca" target="_blank">open sourced</a>.</p>
 
-            <p>This website is&nbsp;<a href="http://greenqloud.com/">100% carbon neutral</a> and <a href="http://github.com/staydecent/staydecent.ca" target="_blank">open source</a>.</p>
-
-            <p class="centre">I can be reached via <a href="mailto:hello&#64;staydecent.ca">Email</a> or <a href="http://twitter.com/staydecent" target="_blank">Twitter</a>.</p>
+            <p class="centre">You can reach me via <a href="mailto:hello&#64;staydecent.ca">Email</a> or <a href="http://twitter.com/staydecent" target="_blank">Twitter</a>.</p>
         </div>
     </article>
 

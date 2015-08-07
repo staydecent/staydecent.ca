@@ -14,7 +14,7 @@ define('SOURCE', ROOT . 'src' . DS);
  */
 $config = array(
       'date_re' => '/[\d]+-[\d]+-[\d]+-/'
-    , 'content_file' => 'content.txt'
+    , 'content_file' => 'content.md'
     , 'dirs' => array(
           'entries' => SOURCE . 'entries'   // Posts go in here
         , 'pages'   => SOURCE . 'pages'     // Pages go in here

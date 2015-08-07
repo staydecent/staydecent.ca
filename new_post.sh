@@ -6,9 +6,9 @@ slug="$slug-$2"
 # cd to cat dir, so it exists
 cd ./src/entries/$1
 mkdir $slug
-touch ./$slug/content.txt
+touch ./$slug/content.md
 
-cat <<EOF > ./$slug/content.txt
+cat <<EOF > ./$slug/content.md
 title: $2
 ---
 
