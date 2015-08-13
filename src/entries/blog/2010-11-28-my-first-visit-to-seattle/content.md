@@ -1,6 +1,4 @@
-<p class="big">Since I missed the chance to see one of my all-time favourite
-people live, in Vancouver, I had an all-too-good reason to visit Seattle for
-the first time.</p>
+Since I missed the chance to see one of my all-time favourite people live, in Vancouver, I had an all-too-good reason to visit Seattle for the first time.
 
 Grinderman, the newest project of Nick Cave and most of the Bad Seeds, is
 finishing up their North American tour. It seems the show in Vancouver sold

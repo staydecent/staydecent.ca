@@ -200,8 +200,8 @@ class Parse {
    * @return int
    */
   public static function findExcerpt($data) {
-    if (($offset = strpos($data, "\n\n")) !== false) {
-      $out = explode("\n\n", $data);
+    if (($offset = strpos($data, "\n")) !== false) {
+      $out = explode("\n", $data);
       return $out[0];
     }
 

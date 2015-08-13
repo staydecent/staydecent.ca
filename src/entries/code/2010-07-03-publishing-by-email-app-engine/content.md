@@ -1,9 +1,7 @@
 title: Publishing By Email With Google App Engine
 ---
 
-<p class="big">I really like the Posterous approach
-to publishing online—I often write my ideas down in GMail. So I
-decided to enable posting by email on my blog.</p>
+I really like the Posterous approach to publishing online—I often write my ideas down in GMail. So I decided to enable posting by email on my blog.
 
 The concept needs some work, but could very easily be adapted to a
 multi-user environment. In that case, some serious security work would be

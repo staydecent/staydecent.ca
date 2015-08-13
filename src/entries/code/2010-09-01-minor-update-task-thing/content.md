@@ -1,9 +1,7 @@
 title: Minor Update to Task Thing
 ---
 
-<p class="big">While remaining rather minimal, Task Thing has a new
-feature—more specifically a helpful piece of data is now
-displayed on completed tasks.</p>
+While remaining rather minimal, Task Thing has a new feature—more specifically a helpful piece of data is now displayed on completed tasks.
 
 For anyone who is unaware, I created a little app called [Task
 Thing](http://taskthing.appspot.com) a [few months

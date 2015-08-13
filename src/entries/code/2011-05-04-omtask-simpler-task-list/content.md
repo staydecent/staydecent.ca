@@ -1,8 +1,7 @@
 title: Omtask, A Simpler Task List
 ---
 
-<p class="big">Omtask is an omnibox task manager for people that want
-to finish tasks, not organize them.</p>
+Omtask is an omnibox task manager for people that want to finish tasks, not organize them.
 
 ### Why Omtask?
 

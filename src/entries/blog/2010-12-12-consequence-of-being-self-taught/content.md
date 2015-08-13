@@ -2,9 +2,7 @@ title: The Unforeseen Consequence of Being Self-Taught
 author: Adrian Unger 
 ---
 
-<p class="big">I had yet to notice any drawbacks of working in a field where
-I have either taught myself what I need to know or learned through work
-experience. Until now.</p>
+I had yet to notice any drawbacks of working in a field where I have either taught myself what I need to know or learned through work experience. Until now.
 
 Hopefully you have realized, that I am a Web Designer & Developer. And,
 I'll now let you know, that I learned nearly everything for this career with

@@ -3,7 +3,7 @@ title: Authenticating LoopBack AngularJS SDK Routes
 
 I am currently working on writing an API backend with [LoopBack](http://loopback.io/). This API is a rewrite of an older Python codebase which has an AngularJS client. While the backend needs improving the current AngularJS client is holding up just fine.
 
-[ExpressJS]() was the front-runner since the whole team has experience with it.But, when I came across LoopBack, which is a framework built on top of ExpressJS for quickly creating dynamic REST APIs, it seemed like a perfect fit. Not only do you get the time saving JSON based API generation, but also the [LoopBack AngularJS SDK](https://docs.strongloop.com/display/public/LB/AngularJS+JavaScript+SDK).
+[ExpressJS](http://expressjs.com/) was the front-runner since the whole team has experience with it.But, when I came across LoopBack, which is a framework built on top of ExpressJS for quickly creating dynamic REST APIs, it seemed like a perfect fit. Not only do you get the time saving JSON based API generation, but also the [LoopBack AngularJS SDK](https://docs.strongloop.com/display/public/LB/AngularJS+JavaScript+SDK).
 
 The AngularJS SDK will auto-generate AngularJS services for accessing your models and remote methods on the server. It's basically an ORM for your RESTful API endpoints. And, you can always keep it up-to-date by re-running the CLI tool or by using the Grunt build plugin.
 

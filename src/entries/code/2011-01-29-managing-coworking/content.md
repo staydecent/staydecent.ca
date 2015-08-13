@@ -1,6 +1,4 @@
-<p class="big">When I was working in a team of about ~15 at an
-Advertising Agency, we were commonly trying to perfect how we all
-interacted with each other.</p>
+When I was working in a team of about ~15 at an Advertising Agency, we were commonly trying to perfect how we all interacted with each other.
 
 Building off of 37Signals concept that work doesn't get done at work,
 we wanted to prevent intrusive chit-chatting and undelivered IMs. The

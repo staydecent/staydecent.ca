@@ -1,6 +1,4 @@
-<p class="big">The implementation and advocacy of responsive web
-design is increasing, and possibly fully manifested in the web design
-community. Are you taking part?</p>
+The implementation and advocacy of responsive web design is increasing, and possibly fully manifested in the web design community. Are you taking part?
 
 ### What Is Responsive Design?
 

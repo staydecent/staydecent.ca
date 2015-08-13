@@ -96,7 +96,7 @@
 <nav class="container">
   <a href="/" id="site-title">staydecent.ca</a> &mdash;
   <br />
-  <a href="<?php echo SITE_URL ?>archives" title="Infrequent thoughts on almost anything">Thoughts</a>
+  <a href="<?php echo SITE_URL ?>blog" title="Infrequent thoughts on almost anything">Thoughts</a>
   &nbsp;
   <a href="<?php echo SITE_URL ?>code" title="Blog posts about programming and web development">Devlog</a>
   &nbsp;

@@ -1,6 +1,4 @@
-<p class="big">The most difficult part of installing Google App Engine on
-Windows is the SSL module. But I've decided to compile a very simple guide
-for the whole process.</p>
+The most difficult part of installing Google App Engine on Windows is the SSL module. But I've decided to compile a very simple guide for the whole process.
 
 I am not going to cover any sort of usage guides. This is just a list to
 installing everything required(on Windows) to deploy an App to the GAE
