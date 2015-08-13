@@ -1,36 +1,33 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-<div role="main" id="main" class="container-fluid">
+<div role="main" id="main">
 
-    <h1>Code</h1>
-    <p class="centre">More technical thoughts on programming, bits of code etc.</p>
+    <article>
+        <header>
+            <h1>Devlog</h1>  
+        </header>
 
-    <?php
-    $posts = $entries['code'];
-    krsort($posts);
+        <div class="container-fluid">
+            <ol class="styled">
+            <?php
+            $posts = $entries['code'];
+            krsort($posts);
+            $limit = 0;
+            foreach ($posts as $date => $entry)
+            {
+                if (++$limit > 100) break;
+                ?>
+                <li>
+                    <h3><a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h3>
 
-    $limit = 0;
-    foreach ($posts as $date => $entry)
-    {
-        if (++$limit > 44) break;
-        ?>
-        <article>
-            <header>
-                <h2><a class="black" href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h2>  
-            </header>
-            
-            <p><?php echo $entry['excerpt'] ?></p>
-
-            <a class="btn-small" href="<?php echo $entry['url']; ?>" title="Permalink to <?php echo $entry['title'] ?>">Continue reading&hellip;</a>
-
-            <footer class="meta">
-                <i class="icon-calendar"></i> <a href="<?php echo $entry['url']; ?>">Published <?php echo date("F j, Y", $date) ?></a>
-                <i class="icon-align-left"></i> <?php echo str_word_count($entry['body']) ?> words
-            </footer>
-        </article>
-        <?php
-    }
-    ?>
+                    <p><?php echo $entry['excerpt'] ?><p>
+                </li>
+                <?php
+            }
+            ?>
+            </ol>
+        </div>
+    </article>
 
 </div>
 

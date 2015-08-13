@@ -368,7 +368,7 @@ class Parse {
   }
 
   public static function getBody($content) {
-    return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', markdown($content));
+    return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', Parsedown::instance()->text($content));
   }
 }
 

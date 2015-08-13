@@ -11,8 +11,11 @@
       echo 'staydecent.ca';
     else
       echo $title.' ~ staydecent.ca';
-  ?></title>
-  
+?></title>
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/solarized_light.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+    
   <style type="text/css">
     body { 
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -48,7 +51,8 @@
       margin: 5% auto;
       clear: both;
     }
-    #main p {
+    #main p,
+    #main h3 {
       max-width: 640px;
     }
     #main blockquote > p {
@@ -81,14 +85,20 @@
       margin: 0;
       padding-left: 2em;
     }
+    p > code {
+      background-color: aliceblue;
+    }
   </style>
+
 </head>
 <body>
 
 <nav class="container">
   <a href="/" id="site-title">staydecent.ca</a> &mdash;
   <br />
-  <a href="<?php echo SITE_URL ?>archives" title="Infrequent blog">Blog posts</a>
+  <a href="<?php echo SITE_URL ?>archives" title="Infrequent thoughts on almost anything">Thoughts</a>
+  &nbsp;
+  <a href="<?php echo SITE_URL ?>code" title="Blog posts about programming and web development">Devlog</a>
   &nbsp;
   <a target="_blank" href="http://instagram.com/staydecent">Instagram</a>
   &nbsp;
