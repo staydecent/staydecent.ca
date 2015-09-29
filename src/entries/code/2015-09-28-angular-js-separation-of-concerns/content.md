@@ -33,8 +33,8 @@ Having plenty of focused, moderately sized Services is definitely better than ha
 
 Anyway, my AngularJS experience is limited but this has been my takeaway so far. Here are some articles that helped form these views:
 
-[AngularJS Sticky Notes Pt 1 – Architecture](http://onehungrymind.com/angularjs-sticky-notes-pt-1-architecture/)
-[Rethinking AngularJS Controllers](http://toddmotto.com/rethinking-angular-js-controllers/)
-[AngularJS Style Guide](https://github.com/johnpapa/angular-styleguide)
+- [AngularJS Sticky Notes Pt 1 – Architecture](http://onehungrymind.com/angularjs-sticky-notes-pt-1-architecture/)
+- [Rethinking AngularJS Controllers](http://toddmotto.com/rethinking-angular-js-controllers/)
+- [AngularJS Style Guide](https://github.com/johnpapa/angular-styleguide)
 
 
