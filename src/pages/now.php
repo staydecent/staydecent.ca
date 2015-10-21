@@ -16,6 +16,8 @@
             <li>Some ideas brewing around photos, story-telling&hellip;</li>
           </ul>
 
+          <p>I am currently living on Vancouver Island after spending a year in the South Shore of Nova Scotia.</p>
+
           <p>This page was inspired by&nbsp;<a href="https://sivers.org/now">Derek Sivers</a>.</p>
           <p><em>Last updated:</em> 21st October, 2015</p>
         </div>
