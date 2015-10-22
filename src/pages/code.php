@@ -4,7 +4,7 @@
 
     <article>
         <header>
-            <h1>Devlog</h1>  
+            <h1>Code</h1>  
         </header>
 
         <div class="container-fluid">

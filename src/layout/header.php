@@ -98,10 +98,8 @@
   <br />
   <a href="<?php echo SITE_URL ?>blog" title="Infrequent thoughts on almost anything">Thoughts</a>
   &nbsp;
-  <a href="<?php echo SITE_URL ?>code" title="Blog posts about programming and web development">Devlog</a>
+  <a href="<?php echo SITE_URL ?>photos" title="Stories and adventures told through photos">Photos</a>
   &nbsp;
-  <a target="_blank" href="http://instagram.com/staydecent">Instagram</a>
-  &nbsp;
-  <a target="_blank" href="http://chaosboogie.tumblr.com/">Tumblr</a>
+  <a href="<?php echo SITE_URL ?>code" title="Blog posts about programming and web development">Code</a>
   &nbsp;
 </nav>
