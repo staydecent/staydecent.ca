@@ -1,7 +1,8 @@
 #!/bin/bash
 # creates an empty post dir/file
-slug=$(date +%Y-%m-%d)
-slug="$slug-$2"
+date=$(date +%Y-%m-%d)
+slug=$(echo "$2" | iconv -t ascii//TRANSLIT | sed -E s/[^a-zA-Z0-9]+/-/g | sed -E s/^-+\|-+$//g | tr A-Z a-z)
+slug="$date-$slug"
 
 # cd to cat dir, so it exists
 cd ./src/entries/$1
