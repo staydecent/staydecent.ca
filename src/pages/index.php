@@ -1,17 +1,21 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
 <div role="main" id="main">
+  <article class="spaced">
+    <div class="container-fluid">
+      <p>Hello, my name is Adrian Unger. I&rsquo;m an app developer <abbr title="Currenly, since I have moved every year for the past 8 years.">currently</abbr> living and working on Vancouver Island. I really enjoy food, nature and exploring new places.</p>
+      <div class="photo" style="max-width: 776px;">
+        <img src="http://i.imgur.com/TmEyP9o.jpg" alt="Photo of me standing by a very large tree" />
+        <p class="caption">Photo by <a href="http://instagram.com/hapaway" target="_blank">Angela Harrington</a></p>
+      </div>
 
-    <article class="spaced">
-        <div class="container-fluid">
-            <a href="https://instagram.com/p/4zycNEnOFI/?taken-by=staydecent" target="_blank"><img src="http://i.imgur.com/3nhbej3.jpg" alt="i like trees" /></a>
+      <p>I try to keep a <a href="<?php echo SITE_URL ?>code" title="Blog posts about programming and app development">Devlog</a> about app development and technical things I learn. I also, infrequently, share <a href="<?php echo SITE_URL ?>blog">stories and opinions</a> on whatever&rsquo;s piqued my interest.</p>
 
-            <p>Hey, I'm Adrian. I enjoy food, nature, am probably a neophile, and make web and mobile apps <a href="http://inputlogic.ca" title="Input Logic Inc." target="_blank">for a living</a>. This site is powered by <a href="http://surge.sh" target="_blank" title="surge">surge.sh</a> and is <a href="http://github.com/staydecent/staydecent.ca" target="_blank">open sourced</a>.</p>
+      <p>More recently, I&rsquo;ve started a <a href="http://adrianunger.tumblr.com" target="_blank">daily journal</a> where I aim to take and share a photo every damn day.</p>
 
-            <p class="centre">You can reach me via <a href="mailto:hello&#64;staydecent.ca">Email</a> or <a href="http://twitter.com/staydecent" target="_blank">Twitter</a>.</p>
-        </div>
-    </article>
-
+      <p>Follow me on <a href="http://instagram.com/staydecent" target="_blank">Instagram</a>.</p>
+    </div>
+  </article>
 </div>
 
 <?php
