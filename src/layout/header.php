@@ -15,14 +15,12 @@
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/solarized_light.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
-
-  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:300,300italic,500' rel='stylesheet' type='text/css'>
     
   <style type="text/css">
     body { 
-      font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 24px;
-      font-weight: 300;
+      font-family: georgia, serif;
+      font-size: 18px;
+      font-weight: 400;
       line-height: 1.6;
       color: #333;
       padding: 1em 3em;
@@ -36,9 +34,12 @@
       text-decoration: none;
       color: #81A059;
     }
+    p a:visited {
+      color: #666;
+    }
     h1,h2,h3,h4,h5 {
       font-size: 1em;
-      font-weight: 500;
+      font-weight: 400;
       color: black;
     }
     strong {
@@ -48,12 +49,20 @@
       font-style: italic;
     }
     nav a {
+      color: #333;
       text-decoration: none;
+    }
+    nav a.current {
+      color: #81A059;
+    }
+    h1>a,h2>a,h3>a,h4>a,h5>a {
+      text-decoration: none;
+      text-transform: uppercase;
     }
     #main,
     .container {
       max-width: 1080px;
-      margin: 5% auto;
+      margin: 1rem;
       clear: both;
     }
     #main p,
@@ -64,7 +73,7 @@
       font-style: italic;
     }
     header h1, header h2 {
-      margin: 0;
+      margin: 1rem 0 0;
     }
     #main p.meta {
       margin: 0;
@@ -102,27 +111,26 @@
       opacity: .6;
     }
     blockquote {
-      border-left: 4px solid #FFDEC9;
-      margin: 0;
-      padding-left: 2em;
+      background-color: aliceblue;
     }
     p > code {
       background-color: aliceblue;
+    }
+    pre {
+      font-size: 85%;
     }
   </style>
 
 </head>
 <body>
 
-<!-- <nav class="container">
-  <a href="/" id="site-title">staydecent.ca</a> &mdash;
-  <br />
-  <a href="<?php echo SITE_URL ?>blog" title="Infrequent thoughts on almost anything">Thoughts</a>
+<nav class="container">
+  <a href="/" id="site-title" title="About Adrian Unger"<?php echo current_class('adrian') ?>>About</a>
   &nbsp;
-  <a href="<?php echo SITE_URL ?>code" title="Blog posts about programming and web development">Devlog</a>
+  <a href="<?php echo SITE_URL ?>blog" title="Infrequent thoughts on almost anything"<?php echo current_class('blog') ?>>Thoughts</a>
   &nbsp;
-  <a target="_blank" href="http://instagram.com/staydecent">Instagram</a>
+  <a href="<?php echo SITE_URL ?>code" title="Blog posts about programming and web development"<?php echo current_class('code') ?>>Code</a>
   &nbsp;
-  <a target="_blank" href="http://chaosboogie.tumblr.com/">Tumblr</a>
+  <a href="http://adrianunger.tumblr.com" title="Photos and travel stories">Photos</a>
   &nbsp;
-</nav> -->
+</nav>

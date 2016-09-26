@@ -3,10 +3,6 @@
 <div role="main" id="main">
 
     <article>
-        <header>
-            <h1>Thoughts</h1>  
-        </header>
-
         <div class="container-fluid">
             <ol class="styled">
             <?php

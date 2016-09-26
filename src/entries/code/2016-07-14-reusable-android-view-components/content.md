@@ -1,9 +1,9 @@
 title: Creating Reusable View Components for Android
 ---
 
-View components are all the rage in the frontend JavaScript world with React popularizing their usage. Many [other frameworks](https://docs.angularjs.org/guide/component) have added APIs to support this pattern, as well. And, I've been using view components for the last couple years to build web app frontends. So, when I started learning Android, I quickly found myself wanting to breakdown my UI into components. 
+View components are all the rage in the frontend JavaScript world, with React popularizing their usage. Many [other frameworks](https://docs.angularjs.org/guide/component) have added APIs to support this pattern, as well. And, I've been using view components for the last couple years to build web app frontends. So, when I started learning Android, I quickly found myself wanting to breakdown my UI into components. 
 
-Well, Android/Java is full-OOP so it really just comes down to extending a built-in ViewGroup class and defining an XML layout.
+Android/Java is full-OOP so it really just comes down to extending a built-in ViewGroup class and defining an XML layout.
 
 Here's an example of a stacked date view that could appear as a child of several different parent views. 
 
@@ -35,10 +35,9 @@ Here's an example of a stacked date view that could appear as a child of several
 
 Simple enough. 
 
-Note: the `<merge>` tag avoids redundant view groups within your layouts &mdash; check out the [official
-docs](https://developer.android.com/training/improving-layouts/reusing-layouts.html#Merge) for more information. 
+Note: the `<merge>` tag avoids redundant view groups within your layouts &mdash; check out the [official docs](https://developer.android.com/training/improving-layouts/reusing-layouts.html#Merge) for more information. 
 
-It's not apparent by just looking at the XML, that our component will be contained in a `LinearLayout`, that comes with our Java class.
+It's not apparent by just looking at the XML, but our component will be contained in a `LinearLayout`, that comes with our Java class.
 
 ## Extend a view group
 
@@ -90,4 +89,6 @@ And to populate the TextViews from your Java:
 StackedDateView stackedDate = (StackedDateView) root.findViewById(R.id.stacked_date);
 stackedDate.setDate(someModel.getPublishedDate());
 ```
+
+That's it.
 
