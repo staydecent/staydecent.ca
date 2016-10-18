@@ -9,161 +9,120 @@
   <title>Forest Bathing ~ Photo Series by Adrian Unger</title>
 
   <style type="text/css">
-    body { 
-      font-family: georgia, serif;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 1.6;
-      color: #333;
-      padding: 1em 3em;
-      background: #fafafa;
+    *, *:before, *:after {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
     }
-    a {
-      color: black;
-      text-decoration: underline;
-    }
-    a:hover {
-      text-decoration: none;
-      color: #81A059;
-    }
-    p a:visited {
-      color: #666;
-    }
-    h1,h2,h3,h4,h5 {
-      font-size: 1em;
-      font-weight: 400;
-      color: black;
-    }
-    strong {
-      font-weight: 500;
-    }
-    abbr {
-      font-style: italic;
-    }
-    nav a {
-      color: #333;
-      text-decoration: none;
-    }
-    nav a.current {
-      color: #81A059;
-    }
-    h1>a,h2>a,h3>a,h4>a,h5>a {
-      text-decoration: none;
-      text-transform: uppercase;
-    }
-    #main,
-    .container {
-      max-width: 1080px;
-      margin: 1rem;
-      clear: both;
-    }
-    #main p,
-    #main h3 {
-      max-width: 680px;
-    }
-    #main blockquote > p {
-      font-style: italic;
-    }
-    header h1, header h2 {
-      margin: 1rem 0 0;
-    }
-    #main p.meta {
+    html, body {
+      width: 100%;
+      height: 100%;
       margin: 0;
-      font-size: 85%;
+      padding: 0;
     }
-    ol.styled {
-      list-style-type: none;
-      padding: 0;;
-    }
-    ol.styled > li {
-      padding-bottom: 1em;;
-    }
-    .post-navigation {
-      display: block;
-      margin-top: 4em;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-    .photo {
-      position: relative;
-      width: auto;
-      margin-top: 42px;
-      padding-bottom: 42px;
-    }
-    .photo img {
-      display: block;
-    }
-    .photo .caption {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      font-size: 12px;
-      opacity: .6;
-    }
-    blockquote {
-      background-color: aliceblue;
-    }
-    p > code {
-      background-color: aliceblue;
-    }
-    pre {
-      font-size: 85%;
+    body {
+      background: #2A3635;
+      font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
     }
 
-    #slider {
-      width: 80%;
-      height: 80%;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    h1 {
+      color: white;
+      font-size: 8em;
+      line-height: .8;
+      max-width: 800px;
+      margin: 0;
+    }
+
+    h2 {
+      margin: 0;
+      color: white;
+      font-size: 5em;
+      font-weight: 600;
+      font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    }
+
+    .book {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
       overflow: hidden;
     }
 
-    .slide {
-      width: 80%;
-      height: 80%;
-      float: left;
-      position: relative;
+    .page {
+      height: 100%;
+      display: flex; /* 1 */
+      flex-wrap: wrap; /* 2 */
+      margin: 0; /* 5 (edit me!) */
+    }
+    .page > * {
+      flex: 1 0 calc(50%); /* 3 (edit me!) */
+      margin: 0; /* 4 (edit me!) */
+      height: 100%;
     }
 
-    #slide-holder {
-      // wide enough to fit all the slides
-      width: 400%;
-      position: relative;
-      left: 0;
-      will-change: transform;
-      animation: scroller 10s infinite;
+    .photo {
+      padding: 1em;
     }
 
-    // need a step for each slide
-    @keyframes scroller {
-      0% { transform: translateX(0); }
-      33% { transform: translateX(-80%); }
-      66% { transform: translateX(-80%*2); }
-      100% { transform: translateX(0); }
+    .photo + .photo {
+      padding-left: 0;
     }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      background-color: #F8EBEE;
+      padding: 2em;
+    }
+
+    .text > .title {
+      flex: 1;
+    }
+
+    .text > .body {
+      color: #869094;
+      font-size: 1.5em;
+      max-width: 74%;
+      line-height: 1.4;
+    }
+
   </style>
 
 </head>
 <body>
 
-<?php echo 'hi' ?>
+<?php 
+  $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
+?>
 
-<div id="slider">
-  <div id="slide-holder">
-    <div class="slide">
-      <img src="images/shinrinyoku_0.jpg" alt="Forest Bathing Photo by Adrian Unger">
-      <img src="images/shinrinyoku_1.jpg" alt="Forest Bathing Photo by Adrian Unger">
+
+<div class="book">
+  <div class="page">
+    <div class="photo">
+      <div class="text">
+        <div class="title">
+          <h1>Forest Bathing</h1>
+          <h2>森林浴</h2>
+        </div>
+        <div class="body">
+          A forest bathing trip involves visiting a forest for relaxation and recreation while breathing in volatile substances, called phytoncides (wood essential oils), which are antimicrobial volatile organic compounds derived from trees, such as a-pinene and limonene. Incorporating forest bathing trips into a good lifestyle was first proposed in 1982 by the Forest Agency of Japan. It has now become a recognized relaxation and/or stress management activity in Japan.
+        </div>
+      </div>
     </div>
-    <div class="slide">
-      <img src="images/shinrinyoku_2.jpg" alt="Forest Bathing Photo by Adrian Unger">
-      <img src="images/shinrinyoku_3.jpg" alt="Forest Bathing Photo by Adrian Unger">
-    </div>
-    <div class="slide">
-      <img src="images/shinrinyoku_4.jpg" alt="Forest Bathing Photo by Adrian Unger">
-      <img src="images/shinrinyoku_5.jpg" alt="Forest Bathing Photo by Adrian Unger">
+    <div class="photo">
+      <img src="<?php echo $base_url ?>/images/shinrinyoku_1.jpg" alt="Forest Bathing Photo by Adrian Unger">      
     </div>
   </div>
 </div>
+
 
 </body>
 </html>
