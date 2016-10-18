@@ -52,7 +52,6 @@
       left: 0;
       width: 100%;
       height: 100vh;
-      overflow: hidden;
     }
 
     .page {
@@ -119,6 +118,24 @@
     </div>
     <div class="photo">
       <img src="<?php echo $base_url ?>/images/shinrinyoku_1.jpg" alt="Forest Bathing Photo by Adrian Unger">      
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="photo">
+      <img src="<?php echo $base_url ?>/images/shinrinyoku_0.jpg" alt="Forest Bathing Photo by Adrian Unger">      
+    </div>
+    <div class="photo">
+      <img src="<?php echo $base_url ?>/images/shinrinyoku_4.jpg" alt="Forest Bathing Photo by Adrian Unger">      
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="photo">
+      <img src="<?php echo $base_url ?>/images/shinrinyoku_2.jpg" alt="Forest Bathing Photo by Adrian Unger">      
+    </div>
+    <div class="photo">
+      <img src="<?php echo $base_url ?>/images/shinrinyoku_3.jpg" alt="Forest Bathing Photo by Adrian Unger">      
     </div>
   </div>
 </div>
