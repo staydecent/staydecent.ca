@@ -64,6 +64,7 @@
       flex: 1 0 calc(50%); /* 3 (edit me!) */
       margin: 0; /* 4 (edit me!) */
       height: 100%;
+      animation: fadein 2s;
     }
 
     .photo {
@@ -93,6 +94,11 @@
       line-height: 1.4;
     }
 
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(-100px);  }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
   </style>
 
 </head>
@@ -112,7 +118,7 @@
           <h2>森林浴</h2>
         </div>
         <div class="body">
-          A forest bathing trip involves visiting a forest for relaxation and recreation while breathing in volatile substances, called phytoncides (wood essential oils), which are antimicrobial volatile organic compounds derived from trees, such as a-pinene and limonene. Incorporating forest bathing trips into a good lifestyle was first proposed in 1982 by the Forest Agency of Japan. It has now become a recognized relaxation and/or stress management activity in Japan.
+          Forest Bathing is simply the act of leisurely spending time in a forest. The term, and research into the benefits, comes from Japan where it is recognized as a relaxation and/or stress management activity. For me, it is essential. Going more than a week without being in a forest causes me to be easily prone to stress. Time outdoors of any kind I'm sure is beneficial, but living in a Temperate Rainforest, it's hard not to be in the trees.
         </div>
       </div>
     </div>

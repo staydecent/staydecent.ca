@@ -1,7 +1,7 @@
 title: Creating Reusable View Components for Android
 ---
 
-View components are all the rage in the frontend JavaScript world, with React popularizing their usage. Many [other frameworks](https://docs.angularjs.org/guide/component) have added APIs to support this pattern, as well. And, I've been using view components for the last couple years to build web app frontends. So, when I started learning Android, I quickly found myself wanting to breakdown my UI into components. 
+View components are all the rage in the frontend JavaScript world, with React popularizing their usage. Many [other frameworks](https://docs.angularjs.org/guide/component) have added APIs to support this pattern as well. I've been pretty happy to adopt view components for web developement, so when I started learning Android, I quickly found myself wanting to breakdown my UI into components. 
 
 Android/Java is full-OOP so it really just comes down to extending a built-in ViewGroup class and defining an XML layout.
 
