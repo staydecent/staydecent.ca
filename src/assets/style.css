@@ -1,0 +1,230 @@
+body {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.428571429;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #1a1a1a;
+}
+
+p.big {
+  font-size: 21px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.grid > * {
+  flex: 1 0 12rem;
+  margin: 1rem;
+}
+
+#site {
+  margin: 0 auto;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav.menu {
+  flex: 1;
+  padding: 1em 2em;
+  text-align: right;
+  margin: 0;
+}
+
+.menu a {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #FFF5E8;
+  color: #2DAE6E;
+}
+
+pre {
+  font-size: 14px;
+}
+
+footer {
+  padding: 0rem 4rem 4rem 4rem;
+  margin-top: 4rem;
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer > div {
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+footer > div:last-child {
+  text-align: right;
+}
+
+#intro {
+  position: relative;
+}
+
+#intro a {
+  color: #1a1a1a;
+}
+
+.page-id-13 #intro {
+  padding: 0 4em;
+}
+
+.page img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1 {
+  color: #1a1a1a;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 1.2;
+  max-width: 580px;
+  margin-left: 2em;
+}
+
+.bigger {
+  font-size: 42px;
+}
+
+.mainImage {
+  max-width: 100%;
+}
+
+.mainImage img {
+  min-width: 100%;
+}
+
+#page {
+  padding: 0 4rem 4rem;
+}
+
+.content {
+  margin-top: 6rem;
+}
+
+.content > * {
+  flex-basis:  20rem;
+}
+
+.post {
+  align-self: right;
+  flex-basis: 42rem;
+  max-width: 100%;
+}
+
+.post > *:not(img) {
+  max-width: 700px;
+}
+
+.post > p:first-of-type {
+  font-size: 1.2em;
+}
+
+.meta {
+  font-size: 16px;
+  flex-basis: 0rem;
+  color: #555;
+  font-style: italic;
+}
+
+@media all and (max-width: 1199px) {
+  #intro {
+    padding: 2rem 2rem .5rem 2rem;
+  }
+  
+  #page {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 980px) {
+  #menu {
+    padding-top: 1rem;
+  }
+  
+  #intro {
+    padding: 1rem 1rem 0rem 1rem;
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  #page {
+    font-size: 16px;
+  }
+  
+  .grid > * {
+    flex: 1 0 100%;
+    margin: 1rem
+  }
+  
+  footer > div:not(:first-child) {
+    border-top: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menu.grid > * {
+    flex: 1 0 20%;
+    margin: 1rem
+  }
+  h1 {
+    margin: 0;
+  }
+  #page {
+    margin: 2em 0 0 0;
+    padding: 1em;
+  }
+  .page-id-13 #intro {
+    padding: 0;
+  }
+  .page-id-13 #intro .grid > * {
+    margin: 0;
+  }
+  .post {
+    max-width: 94%;
+  }
+  pre {
+    font-size: 12px;
+  }
+}
+
+#maui {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 3em;
+}
+
+#maui h2 {
+  font-size: 3em;
+  margin: -2em 0 0 .5em;
+  padding: 0;
+  color: #CCE8FD;
+}
+
+#shinrinyoku {
+  margin: 4em 0 0 1em !important;
+  display: flex;
+  justify-content: flex-end;
+}

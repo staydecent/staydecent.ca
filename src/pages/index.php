@@ -1,10 +1,10 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
   <div id="intro">
-    <h1>I'm Adrian Unger, an app developer currently living and working on Vancouver Island.</h1>
+    <h1>Harry, I have no idea where this will lead us, but I have a definite feeling it will be a place both wonderful and strange.</h1>
 
     <div class="mainImage">
-      <img src="http://68.media.tumblr.com/016eef496bdd2a96c1e0c325b68e2a5b/tumblr_o7rw86bWqg1v9dhjpo3_1280.jpg" alt="Ocean photo by Adrian Unger" />
+      <img src="<?php echo SITE_URL ?>/assets/i/snow-geese.jpg" alt="Snow Geese by Adrian Unger" />
     </div>
   </div>
   
