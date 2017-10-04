@@ -1,6 +1,14 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-  <div id="intro" class="grid">
+  <div id="intro" class="grid two-columns">
+    <div id="maui">
+      <div class="layout-center photo-bg">
+        <a href="<?php echo SITE_URL ?>/photography/maui">
+          <h2>Maui</h2>
+          <img src='<?php echo SITE_URL ?>photography/maui/images/2016-02-18-11.29.07.jpg' />
+        </a>
+      </div>
+    </div>
     <div id="bnw">
       <div class="layout-center photo-bg">
         <a href="<?php echo SITE_URL ?>/photography/black-and-white">
@@ -13,7 +21,7 @@
       <div class="layout-center photo-bg">
         <a href="<?php echo SITE_URL ?>/photography/shinrinyoku">
           <h2>森林浴</h2>
-          <img src='<?php echo SITE_URL ?>photography/shinrinyoku/images/shinrinyoku_1.jpg' />
+          <img src='<?php echo SITE_URL ?>photography/shinrinyoku/images/DSC0410.jpg' />
         </a>
       </div>
     </div>

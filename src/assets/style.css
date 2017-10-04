@@ -53,6 +53,11 @@ pre {
   margin: 1rem;
 }
 
+.two-columns > * {
+  display: flex; 
+  flex-basis: calc(50% - 2rem);
+}
+
 .layout-center {
   display: flex;
   align-items: center;
@@ -158,8 +163,12 @@ footer > div:last-child {
 
 .photo-bg h2 {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  color: #fff;
 }
 
 .photo-bg a {
@@ -257,28 +266,29 @@ footer > div:last-child {
 
 /* IDs */
 
-#maui {
-  max-width: 800px;
-  margin: 0 auto;
-  padding-bottom: 3em;
-}
-
-#maui h2 {
-  font-size: 3em;
-  margin: -2em 0 0 .5em;
-  padding: 0;
-  color: #CCE8FD;
-}
-
 #shinrinyoku h2 {
   color: #F8EBEE;
-  text-align: center;
-  font-size: 10rem;
+  font-size: 7rem;
+  bottom: 12%;
+  left: 25%;
+  transform: rotate(-15deg);
 }
 
 #bnw h2 {
   color: #fff;
-  font-size: 8rem;
-  line-height: 1;
+  text-transform: uppercase;
+  transform: rotate(-90deg) translateY(-40px);
+  bottom: 4rem;
 }
 
+#maui h2 {
+  color: #C7E8FF;
+  font-size: 2rem;
+  line-height: 0;
+  text-transform: uppercase;
+  letter-spacing: 3rem;
+  left: 1rem;
+  top: 42%;
+  width: 100%;
+  text-align: center;
+}
