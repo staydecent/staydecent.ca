@@ -1,7 +1,7 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
   <div id="intro">
-    <h1>Infrequent postings about app development and technical findings.</h1>
+    <h1>An attempt to share what I learn creating web and mobile apps.</h1>
   </div>
   
   <div id="page" class="content grid">

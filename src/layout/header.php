@@ -15,11 +15,13 @@
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/solarized_light.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
 </head>
-<body>
+<body class="page">
   <div id="site">
-    <nav id="top" class="menu grid">
-      <a href="/" id="site-title" <?php echo current_class('adrian') ?>>About</a>
-      <a href="<?php echo SITE_URL ?>code" <?php echo current_class('code') ?>>Programming</a>
-      <a href="<?php echo SITE_URL ?>photography" <?php echo current_class('photography') ?>>Photography</a>
-      <a href="<?php echo SITE_URL ?>blog" <?php echo current_class('blog') ?>>Thoughts</a>
-    </nav>
+    <div class="nav-wrapper">
+      <nav id="top" class="menu grid">
+        <a href="/" id="site-title" <?php echo current_class('adrian') ?>>About</a>
+        <a href="<?php echo SITE_URL ?>photography" <?php echo current_class('photography') ?>>Photography</a>
+        <a href="<?php echo SITE_URL ?>code" <?php echo current_class('code') ?>>Programming</a>
+        <a href="<?php echo SITE_URL ?>blog" <?php echo current_class('blog') ?>>Etc.</a>
+      </nav>
+    </div>

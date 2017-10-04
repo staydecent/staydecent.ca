@@ -1,7 +1,7 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
   <div id="intro">
-    <h1>Infrequent thoughts on almost anything.</h1>
+    <h1>Infrequent thoughts, links and creations.</h1>
   </div>
   
   <div id="page" class="content grid">

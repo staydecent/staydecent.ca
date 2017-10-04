@@ -7,12 +7,38 @@ body {
   padding: 0;
 }
 
+/* Typography */
+
 a {
   color: #1a1a1a;
 }
 
+h1 {
+  color: #1a1a1a;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 1.2;
+  max-width: 580px;
+  margin-left: 2em;
+}
+
 p.big {
   font-size: 21px;
+}
+
+pre {
+  font-size: 14px;
+}
+
+.bigger {
+  font-size: 42px;
+}
+
+/* Layout */
+
+#site {
+  margin: 0 auto;
+  height: 100%;
 }
 
 .grid {
@@ -27,9 +53,22 @@ p.big {
   margin: 1rem;
 }
 
-#site {
-  margin: 0 auto;
+.layout-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.layout-fill {
+  display: flex;
+  flex-direction: column;
+}
+
+.layout-fill > div {
+  flex: 1;
+}
+
+/* Header */
 
 .nav-wrapper {
   display: flex;
@@ -53,9 +92,11 @@ nav.menu {
   color: #2DAE6E;
 }
 
-pre {
-  font-size: 14px;
+.menu a.current {
+  text-decoration: underline;
 }
+
+/* Footer */
 
 footer {
   padding: 0rem 4rem 4rem 4rem;
@@ -76,34 +117,15 @@ footer > div:last-child {
   text-align: right;
 }
 
+/* Page specific */
+
 #intro {
   position: relative;
-}
-
-#intro a {
-  color: #1a1a1a;
-}
-
-.page-id-13 #intro {
-  padding: 0 4em;
 }
 
 .page img {
   max-width: 100%;
   max-height: 100%;
-}
-
-h1 {
-  color: #1a1a1a;
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 1.2;
-  max-width: 580px;
-  margin-left: 2em;
-}
-
-.bigger {
-  font-size: 42px;
 }
 
 .mainImage {
@@ -126,6 +148,29 @@ h1 {
   flex-basis:  20rem;
 }
 
+/* Photography */
+
+.photo-bg {
+  position: relative;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.photo-bg h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.photo-bg a {
+  text-decoration: none;
+}
+
+.photo-bg img {
+}
+
+/* Post */
+
 .post {
   align-self: right;
   flex-basis: 42rem;
@@ -146,6 +191,8 @@ h1 {
   color: #555;
   font-style: italic;
 }
+
+/* Mobile */
 
 @media all and (max-width: 1199px) {
   #intro {
@@ -176,7 +223,7 @@ h1 {
   
   .grid > * {
     flex: 1 0 100%;
-    margin: 1rem
+    margin: 1rem;
   }
   
   footer > div:not(:first-child) {
@@ -184,10 +231,14 @@ h1 {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
   .menu.grid > * {
     flex: 1 0 20%;
     margin: 1rem
+  }
+  .grid > * {
+    flex: 1 0 80%;
+    margin: 1rem;
   }
   h1 {
     margin: 0;
@@ -196,19 +247,15 @@ h1 {
     margin: 2em 0 0 0;
     padding: 1em;
   }
-  .page-id-13 #intro {
-    padding: 0;
-  }
-  .page-id-13 #intro .grid > * {
-    margin: 0;
-  }
   .post {
-    max-width: 94%;
+    max-width: 90%;
   }
   pre {
     font-size: 12px;
   }
 }
+
+/* IDs */
 
 #maui {
   max-width: 800px;
@@ -223,8 +270,15 @@ h1 {
   color: #CCE8FD;
 }
 
-#shinrinyoku {
-  margin: 4em 0 0 1em !important;
-  display: flex;
-  justify-content: flex-end;
+#shinrinyoku h2 {
+  color: #F8EBEE;
+  text-align: center;
+  font-size: 10rem;
 }
+
+#bnw h2 {
+  color: #fff;
+  font-size: 8rem;
+  line-height: 1;
+}
+
