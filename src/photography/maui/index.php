@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Adrian Unger">
 
-  <title>Forest Bathing ~ Photo Series by Adrian Unger</title>
+  <title>Maui ~ Photo Series by Adrian Unger</title>
 
   <style type="text/css">
     *, *:before, *:after {
@@ -21,12 +21,13 @@
       padding: 0;
     }
     body {
-      background: #2a3635;
+      background: #D1E8FB;
       font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+      color: white;
     }
 
     a {
-      color: black;
+      color: white;
     }
 
     img {
@@ -35,7 +36,7 @@
     }
 
     h1 {
-      color: #F8EBEE;
+      color: #fff;
       font-size: 8em;
       line-height: .8;
       max-width: 800px;
@@ -44,10 +45,9 @@
 
     h2 {
       margin: 0;
-      color: #F8EBEE;
+      color: #fff;
       font-size: 5em;
       font-weight: 600;
-      font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     }
 
     .book {
@@ -88,16 +88,16 @@
       display: flex;
       flex-direction: column;
       height: 100%;
-      background-color: #5d5128;
+      background-color: #D1E8FB;
       padding: 2em;
     }
 
     .page:last-child .text {
-      background-color: white;
+      background-color: #D1E8FB;
     }
 
     .page:last-child .text .body {
-      color: black;
+      color: white;
     }
 
     .text > .title {
@@ -105,7 +105,7 @@
     }
 
     .text > .body {
-      color: #F8EBEE;
+      color: #fff;
       font-size: 1.5em;
       max-width: 74%;
       line-height: 1.4;
@@ -145,70 +145,79 @@
 <div class="book">
   <div class="page">
     <div class="photo">
+      <img src="<?php echo $base_url ?>/images/maui_1.jpg" alt="Maui Photo by Adrian Unger">
+    </div>
+    <div class="photo">
       <div class="text">
         <div class="title">
-          <h1>Forest Bathing</h1>
-          <h2>森林浴</h2>
-        </div>
-        <div class="body">
-          Forest Bathing is simply the act of leisurely spending time in a forest. The term, and research into the benefits, comes from Japan where it is recognized as a relaxation and stress management activity. For myself, it’s essential — I can’t go more than a week without feeling crazy. Time outdoors of any kind I’m sure is beneficial, but living in a Temperate Rainforest, it’s hard not to be in the trees.
+          <h1>Maui</h1>
+          <p style="font-size: 2em;">10 days packed packed with rugged coastlines, <br/>beaches of assorted colours, roads to waterfalls <br />and dense, tropical jungles.</p>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="page spread">
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_1.jpg" alt="Forest Bathing Photo by Adrian Unger">      
+      <img src="<?php echo $base_url ?>/images/maui_2.jpg" alt="Maui Photo by Adrian Unger">
     </div>
   </div>
 
   <div class="page">
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_2.jpg" alt="Forest Bathing Photo by Adrian Unger">      
+      <img src="<?php echo $base_url ?>/images/maui_3.jpg" alt="Maui Photo by Adrian Unger">
     </div>
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_3.jpg" alt="Forest Bathing Photo by Adrian Unger">      
-    </div>
-  </div>
-
-  <div class="page">
-    <div class="photo">
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_4.jpg" alt="Forest Bathing Photo by Adrian Unger">      
-    </div>
-    <div class="photo">
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_5.jpg" alt="Forest Bathing Photo by Adrian Unger">      
+      <img src="<?php echo $base_url ?>/images/maui_4.jpg" alt="Maui Photo by Adrian Unger">
     </div>
   </div>
 
   <div class="page spread">
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_6.jpg" alt="Forest Bathing Photo by Adrian Unger">
-    </div>
-  </div>
-
-  <div class="page spread">
-    <div class="photo">
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_7.jpg" alt="Forest Bathing Photo by Adrian Unger">      
+      <img src="<?php echo $base_url ?>/images/maui_5.jpg" alt="Maui Photo by Adrian Unger">
     </div>
   </div>
 
   <div class="page">
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_8.jpg" alt="Forest Bathing Photo by Adrian Unger">      
+      <img src="<?php echo $base_url ?>/images/maui_6.jpg" alt="Maui Photo by Adrian Unger">
     </div>
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_9.jpg" alt="Forest Bathing Photo by Adrian Unger">      
-    </div>
-  </div>
-
-  <div class="page spread">
-    <div class="photo">
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_10.jpg" alt="Forest Bathing Photo by Adrian Unger">
+      <img src="<?php echo $base_url ?>/images/maui_7.jpg" alt="Maui Photo by Adrian Unger">
     </div>
   </div>
 
   <div class="page">
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_11.jpg" alt="Forest Bathing Photo by Adrian Unger">      
+      <img src="<?php echo $base_url ?>/images/maui_8.jpg" alt="Maui Photo by Adrian Unger">
     </div>
+    <div class="photo">
+      <img src="<?php echo $base_url ?>/images/maui_9.jpg" alt="Maui Photo by Adrian Unger">
+    </div>
+  </div>
+
+  <div class="page spread">
+    <div class="photo">
+      <img src="<?php echo $base_url ?>/images/maui_10.jpg" alt="Maui Photo by Adrian Unger">
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="photo">
+      <img src="<?php echo $base_url ?>/images/maui_11.jpg" alt="Maui Photo by Adrian Unger">
+    </div>
+    <div class="photo">
+      <img src="<?php echo $base_url ?>/images/maui_12.jpg" alt="Maui Photo by Adrian Unger">
+    </div>
+  </div>
+
+  <div class="page spread">
+    <div class="photo">
+      <img src="<?php echo $base_url ?>/images/maui_13.jpg" alt="Maui Photo by Adrian Unger">
+    </div>
+  </div>
+
+  <div class="page">
     <div class="photo">
       <div class="text">
         <div class="title">
@@ -219,7 +228,7 @@
         <div class="body">
           <small>All photos are © Adrian Unger and cannot be used without written permission.</small>
         </div>
-      </div>      
+      </div>
     </div>
   </div>
 </div>

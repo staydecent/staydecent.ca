@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Adrian Unger">
 
-  <title>Forest Bathing ~ Photo Series by Adrian Unger</title>
+  <title>Black &amp; White ~ Photo Series by Adrian Unger</title>
 
   <style type="text/css">
     *, *:before, *:after {
@@ -21,7 +21,7 @@
       padding: 0;
     }
     body {
-      background: #2a3635;
+      background: #fff;
       font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
     }
 
@@ -35,7 +35,7 @@
     }
 
     h1 {
-      color: #F8EBEE;
+      color: #000;
       font-size: 8em;
       line-height: .8;
       max-width: 800px;
@@ -44,10 +44,9 @@
 
     h2 {
       margin: 0;
-      color: #F8EBEE;
+      color: #000;
       font-size: 5em;
       font-weight: 600;
-      font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     }
 
     .book {
@@ -88,7 +87,7 @@
       display: flex;
       flex-direction: column;
       height: 100%;
-      background-color: #5d5128;
+      background-color: #fff;
       padding: 2em;
     }
 
@@ -105,7 +104,7 @@
     }
 
     .text > .body {
-      color: #F8EBEE;
+      color: #000;
       font-size: 1.5em;
       max-width: 74%;
       line-height: 1.4;
@@ -145,70 +144,72 @@
 <div class="book">
   <div class="page">
     <div class="photo">
+      <img src="<?php echo $base_url ?>/images/bnw_1.jpg" alt="Black and White Photo by Adrian Unger">      
+    </div>
+    <div class="photo">
       <div class="text">
         <div class="title">
-          <h1>Forest Bathing</h1>
-          <h2>森林浴</h2>
-        </div>
-        <div class="body">
-          Forest Bathing is simply the act of leisurely spending time in a forest. The term, and research into the benefits, comes from Japan where it is recognized as a relaxation and stress management activity. For myself, it’s essential — I can’t go more than a week without feeling crazy. Time outdoors of any kind I’m sure is beneficial, but living in a Temperate Rainforest, it’s hard not to be in the trees.
+          <h1>Black &amp; White</h1>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="page spread">
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_1.jpg" alt="Forest Bathing Photo by Adrian Unger">      
+      <img src="<?php echo $base_url ?>/images/bnw_2.jpg" alt="Black and White Photo by Adrian Unger">      
     </div>
   </div>
 
   <div class="page">
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_2.jpg" alt="Forest Bathing Photo by Adrian Unger">      
+      <img src="<?php echo $base_url ?>/images/bnw_3.jpg" alt="Black and White Photo by Adrian Unger">      
     </div>
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_3.jpg" alt="Forest Bathing Photo by Adrian Unger">      
+      <img src="<?php echo $base_url ?>/images/bnw_4.jpg" alt="Black and White Photo by Adrian Unger">      
     </div>
   </div>
 
   <div class="page">
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_4.jpg" alt="Forest Bathing Photo by Adrian Unger">      
+      <img src="<?php echo $base_url ?>/images/bnw_5.jpg" alt="Black and White Photo by Adrian Unger">      
     </div>
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_5.jpg" alt="Forest Bathing Photo by Adrian Unger">      
+      <img src="<?php echo $base_url ?>/images/bnw_6.jpg" alt="Black and White Photo by Adrian Unger">      
     </div>
   </div>
 
   <div class="page spread">
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_6.jpg" alt="Forest Bathing Photo by Adrian Unger">
-    </div>
-  </div>
-
-  <div class="page spread">
-    <div class="photo">
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_7.jpg" alt="Forest Bathing Photo by Adrian Unger">      
+      <img src="<?php echo $base_url ?>/images/bnw_7.jpg" alt="Black and White Photo by Adrian Unger">
     </div>
   </div>
 
   <div class="page">
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_8.jpg" alt="Forest Bathing Photo by Adrian Unger">      
+      <img src="<?php echo $base_url ?>/images/bnw_8.jpg" alt="Black and White Photo by Adrian Unger">      
     </div>
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_9.jpg" alt="Forest Bathing Photo by Adrian Unger">      
+      <img src="<?php echo $base_url ?>/images/bnw_9.jpg" alt="Black and White Photo by Adrian Unger">      
     </div>
   </div>
 
   <div class="page spread">
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_10.jpg" alt="Forest Bathing Photo by Adrian Unger">
+      <img src="<?php echo $base_url ?>/images/bnw_10.jpg" alt="Black and White Photo by Adrian Unger">
     </div>
   </div>
 
   <div class="page">
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_11.jpg" alt="Forest Bathing Photo by Adrian Unger">      
+      <img src="<?php echo $base_url ?>/images/bnw_11.jpg" alt="Black and White Photo by Adrian Unger">      
     </div>
+    <div class="photo">
+      <img src="<?php echo $base_url ?>/images/bnw_12.jpg" alt="Black and White Photo by Adrian Unger">      
+    </div>
+  </div>
+
+  <div class="page">
     <div class="photo">
       <div class="text">
         <div class="title">
