@@ -213,7 +213,7 @@
       <div class="text">
         <div class="title">
           <h2>Thanks for stopping by!</h2>
-          <h2>For prints or inquiries, <a href="mailto:photo@staydecent.ca">send me an email</a>.</h2>
+          <h2>For prints or inquiries, <br /><a href="mailto:photo@staydecent.ca">send me an email</a>.</h2>
           <h2><a href="<?php echo SITE_URL ?>photography">View more galleries.</a></h2>
         </div>
         <div class="body">
