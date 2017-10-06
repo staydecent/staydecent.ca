@@ -118,6 +118,9 @@
       h2 {
         font-size: 4em;
       }
+      .title h2 {
+        font-size: 2.6em;
+      }
       .text > .body {
         font-size: 1.2em;
       }
