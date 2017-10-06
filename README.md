@@ -7,7 +7,7 @@ I tried hacking jekyll to work with files/dirs the way I wanted but failed. So, 
 
 ## Test
 To test the output locally (it's just HTML files) just run:
-`php -S localhost:8000`
+`php -S localhost:8000 -t public/`
 
 `index.php` expects the output dir to be `public/`.
 

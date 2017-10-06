@@ -162,8 +162,8 @@ while ($staticIterator->valid())
 
         if (strstr($staticIterator->getBasename(), '.php')) 
         {
-            $out = render($layout);
-            Parse::new_file($new_file, $out, $staticIterator->getBasename());
+            $out = render($staticIterator->getPathname());
+            Parse::new_file(str_replace('index.php', '', $new_file), $out);
         }
         else 
         {
