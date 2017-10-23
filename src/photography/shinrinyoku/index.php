@@ -146,6 +146,21 @@
       }
     }
 
+    @media all and (max-width: 768px) {
+      .photo {
+        padding: 1rem;
+      }
+      .big {
+        font-size: 1.5em;
+      }
+      .photo + .photo {
+        padding-top: 0;
+      }
+      .page.spread > .photo {
+        padding-bottom: 0;
+      }
+    }
+
     @keyframes fadein {
       from { opacity: 0; transform: translateY(-100px);  }
       to   { opacity: 1; transform: translateY(0); }

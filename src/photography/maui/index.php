@@ -84,6 +84,10 @@
       max-height: 100%;
     }
 
+    .big {
+      font-size: 3em;
+    }
+
     .text {
       display: flex;
       flex-direction: column;
@@ -131,6 +135,21 @@
       }
     }
 
+    @media all and (max-width: 768px) {
+      .photo {
+        padding: 1rem;
+      }
+      .big {
+        font-size: 1.5em;
+      }
+      .photo + .photo {
+        padding-top: 0;
+      }
+      .page.spread > .photo {
+        padding-bottom: 0;
+      }
+    }
+
     @keyframes fadein {
       from { opacity: 0; transform: translateY(-100px);  }
       to   { opacity: 1; transform: translateY(0); }
@@ -151,7 +170,7 @@
       <div class="text">
         <div class="title">
           <h1>Maui</h1>
-          <p style="font-size: 2em;">10 days packed packed with rugged coastlines, <br/>beaches of assorted colours, roads to waterfalls <br />and dense, tropical jungles.</p>
+          <p class="big">10 days packed packed with rugged coastlines, <br/>beaches of assorted colours, roads to waterfalls <br />and dense, tropical jungles.</p>
         </div>
       </div>
     </div>
