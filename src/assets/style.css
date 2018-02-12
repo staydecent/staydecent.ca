@@ -217,6 +217,16 @@ footer > div:last-child {
 
 /* Mobile */
 
+@media all and (min-width: 2000px) {
+  body {
+    font-size: 18px;
+  }
+  
+  .grid {
+    max-width: 1440px;
+  }
+}
+
 @media all and (max-width: 980px) {
   footer {
     padding: 0 0 2rem;
