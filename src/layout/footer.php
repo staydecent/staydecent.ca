@@ -21,15 +21,6 @@
   </div>
 
   <script>hljs.initHighlightingOnLoad();</script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      document
-        .getElementById('topbar')
-        .addEventListener('click', function (ev) {
-          window.location = '<?php echo SITE_URL ?>'
-        })
-    })
-  </script>
 
 </body>
 </html>

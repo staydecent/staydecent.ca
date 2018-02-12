@@ -106,10 +106,18 @@ footer > div:last-child {
 
 #topbar {
   overflow: hidden;
-  max-height: 25px;
-  background-color: #FFF5E8;
-  margin-bottom: 5rem;
-  cursor: pointer;
+  border-top: 25px solid #FFF5E8;
+  background-color: transparent;
+  padding-bottom: 5rem;
+}
+
+#topbar.shinrinyoku {
+  border-color: #F8EBEE;
+  background-color: #2a3635;
+}
+
+#topbar.black {
+  border-color: #fefefe;
 }
 
 .page img {
@@ -131,7 +139,7 @@ footer > div:last-child {
 
 /* Photography */
 
-.grid > * {
+.grid:not(footer) > * {
   animation: fadein 2s;
 }
 
@@ -148,6 +156,40 @@ footer > div:last-child {
   font-size: 4em;
   font-weight: 600;
   line-height: 1.1;
+}
+
+#shinrinyoku {
+  background-color: #2a3635;
+}
+
+#shinrinyoku h1 {
+  color: #F8EBEE;
+  font-size: 6em;
+  line-height: .8;
+  max-width: 800px;
+  margin: 0;
+}
+
+#shinrinyoku h2 {
+  margin: 0;
+  color: #F8EBEE;
+  font-size: 5em;
+  font-weight: 600;
+  font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+#shinrinyoku p {
+  margin-top: 2rem;
+  color: #F8EBEE;
+  max-width: 80%;
+}
+
+#shinrinyoku a {
+  color: #F8EBEE;
+}
+
+#shinrinyoku .grid:last-child {
+  padding-bottom: 4rem;
 }
 
 /* Post */
