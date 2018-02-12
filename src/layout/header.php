@@ -18,10 +18,4 @@
 <body class="page">
   <div id="site">
 
-    <?php if (stripos($title, 'adrian') !== FALSE): ?>
-      <div id="intro" class="cut-off">
-        <div class="mainImage">
-          <img src="<?php echo SITE_URL ?>/assets/i/snow-geese.jpg" alt="Snow Geese by Adrian Unger" />
-        </div>
-      </div>
-    <?php endif; ?>
+    <div id="topbar">&nbsp;</div>

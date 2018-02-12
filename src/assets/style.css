@@ -128,18 +128,17 @@ footer > div:last-child {
   position: relative;
 }
 
-#intro.cut-off {
+#topbar {
   overflow: hidden;
-  max-height: 200px;
-}
-
-.cut-off img {
-  opacity: .1;
+  max-height: 25px;
+  background-color: #FFF5E8;
+  margin-bottom: 5rem;
+  cursor: pointer;
 }
 
 .page img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 99%;
+  max-height: 99%;
 }
 
 .mainImage {
@@ -151,7 +150,7 @@ footer > div:last-child {
 }
 
 #page {
-  padding: 0 4rem 4rem;
+  padding: 0 0 4rem;
 }
 
 .content {
@@ -212,64 +211,19 @@ footer > div:last-child {
 
 /* Mobile */
 
-@media all and (max-width: 1199px) {
-  #intro {
-    padding: 2rem 2rem .5rem 2rem;
-  }
-  
-  #page {
-    font-size: 16px;
-  }
-}
-
 @media all and (max-width: 980px) {
-  #menu {
-    padding-top: 1rem;
-  }
-  
-  #intro {
-    padding: 1rem 1rem 0rem 1rem;
-  }
-  
-  h1 {
-    font-size: 28px;
-  }
-  
-  #page {
-    font-size: 16px;
-  }
-  
-  .grid > * {
-    flex: 1 0 100%;
-    margin: 1rem;
-  }
-  
-  footer > div:not(:first-child) {
-    border-top: none;
+  footer {
+    padding: 0 0 2rem;
   }
 }
 
 @media screen and (max-width: 414px) {
-  .menu.grid > * {
-    flex: 1 0 20%;
-    margin: 1rem
-  }
   .grid > * {
-    flex: 1 0 80%;
+    flex: 1 0 50%;
     margin: 1rem;
   }
-  h1 {
-    margin: 0;
-  }
-  #page {
-    margin: 2em 0 0 0;
-    padding: 1em;
-  }
-  .post {
-    max-width: 90%;
-  }
-  pre {
-    font-size: 12px;
+  footer > div:not(:first-child) {
+    border: 0;
   }
 }
 
