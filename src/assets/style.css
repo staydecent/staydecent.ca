@@ -135,6 +135,14 @@ footer > div:last-child {
   animation: fadein 2s;
 }
 
+.title h1 {
+  font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+  font-size: 8em;
+  font-weight: 600;
+  line-height: 1;
+  margin-top: -22px;
+}
+
 .title h2 {
   font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
   font-size: 4em;
