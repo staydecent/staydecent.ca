@@ -52,15 +52,6 @@
     </div>
   </div>
 
-  <div class="grid">
-    <div class="photo">
-      <img src="<?php echo $base_url ?>/images/bnw_8.jpg" alt="Black and White Photo by Adrian Unger">      
-    </div>
-    <div class="photo">
-      <img src="<?php echo $base_url ?>/images/bnw_9.jpg" alt="Black and White Photo by Adrian Unger">      
-    </div>
-  </div>
-
   <div class="grid spread">
     <div class="photo">
       <img src="<?php echo $base_url ?>/images/bnw_10.jpg" alt="Black and White Photo by Adrian Unger">
