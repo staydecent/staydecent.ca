@@ -18,8 +18,7 @@ h1 {
   font-weight: 400;
   font-size: 35px;
   line-height: 1.2;
-  max-width: 580px;
-  margin-left: 2em;
+  margin-top: 0;
 }
 
 p.big {
@@ -73,34 +72,6 @@ pre {
   flex: 1;
 }
 
-/* Header */
-
-.nav-wrapper {
-  display: flex;
-  justify-content: flex-end;
-}
-
-nav.menu {
-  flex: 1;
-  padding: 1em 2em;
-  text-align: right;
-  margin: 0;
-}
-
-.menu a {
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.menu a:hover {
-  background-color: #FFF5E8;
-  color: #2DAE6E;
-}
-
-.menu a.current {
-  text-decoration: underline;
-}
-
 /* Footer */
 
 footer {
@@ -122,6 +93,11 @@ footer > div:last-child {
   text-align: right;
 }
 
+#copy {
+  font-size: 13px;
+  color: #999;
+}
+
 /* Page specific */
 
 #intro {
@@ -141,14 +117,6 @@ footer > div:last-child {
   max-height: 99%;
 }
 
-.mainImage {
-  max-width: 100%;
-}
-
-.mainImage img {
-  min-width: 100%;
-}
-
 #page {
   padding: 0 0 4rem;
 }
@@ -163,27 +131,15 @@ footer > div:last-child {
 
 /* Photography */
 
-.photo-bg {
-  position: relative;
-  max-height: 400px;
-  overflow: hidden;
+.grid > * {
+  animation: fadein 2s;
 }
 
-.photo-bg h2 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font-size: 1rem;
-  font-weight: 400;
-  text-align: left;
-  color: #fff;
-}
-
-.photo-bg a {
-  text-decoration: none;
-}
-
-.photo-bg img {
+.title h2 {
+  font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
+  font-size: 4em;
+  font-weight: 600;
+  line-height: 1.1;
 }
 
 /* Post */
@@ -227,31 +183,10 @@ footer > div:last-child {
   }
 }
 
-/* IDs */
 
-#shinrinyoku h2 {
-  color: #F8EBEE;
-  font-size: 7rem;
-  bottom: 12%;
-  left: 25%;
-  transform: rotate(-15deg);
-}
+/* Keyframes */
 
-#bnw h2 {
-  color: #fff;
-  text-transform: uppercase;
-  transform: rotate(-90deg) translateY(-40px);
-  bottom: 4rem;
-}
-
-#maui h2 {
-  color: #C7E8FF;
-  font-size: 2rem;
-  line-height: 0;
-  text-transform: uppercase;
-  letter-spacing: 3rem;
-  left: 1rem;
-  top: 42%;
-  width: 100%;
-  text-align: center;
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(-100px);  }
+  to   { opacity: 1; transform: translateY(0); }
 }

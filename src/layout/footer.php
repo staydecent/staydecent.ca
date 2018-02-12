@@ -8,10 +8,13 @@
       <div>
         <a href="mailto:hello@staydecent.ca">hello&#64;staydecent.ca</a><br>
         <a href="http://instagram.com/staydecent" target="_blank">Instagram</a><br>
-        <a href="http://mobile.twitter.com/staydecent" target="_blank">Twitter</a><br>
+        <a href="http://adrianunger.tumblr.com" target="_blank">Tumblr</a><br>
         <a href="http://github.com/staydecent" target="_blank">Github</a>
       </div>
-      <div><a href="http://staydecent.ca/now/">See what I’m doing right now.</a></div>
+      <div>
+        <a href="http://staydecent.ca/now/">See what I’m doing right now.</a>
+        <p id="copy"><small>All photos are © Adrian Unger and cannot be used without written permission.</small></p>
+      </div>
       <div><a href="#top">⬆</a></div>
     </footer>
     
