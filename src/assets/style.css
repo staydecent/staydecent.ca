@@ -1,6 +1,6 @@
 body {
   font-family: Verdana, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.428571429;
   color: #1a1a1a;
   margin: 0;
@@ -44,7 +44,7 @@ pre {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1800px;
+  max-width: 1145px;
   margin: 0 auto;
 }
 
@@ -126,6 +126,15 @@ footer > div:last-child {
 
 #intro {
   position: relative;
+}
+
+#intro.cut-off {
+  overflow: hidden;
+  max-height: 200px;
+}
+
+.cut-off img {
+  opacity: .1;
 }
 
 .page img {

@@ -1,28 +1,27 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-  <div id="intro">
-    <h1>Harry, I have no idea where this will lead us, but I have a definite feeling it will be a place both wonderful and strange.</h1>
+  <div class="grid">
+    <div>
+      <p>Hi there, I’m Adrian Unger, a software developer who prefers to be outdoors. I have a particular fondness for rocky coastlines and mountain meadows.</p>
 
-    <div class="mainImage">
-      <img src="<?php echo SITE_URL ?>/assets/i/snow-geese.jpg" alt="Snow Geese by Adrian Unger" />
+      <p>I actively enjoy food, nature and exploring new places. I also <em>really</em> enjoy taking <a href="http://staydecent.ca/photography/">photos</a> of those experiences.</p>
     </div>
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+  </div>
+
+  <div class="grid">
+    <h1>Staydecent</h1>
   </div>
   
   <div id="page" class="grid">
     <div>
-      <p>⏤</p>
+      <img src="http://staydecent.ca/photography/maui/images/maui_1.jpg">
+      <h5>Maui</h5>
     </div>
-
     <div>
-      <p>Hi there, I’m Adrian Unger, a software developer who prefers to be outdoors. I have a particular fondness for rocky coastlines and mountain meadows.</p>
-    </div>
-
-    <div>
-      <p>I actively enjoy food, nature and exploring new places. I also <em>really</em> enjoy taking <a href="http://staydecent.ca/photography/">photos</a> of those experiences.</p>
-    </div>
-
-    <div>
-      <p>See what I’m doing <a title="Currenly, since I have moved every year for the past 8 years." href="http://staydecent.ca/now/">right now</a>.</p>
+      <img src="http://staydecent.ca/photography/black-and-white/images/bnw_1.jpg" alt="Black and White">
+      <h5>Black &amp; White</h5>
     </div>
   </div>
 

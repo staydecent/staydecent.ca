@@ -17,11 +17,11 @@
 </head>
 <body class="page">
   <div id="site">
-    <div class="nav-wrapper">
-      <nav id="top" class="menu grid">
-        <a href="/" id="site-title" <?php echo current_class('adrian') ?>>About</a>
-        <a href="<?php echo SITE_URL ?>photography" <?php echo current_class('photography') ?>>Photography</a>
-        <a href="<?php echo SITE_URL ?>code" <?php echo current_class('code') ?>>Programming</a>
-        <a href="<?php echo SITE_URL ?>blog" <?php echo current_class('blog') ?>>Etc.</a>
-      </nav>
-    </div>
+
+    <?php if (stripos($title, 'adrian') !== FALSE): ?>
+      <div id="intro" class="cut-off">
+        <div class="mainImage">
+          <img src="<?php echo SITE_URL ?>/assets/i/snow-geese.jpg" alt="Snow Geese by Adrian Unger" />
+        </div>
+      </div>
+    <?php endif; ?>

@@ -1,11 +1,7 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-  <div id="intro">
-    <h1>Harry, I have no idea where this will lead us, but I have a definite feeling it will be a place both wonderful and strange.</h1>
-
-    <div class="mainImage">
-      <img src="<?php echo SITE_URL ?>/assets/i/snow-geese.jpg" alt="Snow Geese by Adrian Unger" />
-    </div>
+  <div class="grid">
+    <h1>STAYDECENT</h1>
   </div>
   
   <div id="page" class="grid">
