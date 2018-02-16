@@ -140,7 +140,12 @@ footer > div:last-child {
 /* Photography */
 
 .grid:not(footer) > * {
-  animation: fadein 2s;
+  animation: fadein 1.5s;
+}
+
+footer.grid > * {
+  animation: riseup .5s;
+  animation-timing-function: ease-in-out;
 }
 
 .title h1 {
@@ -251,6 +256,11 @@ footer > div:last-child {
 /* Keyframes */
 
 @keyframes fadein {
-  from { opacity: 0; transform: translateY(-100px);  }
+  from { opacity: 0; transform: translateY(-100px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes riseup {
+  from { opacity: 0; transform: translateY(100px); }
   to   { opacity: 1; transform: translateY(0); }
 }
