@@ -1,7 +1,8 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-  <div id="intro">
+  <div class="grid">
     <h1>Infrequent thoughts, links and creations.</h1>
+    <div>&nbsp;</div>
   </div>
   
   <div id="page" class="content grid">

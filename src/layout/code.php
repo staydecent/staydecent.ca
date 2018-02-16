@@ -1,7 +1,8 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-  <div id="intro">
+  <div class="grid">
     <h1 class="bigger"><?php echo $entry['title'] ?></h1>
+    <div>&nbsp;</div>
   </div>
   
   <div id="page" class="grid content">

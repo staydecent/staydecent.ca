@@ -3,7 +3,7 @@
     <channel>
         <title>Adrian Unger</title>
         <link><?php echo SITE_URL ?></link>
-        <description>Adrian Unger is the CTO of Ecquire. He lives in Canada, but prefers México. He also loves farming/gardening.</description>
+        <description>Hi there, I’m Adrian Unger, a software developer who prefers to be outdoors.</description>
         <pubDate><?php echo date("Y") ?></pubDate>
 
         <?php

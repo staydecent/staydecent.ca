@@ -1,7 +1,8 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-  <div id="intro">
+  <div class="grid">
     <h1>Here are the things I&rsquo;m currently focusing on.</h1>
+    <div>&nbsp;</div>
   </div>
   
   <div id="page" class="grid">
