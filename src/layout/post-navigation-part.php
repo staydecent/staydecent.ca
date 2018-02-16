@@ -1,4 +1,4 @@
-<article>
+<article id="post-navigation">
   <div class="container-fluid">
     <p>
       <span class="post-navigation pull-right">
@@ -7,7 +7,7 @@
           <a href="<?php echo $next_entry['url']; ?>"><?php echo $next_entry['title'] ?></a>
       <?php else: ?>
           <strong>You&rsquo;ve reached the end </strong>
-          <em>View the <a href="<?php echo SITE_URL ?>archives">archives</a> for all posts.</em>
+          <em>View all <a href="<?php echo SITE_URL . $entry['category'] ?>">posts</a>.</em>
       <?php endif; ?>
       </span>
     </p>

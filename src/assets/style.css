@@ -196,7 +196,7 @@ footer > div:last-child {
 
 .post {
   align-self: right;
-  flex-basis: 42rem;
+  flex-basis: 36rem;
   max-width: 100%;
 }
 
@@ -213,6 +213,10 @@ footer > div:last-child {
   flex-basis: 0rem;
   color: #555;
   font-style: italic;
+}
+
+#post-navigation {
+  margin-top: 6rem;
 }
 
 /* Mobile */

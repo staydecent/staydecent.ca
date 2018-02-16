@@ -67,10 +67,18 @@ function get_entries($cat, $desc = TRUE) {
 }
 
 function next_entry($entry) {
-  $entries = all_entries();
+  if (isset($entry['category'])) {
+    $entries = get_entries($entry['category']);
+  } else {
+    $entries = all_entries();
+  }
   $current = $entry['date'];
   $keys = array_keys($entries);
   $ordinal = (array_search($current, $keys)+1) % count($keys);
+
+  if ($ordinal === 0) {
+    return FALSE;
+  }
 
   if (array_key_exists($ordinal, $keys)) {
     $next = $keys[$ordinal];
