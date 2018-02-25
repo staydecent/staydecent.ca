@@ -125,6 +125,10 @@ footer > div:last-child {
   background-color: #eee;
 }
 
+#topbar.mundane {
+  border-color: #4100FF;
+}
+
 .page img {
   max-width: 99%;
   max-height: 99%;
@@ -211,6 +215,18 @@ footer.grid > * {
 #waves h2 a,
 #waves p {
   color: #6B7D67;
+}
+
+#mundane h1 {
+  color: #4100FF;
+  margin-top: -10px;
+  margin-bottom: 0;
+  word-break: break-all;
+  line-height: .8;
+}
+
+#mundane p.big {
+  color: #4100FF;
 }
 
 /* Post */
