@@ -5,7 +5,7 @@
   <div>&nbsp;</div>
 </div>
 
-<div id="page" class="grid">
+<div class="page grid">
   <ul class="grossly-massive">
     <li>Designed in-browser</li>
     <li>Type set in Verdana</li>

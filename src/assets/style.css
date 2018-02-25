@@ -134,7 +134,7 @@ footer > div:last-child {
   max-height: 99%;
 }
 
-#page {
+.page {
   padding: 0 0 4rem;
 }
 
@@ -225,7 +225,9 @@ footer.grid > * {
   line-height: .8;
 }
 
-#mundane p.big {
+#mundane p,
+#mundane h2,
+#mundane h2 a {
   color: #4100FF;
 }
 

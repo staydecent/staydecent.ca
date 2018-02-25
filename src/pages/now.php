@@ -5,7 +5,7 @@
     <div>&nbsp;</div>
   </div>
   
-  <div id="page" class="grid">
+  <div class="page grid">
     <div>
       <ul>
         <li>Building web and mobile apps with <a href="http://inputlogic.ca" target="_blank">Input Logic</a></li>

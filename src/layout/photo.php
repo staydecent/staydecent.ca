@@ -5,7 +5,7 @@
     <div>&nbsp;</div>
   </div>
   
-  <div id="page" class="grid content">
+  <div class="page grid content">
     <div class="meta"><p>Published on <?php echo date("F j, Y", $entry['date']) ?></p></div>
     <div class="post">
       <?php echo $entry['body'] ?>

@@ -14,7 +14,7 @@
     <h1>Staydecent</h1>
   </div>
   
-  <div id="page" class="grid">
+  <div class="page grid">
     <div>
       <a href="<?php echo SITE_URL ?>photography/waves">
         <img src='<?php echo SITE_URL ?>photography/waves/images/waves_4.jpg' />
@@ -29,11 +29,25 @@
     </div>
   </div>
 
-  <div class="grid">
+  <div class="page grid">
     <div>
       <a href="<?php echo SITE_URL ?>photography/shinrinyoku">
         <img src='<?php echo SITE_URL ?>photography/shinrinyoku/images/shinrinyoku_1.jpg' />
         <h5>森林浴</h5>
+      </a>
+    </div>
+  </div>
+
+  <div class="page grid">
+    <div>
+      <a href="<?php echo SITE_URL ?>photography/mundane">
+        <img src='<?php echo SITE_URL ?>photography/mundane/images/mundane_4.jpg' />
+        <h5>Mundane</h5>
+      </a>
+    </div>
+    <div>
+      <a href="<?php echo SITE_URL ?>photography/mundane">
+        <img src='<?php echo SITE_URL ?>photography/mundane/images/mundane_2.jpg' />
       </a>
     </div>
   </div>

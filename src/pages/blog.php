@@ -5,7 +5,7 @@
     <div>&nbsp;</div>
   </div>
   
-  <div id="page" class="content grid">
+  <div class="page content grid">
     <?php
     $posts = $entries['blog'];
     krsort($posts);
