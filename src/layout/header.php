@@ -18,4 +18,4 @@
 <body class="page">
   <div id="site">
 
-    <div id="topbar"<?php if (stristr($title, 'shinrinyoku')): ?> class="shinrinyoku"<?php endif; ?><?php if (stristr($title, 'black')): ?> class="black"<?php endif; ?>>&nbsp;</div>
+    <div id="topbar"<?php if (stristr($title, 'shinrinyoku')): ?> class="shinrinyoku"<?php endif; ?><?php if (stristr($title, 'black')): ?> class="black"<?php endif; ?><?php if (stristr($title, 'waves')): ?> class="waves"<?php endif; ?>>&nbsp;</div>

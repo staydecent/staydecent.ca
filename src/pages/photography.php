@@ -16,9 +16,9 @@
   
   <div id="page" class="grid">
     <div>
-      <a href="<?php echo SITE_URL ?>photography/maui">
-        <img src="http://staydecent.ca/photography/maui/images/maui_1.jpg">
-        <h5>Maui</h5>
+      <a href="<?php echo SITE_URL ?>photography/waves">
+        <img src='<?php echo SITE_URL ?>photography/waves/images/waves_4.jpg' />
+        <h5>Waves</h5>
       </a>
     </div>
     <div>

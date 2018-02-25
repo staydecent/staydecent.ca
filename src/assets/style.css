@@ -120,6 +120,11 @@ footer > div:last-child {
   border-color: #fefefe;
 }
 
+#topbar.waves {
+  border-color: #6B7D67;
+  background-color: #eee;
+}
+
 .page img {
   max-width: 99%;
   max-height: 99%;
@@ -197,6 +202,17 @@ footer.grid > * {
   padding-bottom: 4rem;
 }
 
+#waves {
+  background-color: #eee;
+}
+
+#waves h1,
+#waves h2,
+#waves h2 a,
+#waves p {
+  color: #6B7D67;
+}
+
 /* Post */
 
 .post {
@@ -216,7 +232,7 @@ footer.grid > * {
 .meta {
   font-size: 16px;
   flex-basis: 0rem;
-  color: #555;
+  color: #999;
   font-style: italic;
 }
 
