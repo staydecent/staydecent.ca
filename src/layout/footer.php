@@ -7,8 +7,8 @@
       </div>
       <div>
         <a href="mailto:hello@staydecent.ca">hello&#64;staydecent.ca</a><br>
-        <a href="http://instagram.com/staydecent" target="_blank">Instagram</a><br>
-        <a href="http://adrianunger.tumblr.com" target="_blank">Tumblr</a><br>
+        <a href="http://vsco.co/staydecent" target="_blank">VSCO</a><br>
+        <a href="http://chaosboogie.tumblr.com" target="_blank">Tumblr</a><br>
         <a href="http://github.com/staydecent" target="_blank">Github</a>
       </div>
       <div>
