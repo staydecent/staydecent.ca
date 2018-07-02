@@ -29,8 +29,24 @@ pre {
   font-size: 14px;
 }
 
+blockquote {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 1.2em;
+  color: #333;
+}
+
 .bigger {
   font-size: 42px;
+}
+
+.note {
+  background-color: Azure;
+  padding: 0.5em 0.5em 0.5em 1em;
+  margin-left: -1em;
+  font-size: 0.85em;
+  font-family: monospace;
+  color: #333;
 }
 
 /* Layout */

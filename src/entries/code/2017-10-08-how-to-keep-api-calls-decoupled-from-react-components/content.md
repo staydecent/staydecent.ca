@@ -3,6 +3,8 @@ title: How To Keep API Calls Decoupled From React Components
 
 Keeping API calls decoupled from React components keeps your views pure and without side-effects! This makes it easier to test your views without having to worry about API calls. Your API and views can be tested separately.
 
+<div class="note">I no longer agree with any of this! It was a nice thought experiment but, it's downfall is that Components become less encapsulated. I'd advocate that if you want to test a Component without worrying about API data, then break the Component in two: 1. Getting API data, and the child 2. Rendering some data. July 2, 2018</div>
+
 ## Some Assumptions
 
 Before I dive any deeper, here are some assumptions: You are using React to render your views (HTML). You are using Redux, or something similar to handle state. Myself, I actually use Preact and Atom instead of React and Redux -- They are both smaller and their source codes are easier (for me) to understand, which I favour. That said, the APIs are basically the same. And, I'm also assuming you rely heavily on Redux/Atom and not on React's `setState` method.
