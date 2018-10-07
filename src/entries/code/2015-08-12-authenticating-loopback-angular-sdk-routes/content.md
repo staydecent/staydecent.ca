@@ -17,8 +17,6 @@ I found this great article by Jorge Silva: [Angular.js Authentication with UI-Ro
 
 Wait! If the `lb-services` are handling passing the access token for each subsequent call, they must be storing that data somewhere!
 
-![where is LoopBack storing it's data?](https://dl.dropboxusercontent.com/u/3067484/Screenshot%202015-08-12%2023.01.33.png)
-
 Indeed. Inspecting my generated `lb-services` source, I found a `LoopBackAuth` service that would load the `localStorage` values onto itself. Easy enough. In your custom [authentication service](https://docs.strongloop.com/display/public/LB/Create+AngularJS+client#CreateAngularJSclient-Services) you can inject the `LoopBackAuth` service and write a simple helper:
 
 ```javascript

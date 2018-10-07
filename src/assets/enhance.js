@@ -4,18 +4,21 @@
   const imgs = document.querySelectorAll('img')
 
   // Wait to fade in content until after first image or so is loaded
-  for (let x = 0; x < grids.length; x++) {
-    grids[x].classList.add('loading')
-  }
-  if (imgs.length > 0) {
-    const limit = imgs.length > 2 ? 2 : imgs.limit
+  if (imgs.length > 2) { // always 1 img
+    for (let x = 0; x < grids.length; x++) {
+      grids[x].classList.add('loading')
+    }
+    const limit = imgs.length >= 3 ? 3 : imgs.limit
     let loaded = 0
+    const clearLoadingClasses = function () {
+      for (let x = 0; x < grids.length; x++) {
+        grids[x].classList.remove('loading')
+      }
+    }
     const onPhotoLoaded = function () {
       loaded++
       if (loaded >= limit) {
-        for (let x = 0; x < grids.length; x++) {
-          grids[x].classList.remove('loading')
-        }
+        window.requestAnimationFrame(clearLoadingClasses)
       }
     }
     for (let x = 0; x < limit; x++) {
