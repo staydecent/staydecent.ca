@@ -1,5 +1,26 @@
 (function () {
-  const photos = document.querySelectorAll('.photo')
+  const photos = document.querySelectorAll('.photo > img')
+  const imgs = document.querySelectorAll('img')
+
+  // Wait to fade in content until after first image or so is loaded
+  if (imgs.length > 0) {
+    const limit = imgs.length > 2 ? 2 : imgs.limit
+    let loaded = 0
+    const onPhotoLoaded = function () {
+      loaded++
+      if (loaded >= limit) {
+        const grids = document.querySelectorAll('.grid')
+        for (let x = 0; x < grids.length; x++) {
+          grids[x].classList.add('ready')
+        }
+      }
+    }
+    for (let x = 0; x < limit; x++) {
+      imgs[x].addEventListener('load', onPhotoLoaded)
+    }
+  }
+
+  // Focus on photo when clicked
   let focused = null
 
   const fadeOutPhotos = function (target) {
@@ -27,7 +48,7 @@
     ev.stopPropagation()
     if (focused) {
       fadeInPhotos()
-    } else if (ev.target.nodeName === 'IMG') {
+    } else {
       fadeOutPhotos(this)
     }
   }

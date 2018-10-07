@@ -68,6 +68,14 @@ blockquote {
   margin: 1rem;
 }
 
+.grid:not(.ready) > * {
+  opacity: 0;
+}
+
+.grid.ready > * {
+  animation: fadein 1.5s;
+}
+
 .two-columns > * {
   display: flex; 
   flex-basis: calc(50% - 2rem);
@@ -163,10 +171,6 @@ footer > div:last-child {
 }
 
 /* Photography */
-
-.grid:not(footer) > * {
-  animation: fadein 1.5s;
-}
 
 footer.grid > * {
   animation: riseup .5s;
