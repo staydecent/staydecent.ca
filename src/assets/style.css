@@ -68,11 +68,11 @@ blockquote {
   margin: 1rem;
 }
 
-.grid:not(.ready) > * {
+.grid.loading > * {
   opacity: 0;
 }
 
-.grid.ready > * {
+.grid:not(.loading) > * {
   animation: fadein 1.5s;
 }
 
