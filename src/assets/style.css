@@ -188,6 +188,10 @@ footer.grid > * {
   line-height: 1.1;
 }
 
+.photo {
+  cursor: pointer;
+}
+
 #shinrinyoku {
   background-color: #2a3635;
 }
