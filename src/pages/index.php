@@ -13,6 +13,21 @@
   <div class="grid">
     <h1 id="wordmark">Staydecent</h1>
   </div>
+
+  <div class="page grid">
+    <div>
+      <a href="<?php echo SITE_URL ?>photography/paris-noir">
+        <img src='<?php echo SITE_URL ?>photography/paris-noir/images/ParisNoir_7.jpg' />
+        <h5>Paris Noir</h5>
+      </a>
+    </div>
+    <div>
+      <a href="<?php echo SITE_URL ?>photography/paris-couleur">
+        <img src='<?php echo SITE_URL ?>photography/paris-couleur/images/ParisCouleur_8.jpg' />
+        <h5>Paris Couleur</h5>
+      </a>
+    </div>
+  </div>
   
   <div class="page grid">
     <div>
@@ -23,7 +38,7 @@
     </div>
     <div>
       <a href="<?php echo SITE_URL ?>photography/black-and-white">
-        <img src="http://staydecent.ca/photography/black-and-white/images/bnw_1.jpg" alt="Black and White">
+        <img src='<?php echo SITE_URL ?>photography/black-and-white/images/bnw_1.jpg' alt="Black and White" />
         <h5>Black &amp; White</h5>
       </a>
     </div>
