@@ -21,6 +21,13 @@ h1 {
   margin-top: 0;
 }
 
+h1#wordmark {
+  font-family: Palatino;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 32px;
+}
+
 p.big {
   font-size: 21px;
 }
@@ -154,8 +161,8 @@ footer > div:last-child {
 }
 
 .page img {
-  max-width: 99%;
-  max-height: 99%;
+  max-width: 99.9%;
+  max-height: 99.9%;
 }
 
 .page {
@@ -192,8 +199,20 @@ footer.grid > * {
   line-height: 1.1;
 }
 
-.photo {
+.title h2:first-child {
+  margin-top: 0;
+}
+
+.photo > img {
   cursor: pointer;
+}
+
+.photo > img + img {
+  margin-top: 2rem;
+}
+
+.photo > .text {
+  max-width: 600px;
 }
 
 #shinrinyoku {

@@ -11,7 +11,7 @@
   </div>
 
   <div class="grid">
-    <h1>Staydecent</h1>
+    <h1 id="wordmark">Staydecent</h1>
   </div>
   
   <div class="page grid">
