@@ -281,6 +281,13 @@ footer.grid > * {
   color: #445583;
 }
 
+#picos h1,
+#picos h2,
+#picos h2 a,
+#picos p {
+  color: #193038;
+}
+
 /* Post */
 
 .post {
