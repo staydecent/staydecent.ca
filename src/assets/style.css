@@ -274,6 +274,13 @@ footer.grid > * {
   color: #4100FF;
 }
 
+#couleur h1,
+#couleur h2,
+#couleur h2 a,
+#couleur p {
+  color: #445583;
+}
+
 /* Post */
 
 .post {
