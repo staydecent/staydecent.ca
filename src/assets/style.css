@@ -32,6 +32,10 @@ p.big {
   font-size: 21px;
 }
 
+p.bigger {
+  font-size: 27px;
+}
+
 pre {
   font-size: 14px;
 }

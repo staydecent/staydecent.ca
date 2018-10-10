@@ -27,18 +27,18 @@
     </div>
   </div>
 
-  <div class="grid spread">
+  <div class="grid">
+    <div class="photo">
+      <img src="<?php echo $base_url ?>/images/picos_3.jpg" alt="Picos De Europa Photo by Adrian Unger">      
+    </div>
     <div class="photo">
       <img src="<?php echo $base_url ?>/images/picos_6.jpg" alt="Picos De Europa Photo by Adrian Unger">
     </div>
   </div>
 
-  <div class="grid">
+  <div class="grid spread">
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/picos_10.jpg" alt="Picos De Europa Photo by Adrian Unger">      
-    </div>
-    <div class="photo">
-      <img src="<?php echo $base_url ?>/images/picos_5.jpg" alt="Picos De Europa Photo by Adrian Unger">
+      <img src="<?php echo $base_url ?>/images/picos_8.jpg" alt="Picos De Europa Photo by Adrian Unger">
     </div>
   </div>
 
@@ -50,20 +50,28 @@
 
   <div class="grid">
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/picos_1.jpg" alt="Picos De Europa Photo by Adrian Unger">
+      <div class="text">
+        <div class="title">
+          <h2>The scale of the of the place was hard to comprehend.</h2>
+          <p class="bigger">When I spotted a group of people ahead of us, the massive size of the rock walls became clear.</p>
+        </div>
+      </div>
     </div>
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/picos_2.jpg" alt="Picos De Europa Photo by Adrian Unger">
+      <img src="<?php echo $base_url ?>/images/picos_5.jpg" alt="Picos De Europa Photo by Adrian Unger">
     </div>
   </div>
 
   <div class="grid spread">
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/picos_9.jpg" alt="Picos De Europa Photo by Adrian Unger">
+      <img src="<?php echo $base_url ?>/images/picos_10.jpg" alt="Picos De Europa Photo by Adrian Unger">
     </div>
   </div>
 
-  <div class="grid spread">
+  <div class="grid">
+    <div class="photo">
+      <img src="<?php echo $base_url ?>/images/picos_12.jpg" alt="Picos De Europa Photo by Adrian Unger">      
+    </div>
     <div class="photo">
       <img src="<?php echo $base_url ?>/images/picos_4.jpg" alt="Picos De Europa Photo by Adrian Unger">
     </div>
@@ -71,19 +79,22 @@
 
   <div class="grid spread">
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/picos_13.jpg" alt="Picos De Europa Photo by Adrian Unger">
+      <img src="<?php echo $base_url ?>/images/picos_1.jpg" alt="Picos De Europa Photo by Adrian Unger">
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="photo">
+      <img src="<?php echo $base_url ?>/images/picos_7.jpg" alt="Picos De Europa Photo by Adrian Unger">      
+    </div>
+    <div class="photo">
+      <img src="<?php echo $base_url ?>/images/picos_9.jpg" alt="Picos De Europa Photo by Adrian Unger">
     </div>
   </div>
 
   <div class="grid spread">
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/picos_12.jpg" alt="Picos De Europa Photo by Adrian Unger">
-    </div>
-  </div>
-
-  <div class="grid spread">
-    <div class="photo">
-      <img src="<?php echo $base_url ?>/images/picos_3.jpg" alt="Picos De Europa Photo by Adrian Unger">
+      <img src="<?php echo $base_url ?>/images/picos_14.jpg" alt="Picos De Europa Photo by Adrian Unger">
     </div>
   </div>
 
@@ -98,7 +109,7 @@
       </div>
     </div>
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/picos_7.jpg" alt="Picos De Europa Photo by Adrian Unger">
+      <img src="<?php echo $base_url ?>/images/picos_13.jpg" alt="Picos De Europa Photo by Adrian Unger">
     </div>
   </div>
 
