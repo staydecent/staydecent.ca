@@ -115,7 +115,7 @@ function get_title($filename) {
 
 function current_class($str) {
   global $title;
-  echo (stripos($title, $str) !== FALSE) ? ' class="current"' : ''; 
+  echo (stripos($title, $str) !== FALSE) ? ' class="current"' : ' data-title="' . $title . '"'; 
 }
 
 function render($layout) {

@@ -1,20 +1,17 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-  <div class="grid">
+  <div id="main" class="page grid">
     <div>
-      <p>Hi there, I’m Adrian Unger, a software developer who prefers to be outdoors. I have a particular fondness for rocky coastlines and mountain meadows.</p>
-
-      <p>I&rsquo;m an enthuisiast for food, nature and exploring new places. I also <em title="🦊🦊🦊">can&rsquo;t stop</em> taking <a href="http://instagram.com/staydecent/" target="_blank">photos</a> of those experiences.</p>
+      <h1 id="wordmark">Staydecent</h1>
     </div>
-    <div>&nbsp;</div>
-    <div>&nbsp;</div>
+    <div class="half">
+      <p class="big">Hi there, I’m Adrian Unger, a software developer who prefers to be outdoors. I have a particular fondness for rocky coastlines and mountain meadows.</p>
+
+      <p class="big">I&rsquo;m an enthuisiast for food, nature and exploring new places. I also <em title="🦊🦊🦊">can&rsquo;t stop</em> taking <a href="#galleries">photos</a> of those experiences.</p>
+    </div>
   </div>
 
-  <div class="grid">
-    <h1 id="wordmark">Staydecent</h1>
-  </div>
-
-  <div class="page grid">
+  <div id="galleries" class="page grid">
     <div>
       <a href="<?php echo SITE_URL ?>photography/paris-noir">
         <img src='<?php echo SITE_URL ?>photography/paris-noir/images/ParisNoir_7.jpg' />
@@ -29,7 +26,7 @@
     </div>
   </div>
 
-  <div class="page grid">
+  <div class="page grid spread">
     <div>
       <a href="<?php echo SITE_URL ?>photography/picos-on-portra">
         <img src='<?php echo SITE_URL ?>photography/picos-on-portra/images/picos_2.jpg' />

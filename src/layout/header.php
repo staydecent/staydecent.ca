@@ -9,7 +9,7 @@
     if (stristr($title, 'adrian'))
       echo 'Adrian Unger — Staydecent';
     else
-      echo $title.' — Staydecent';
+      echo $title.' — by Adrian Unger';
 ?></title>
   <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL ?>/assets/style.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css">
@@ -19,4 +19,21 @@
 <body class="page">
   <div id="site">
 
-    <div id="topbar"<?php if (stristr($title, 'shinrinyoku')): ?> class="shinrinyoku"<?php endif; ?><?php if (stristr($title, 'black') || stristr($title, 'noir') || stristr($title, 'picos')): ?> class="black"<?php endif; ?><?php if (stristr($title, 'waves')): ?> class="waves"<?php endif; ?><?php if (stristr($title, 'mundane')): ?> class="mundane"<?php endif; ?>>&nbsp;</div>
+    <div id="topbar"<?php if (stristr($title, 'shinrinyoku')): ?> class="shinrinyoku"<?php endif; ?><?php if (stristr($title, 'black') || stristr($title, 'noir') || stristr($title, 'picos')): ?> class="black"<?php endif; ?><?php if (stristr($title, 'waves')): ?> class="waves"<?php endif; ?><?php if (stristr($title, 'mundane')): ?> class="mundane"<?php endif; ?>>
+      <div class="grid">
+        <div>
+          <a class="skip" href="#main" title="Skip to main content">&darr;</a> 
+        </div>
+        <nav class="grid">
+          <a id="photography" href="/" <?php echo current_class('adrian') ?>>
+            Photography
+          </a>
+          <a id="software" href="<?php echo SITE_URL ?>code" <?php echo current_class('code') ?>>
+            Software
+          </a>
+          <a id="etc" href="<?php echo SITE_URL ?>blog" <?php echo current_class('blog') ?>>
+            Etc.
+          </a>
+        </nav>
+      </div>
+    </div>

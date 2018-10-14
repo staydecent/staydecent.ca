@@ -1,7 +1,5 @@
 body {
-  font-family: Verdana, Arial, sans-serif;
-  font-size: 17px;
-  line-height: 1.428571429;
+  font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
   color: #1a1a1a;
   margin: 0;
   padding: 0;
@@ -13,27 +11,54 @@ a {
   color: #1a1a1a;
 }
 
+a.skip {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+}
+
 h1 {
   color: #1a1a1a;
   font-weight: 400;
-  font-size: 35px;
-  line-height: 1.2;
-  margin-top: 0;
+  font-size: 3.8vw;
+  line-height: 4.4vw;
+  margin-top: 1.2vw;
 }
 
-h1#wordmark {
-  font-family: Palatino;
-  font-weight: 800;
-  font-style: italic;
-  font-size: 32px;
+.title h1 {
+  font-weight: 600;
+  font-size: 7vw;
+  line-height: 7.6vw;
+  margin-top: 0.3vw;
+}
+
+.title h2 {
+  font-weight: 600;
+  font-size: 5vw;
+  line-height: 5.6vw;
+  margin-top: 0.3vw;
+}
+
+p:not(.big),
+p:not(.bigger) {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 p.big {
-  font-size: 21px;
+  font-size: 1.7vw;
+  line-height: 2.3vw;
 }
 
 p.bigger {
-  font-size: 27px;
+  font-size: 3vw;
+  line-height: 3.6vw;
+}
+
+p.big,
+p.bigger {
+  margin-right: 1vw;
 }
 
 pre {
@@ -45,10 +70,6 @@ blockquote {
   font-style: italic;
   font-size: 1.2em;
   color: #333;
-}
-
-.bigger {
-  font-size: 42px;
 }
 
 .note {
@@ -67,10 +88,72 @@ blockquote {
   height: 100%;
 }
 
+nav.grid {
+  margin: 0;
+}
+
+nav.grid a:first-child {
+  margin-left: 0;
+}
+
+nav a {
+  display: block;
+  padding: 1rem 1rem 1rem 3rem;
+  text-decoration: none;
+  position: relative;
+  border: 1px solid transparent;
+}
+
+nav a:hover {
+  border: 1px solid black;
+}
+
+nav a::before {
+  position: absolute;
+  font-size: 2rem;
+  margin-left: -3rem;
+  top: 0.3rem;
+}
+
+nav a.current {
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+}
+
+a#photography.current {
+  background-image: url('i/photo.png');
+}
+
+a#photography::before {
+  content: "📷";
+  margin-left: -2.8rem;
+}
+
+a#software.current {
+  background-image: url('i/software.png');
+}
+
+a#software::before {
+  content: "💾";
+  font-size: 1.8rem;
+  margin-left: -2.5rem;
+  top: 0.6rem;
+}
+
+a#etc.current {
+  background-image: url('i/etc.png');
+}
+
+a#etc::before {
+  content: "📓";
+  margin-left: -2.5rem;
+  top: 0.5rem;
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1145px;
   margin: 0 auto;
 }
 
@@ -141,9 +224,8 @@ footer > div:last-child {
 
 #topbar {
   overflow: hidden;
-  border-top: 25px solid #FFF5E8;
   background-color: transparent;
-  padding-bottom: 5rem;
+  padding-bottom: 8vw;
 }
 
 #topbar.shinrinyoku {
@@ -164,13 +246,23 @@ footer > div:last-child {
   border-color: #4100FF;
 }
 
-.page img {
-  max-width: 99.9%;
-  max-height: 99.9%;
+.page {
+  height: 100%;
 }
 
-.page {
-  padding: 0 0 4rem;
+.page img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 80%;
+}
+
+.spread img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .content {
@@ -186,25 +278,6 @@ footer > div:last-child {
 footer.grid > * {
   animation: riseup .5s;
   animation-timing-function: ease-in-out;
-}
-
-.title h1 {
-  font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
-  font-size: 8em;
-  font-weight: 600;
-  line-height: 1;
-  margin-top: -22px;
-}
-
-.title h2 {
-  font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande";
-  font-size: 4em;
-  font-weight: 600;
-  line-height: 1.1;
-}
-
-.title h2:first-child {
-  margin-top: 0;
 }
 
 .photo > img {
@@ -327,7 +400,7 @@ footer.grid > * {
   }
   
   .grid {
-    max-width: 1440px;
+    max-width: 2000px;
   }
 }
 
@@ -338,10 +411,21 @@ footer.grid > * {
 }
 
 @media screen and (max-width: 414px) {
+  h1 {
+    font-size: 8vw;
+    line-height: 10vw;
+  }
+
+  p.big {
+    font-size: 6vw;
+    line-height: 8vw;
+  }
+
   .grid > * {
     flex: 1 0 50%;
     margin: 1rem;
   }
+
   footer > div:not(:first-child) {
     border: 0;
   }
