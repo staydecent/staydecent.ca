@@ -24,7 +24,7 @@
         <div>
           <a class="skip" href="#main" title="Skip to main content">&darr;</a> 
         </div>
-        <nav class="grid">
+        <nav>
           <a id="photography" href="/" <?php echo current_class('adrian') ?>>
             Photography
           </a>
@@ -32,7 +32,7 @@
             Software
           </a>
           <a id="etc" href="<?php echo SITE_URL ?>blog" <?php echo current_class('blog') ?>>
-            Etc.
+            Etcetera
           </a>
         </nav>
       </div>

@@ -12,4 +12,4 @@
       </span>
     </p>
   </div>
-</div>
+</article>
