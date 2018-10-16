@@ -207,19 +207,18 @@ class Parse {
    * @param string
    * @return int
    */
-  public static function findExcerpt($data) {
+  public static function findExcerpt($data, $return_data = false) {
     if (($offset = strpos($data, "\n")) !== false) {
       $out = explode("\n", $data);
       return $out[0];
     }
 
-    if (($offset = strpos($data, "\r\n\r\n")) !== false)
-    {
+    if (($offset = strpos($data, "\r\n\r\n")) !== false) {
       $out = explode("\r\n\r\n", $data);
       return $out[0];
     }
 
-    return false;
+    return ($return_data) ? $data : false;
   }
 
   /**
@@ -231,20 +230,18 @@ class Parse {
    */
   public static function contents($contents) {
     $ret = array();
+
     # find header terminator
     $bodystart = self::findHeaderTerminatorOffset($contents);
-
-    // get the body content
     if ($bodystart === false) {
       $bodystart = 0;
-      $ret['body'] = self::getBody(substr($contents, $bodystart));
-      $ret['excerpt'] = self::findExcerpt(strip_tags($ret['body']));
-      // \Log::debug('Missing front matter and/or body.');
     }
-    else {
-      $ret['body'] = self::getBody(substr($contents, $bodystart));
-      $ret['excerpt'] = self::findExcerpt(strip_tags($ret['body']));
-    }
+
+    // get the body content
+    $ret['body'] = self::getBody(substr($contents, $bodystart));
+
+    // Get excerpt from body
+    $ret['excerpt'] = self::findExcerpt(strip_tags($ret['body']), true);
 
     // get the frontMatter 
     if ($bodystart !== false && $bodystart > 0) {

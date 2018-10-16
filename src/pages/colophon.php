@@ -1,6 +1,6 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-<div class="grid">
+<div id="main" class="grid">
   <h1>Colophon</h1>
   <div>&nbsp;</div>
 </div>

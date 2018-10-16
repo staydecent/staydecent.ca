@@ -1,6 +1,6 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-  <div class="grid">
+  <div id="main" class="grid">
     <h1 class="bigger"><?php echo $entry['title'] ?></h1>
     <div>&nbsp;</div>
   </div>
