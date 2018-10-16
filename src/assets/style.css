@@ -40,7 +40,8 @@ h1 {
 }
 
 p:not(.big),
-p:not(.bigger) {
+p:not(.bigger),
+li {
   font-family: Verdana, Arial, sans-serif;
   font-size: 1.2rem;
   line-height: 1.5;
@@ -265,10 +266,11 @@ footer > div:last-child {
 .page img {
   display: block;
   max-width: 100%;
-  max-height: 84%;
+  max-height: 94%;
 }
 
 .spread img {
+  width: 100%;
   max-width: 100%;
   max-height: 100%;
 }
@@ -359,6 +361,13 @@ footer.grid > * {
 #waves h2 a,
 #waves p {
   color: #6B7D67;
+}
+
+#maui h1,
+#maui h2,
+#maui h2 a,
+#maui p {
+  color: #6c5f67;
 }
 
 #mundane h1 {

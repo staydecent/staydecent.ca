@@ -8,7 +8,7 @@
   $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
 ?>
 
-<div class="book">
+<div id="main" class="book">
   <div class="grid">
     <div class="photo">
       <div class="text">
