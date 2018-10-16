@@ -12,7 +12,7 @@
         <a href="http://github.com/staydecent" target="_blank">Github</a>
       </div>
       <div>
-        <a href="http://staydecent.ca/now/">See what I’m doing right now.</a>
+        <a href="/now">See what I’m doing right now.</a>
         <p id="copy"><small>All photos are © Adrian Unger and cannot be used without written permission.</small></p>
         <p>
           <a 

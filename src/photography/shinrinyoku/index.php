@@ -9,7 +9,7 @@
 ?>
 
 <div id="shinrinyoku" class="book">
-  <div class="grid">
+  <div id="main" class="grid">
     <div class="photo">
       <div class="text">
         <div class="title">

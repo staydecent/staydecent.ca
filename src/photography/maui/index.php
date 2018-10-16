@@ -8,8 +8,8 @@
   $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
 ?>
 
-<div class="book">
-  <div class="grid">
+<div id="maui" class="book">
+  <div id="main" class="grid">
     <div class="photo">
       <img src="<?php echo $base_url ?>/images/maui_1.jpg" alt="Maui Photo by Adrian Unger">
     </div>
@@ -17,7 +17,7 @@
       <div class="text">
         <div class="title">
           <h1>Maui</h1>
-          <p class="big">10 days packed packed with rugged coastlines, <br/>beaches of assorted colours, roads to waterfalls <br />and dense, tropical jungles.</p>
+          <p class="big">10 days packed with rugged coastlines, <br/>beaches of assorted colours, roads to waterfalls and dense tropical jungles.</p>
         </div>
       </div>
     </div>

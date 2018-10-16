@@ -1,6 +1,6 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-  <div class="grid">
+  <div id="main" class="grid">
     <h1>An attempt to share what I learn creating web and mobile apps.</h1>
     <div>&nbsp;</div>
   </div>

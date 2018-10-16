@@ -9,7 +9,7 @@
 ?>
 
 <div id="couleur" class="book">
-  <div class="grid">
+  <div id="main" class="grid">
     <div class="photo">
       <img src="<?php echo $base_url ?>/images/ParisCouleur_8.jpg" alt="Paris Photo by Adrian Unger">
     </div>

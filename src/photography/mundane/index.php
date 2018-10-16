@@ -9,7 +9,7 @@
 ?>
 
 <div id="mundane" class="book">
-  <div class="grid">
+  <div id="main" class="grid">
     <div class="photo">
       <img src="<?php echo $base_url ?>/images/mundane_4.jpg" alt="Mundane Photo by Adrian Unger">
       <img src="<?php echo $base_url ?>/images/mundane_2.jpg" alt="Mundane Photo by Adrian Unger">

@@ -3,6 +3,20 @@
   const photos = document.querySelectorAll('.photo > img')
   const imgs = document.querySelectorAll('img')
 
+  const isInViewport = function (element) {
+    const rect = element.getBoundingClientRect()
+    const html = document.documentElement
+    if ((rect.top + 100) <= (window.innerHeight || html.clientHeight)) {
+      element.classList.add('fadein')
+      element.classList.remove('notinview')
+    }
+  }
+  imgs.forEach(img => img.classList.add('notinview'))
+  document.addEventListener('scroll', () => {
+    if (!imgs.length) return
+    imgs.forEach(isInViewport)
+  }, true)
+
   // Wait to fade in content until after first image or so is loaded
   if (imgs.length > 2) { // always 1 img
     for (let x = 0; x < grids.length; x++) {
@@ -17,6 +31,7 @@
     }
     const onPhotoLoaded = function () {
       loaded++
+      isInViewport(this)
       if (loaded >= limit) {
         window.requestAnimationFrame(clearLoadingClasses)
       }
@@ -72,6 +87,7 @@
     }
     tick()
   }
+
   function fadeOut (el) {
     el.style.opacity = 1
     let last = +new Date()
