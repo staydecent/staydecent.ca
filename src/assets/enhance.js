@@ -1,5 +1,4 @@
 (function () {
-  const grids = document.querySelectorAll('.grid')
   const photos = document.querySelectorAll('.photo > img')
   const imgs = document.querySelectorAll('img')
 
@@ -16,30 +15,6 @@
     if (!imgs.length) return
     imgs.forEach(isInViewport)
   }, true)
-
-  // Wait to fade in content until after first image or so is loaded
-  if (imgs.length > 2) { // always 1 img
-    for (let x = 0; x < grids.length; x++) {
-      grids[x].classList.add('loading')
-    }
-    const limit = imgs.length >= 3 ? 3 : imgs.limit
-    let loaded = 0
-    const clearLoadingClasses = function () {
-      for (let x = 0; x < grids.length; x++) {
-        grids[x].classList.remove('loading')
-      }
-    }
-    const onPhotoLoaded = function () {
-      loaded++
-      isInViewport(this)
-      if (loaded >= limit) {
-        window.requestAnimationFrame(clearLoadingClasses)
-      }
-    }
-    for (let x = 0; x < limit; x++) {
-      imgs[x].addEventListener('load', onPhotoLoaded)
-    }
-  }
 
   // Focus on photo when clicked
   let focused = null
