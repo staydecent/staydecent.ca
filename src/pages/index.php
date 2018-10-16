@@ -55,6 +55,16 @@
   </div>
 
   <div class="page grid spaced">
+    <div class="up">
+      <a href="<?php echo SITE_URL ?>photography/maui">
+        <img src='<?php echo SITE_URL ?>photography/maui/images/maui_5.jpg' />
+        <h5>Maui</h5>
+      </a>
+    </div>
+    <div>&nbsp;</div>
+  </div>
+
+  <div class="page grid spaced">
     <div class="pre-1 double">
       <a href="<?php echo SITE_URL ?>photography/shinrinyoku">
         <img src='<?php echo SITE_URL ?>photography/shinrinyoku/images/shinrinyoku_1.jpg' />
