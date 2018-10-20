@@ -32,7 +32,7 @@
             Software
           </a>
           <a id="etc" href="<?php echo SITE_URL ?>blog" <?php echo current_class('blog') ?>>
-            Etcetera
+            Etc.
           </a>
         </nav>
       </div>

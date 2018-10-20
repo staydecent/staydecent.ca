@@ -12,6 +12,11 @@
   outline: none;
 }
 
+::selection,
+::-moz-selection {
+  background: rgba(182, 242, 41, 0.2);
+}
+
 body {
   font-family: "Verdana", sans-serif;
   font-size: var(--global-font-size);
@@ -39,18 +44,18 @@ h3 {
   font-weight: 400;
 }
 
-nav a,
-footer a {
-  color: var(--global-font-size);
+a {
+  color: var(--global-font-color);
 }
 
 a.skip {
   display: block;
   text-decoration: none;
+  padding: var(--global-padding);
 }
 
 p.big {
-  font-size: 1.25em;
+  font-size: 1.15em;
   margin: 0;
   padding: 0;
 }
@@ -78,37 +83,29 @@ blockquote {
 
 /* Navigation */
 
-nav.grid {
-  margin: 0;
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-nav.grid a:first-child {
-  margin-left: 0;
+nav > * {
+  width: calc(100% / 3);
+  padding: var(--global-padding);
+  position: relative;
+  flex-shrink: 0;
 }
 
-nav a {
+nav > a {
   display: block;
-  padding: 1rem 1rem 1rem 3rem;
+  padding: var(--global-padding) 0;
   text-decoration: none;
   position: relative;
 }
 
-nav a:hover {
-  background-color: #0a0a0a;
-  color: white;
-}
-
-nav a::before {
-  position: absolute;
-  font-size: 2rem;
-  margin-left: -3rem;
-  top: 0.3rem;
-}
-
-nav a.current {
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: contain;
+nav > a.current {
+  text-decoration: underline;
 }
 
 /* Layout */
@@ -142,6 +139,15 @@ nav a.current {
   border-color: #4100FF;
 }
 
+.page {
+  padding: var(--global-padding);
+}
+
+.page.spaced {
+  padding-top: calc(var(--global-padding) * 4);
+  padding-bottom: calc(var(--global-padding) * 4);
+}
+
 .page img {
   display: block;
   max-width: 100%;
@@ -155,7 +161,7 @@ nav a.current {
 }
 
 .down {
-  margin-top: 12vw;
+  margin-top: 4vw;
 }
 
 .up {
@@ -168,11 +174,15 @@ nav a.current {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  max-width: 1440px;
 }
 
 .grid > * {
   flex: 1 0 12rem;
-  margin: 1rem;
+}
+
+.grid > *:not(nav) {
+  marign: var(--global-padding);
 }
 
 .grid > .double {
@@ -282,6 +292,14 @@ footer > div:last-child {
 #copy {
   font-size: 13px;
   color: #999;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1440px) {
+  .grid {
+    max-width: 1140px;
+  }
 }
 
 /* Keyframes */
