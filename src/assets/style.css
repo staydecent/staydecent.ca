@@ -52,15 +52,22 @@ a.skip {
   display: block;
   text-decoration: none;
   padding: var(--global-padding);
+  padding-left: 0;
 }
 
-p.big {
+p.big,
+p.bigger {
   font-size: 1.15em;
   margin: 0;
   padding: 0;
 }
 
-p.big + p.big {
+p.bigger {
+  font-size: 1.45em;
+  font-weight: 500;
+}
+
+p + p {
   text-indent: 2em;
 }
 
@@ -118,7 +125,7 @@ nav > a.current {
 #topbar {
   overflow: hidden;
   background-color: transparent;
-  padding-bottom: 8vw;
+  padding-bottom: 4vw;
 }
 
 #topbar.shinrinyoku {
@@ -203,6 +210,38 @@ nav > a.current {
 
 /* Photography */
 
+.book > .grid {
+  padding: var(--global-padding);
+}
+
+.book > .grid:not(.spread) > .photo:first-child {
+  margin-right: 1vw;
+}
+
+.book > .grid:not(.spread) > .photo + .photo {
+  margin-left: 1vw;
+}
+
+.title > h1 {
+  font-size: 7em;
+  font-weight: 700;
+  line-height: 0.9;
+}
+
+.title > h2 {
+  font-size: 3em;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.title > * {
+  max-width: 70%;
+}
+
+.title > h2 + p {
+  text-indent: 2em;
+}
+
 #shinrinyoku {
   background-color: #2a3635;
 }
@@ -285,6 +324,11 @@ nav > a.current {
 
 /* Footer */
 
+footer {
+  font-size: calc(var(--global-font-size) / 1.25);
+  line-height: 1.7;
+}
+
 footer > div:last-child {
   text-align: right;
 }
@@ -299,6 +343,16 @@ footer > div:last-child {
 @media screen and (max-width: 1440px) {
   .grid {
     max-width: 1140px;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  body {
+    font-size: calc(var(--global-font-size) * 1.25);
+  }
+
+  .grid {
+    max-width: 1800px;
   }
 }
 

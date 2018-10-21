@@ -20,7 +20,7 @@
   <div id="site">
 
     <div id="topbar"<?php if (stristr($title, 'shinrinyoku')): ?> class="shinrinyoku"<?php endif; ?><?php if (stristr($title, 'black') || stristr($title, 'noir') || stristr($title, 'picos')): ?> class="black"<?php endif; ?><?php if (stristr($title, 'waves')): ?> class="waves"<?php endif; ?><?php if (stristr($title, 'mundane')): ?> class="mundane"<?php endif; ?>>
-      <div class="grid">
+      <div class="page grid">
         <div>
           <a class="skip" href="#main" title="Skip to main content">&darr;</a> 
         </div>

@@ -1,5 +1,5 @@
 
-    <footer class="grid">
+    <footer class="page grid">
       <div>
         <a href="/" id="site-title" <?php echo current_class('adrian') ?>>Photography</a><br>
         <a href="<?php echo SITE_URL ?>code" <?php echo current_class('code') ?>>Software</a><br>

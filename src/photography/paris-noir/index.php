@@ -10,13 +10,11 @@
 
 <div id="main" class="book">
   <div class="grid">
-    <div class="photo">
-      <div class="text">
-        <div class="title">
-          <h1>Paris Noir</h1>
-          <p class="big">I recently visited Paris for the first time. Really, it was my frist time off the North American continent!</p>
-          <p>After spending three weeks in Spain, my partner and I wandered around Paris for 4 days. These are some selected photos from a roll of Ilford XP2. All shot with a Yashica FX-D and Yashica ML 50mm/2.</p>
-        </div>
+    <div class="text">
+      <div class="title">
+        <h1>Paris Noir</h1>
+        <p class="big">I recently visited Paris for the first time. Really, it was my frist time off the North American continent!</p>
+        <p>After spending three weeks in Spain, my partner and I wandered around Paris for 4 days. These are some selected photos from a roll of Ilford XP2. All shot with a Yashica FX-D and Yashica ML 50mm/2.</p>
       </div>
     </div>
     <div class="photo">
