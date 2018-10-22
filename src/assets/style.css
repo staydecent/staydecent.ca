@@ -39,9 +39,16 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;
   font-weight: 400;
+}
+
+h5 {
+  font-size: 16px;
+  margin-top: 0.5rem;
 }
 
 a {
@@ -67,7 +74,8 @@ p.bigger {
   font-weight: 500;
 }
 
-p + p {
+p + p,
+h2 + p {
   text-indent: 2em;
 }
 
@@ -82,6 +90,8 @@ blockquote {
 .note {
   background-color: Azure;
   padding: 0.5em 0.5em 0.5em 1em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   margin-left: -1em;
   font-size: 0.85em;
   font-family: monospace;
@@ -175,6 +185,36 @@ nav > a.current {
   margin-top: -6vw;
 }
 
+.post {
+  padding: 0 0.5rem;
+}
+
+.post h2,
+.post h3 {
+  margin-top: 2rem;
+}
+
+.post > img {
+  margin: 2rem 0;
+}
+
+.post > p {
+  font-size: var(--global-font-size);
+  text-indent: 0;
+  margin-top: 1rem;
+}
+
+.meta {
+  font-size: 16px;
+  text-align: right;
+  padding-top: 1rem;
+  color: #aaa;
+}
+
+#post-navigation {
+  margin-top: 4rem;
+}
+
 /* Grid */
 
 .grid {
@@ -188,8 +228,11 @@ nav > a.current {
   flex: 1 0 12rem;
 }
 
-.grid > *:not(nav) {
-  marign: var(--global-padding);
+.content.grid > * {
+  min-width: 300px;
+  margin-right: 3vw;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .grid > .double {

@@ -6,7 +6,7 @@
   </div>
   
   <div class="page grid content">
-    <div class="meta"><p>Posted on <?php echo date("F j, Y", $entry['date']) ?></p></div>
+    <div class="meta"><p>Posted on <br /><?php echo date("F j, Y", $entry['date']) ?></p></div>
     <div class="post double">
       <?php echo $entry['body'] ?>
       <?php include $config['dirs']['layout'].'/post-navigation-part.php'; ?>

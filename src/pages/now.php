@@ -5,7 +5,7 @@
     <div>&nbsp;</div>
   </div>
   
-  <div class="page grid">
+  <div class="content page grid">
     <div>
       <ul>
         <li>Building <span title="Progressive Web Apps">PWAs</span> and React Native apps with <a href="http://inputlogic.ca" target="_blank">Input Logic</a></li>
