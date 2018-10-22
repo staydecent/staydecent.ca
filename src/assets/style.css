@@ -21,7 +21,7 @@ body {
   font-family: "Verdana", sans-serif;
   font-size: var(--global-font-size);
   line-height: 1.4;
-  color: var(--global-font-size);
+  color: var(--global-font-color);
   font-smoothing: antialiased;
   overflow-x: hidden;
   transform: scale3d(1, 1, 1);
@@ -339,6 +339,55 @@ footer > div:last-child {
 }
 
 /* Responsive */
+
+@media screen and (max-width: 414px) {
+  :root {
+    --global-font-size: 17px;
+  }
+
+  nav > * {
+    width: 100%;
+  }
+
+  .title > * {
+    max-width: 100%;
+  }
+
+  .title > h1 {
+    font-size: 22vw;
+  }
+
+  .title > h2 {
+    font-size: 14vw;
+  }
+
+  p.bigger {
+    font-size: 7vw;
+  }
+
+  p.big {
+    font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .grid {
+    display: block;
+  }
+
+  .book > .grid:not(.spread) > .photo:first-child {
+    margin-right: 0;
+    margin-bottom: calc(var(--global-padding) * 2);
+  }
+
+  .book > .grid:not(.spread) > .photo + .photo {
+    margin-left: 0;
+  }
+
+  footer.grid > * {
+    margin-bottom: var(--global-padding);
+  }
+}
 
 @media screen and (max-width: 1440px) {
   .grid {
