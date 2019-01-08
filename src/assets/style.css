@@ -436,6 +436,11 @@ footer > div:last-child {
   .grid {
     max-width: 1140px;
   }
+  .content.grid > .meta,
+  .content.grid > .post,
+  .content.grid .post + div {
+    min-width: auto;
+  }
 }
 
 @media screen and (min-width: 1441px) {
