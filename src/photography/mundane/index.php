@@ -1,5 +1,6 @@
 <?php 
-  $title = 'Mundane'
+  $title = 'Mundane';
+  $page_id = 'mundane';
 ?>
 
 <?php include $config['dirs']['layout'].'/header.php' ?>
@@ -9,50 +10,59 @@
 ?>
 
 <div id="mundane" class="book">
-  <div id="main" class="grid">
-    <div class="photo">
-      <img src="<?php echo $base_url ?>/images/mundane_4.jpg" alt="Mundane Photo by Adrian Unger">
-      <img src="<?php echo $base_url ?>/images/mundane_2.jpg" alt="Mundane Photo by Adrian Unger">
-    </div>
-    <div class="photo">
+  <grid id="main" columns=12>
+    <column span=6 class="photo">
       <div class="text">
         <div class="title">
           <h1>Mund—<br />ane</h1>
-          <p class="big">Everyday scenes that happen to feel almost surreal.</p>
         </div>
       </div>
-    </div>
-  </div>
+    </column>
+    <column span=4 class="photo bottom">
+      <div class="text">
+        <p class="big">Everyday scenes that happen to feel almost surreal.</p>
+      </div>
+    </column>
+  </grid>
 
-  <div class="grid">
-    <div class="photo">
+  <grid columns=12>
+    <column span=6 class="photo">
+      <img src="<?php echo $base_url ?>/images/mundane_4.jpg" alt="Mundane Photo by Adrian Unger">
+    </column>
+    <column span=6 class="photo">
+      <img src="<?php echo $base_url ?>/images/mundane_2.jpg" alt="Mundane Photo by Adrian Unger">      
+    </column>
+  </grid>
+
+  <grid columns=12>
+    <column span=6 class=photo>
       <img src="<?php echo $base_url ?>/images/mundane_1.jpg" alt="Mundane Photo by Adrian Unger">      
-    </div>
-    <div class="photo">
+    </column>
+    <column span=6 class=photo>
       <img src="<?php echo $base_url ?>/images/mundane_3.jpg" alt="Mundane Photo by Adrian Unger">
-    </div>
-  </div>
+    </column>
+  </grid>
 
-  <div class="grid">
-    <div class="photo">
+  <grid columns=12>
+    <column span=6 class=photo>
       <img src="<?php echo $base_url ?>/images/mundane_5.jpg" alt="Mundane Photo by Adrian Unger">
-    </div>
-    <div class="photo">
+    </column>
+    <column span=6 class=photo>
       <img src="<?php echo $base_url ?>/images/mundane_6.jpg" alt="Mundane Photo by Adrian Unger">
-    </div>
-  </div>
+    </column>
+  </grid>
 
-  <div class="grid">
-    <div class="photo">
+  <grid columns=12>
+    <column span=6 class=photo>
       <img src="<?php echo $base_url ?>/images/mundane_7.jpg" alt="Mundane Photo by Adrian Unger">
-    </div>
-    <div class="photo">
+    </column>
+    <column span=6 class=photo>
       <img src="<?php echo $base_url ?>/images/mundane_8.jpg" alt="Mundane Photo by Adrian Unger">
-    </div>
-  </div>
+    </column>
+  </grid>
 
-  <div class="grid">
-    <div class="photo">
+  <grid columns=12>
+    <column span=6 class=photo>
       <div class="text">
         <div class="title">
           <h2>Thanks for stopping by!</h2>
@@ -60,8 +70,8 @@
           <h2><a href="<?php echo SITE_URL ?>photography">View more galleries.</a></h2>
         </div>
       </div>
-    </div>
-  </div>
+    </column>
+  </grid>
 </div>
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>

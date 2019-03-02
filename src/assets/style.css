@@ -137,7 +137,7 @@ nav > a.current {
 #topbar {
   overflow: hidden;
   background-color: transparent;
-  padding-bottom: 4vw;
+  padding-bottom: var(--global-padding);
 }
 
 #topbar.shinrinyoku {
@@ -159,7 +159,9 @@ nav > a.current {
 }
 
 .page {
-  padding: var(--global-padding);
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: var(--global-padding) 0;
 }
 
 .page.spaced {
@@ -170,13 +172,27 @@ nav > a.current {
 .page img {
   display: block;
   max-width: 100%;
-  max-height: 100%;
+  max-height: calc(100vh - (var(--global-padding) / 2.5));
+}
+
+.col-inner {
+  padding-bottom: var(--global-padding);
+  padding-right: calc(var(--global-padding) / 2);
+  padding-left: calc(var(--global-padding) / 2);
+}
+
+column:nth-child(3n+3) .col-inner {
+  padding-right: 0;
+}
+
+column:nth-child(3n+1) .col-inner {
+  padding-left: 0;
 }
 
 .spread img {
   width: 100%;
   max-width: 100%;
-  max-height: 100%;
+  max-height: calc(100vh - var(--global-padding));
 }
 
 .down {
@@ -188,7 +204,7 @@ nav > a.current {
 }
 
 .post {
-  padding: 0 0.5rem;
+  overflow-wrap: break-word;
 }
 
 .post h2,
@@ -200,10 +216,16 @@ nav > a.current {
   margin: 2rem 0;
 }
 
-.post > p {
+.post > p ,
+.post > ul, 
+.post > ol {
   font-size: var(--global-font-size);
   text-indent: 0;
   margin-top: 1rem;
+}
+
+.post li {
+  margin-left: var(--global-padding);
 }
 
 .meta {
@@ -219,52 +241,220 @@ nav > a.current {
 
 /* Grid */
 
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 1440px;
+/* Raster grid subsystem (rsms.me/raster) */
+grid {
+  display: grid;
+  --grid-tc: repeat(6, 1fr);
+  grid-template-columns: var(--grid-tc);
+  --grid-cs: 1; /* column start */
+  --grid-ce: -1 /* column end */
 }
 
-.grid > * {
-  flex: 1 0 12rem;
+/* c -- cell or column */
+grid > column {
+  display: block;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-.content.grid > * {
-  min-width: 300px;
-  margin-right: 3vw;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+grid[columns="1"] { --grid-tc: repeat(1, 1fr) }
+grid[columns="2"] { --grid-tc: repeat(2, 1fr) }
+grid[columns="3"] { --grid-tc: repeat(3, 1fr) }
+grid[columns="4"] { --grid-tc: repeat(4, 1fr) }
+grid[columns="5"] { --grid-tc: repeat(5, 1fr) }
+grid[columns="6"] { --grid-tc: repeat(6, 1fr) }
+grid[columns="7"] { --grid-tc: repeat(7, 1fr) }
+grid[columns="8"] { --grid-tc: repeat(8, 1fr) }
+grid[columns="9"] { --grid-tc: repeat(9, 1fr) }
+grid[columns="10"] { --grid-tc: repeat(10, 1fr) }
+grid[columns="11"] { --grid-tc: repeat(11, 1fr) }
+grid[columns="12"] { --grid-tc: repeat(12, 1fr) }
+
+/* span=start... */
+grid > column[span^="1"] { --grid-cs: 1 }
+grid > column[span^="2"] { --grid-cs: 2 }
+grid > column[span^="3"] { --grid-cs: 3 }
+grid > column[span^="4"] { --grid-cs: 4 }
+grid > column[span^="5"] { --grid-cs: 5 }
+grid > column[span^="6"] { --grid-cs: 6 }
+grid > column[span^="7"] { --grid-cs: 7 }
+grid > column[span^="8"] { --grid-cs: 8 }
+grid > column[span^="9"] { --grid-cs: 9 }
+grid > column[span^="10"] { --grid-cs: 10 }
+grid > column[span^="11"] { --grid-cs: 11 }
+grid > column[span^="12"] { --grid-cs: 12 }
+
+/* span=...+width, span=...-end */
+grid > column[span$="+1"], grid > column[span="1"] { --grid-ce: 1 }
+grid > column[span$="+2"], grid > column[span$="-1"], grid > column[span="2"] { --grid-ce: 2 }
+grid > column[span$="+3"], grid > column[span$="-2"], grid > column[span="3"] { --grid-ce: 3 }
+grid > column[span$="+4"], grid > column[span$="-3"], grid > column[span="4"] { --grid-ce: 4 }
+grid > column[span$="+5"], grid > column[span$="-4"], grid > column[span="5"] { --grid-ce: 5 }
+grid > column[span$="+6"], grid > column[span$="-5"], grid > column[span="6"] { --grid-ce: 6 }
+grid > column[span$="+7"], grid > column[span$="-6"], grid > column[span="7"] { --grid-ce: 7 }
+grid > column[span$="+8"], grid > column[span$="-7"], grid > column[span="8"] { --grid-ce: 8 }
+grid > column[span$="+9"], grid > column[span$="-8"], grid > column[span="9"] { --grid-ce: 9 }
+grid > column[span$="+10"], grid > column[span$="-9"], grid > column[span="10"] { --grid-ce: 10 }
+grid > column[span$="+11"], grid > column[span$="-10"], grid > column[span="11"] { --grid-ce: 11 }
+grid > column[span$="+12"], grid > column[span$="-11"], grid > column[span="12"] { --grid-ce: 12 }
+grid > column[span$="-12"] { --grid-ce: 13 }
+
+/* connect vars */
+grid > column[span] { grid-column-end: span var(--grid-ce) }
+grid > column[span*="+"], grid > column[span*="-"], grid > column[span*=".."] {
+  grid-column-start: var(--grid-cs) }
+grid > column[span*="-"], grid > column[span*=".."] {
+  grid-column-end: var(--grid-ce) }
+grid > column[span="row"] { grid-column: 1 / -1 }
+
+/* for window width <= 600 */
+@media only screen and (max-width: 600px) {
+  grid[columns-s="1"] { --grid-tc: repeat(1, 1fr) }
+  grid[columns-s="2"] { --grid-tc: repeat(2, 1fr) }
+  grid[columns-s="3"] { --grid-tc: repeat(3, 1fr) }
+  grid[columns-s="4"] { --grid-tc: repeat(4, 1fr) }
+  grid[columns-s="5"] { --grid-tc: repeat(5, 1fr) }
+  grid[columns-s="6"] { --grid-tc: repeat(6, 1fr) }
+  grid[columns-s="7"] { --grid-tc: repeat(7, 1fr) }
+  grid[columns-s="8"] { --grid-tc: repeat(8, 1fr) }
+  grid[columns-s="9"] { --grid-tc: repeat(9, 1fr) }
+  grid[columns-s="10"] { --grid-tc: repeat(10, 1fr) }
+  grid[columns-s="11"] { --grid-tc: repeat(11, 1fr) }
+  grid[columns-s="12"] { --grid-tc: repeat(12, 1fr) }
+  
+  /* span-s=start... */
+  grid > column[span-s^="1"] { --grid-cs: 1 }
+  grid > column[span-s^="2"] { --grid-cs: 2 }
+  grid > column[span-s^="3"] { --grid-cs: 3 }
+  grid > column[span-s^="4"] { --grid-cs: 4 }
+  grid > column[span-s^="5"] { --grid-cs: 5 }
+  grid > column[span-s^="6"] { --grid-cs: 6 }
+  grid > column[span-s^="7"] { --grid-cs: 7 }
+  grid > column[span-s^="8"] { --grid-cs: 8 }
+  grid > column[span-s^="9"] { --grid-cs: 9 }
+  grid > column[span-s^="10"] { --grid-cs: 10 }
+  grid > column[span-s^="11"] { --grid-cs: 11 }
+  grid > column[span-s^="12"] { --grid-cs: 12 }
+  
+  /* span-s=...+width, span-s=...-end */
+  grid > column[span-s$="+1"], grid > column[span-s="1"] { --grid-ce: 1 }
+  grid > column[span-s$="+2"], grid > column[span-s$="-1"], grid > column[span-s="2"] { --grid-ce: 2 }
+  grid > column[span-s$="+3"], grid > column[span-s$="-2"], grid > column[span-s="3"] { --grid-ce: 3 }
+  grid > column[span-s$="+4"], grid > column[span-s$="-3"], grid > column[span-s="4"] { --grid-ce: 4 }
+  grid > column[span-s$="+5"], grid > column[span-s$="-4"], grid > column[span-s="5"] { --grid-ce: 5 }
+  grid > column[span-s$="+6"], grid > column[span-s$="-5"], grid > column[span-s="6"] { --grid-ce: 6 }
+  grid > column[span-s$="+7"], grid > column[span-s$="-6"], grid > column[span-s="7"] { --grid-ce: 7 }
+  grid > column[span-s$="+8"], grid > column[span-s$="-7"], grid > column[span-s="8"] { --grid-ce: 8 }
+  grid > column[span-s$="+9"], grid > column[span-s$="-8"], grid > column[span-s="9"] { --grid-ce: 9 }
+  grid > column[span-s$="+10"], grid > column[span-s$="-9"], grid > column[span-s="10"] { --grid-ce: 10 }
+  grid > column[span-s$="+11"], grid > column[span-s$="-10"], grid > column[span-s="11"] { --grid-ce: 11 }
+  grid > column[span-s$="+12"], grid > column[span-s$="-11"], grid > column[span-s="12"] { --grid-ce: 12 }
+  grid > column[span-s$="-12"] { --grid-ce: 13 }
+  
+  /* connect vars */
+  grid > column[span-s] { grid-column-end: span var(--grid-ce) }
+  grid > column[span-s*="+"], grid > column[span-s*="-"], grid > column[span-s*=".."] {
+    grid-column-start: var(--grid-cs) }
+  grid > column[span-s*="-"], grid > column[span-s*=".."] {
+    grid-column-end: var(--grid-ce) }
+  grid > column[span-s="row"] { grid-column: 1 / -1 }
 }
 
-.grid > .double {
-  flex-grow: 4;
+/* for window width >= 1600 */
+@media only screen and (min-width: 1599px) {
+  grid[columns-l="1"] { --grid-tc: repeat(1, 1fr) }
+  grid[columns-l="2"] { --grid-tc: repeat(2, 1fr) }
+  grid[columns-l="3"] { --grid-tc: repeat(3, 1fr) }
+  grid[columns-l="4"] { --grid-tc: repeat(4, 1fr) }
+  grid[columns-l="5"] { --grid-tc: repeat(5, 1fr) }
+  grid[columns-l="6"] { --grid-tc: repeat(6, 1fr) }
+  grid[columns-l="7"] { --grid-tc: repeat(7, 1fr) }
+  grid[columns-l="8"] { --grid-tc: repeat(8, 1fr) }
+  grid[columns-l="9"] { --grid-tc: repeat(9, 1fr) }
+  grid[columns-l="10"] { --grid-tc: repeat(10, 1fr) }
+  grid[columns-l="11"] { --grid-tc: repeat(11, 1fr) }
+  grid[columns-l="12"] { --grid-tc: repeat(12, 1fr) }
+  
+  /* span-l=start... */
+  grid > column[span-l^="1"] { --grid-cs: 1 }
+  grid > column[span-l^="2"] { --grid-cs: 2 }
+  grid > column[span-l^="3"] { --grid-cs: 3 }
+  grid > column[span-l^="4"] { --grid-cs: 4 }
+  grid > column[span-l^="5"] { --grid-cs: 5 }
+  grid > column[span-l^="6"] { --grid-cs: 6 }
+  grid > column[span-l^="7"] { --grid-cs: 7 }
+  grid > column[span-l^="8"] { --grid-cs: 8 }
+  grid > column[span-l^="9"] { --grid-cs: 9 }
+  grid > column[span-l^="10"] { --grid-cs: 10 }
+  grid > column[span-l^="11"] { --grid-cs: 11 }
+  grid > column[span-l^="12"] { --grid-cs: 12 }
+  
+  /* span-l=...+width, span-l=...-end */
+  grid > column[span-l$="+1"], grid > column[span-l="1"] { --grid-ce: 1 }
+  grid > column[span-l$="+2"], grid > column[span-l$="-1"], grid > column[span-l="2"] { --grid-ce: 2 }
+  grid > column[span-l$="+3"], grid > column[span-l$="-2"], grid > column[span-l="3"] { --grid-ce: 3 }
+  grid > column[span-l$="+4"], grid > column[span-l$="-3"], grid > column[span-l="4"] { --grid-ce: 4 }
+  grid > column[span-l$="+5"], grid > column[span-l$="-4"], grid > column[span-l="5"] { --grid-ce: 5 }
+  grid > column[span-l$="+6"], grid > column[span-l$="-5"], grid > column[span-l="6"] { --grid-ce: 6 }
+  grid > column[span-l$="+7"], grid > column[span-l$="-6"], grid > column[span-l="7"] { --grid-ce: 7 }
+  grid > column[span-l$="+8"], grid > column[span-l$="-7"], grid > column[span-l="8"] { --grid-ce: 8 }
+  grid > column[span-l$="+9"], grid > column[span-l$="-8"], grid > column[span-l="9"] { --grid-ce: 9 }
+  grid > column[span-l$="+10"], grid > column[span-l$="-9"], grid > column[span-l="10"] { --grid-ce: 10 }
+  grid > column[span-l$="+11"], grid > column[span-l$="-10"], grid > column[span-l="11"] { --grid-ce: 11 }
+  grid > column[span-l$="+12"], grid > column[span-l$="-11"], grid > column[span-l="12"] { --grid-ce: 12 }
+  grid > column[span-l$="-12"] { --grid-ce: 13 }
+  
+  /* connect vars */
+  grid > column[span-l] { grid-column-end: span var(--grid-ce) }
+  grid > column[span-l*="+"], grid > column[span-l*="-"], grid > column[span-l*=".."] {
+    grid-column-start: var(--grid-cs) }
+  grid > column[span-l*="-"], grid > column[span-l*=".."] {
+    grid-column-end: var(--grid-ce) }
+  grid > column[span-l="row"] { grid-column: 1 / -1 }
 }
 
-.grid .pre-1 {
-  margin-left: 26%;
+/* .debug can be added to a grid to visualize its effective cells */
+grid.debug > * {
+  --color: rgba(248,110,91 ,0.3);
+  background-image:
+    linear-gradient(to bottom, var(--color) 0%, var(--color) 100%);
 }
+grid.debug > :nth-child(6n+2) { --color: rgba(103,126,208,0.3) }
+grid.debug > :nth-child(6n+3) { --color: rgba(224,174,72 ,0.3) }
+grid.debug > :nth-child(6n+4) { --color: rgba(77, 214,115,0.3) }
+grid.debug > :nth-child(6n+5) { --color: rgba(217,103,219,0.3) }
+grid.debug > :nth-child(6n+6) { --color: rgba(94, 204,211,0.3) }
+grid.debug > :nth-child(6n+7) { --color: rgba(248,110,91 ,0.3) }
 
-.grid.loading > * {
-  opacity: 0;
-}
-
-.grid:not(.loading) > * {
-  animation: fadein 1.5s;
-}
 
 /* Photography */
 
-.book > .grid {
-  padding: var(--global-padding);
+.book > grid,
+.book > .spread {
+  padding-bottom: var(--global-padding);
 }
 
-.book > .grid:not(.spread) > .photo:first-child {
-  margin-right: 1vw;
+.book > grid:not(.spread) > .photo:last-child > img {
+  float: right;
 }
 
-.book > .grid:not(.spread) > .photo + .photo {
-  margin-left: 1vw;
+.book > grid:not(.spread) > .photo.text:last-child {
+  margin-left: var(--global-padding);
+  margin-bottom: calc(2 * var(--global-padding));
+}
+
+.book > .split > .photo {
+  margin-right: calc(var(--global-padding) / 2);
+}
+
+.book > .split > .photo:last-child {
+  margin-right: 0;
+  margin-left: calc(var(--global-padding) / 2);
+}
+
+.book .bottom {
+  display: flex;
+  align-items: flex-end;
 }
 
 .title > h1 {
@@ -279,8 +469,11 @@ nav > a.current {
   line-height: 1.1;
 }
 
-.title > * {
-  max-width: 70%;
+.title > *,
+.title > p.big,
+.title > p.bigger {
+  /*max-width: 70%;*/
+  margin-right: calc(var(--global-padding) * 3);
 }
 
 .title > h2 + p {
@@ -339,6 +532,10 @@ nav > a.current {
   color: #6c5f67;
 }
 
+#mundane .book > grid {
+  padding-bottom: 0;
+}
+
 #mundane h1 {
   color: #4100FF;
   margin-top: -10px;
@@ -374,7 +571,7 @@ footer {
   line-height: 1.7;
 }
 
-footer > div:last-child {
+footer column:last-child {
   text-align: right;
 }
 

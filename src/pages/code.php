@@ -1,11 +1,12 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-  <div id="main" class="grid">
-    <h1>An attempt to share what I learn creating web and mobile apps.</h1>
-    <div>&nbsp;</div>
-  </div>
+  <grid id="main">
+    <column span=3>
+      <h1>An attempt to share what I learn creating web and mobile apps.</h1>      
+    </column>
+  </grid>
   
-  <div class="page content grid">
+  <grid columns=6 class="page content">
     <?php
     $posts = $entries['code'];
     krsort($posts);
@@ -13,14 +14,16 @@
     foreach ($posts as $date => $entry) {
       if (++$limit > 100) break;
       ?>
-      <div>
-        <h3><a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h3>
-        <p><?php echo $entry['excerpt'] ?><p>
-      </div>
+      <column span=2>
+        <div class="col-inner">
+          <h3><a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h3>
+          <p><?php echo $entry['excerpt'] ?><p>
+        </div>
+      </column>
       <?php
     }
     ?>
-  </div>
+  </grid>
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>
 

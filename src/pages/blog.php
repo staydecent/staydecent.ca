@@ -1,11 +1,12 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-  <div id="main" class="grid">
-    <h1>Infrequent thoughts, links and creations.</h1>
-    <div>&nbsp;</div>
-  </div>
+  <grid id="main">
+    <column span=3>
+      <h1>Infrequent thoughts, links and creations.</h1>
+    </column>
+  </grid>
   
-  <div class="page content grid">
+  <grid columns=6 class="page content">
     <?php
     $posts = $entries['blog'];
     krsort($posts);
@@ -13,13 +14,20 @@
     foreach ($posts as $date => $entry) {
       if (++$limit > 100) break;
       ?>
-      <div>
-        <h3><a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h3>
-        <p><?php echo $entry['excerpt'] ?><p>
-      </div>
+      <column span=2>
+        <div class="col-inner">
+          <h3>
+            <?php if (array_key_exists('link', $entry)) { echo '🔗 '; } ?>
+            <a href="<?php echo $entry['url']; ?>">
+              <?php echo $entry['title'] ?>
+            </a>
+          </h3>
+          <p><?php echo $entry['excerpt'] ?><p>
+        </div>
+      </column>
       <?php
     }
     ?>
-  </div>
+  </grid>
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>
