@@ -5,10 +5,10 @@
   </div>
   
   <grid columns=12 class="page content">
-    <column span=2>
+    <column span=2 span-s=row>
       <div class="meta"><p>Posted on <br /><?php echo date("F j, Y", $entry['date']) ?></p></div>
     </column>
-    <column span=4-9>
+    <column span=4-9 span-s=row>
       <div class="post double">
         <?php echo $entry['body'] ?>
         <?php include $config['dirs']['layout'].'/post-navigation-part.php'; ?>

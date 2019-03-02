@@ -16,7 +16,7 @@
   </div>
 
   <div id="main" class="page">
-    <grid columns=12>
+    <grid columns=12 columns-s=1>
       <column span=6 class="photo">
         <div class="text">
           <div class="title">
@@ -33,7 +33,7 @@
     </grid>
   </div>
 
-  <grid columns=12>
+  <grid columns=12 columns-s=1>
     <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/picos_3.jpg" alt="Picos De Europa Photo by Adrian Unger">      
     </column>
@@ -54,7 +54,7 @@
     </div>
   </div>
 
-  <grid columns=12>
+  <grid columns=12 columns-s=1>
     <column span=6 class="photo">
       <div class="text">
         <div class="title">
@@ -74,7 +74,7 @@
     </div>
   </div>
 
-  <grid columns=12>
+  <grid columns=12 columns-s=1>
     <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/picos_12.jpg" alt="Picos De Europa Photo by Adrian Unger">      
     </column>
@@ -89,7 +89,7 @@
     </div>
   </div>
 
-  <grid columns=12>
+  <grid columns=12 columns-s=1>
     <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/picos_7.jpg" alt="Picos De Europa Photo by Adrian Unger">      
     </column>
@@ -104,7 +104,7 @@
     </div>
   </div>
 
-  <grid columns=12>
+  <grid columns=12 columns-s=1>
     <column span=6 class="photo">
       <div class="text">
         <div class="title">

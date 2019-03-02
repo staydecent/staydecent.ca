@@ -1,12 +1,12 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-  <grid id="main" columns=12>
+  <grid id="main" columns=12 columns-s=1>
     <column span=row>
       <h1>STAYDECENT</h1>
     </column>
   </grid>
   
-  <grid columns=12 class="page">
+  <grid columns=12 columns-s=1 class="page">
     <column span=3><p>⏤</p></column>
 
     <column span=4>

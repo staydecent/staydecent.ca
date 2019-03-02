@@ -1,7 +1,7 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
   <div id="main" class="page">
-    <grid columns=12>
+    <grid columns=12 columns-s=1>
       <column span=6>
         <h1 id="wordmark">Staydecent</h1>
       </column>

@@ -1,12 +1,12 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-  <grid id="main">
+  <grid columns-s=1 id="main">
     <column span=3>
       <h1>An attempt to share what I learn creating web and mobile apps.</h1>      
     </column>
   </grid>
   
-  <grid columns=6 class="page content">
+  <grid columns=6 columns-s=1 class="page content">
     <?php
     $posts = $entries['code'];
     krsort($posts);

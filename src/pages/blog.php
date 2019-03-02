@@ -1,12 +1,12 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-  <grid id="main">
+  <grid columns-s=1 id="main">
     <column span=3>
       <h1>Infrequent thoughts, links and creations.</h1>
     </column>
   </grid>
   
-  <grid columns=6 class="page content">
+  <grid columns=6 columns-s=1 class="page content">
     <?php
     $posts = $entries['blog'];
     krsort($posts);

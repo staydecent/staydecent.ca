@@ -10,7 +10,7 @@
 ?>
 
 <div class="book">
-  <grid id="main" columns=12>
+  <grid id="main" columns=12 columns-s=1>
     <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/waves_4.jpg" alt="Waves Photo by Adrian Unger">
     </column>
@@ -30,7 +30,7 @@
     </div>
   </div>
 
-  <grid columns=12>
+  <grid columns=12 columns-s=1>
     <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/waves_6.jpg" alt="Waves Photo by Adrian Unger">      
     </column>
@@ -45,7 +45,7 @@
     </div>
   </div>
 
-  <grid columns=12>
+  <grid columns=12 columns-s=1>
     <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/waves_5.jpg" alt="Waves Photo by Adrian Unger">
     </column>
@@ -72,7 +72,7 @@
     </div>
   </div>
 
-  <grid columns=12>
+  <grid columns=12 columns-s=1>
     <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/waves_10.jpg" alt="Waves Photo by Adrian Unger">
     </column>

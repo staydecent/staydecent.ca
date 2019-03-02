@@ -10,7 +10,7 @@
 ?>
 
 <div class="book">
-  <grid id="main" columns=12>
+  <grid id="main" columns=12 columns-s=1>
     <column span=6 class="photo">
       <div class="text">
         <div class="title">
@@ -28,7 +28,7 @@
     </column>
   </grid>
 
-  <grid columns=12 class=split>
+  <grid columns=12 columns-s=1 class=split>
     <column span=6 class=photo>
       <img src="<?php echo $base_url ?>/images/shinrinyoku_2.jpg" alt="Forest Bathing Photo by Adrian Unger">      
     </column>
@@ -37,7 +37,7 @@
     </column>
   </grid>
 
-  <grid columns=12 class=split>
+  <grid columns=12 columns-s=1 class=split>
     <column span=6 class=photo>
       <img src="<?php echo $base_url ?>/images/shinrinyoku_4.jpg" alt="Forest Bathing Photo by Adrian Unger">      
     </column>
@@ -58,7 +58,7 @@
     </div>
   </div>
 
-  <grid columns=12>
+  <grid columns=12 columns-s=1>
     <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/shinrinyoku_8.jpg" alt="Forest Bathing Photo by Adrian Unger">      
     </column>
@@ -73,7 +73,7 @@
     </div>
   </div>
 
-  <grid columns=12>
+  <grid columns=12 columns-s=1>
     <column span=10 class="photo">
       <div class="text">
         <div class="title">

@@ -6,10 +6,10 @@
   </div>
   
   <grid columns=12 class="page content">
-    <column span=2>
+    <column span=2 span-s=row>
       <div class="meta"><p>Published on <?php echo date("F j, Y", $entry['date']) ?></p></div>
     </column>
-    <column span=4-9>
+    <column span=4-9 span-s=row>
       <div class="post">
         <p class="big">
           <span class="mark">&rarr;</span> <a href="<?php echo $entry['link'] ?>" target="_blank"><?php echo (array_key_exists('link_title', $entry)) ? $entry['link_title'] : $entry['link'] ?></a>

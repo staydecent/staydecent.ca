@@ -204,6 +204,8 @@ column:nth-child(3n+1) .col-inner {
 }
 
 .post {
+  width: auto;
+  overflow: hidden;
   overflow-wrap: break-word;
 }
 
@@ -571,6 +573,10 @@ footer {
   line-height: 1.7;
 }
 
+footer column {
+  margin-bottom: calc(var(--global-padding) * 6);
+}
+
 footer column:last-child {
   text-align: right;
 }
@@ -608,13 +614,30 @@ footer column:last-child {
   }
 
   p.big {
-    font-size: 5vw;
+    font-size: 1.3rem;
+  }
+
+  #shinrinyoku h2 {
+    font-size: 3em;
+  }
+
+  .book grid > column[span="6"]:first-child {
+    margin-bottom: var(--global-padding);
+  }
+
+  h1,
+  .col-inner {
+    margin-bottom: calc(var(--global-padding) * 3);
+  }
+
+  column {
+    max-width: 100%;
   }
 }
 
 @media screen and (max-width: 960px) {
-  .grid {
-    display: block;
+  #site {
+    padding: var(--global-padding);
   }
 
   .book > .grid:not(.spread) > .photo:first-child {
@@ -625,16 +648,9 @@ footer column:last-child {
   .book > .grid:not(.spread) > .photo + .photo {
     margin-left: 0;
   }
-
-  footer.grid > * {
-    margin-bottom: var(--global-padding);
-  }
 }
 
 @media screen and (max-width: 1440px) {
-  .grid {
-    max-width: 1140px;
-  }
   .content.grid > .meta,
   .content.grid > .post,
   .content.grid .post + div {
@@ -645,10 +661,6 @@ footer column:last-child {
 @media screen and (min-width: 1441px) {
   body {
     font-size: calc(var(--global-font-size) * 1.25);
-  }
-
-  .grid {
-    max-width: 1800px;
   }
 }
 

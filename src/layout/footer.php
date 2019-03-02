@@ -1,6 +1,6 @@
 
     <footer class="page">
-      <grid columns=4>
+      <grid columns=4 columns-s=1>
         <column>
           <a href="/" id="site-title" <?php echo current_class('adrian') ?>>Photography</a><br>
           <a href="<?php echo SITE_URL ?>code" <?php echo current_class('code') ?>>Software</a><br>

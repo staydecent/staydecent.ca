@@ -9,7 +9,7 @@
 ?>
 
 <div id="main" class="book">
-  <grid columns=12>
+  <grid columns=12 columns-s=1>
     <column span=6 class="text">
       <div class="title">
         <h1>Paris Noir</h1>
@@ -28,7 +28,7 @@
     </div>
   </div>
 
-  <grid columns=12>
+  <grid columns=12 columns-s=1>
     <column span=6 class=photo>
       <img src="<?php echo $base_url ?>/images/ParisNoir_5.jpg" alt="Paris Photo by Adrian Unger">      
     </column>
@@ -43,7 +43,7 @@
     </div>
   </div>
 
-  <grid columns=12>
+  <grid columns=12 columns-s=1>
     <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/ParisNoir_1.jpg" alt="Paris Photo by Adrian Unger">
     </column>
@@ -70,7 +70,7 @@
     </div>
   </div>
 
-  <grid columns=12 class=split>
+  <grid columns=12 columns-s=1 class=split>
     <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/ParisNoir_14.jpg" alt="Paris Photo by Adrian Unger">      
     </column>
@@ -85,7 +85,7 @@
     </div>
   </div>
 
-  <grid columns=12>
+  <grid columns=12 columns-s=1>
     <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/ParisNoir_4.jpg" alt="Paris Photo by Adrian Unger">
     </column>

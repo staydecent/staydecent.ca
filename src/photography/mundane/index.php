@@ -10,7 +10,7 @@
 ?>
 
 <div id="mundane" class="book">
-  <grid id="main" columns=12>
+  <grid id="main" columns=12 columns-s=1>
     <column span=6 class="photo">
       <div class="text">
         <div class="title">
@@ -25,7 +25,7 @@
     </column>
   </grid>
 
-  <grid columns=12>
+  <grid columns=12 columns-s=1>
     <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/mundane_4.jpg" alt="Mundane Photo by Adrian Unger">
     </column>
@@ -34,7 +34,7 @@
     </column>
   </grid>
 
-  <grid columns=12>
+  <grid columns=12 columns-s=1>
     <column span=6 class=photo>
       <img src="<?php echo $base_url ?>/images/mundane_1.jpg" alt="Mundane Photo by Adrian Unger">      
     </column>
@@ -43,7 +43,7 @@
     </column>
   </grid>
 
-  <grid columns=12>
+  <grid columns=12 columns-s=1>
     <column span=6 class=photo>
       <img src="<?php echo $base_url ?>/images/mundane_5.jpg" alt="Mundane Photo by Adrian Unger">
     </column>
@@ -52,7 +52,7 @@
     </column>
   </grid>
 
-  <grid columns=12>
+  <grid columns=12 columns-s=1>
     <column span=6 class=photo>
       <img src="<?php echo $base_url ?>/images/mundane_7.jpg" alt="Mundane Photo by Adrian Unger">
     </column>
@@ -61,7 +61,7 @@
     </column>
   </grid>
 
-  <grid columns=12>
+  <grid columns=12 columns-s=1>
     <column span=6 class=photo>
       <div class="text">
         <div class="title">
