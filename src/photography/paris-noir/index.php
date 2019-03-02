@@ -1,5 +1,6 @@
 <?php 
-  $title = 'Paris Noir'
+  $title = 'Paris Noir';
+  $page_id = 'noir';
 ?>
 
 <?php include $config['dirs']['layout'].'/header.php' ?>

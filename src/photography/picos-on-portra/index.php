@@ -1,5 +1,6 @@
 <?php 
-  $title = 'Picos on Portra'
+  $title = 'Picos on Portra';
+  $page_id = 'picos';
 ?>
 
 <?php include $config['dirs']['layout'].'/header.php' ?>
