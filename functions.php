@@ -119,7 +119,7 @@ function current_class($str) {
 }
 
 function render($layout) {
-  global $title, $entry, $entries, $config;
+  global $title, $entry, $entries, $config, $page_id;
   ob_start();
   include $layout;
   $out = ob_get_contents();

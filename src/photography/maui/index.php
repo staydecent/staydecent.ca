@@ -9,82 +9,82 @@
 ?>
 
 <div id="maui" class="book">
-  <div id="main" class="grid">
-    <div class="photo">
+  <grid columns=12 id="main">
+    <column span=6 class=photo>
       <img src="<?php echo $base_url ?>/images/maui_1.jpg" alt="Maui Photo by Adrian Unger">
-    </div>
-    <div class="photo">
+    </column>
+    <column span=6 class=photo>
       <div class="text">
         <div class="title">
           <h1>Maui</h1>
           <p class="big">10 days packed with rugged coastlines, <br/>beaches of assorted colours, roads to waterfalls and dense tropical jungles.</p>
         </div>
       </div>
-    </div>
-  </div>
+    </column>
+  </grid>
 
-  <div class="grid spread">
-    <div class="photo">
+  <div class="spread">
+    <div class=photo>
       <img src="<?php echo $base_url ?>/images/maui_2.jpg" alt="Maui Photo by Adrian Unger">
     </div>
   </div>
 
-  <div class="grid">
-    <div class="photo">
+  <grid columns=12>
+    <column span=6 class=photo>
       <img src="<?php echo $base_url ?>/images/maui_6.jpg" alt="Maui Photo by Adrian Unger">      
-    </div>
-    <div class="photo">
+    </column>
+    <column span=6 class=photo>
       <img src="<?php echo $base_url ?>/images/maui_4.jpg" alt="Maui Photo by Adrian Unger">
-    </div>
-  </div>
+    </column>
+  </grid>
 
-  <div class="grid spread">
-    <div class="photo">
+  <div class="spread">
+    <div class=photo>
       <img src="<?php echo $base_url ?>/images/maui_5.jpg" alt="Maui Photo by Adrian Unger">
     </div>
   </div>
 
-  <div class="grid">
-    <div class="photo">
+  <grid columns=12 class=split>
+    <column span=6 class=photo>
       <img src="<?php echo $base_url ?>/images/maui_3.jpg" alt="Maui Photo by Adrian Unger">
-    </div>
-    <div class="photo">
+    </column>
+    <column span=6 class=photo>
       <img src="<?php echo $base_url ?>/images/maui_7.jpg" alt="Maui Photo by Adrian Unger">
-    </div>
-  </div>
+    </column>
+  </grid>
 
-  <div class="grid">
-    <div class="photo">
+  <grid columns=12 class=split>
+    <column span=6 class=photo>
       <img src="<?php echo $base_url ?>/images/maui_8.jpg" alt="Maui Photo by Adrian Unger">
-    </div>
-    <div class="photo">
+    </column>
+    <column span=6 class=photo>
       <img src="<?php echo $base_url ?>/images/maui_9.jpg" alt="Maui Photo by Adrian Unger">
-    </div>
-  </div>
+    </column>
+  </grid>
 
-  <div class="grid spread">
-    <div class="photo">
+  <div class="spread">
+    <div class=photo>
       <img src="<?php echo $base_url ?>/images/maui_10.jpg" alt="Maui Photo by Adrian Unger">
     </div>
   </div>
 
-  <div class="grid">
-    <div class="photo">
+  <grid columns=12>
+    <column span=6 class=photo>
       <img src="<?php echo $base_url ?>/images/maui_11.jpg" alt="Maui Photo by Adrian Unger">
-    </div>
-    <div class="photo">
+    </column>
+    <column span=6 class=photo>
       <img src="<?php echo $base_url ?>/images/maui_12.jpg" alt="Maui Photo by Adrian Unger">
-    </div>
-  </div>
+    </column>
+  </grid>
 
-  <div class="grid spread">
-    <div class="photo">
+  <div class="spread">
+    <div class=photo>
       <img src="<?php echo $base_url ?>/images/maui_13.jpg" alt="Maui Photo by Adrian Unger">
     </div>
   </div>
 
-  <div class="grid">
-    <div class="photo">
+  <grid columns=12>
+    <column span=6 class=photo>
       <div class="text">
         <div class="title">
           <h2>Thanks for stopping by!</h2>
@@ -92,8 +92,8 @@
           <h2><a href="<?php echo SITE_URL ?>photography">View more galleries.</a></h2>
         </div>
       </div>
-    </div>
-  </div>
+    </column>
+  </grid>
 </div>
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>

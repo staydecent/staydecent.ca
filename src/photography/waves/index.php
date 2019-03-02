@@ -1,5 +1,6 @@
 <?php 
-  $title = 'Waves'
+  $title = 'Waves';
+  $page_id = 'waves';
 ?>
 
 <?php include $config['dirs']['layout'].'/header.php' ?>
@@ -8,79 +9,79 @@
   $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
 ?>
 
-<div id="waves" class="book">
-  <div id="main" class="grid">
-    <div class="photo">
+<div class="book">
+  <grid id="main" columns=12>
+    <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/waves_4.jpg" alt="Waves Photo by Adrian Unger">
-    </div>
-    <div class="photo">
+    </column>
+    <column span=6 class="photo">
       <div class="text">
         <div class="title">
           <h1>Waves</h1>
           <p class="big">A cold, but sunny day during winter, we headed to the west coast.</p>
         </div>
       </div>
-    </div>
-  </div>
+    </column>
+  </grid>
 
-  <div class="grid spread">
+  <div class="spread">
     <div class="photo">
       <img src="<?php echo $base_url ?>/images/waves_2.jpg" alt="Waves Photo by Adrian Unger">
     </div>
   </div>
 
-  <div class="grid">
-    <div class="photo">
+  <grid columns=12>
+    <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/waves_6.jpg" alt="Waves Photo by Adrian Unger">      
-    </div>
-    <div class="photo">
+    </column>
+    <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/waves_7.jpg" alt="Waves Photo by Adrian Unger">
-    </div>
-  </div>
+    </column>
+  </grid>
 
-  <div class="grid spread">
+  <div class="spread">
     <div class="photo">
       <img src="<?php echo $base_url ?>/images/waves_3.jpg" alt="Waves Photo by Adrian Unger">
     </div>
   </div>
 
-  <div class="grid">
-    <div class="photo">
+  <grid columns=12>
+    <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/waves_5.jpg" alt="Waves Photo by Adrian Unger">
-    </div>
-    <div class="photo">
+    </column>
+    <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/waves_8.jpg" alt="Waves Photo by Adrian Unger">
-    </div>
-  </div>
+    </column>
+  </grid>
 
-  <div class="grid spread">
+  <div class="spread">
     <div class="photo">
       <img src="<?php echo $base_url ?>/images/waves_9.jpg" alt="Waves Photo by Adrian Unger">
     </div>
   </div>
 
-  <div class="grid spread">
+  <div class="spread">
     <div class="photo">
       <img src="<?php echo $base_url ?>/images/waves_11.jpg" alt="Waves Photo by Adrian Unger">
     </div>
   </div>
 
-  <div class="grid spread">
+  <div class="spread">
     <div class="photo">
       <img src="<?php echo $base_url ?>/images/waves_12.jpg" alt="Waves Photo by Adrian Unger">
     </div>
   </div>
 
-  <div class="grid">
-    <div class="photo">
+  <grid columns=12>
+    <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/waves_10.jpg" alt="Waves Photo by Adrian Unger">
-    </div>
-    <div class="photo">
+    </column>
+    <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/waves_13.jpg" alt="Waves Photo by Adrian Unger">
-    </div>
-  </div>
+    </column>
+  </grid>
 
-  <div class="grid">
+  <div class=spread>
     <div class="photo">
       <div class="text">
         <div class="title">
@@ -91,6 +92,7 @@
       </div>
     </div>
   </div>
+
 </div>
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>

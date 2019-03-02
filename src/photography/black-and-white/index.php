@@ -1,5 +1,6 @@
 <?php 
-  $title = 'Black &amp; White'
+  $title = 'Black &amp; White';
+  $page_id = 'black';
 ?>
 
 <?php include $config['dirs']['layout'].'/header.php' ?>
@@ -9,65 +10,65 @@
 ?>
 
 <div class="book">
-  <div class="grid">
-    <div class="photo">
+  <grid columns=12>
+    <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/bnw_1.jpg" alt="Black and White Photo by Adrian Unger">      
-    </div>
-    <div class="photo">
+    </column>
+    <column span=6 class="photo">
       <div class="text">
         <div class="title">
           <h1>Black &amp; White</h1>
         </div>
       </div>
-    </div>
-  </div>
+    </column>
+  </grid>
 
-  <div class="grid spread">
+  <div class="spread">
     <div class="photo">
       <img src="<?php echo $base_url ?>/images/bnw_2.jpg" alt="Black and White Photo by Adrian Unger">      
     </div>
   </div>
 
-  <div class="grid">
-    <div class="photo">
+  <grid columns=12>
+    <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/bnw_3.jpg" alt="Black and White Photo by Adrian Unger">      
-    </div>
-    <div class="photo">
+    </column>
+    <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/bnw_4.jpg" alt="Black and White Photo by Adrian Unger">      
-    </div>
-  </div>
+    </column>
+  </grid>
 
-  <div class="grid">
-    <div class="photo">
+  <grid columns=12>
+    <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/bnw_5.jpg" alt="Black and White Photo by Adrian Unger">      
-    </div>
-    <div class="photo">
+    </column>
+    <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/bnw_6.jpg" alt="Black and White Photo by Adrian Unger">      
-    </div>
-  </div>
+    </column>
+  </grid>
 
-  <div class="grid spread">
+  <div class="spread">
     <div class="photo">
       <img src="<?php echo $base_url ?>/images/bnw_7.jpg" alt="Black and White Photo by Adrian Unger">
     </div>
   </div>
 
-  <div class="grid spread">
+  <div class="spread">
     <div class="photo">
       <img src="<?php echo $base_url ?>/images/bnw_10.jpg" alt="Black and White Photo by Adrian Unger">
     </div>
   </div>
 
-  <div class="grid">
-    <div class="photo">
+  <grid columns=12>
+    <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/bnw_11.jpg" alt="Black and White Photo by Adrian Unger">      
-    </div>
-    <div class="photo">
+    </column>
+    <column span=6 class="photo">
       <img src="<?php echo $base_url ?>/images/bnw_12.jpg" alt="Black and White Photo by Adrian Unger">      
-    </div>
-  </div>
+    </column>
+  </grid>
 
-  <div class="grid">
+  <div class=spread>
     <div class="photo">
       <div class="text">
         <div class="title">
