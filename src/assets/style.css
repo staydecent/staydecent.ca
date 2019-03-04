@@ -190,7 +190,6 @@ column:nth-child(3n+1) .col-inner {
 }
 
 .spread img {
-  width: 100%;
   max-width: 100%;
   max-height: calc(100vh - var(--global-padding));
 }
@@ -414,19 +413,6 @@ grid > column[span="row"] { grid-column: 1 / -1 }
     grid-column-end: var(--grid-ce) }
   grid > column[span-l="row"] { grid-column: 1 / -1 }
 }
-
-/* .debug can be added to a grid to visualize its effective cells */
-grid.debug > * {
-  --color: rgba(248,110,91 ,0.3);
-  background-image:
-    linear-gradient(to bottom, var(--color) 0%, var(--color) 100%);
-}
-grid.debug > :nth-child(6n+2) { --color: rgba(103,126,208,0.3) }
-grid.debug > :nth-child(6n+3) { --color: rgba(224,174,72 ,0.3) }
-grid.debug > :nth-child(6n+4) { --color: rgba(77, 214,115,0.3) }
-grid.debug > :nth-child(6n+5) { --color: rgba(217,103,219,0.3) }
-grid.debug > :nth-child(6n+6) { --color: rgba(94, 204,211,0.3) }
-grid.debug > :nth-child(6n+7) { --color: rgba(248,110,91 ,0.3) }
 
 
 /* Photography */
@@ -662,7 +648,18 @@ footer column:last-child {
   body {
     font-size: calc(var(--global-font-size) * 1.25);
   }
+  .page {
+    min-width: 1440px;
+    max-width: 1500px;
+  }
+  grid .photo > img {
+    max-height: 1100px;
+  }
+  .spread .photo > img {
+    margin: 0 auto;
+  }
 }
+
 
 /* Keyframes */
 
