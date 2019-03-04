@@ -305,7 +305,7 @@ grid > column[span*="-"], grid > column[span*=".."] {
 grid > column[span="row"] { grid-column: 1 / -1 }
 
 /* for window width <= 600 */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 970px) {
   grid[columns-s="1"] { --grid-tc: repeat(1, 1fr) }
   grid[columns-s="2"] { --grid-tc: repeat(2, 1fr) }
   grid[columns-s="3"] { --grid-tc: repeat(3, 1fr) }
@@ -583,10 +583,6 @@ footer column:last-child {
     --global-font-size: 17px;
   }
 
-  nav > * {
-    width: 100%;
-  }
-
   .title > * {
     max-width: 100%;
   }
@@ -630,6 +626,10 @@ footer column:last-child {
     padding: var(--global-padding);
   }
 
+  nav > * {
+    width: 100%;
+  }
+
   .book > .grid:not(.spread) > .photo:first-child {
     margin-right: 0;
     margin-bottom: calc(var(--global-padding) * 2);
@@ -640,7 +640,7 @@ footer column:last-child {
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1500px) {
   .content.grid > .meta,
   .content.grid > .post,
   .content.grid .post + div {
