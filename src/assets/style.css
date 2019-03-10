@@ -36,6 +36,7 @@ body {
 /* Typography */
 
 #wordmark {
+  display: block;
   text-decoration: underline;
   text-align: center;
   font-size: 3rem;
