@@ -1,7 +1,14 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-  <div id="main" class="grid">
-    <h1 class="bigger"><?php echo $entry['title'] ?></h1>
+  <div class="page">
+    <grid columns=12 columns-s=1>
+      <column span=12>
+        <?php include $config['dirs']['layout'].'/nav.php' ?>
+      </column>
+      <column span=1-6>
+        <h1 class="bigger"><?php echo $entry['title'] ?></h1>
+      </column>
+    </grid>
   </div>
   
   <grid columns=12 class="page content">

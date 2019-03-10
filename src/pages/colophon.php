@@ -1,11 +1,15 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-<grid id="main">
-  <column span=row>
-    <h1>Colophon</h1>
-    <div>&nbsp;</div>
-  </column>
-</grid>
+  <div class="page">
+    <grid columns=12 columns-s=1>
+      <column span=12>
+        <?php include $config['dirs']['layout'].'/nav.php' ?>
+      </column>
+      <column span=6-12>
+        <h1>Colophon</h1>
+      </column>
+    </grid>
+  </div>
 
 <grid columns=12 class="page">
   <column span=6>

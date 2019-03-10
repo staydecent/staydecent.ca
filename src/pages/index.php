@@ -1,27 +1,25 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-  <div id="main" class="page">
+  <div class="page">
     <grid columns=12 columns-s=1>
-      <column span=6>
-        <h1 id="wordmark">Staydecent</h1>
+      <column span=4>
+        <?php include $config['dirs']['layout'].'/nav.php' ?>
       </column>
-      <column span=6>
-        <p class="big">Hi there, I’m Adrian Unger, a software developer who prefers to be outdoors. I have a particular fondness for rocky coastlines and mountain meadows.</p>
-
-        <p class="big">I&rsquo;m an enthuisiast for food, nature and exploring new places. I also <em title="🦊🦊🦊">can&rsquo;t stop</em> taking <a href="#galleries">photos</a> of those experiences.</p>
+      <column span=4>
+        <h1 id="wordmark">Staydecent</h1>
       </column>
     </grid>
   </div>
 
-  <div id="galleries" class="page">
+  <div id="main" class="page">
     <grid columns=12>
-      <column span=3 class="down">
+      <column span=2-5 class="down">
         <a href="<?php echo SITE_URL ?>photography/paris-noir">
           <img src='<?php echo SITE_URL ?>photography/paris-noir/images/ParisNoir_7.jpg' />
           <h5>Paris Noir</h5>
         </a>
       </column>
-      <column span=7.. class="double">
+      <column span=7-11 class="double">
         <a href="<?php echo SITE_URL ?>photography/picos-on-portra">
           <img src='<?php echo SITE_URL ?>photography/picos-on-portra/images/picos_2.jpg' />
           <h5>Picos On Portra</h5>
@@ -30,9 +28,9 @@
     </grid>
   </div>
 
-  <div class="page">
+  <div class="page spaced">
     <grid columns=12>
-      <column span=5-9>
+      <column span=6-10>
         <a href="<?php echo SITE_URL ?>photography/paris-couleur">
           <img src='<?php echo SITE_URL ?>photography/paris-couleur/images/ParisCouleur_8.jpg' />
           <h5>Paris Couleur</h5>

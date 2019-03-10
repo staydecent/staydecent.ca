@@ -1,10 +1,15 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-  <grid columns-s=1 id="main">
-    <column span=3>
-      <h1>An attempt to share what I learn creating web and mobile apps.</h1>      
-    </column>
-  </grid>
+  <div class="page">
+    <grid columns=12 columns-s=1>
+      <column span=12>
+        <?php include $config['dirs']['layout'].'/nav.php' ?>
+      </column>
+      <column span=6-12>
+        <h1>An attempt to share what I learn creating web and mobile apps.</h1>
+      </column>
+    </grid>
+  </div>
   
   <grid columns=6 columns-s=1 class="page content">
     <?php

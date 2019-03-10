@@ -1,14 +1,17 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-  <grid id="main" columns=12 columns-s=1>
-    <column span=row>
-      <h1>STAYDECENT</h1>
-    </column>
-  </grid>
+  <div class="page">
+    <grid columns=12 columns-s=1>
+      <column span=12>
+        <?php include $config['dirs']['layout'].'/nav.php' ?>
+      </column>
+      <column span=6-12>
+        <h1>About</h1>
+      </column>
+    </grid>
+  </div>
   
   <grid columns=12 columns-s=1 class="page">
-    <column span=3><p>⏤</p></column>
-
     <column span=4>
       <p class="big">Hi there, I’m Adrian Unger, a software developer who prefers to be outdoors. I have a particular fondness for rocky coastlines and mountain meadows.</p>
     </column>

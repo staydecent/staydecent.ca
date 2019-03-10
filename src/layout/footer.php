@@ -1,20 +1,31 @@
 
     <footer class="page">
-      <grid columns=4 columns-s=1>
-        <column>
-          <a href="/" id="site-title" <?php echo current_class('adrian') ?>>Photography</a><br>
-          <a href="<?php echo SITE_URL ?>code" <?php echo current_class('code') ?>>Software</a><br>
-          <a href="<?php echo SITE_URL ?>blog" <?php echo current_class('blog') ?>>Etc.</a>
-        </column>
-        <column>
-          <a href="mailto:hello@staydecent.ca">hello&#64;staydecent.ca</a><br>
-          <a href="http://vsco.co/staydecent" target="_blank">VSCO</a><br>
-          <a href="http://chaosboogie.tumblr.com" target="_blank">Tumblr</a><br>
-          <a href="http://github.com/staydecent" target="_blank">Github</a>
-        </column>
-        <column>
+      <h1>&mdash;</h1>
+      <grid columns=12 columns-s=1>
+        <column span=4 span-s=row>
+          <p class=small>Hi there, I’m Adrian Unger, a software developer who prefers to be outdoors. I have a particular fondness for rocky coastlines and mountain meadows.</p>
+
+          <p class=small>I&rsquo;m an enthuisiast for food, nature and exploring new places. And, you can often find me cycling or riding my skateboard.</p>
+
+          <br>
           <a href="/now">See what I’m doing right now.</a>
+
           <p id="copy"><small>All photos are © Adrian Unger and cannot be used without written permission.</small></p>
+        </column>
+        <column span=6-8 span-s=row>
+          <nav>
+            <a href="/" id="site-title" <?php echo current_class('adrian') ?><?php echo current_class('photography') ?>>Photography</a>
+            <a href="<?php echo SITE_URL ?>code" <?php echo current_class('code') ?>>Software</a>
+            <a href="<?php echo SITE_URL ?>blog" <?php echo current_class('blog') ?>>Etc.</a>
+          </nav>
+          <nav>
+            <a href="mailto:hello@staydecent.ca">hello&#64;staydecent.ca</a>
+            <a href="http://vsco.co/staydecent" target="_blank">VSCO</a>
+            <a href="http://chaosboogie.tumblr.com" target="_blank">Tumblr</a>
+            <a href="http://github.com/staydecent" target="_blank">Github</a>
+          </nav>
+        </column>
+        <column span=4>
           <p>
             <a 
               rel='alternate'
@@ -31,7 +42,6 @@
             </a>
           </p>
         </column>
-        <column><a href="#top">⬆</a></column>
       </grid>
     </footer>
     

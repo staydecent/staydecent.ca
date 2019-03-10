@@ -20,26 +20,4 @@
   <div id="site">
 
     <div id="topbar"<?php if (stristr($title, 'shinrinyoku')): ?> class="shinrinyoku"<?php endif; ?><?php if (stristr($title, 'black') || stristr($title, 'noir') || stristr($title, 'picos')): ?> class="black"<?php endif; ?><?php if (stristr($title, 'waves')): ?> class="waves"<?php endif; ?><?php if (stristr($title, 'mundane')): ?> class="mundane"<?php endif; ?>>
-
-      <div class="page">
-        <grid columns=12>
-          <column span=6>
-            <a class="skip" href="#main" title="Skip to main content">&darr;</a> 
-          </column>
-          <column span=6>
-            <nav>
-              <a id="photography" href="/" <?php echo current_class('adrian') ?>>
-                Photography
-              </a>
-              <a id="software" href="<?php echo SITE_URL ?>code" <?php echo current_class('code') ?>>
-                Software
-              </a>
-              <a id="etc" href="<?php echo SITE_URL ?>blog" <?php echo current_class('blog') ?>>
-                Etc.
-              </a>
-            </nav>
-          </column>
-        </grid>
-      </div>
-
     </div>
