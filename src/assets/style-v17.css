@@ -136,8 +136,8 @@ nav > a.current {
 }
 
 #topbar.shinrinyoku {
-  border-color: #F8EBEE;
-  background-color: #2a3635;
+  border-color: #F8F4F4;
+  background-color: #E2C785;
 }
 
 #topbar.black {
@@ -470,11 +470,11 @@ grid > column[span="row"] { grid-column: 1 / -1 }
 }
 
 #shinrinyoku {
-  background-color: #2a3635;
+  background-color: #E2C785;
 }
 
 #shinrinyoku h1 {
-  color: #F8EBEE;
+  color: #F8F4F4;
   font-size: 6em;
   line-height: .8;
   max-width: 800px;
@@ -483,19 +483,22 @@ grid > column[span="row"] { grid-column: 1 / -1 }
 
 #shinrinyoku h2 {
   margin: 0;
-  color: #F8EBEE;
+  color: #F8F4F4;
   font-size: 5em;
   font-weight: 600;
   font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
+#shinrinyoku p {
+  color: #F8F4F4;
+}
+
 #shinrinyoku .book p {
-  color: #F8EBEE;
   max-width: 80%;
 }
 
 #shinrinyoku a {
-  color: #F8EBEE;
+  color: #F8F4F4;
 }
 
 #shinrinyoku .grid:last-child {
