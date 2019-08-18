@@ -18,6 +18,3 @@
 </head>
 <body id="<?php echo $page_id; ?>" class="page">
   <div id="site">
-
-    <div id="topbar"<?php if (stristr($title, 'shinrinyoku')): ?> class="shinrinyoku"<?php endif; ?><?php if (stristr($title, 'black') || stristr($title, 'noir') || stristr($title, 'picos')): ?> class="black"<?php endif; ?><?php if (stristr($title, 'waves')): ?> class="waves"<?php endif; ?><?php if (stristr($title, 'mundane')): ?> class="mundane"<?php endif; ?>>
-    </div>

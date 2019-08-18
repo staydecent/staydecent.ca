@@ -54,6 +54,10 @@ h5 {
   font-weight: 400;
 }
 
+h1.bigger {
+  font-size: 3em;
+}
+
 h5 {
   font-size: 16px;
   margin-top: 0.5rem;
@@ -154,9 +158,8 @@ nav > a.current {
 }
 
 .page {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: var(--global-padding) 0;
+  padding: var(--global-padding);
   position: relative;
 }
 
@@ -188,6 +191,7 @@ column:nth-child(3n+1) .col-inner {
 .spread img {
   max-width: 100%;
   max-height: calc(100vh - var(--global-padding));
+  margin: 0 auto;
 }
 
 .down {
@@ -227,9 +231,11 @@ column:nth-child(3n+1) .col-inner {
 
 .meta {
   font-size: 16px;
-  text-align: right;
-  padding-top: 1rem;
   color: #aaa;
+}
+
+.meta > p {
+  margin-top: 0;
 }
 
 #post-navigation {
@@ -414,16 +420,19 @@ grid > column[span="row"] { grid-column: 1 / -1 }
 /* Photography */
 
 .book {
-  max-width: 1140px;
   margin: 0 auto;
 }
 
-.book > grid,
-.book > .spread {
+.book > grid {
   padding-bottom: var(--global-padding);
 }
 
-.book > grid:not(.spread) > .photo:last-child > img {
+.book > .spread {
+  padding-top: calc(2 * var(--global-padding));
+  padding-bottom: calc(2 * var(--global-padding));
+}
+
+.book > grid:not(.spread) > .photo:last-child:not(.no-right) > img {
   float: right;
 }
 
@@ -541,6 +550,10 @@ grid > column[span="row"] { grid-column: 1 / -1 }
   color: #4100FF;
 }
 
+#black {
+  background-color: #808080;
+}
+
 #couleur h1,
 #couleur h2,
 #couleur h2 a,
@@ -560,6 +573,7 @@ grid > column[span="row"] { grid-column: 1 / -1 }
 footer {
   font-size: calc(var(--global-font-size) / 1.25);
   line-height: 1.7;
+  margin-top: var(--global-padding);
 }
 
 footer column {
@@ -652,15 +666,8 @@ footer column:last-child {
   body {
     font-size: calc(var(--global-font-size) * 1.25);
   }
-  .page {
-    min-width: 1440px;
-    max-width: 1500px;
-  }
   grid .photo > img {
     max-height: 1100px;
-  }
-  .spread .photo > img {
-    margin: 0 auto;
   }
 }
 

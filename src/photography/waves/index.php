@@ -11,10 +11,10 @@
 
 <div class="book">
   <grid id="main" columns=12 columns-s=1>
-    <column span=6 class="photo">
+    <column span=4 class="photo">
       <img src="<?php echo $base_url ?>/images/waves_4.jpg" alt="Waves Photo by Adrian Unger">
     </column>
-    <column span=6 class="photo">
+    <column span=3 class="photo">
       <div class="text">
         <div class="title">
           <h1>Waves</h1>

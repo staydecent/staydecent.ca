@@ -10,22 +10,22 @@
 ?>
 
 <div id="picos" class="book">
-  <div class="spread">
-    <div class="photo">
+  <grid columns=12 columns-s=1>
+    <column span=12 class="photo">
       <img src="<?php echo $base_url ?>/images/picos_2.jpg" alt="Picos De Europa Photo by Adrian Unger">
-    </div>
-  </div>
+    </column>
+  </grid>
 
   <div id="main" class="page">
     <grid columns=12 columns-s=1>
-      <column span=6 class="photo">
+      <column span=5 class="photo">
         <div class="text">
           <div class="title">
             <h1>Picos on Portra</h1>
           </div>
         </div>
       </column>
-      <column span=6 class="photo">
+      <column span=6-9 class="photo">
         <div class="text">
           <p class="bigger">In September of 2018 I left the North American continent for the first time, to spend three weeks in Spain.</p>
           <p class="big">Part of the trip involved hiking in the Picos De Europa national park in northern Spain. These are some selected photos from a roll of Kodak Portra 160. All shot with a Yashica FX-D and Yashica ML 50mm/2.</p>
@@ -35,10 +35,10 @@
   </div>
 
   <grid columns=12 columns-s=1>
-    <column span=6 class="photo">
+    <column span=5 class="photo">
       <img src="<?php echo $base_url ?>/images/picos_3.jpg" alt="Picos De Europa Photo by Adrian Unger">      
     </column>
-    <column span=6 class="photo">
+    <column span=5 class="photo no-right">
       <img src="<?php echo $base_url ?>/images/picos_6.jpg" alt="Picos De Europa Photo by Adrian Unger">
     </column>
   </grid>

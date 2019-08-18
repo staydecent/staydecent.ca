@@ -11,10 +11,10 @@
 
 <div id="couleur" class="book">
   <grid columns=12 columns-s=1 id="main">
-    <column span=6 class="photo">
+    <column span=8 class="photo">
       <img src="<?php echo $base_url ?>/images/ParisCouleur_8.jpg" alt="Paris Photo by Adrian Unger">
     </column>
-    <column span=6 class="photo">
+    <column span=4 class="photo">
       <div class="text">
         <div class="title">
           <h1>Paris Couleur</h1>

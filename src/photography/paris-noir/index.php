@@ -11,7 +11,7 @@
 
 <div id="main" class="book">
   <grid columns=12 columns-s=1>
-    <column span=6 class="text">
+    <column span=3+4 class="text">
       <div class="title">
         <h1>Paris Noir</h1>
         <p class="big">I recently visited Paris for the first time. Really, it was my frist time off the North American continent!</p>
@@ -30,7 +30,7 @@
   </div>
 
   <grid columns=12 columns-s=1>
-    <column span=6 class=photo>
+    <column span=4 class=photo>
       <img src="<?php echo $base_url ?>/images/ParisNoir_5.jpg" alt="Paris Photo by Adrian Unger">      
     </column>
     <column span=6 class=photo>
@@ -87,7 +87,7 @@
   </div>
 
   <grid columns=12 columns-s=1>
-    <column span=6 class="photo">
+    <column span=4 class="photo">
       <img src="<?php echo $base_url ?>/images/ParisNoir_4.jpg" alt="Paris Photo by Adrian Unger">
     </column>
     <column span=6 class="photo text">

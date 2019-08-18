@@ -39,10 +39,10 @@
   </grid>
 
   <grid columns=12 columns-s=1>
-    <column span=6 class="photo">
+    <column span=3+4 class="photo">
       <img src="<?php echo $base_url ?>/images/bnw_5.jpg" alt="Black and White Photo by Adrian Unger">      
     </column>
-    <column span=6 class="photo">
+    <column span=4 class="photo no-right">
       <img src="<?php echo $base_url ?>/images/bnw_6.jpg" alt="Black and White Photo by Adrian Unger">      
     </column>
   </grid>
