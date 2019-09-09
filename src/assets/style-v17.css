@@ -1,7 +1,7 @@
 :root {
   --global-font-size: 19px;
   --global-font-color: #0a0a0a;
-  --global-bg-color: #f7f7f0;
+  --global-bg-color: #feeddd;
   --global-padding: 2vw;
   --global-columns: 3;
 }
@@ -39,7 +39,7 @@ body {
   display: block;
   text-decoration: underline;
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
   margin-top: var(--global-padding);
   margin-bottom: 4rem;
   transform: rotate(-10deg);
@@ -64,7 +64,9 @@ h5 {
 }
 
 a {
+  font-family: Georgia, serif;
   color: var(--global-font-color);
+  font-size: 1.05em;
 }
 
 p.big,
@@ -117,6 +119,7 @@ nav {
 }
 
 nav > a {
+  font-size: 1.2em;
   display: block;
   text-decoration: none;
   position: relative;
@@ -131,30 +134,6 @@ nav > a.current {
 #site {
   margin: 0 auto;
   height: 100%;
-}
-
-#topbar {
-  overflow: hidden;
-  background-color: transparent;
-  padding-bottom: var(--global-padding);
-}
-
-#topbar.shinrinyoku {
-  border-color: #F8F4F4;
-  background-color: #E2C785;
-}
-
-#topbar.black {
-  border-color: #fefefe;
-}
-
-#topbar.waves {
-  border-color: #6B7D67;
-  background-color: #eee;
-}
-
-#topbar.mundane {
-  border-color: #4100FF;
 }
 
 .page {
@@ -196,6 +175,10 @@ column:nth-child(3n+1) .col-inner {
 
 .down {
   margin-top: 4vw;
+}
+
+.down-more {
+  margin-top: 6vw;
 }
 
 .up {
@@ -458,7 +441,7 @@ grid > column[span="row"] { grid-column: 1 / -1 }
 .title > h1 {
   font-size: 7em;
   font-weight: 700;
-  line-height: 0.9;
+  line-height: 0.85;
 }
 
 .title > h2 {
