@@ -18,15 +18,15 @@
   </div>
 
   <div id="main" class="page">
-    <grid columns=12>
-      <column span=2-5>
+    <grid columns=12 columns-s=1>
+      <column span=1-4 span-s=row>
         <div class="text">
           <div class="title">
             <h1>Picos on Portra</h1>
           </div>
         </div>
       </column>
-      <column span=5-9>
+      <column span=7-12 span-s=row>
         <div class="text">
           <p class="bigger">In September of 2018 I left the North American continent for the first time, to spend three weeks in Spain.</p>
           <p class="big">Part of the trip involved hiking in the Picos De Europa national park in northern Spain. These are some selected photos from a roll of Kodak Portra 160. All shot with a Yashica FX-D and Yashica ML 50mm/2.</p>
@@ -36,11 +36,11 @@
   </div>
 
   <div class="page spaced">
-    <grid columns=12>
-      <column span=4>
+    <grid columns=12 columns-s=1>
+      <column span=4 span-s=row>
         <img src="<?php echo $base_url ?>/images/picos_3.jpg" alt="Picos De Europa Photo by Adrian Unger">
       </column>
-      <column span=9.. class="down">
+      <column span=9.. span-s=row class="down">
         <img src="<?php echo $base_url ?>/images/picos_6.jpg" alt="Picos De Europa Photo by Adrian Unger">
       </column>
     </grid>
@@ -59,7 +59,7 @@
   </div>
 
   <grid columns=12 columns-s=1>
-    <column span=2-5 class=down>
+    <column span=2-6 class=down>
       <div class="text">
         <div class="title">
           <h2>The scale of the of the place was hard to comprehend.</h2>
@@ -67,7 +67,7 @@
         </div>
       </div>
     </column>
-    <column span=9-12 class=down>
+    <column span=7-12 class=down>
       <img src="<?php echo $base_url ?>/images/picos_5.jpg" alt="Picos De Europa Photo by Adrian Unger">
     </column>
   </grid>
@@ -79,7 +79,7 @@
   </div>
 
   <grid columns=12 columns-s=1>
-    <column span=2-5>
+    <column span=2-5 span-s=row>
       <img src="<?php echo $base_url ?>/images/picos_12.jpg" alt="Picos De Europa Photo by Adrian Unger">      
     </column>
     <column span=8-12 class=down>
@@ -94,10 +94,10 @@
   </div>
 
   <grid columns=12 columns-s=1>
-    <column span=6 class="photo">
+    <column span=1-5 class="photo">
       <img src="<?php echo $base_url ?>/images/picos_7.jpg" alt="Picos De Europa Photo by Adrian Unger">      
     </column>
-    <column span=6 class="photo">
+    <column span=8-12 class="photo">
       <img src="<?php echo $base_url ?>/images/picos_9.jpg" alt="Picos De Europa Photo by Adrian Unger">
     </column>
   </grid>
