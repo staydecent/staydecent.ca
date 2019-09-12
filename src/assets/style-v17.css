@@ -319,6 +319,10 @@ grid > column[span="row"] { grid-column: 1 / -1 }
   grid > column[span-s^="10"] { --grid-cs: 10 }
   grid > column[span-s^="11"] { --grid-cs: 11 }
   grid > column[span-s^="12"] { --grid-cs: 12 }
+
+  .book grid > column[span-s="row"] + column[span-s="row"] {
+    margin-top: calc(var(--global-padding) * 3);
+  }
   
   /* span-s=...+width, span-s=...-end */
   grid > column[span-s$="+1"], grid > column[span-s="1"] { --grid-ce: 1 }
@@ -414,10 +418,6 @@ grid > column[span="row"] { grid-column: 1 / -1 }
 }
 
 .book .page + .page {
-  margin-top: calc(var(--global-padding) * 3);
-}
-
-.book grid > column[span-s="row"] + column[span-s="row"] {
   margin-top: calc(var(--global-padding) * 3);
 }
 
