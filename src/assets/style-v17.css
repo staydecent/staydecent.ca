@@ -520,8 +520,10 @@ grid > column[span="row"] { grid-column: 1 / -1 }
   color: #4100FF;
 }
 
-#black {
-  background-color: #808080;
+#black,
+#noir {
+  background-color: #999;
+  padding-top: 0.2rem;
 }
 
 #couleur h1,
@@ -622,9 +624,6 @@ footer column:last-child {
 @media screen and (min-width: 1441px) {
   body {
     font-size: calc(var(--global-font-size) * 1.25);
-  }
-  grid .photo > img {
-    max-height: 1100px;
   }
 }
 
