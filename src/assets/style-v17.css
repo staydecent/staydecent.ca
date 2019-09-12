@@ -153,6 +153,10 @@ nav > a.current {
   max-height: calc(100vh - (var(--global-padding) / 2.5));
 }
 
+.page .row > img {
+  margin: 0 auto;
+}
+
 .col-inner {
   padding-bottom: var(--global-padding);
   padding-right: calc(var(--global-padding) / 2);
@@ -165,12 +169,6 @@ column:nth-child(3n+3) .col-inner {
 
 column:nth-child(3n+1) .col-inner {
   padding-left: 0;
-}
-
-.spread img {
-  max-width: 100%;
-  max-height: calc(100vh - var(--global-padding));
-  margin: 0 auto;
 }
 
 .down {
@@ -410,38 +408,27 @@ grid > column[span="row"] { grid-column: 1 / -1 }
   padding-bottom: var(--global-padding);
 }
 
-.book > .spread {
-  padding-top: calc(2 * var(--global-padding));
-  padding-bottom: calc(2 * var(--global-padding));
-}
-
-.book > grid:not(.spread) > .photo:last-child:not(.no-right) > img {
-  float: right;
-}
-
-.book > grid:not(.spread) > .photo.text:last-child {
-  margin-left: var(--global-padding);
-  margin-bottom: calc(2 * var(--global-padding));
-}
-
-.book > .split > .photo {
-  margin-right: calc(var(--global-padding) / 2);
-}
-
-.book > .split > .photo:last-child {
-  margin-right: 0;
-  margin-left: calc(var(--global-padding) / 2);
-}
-
 .book .bottom {
   display: flex;
   align-items: flex-end;
 }
 
+.book .page + .page {
+  margin-top: calc(var(--global-padding) * 3);
+}
+
+.book grid > column[span-s="row"] + column[span-s="row"] {
+  margin-top: calc(var(--global-padding) * 3);
+}
+
 .title > h1 {
-  font-size: 6em;
-  font-weight: 700;
-  line-height: 0.85;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 6rem;
+  line-height: 1.2;
+  margin-top: var(--global-padding);
+  margin-bottom: 4rem;
+  transform: rotate(-10deg);
 }
 
 .title > h2 {
@@ -604,10 +591,6 @@ footer column:last-child {
     font-size: 3em;
   }
 
-  .book grid > column[span="6"]:first-child {
-    margin-bottom: var(--global-padding);
-  }
-
   h1,
   .col-inner {
     margin-bottom: calc(var(--global-padding) * 3);
@@ -625,15 +608,6 @@ footer column:last-child {
 
   nav > * {
     width: 100%;
-  }
-
-  .book > .grid:not(.spread) > .photo:first-child {
-    margin-right: 0;
-    margin-bottom: calc(var(--global-padding) * 2);
-  }
-
-  .book > .grid:not(.spread) > .photo + .photo {
-    margin-left: 0;
   }
 }
 

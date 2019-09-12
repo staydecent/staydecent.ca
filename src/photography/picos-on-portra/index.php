@@ -11,10 +11,12 @@
 
 <div class="book">
 
-  <div class="spread">
-    <div class="photo">
-      <img src="<?php echo $base_url ?>/images/picos_2.jpg" alt="Picos De Europa Photo by Adrian Unger">
-    </div>
+  <div class="page">
+    <grid columns=12>
+      <column span=row>
+        <img src="<?php echo $base_url ?>/images/picos_2.jpg" alt="Picos De Europa Photo by Adrian Unger">
+      </column>
+    </grid>
   </div>
 
   <div id="main" class="page">
@@ -35,93 +37,112 @@
     </grid>
   </div>
 
-  <div class="page spaced">
-    <grid columns=12 columns-s=1>
-      <column span=4 span-s=row>
+  <div class="page">
+    <grid columns=12>
+      <column span=2-5 class="down">
         <img src="<?php echo $base_url ?>/images/picos_3.jpg" alt="Picos De Europa Photo by Adrian Unger">
       </column>
-      <column span=9.. span-s=row class="down">
+      <column span=7-11 class="double">
         <img src="<?php echo $base_url ?>/images/picos_6.jpg" alt="Picos De Europa Photo by Adrian Unger">
+
       </column>
     </grid>
   </div>
 
-  <div class="spread">
-    <div class="photo">
-      <img src="<?php echo $base_url ?>/images/picos_8.jpg" alt="Picos De Europa Photo by Adrian Unger">
-    </div>
+  <div class="page">
+    <grid columns=12>
+      <column span=row>
+        <img src="<?php echo $base_url ?>/images/picos_8.jpg" alt="Picos De Europa Photo by Adrian Unger">
+      </column>
+    </grid>
   </div>
 
-  <div class="spread">
-    <div class="photo">
-      <img src="<?php echo $base_url ?>/images/picos_11.jpg" alt="Picos De Europa Photo by Adrian Unger">
-    </div>
+  <div class="page">
+    <grid columns=12>
+      <column span=row>
+        <img src="<?php echo $base_url ?>/images/picos_11.jpg" alt="Picos De Europa Photo by Adrian Unger">
+      </column>
+    </grid>
   </div>
 
-  <grid columns=12 columns-s=1>
-    <column span=2-6 class=down>
-      <div class="text">
-        <div class="title">
-          <h2>The scale of the of the place was hard to comprehend.</h2>
-          <p class="bigger">When I spotted a group of people ahead of us, the massive size of the rock walls became clear.</p>
+  <div class="page">
+    <grid columns=12 columns-s=1>
+      <column span=2-6 span-s=row class=down>
+        <div class="text">
+          <div class="title">
+            <h2>The scale of the of the place was hard to comprehend.</h2>
+            <p class="bigger">When I spotted a group of people ahead of us, the massive size of the rock walls became clear.</p>
+          </div>
         </div>
-      </div>
-    </column>
-    <column span=7-12 class=down>
-      <img src="<?php echo $base_url ?>/images/picos_5.jpg" alt="Picos De Europa Photo by Adrian Unger">
-    </column>
-  </grid>
-
-  <div class="spread">
-    <div class="photo">
-      <img src="<?php echo $base_url ?>/images/picos_10.jpg" alt="Picos De Europa Photo by Adrian Unger">
-    </div>
+      </column>
+      <column span=7-12 span-s=row class=down>
+        <img src="<?php echo $base_url ?>/images/picos_5.jpg" alt="Picos De Europa Photo by Adrian Unger">
+      </column>
+    </grid>
   </div>
 
-  <grid columns=12 columns-s=1>
-    <column span=2-5 span-s=row>
-      <img src="<?php echo $base_url ?>/images/picos_12.jpg" alt="Picos De Europa Photo by Adrian Unger">      
-    </column>
-    <column span=8-12 class=down>
-      <img src="<?php echo $base_url ?>/images/picos_4.jpg" alt="Picos De Europa Photo by Adrian Unger">
-    </column>
-  </grid>
-
-  <div class="spread">
-    <div class="photo">
-      <img src="<?php echo $base_url ?>/images/picos_1.jpg" alt="Picos De Europa Photo by Adrian Unger">
-    </div>
+  <div class="page">
+    <grid columns=12>
+      <column span=row>
+        <img src="<?php echo $base_url ?>/images/picos_10.jpg" alt="Picos De Europa Photo by Adrian Unger">
+      </column>
+    </grid>
   </div>
 
-  <grid columns=12 columns-s=1>
-    <column span=1-5 class="photo">
-      <img src="<?php echo $base_url ?>/images/picos_7.jpg" alt="Picos De Europa Photo by Adrian Unger">      
-    </column>
-    <column span=8-12 class="photo">
-      <img src="<?php echo $base_url ?>/images/picos_9.jpg" alt="Picos De Europa Photo by Adrian Unger">
-    </column>
-  </grid>
-
-  <div class="spread">
-    <div class="photo">
-      <img src="<?php echo $base_url ?>/images/picos_14.jpg" alt="Picos De Europa Photo by Adrian Unger">
-    </div>
+  <div class="page">
+    <grid columns=12 columns-s=1>
+      <column span=2-5 span-s=row>
+        <img src="<?php echo $base_url ?>/images/picos_12.jpg" alt="Picos De Europa Photo by Adrian Unger">      
+      </column>
+      <column span=8-11 span-s=row class=down>
+        <img src="<?php echo $base_url ?>/images/picos_4.jpg" alt="Picos De Europa Photo by Adrian Unger">
+      </column>
+    </grid>
   </div>
 
-  <grid columns=12 columns-s=1>
-    <column span=2-6 class=down-more>
-      <div class="text">
-        <div class="title">
-          <h2>Thanks for stopping by!</h2>
-          <h2>For prints or inquiries, <br /><a href="mailto:photo@staydecent.ca">send me an email</a>.</h2>
-          <h2><a href="<?php echo SITE_URL ?>photography">View more galleries.</a></h2>
+  <div class="page">
+    <grid columns=12>
+      <column span=row>
+        <img src="<?php echo $base_url ?>/images/picos_1.jpg" alt="Picos De Europa Photo by Adrian Unger">
+      </column>
+    </grid>
+  </div>
+
+  <div class="page">
+    <grid columns=12>
+      <column span=1-5 span-s=row class="photo">
+        <img src="<?php echo $base_url ?>/images/picos_7.jpg" alt="Picos De Europa Photo by Adrian Unger">      
+      </column>
+      <column span=8-12 span-s=row class="photo">
+        <img src="<?php echo $base_url ?>/images/picos_9.jpg" alt="Picos De Europa Photo by Adrian Unger">
+      </column>
+    </grid>
+  </div>
+
+  <div class="page">
+    <grid columns=12>
+      <column span=row>
+        <img src="<?php echo $base_url ?>/images/picos_14.jpg" alt="Picos De Europa Photo by Adrian Unger">
+      </column>
+    </grid>
+  </div>
+
+  <div class="page">
+    <grid columns=12 columns-s=1>
+      <column span=2-7 span-s=row class=down-more>
+        <div class="text">
+          <div class="title">
+            <h2>Thanks for stopping by!</h2>
+            <h2>For prints or inquiries, <br /><a href="mailto:photo@staydecent.ca">send me an email</a>.</h2>
+            <h2><a href="<?php echo SITE_URL ?>photography">View more galleries.</a></h2>
+          </div>
         </div>
-      </div>
-    </column>
-    <column span=9-12>
-      <img src="<?php echo $base_url ?>/images/picos_13.jpg" alt="Picos De Europa Photo by Adrian Unger">
-    </column>
-  </grid>
+      </column>
+      <column span=8-11 span-s=row>
+        <img src="<?php echo $base_url ?>/images/picos_13.jpg" alt="Picos De Europa Photo by Adrian Unger">
+      </column>
+    </grid>
+  </div>
 
 </div>
 
