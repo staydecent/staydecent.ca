@@ -9,92 +9,79 @@
   $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
 ?>
 
-<div id="maui" class="book">
-  <grid columns=12 columns-s=1 id="main">
-    <column span=4 class=photo>
-      <img src="<?php echo $base_url ?>/images/maui_1.jpg" alt="Maui Photo by Adrian Unger">
-    </column>
-    <column span=4 class=photo>
-      <div class="text">
-        <div class="title">
-          <h1>Maui</h1>
-          <p class="big">10 days packed with rugged coastlines, <br/>beaches of assorted colours, roads to waterfalls and dense tropical jungles.</p>
-        </div>
-      </div>
-    </column>
-  </grid>
+<div class=aside>
+  <a href="<?php echo SITE_URL ?>photography" class=back>&larr;</a>
 
-  <div class="spread">
-    <div class=photo>
+  <div class=title>
+    <h1>Maui</h1>
+    <div class=body>
+      <p class=big>10 days packed with rugged coastlines, beaches of assorted colours, roads to waterfalls, and dense tropical jungles.</p>
+    </div>
+  </div>
+</div>
+
+<div class=container>
+  <div class=content>
+
+    <div class=right>
+      <img src="<?php echo $base_url ?>/images/maui_1.jpg" alt="Maui Photo by Adrian Unger">
+    </div>
+
+    <div class=right>
       <img src="<?php echo $base_url ?>/images/maui_2.jpg" alt="Maui Photo by Adrian Unger">
     </div>
-  </div>
 
-  <grid columns=12 columns-s=1>
-    <column span=6 class=photo>
-      <img src="<?php echo $base_url ?>/images/maui_6.jpg" alt="Maui Photo by Adrian Unger">      
-    </column>
-    <column span=6 class=photo>
-      <img src="<?php echo $base_url ?>/images/maui_4.jpg" alt="Maui Photo by Adrian Unger">
-    </column>
-  </grid>
+    <div class=right>
+      <div class="container">
+        <img src="<?php echo $base_url ?>/images/maui_6.jpg" alt="Maui Photo by Adrian Unger">      
+        <img src="<?php echo $base_url ?>/images/maui_4.jpg" alt="Maui Photo by Adrian Unger">
+      </div>
+    </div>
 
-  <div class="spread">
-    <div class=photo>
+    <div class=right>
       <img src="<?php echo $base_url ?>/images/maui_5.jpg" alt="Maui Photo by Adrian Unger">
     </div>
-  </div>
 
-  <grid columns=12 columns-s=1 class=split>
-    <column span=6 class=photo>
+    <div class=right>
       <img src="<?php echo $base_url ?>/images/maui_3.jpg" alt="Maui Photo by Adrian Unger">
-    </column>
-    <column span=6 class=photo>
+    </div>
+
+    <div class=right>
       <img src="<?php echo $base_url ?>/images/maui_7.jpg" alt="Maui Photo by Adrian Unger">
-    </column>
-  </grid>
+    </div>
 
-  <grid columns=12 columns-s=1 class=split>
-    <column span=6 class=photo>
+    <div class=right>
       <img src="<?php echo $base_url ?>/images/maui_8.jpg" alt="Maui Photo by Adrian Unger">
-    </column>
-    <column span=6 class=photo>
-      <img src="<?php echo $base_url ?>/images/maui_9.jpg" alt="Maui Photo by Adrian Unger">
-    </column>
-  </grid>
+    </div>
 
-  <div class="spread">
-    <div class=photo>
+    <div class=right>
+      <img src="<?php echo $base_url ?>/images/maui_9.jpg" alt="Maui Photo by Adrian Unger">
+    </div>
+
+    <div class=right>
       <img src="<?php echo $base_url ?>/images/maui_10.jpg" alt="Maui Photo by Adrian Unger">
     </div>
-  </div>
 
-  <grid columns=12 columns-s=1>
-    <column span=6 class=photo>
-      <img src="<?php echo $base_url ?>/images/maui_11.jpg" alt="Maui Photo by Adrian Unger">
-    </column>
-    <column span=6 class=photo>
-      <img src="<?php echo $base_url ?>/images/maui_12.jpg" alt="Maui Photo by Adrian Unger">
-    </column>
-  </grid>
+    <div class=right>
+      <div class=container>
+        <img src="<?php echo $base_url ?>/images/maui_11.jpg" alt="Maui Photo by Adrian Unger">
+        <img src="<?php echo $base_url ?>/images/maui_12.jpg" alt="Maui Photo by Adrian Unger">        
+      </div>
+    </div>
 
-  <div class="spread">
-    <div class=photo>
+    <div class=right>
       <img src="<?php echo $base_url ?>/images/maui_13.jpg" alt="Maui Photo by Adrian Unger">
     </div>
-  </div>
 
-  <grid columns=12 columns-s=1>
-    <column span=6 class=photo>
-      <div class="text">
-        <div class="title">
-          <h2>Thanks for stopping by!</h2>
-          <h2>For prints or inquiries, <br /><a href="mailto:photo@staydecent.ca">send me an email</a>.</h2>
-          <h2><a href="<?php echo SITE_URL ?>photography">View more galleries.</a></h2>
-        </div>
+    <div class="right">
+      <div class=text>
+        <p>Thanks for stopping by!</p>
+        <p>For prints or inquiries, <br /><a href="mailto:photo@staydecent.ca">send me an email</a>.</p>
+        <p><a href="<?php echo SITE_URL ?>photography">View more galleries.</a></p>
       </div>
-    </column>
-  </grid>
+    </div>
+
+  </div>
 </div>
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>
