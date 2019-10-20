@@ -23,7 +23,7 @@
 </div>
 
 <div class=container>
-  <div class=content>
+  <div class="content spaced">
 
     <div>
       <div class="container">
@@ -68,17 +68,6 @@
 
     <div>
       <img src="<?php echo $base_url ?>/images/ParisCouleur_3.jpg" alt="Paris Photo by Adrian Unger">
-    </div>
-
-    <div>
-      <div class="container">
-        <img src="<?php echo $base_url ?>/images/ParisCouleur_7.jpg" alt="Paris Photo by Adrian Unger">
-        <div class=text>
-          <p>Thanks for stopping by!</p>
-          <p>For prints or inquiries, <br /><a href="mailto:photo@staydecent.ca">send me an email</a>.</p>
-          <p><a href="<?php echo SITE_URL ?>photography">View more galleries.</a></p>
-        </div>
-      </div>
     </div>
 
   </div>

@@ -23,7 +23,7 @@
 </div>
 
 <div class=container>
-  <div class=content>
+  <div class="content spaced">
 
     <div class=>
       <img src="<?php echo $base_url ?>/images/picos_2.jpg" alt="Picos De Europa Photo by Adrian Unger">

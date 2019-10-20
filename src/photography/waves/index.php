@@ -1,4 +1,4 @@
-<?php 
+<?php
   $title = 'Waves';
   $page_id = 'waves';
 ?>
@@ -19,18 +19,18 @@
 </div>
 
 <div class=container>
-  <div class=content>
+  <div class="content spaced">
 
     <div class=right>
       <img src="<?php echo $base_url ?>/images/waves_4.jpg" alt="Waves Photo by Adrian Unger">
     </div>
 
-    <div class=right>
+    <div>
       <img src="<?php echo $base_url ?>/images/waves_2.jpg" alt="Waves Photo by Adrian Unger">
     </div>
 
     <div class=right>
-      <div class=container>
+      <div class="container">
         <img src="<?php echo $base_url ?>/images/waves_6.jpg" alt="Waves Photo by Adrian Unger">      
         <img src="<?php echo $base_url ?>/images/waves_7.jpg" alt="Waves Photo by Adrian Unger">
       </div>
@@ -51,7 +51,7 @@
       <img src="<?php echo $base_url ?>/images/waves_9.jpg" alt="Waves Photo by Adrian Unger">
     </div>
 
-    <div class=right>
+    <div>
       <img src="<?php echo $base_url ?>/images/waves_11.jpg" alt="Waves Photo by Adrian Unger">
     </div>
 
@@ -63,14 +63,6 @@
       <div class=container>
         <img src="<?php echo $base_url ?>/images/waves_13.jpg" alt="Waves Photo by Adrian Unger">
         <img src="<?php echo $base_url ?>/images/waves_10.jpg" alt="Waves Photo by Adrian Unger">
-      </div>
-    </div>
-
-    <div class=center>
-      <div class=text>
-        <p>Thanks for stopping by!</p>
-        <p>For prints or inquiries, <br /><a href="mailto:photo@staydecent.ca">send me an email</a>.</p>
-        <p><a href="<?php echo SITE_URL ?>photography">View more galleries.</a></p>
       </div>
     </div>
 

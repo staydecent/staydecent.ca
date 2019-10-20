@@ -15,13 +15,13 @@
   <div class=title>
     <h1>Maui</h1>
     <div class=body>
-      <p class=big>10 days packed with rugged coastlines, beaches of assorted colours, roads to waterfalls, and dense tropical jungles.</p>
+      <p class=bigger>10 days packed with rugged coastlines, beaches of assorted colours, roads to waterfalls, and dense tropical jungles.</p>
     </div>
   </div>
 </div>
 
 <div class=container>
-  <div class=content>
+  <div class="content spaced">
 
     <div class=right>
       <img src="<?php echo $base_url ?>/images/maui_1.jpg" alt="Maui Photo by Adrian Unger">
@@ -71,14 +71,6 @@
 
     <div class=right>
       <img src="<?php echo $base_url ?>/images/maui_13.jpg" alt="Maui Photo by Adrian Unger">
-    </div>
-
-    <div class="right">
-      <div class=text>
-        <p>Thanks for stopping by!</p>
-        <p>For prints or inquiries, <br /><a href="mailto:photo@staydecent.ca">send me an email</a>.</p>
-        <p><a href="<?php echo SITE_URL ?>photography">View more galleries.</a></p>
-      </div>
     </div>
 
   </div>

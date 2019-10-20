@@ -1,8 +1,8 @@
 body {
   height: 100%;
-  font-family: "Verdana", sans-serif;
-  font-size: 16px;
-  background-color: #eee;
+  font-family: -apple-system, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 15px;
+  background-color: #fefefe;
   padding: 1vh;
   margin: 0;
 }
@@ -12,13 +12,12 @@ a {
 }
 
 a:hover {
-  color: #0f00d7;
+  color: #60752d;
 }
 
 a > h5 {
   font-size: 1em;
   font-weight: 400;
-  margin: 0 0 10vh;
 }
 
 a.back {
@@ -36,33 +35,8 @@ a.back {
   width: 100%;
 }
 
-.start {
-  justify-content: flex-start;
-}
-
 .wrap {
   flex-wrap: wrap;
-}
-
-.container .col {
-  flex: 1 1 25%;
-}
-
-.col-inner {
-  padding: 1em;
-}
-
-.content {
-  width: 70%;
-}
-
-.content img {
-  max-width: 100%;
-  max-height: 98vh;
-}
-
-.content .text {
-  width: 100%;
 }
 
 .right {
@@ -98,6 +72,39 @@ a.back {
   margin-bottom: 0.5vh;
 }
 
+.content {
+  width: 70%;
+}
+
+.content.spaced img {
+  max-width: 100%;
+  max-height: 98vh;
+  margin-bottom: 10vh;
+}
+
+.content.spaced div:not(.container):last-child img {
+  margin-bottom: 0;
+}
+
+.content h5 {
+  margin: 0 0 10vh;
+}
+
+.content .text {
+  width: 100%;
+}
+
+.content .container {
+  justify-content: space-between;
+}
+
+.grid {
+  max-width: 1080px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2vh 6vh;
+}
+
 /* Navigation */
 
 .aside {
@@ -122,7 +129,7 @@ nav > a {
   display: block;
   color: black;
   text-decoration: none;
-  font-size: 1.6em;
+  font-size: 2.4em;
   padding: 0.1em 0;
 }
 
@@ -131,7 +138,7 @@ nav > a:hover {
 }
 
 nav > a.current {
-  color: #0f00d7;
+  color: #60752d;
 }
 
 footer {
@@ -143,7 +150,7 @@ footer {
 .wordmark {
   display: block;
   text-decoration: underline;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 400;
   margin-top: -0.2em;
   margin-bottom: 4rem;
@@ -151,6 +158,11 @@ footer {
 }
 
 .pagetitle {
+  font-weight: 400;
+}
+
+.aside .title h1 {
+  font-size: 2.25em;
   font-weight: 400;
 }
 
@@ -163,7 +175,7 @@ p.big {
 }
 
 p.bigger {
-  font-size: 2.5em;
+  font-size: 2.25em;
 }
 
 /* Page specific */
@@ -173,13 +185,8 @@ p.bigger {
   background-color: #F1E0D0;
 }
 
-#picos h1 {
-  font-size: 2.5em;
-  font-weight: 400;
-}
-
 #picos h2 {
-  font-size: 4em;
+  font-size: 2.25em;
   font-weight: 400;
 }
 

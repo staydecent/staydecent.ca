@@ -24,7 +24,7 @@
 </div>
 
 <div class=container>
-  <div class=content>
+  <div class="content spaced">
 
     <div>
       <img src="<?php echo $base_url ?>/images/shinrinyoku_3.jpg" alt="Forest Bathing Photo by Adrian Unger">      
@@ -64,14 +64,6 @@
 
     <div>
       <img src="<?php echo $base_url ?>/images/shinrinyoku_10.jpg" alt="Forest Bathing Photo by Adrian Unger">
-    </div>
-
-    <div class=right>
-      <div class=text>
-        <p>Thanks for stopping by!</p>
-        <p>For prints or inquiries, <br /><a href="mailto:photo@staydecent.ca">send me an email</a>.</p>
-        <p><a href="<?php echo SITE_URL ?>photography">View more galleries.</a></p>
-      </div>
     </div>
 
   </div>
