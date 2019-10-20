@@ -2,7 +2,7 @@ body {
   height: 100%;
   font-family: "Verdana", sans-serif;
   font-size: 16px;
-  background-color: #fefcfa;
+  background-color: #eee;
   padding: 1vh;
   margin: 0;
 }
@@ -12,7 +12,7 @@ a {
 }
 
 a:hover {
-  color: DarkOliveGreen;
+  color: #0f00d7;
 }
 
 a > h5 {
@@ -36,6 +36,22 @@ a.back {
   width: 100%;
 }
 
+.start {
+  justify-content: flex-start;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.container .col {
+  flex: 1 1 25%;
+}
+
+.col-inner {
+  padding: 1em;
+}
+
 .content {
   width: 70%;
 }
@@ -43,6 +59,10 @@ a.back {
 .content img {
   max-width: 100%;
   max-height: 98vh;
+}
+
+.content .text {
+  width: 100%;
 }
 
 .right {
@@ -62,7 +82,8 @@ a.back {
   display: block;
 }
 
-.right > img {
+.right > img,
+.center > img {
   margin-bottom: 0.5vh;
 }
 
@@ -110,7 +131,7 @@ nav > a:hover {
 }
 
 nav > a.current {
-  color: DarkOliveGreen;
+  color: #0f00d7;
 }
 
 footer {
@@ -129,6 +150,10 @@ footer {
   transform: rotate(-10deg);
 }
 
+.pagetitle {
+  font-weight: 400;
+}
+
 .text > p {
   font-size: 2em;
 }
@@ -137,7 +162,64 @@ p.big {
   font-size: 1.5em;
 }
 
+p.bigger {
+  font-size: 2.5em;
+}
+
 /* Page specific */
+
+#picos,
+#picos .container {
+  background-color: #F1E0D0;
+}
+
+#picos h1 {
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+#picos h2 {
+  font-size: 4em;
+  font-weight: 400;
+}
+
+#noir,
+#noir .container {
+  background-color: white;
+}
+
+#noir h1 {
+  font-size: 8em;
+  line-height: .8;
+  max-width: 800px;
+  margin: 0;
+}
+
+#paris,
+#paris .container {
+  background-color: #f3e7bd;
+}
+
+#paris h1 {
+  color: #2f425c;
+  font-size: 8em;
+  line-height: .8;
+  max-width: 800px;
+  margin: 0;
+}
+#paris .body p {
+  color: #2f425c;
+}
+
+#waves,
+#waves .container {
+  background-color: #f9f3e1;
+}
+
+#black,
+#black .container {
+  background-color: #666;
+}
 
 #maui,
 #maui .container {
@@ -146,7 +228,7 @@ p.big {
 
 #shinrinyoku,
 #shinrinyoku .container {
-  background-color: #E2C785;
+  background-color: #283725;
 }
 
 #shinrinyoku h1 {
