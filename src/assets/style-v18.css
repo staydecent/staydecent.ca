@@ -2,17 +2,18 @@ body {
   height: 100%;
   font-family: -apple-system, Helvetica Neue, Helvetica, sans-serif;
   font-size: 15px;
-  background-color: #fefefe;
+  background-color: #e6b65a;
+  color: #245744;
   padding: 1vh;
   margin: 0;
 }
 
 a {
-  color: black;
+  color: #245744;
 }
 
 a:hover {
-  color: #60752d;
+  color: #ea4e25;
 }
 
 a > h5 {
@@ -72,8 +73,8 @@ a.back {
   margin-bottom: 0.5vh;
 }
 
-.content {
-  width: 70%;
+.content img {
+  max-width: 100%;
 }
 
 .content.spaced img {
@@ -108,11 +109,8 @@ a.back {
 /* Navigation */
 
 .aside {
-  position: fixed;
-  width: 30%;
-  height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -127,7 +125,7 @@ nav {
 
 nav > a {
   display: block;
-  color: black;
+  color: #245744;
   text-decoration: none;
   font-size: 2.4em;
   padding: 0.1em 0;
@@ -138,7 +136,7 @@ nav > a:hover {
 }
 
 nav > a.current {
-  color: #60752d;
+  color: #ea4e25;
 }
 
 footer {
@@ -149,6 +147,7 @@ footer {
 
 .wordmark {
   display: block;
+  flex-basis: 40%;
   text-decoration: underline;
   font-size: 3em;
   font-weight: 400;

@@ -1,4 +1,4 @@
-<?php 
+<?php
   $title = 'Black &amp; White';
   $page_id = 'black';
 ?>
