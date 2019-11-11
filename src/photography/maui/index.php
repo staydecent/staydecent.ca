@@ -10,20 +10,23 @@
 ?>
 
 <div class=aside>
-  <a href="<?php echo SITE_URL ?>photography" class=back>&larr;</a>
+  <nav>
+    <a href="<?php echo SITE_URL ?>photography" class=back>&larr;</a>    
+  </nav>
 
   <div class=title>
     <h1>Maui</h1>
-    <div class=body>
-      <p class=bigger>10 days packed with rugged coastlines, beaches of assorted colours, roads to waterfalls, and dense tropical jungles.</p>
-    </div>
+  </div>
+
+  <div class=body>
+    <p class=bigger>10 days packed with rugged coastlines, beaches of assorted colours, roads to waterfalls, and dense tropical jungles.</p>
   </div>
 </div>
 
 <div class=container>
   <div class="content spaced">
 
-    <div class=right>
+    <div class=left>
       <img src="<?php echo $base_url ?>/images/maui_1.jpg" alt="Maui Photo by Adrian Unger">
     </div>
 

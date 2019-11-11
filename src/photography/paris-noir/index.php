@@ -10,7 +10,9 @@
 ?>
 
 <div class=aside>
-  <a href="<?php echo SITE_URL ?>photography" class=back>&larr;</a>
+  <nav>
+    <a href="<?php echo SITE_URL ?>photography" class=back>&larr;</a>    
+  </nav>
 
   <div class="title">
     <h1>Paris Noir</h1>
@@ -25,11 +27,11 @@
 <div class=container>
   <div class="content spaced">
 
-    <div class=>
+    <div class=left>
       <img src="<?php echo $base_url ?>/images/ParisNoir_7.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
-    <div class=>
+    <div class=center>
       <img src="<?php echo $base_url ?>/images/ParisNoir_8.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 

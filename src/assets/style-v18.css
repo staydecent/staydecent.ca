@@ -206,6 +206,43 @@ p.bigger {
   margin: 0.7em 0;
 }
 
+/* Animation */
+
+.scale-up {
+  opacity: 0;
+  transform: scale(0.9);
+  animation: scaleUp .5s ease both;
+}
+
+@keyframes scaleUp {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.scale-down {
+  animation: scaleDown .7s ease both;
+}
+
+@keyframes scaleDown {
+  from { }
+  to { opacity: 0; transform: scale(.8); }
+}
+
+@media screen and (max-width: 414px) {
+  .aside {
+    flex-wrap: wrap;
+  }
+  .aside nav {
+    flex: 1;
+  }
+  .aside .back {
+    margin-top: 0.2em;
+  }
+  .aside .body {
+    flex: 1;
+  }
+}
+
 /* Page specific */
 
 #picos,
@@ -220,14 +257,13 @@ p.bigger {
 
 #noir,
 #noir .container {
-  background-color: white;
+  background-color: #fff;
 }
 
-#noir h1 {
-  font-size: 8em;
-  line-height: .8;
-  max-width: 800px;
-  margin: 0;
+#noir h1,
+#noir .body p,
+#noir a {
+  color: black;
 }
 
 #paris,
@@ -235,14 +271,9 @@ p.bigger {
   background-color: #f3e7bd;
 }
 
-#paris h1 {
-  color: #2f425c;
-  font-size: 8em;
-  line-height: .8;
-  max-width: 800px;
-  margin: 0;
-}
-#paris .body p {
+#paris h1,
+#paris .body p,
+#paris a {
   color: #2f425c;
 }
 
@@ -254,6 +285,11 @@ p.bigger {
 #black,
 #black .container {
   background-color: #666;
+}
+#black h1,
+#black .body p,
+#black a {
+  color: #000;
 }
 
 #maui,
@@ -268,17 +304,12 @@ p.bigger {
 
 #shinrinyoku h1 {
   color: #F8F4F4;
-  font-size: 6em;
-  line-height: .8;
-  max-width: 800px;
-  margin: 0;
 }
 
 #shinrinyoku h2 {
   margin: 0;
+  font-size: 4em;
   color: #F8F4F4;
-  font-size: 5em;
-  font-weight: 600;
   font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
@@ -286,14 +317,6 @@ p.bigger {
   color: #F8F4F4;
 }
 
-#shinrinyoku .book p {
-  max-width: 80%;
-}
-
 #shinrinyoku a {
   color: #F8F4F4;
-}
-
-#shinrinyoku .grid:last-child {
-  padding-bottom: 4rem;
 }

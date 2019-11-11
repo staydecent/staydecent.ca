@@ -2,6 +2,14 @@
   const site = document.getElementById('site')
   const imgs = document.querySelectorAll('img')
 
+  window.onpopstate = function (ev) {
+    console.log('onpopstate')
+  }
+
+  window.onbeforeunload = function (ev) {
+    console.log('onbeforeunload')
+  }
+
   const isInViewport = function (element) {
     const rect = element.getBoundingClientRect()
     const html = document.documentElement
@@ -18,17 +26,20 @@
 
   const links = document.querySelectorAll('a[data-color]')
   links.forEach(link => {
-    link.addEventListener('click', (ev) => {
-      ev.preventDefault()
-      const color = link.getAttribute('data-color')
-      if (color) {
-        document.body.style.backgroundColor = '#' + color
-        site.classList.add('fadeout')
-      }
-      setTimeout(() => {
-        window.location = link.getAttribute('href')
-      }, 1500)
-    })
+    link.addEventListener('click', transition)
   })
-  console.log({ links })
+
+  const back = document.querySelector('a.back')
+  back && back.addEventListener('click', () => window.history.back())
+
+  function transition (ev) {
+    ev.preventDefault()
+    console.log({ el: this })
+    const color = this.getAttribute('data-color') || 'e6b65a'
+    document.body.style.backgroundColor = '#' + color
+    site.classList.replace('scale-up', 'scale-down')
+    setTimeout(() => {
+      window.location = this.getAttribute('href')
+    }, 1500)
+  }
 })()

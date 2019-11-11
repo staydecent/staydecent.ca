@@ -10,7 +10,9 @@
 ?>
 
 <div class=aside>
-  <a href="<?php echo SITE_URL ?>photography" class=back>&larr;</a>
+  <nav>
+    <a href="<?php echo SITE_URL ?>photography" class=back>&larr;</a>    
+  </nav>
 
   <div class=title>
     <h1>Black &amp; White</h1>
@@ -29,19 +31,17 @@
     </div>
 
     <div>
-      <img src="<?php echo $base_url ?>/images/bnw_3.jpg" alt="Black and White Photo by Adrian Unger">      
+      <div class="container start">
+        <img src="<?php echo $base_url ?>/images/bnw_3.jpg" alt="Black and White Photo by Adrian Unger">      
+        <img src="<?php echo $base_url ?>/images/bnw_4.jpg" alt="Black and White Photo by Adrian Unger">      
+      </div>
     </div>
 
     <div>
-      <img src="<?php echo $base_url ?>/images/bnw_4.jpg" alt="Black and White Photo by Adrian Unger">      
-    </div>
-
-    <div>
-      <img src="<?php echo $base_url ?>/images/bnw_5.jpg" alt="Black and White Photo by Adrian Unger">      
-    </div>
-
-    <div>
-      <img src="<?php echo $base_url ?>/images/bnw_6.jpg" alt="Black and White Photo by Adrian Unger">      
+      <div class="container start">
+        <img src="<?php echo $base_url ?>/images/bnw_5.jpg" alt="Black and White Photo by Adrian Unger">      
+        <img src="<?php echo $base_url ?>/images/bnw_6.jpg" alt="Black and White Photo by Adrian Unger">      
+      </div>
     </div>
 
     <div class="photo">
@@ -52,11 +52,11 @@
       <img src="<?php echo $base_url ?>/images/bnw_10.jpg" alt="Black and White Photo by Adrian Unger">
     </div>
 
-    <div>
+    <div class=center>
       <img src="<?php echo $base_url ?>/images/bnw_11.jpg" alt="Black and White Photo by Adrian Unger">      
     </div>
 
-    <div>
+    <div class=right>
       <img src="<?php echo $base_url ?>/images/bnw_12.jpg" alt="Black and White Photo by Adrian Unger">      
     </div>
 

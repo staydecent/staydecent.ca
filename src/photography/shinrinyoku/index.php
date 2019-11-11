@@ -10,7 +10,9 @@
 ?>
 
 <div class=aside>
-  <a href="<?php echo SITE_URL ?>photography" class=back>&larr;</a>
+  <nav>
+    <a href="<?php echo SITE_URL ?>photography" class=back>&larr;</a>    
+  </nav>
 
   <div class="title">
     <h1>Forest Bathing</h1>
@@ -18,8 +20,8 @@
   </div>
 
   <div class="body">
-    <p>Forest Bathing is simply the act of leisurely spending time in a forest. The term, and research into the benefits, comes from Japan where it is recognized as a relaxation and stress management activity.</p>
-    <p>For myself, it’s essential — I can’t go more than a week without feeling crazy. Time outdoors of any kind I’m sure is beneficial, but living in a Temperate Rainforest, it’s hard not to be in the trees.</p>
+    <p class=big>Forest Bathing is simply the act of leisurely spending time in a forest. The term, and research into the benefits, comes from Japan where it is recognized as a relaxation and stress management activity.</p>
+    <p class=>For myself, it’s essential — I can’t go more than a week without feeling crazy. Time outdoors of any kind I’m sure is beneficial, but living in a Temperate Rainforest, it’s hard not to be in the trees.</p>
   </div>
 </div>
 
@@ -42,7 +44,7 @@
       <img src="<?php echo $base_url ?>/images/shinrinyoku_4.jpg" alt="Forest Bathing Photo by Adrian Unger">      
     </div>
 
-    <div>
+    <div class=right>
       <img src="<?php echo $base_url ?>/images/shinrinyoku_5.jpg" alt="Forest Bathing Photo by Adrian Unger">      
     </div>
 
@@ -54,7 +56,7 @@
       <img src="<?php echo $base_url ?>/images/shinrinyoku_7.jpg" alt="Forest Bathing Photo by Adrian Unger">      
     </div>
 
-    <div>
+    <div class=center>
       <img src="<?php echo $base_url ?>/images/shinrinyoku_8.jpg" alt="Forest Bathing Photo by Adrian Unger">      
     </div>
 

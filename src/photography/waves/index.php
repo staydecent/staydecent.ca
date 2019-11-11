@@ -10,11 +10,16 @@
 ?>
 
 <div class=aside>
-  <a href="<?php echo SITE_URL ?>photography" class=back>&larr;</a>
+  <nav>
+    <a href="<?php echo SITE_URL ?>photography" class=back>&larr;</a>    
+  </nav>
 
   <div class=title>
     <h1>Waves</h1>
-    <p class="big">A cold, but sunny day during winter, we headed to the west coast.</p>
+  </div>
+
+  <div class="body">
+    <p class="bigger">A cold, but sunny day during winter, we headed to the west coast.</p>
   </div>
 </div>
 

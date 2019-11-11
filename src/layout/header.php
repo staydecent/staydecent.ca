@@ -17,4 +17,4 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 </head>
 <body id="<?php echo $page_id; ?>" class="page">
-<div id="site">
+<div id="site" class='scale-up'>
