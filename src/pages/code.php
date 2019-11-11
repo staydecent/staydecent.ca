@@ -1,3 +1,5 @@
+<?php $page_id = 'code'; ?>
+
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
 <div class=aside>
@@ -31,4 +33,3 @@
     </div>
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>
-

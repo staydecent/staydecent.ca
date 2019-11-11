@@ -1,4 +1,4 @@
-<?php 
+<?php
   $title = 'Picos on Portra';
   $page_id = 'picos';
 ?>

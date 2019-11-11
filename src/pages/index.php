@@ -1,3 +1,4 @@
+<?php $page_id = 'photography'; ?>
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
 <div class=aside>

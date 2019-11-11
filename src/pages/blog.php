@@ -1,3 +1,5 @@
+<?php $page_id = 'blog'; ?>
+
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
 <div class=aside>
@@ -9,11 +11,9 @@
   <div class=content>
 
     <div>
-      <div class="container wrap start">
+      <div class="grid">
         <div class="col">
-          <div class="col-inner">
-            <h1 class=pagetitle>Infrequent thoughts, links and creations.</h1>
-          </div>
+          <h1 class=pagetitle>Infrequent thoughts, links and creations.</h1>
         </div>
         <?php
         $posts = $entries['blog'];
@@ -23,10 +23,8 @@
           if (++$limit > 100) break;
           ?>
           <div class=col>
-            <div class="col-inner">
-              <h3><a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h3>
-              <p><?php echo $entry['excerpt'] ?><p>
-            </div>
+            <h3><a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h3>
+            <p><?php echo $entry['excerpt'] ?><p>
           </div>
           <?php
         }
@@ -35,4 +33,3 @@
     </div>
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>
-

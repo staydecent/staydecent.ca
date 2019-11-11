@@ -184,10 +184,7 @@ footer {
   transform: rotate(-10deg);
 }
 
-.pagetitle {
-  font-weight: 400;
-}
-
+.pagetitle,
 .aside .title h1 {
   font-size: 2.25em;
   font-weight: 400;
@@ -220,7 +217,7 @@ p.bigger {
 }
 
 .scale-down {
-  animation: scaleDown .7s ease both;
+  animation: scaleDown .4s ease both;
 }
 
 @keyframes scaleDown {
@@ -319,4 +316,62 @@ p.bigger {
 
 #shinrinyoku a {
   color: #F8F4F4;
+}
+
+#code,
+#code .container {
+  background-color: #000;
+}
+#code .container {
+  justify-content: flex-start;
+}
+#code h1,
+#code p {
+  color: #aaa;
+}
+
+#blog,
+#blog .container {
+  background-color: #aaa;
+}
+#blog .container {
+  justify-content: flex-start;
+}
+#blog h1,
+#blog p {
+  color: #000;
+}
+
+#about,
+#about .container {
+  background-color: #21207e;
+}
+#about .container {
+  justify-content: flex-start;
+}
+#about h1,
+#about p {
+  color: #e5c4bb;
+}
+
+#now,
+#now .container {
+  background-color: #e5c4bb;
+}
+#now .container {
+  justify-content: flex-start;
+}
+#now h1,
+#now p,
+#now li {
+  color: #21207e;
+}
+#now ul {
+  padding: 0;
+  margin: 2em 0;
+}
+#now li {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-bottom: 1em;
 }
