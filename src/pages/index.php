@@ -9,7 +9,7 @@
   <div class=content>
 
     <div>
-      <a href="<?php echo SITE_URL ?>photography/picos-on-portra">
+      <a href="<?php echo SITE_URL ?>photography/picos-on-portra" data-color='F1E0D0'>
         <img src='<?php echo SITE_URL ?>photography/picos-on-portra/images/picos_2.jpg' />
         <h5>Picos On Portra</h5>
       </a>

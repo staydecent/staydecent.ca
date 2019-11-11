@@ -1,5 +1,5 @@
 (function () {
-  const photos = document.querySelectorAll('.photo > img')
+  const site = document.getElementById('site')
   const imgs = document.querySelectorAll('img')
 
   const isInViewport = function (element) {
@@ -15,4 +15,20 @@
     if (!imgs.length) return
     imgs.forEach(isInViewport)
   }, true)
+
+  const links = document.querySelectorAll('a[data-color]')
+  links.forEach(link => {
+    link.addEventListener('click', (ev) => {
+      ev.preventDefault()
+      const color = link.getAttribute('data-color')
+      if (color) {
+        document.body.style.backgroundColor = '#' + color
+        site.classList.add('fadeout')
+      }
+      setTimeout(() => {
+        window.location = link.getAttribute('href')
+      }, 1500)
+    })
+  })
+  console.log({ links })
 })()

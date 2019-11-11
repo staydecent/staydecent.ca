@@ -10,7 +10,9 @@
 ?>
 
 <div class=aside>
-  <a href="<?php echo SITE_URL ?>photography" class=back>&larr;</a>
+  <nav>
+    <a href="<?php echo SITE_URL ?>photography" class=back>&larr;</a>    
+  </nav>
 
   <div class="title">
     <h1>Picos on Portra</h1>
@@ -25,7 +27,7 @@
 <div class=container>
   <div class="content spaced">
 
-    <div class=>
+    <div class=center>
       <img src="<?php echo $base_url ?>/images/picos_2.jpg" alt="Picos De Europa Photo by Adrian Unger">
     </div>
 
@@ -36,11 +38,11 @@
       </div>
     </div>
 
-    <div>
+    <div class=center>
       <img src="<?php echo $base_url ?>/images/picos_8.jpg" alt="Picos De Europa Photo by Adrian Unger">
     </div>
 
-    <div>
+    <div class=center>
       <img src="<?php echo $base_url ?>/images/picos_11.jpg" alt="Picos De Europa Photo by Adrian Unger">
     </div>
 
@@ -53,11 +55,11 @@
       </div>
     </div>
 
-    <div>
+    <div class=right>
       <img src="<?php echo $base_url ?>/images/picos_5.jpg" alt="Picos De Europa Photo by Adrian Unger">
     </div>
 
-    <div>
+    <div class=center>
       <img src="<?php echo $base_url ?>/images/picos_10.jpg" alt="Picos De Europa Photo by Adrian Unger">
     </div>
 
@@ -68,7 +70,7 @@
       </div>
     </div>
 
-    <div>
+    <div class=center>
       <img src="<?php echo $base_url ?>/images/picos_1.jpg" alt="Picos De Europa Photo by Adrian Unger">
     </div>
 
@@ -79,11 +81,11 @@
       </div>
     </div>
 
-    <div>
+    <div class=center>
       <img src="<?php echo $base_url ?>/images/picos_14.jpg" alt="Picos De Europa Photo by Adrian Unger">
     </div>
 
-    <div>
+    <div class=right>
       <img src="<?php echo $base_url ?>/images/picos_13.jpg" alt="Picos De Europa Photo by Adrian Unger">
     </div>
 
