@@ -23,6 +23,7 @@
     if (!imgs.length) return
     imgs.forEach(isInViewport)
   }, true)
+  Array.from(imgs).slice(0, 2).forEach(isInViewport)
 
   const links = document.querySelectorAll('a[data-color]')
   links.forEach(link => {
