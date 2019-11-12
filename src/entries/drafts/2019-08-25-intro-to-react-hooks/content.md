@@ -17,7 +17,7 @@ The React team did a fantastic job with the [Hooks documentation](https://reactj
 
 ## From `class` based Components to Functional Components with Hooks
 
-To rid yourself of the lie that is class, you'll need to know how to write functional React Components and how to utilize Hooks. Previously, you may have had *dumb* and *smart* components. *Dumb* just meant a function that returned JSX without any coupled lifecycle and state logic. So, you'd have a mix of functional Components and class-based Components. With hooks, all your Components can be functional!
+To rid yourself of the lie that is class, you'll need to know how to write funcation-based React Components and how to utilize Hooks. Previously, you may have had *dumb* and *smart* components. *Dumb* just meant a function that returned JSX without any coupled lifecycle and state logic. So, you'd have a mix of function-based Components and class-based Components. With hooks, all your Components can be functions!
 
 ### Forget `setState` and Embrace `useState`
 

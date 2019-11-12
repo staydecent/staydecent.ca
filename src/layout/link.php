@@ -1,25 +1,30 @@
+<?php $page_id = 'blog'; ?>
+
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
-  <div id="main">
-    <h1 class="bigger"><?php echo $entry['title'] ?></h1>
-    <div>&nbsp;</div>
-  </div>
-  
-  <grid columns=12 class="page content">
-    <column span=2 span-s=row>
-      <div class="meta"><p>Published on <?php echo date("F j, Y", $entry['date']) ?></p></div>
-    </column>
-    <column span=4-9 span-s=row>
-      <div class="post">
-        <p class="big">
-          <span class="mark">&rarr;</span> <a href="<?php echo $entry['link'] ?>" target="_blank"><?php echo (array_key_exists('link_title', $entry)) ? $entry['link_title'] : $entry['link'] ?></a>
-        </p>
+<div class=aside>
+  <h1 class=wordmark>Staydecent</h1>
+  <?php include $config['dirs']['layout'].'/nav.php' ?>
+</div>
 
-        <?php echo $entry['body'] ?>
+<div class=container>
+  <div class=content>
 
-        <?php include $config['dirs']['layout'].'/post-navigation-part.php'; ?>  
+    <div>
+      <div class="grid">
+        <div> 
+          <h1 class="pagetitle"><?php echo $entry['title'] ?></h1>
+          <div class="meta"><p>Posted on <br /><?php echo date("F j, Y", $entry['date']) ?></p></div>
+        </div>
+        <div class=span-2>
+          <p class="big"><span class="mark">&rarr;</span> <a href="<?php echo $entry['link'] ?>" target="_blank"><?php echo (array_key_exists('link_title', $entry)) ? $entry['link_title'] : $entry['link'] ?></a></p>
+          <?php echo $entry['body'] ?>
+          <?php include $config['dirs']['layout'].'/post-navigation-part.php'; ?>
+        </div>
       </div>
-    </column>
-  </grid>
+    </div>
+
+  </div>
+</div>
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>
