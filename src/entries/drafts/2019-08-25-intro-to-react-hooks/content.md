@@ -83,3 +83,7 @@ useEffect(() => {
 
 When getting started, I would avoid these until you encounter a slow Component. Wrapping all of your handlers and variables in `useCallback` and `useMemo` can actually [hurt performance](https://kentcdodds.com/blog/usememo-and-usecallback). So, until you actually encounter a performance issue, you shouldn't worry about these too much.
 
+### Did I miss anything?
+
+I'm already knee-deep authoring React Components using Hooks, and may have overlooked something. If you think there's more to know when migrating from class-based Components to Hook-based, let me know!
+
