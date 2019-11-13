@@ -216,6 +216,20 @@ p.bigger {
   margin: 0.7em 0;
 }
 
+.note {
+  font-size: 1em;
+  font-style: italic;
+  line-height: 1.5;
+  color: #000;
+  background: darkseagreen;
+  padding: 1em;
+}
+
+#post-navigation {
+  font-size: 1.25em;
+  margin-top: 2em;
+}
+
 ul {
   padding: 0;
   list-style: none;
@@ -254,6 +268,8 @@ li::before {
   to { opacity: 0; transform: scale(.8); }
 }
 
+/* Mobile Media Queries */
+
 @media screen and (max-width: 414px) {
   .aside {
     flex-wrap: wrap;
@@ -266,6 +282,12 @@ li::before {
   }
   .aside .body {
     flex: 1;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .grid {
+    max-width: 100%;
   }
 }
 
