@@ -9,7 +9,7 @@
   $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
 ?>
 
-<div class=aside>
+<div class='aside wide'>
   <nav>
     <a href="<?php echo SITE_URL ?>photography" class=back>&larr;</a>    
   </nav>

@@ -110,11 +110,23 @@ a.back {
   justify-content: space-around;
 }
 
-.grid {
-  max-width: 1080px;
+.grid,
+.aside {
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 2vh 6vh;
+}
+
+.aside.wide {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#code .aside,
+#code .grid,
+#blog .aside,
+#blog .grid {
+  max-width: 1080px;
 }
 
 .span-2 {
@@ -140,23 +152,7 @@ img.fadein {
 
 /* Navigation */
 
-.aside {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.aside > .title {
-  flex-basis: 60%;
-}
-
-.aside > .body {
-  margin-right: 2em;
-}
-
 nav {
-  flex-basis: 60%;
-  padding-left: 2em;
   padding-bottom: 1em;
 }
 
@@ -246,6 +242,10 @@ li::before {
   margin-right: 1em;
 }
 
+.col p {
+  line-height: 1.5;
+}
+
 /* Animation */
 
 .scale-up {
@@ -271,27 +271,34 @@ li::before {
 /* Mobile Media Queries */
 
 @media screen and (max-width: 414px) {
-  .aside {
-    flex-wrap: wrap;
-  }
-  .aside nav {
-    flex: 1;
-  }
-  .aside .back {
-    margin-top: 0.2em;
-  }
-  .aside .body {
-    flex: 1;
+  nav > a {
+    font-size: 1.5em;
   }
 }
 
+@media screen and (max-width: 680px) {
+
+}
+
 @media screen and (max-width: 1040px) {
-  .grid {
+  .grid,
+  .aside,
+  #code .aside,
+  #code .grid,
+  #blog .aside,
+  #blog .grid {
     max-width: 100%;
   }
   .span-2 {
     grid-column: 1 / -1;
     max-width: 740px;
+  }
+  .aside,
+  .aside.wide {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .aside .wordmark {
+    grid-column: 1 / -1;
   }
 }
 
