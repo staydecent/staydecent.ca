@@ -8,28 +8,28 @@
 </div>
 
 <div class=container>
-  <div class=content>
+  <div class="content repeat-4">
 
-    <div>
-      <div class="grid">
-        <div class="col">
-          <h1 class=pagetitle>An attempt to share what I learn creating web and mobile apps.</h1>
+    <div class=col-2>
+      <h1 class="pagetitle">An attempt to share what I learn creating web and mobile apps.</h1>
+    </div>
+
+    <?php
+      $posts = $entries['code'];
+      krsort($posts);
+      $limit = 0;
+      foreach ($posts as $date => $entry) {
+        if (++$limit > 100) break;
+        ?>
+        <div>
+          <h3><a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h3>
+          <p><?php echo $entry['excerpt'] ?></p>
         </div>
         <?php
-        $posts = $entries['code'];
-        krsort($posts);
-        $limit = 0;
-        foreach ($posts as $date => $entry) {
-          if (++$limit > 100) break;
-          ?>
-          <div class=col>
-            <h3><a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h3>
-            <p><?php echo $entry['excerpt'] ?><p>
-          </div>
-          <?php
-        }
-        ?>
-      </div>
-    </div>
+      }
+    ?>
+
+  </div>
+</div>
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>

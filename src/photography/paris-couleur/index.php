@@ -51,8 +51,18 @@
       <img src="<?php echo $base_url ?>/images/ParisCouleur_1.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
-    <div class=center>
+    <div>
       <img src="<?php echo $base_url ?>/images/ParisCouleur_2.jpg" alt="Paris Photo by Adrian Unger">
+    </div>
+
+    <div>
+      <img src="<?php echo $base_url ?>/images/ParisCouleur_3.jpg" alt="Paris Photo by Adrian Unger">
+    </div>
+
+    <div>&nbsp;</div>
+
+    <div>
+      <img src="<?php echo $base_url ?>/images/ParisCouleur_4.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
     <div>
@@ -60,19 +70,11 @@
     </div>
 
     <div>
-      <img src="<?php echo $base_url ?>/images/ParisCouleur_4.jpg" alt="Paris Photo by Adrian Unger">
-    </div>
-
-    <div class=center>
-      <img src="<?php echo $base_url ?>/images/ParisCouleur_13.jpg" alt="Paris Photo by Adrian Unger">
-    </div>
-
-    <div class=center>
       <img src="<?php echo $base_url ?>/images/ParisCouleur_12.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
     <div class=center>
-      <img src="<?php echo $base_url ?>/images/ParisCouleur_3.jpg" alt="Paris Photo by Adrian Unger">
+      <img src="<?php echo $base_url ?>/images/ParisCouleur_13.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
   </div>

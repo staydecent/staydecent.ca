@@ -45,14 +45,14 @@
     </div>
 
     <div>
-      <a href="<?php echo SITE_URL ?>photography/maui" data-color='f7f9ff'>
+      <a href="<?php echo SITE_URL ?>photography/maui" data-color='FBCBC1'>
         <img src='<?php echo SITE_URL ?>photography/maui/images/maui_5.jpg' />
         <h5>Maui</h5>
       </a>
     </div>
 
     <div class=col-2>
-      <a href="<?php echo SITE_URL ?>photography/shinrinyoku" data-color='283725'>
+      <a href="<?php echo SITE_URL ?>photography/shinrinyoku" data-color='433C06'>
         <img src='<?php echo SITE_URL ?>photography/shinrinyoku/images/shinrinyoku_1.jpg' />
         <h5>森林浴</h5>
       </a>
