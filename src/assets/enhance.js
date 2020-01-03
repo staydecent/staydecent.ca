@@ -40,6 +40,6 @@
     site.classList.replace('scale-up', 'scale-down')
     setTimeout(() => {
       window.location = this.getAttribute('href')
-    }, 1250)
+    }, 600)
   }
 })()

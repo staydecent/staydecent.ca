@@ -10,9 +10,11 @@
 ?>
 
 <div class='aside wide'>
-  <nav>
-    <a href="<?php echo SITE_URL ?>photography" class=back>&larr;</a>    
-  </nav>
+  <a href="<?php echo SITE_URL ?>" class=back>
+    <h1 class=wordmark>Staydecent</h1>
+  </a>
+
+  <div>&nbsp;</div>
 
   <div class=title>
     <h1>Black &amp; White</h1>
@@ -31,17 +33,19 @@
     </div>
 
     <div>
-      <div class="container start">
         <img src="<?php echo $base_url ?>/images/bnw_3.jpg" alt="Black and White Photo by Adrian Unger">      
-        <img src="<?php echo $base_url ?>/images/bnw_4.jpg" alt="Black and White Photo by Adrian Unger">      
-      </div>
     </div>
 
     <div>
-      <div class="container start">
+        <img src="<?php echo $base_url ?>/images/bnw_4.jpg" alt="Black and White Photo by Adrian Unger">      
+    </div>
+
+    <div>
         <img src="<?php echo $base_url ?>/images/bnw_5.jpg" alt="Black and White Photo by Adrian Unger">      
+    </div>
+
+    <div>
         <img src="<?php echo $base_url ?>/images/bnw_6.jpg" alt="Black and White Photo by Adrian Unger">      
-      </div>
     </div>
 
     <div class="photo">
@@ -52,7 +56,7 @@
       <img src="<?php echo $base_url ?>/images/bnw_10.jpg" alt="Black and White Photo by Adrian Unger">
     </div>
 
-    <div class=center>
+    <div>
       <img src="<?php echo $base_url ?>/images/bnw_11.jpg" alt="Black and White Photo by Adrian Unger">      
     </div>
 

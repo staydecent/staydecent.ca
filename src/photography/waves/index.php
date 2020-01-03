@@ -10,9 +10,9 @@
 ?>
 
 <div class='aside wide'>
-  <nav>
-    <a href="<?php echo SITE_URL ?>photography" class=back>&larr;</a>    
-  </nav>
+  <a href="<?php echo SITE_URL ?>" class=back>
+    <h1 class=wordmark>Staydecent</h1>
+  </a>
 
   <div class=title>
     <h1>Waves</h1>
@@ -35,10 +35,11 @@
     </div>
 
     <div class=right>
-      <div class="container">
-        <img src="<?php echo $base_url ?>/images/waves_6.jpg" alt="Waves Photo by Adrian Unger">      
-        <img src="<?php echo $base_url ?>/images/waves_7.jpg" alt="Waves Photo by Adrian Unger">
-      </div>
+      <img src="<?php echo $base_url ?>/images/waves_6.jpg" alt="Waves Photo by Adrian Unger">
+    </div>
+
+    <div>
+      <img src="<?php echo $base_url ?>/images/waves_7.jpg" alt="Waves Photo by Adrian Unger">
     </div>
 
     <div class=center>
@@ -46,29 +47,31 @@
     </div>
 
     <div class=right>
-      <div class=container>
-        <img src="<?php echo $base_url ?>/images/waves_5.jpg" alt="Waves Photo by Adrian Unger">
-        <img src="<?php echo $base_url ?>/images/waves_8.jpg" alt="Waves Photo by Adrian Unger">
-      </div>
+      <img src="<?php echo $base_url ?>/images/waves_8.jpg" alt="Waves Photo by Adrian Unger">
+    </div>
+
+    <div>
+      <img src="<?php echo $base_url ?>/images/waves_5.jpg" alt="Waves Photo by Adrian Unger">
+    </div>
+
+    <div>
+      <img src="<?php echo $base_url ?>/images/waves_12.jpg" alt="Waves Photo by Adrian Unger">
     </div>
 
     <div class=right>
       <img src="<?php echo $base_url ?>/images/waves_9.jpg" alt="Waves Photo by Adrian Unger">
     </div>
 
-    <div>
+    <div class=center>
       <img src="<?php echo $base_url ?>/images/waves_11.jpg" alt="Waves Photo by Adrian Unger">
     </div>
 
     <div class=right>
-      <img src="<?php echo $base_url ?>/images/waves_12.jpg" alt="Waves Photo by Adrian Unger">
+      <img src="<?php echo $base_url ?>/images/waves_13.jpg" alt="Waves Photo by Adrian Unger">
     </div>
 
-    <div class=right>
-      <div class=container>
-        <img src="<?php echo $base_url ?>/images/waves_13.jpg" alt="Waves Photo by Adrian Unger">
-        <img src="<?php echo $base_url ?>/images/waves_10.jpg" alt="Waves Photo by Adrian Unger">
-      </div>
+    <div>
+      <img src="<?php echo $base_url ?>/images/waves_10.jpg" alt="Waves Photo by Adrian Unger">
     </div>
 
   </div>

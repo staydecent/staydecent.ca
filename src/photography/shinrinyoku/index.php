@@ -10,9 +10,9 @@
 ?>
 
 <div class='aside wide'>
-  <nav>
-    <a href="<?php echo SITE_URL ?>photography" class=back>&larr;</a>    
-  </nav>
+  <a href="<?php echo SITE_URL ?>" class=back>
+    <h1 class=wordmark>Staydecent</h1>
+  </a>
 
   <div class="title">
     <h1>Forest Bathing</h1>
@@ -28,12 +28,8 @@
 <div class=container>
   <div class="content spaced">
 
-    <div>
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_3.jpg" alt="Forest Bathing Photo by Adrian Unger">      
-    </div>
-
-    <div>
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_2.jpg" alt="Forest Bathing Photo by Adrian Unger">      
+    <div class=right>
+      <img src="<?php echo $base_url ?>/images/shinrinyoku_5.jpg" alt="Forest Bathing Photo by Adrian Unger">      
     </div>
 
     <div>
@@ -41,14 +37,14 @@
     </div>
 
     <div>
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_4.jpg" alt="Forest Bathing Photo by Adrian Unger">      
-    </div>
-
-    <div class=right>
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_5.jpg" alt="Forest Bathing Photo by Adrian Unger">      
+      <img src="<?php echo $base_url ?>/images/shinrinyoku_2.jpg" alt="Forest Bathing Photo by Adrian Unger">      
     </div>
 
     <div>
+      <img src="<?php echo $base_url ?>/images/shinrinyoku_4.jpg" alt="Forest Bathing Photo by Adrian Unger">      
+    </div>
+
+    <div class=center>
       <img src="<?php echo $base_url ?>/images/shinrinyoku_6.jpg" alt="Forest Bathing Photo by Adrian Unger">
     </div>
 
@@ -56,16 +52,16 @@
       <img src="<?php echo $base_url ?>/images/shinrinyoku_7.jpg" alt="Forest Bathing Photo by Adrian Unger">      
     </div>
 
+    <div>
+      <img src="<?php echo $base_url ?>/images/shinrinyoku_10.jpg" alt="Forest Bathing Photo by Adrian Unger">
+    </div>
+
     <div class=center>
       <img src="<?php echo $base_url ?>/images/shinrinyoku_8.jpg" alt="Forest Bathing Photo by Adrian Unger">      
     </div>
 
-    <div>
+    <div class=center>
       <img src="<?php echo $base_url ?>/images/shinrinyoku_9.jpg" alt="Forest Bathing Photo by Adrian Unger">      
-    </div>
-
-    <div>
-      <img src="<?php echo $base_url ?>/images/shinrinyoku_10.jpg" alt="Forest Bathing Photo by Adrian Unger">
     </div>
 
   </div>

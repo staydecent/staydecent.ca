@@ -10,9 +10,9 @@
 ?>
 
 <div class='aside wide'>
-  <nav>
-    <a href="<?php echo SITE_URL ?>photography" class=back>&larr;</a>    
-  </nav>
+  <a href="<?php echo SITE_URL ?>" class=back>
+    <h1 class=wordmark>Staydecent</h1>
+  </a>
 
   <div class=title>
     <h1>Maui</h1>
@@ -34,11 +34,12 @@
       <img src="<?php echo $base_url ?>/images/maui_2.jpg" alt="Maui Photo by Adrian Unger">
     </div>
 
+    <div>
+        <img src="<?php echo $base_url ?>/images/maui_6.jpg" alt="Maui Photo by Adrian Unger">
+    </div>
+
     <div class=right>
-      <div class="container">
-        <img src="<?php echo $base_url ?>/images/maui_6.jpg" alt="Maui Photo by Adrian Unger">      
         <img src="<?php echo $base_url ?>/images/maui_4.jpg" alt="Maui Photo by Adrian Unger">
-      </div>
     </div>
 
     <div class=right>
@@ -65,14 +66,15 @@
       <img src="<?php echo $base_url ?>/images/maui_10.jpg" alt="Maui Photo by Adrian Unger">
     </div>
 
-    <div class=right>
-      <div class=container>
-        <img src="<?php echo $base_url ?>/images/maui_11.jpg" alt="Maui Photo by Adrian Unger">
-        <img src="<?php echo $base_url ?>/images/maui_12.jpg" alt="Maui Photo by Adrian Unger">        
-      </div>
+    <div>
+      <img src="<?php echo $base_url ?>/images/maui_12.jpg" alt="Maui Photo by Adrian Unger">
     </div>
 
     <div class=right>
+      <img src="<?php echo $base_url ?>/images/maui_11.jpg" alt="Maui Photo by Adrian Unger">
+    </div>
+
+    <div class=center>
       <img src="<?php echo $base_url ?>/images/maui_13.jpg" alt="Maui Photo by Adrian Unger">
     </div>
 

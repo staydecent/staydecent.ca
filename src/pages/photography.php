@@ -51,7 +51,7 @@
       </a>
     </div>
 
-    <div>
+    <div class=col-2>
       <a href="<?php echo SITE_URL ?>photography/shinrinyoku" data-color='283725'>
         <img src='<?php echo SITE_URL ?>photography/shinrinyoku/images/shinrinyoku_1.jpg' />
         <h5>森林浴</h5>

@@ -10,9 +10,9 @@
 ?>
 
 <div class='aside wide'>
-  <nav>
-    <a href="<?php echo SITE_URL ?>photography" class=back>&larr;</a>    
-  </nav>
+  <a href="<?php echo SITE_URL ?>" class=back>
+    <h1 class=wordmark>Staydecent</h1>
+  </a>
 
   <div class="title">
     <h1>Paris Noir</h1>
@@ -27,30 +27,32 @@
 <div class=container>
   <div class="content spaced">
 
+    <div>
+      <img src="<?php echo $base_url ?>/images/ParisNoir_8.jpg" alt="Paris Photo by Adrian Unger">
+    </div>
+
     <div class=left>
       <img src="<?php echo $base_url ?>/images/ParisNoir_7.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
+    <div class=right>
+      <img src="<?php echo $base_url ?>/images/ParisNoir_5.jpg" alt="Paris Photo by Adrian Unger">      
+    </div>
+
+    <div>
+      <img src="<?php echo $base_url ?>/images/ParisNoir_13.jpg" alt="Paris Photo by Adrian Unger">
+    </div>
+
     <div class=center>
-      <img src="<?php echo $base_url ?>/images/ParisNoir_8.jpg" alt="Paris Photo by Adrian Unger">
-    </div>
-
-    <div class=right>
-      <div class="container">
-        <img src="<?php echo $base_url ?>/images/ParisNoir_5.jpg" alt="Paris Photo by Adrian Unger">      
-        <img src="<?php echo $base_url ?>/images/ParisNoir_13.jpg" alt="Paris Photo by Adrian Unger">
-      </div>
-    </div>
-
-    <div class=right>
       <img src="<?php echo $base_url ?>/images/ParisNoir_11.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
     <div class=right>
-      <div class="container">
-        <img src="<?php echo $base_url ?>/images/ParisNoir_1.jpg" alt="Paris Photo by Adrian Unger">
-        <img src="<?php echo $base_url ?>/images/ParisNoir_2.jpg" alt="Paris Photo by Adrian Unger">
-      </div>
+      <img src="<?php echo $base_url ?>/images/ParisNoir_1.jpg" alt="Paris Photo by Adrian Unger">
+    </div>
+
+    <div>
+      <img src="<?php echo $base_url ?>/images/ParisNoir_2.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
     <div class=right>
@@ -61,14 +63,15 @@
       <img src="<?php echo $base_url ?>/images/ParisNoir_6.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
-    <div class=right>
+    <div class=center>
       <img src="<?php echo $base_url ?>/images/ParisNoir_10.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
-    <div class=center>
+    <div>
       <img src="<?php echo $base_url ?>/images/ParisNoir_14.jpg" alt="Paris Photo by Adrian Unger">      
     </div>
-    <div class=>
+
+    <div>
       <img src="<?php echo $base_url ?>/images/ParisNoir_12.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 

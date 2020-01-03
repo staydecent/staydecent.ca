@@ -10,9 +10,9 @@
 ?>
 
 <div class='aside wide'>
-  <nav>
-    <a href="<?php echo SITE_URL ?>photography" class=back>&larr;</a>    
-  </nav>
+  <a href="<?php echo SITE_URL ?>" class=back>
+    <h1 class=wordmark>Staydecent</h1>
+  </a>
 
   <div class="title">
     <h1>Paris Couleur</h1>
@@ -28,10 +28,11 @@
   <div class="content spaced">
 
     <div>
-      <div class="container">
-        <img src="<?php echo $base_url ?>/images/ParisCouleur_8.jpg" alt="Paris Photo by Adrian Unger">
-        <img src="<?php echo $base_url ?>/images/ParisCouleur_5.jpg" alt="Paris Photo by Adrian Unger">
-      </div>
+      <img src="<?php echo $base_url ?>/images/ParisCouleur_8.jpg" alt="Paris Photo by Adrian Unger">
+    </div>
+
+    <div>
+      <img src="<?php echo $base_url ?>/images/ParisCouleur_5.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
     <div class=center>
@@ -42,22 +43,23 @@
       <img src="<?php echo $base_url ?>/images/ParisCouleur_10.jpg" alt="Paris Photo by Adrian Unger">      
     </div>
 
-    <div class=center>
+    <div>
       <img src="<?php echo $base_url ?>/images/ParisCouleur_11.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
     <div>
-      <div class="container">
-        <img src="<?php echo $base_url ?>/images/ParisCouleur_1.jpg" alt="Paris Photo by Adrian Unger">
-        <img src="<?php echo $base_url ?>/images/ParisCouleur_2.jpg" alt="Paris Photo by Adrian Unger">
-      </div>
+      <img src="<?php echo $base_url ?>/images/ParisCouleur_1.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
     <div class=center>
+      <img src="<?php echo $base_url ?>/images/ParisCouleur_2.jpg" alt="Paris Photo by Adrian Unger">
+    </div>
+
+    <div>
       <img src="<?php echo $base_url ?>/images/ParisCouleur_9.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
-    <div class=center>
+    <div>
       <img src="<?php echo $base_url ?>/images/ParisCouleur_4.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
