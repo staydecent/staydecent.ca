@@ -46,15 +46,13 @@ p.bigger {
 
 .aside {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 2vh 6vh;
-  max-width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1440px;
   margin: 2vh;
 }
 
 .wordmark {
   display: block;
-  flex-basis: 40%;
   text-decoration: underline;
   font-size: 3em;
   font-weight: 400;
@@ -124,6 +122,38 @@ nav > a {
 
 .content .text {
   padding: 10vh;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 980px) {
+  .aside {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .wordmark {
+    min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .wordmark {
+    grid-column: span 3;
+    min-width: inherit;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 10px;
+  }
+  .aside,
+  .content {
+    display: block;
+  }
 }
 
 /* Page specific */
@@ -248,39 +278,4 @@ nav > a {
   border-left: 3px solid #C04E1C;
   color: #C04E1C;
   padding: 1vh;
-}
-
-#about {
-  background-color: #21207e;
-}
-#about .container {
-  justify-content: flex-start;
-}
-#about h1,
-#about .body p,
-#about a {
-  color: #e5c4bb;
-}
-
-#now {
-  background-color: #e5c4bb;
-}
-#now .container {
-  justify-content: flex-start;
-}
-
-#now h1,
-#now p,
-#now a,
-#now li {
-  color: #21207e;
-}
-#now ul {
-  padding: 0;
-  margin: 2em 0;
-}
-#now li {
-  font-size: 1.5em;
-  font-weight: 400;
-  margin-bottom: 1em;
 }
