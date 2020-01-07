@@ -25,27 +25,31 @@
   <div class="content spaced">
 
     <div>
-      <img src="<?php echo $base_url ?>/images/bnw_1.jpg" alt="Black and White Photo by Adrian Unger">        
+      <img src="<?php echo $base_url ?>/images/bnw_10.jpg" alt="Black and White Photo by Adrian Unger">        
     </div>
 
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/bnw_2.jpg" alt="Black and White Photo by Adrian Unger">      
+      <img src="<?php echo $base_url ?>/images/bnw_11.jpg" alt="Black and White Photo by Adrian Unger">      
+    </div>
+
+    <div class=center>
+      <img src="<?php echo $base_url ?>/images/bnw_2.jpg" alt="Black and White Photo by Adrian Unger">       
     </div>
 
     <div>
-        <img src="<?php echo $base_url ?>/images/bnw_3.jpg" alt="Black and White Photo by Adrian Unger">      
+        <img src="<?php echo $base_url ?>/images/bnw_12.jpg" alt="Black and White Photo by Adrian Unger">      
     </div>
 
     <div>
-        <img src="<?php echo $base_url ?>/images/bnw_4.jpg" alt="Black and White Photo by Adrian Unger">      
+        <img src="<?php echo $base_url ?>/images/bnw_15.jpg" alt="Black and White Photo by Adrian Unger">      
     </div>
 
     <div>
-        <img src="<?php echo $base_url ?>/images/bnw_5.jpg" alt="Black and White Photo by Adrian Unger">      
+        <img src="<?php echo $base_url ?>/images/bnw_9.jpg" alt="Black and White Photo by Adrian Unger">      
     </div>
 
     <div>
-        <img src="<?php echo $base_url ?>/images/bnw_6.jpg" alt="Black and White Photo by Adrian Unger">      
+        <img src="<?php echo $base_url ?>/images/bnw_14.jpg" alt="Black and White Photo by Adrian Unger">      
     </div>
 
     <div class="photo">
@@ -53,16 +57,29 @@
     </div>
 
     <div class="photo">
-      <img src="<?php echo $base_url ?>/images/bnw_10.jpg" alt="Black and White Photo by Adrian Unger">
+      <img src="<?php echo $base_url ?>/images/bnw_8.jpg" alt="Black and White Photo by Adrian Unger">
     </div>
 
     <div>
-      <img src="<?php echo $base_url ?>/images/bnw_11.jpg" alt="Black and White Photo by Adrian Unger">      
+      <img src="<?php echo $base_url ?>/images/bnw_6.jpg" alt="Black and White Photo by Adrian Unger">      
     </div>
 
     <div class=right>
-      <img src="<?php echo $base_url ?>/images/bnw_12.jpg" alt="Black and White Photo by Adrian Unger">      
+      <img src="<?php echo $base_url ?>/images/bnw_1.jpg" alt="Black and White Photo by Adrian Unger">      
     </div>
+
+    <div>
+      <img src="<?php echo $base_url ?>/images/bnw_4.jpg" alt="Black and White Photo by Adrian Unger">      
+    </div>
+
+    <div>
+      <img src="<?php echo $base_url ?>/images/bnw_5.jpg" alt="Black and White Photo by Adrian Unger">      
+    </div>
+
+    <div class=center>
+      <img src="<?php echo $base_url ?>/images/bnw_3.jpg" alt="Black and White Photo by Adrian Unger">      
+    </div>
+
 
   </div>
 </div>
