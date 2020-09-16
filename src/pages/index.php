@@ -2,7 +2,6 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
 <div class=aside>
-  <h1 class=wordmark>Staydecent</h1>
   <?php include $config['dirs']['layout'].'/nav.php' ?>
 </div>
 
@@ -44,7 +43,7 @@
       </a>
     </div>
 
-    <div>
+    <div class='center extra-padding'>
       <a href="<?php echo SITE_URL ?>photography/maui" data-color='FBCBC1'>
         <img src='<?php echo SITE_URL ?>photography/maui/images/maui_5.jpg' />
         <h5>Maui</h5>

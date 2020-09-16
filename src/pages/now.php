@@ -2,7 +2,6 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
 <div class=aside>
-  <h1 class=wordmark>Staydecent</h1>
   <?php include $config['dirs']['layout'].'/nav.php' ?>
 </div>
 

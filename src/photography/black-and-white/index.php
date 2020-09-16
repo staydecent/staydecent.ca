@@ -10,12 +10,6 @@
 ?>
 
 <div class='aside wide'>
-  <a href="<?php echo SITE_URL ?>" class=back>
-    <h1 class=wordmark>Staydecent</h1>
-  </a>
-
-  <div>&nbsp;</div>
-
   <div class=title>
     <h1>Black &amp; White</h1>
   </div>

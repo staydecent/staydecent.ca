@@ -10,10 +10,6 @@
 ?>
 
 <div class='aside wide'>
-  <a href="<?php echo SITE_URL ?>" class=back>
-    <h1 class=wordmark>Staydecent</h1>
-  </a>
-
   <div class="title">
     <h1>Forest Bathing</h1>
     <h2>森林浴</h2>
