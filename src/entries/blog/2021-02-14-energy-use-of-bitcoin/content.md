@@ -45,3 +45,12 @@ Where he insinuates that a [Coindesk article](https://www.coindesk.com/microscop
 
 Why should I trust these Tweet Storms and Medium articles when they lack proper sources and do not have the reputability of a published study?
 
+### Sources
+
+- [Is Green Growth Possible](https://www.tandfonline.com/doi/abs/10.1080/13563467.2019.1598964?journalCode=cnpe20)
+- [Bitcoin’s energy consumption is underestimated: A market dynamics approach](https://www.sciencedirect.com/science/article/abs/pii/S2214629620302966?via%3Dihub)
+- [Cambridge Bitcoin Electricity Consumption Index](https://cbeci.org/)
+- [Renewable Energy Will Not Solve Bitcoin’s Sustainability Problem](https://www.sciencedirect.com/science/article/pii/S254243511930087X)
+- [2017 Global Cryptocurrency Benchmarking Study](https://www.researchgate.net/publication/317059599_2017_Global_Cryptocurrency_Benchmarking_Study)
+- [The Carbon Footprint of Bitcoin](https://www.cell.com/joule/fulltext/S2542-4351(19)30255-7)
+
