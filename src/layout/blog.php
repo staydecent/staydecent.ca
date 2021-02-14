@@ -1,10 +1,7 @@
 <?php $page_id = 'blog'; ?>
 
 <?php include $config['dirs']['layout'].'/header.php' ?>
-
-<div class=aside>
-  <?php include $config['dirs']['layout'].'/nav.php' ?>
-</div>
+<?php include $config['dirs']['layout'].'/nav.php' ?>
 
 <div class=container>
   <div class=content>

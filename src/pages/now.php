@@ -1,9 +1,6 @@
 <?php $page_id = 'now'; ?>
 <?php include $config['dirs']['layout'].'/header.php' ?>
-
-<div class=aside>
   <?php include $config['dirs']['layout'].'/nav.php' ?>
-</div>
 
 <div class=container>
   <div class=content>

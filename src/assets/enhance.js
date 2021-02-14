@@ -27,19 +27,4 @@
 
   const back = document.querySelector('a.back')
   back && back.addEventListener('click', () => window.history.back())
-
-  const links = document.querySelectorAll('a[data-color]')
-  links.forEach(link => {
-    link.addEventListener('click', transition)
-  })
-
-  function transition (ev) {
-    ev.preventDefault()
-    const color = this.getAttribute('data-color') || 'e6b65a'
-    document.body.style.backgroundColor = '#' + color
-    site.classList.replace('scale-up', 'scale-down')
-    setTimeout(() => {
-      window.location = this.getAttribute('href')
-    }, 600)
-  }
 })()

@@ -1,10 +1,7 @@
 <?php $page_id = 'code'; ?>
 
 <?php include $config['dirs']['layout'].'/header.php' ?>
-
-<div class=aside>
   <?php include $config['dirs']['layout'].'/nav.php' ?>
-</div>
 
 <div class=container>
   <div class="content repeat-4">
