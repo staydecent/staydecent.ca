@@ -195,6 +195,14 @@ nav > a {
   } 
 }
 
+/* hightlighting */
+
+pre {
+  background-color: #1C1E20;
+  color: #eee;
+  padding: 0 0.5em;
+}
+
 /* Page specific */
 
 #picos {

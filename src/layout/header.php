@@ -12,9 +12,7 @@
       echo $title.' — by Adrian Unger';
 ?></title>
   <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL ?>/assets/style-v21.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
   <link rel="alternate" type="application/rss+xml" href="<?php echo SITE_URL ?>/feed" />
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 </head>
 <body id="<?php echo $page_id; ?>" class="page">
 <div id="site" class='scale-up'>
