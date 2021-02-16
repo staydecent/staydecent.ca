@@ -145,6 +145,7 @@ nav > a {
 .content img {
   max-width: 100%;
   max-height: calc(100vh - 4em);
+  content-visibility: auto;
 }
 
 .content .extra-padding img {
