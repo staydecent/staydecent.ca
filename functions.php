@@ -18,7 +18,9 @@ function all_entries($desc = TRUE) {
     $cats = get_cats();
 
     foreach ($cats as $cat) {
-      $entries = $entries + get_entries($cat);
+      if ($cat !== 'drafts') {
+        $entries = $entries + get_entries($cat);
+      }
     }
   }
 
