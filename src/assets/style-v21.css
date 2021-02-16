@@ -113,6 +113,14 @@ nav > a {
   grid-row-gap: 10vh;
 }
 
+.note {
+  background-color: #eee;
+  color: #444;
+  padding: 1em;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
 #photography .content {
   /* display: block; */
   align-items: center;

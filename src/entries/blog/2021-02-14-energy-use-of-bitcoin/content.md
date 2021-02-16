@@ -3,6 +3,8 @@ title: Energy Use of Bitcoin
 
 It seems proponents of BTC think that it actually has a net positive on the environment. Which is absurd to me, especially when the arguments are rather weak, and lack sources.
 
+<div class="note">Update Feb 15, 2021: Here's a much better written analysis of Bitcoin energy use: <a href="https://www.ofnumbers.com/2021/02/14/bitcoin-and-other-pow-coins-are-an-esg-nightmare/" target="_blank">Bitcoin and other PoW coins are an ESG nightmare</a></div>
+
 Perhaps, one could argue that the energy consumption of BTC is lower than what deterrents claim. But, proponents propose that BTC is actually a net positive for the environment! This misses the very large point that any energy increase is [contrary to a climate safe future](https://www.tandfonline.com/doi/abs/10.1080/13563467.2019.1598964?journalCode=cnpe20).
 
 > there is no empirical evidence that absolute decoupling from resource use can be achieved on a global scale against a background of continued economic growth, and (2) absolute decoupling from carbon emissions is highly unlikely to be achieved at a rate rapid enough to prevent global warming over 1.5°C or 2°C
