@@ -1,38 +1,25 @@
+<?php $page_id = 'colophon'; ?>
 <?php include $config['dirs']['layout'].'/header.php' ?>
+<?php include $config['dirs']['layout'].'/nav.php' ?>
 
-  <div class="page">
-    <grid columns=12 columns-s=1>
-      <column span=12>
-        <?php include $config['dirs']['layout'].'/nav.php' ?>
-      </column>
-      <column span=6-12>
-        <h1>Colophon</h1>
-      </column>
-    </grid>
+<div class=container>
+  <div class=content>
+
+    <div>
+      <div class="grid">
+        <div class="col">
+          <h1 class=pagetitle>Here's how I publish this here website.</h1>
+        </div>
+
+        <div class=col>
+          <p class="bigger">I iterate on the design right in the browser, with as little CSS as I can manage. I also avoid any front-end tooling and JavaScript is not required.</p>
+          <p class="bigger">It's really just a mash of Markdown and HTML files, hobbled together with my <a href="https://github.com/staydecent/staydecent.ca">ridiculous build script</a>.</p>
+          <p>And, the site is hosted on <a href="https://netlify.com">Netlify</a>, without any ads or tracking. Really, I have no idea if anyone will ever see this&hellip;</p>
+        </div>
+      </div>
+    </div>
+
   </div>
-
-<grid columns=12 class="page">
-  <column span=6>
-    <ul class="grossly-massive">
-      <li>Designed in-browser</li>
-      <li>Type set in Verdana</li>
-      <li><a target=_blank href="https://rsms.me/raster/">Raster</a> for the grid</li>
-      <li>Written with <a target="_blank" href="http://www.sublimetext.com/3">Sublime Text 3</a></li>
-      <li>Powered by my <a target="_blank" href="https://github.com/staydecent/staydecent.ca">ridiculous build script</a></li>
-      <li>Hosted by <a target="_blank" href="http://surge.sh/">Surge</a></li>
-    </ul>
-  </column>
-  
-  <column span=6>
-    <p><a href="http://github.com/staydecent/staydecent.ca" target="_blank"><i class="icon-bookmark"></i>View source on Github</a></p>
-  </column>
-</grid>
-
-<?php 
-$next = array();
-
-$next['url'] = 'work';
-$next['text'] = 'Selected work';
-?>
+</div>
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>
