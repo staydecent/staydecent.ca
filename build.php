@@ -159,11 +159,17 @@ while ($staticIterator->valid())
         && substr($staticIterator->getBasename(), '0', 1) !== '.') 
     {
         $new_file = $config['dirs']['build'] . DS . str_replace(SOURCE, '', $staticIterator->getPathname());
+        $ext = $staticIterator->getExtension();
 
-        if (strstr($staticIterator->getBasename(), '.php')) 
+        if ($ext === 'php') 
         {
             $out = render($staticIterator->getPathname());
             Parse::new_file(str_replace('index.php', '', $new_file), $out);
+        }
+        elseif ($ext === 'jpeg' || $ext === 'jpg')
+        {
+            Parse::copy_file($staticIterator->getPathname(), $new_file, $staticIterator->getBasename());
+            dither($new_file);
         }
         else 
         {
