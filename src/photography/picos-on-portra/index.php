@@ -10,10 +10,6 @@
 ?>
 
 <div class='aside wide'>
-  <a href="<?php echo SITE_URL ?>" class=back>
-    <h1 class=wordmark>Staydecent</h1>
-  </a>
-
   <div class="title">
     <h1>Picos on Portra</h1>
   </div>

@@ -1,45 +1,29 @@
 (function () {
-  const site = document.getElementById('site')
-  const imgs = document.querySelectorAll('img')
-
-  window.onpopstate = function (ev) {
-    console.log('onpopstate')
+  if (document.readyState !== "loading") {
+    init();
+  } else {
+    document.addEventListener("DOMContentLoaded", init);
   }
 
-  window.onbeforeunload = function (ev) {
-    console.log('onbeforeunload')
+  function init() {
+    lazyload();
   }
 
-  const isInViewport = function (element) {
-    const rect = element.getBoundingClientRect()
-    const html = document.documentElement
-    if ((rect.top + 100) <= (window.innerHeight || html.clientHeight)) {
-      element.classList.add('fadein')
-      element.classList.remove('notinview')
-    }
+  function lazyload() {
+    const imgs = document.querySelectorAll('img');
+    const isInViewport = function (element) {
+      const rect = element.getBoundingClientRect();
+      const html = document.documentElement;
+      if ((rect.top + 100) <= (window.innerHeight || html.clientHeight)) {
+        element.classList.add('fadein');
+        element.classList.remove('notinview');
+      }
+    };
+    imgs.forEach(img => img.classList.add('notinview'));
+    document.addEventListener('scroll', () => {
+      if (!imgs.length) return;
+      imgs.forEach(isInViewport);
+    }, true);
+    Array.from(imgs).slice(0, 2).forEach(isInViewport);
   }
-  imgs.forEach(img => img.classList.add('notinview'))
-  document.addEventListener('scroll', () => {
-    if (!imgs.length) return
-    imgs.forEach(isInViewport)
-  }, true)
-  Array.from(imgs).slice(0, 2).forEach(isInViewport)
-
-  const back = document.querySelector('a.back')
-  back && back.addEventListener('click', () => window.history.back())
-
-  const links = document.querySelectorAll('a[data-color]')
-  links.forEach(link => {
-    link.addEventListener('click', transition)
-  })
-
-  function transition (ev) {
-    ev.preventDefault()
-    const color = this.getAttribute('data-color') || 'e6b65a'
-    document.body.style.backgroundColor = '#' + color
-    site.classList.replace('scale-up', 'scale-down')
-    setTimeout(() => {
-      window.location = this.getAttribute('href')
-    }, 600)
-  }
-})()
+})();

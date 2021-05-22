@@ -1,5 +1,22 @@
 <?php
 
+ini_set("highlight.comment", "#808080");
+ini_set("highlight.default", "#a9b7c6");
+ini_set("highlight.html", "#EAD8E2");
+ini_set("highlight.keyword", "#D6A856");
+ini_set("highlight.string", "#467B43");
+
+
+function highlighter($text)
+{
+    $text = trim($text);
+    $text = highlight_string("<?php " . $text, true);
+    $text = str_replace("&lt;?php&nbsp;", "", $text);
+    $text = trim($text);
+    return $text;
+}
+
+
 #
 #
 # Parsedown
@@ -446,8 +463,10 @@ class Parsedown
     protected function blockFencedCodeComplete($Block)
     {
         $text = $Block['element']['text']['text'];
+        unset($Block['element']['text']['text']);
 
-        $text = htmlspecialchars($text, ENT_NOQUOTES, 'UTF-8');
+        /* $text = htmlspecialchars($text, ENT_NOQUOTES, 'UTF-8'); */
+        $text = highlighter($text);
 
         $Block['element']['text']['text'] = $text;
 

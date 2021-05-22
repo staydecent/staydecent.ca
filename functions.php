@@ -18,7 +18,9 @@ function all_entries($desc = TRUE) {
     $cats = get_cats();
 
     foreach ($cats as $cat) {
-      $entries = $entries + get_entries($cat);
+      if ($cat !== 'drafts') {
+        $entries = $entries + get_entries($cat);
+      }
     }
   }
 
@@ -149,7 +151,7 @@ function plural($num)  {
 /**
  * Returns relative(more human) date string.
  */
-function get_relative_date($date)  {
+function get_relative_date($date) {
   $diff = time() - strtotime($date);
   if ($diff < 60)
     return $diff." second".plural($diff)." ago";
@@ -376,6 +378,67 @@ class Parse {
   public static function getBody($content) {
     return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', Parsedown::instance()->text($content));
   }
+}
+
+
+/**
+ * Image optimizations.
+ */
+
+function max_sizes($width, $height) {
+  $maxwidth = 1600;
+  $maxheight = 1600;
+  $ratio = $width / $height;
+
+  if ($maxwidth / $maxheight > $ratio) {
+    $maxwidth = $maxheight * $ratio;
+  } else {
+    $maxheight = $maxwidth / $ratio;
+  }
+
+  return array($maxwidth, $maxheight);
+}
+
+function dither($imagepath) {
+  if (!strstr($imagepath, 'photography')) {
+    return 'bad file path';
+  }
+
+  $finfo = pathinfo($imagepath);
+  $filename = str_replace('_dithered', '', $finfo['filename']);
+  $newpath = $finfo['dirname'] . DS . $filename . '_dithered.' . $finfo['extension'];
+  
+  if (file_exists($newpath)) {
+    return 'already dithered';
+  }
+
+  set_time_limit(0); 
+
+  // Load image resource from filepath
+  $image = imagecreatefromjpeg($imagepath);
+  imageTrueColorToPalette($image, true, 255);
+  $width = imagesx($image);
+  $height = imagesy($image);
+
+  // Get new dimensions
+  list($maxwidth, $maxheight) = max_sizes($width, $height); 
+
+  // Create a new true color image
+  $newimage = imagecreatetruecolor($maxwidth, $maxheight);
+
+  // Dithering and resize
+  imagecopyresampled($newimage, $image, 0, 0, 0, 0, $maxwidth, $maxheight, $width, $height);
+  /* ImageCopyMerge($newimage, $image, 0, 0, 0, 0, $width, $height, 100); */
+  imagetruecolortopalette($newimage, true, 64);
+
+  // Save the image
+  imagejpeg($newimage, $newpath);
+
+  // Clean up resources
+  imagedestroy($newimage);
+  imageDestroy($image);
+
+  return $newpath;
 }
 
 /*
