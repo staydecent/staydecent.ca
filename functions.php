@@ -44,9 +44,10 @@ function get_entries($cat, $desc = TRUE) {
 
     $date = strtotime(substr($date_match[0], 0, -1));
 
-    $entries[$date]['slug']  = preg_replace($config['date_re'], '', $filename);
-    $entries[$date]['title'] = ucwords(str_replace('-', ' ', $entries[$date]['slug']));
-    $entries[$date]['url']   = SITE_URL . $cat . DS . $entries[$date]['slug'];
+    $entries[$date]['category'] = $cat;
+    $entries[$date]['slug']     = preg_replace($config['date_re'], '', $filename);
+    $entries[$date]['title']    = ucwords(str_replace('-', ' ', $entries[$date]['slug']));
+    $entries[$date]['url']      = SITE_URL . $cat . DS . $entries[$date]['slug'];
 
     $content_file = $config['dirs']['entries'].DS.$cat.DS.$filename.DS. $config['content_file'];
     $parsed = Parse::contents(file_get_contents($content_file));
