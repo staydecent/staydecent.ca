@@ -44,9 +44,13 @@ if ($argc >= 2)
     // set SITE_URL
     $site_url = (isset($argv[1])) ? $argv[1] : '';
     $site_url = (substr($site_url,-1) === '/') ? $site_url : $site_url.'/';
+    // api URL
+    $api_url = (isset($argv[2])) ? $argv[2] : '';
+    $api_url = (substr($api_url,-1) === '/') ? $api_url : $api_url.'/';
 }
 
 define('SITE_URL', $site_url);
+define('API_URL', $api_url);
 
 $config['ignore'] = array_merge($config['ignore'], array_values($config['dirs']));
 $entries = array();
@@ -58,6 +62,7 @@ $pages = array();
  * Dependencies
  * ------------------------------------------------------------------------
  */
+require 'request.php';
 require 'functions.php';
 require 'markdown.php';
 
@@ -67,41 +72,48 @@ require 'markdown.php';
  * Begin build, by iterating Entries
  * ------------------------------------------------------------------------
  */
-$entryIterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($config['dirs']['entries']));
+$page = 1;
+$per_page = 100;
+$has_next_page = true;
+$entries = array();
 
-while ($entryIterator->valid())
-{
-    if ($entry = Parse::entry($entryIterator, $config))
-    {
-        if (substr($entry['category'], -1, 1) === 's') 
-        {
-            $layout = substr($entry['category'], 0, -1);
-        }
-        else 
-        {
-            $layout = $entry['category'];
-        }
+while ($has_next_page) {
+  $request = new JJG\Request(API_URL.'wp-json/wp/v2/posts?per_page='.$per_page.'&page='.$page);
+  $request->execute();
+  $response = json_decode($request->getResponse());
+  $headers = parse_headers($request->getHeader());
+  
+  $total_pages = number_format($headers["X-WP-TotalPages"]);
+  $has_next_page = $total_pages > $page;
+  $page = $page + 1;
 
-        // override layout for "Link" posts
-        if (array_key_exists('link', $entry)) {
-            $layout = 'link';
-        }
+  $entries = array_merge($entries, $response);
+}
 
-        $title = $entry['title'];
+foreach ($entries as $entry) {
+  if (substr($entry['category'], -1, 1) === 's') {
+    $layout = substr($entry['category'], 0, -1);
+  } else {
+    $layout = $entry['category'];
+  }
 
-        // save entry for template data
-        $entries['all'][$entry['date']] = $entry;
-        $entries[$entry['category']][$entry['date']] = $entry;
+  // override layout for "Link" posts
+  if (array_key_exists('link', $entry)) {
+    $layout = 'link';
+  }
 
-        // save static file
-        $layout = $config['dirs']['layout'] . DS . $layout . '.php';
-        $out = render($layout);
-        $new_dir = $config['dirs']['build'] . DS . $entry['category'] . DS . $entry['slug'];
+  $title = $entry['title'];
 
-        Parse::new_file($new_dir, $out);
-    }
+  // save entry for template data
+  $entries['all'][$entry['date']] = $entry;
+  $entries[$entry['category']][$entry['date']] = $entry;
 
-    $entryIterator->next();
+  // save static file
+  $layout = $config['dirs']['layout'] . DS . $layout . '.php';
+  $out = render($layout);
+  $new_dir = $config['dirs']['build'] . DS . $entry['category'] . DS . $entry['slug'];
+
+  Parse::new_file($new_dir, $out);
 }
 
 
