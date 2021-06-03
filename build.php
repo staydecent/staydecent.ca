@@ -75,26 +75,36 @@ require 'markdown.php';
 $page = 1;
 $per_page = 100;
 $has_next_page = true;
-$entries = array();
+$all_entries = array(); // flat array from API
+$entries = array(); // nested by category slug, date
+$cat_map = array(
+  1 => 'blog',
+  12 => 'code'
+);
 
 while ($has_next_page) {
   $request = new JJG\Request(API_URL.'wp-json/wp/v2/posts?per_page='.$per_page.'&page='.$page);
   $request->execute();
-  $response = json_decode($request->getResponse());
+  $response = json_decode($request->getResponse(), true);
   $headers = parse_headers($request->getHeader());
   
   $total_pages = number_format($headers["X-WP-TotalPages"]);
   $has_next_page = $total_pages > $page;
   $page = $page + 1;
 
-  $entries = array_merge($entries, $response);
+  $all_entries = array_merge($all_entries, $response);
 }
 
-foreach ($entries as $entry) {
-  if (substr($entry['category'], -1, 1) === 's') {
-    $layout = substr($entry['category'], 0, -1);
+foreach ($all_entries as $entry) {
+  $cat = $cat_map[$entry['categories'][0]];
+  if (!isset($cat)) {
+    continue;
+  }
+
+  if (substr($cat, -1, 1) === 's') {
+    $layout = substr($cat, 0, -1);
   } else {
-    $layout = $entry['category'];
+    $layout = $cat;
   }
 
   // override layout for "Link" posts
@@ -106,12 +116,12 @@ foreach ($entries as $entry) {
 
   // save entry for template data
   $entries['all'][$entry['date']] = $entry;
-  $entries[$entry['category']][$entry['date']] = $entry;
+  $entries[$cat][$entry['date']] = $entry;
 
   // save static file
   $layout = $config['dirs']['layout'] . DS . $layout . '.php';
   $out = render($layout);
-  $new_dir = $config['dirs']['build'] . DS . $entry['category'] . DS . $entry['slug'];
+  $new_dir = $config['dirs']['build'] . DS . $cat . DS . $entry['slug'];
 
   Parse::new_file($new_dir, $out);
 }
