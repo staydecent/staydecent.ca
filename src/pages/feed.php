@@ -17,7 +17,7 @@
       <link><?php echo $entry['url']; ?></link>
       <guid><?php echo $entry['url']; ?></guid>
       <description>
-      <?php echo htmlspecialchars($entry['body'], ENT_QUOTES) ?>
+      <?php echo htmlspecialchars($entry['content']['rendered'], ENT_QUOTES) ?>
       </description>
     </item>
     <?php endforeach; ?>

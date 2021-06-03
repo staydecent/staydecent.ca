@@ -91,6 +91,10 @@ function next_entry($entry) {
   return FALSE;
 }
 
+function entry_href($entry) {
+  echo SITE_URL . $entry['cat'] . '/' . $entry['slug'];
+}
+
 function get_cats() {
   global $config;
 

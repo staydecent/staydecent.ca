@@ -40,7 +40,7 @@
       <wp:post_date_gmt><?php echo gmdate('Y-m-d H:i:s', $date); ?></wp:post_date>
       <category domain="category" nicename="<?php echo $entry['category'] ?>"><![CDATA[<?php echo $entry['category'] ?>]]></category>
       <description></description>
-      <content:encoded><![CDATA[<?php echo $entry['body'] ?>]]></content:encoded>
+      <content:encoded><![CDATA[<?php echo $entry['content']['rendered'] ?>]]></content:encoded>
     </item>
     <?php endforeach; ?>
   </channel>

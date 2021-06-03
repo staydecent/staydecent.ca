@@ -1,7 +1,7 @@
 <?php $page_id = 'blog'; ?>
 
 <?php include $config['dirs']['layout'].'/header.php' ?>
-  <?php include $config['dirs']['layout'].'/nav.php' ?>
+<?php include $config['dirs']['layout'].'/nav.php' ?>
 
 <div class=container>
   <div class="content repeat-4">
@@ -18,8 +18,8 @@
         if (++$limit > 100) break;
         ?>
         <div>
-          <h3><a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h3>
-          <p><?php echo $entry['excerpt'] ?></p>
+          <h3><a href="<?php entry_href($entry); ?>"><?php echo $entry['title']['rendered'] ?></a></h3>
+          <p><?php echo $entry['excerpt']['rendered'] ?></p>
         </div>
         <?php
       }

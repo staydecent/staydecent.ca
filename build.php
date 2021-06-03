@@ -101,6 +101,8 @@ foreach ($all_entries as $entry) {
     continue;
   }
 
+  $entry['cat'] = $cat;
+
   if (substr($cat, -1, 1) === 's') {
     $layout = substr($cat, 0, -1);
   } else {
@@ -108,11 +110,11 @@ foreach ($all_entries as $entry) {
   }
 
   // override layout for "Link" posts
-  if (array_key_exists('link', $entry)) {
+  if ($entry['format'] === 'link') {
     $layout = 'link';
   }
 
-  $title = $entry['title'];
+  $title = $entry['title']['rendered'];
 
   // save entry for template data
   $entries['all'][$entry['date']] = $entry;
