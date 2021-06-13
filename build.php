@@ -62,7 +62,7 @@ $pages = array();
  * Dependencies
  * ------------------------------------------------------------------------
  */
-require 'request.php';
+require __DIR__ . '/vendor/autoload.php';
 require 'functions.php';
 require 'markdown.php';
 
@@ -83,12 +83,12 @@ $cat_map = array(
 );
 
 while ($has_next_page) {
-  $request = new JJG\Request(API_URL.'wp-json/wp/v2/posts?per_page='.$per_page.'&page='.$page);
-  $request->execute();
-  $response = json_decode($request->getResponse(), true);
-  $headers = parse_headers($request->getHeader());
+  $headers = array('Accept' => 'application/json');
+  $request = Requests::get(API_URL.'wp-json/wp/v2/posts?per_page='.$per_page.'&page='.$page, $headers);
+
+  $response = json_decode($request->body, true);
   
-  $total_pages = number_format($headers["X-WP-TotalPages"]);
+  $total_pages = number_format($request->headers["X-WP-TotalPages"]);
   $has_next_page = $total_pages > $page;
   $page = $page + 1;
 

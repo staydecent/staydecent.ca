@@ -145,18 +145,6 @@ function ignore($path, $config) {
   return FALSE;
 }
 
-function parse_headers($str) {
-  $headers_indexed_arr = explode("\r\n", $str);
-  $headers = array();
-  $status_message = array_shift($headers_indexed_arr);
-  foreach ($headers_indexed_arr as $value) {
-    if (false !== ($matches = explode(':', $value, 2))) {
-      $headers["{$matches[0]}"] = trim($matches[1]);
-    }
-  }
-  return $headers;
-}
-
 /**
  * Returns "s" unless $num is "1". Used by `relative_date`.]
  */

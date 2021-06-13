@@ -2,3 +2,5 @@
 .sass-chache
 public
 shawn.html
+/vendor/
+composer.phar
