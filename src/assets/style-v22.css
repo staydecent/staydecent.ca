@@ -1,0 +1,311 @@
+body {
+  height: 100%;
+  /* font-family: -apple-system, Helvetica Neue, Helvetica, sans-serif; */
+  /* font-family: times, serif; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  background-color: #fff;
+  color: #000;
+  margin: 0;
+  transition: background-color 1s ease-in-out;
+}
+
+a {
+  color: #000;
+}
+
+a:hover,
+nav > a.current {
+  color: #000;
+  text-decoration: underline;
+}
+
+a > h5 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+a > img + h5 {
+  display: none;
+}
+
+a.back {
+  text-decoration: none;
+}
+
+a.grey {
+  color: #ccc;
+}
+
+p, li {
+  line-height: 1.4;
+}
+
+p.big {
+  font-size: 1.5em;
+}
+
+p.bigger {
+  font-size: 2em;
+  margin: 0.7em 0;
+}
+
+.aside p,
+.aside .title h1 {
+  margin-top: 0;
+}
+
+.aside {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1440px;
+  margin: 6vh auto 2vh;
+}
+
+.aside > nav:first-child {
+  grid-column-start: 2;
+}
+
+.aside.wide {
+  padding: 12vw 16vw ;
+  display: block;
+  max-width: 680px;
+}
+
+.wordmark {
+  display: block;
+  text-decoration: underline;
+  font-size: 2em;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 4rem;
+  transform: rotate(-10deg);
+}
+
+.aside .title h1 {
+  font-size: 1.25em;
+  font-weight: 800;
+}
+
+nav {
+  padding-bottom: 1vw;
+  border-bottom: 1px solid black;
+}
+
+nav,
+footer {
+  padding: 4vw 4vw 2vw;
+}
+
+nav > a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.25em;
+  padding: 0.25em 0;
+  margin-right: 1.25em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #999;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 4vw;
+  grid-row-gap: 4vw;
+  align-items: end;
+  padding: 4vw 4vw 2vw;
+}
+
+.content.repeat-4 {
+  max-width: 1440px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.content.spaced {
+  grid-row-gap: 10vh;
+}
+
+.note {
+  background-color: #eee;
+  color: #444;
+  padding: 1em;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+#photography .content {
+  /* display: block; */
+  align-items: center;
+}
+
+.content > div {
+  align-self: center;
+  justify-self: center;
+}
+
+.content.repeat-4 > div {
+  align-self: start;
+  justify-self: flex-start;
+}
+
+.content > .col-2,
+.content > .center {
+  grid-column: span 2;
+}
+
+.content > .col-3 {
+  grid-column: span 3;
+}
+
+.content > .col-4,
+.content.repeat-4 > .center {
+  grid-column: span 4;
+}
+
+.content img {
+  max-width: 100%;
+  max-height: calc(100vh - 4em);
+  content-visibility: auto;
+}
+
+.content .extra-padding img {
+  display: block;
+  margin: 0 auto;
+  max-width: 64%;
+}
+
+.content .text {
+  padding: 10vh;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 980px) {
+  .aside {
+    padding: 8vw;
+  }
+
+  .aside,
+  .content {
+    display: block;
+  }
+
+  .content img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .wordmark {
+    min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .wordmark {
+    grid-column: span 3;
+    min-width: inherit;
+    text-align: center;
+  } 
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 10px;
+  } 
+}
+
+/* hightlighting */
+
+pre {
+  background-color: #1C1E20;
+  color: #eee;
+  padding: 0 0.5em;
+}
+
+/* Page specific */
+
+#picos {
+  background-color: #F1E0D0;
+  color: #fff;
+}
+
+#picos h2 {
+  font-size: 2.25em;
+  font-weight: 400;
+}
+
+#picos a {
+  color: #fff;
+}
+
+#noir {
+  background-color: #fff;
+}
+
+#noir h1,
+#noir .body p,
+#noir a {
+  color: black;
+}
+
+#paris {
+  background-color: #f3e7bd;
+}
+
+#paris h1,
+#paris .body p,
+#paris a {
+  color: #2f425c;
+}
+
+#waves {
+  background-color: #f9f3e1;
+}
+
+#waves h1,
+#waves p,
+#waves a {
+  color: #909A9C;
+}
+
+#black {
+  background-color: #666;
+}
+#black h1,
+#black .body p,
+#black a {
+  color: #000;
+}
+
+#maui {
+  background-color: #FBCBC1;
+}
+
+#maui h1,
+#maui .body p,
+#maui a {
+  color: black;
+}
+
+#shinrinyoku {
+  background-color: #433C06;
+}
+
+#shinrinyoku h1,
+#shinrinyoku h2,
+#shinrinyoku .body p,
+#shinrinyoku a {
+  color: #F2CB6C;
+}
+
+#shinrinyoku h2 {
+  margin: 0;
+  font-size: 4em;
+  font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
