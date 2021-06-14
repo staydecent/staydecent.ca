@@ -4,7 +4,7 @@ body {
   /* font-family: times, serif; */
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
-  background-color: #fff;
+  background-color: #f8f5f1;
   color: #000;
   margin: 0;
   transition: background-color 1s ease-in-out;
@@ -35,6 +35,28 @@ a.back {
 
 a.grey {
   color: #ccc;
+}
+
+h1, h3 {
+  margin-top: 0;
+}
+
+.caption {
+  font-size: 1em;
+  font-weight: 400;
+  font-family: times;
+  font-style: italic;
+  transform: scaleY(1.19);
+}
+
+.caption > a {
+  text-decoration: none;
+}
+
+.meta {
+  font-family: times;
+  font-style: italic;
+  transform: scaleY(1.19);
 }
 
 p, li {
@@ -89,7 +111,7 @@ p.bigger {
 
 nav {
   padding-bottom: 1vw;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #000;
 }
 
 nav,
@@ -144,7 +166,7 @@ footer a {
 
 .content > div {
   align-self: center;
-  justify-self: center;
+  justify-self: flex-start;
 }
 
 .content.repeat-4 > div {
@@ -155,6 +177,7 @@ footer a {
 .content > .col-2,
 .content > .center {
   grid-column: span 2;
+  justify-self: center;
 }
 
 .content > .col-3 {
