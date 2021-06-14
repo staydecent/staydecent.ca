@@ -7,15 +7,14 @@
   <div class=content>
 
     <div>
-      <div class="grid">
-        <div>
-          <h1 class="pagetitle"><?php echo $entry['title']['rendered'] ?></h1>
-          <div class="meta"><p>Posted on <?php echo date("F j, Y", strtotime($entry['date'])) ?></p></div>
-        </div>
-        <div class=span-2>
-          <?php echo $entry['content']['rendered'] ?>
-          <?php include $config['dirs']['layout'].'/post-navigation-part.php'; ?>
-        </div>
+      <div>
+        <h1 class="pagetitle"><?php echo $entry['title']['rendered'] ?></h1>
+        <div class="meta"><p>Posted on <?php echo date("F j, Y", strtotime($entry['date'])) ?></p></div>
+      </div>
+
+      <div class=blog>
+        <?php echo $entry['content']['rendered'] ?>
+        <?php include $config['dirs']['layout'].'/post-navigation-part.php'; ?>
       </div>
     </div>
 

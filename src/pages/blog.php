@@ -7,7 +7,7 @@
   <div class="content repeat-4">
 
     <div class=col-2>
-      <h1 class="pagetitle">Infrequent thoughts, links and creations.</h1>
+      <h1 class="pagetitle">Infrequent thoughts, &amp; half-formed opinions.</h1>
     </div>
 
     <?php
@@ -18,15 +18,8 @@
         if (++$limit > 100) break;
         ?>
         <div>
-          <?php if (!empty($entry['jetpack_featured_media_url'])): ?>
-            <a href="<?php entry_href($entry); ?>">
-              <img src="<?php echo $entry['jetpack_featured_media_url'] ?>" alt="<?php echo $entry['title']['rendered'] ?>">
-            </a>
-            <h3 class=caption><a href="<?php entry_href($entry); ?>"><?php echo $entry['title']['rendered'] ?></a></h3>
-          <?php else: ?>
-            <h3><a href="<?php entry_href($entry); ?>"><?php echo $entry['title']['rendered'] ?></a></h3>
-            <p><?php echo $entry['excerpt']['rendered'] ?></p>
-          <?php endif; ?>
+          <h3><a href="<?php entry_href($entry); ?>"><?php echo $entry['title']['rendered'] ?></a></h3>
+          <p><?php echo $entry['excerpt']['rendered'] ?></p>
         </div>
         <?php
       }

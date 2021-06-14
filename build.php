@@ -79,7 +79,8 @@ $all_entries = array(); // flat array from API
 $entries = array(); // nested by category slug, date
 $cat_map = array(
   1 => 'blog',
-  12 => 'code'
+  12 => 'code',
+  138 => 'daily'
 );
 
 while ($has_next_page) {
@@ -98,6 +99,7 @@ while ($has_next_page) {
 foreach ($all_entries as $entry) {
   $cat = $cat_map[$entry['categories'][0]];
   if (!isset($cat)) {
+    var_dump("MISSING CAT: " . $entry['categories'][0]);
     continue;
   }
 
