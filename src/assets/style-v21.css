@@ -4,7 +4,7 @@ body {
   /* font-family: times, serif; */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
   font-size: 15px;
-  background-color: rgba(230,230,230,.6);
+  background-color: #faf6f0;
   color: #000;
   margin: 0;
   transition: background-color 1s ease-in-out;
@@ -140,12 +140,28 @@ footer a {
   grid-row-gap: 10vh;
 }
 
-.note {
-  background-color: #eee;
-  color: #444;
+pre, .note {
+  background-color: #fff;
+  color: #222;
   padding: 1em;
   font-size: 0.9em;
   line-height: 1.4;
+  border: 2px solid black;
+  box-shadow: 5px 5px 0px #555;
+}
+
+pre {
+  background-color: #163916;
+  color: #fff;
+  padding: 0 0.5em;
+}
+
+p > code {
+  font-size: 0.9em;
+  background-color: #e2e3e2;
+  color: #163916;
+  padding: 0 0.25em;
+  border-radius: 3px;
 }
 
 #photography .content {
@@ -228,23 +244,15 @@ footer a {
 
 @media screen and (max-width: 480px) {
   body {
-    font-size: 10px;
+    font-size: 12px;
   } 
-}
-
-/* hightlighting */
-
-pre {
-  background-color: #1C1E20;
-  color: #eee;
-  padding: 0 0.5em;
 }
 
 /* Page specific */
 
 #picos {
   background-color: #F1E0D0;
-  color: #fff;
+  color: #57491e;
 }
 
 #picos h2 {
@@ -253,7 +261,7 @@ pre {
 }
 
 #picos a {
-  color: #fff;
+  color: #57491e;
 }
 
 #noir {
