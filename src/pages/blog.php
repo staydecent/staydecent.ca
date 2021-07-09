@@ -18,7 +18,7 @@
         if (++$limit > 100) break;
         ?>
         <div>
-          <h3><a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h3>
+          <h2><a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h2>
           <p><?php echo $entry['excerpt'] ?></p>
         </div>
         <?php

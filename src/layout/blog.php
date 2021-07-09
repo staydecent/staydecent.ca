@@ -10,7 +10,7 @@
       <div class="grid">
         <div>
           <h1 class=pagetitle><?php echo $entry['title'] ?></h1>
-          <div class="meta"><p>Posted on <br /><?php echo date("F j, Y", $entry['date']) ?></p></div>
+          <div class="meta"><p>Posted on <?php echo date("F j, Y", $entry['date']) ?></p></div>
         </div>
         <div class=span-2>
           <?php echo $entry['body'] ?>

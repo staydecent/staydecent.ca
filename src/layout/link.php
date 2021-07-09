@@ -10,7 +10,7 @@
       <div class="grid">
         <div> 
           <h1 class="pagetitle"><?php echo $entry['title'] ?></h1>
-          <div class="meta"><p>Posted on <br /><?php echo date("F j, Y", $entry['date']) ?></p></div>
+          <div class="meta"><p>Posted on <?php echo date("F j, Y", $entry['date']) ?></p></div>
         </div>
         <div class=span-2>
           <p class="big"><span class="mark">&rarr;</span> <a href="<?php echo $entry['link'] ?>" target="_blank"><?php echo (array_key_exists('link_title', $entry)) ? $entry['link_title'] : $entry['link'] ?></a></p>
