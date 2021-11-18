@@ -33,17 +33,36 @@ At this time, this is the only study I could find that specifically makes the cl
 
 ## Are there more recent studies that look at transmission?
 
-Yep! A [study recently published in The Lancet](https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(21)00648-4/fulltext) concludes "fully vaccinated individuals with breakthrough infections have peak viral load similar to unvaccinated cases and can efficiently transmit infection in household settings, including to fully vaccinated contacts." More than that, a prominent pro-vaccine figurehead, Bill Gates [recently said](https://www.youtube.com/watch?v=CZplF4qdwII&t=1610s) "we didn't have vaccines that block transmission.." I don't know why he uses the past-tense, but intereresting nonetheless. 
+Yep! A [study recently published in The Lancet](https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(21)00648-4/fulltext) concludes "fully vaccinated individuals with breakthrough infections have peak viral load similar to unvaccinated cases and can efficiently transmit infection in household settings, including to fully vaccinated contacts." More than that, a prominent pro-vaccine figurehead, Bill Gates [recently said](https://www.youtube.com/watch?v=CZplF4qdwII&t=1610s) "we didn't have vaccines that block transmission.." I don't know why he uses the past-tense, but intereresting nonetheless.
+
+[Update Nov 18, 2021] I found another recent study on transmission by scouring
+Google Scholar, [Effect of Vaccination on Transmission of
+SARS-CoV-2](https://www.nejm.org/doi/full/10.1056/nejmc2106757). The aim of the
+study was to look at the effect of vaccination of health care workers and the
+risk of COVID-19 among their household members. Outcomes were determined by "any confirmed case of Covid-19 that occurred between December 8,
+2020, and March 3, 2021". So, 85 days, which is not a very long period. The
+[supplementary
+appendix](https://www.nejm.org/doi/suppl/10.1056/NEJMc2106757/suppl_file/nejmc2106757_appendix.pdf)
+indicates the health care cohort only includes 18-65 year olds, while the
+household cohort includes all ages, which they acknowledge: "We  are 
+therefore  unable  to  evaluate  the  impact  on  vaccinating  elderly  or
+vulnerable  individuals." Anyway, the study concludes (emphasis mine):
+
+> Given that vaccination reduces asymptomatic infection with SARS-CoV-2, it is plausible that vaccination reduces transmission; however, data from clinical trials and observational studies are lacking. We provide empirical evidence _suggesting_ that vaccination _may_ reduce transmission by showing that vaccination of health care workers is associated with a decrease in documented cases of Covid-19 among members of their households. This finding is reassuring for health care workers and their families.
+
+So, in a period of 85 days, or less than 3 months, there _may_ be a reduction of
+transmission in the vaccinated. One, this isn't very compelling evidence. Two,
+this was published on Oct 28, 2021, meaning it could not have informed public
+health policy.
 
 ## [But, what does it all mean Basil?!](https://www.youtube.com/watch?v=QRt2_OLY3Ho)
 
 Well, it seems like transmission was never prevented nor significantly reduced. Which, to me, means we can leave out transmission as a characteristic of determining if the vaccines make sense or not for different people. Further, since these mRNA vaccines don't prevent transmission, the vulnerable and immunocomprimised are not protected by those who opt to get the vaccine. Which is why public health officials are mandating mask wearing, as we try to actually reduce transmission.
 
-But, why mandate the vaccine? Or, more specifically, why do our Provincial and Federal mandates only push the vaccine rather than the more sensical [covid passports](https://www.thelocal.dk/20210528/denmark-launches-new-corona-passport-heres-what-you-need-to-know-about-coronapas-app/) of European countries? Since transmission is not reduced by the vaccine, should we not be opting for negative test results? Especially rapid-antigen tests? As well as counting [natural immunity](https://brownstone.org/articles/natural-immunity-and-covid-19-twenty-nine-scientific-studies-to-share-with-employers-health-officials-and-politicians/)?
+But, why mandate the vaccine? Or, more specifically, why do our Provincial and Federal mandates only push the vaccine rather than the more sensical [covid passports](https://www.thelocal.dk/20210528/denmark-launches-new-corona-passport-heres-what-you-need-to-know-about-coronapas-app/) of European countries? Since transmission is not reduced by the vaccine, should we not be opting for negative test results? Especially rapid-antigen tests? As well as counting [natural immunity](https://brownstone.org/articles/natural-immunity-and-covid-19-twenty-nine-scientific-studies-to-share-with-employers-health-officials-and-politicians/)? It seems pretty clear, that relying solely on [vaccination status](https://globalnews.ca/news/8335126/fully-vaccinated-hockey-league-covid-outbreak/) is [not enough](https://www.cbc.ca/sports/hockey/nhl/ottawa-senators-games-postponed-covid-19-outbreak-1.6249618) to [stop transmission](https://thehill.com/policy/transportation/569185-cruise-passenger-dies-of-covid-19-amid-outbreak-on-ship).
 
 This is very confusing, especially at a time when social media sites are banning
-accounts that spread misinformation, such as [YouTube which removes videos](https://blog.youtube/news-and-events/managing-harmful-vaccine-content-youtube/) with "claims that vaccines do not reduce transmission"...Why?! I could quote the Pfizer document to the FDA and be in violation of "misinformation guidelines"?
+accounts that spread misinformation, such as [YouTube which removes videos](https://blog.youtube/news-and-events/managing-harmful-vaccine-content-youtube/) that include "claims that vaccines do not reduce transmission"...Why?! I could quote the Pfizer document to the FDA and be in violation of "misinformation guidelines"?
 
-Where did people even get the idea that these treatments would reduce transmission when there hasn't been data to back it up? Moreover, I don't understand why our governments are limiting the tools we could use to mitigate the effects of this disease, especially to those who are most vulnerable. Am I missing something?
-
+Where did people even get the idea that these treatments would reduce transmission when there hasn't been data to back it up? Moreover, I don't understand why our governments are limiting the tools we could use to mitigate the effects of this disease, especially to those who are most vulnerable. How does firing health care workers who remain unvaccinated make any sense, if the vaccine doesn't reduce transmission? Am I missing something?
 
