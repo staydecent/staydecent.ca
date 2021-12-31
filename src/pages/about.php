@@ -8,7 +8,7 @@
     <div>
       <div class="grid">
         <div class="col">
-          <h1 class=pagetitle>Hi there, I’m Adrian Unger, a software engineer who prefers to be outdoors.</h1>
+          <h1 class=pagetitle>Hi there, I’m Adrian Unger, a <a href="https://www.linkedin.com/in/adrian-u" target="_blank">product developer</a> who prefers to be outdoors.</h1>
         </div>
 
         <div class=col>
