@@ -267,7 +267,7 @@ class Parse {
       if (!$line)
         continue;
 
-      if ($line{0} === ' ' || $line{0} === "\t") {
+      if ($line[0] === ' ' || $line[0] === "\t") {
         # line continuation
         if ($k !== null) {
           // var_dump($k);die();   
@@ -395,7 +395,7 @@ function max_sizes($width, $height) {
     $maxheight = $maxwidth / $ratio;
   }
 
-  return array($maxwidth, $maxheight);
+  return array(round($maxwidth), round($maxheight));
 }
 
 function dither($imagepath) {
@@ -449,16 +449,16 @@ function convertNumber($num) {
 
   $output = "";
 
-  if ($num{0} == "-") {
+  if ($num[0] == "-") {
     $output = "negative ";
     $num = ltrim($num, "-");
   }
-  else if ($num{0} == "+") {
+  else if ($num[0] == "+") {
     $output = "positive ";
     $num = ltrim($num, "+");
   }
 
-  if ($num{0} == "0") {
+  if ($num[0] == "0") {
     $output .= "zero";
   }
   else {
@@ -468,12 +468,12 @@ function convertNumber($num) {
 
     $groups2 = array();
     foreach ($groups as $g) 
-      $groups2[] = convertThreeDigit($g{0}, $g{1}, $g{2});
+      $groups2[] = convertThreeDigit($g[0], $g[1], $g[2]);
 
     for ($z = 0; $z < count($groups2); $z++) {
       if ($groups2[$z] != "") {
         $output .= $groups2[$z].convertGroup(11 - $z).($z < 11 && !array_search('', array_slice($groups2, $z + 1, -1))
-          && $groups2[11] != '' && $groups[11]{0} == '0' ? " and " : ", ");
+          && $groups2[11] != '' && $groups[11][0] == '0' ? " and " : ", ");
       }
     }
 
@@ -482,7 +482,7 @@ function convertNumber($num) {
 
   if ($dec > 0) {
     $output .= " point";
-    for($i = 0; $i < strlen($dec); $i++) $output .= " ".convertDigit($dec{$i});
+    for($i = 0; $i < strlen($dec); $i++) $output .= " ".convertDigit($dec[$i]);
   }
 
   return $output;

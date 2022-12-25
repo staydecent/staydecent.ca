@@ -2,3 +2,6 @@
 .sass-chache
 public
 src/photography/**/images/**
+
+# Local Netlify folder
+.netlify

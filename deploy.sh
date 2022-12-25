@@ -1,6 +1,5 @@
 #!/bin/bash
 rm -rf public
-php build.php public https://$1
+php build.php public https://staydecent.ca &&
 
-dest="$2@ssh.phx.nearlyfreespeech.net:/home/public"
-rsync -avz --delete public/ $dest
+netlify deploy --dir=public --prod
