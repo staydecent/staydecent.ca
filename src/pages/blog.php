@@ -7,7 +7,7 @@
   <div class="content repeat-4">
 
     <div class=col-2>
-      <h1 class="pagetitle">Infrequent thoughts, links and creations.</h1>
+      <h1 class="pagetitle">Infrequent and transient thoughts.</h1>
     </div>
 
     <?php

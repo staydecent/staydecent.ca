@@ -12,10 +12,10 @@
         </div>
 
         <div class=col>
-          <p class="bigger">Leading the digital product effort at <a href="https://mudwtr.com">MUD\WTR</a>.</p>
-          <p class="bigger">Slowly learning the ins and outs of bike maintenance.</p>
-          <p class=big>Focusing on personal growth and organizing my thoughts in writing.</p>
-          <p>This page was inspired by&nbsp;<a href="https://sivers.org/now">Derek Sivers</a>. <em>Updated: 31st December, 2021</em></p>
+          <p class="bigger">Leading Engineering at <a href="https://mudwtr.com">MUD\WTR</a>.</p>
+          <p class="bigger">Continuously adjusting how I perceive the world, especially in regards to how I react.</p>
+          <p class=big>Practicing openness, trust, and compassion.</p>
+          <p>This page was inspired by&nbsp;<a href="https://sivers.org/now">Derek Sivers</a>. <em>Updated: 25th December, 2022</em></p>
         </div>
       </div>
     </div>
