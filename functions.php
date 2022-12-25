@@ -385,8 +385,8 @@ class Parse {
  */
 
 function max_sizes($width, $height) {
-  $maxwidth = 1600;
-  $maxheight = 1600;
+  $maxwidth = 1088;
+  $maxheight = 1088;
   $ratio = $width / $height;
 
   if ($maxwidth / $maxheight > $ratio) {

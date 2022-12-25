@@ -4,13 +4,22 @@ date_default_timezone_set('America/Vancouver');
 
 define('DS', DIRECTORY_SEPARATOR);
 define('ROOT', getcwd() . DS);
-define('SOURCE', ROOT . 'src' . DS . 'photography' . DS);
+define('PHOTOS', ROOT . 'src' . DS . 'photography' . DS);
+
+if ($argc >= 2) {
+  array_shift($argv);
+  $dir = $argv[0]; 
+} else {
+  exit(1);
+}
+
+define('SOURCE', PHOTOS . $dir);
 
 // image functions
 
 function max_sizes($width, $height) {
-  $maxwidth = 1600;
-  $maxheight = 1600;
+  $maxwidth = 1440;
+  $maxheight = 1440;
   $ratio = $width / $height;
 
   if ($maxwidth / $maxheight > $ratio) {
@@ -32,11 +41,17 @@ function resize($imagepath) {
   $width = imagesx($image);
   $height = imagesy($image);
 
-  list($maxwidth, $maxheight) = max_sizes($width, $height); 
+  list($maxwidth, $maxheight) = max_sizes($width, $height);
+
+  $sharpen = array([0, -1, 0], [-1, 5, -1], [0, -1, 0]);
+  $divisor = array_sum(array_map('array_sum', $sharpen));
+  $offset = 0;
+  imageconvolution($image, $sharpen, $divisor, $offset); 
 
   $resized = imagecreatetruecolor($maxwidth, $maxheight);
   imagecopyresampled($resized, $image, 0, 0, 0, 0, $maxwidth, $maxheight, $width, $height);
-  imagejpeg($resized, $newpath);
+
+  imagejpeg($resized, $newpath, 84);
 
   imagedestroy($resized);
   imageDestroy($image);
