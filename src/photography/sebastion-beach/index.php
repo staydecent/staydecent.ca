@@ -15,7 +15,7 @@
   </div>
 
   <div class=body>
-    <p class=bigger>Typical winter day captured at Sebastion Beach.</p>
+    <p class=bigger>Typical winter days captured at Sebastion Beach.</p>
   </div>
 </div>
 
@@ -66,8 +66,24 @@
       <img src="<?php echo $base_url ?>/images/sebastion_12.jpg" alt="Sebastion Beach Photo by Adrian Unger">
     </div>
 
-    <div class=center>
+    <div class=left>
       <img src="<?php echo $base_url ?>/images/sebastion_1.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    </div>
+
+    <div class=right>
+      <img src="<?php echo $base_url ?>/images/sebastion_2.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    </div>
+
+    <div class=left>
+      <img src="<?php echo $base_url ?>/images/sebastion_16.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    </div>
+
+    <div class=right>
+      <img src="<?php echo $base_url ?>/images/sebastion_8.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    </div>
+
+    <div class=center>
+      <img src="<?php echo $base_url ?>/images/sebastion_17.jpg" alt="Sebastion Beach Photo by Adrian Unger">
     </div>
 
   </div>

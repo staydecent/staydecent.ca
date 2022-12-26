@@ -247,6 +247,10 @@ p > code {
 
 /* Page specific */
 
+#town {
+  background-color: #D0DBD7;
+}
+
 #sebastion {
   background-color: #f3f8ff;
 }
