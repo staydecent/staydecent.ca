@@ -1,4 +1,4 @@
-title: 2021: Year in review
+title: 2021: Year in Review
 ---
 
 It was a year of quiet introspection and growth. In the Pacific Northwest, we experienced [record heat](https://csanr.wsu.edu/what-can-we-learn-from-the-pacific-northwest-heat-dome-of-2021/), [flooding](https://www.theprogress.com/news/class-action-lawsuit-filed-to-recoup-losses-from-sumas-prairie-flooding-in-abbotsford/), and [snow](https://nanaimonewsnow.com/2021/12/26/heavy-snow-frigid-temperatures-paralyze-nanaimo-oceanside-region/). The garden has come into its own, supporting a budding ecosystem that invites ever more bees, birds, rabbits, deer and snakes. 

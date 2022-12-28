@@ -78,6 +78,30 @@
       <img src="<?php echo $base_url ?>/images/town_1.jpg" alt="July Town Photo by Adrian Unger">
     </div>
 
+    <div class=center>
+      <img src="<?php echo $base_url ?>/images/town_23.jpg" alt="July Town Photo by Adrian Unger">
+    </div>
+
+    <div class=left>
+      <img src="<?php echo $base_url ?>/images/town_18.jpg" alt="July Town Photo by Adrian Unger">
+    </div>
+
+    <div class=right>
+      <img src="<?php echo $base_url ?>/images/town_20.jpg" alt="July Town Photo by Adrian Unger">
+    </div>
+
+    <div class=center>
+      <img src="<?php echo $base_url ?>/images/town_31.jpg" alt="July Town Photo by Adrian Unger">
+    </div>
+
+    <div class=left>
+      <img src="<?php echo $base_url ?>/images/town_27.jpg" alt="July Town Photo by Adrian Unger">
+    </div>
+
+    <div class=right>
+      <img src="<?php echo $base_url ?>/images/town_26.jpg" alt="July Town Photo by Adrian Unger">
+    </div>
+
   </div>
 </div>
 

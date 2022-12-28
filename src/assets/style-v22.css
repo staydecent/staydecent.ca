@@ -35,10 +35,32 @@ a.grey {
   color: #ccc;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3 {
   font-family: times, serif;
   transform: scaleY(1.4);
   font-weight: 400;
+}
+
+.content h3, .content h4 {
+  margin-top: 2em;
+}
+
+h4, h5 {
+  transform: scaleY(1.4);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 .pagetitle {
@@ -129,7 +151,7 @@ footer a {
 }
 
 .content.repeat-4 {
-  max-width: 1440px;
+  max-width: 1920px;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -191,6 +213,10 @@ p > code {
   grid-column: span 4;
 }
 
+.content > .right {
+  justify-self: end;
+}
+
 .content img {
   max-width: 100%;
   max-height: calc(100vh - 4em);
@@ -200,7 +226,7 @@ p > code {
 .content .extra-padding img {
   display: block;
   margin: 0 auto;
-  max-width: 64%;
+  max-width: 74%;
 }
 
 .content .text {
