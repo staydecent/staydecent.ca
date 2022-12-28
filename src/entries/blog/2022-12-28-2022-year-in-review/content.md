@@ -7,7 +7,7 @@ Indeed, that introspection continued in what I guess I would call my path toward
 
 As for the new beginning: my partner and I sold our house and moved to a new town! This decision was largely guided by intuition and spiritual guidance rather than reason, which has resulted in a jolt of exuberance in both of our lives. There seem to be certain moments, at least in my life, where a life decision presents itself with two main paths: the first being one of reason and rationality, which garners support by friends, family, and even society at large; the other is one that eschews reason, yet pulls on you despite all the reason you throw at it. When debating internally, you often refer to the reasonable option as the one you "should" choose. The other option is the one you "want" for seemingly inexplicable reasons. In my experience, following the second path consistently leads to unknown outcomes that exceed whatever I could have dreamed of.
 
-Otherwise, world events and other external matters played a smaller role for me in the last year. I have forgone social media and news in favor of the aforementioned spiritual and personal growth. Which, I believe, allows me to remain open and compassionate regardless of the situation at hand. 
+Otherwise, world events and other external matters played a smaller role for me in the last year. I have forgone social media and news in favor of the aforementioned spiritual and personal growth. Which, I believe, allows me to remain open and compassionate regardless of the situation at hand. I am deeply grateful for my current circumstance that allows personal growth to be such a focus at this time in my life.
 
 ## Some Favourites from 2022
 
@@ -17,37 +17,11 @@ I plan to share a bit of an outlook on 2023 in a future post. To wrap up 2022, I
 
 I don't really rate books. If I finish a book, then I'd give it a 4 or 5 stars. Anything less, and I wouldn't have finished the book. So, any book I finish is a book I would highly recommend!
 
-#### Alan Watts - Out of Your Mind
-
-<small><a href="https://isbnsearch.org/isbn/9781622037520" taget=_blank rel='noopener noreferrer'>ISBN-13: 9781622037520</a></small>
-
-Some of Alan Watts most revered lectures compiled into a book by his Son. An enjoyable introduction to Watts and some tenets of Buddhism from his perspective.
-
-#### Yongey Mingyur Rinpoche - In Love with the World
-
-<small><a href="https://isbnsearch.org/isbn/9780525512547" taget=_blank rel='noopener noreferrer'>ISBN-13: 9780525512547</a></small>
-
-Interesting to learn about the early life of someone who grew up in Tibetan Buddhism from birth and the eventual wandering meditation they took on that nearly led to their death.
-
-#### Kathleen Riordan Speeth - The Gurdjieff Work
-
-<small><a href="https://isbnsearch.org/isbn/9780874774924" taget=_blank rel='noopener noreferrer'>ISBN-13: 9780874774924</a></small>
-
-Ah, the "rascal sage" who was perhaps one of the first people to integrate "Eastern" and "Westen" wisdom for European and American _seekers_. _The Work_ is an interesting system with many aspects applicable in our modern times. Fun, yet heavy reading.
-
-
-#### Carlos Castaneda - The Second Ring of Power
-
-<small><a href="https://isbnsearch.org/isbn/9780671732479" taget=_blank rel='noopener noreferrer'>ISBN-13: 9780671732479</a></small>
-
-Really, I recommend the whole Don Juan series by Carlos Castaneda. I think I've read nine of the eleven books he wrote on the teachings of Don Juan. The teachings are quite esoteric, and would likely require a lifetime dedication to fully integrate. While all of the books are interesting in their own right, I'd say The Second Ring of Power had the most gripping tale.
-
-
-#### Chögyam Trungpa - Cutting Through Spiritual Materialism
-
-<small><a href="https://isbnsearch.org/isbn/9781570629570" taget=_blank rel='noopener noreferrer'>ISBN-13: 9781570629570</a></small>
-
-For anyone interested in spirituality, I'd recommend this as a must-read. Compiled from lectures that Chögyam Trungpa gave in the 1970s, advising on how the spiritual path, if jumped into naively, can actually reinforce the ego leading to a hardened egocentricity. 
+- [Alan Watts - Out of Your Mind](https://isbnsearch.org/isbn/9781622037520): Some of Alan Watts most revered lectures compiled into a book by his Son. An enjoyable introduction to Watts and some tenets of Buddhism from his perspective.
+- [Yongey Mingyur Rinpoche - In Love with the World](https://isbnsearch.org/isbn/9780525512547): Interesting to learn about the early life of someone who grew up in Tibetan Buddhism from birth and the eventual wandering meditation they took on that nearly led to their death.
+- [Kathleen Riordan Speeth - The Gurdjieff Work](https://isbnsearch.org/isbn/9780874774924): Ah, the "rascal sage" who was perhaps one of the first people to integrate "Eastern" and "Westen" wisdom for European and American _seekers_. _The Work_ is an interesting system with many aspects applicable in our modern times. Fun, yet heavy reading.
+- [Carlos Castaneda - The Second Ring of Power](https://isbnsearch.org/isbn/9780671732479): Really, I recommend the whole Don Juan series by Carlos Castaneda. I think I've read nine of the eleven books he wrote on the teachings of Don Juan. The teachings are quite esoteric, and would likely require a lifetime dedication to fully integrate. While all of the books are interesting in their own right, I'd say The Second Ring of Power had the most gripping tale.
+- [Chögyam Trungpa - Cutting Through Spiritual Materialism](https://isbnsearch.org/isbn/9781570629570): For anyone interested in spirituality, I'd recommend this as a must-read. Compiled from lectures that Chögyam Trungpa gave in the 1970s, advising on how the spiritual path, if jumped into naively, can actually reinforce the ego leading to hardened egocentricity. I will likely reread this over the years.
 
 
 ### Podcasts
