@@ -3,7 +3,7 @@ title: 2022: Year in Review
 
 Well, I didn't blog for a whole year. My last post was a [reflection on 2021](/blog/2021-year-in-review) where I left off saying "For now, I’m still feeling introspective and perhaps in waiting. For what, I can’t say—though I have some ideas. Yet, I sense a new beginning in 2022." So, let's start there!
 
-Indeed, that introspection continued in what I guess I would call my path towards spirituality. I struggle to share with people that I'm now a "spiritual person" or "on the spiritual path" without sounding like a dork. Oh well 🤷‍♀️. This has mostly been guided by books, podcasts, and the wisdom of [my partner](http://hapaway.com/).
+Indeed, that introspection continued in what I guess I would call my path towards spirituality. It's really quite liberating -- developing new perspectives on life, that is. I find myself less and less interested in knowledge and applying new systems or philosophies. Rather, I'm removing opinions, judgements, expectations, and attachments. It's been a rapid change in how I experience life. Which leaves me with little expectation in how it will continue in the next year.
 
 As for the new beginning: my partner and I sold our house and moved to a new town! This decision was largely guided by intuition and spiritual guidance rather than reason, which has resulted in a jolt of exuberance in both of our lives. There seem to be certain moments, at least in my life, where a life decision presents itself with two main paths: the first being one of reason and rationality, which garners support by friends, family, and even society at large; the other is one that eschews reason, yet pulls on you despite all the reason you throw at it. When debating internally, you often refer to the reasonable option as the one you "should" choose. The other option is the one you "want" for seemingly inexplicable reasons. In my experience, following the second path consistently leads to unknown outcomes that exceed whatever I could have dreamed of.
 
@@ -15,7 +15,7 @@ I plan to share a bit of an outlook on 2023 in a future post. To wrap up 2022, I
 
 ### Books
 
-I don't really rate books. If I finish a book, then I'd give it a 4 or 5 stars. Anything less, and I wouldn't have finished the book. So, any book I finish is a book I would highly recommend!
+I don't force myself to finish books, so usually if I finish one, it ends up being one I recommend to others.
 
 - [Alan Watts - Out of Your Mind](https://isbnsearch.org/isbn/9781622037520): Some of Alan Watts most revered lectures compiled into a book by his Son. An enjoyable introduction to Watts and some tenets of Buddhism from his perspective.
 - [Yongey Mingyur Rinpoche - In Love with the World](https://isbnsearch.org/isbn/9780525512547): Interesting to learn about the early life of someone who grew up in Tibetan Buddhism from birth and the eventual wandering meditation they took on that nearly led to their death.
