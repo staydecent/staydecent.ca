@@ -88,6 +88,7 @@ while ($entryIterator->valid())
         }
 
         $title = $entry['title'];
+        $mod_date = shell_exec('git log -1 --pretty="format:%cr" ' . $entryIterator->getPathname());
 
         // save entry for template data
         $entries['all'][$entry['date']] = $entry;
@@ -124,6 +125,10 @@ foreach ($dir as $fileinfo)
         && substr($fileinfo->getBasename(), '0', 1) !== '.') 
     {
         $title = get_title($fileinfo->getFilename());
+
+        $mod_date = shell_exec('git log -1 --pretty="format:%cr" ' . $fileinfo->getPathname());
+        // $mod_date = date("M d, Y", $fileinfo->getMTime());
+
         $out = render($fileinfo->getPathname());
         $is_filename = FALSE;
 

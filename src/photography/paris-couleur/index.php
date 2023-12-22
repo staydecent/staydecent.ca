@@ -4,6 +4,7 @@
 ?>
 
 <?php include $config['dirs']['layout'].'/header.php' ?>
+<?php include $config['dirs']['layout'].'/nav.php' ?>
 
 <?php 
   $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
@@ -24,53 +25,53 @@
   <div class="content spaced">
 
     <div>
-      <img src="<?php echo $base_url ?>/images/ParisCouleur_8.jpg" alt="Paris Photo by Adrian Unger">
+      <img src="<?php echo $base_url ?>/images/pariscouleur_8.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
     <div>
-      <img src="<?php echo $base_url ?>/images/ParisCouleur_5.jpg" alt="Paris Photo by Adrian Unger">
+      <img src="<?php echo $base_url ?>/images/pariscouleur_5.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
     <div class=center>
-      <img src="<?php echo $base_url ?>/images/ParisCouleur_6.jpg" alt="Paris Photo by Adrian Unger">
+      <img src="<?php echo $base_url ?>/images/pariscouleur_6.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
     <div class=center>
-      <img src="<?php echo $base_url ?>/images/ParisCouleur_10.jpg" alt="Paris Photo by Adrian Unger">      
+      <img src="<?php echo $base_url ?>/images/pariscouleur_10.jpg" alt="Paris Photo by Adrian Unger">      
     </div>
 
     <div>
-      <img src="<?php echo $base_url ?>/images/ParisCouleur_11.jpg" alt="Paris Photo by Adrian Unger">
+      <img src="<?php echo $base_url ?>/images/pariscouleur_11.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
     <div>
-      <img src="<?php echo $base_url ?>/images/ParisCouleur_1.jpg" alt="Paris Photo by Adrian Unger">
+      <img src="<?php echo $base_url ?>/images/pariscouleur_1.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
     <div>
-      <img src="<?php echo $base_url ?>/images/ParisCouleur_2.jpg" alt="Paris Photo by Adrian Unger">
+      <img src="<?php echo $base_url ?>/images/pariscouleur_2.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
     <div>
-      <img src="<?php echo $base_url ?>/images/ParisCouleur_3.jpg" alt="Paris Photo by Adrian Unger">
+      <img src="<?php echo $base_url ?>/images/pariscouleur_3.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
     <div>&nbsp;</div>
 
     <div>
-      <img src="<?php echo $base_url ?>/images/ParisCouleur_4.jpg" alt="Paris Photo by Adrian Unger">
+      <img src="<?php echo $base_url ?>/images/pariscouleur_4.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
     <div>
-      <img src="<?php echo $base_url ?>/images/ParisCouleur_9.jpg" alt="Paris Photo by Adrian Unger">
+      <img src="<?php echo $base_url ?>/images/pariscouleur_9.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
     <div>
-      <img src="<?php echo $base_url ?>/images/ParisCouleur_12.jpg" alt="Paris Photo by Adrian Unger">
+      <img src="<?php echo $base_url ?>/images/pariscouleur_12.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
     <div class=center>
-      <img src="<?php echo $base_url ?>/images/ParisCouleur_13.jpg" alt="Paris Photo by Adrian Unger">
+      <img src="<?php echo $base_url ?>/images/pariscouleur_13.jpg" alt="Paris Photo by Adrian Unger">
     </div>
 
   </div>

@@ -7,6 +7,14 @@
 
   function init() {
     lazyload();
+    const photos = document.querySelectorAll('.content img');
+    document.addEventListener('click', (ev) => {
+      const img = getTag("IMG", ev.target);
+      if (img != null) {
+        // img.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+        scrollToTargetAdjusted(img);
+      }
+    }, true);
   }
 
   function lazyload() {
@@ -25,5 +33,28 @@
       imgs.forEach(isInViewport);
     }, true);
     Array.from(imgs).slice(0, 2).forEach(isInViewport);
+  }
+
+  function getTag(tagName, el) {
+    if (el.tagName === tagName) {
+      return el;
+    }
+    while (el.parentNode) {
+      el = el.parentNode
+      if (el.tagName === tagName) {
+        return el;
+      }
+    }
+    return null;
+  }
+
+  function scrollToTargetAdjusted(target){
+    const offset = 20;
+    const targetPos = target.getBoundingClientRect().top;
+    const offsetPosition = targetPos + window.pageYOffset - offset;
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
   }
 })();

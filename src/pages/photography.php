@@ -28,14 +28,14 @@
 
     <div>
       <a href="<?php echo SITE_URL ?>photography/paris-noir" data-color='fff'>
-        <img loading='lazy' src='<?php echo SITE_URL ?>photography/paris-noir/images/ParisNoir_7_dithered.jpg' />
+        <img loading='lazy' src='<?php echo SITE_URL ?>photography/paris-noir/images/parisnoir_7_dithered.jpg' />
         <h5>Paris Noir</h5>
       </a>
     </div>
 
     <div class=center>
       <a href="<?php echo SITE_URL ?>photography/paris-couleur" data-color='f3e7bd'>
-        <img loading='lazy' src='<?php echo SITE_URL ?>photography/paris-couleur/images/ParisCouleur_8_dithered.jpg' />
+        <img loading='lazy' src='<?php echo SITE_URL ?>photography/paris-couleur/images/pariscouleur_8_dithered.jpg' />
         <h5>Paris Couleur</h5>
       </a>
     </div>

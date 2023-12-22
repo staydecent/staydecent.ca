@@ -1,0 +1,459 @@
+body {
+  height: 100%;
+  font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  background-color: #fcfcfc;
+  color: #000;
+  margin: 0;
+  transition: background-color 1s ease-in-out;
+}
+
+a {
+  color: #000;
+}
+
+nav > a.current {
+  color: #000;
+  text-decoration: underline;
+}
+
+a > h5 {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+a > img + h5 {
+  display: none;
+}
+
+a.back {
+  text-decoration: none;
+}
+
+a.grey {
+  color: #ccc;
+}
+
+p a {
+  color: blue;
+}
+
+p a:visited {
+  color: blueviolet;
+}
+
+p a:hover {
+  text-shadow: 1px 1px 1px #55f;
+}
+
+h1, h2, h3 {
+  font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  transform: scaleY(1.4);
+  letter-spacing: -2px;
+}
+
+.content h3, .content h4 {
+  margin-top: 2em;
+}
+
+h4, h5 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 7rem;
+  letter-spacing: -4px;
+  line-height: 1;
+  margin-top: 0.4em;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.pagetitle {
+  margin-top: 0.25em;
+}
+
+postamble {
+  margin-top: 4vw;
+}
+
+.post-navigation {
+  margin-top: 4vw;
+}
+
+p, li {
+  font-size: 1.25em;
+  line-height: 1.4;
+}
+
+p.big {
+  font-size: 1.25em;
+}
+
+p.bigger {
+  font-size: 1.65em;
+  margin: 0.7em 0;
+}
+
+.aside p,
+.aside .title h1 {
+  margin-top: 0;
+}
+
+.aside {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1440px;
+  margin: 6vh auto 2vh;
+}
+
+.aside > nav:first-child {
+  grid-column-start: 2;
+}
+
+.aside.wide {
+  padding: 12vw 16vw ;
+  display: block;
+  max-width: 680px;
+}
+
+.wordmark {
+  display: block;
+  text-decoration: underline;
+  font-size: 2em;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 4rem;
+  transform: rotate(-10deg);
+}
+
+header {
+  margin-bottom: 3em;
+}
+
+nav a + a {
+  margin-left: 1em;
+}
+
+footer {
+  padding: 1em;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 1em;
+}
+
+.col {
+  max-width: 320px;
+}
+
+.scroll {
+  overflow-x: scroll;
+  padding-bottom: 1em;
+  max-width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+
+.scroll > .grid {
+  padding: 0 1em;
+}
+
+.scroll > .grid > *:last-child {
+  margin-right: 1em;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+
+.grid-50 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 4vw;
+  grid-row-gap: 2vh;
+  align-items: end;
+}
+
+.content.repeat-4 {
+  max-width: 1920px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.content.spaced {
+  grid-row-gap: 10vh;
+}
+
+.content img {
+  border: 2px solid black;
+  box-shadow: 5px 5px 0px #555;
+  cursor: pointer;
+}
+
+.content .top {
+  align-self: flex-start;
+  position: sticky;
+}
+
+pre, .note {
+  background-color: #fff;
+  color: #222;
+  padding: 1em;
+  font-size: 0.9em;
+  line-height: 1.4;
+  border: 2px solid black;
+  box-shadow: 5px 5px 0px #555;
+}
+
+pre {
+  background-color: #163916;
+  color: #fff;
+  padding: 0 0.5em;
+}
+
+p > code {
+  font-size: 0.9em;
+  background-color: #e2e3e2;
+  color: #163916;
+  padding: 0 0.25em;
+  border-radius: 3px;
+}
+
+#photography .content {
+  /* display: block; */
+  align-items: center;
+}
+
+.content > div {
+  align-self: center;
+  justify-self: center;
+}
+
+.content.repeat-4 > div {
+  align-self: start;
+  justify-self: flex-start;
+}
+
+.content > .col-2,
+.content > .center {
+  grid-column: span 2;
+}
+
+.content > .col-3 {
+  grid-column: span 3;
+}
+
+.content > .col-4,
+.content.repeat-4 > .center {
+  grid-column: span 4;
+}
+
+.content > .right {
+  justify-self: end;
+}
+
+.content img {
+  max-width: 100%;
+  max-height: calc(100vh - 4em);
+  content-visibility: auto;
+}
+
+.content .extra-padding img {
+  display: block;
+  margin: 0 auto;
+  max-width: 74%;
+}
+
+.content .text {
+  padding: 10vh;
+}
+
+.level {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.level > * {
+  margin-right: .75rem;
+}
+
+.level > *:last-child {
+  margin-right: 0;
+}
+
+.story {
+  display: block;
+  position: relative;
+  width: 150px;
+  height: 250px;
+  overflow: hidden;
+  border: 2px solid black;
+  box-shadow: 5px 5px 0px #555;
+}
+
+.story:hover {
+  border: 2px solid blue;
+  box-shadow: 5px 5px 0px #55f;
+}
+
+.story img {
+  height: 250px;
+  min-width: 100%;
+  max-width: none;
+} 
+
+/* Media queries */
+
+@media screen and (max-width: 980px) {
+  .aside {
+    padding: 8vw;
+  }
+
+  .aside,
+  .content {
+    display: block;
+  }
+
+  .content img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .wordmark {
+    min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .wordmark {
+    grid-column: span 3;
+    min-width: inherit;
+    text-align: center;
+  } 
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+  } 
+}
+
+/* Page specific */
+
+#town {
+  background-color: #D0DBD7;
+}
+
+#sebastion {
+  background-color: #f3f8ff;
+}
+
+#picos {
+  background-color: #F1E0D0;
+  color: #57491e;
+}
+
+#picos h2 {
+  font-size: 2.25em;
+  font-weight: 400;
+}
+
+#picos a {
+  color: #57491e;
+}
+
+#noir {
+  background-color: #fff;
+}
+
+#noir h1,
+#noir .body p,
+#noir a {
+  color: black;
+}
+
+#paris {
+  background-color: #f3e7bd;
+}
+
+#paris h1,
+#paris .body p,
+#paris a {
+  color: #2f425c;
+}
+
+#waves {
+  background-color: #f9f3e1;
+}
+
+#waves h1,
+#waves p,
+#waves a {
+  color: #909A9C;
+}
+
+#black {
+  background-color: #666;
+}
+#black h1,
+#black .body p,
+#black a {
+  color: #000;
+}
+
+#maui {
+  background-color: #FBCBC1;
+}
+
+#maui h1,
+#maui .body p,
+#maui a {
+  color: black;
+}
+
+#shinrinyoku {
+  background-color: #433C06;
+}
+
+#shinrinyoku h1,
+#shinrinyoku h2,
+#shinrinyoku .body p,
+#shinrinyoku a {
+  color: #F2CB6C;
+}
+
+#shinrinyoku h2 {
+  margin: 0;
+  font-size: 4em;
+  font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}

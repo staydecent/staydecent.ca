@@ -4,6 +4,7 @@
 ?>
 
 <?php include $config['dirs']['layout'].'/header.php' ?>
+<?php include $config['dirs']['layout'].'/nav.php' ?>
 
 <?php 
   $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);

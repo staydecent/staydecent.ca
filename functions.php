@@ -121,7 +121,7 @@ function current_class($str) {
 }
 
 function render($layout) {
-  global $title, $entry, $entries, $config, $page_id;
+  global $title, $entry, $entries, $config, $page_id, $mod_date;
   ob_start();
   include $layout;
   $out = ob_get_contents();
@@ -428,7 +428,7 @@ function dither($imagepath) {
   // Dithering and resize
   imagecopyresampled($newimage, $image, 0, 0, 0, 0, $maxwidth, $maxheight, $width, $height);
   /* ImageCopyMerge($newimage, $image, 0, 0, 0, 0, $width, $height, 100); */
-  imagetruecolortopalette($newimage, true, 64);
+  imagetruecolortopalette($newimage, true, 4);
 
   // Save the image
   imagejpeg($newimage, $newpath);
@@ -443,7 +443,7 @@ function dither($imagepath) {
 /*
 Copyright 2007-2008 Brenton Fletcher. http://bloople.net/num2text
 You can use this freely and modify it however you want.
- */
+*/
 function convertNumber($num) {
   @list($num, $dec) = explode(".", $num);
 
