@@ -35,15 +35,17 @@ a.grey {
 }
 
 p a {
-  color: blue;
+  color: #2f31f5;
 }
 
 p a:visited {
-  color: blueviolet;
+  color: #993845;
 }
 
+nav a:hover,
 p a:hover {
-  text-shadow: 1px 1px 1px #55f;
+  background-color: #A0FF01cc;
+  color: #000000 !important;
 }
 
 h1, h2, h3 {
@@ -135,10 +137,6 @@ p.bigger {
   transform: rotate(-10deg);
 }
 
-header {
-  margin-bottom: 3em;
-}
-
 nav a + a {
   margin-left: 1em;
 }
@@ -149,6 +147,40 @@ footer {
 
 footer a {
   text-decoration: none;
+}
+
+.viewport {
+  height: 100vh;
+  min-height: 100%;
+  max-height: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+.vp1 {
+  background: linear-gradient(to top, #00000099, #00000099), url(/assets/i/estuary.jpeg) center center no-repeat;
+}
+
+.vp1-title {
+  font-size: 68em;
+  font-weight: 800;
+  color: #000000ab;
+  position: absolute;
+  top: 3px;
+  margin: 0;
+  margin-left: -58px;
+}
+
+.vp1-content.container {
+  position: relative;
+  z-index: 11;
+  padding-top: 8em;
+}
+
+.vp1 p {
+  z-index: 11;
+  color: #C1C1C1;
+  font-size: 1em;
 }
 
 .container {
@@ -183,6 +215,13 @@ footer a {
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 3fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+
+.grid-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 6fr);
   grid-column-gap: 16px;
   grid-row-gap: 16px;
 }
@@ -223,7 +262,7 @@ footer a {
 }
 
 pre, .note {
-  background-color: #fff;
+  background-color: #E7E7E7;
   color: #222;
   padding: 1em;
   font-size: 0.9em;
@@ -234,7 +273,7 @@ pre, .note {
 
 pre {
   background-color: #163916;
-  color: #fff;
+  color: #E7E7E7;
   padding: 0 0.5em;
 }
 
@@ -244,6 +283,13 @@ p > code {
   color: #163916;
   padding: 0 0.25em;
   border-radius: 3px;
+}
+
+#index header {
+  z-index: 33;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 #photography .content {
@@ -393,7 +439,7 @@ p > code {
 }
 
 #noir {
-  background-color: #fff;
+  background-color: #E7E7E7;
 }
 
 #noir h1,
