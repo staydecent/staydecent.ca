@@ -31,14 +31,20 @@ a.back {
 }
 
 a.grey {
-  color: #ccc;
+  color: #C1C1C1;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+a.grey:hover {
+  text-decoration: none;
 }
 
 p a {
   color: #2f31f5;
 }
 
-p a:visited {
+p a:not(.grey):visited {
   color: #993845;
 }
 
@@ -155,32 +161,31 @@ footer a {
   max-height: 100%;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 .vp1 {
   background: linear-gradient(to top, #00000099, #00000099), url(/assets/i/estuary.jpeg) center center no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .vp1-title {
-  font-size: 68em;
+  font-size: 23vw;
   font-weight: 800;
-  color: #000000ab;
-  position: absolute;
+  color: #A0FF01cc;
   top: 3px;
   margin: 0;
-  margin-left: -58px;
+  margin-left: -4vw;
 }
 
 .vp1-content.container {
-  position: relative;
-  z-index: 11;
-  padding-top: 8em;
+  margin-bottom: 14vh;
 }
 
-.vp1 p {
-  z-index: 11;
-  color: #C1C1C1;
-  font-size: 1em;
+.vp1-content p {
+ color: #C1C1C1;
 }
 
 .container {
