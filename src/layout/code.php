@@ -3,6 +3,10 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 <?php include $config['dirs']['layout'].'/nav.php' ?>
 
+<div class="title-container">
+  <h1 class=vp1-title>Software</h1>
+</div>
+
 <div class=container>
   <div class=content>
     <div class=top>

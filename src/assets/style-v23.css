@@ -4,6 +4,7 @@
 
 :root {
   --sans: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  --serif: times, serif;
   
   --white: #FCFCFC;
   --black: #000;
@@ -18,8 +19,12 @@
   --primary: #D6F500;
   --primary-transparent: #D6F500cc;
 
-  --green: #A0FF01;
-  --green-transparent: #A0FF01cc;
+  --green: #4f7d01;
+  --green-transparent: #4f7d01cc;
+
+  --blue: #01267d;
+
+  --gutter: 16px;
 }
 
 
@@ -41,9 +46,13 @@ a:link {
   color: var(--black);
 }
 
+.content a:visited {
+  color: var(--grey-dark);
+}
+
 h1, h2, h3 {
   font-family: var(--sans);
-  font-weight: 400;
+  font-weight: 600;
   transform: scaleY(1.4);
   letter-spacing: -2px;
 }
@@ -64,7 +73,7 @@ h3 {
 }
 
 h4, h5 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1rem;
 }
 
@@ -83,8 +92,8 @@ footer {
 
 pre,
 .note {
-  background-color: var(--ofwhite);
-  color: #222;
+  background-color: var(--offwhite);
+  color: var(--green);
   padding: 1em;
   font-size: 0.9em;
   line-height: 1.4;
@@ -93,15 +102,15 @@ pre,
 }
 
 pre {
-  background-color: #163916;
-  color: var(--ofwhite);
+  background-color: var(--offwhite);
+  color: var(--green);
   padding: 0 0.5em;
 }
 
 p > code {
   font-size: 0.9em;
-  background-color: #e2e3e2;
-  color: #163916;
+  background-color: var(--offwhite);
+  color: var(--green);
   padding: 0 0.25em;
   border-radius: 3px;
 }
@@ -114,11 +123,6 @@ p > code {
 header a,
 nav a {
   color: var(--black);
-}
-
-nav > a.current {
-  color: var(--black);
-  text-decoration: underline;
 }
 
 nav a + a {
@@ -158,24 +162,23 @@ a.black {
   text-decoration-style: dotted;
 }
 
-a.black:hover {
+a.plain {
   text-decoration: none;
 }
 
 p a:link {
-  color: #2f31f5;
+  color: var(--blue);
 }
 
-nav a,
-p a {
+a {
   transition: background 0.1s ease-in 0.1s;
   background-color: none;
 }
 
-nav a:hover,
-p a:hover {
+a:hover {
   background-color: var(--primary-transparent);
   color: var(--black);
+  text-decoration: none;
 }
 
 
@@ -183,8 +186,13 @@ p a:hover {
   Typography
 */
 
+.serif {
+  font-family: var(--serif);
+}
+
 .pagetitle {
-  margin-top: 0.25em;
+  margin-top: 0;
+  font-size: 4rem;
 }
 
 .content h3,
@@ -224,6 +232,14 @@ mark {
   Layout
 */
 
+.level {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--gutter);
+  padding-bottom: var(--gutter);
+}
+
 .aside {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -244,6 +260,13 @@ mark {
   padding: 12vw 16vw ;
   display: block;
   max-width: 680px;
+}
+
+.title-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .viewport {
@@ -279,13 +302,13 @@ mark {
 }
 
 .vp1-content.container {
-  position: relative;
-  z-index: 11;
   margin-top: 4vh;
   margin-bottom: 14vh;
 }
 
 .container {
+  position: relative;
+  z-index: 11;
   padding: 1em;
 }
 
@@ -375,6 +398,10 @@ mark {
 
 .content > .right {
   justify-self: end;
+}
+
+.content.repeat-4 > .end {
+  align-self: end;
 }
 
 .content img {
@@ -474,7 +501,7 @@ mark {
 }
 
 #noir {
-  background-color: var(--ofwhite);
+  background-color: var(--offwhite);
 }
 
 #noir h1,

@@ -1,13 +1,17 @@
 <?php $page_id = 'code'; ?>
 
 <?php include $config['dirs']['layout'].'/header.php' ?>
-  <?php include $config['dirs']['layout'].'/nav.php' ?>
+<?php include $config['dirs']['layout'].'/nav.php' ?>
+
+<div class="title-container">
+  <h1 class=vp1-title>Software</h1>
+</div>
 
 <div class=container>
   <div class="content repeat-4">
 
-    <div class=col-2>
-      <h1 class="pagetitle">An attempt to share what I learn creating web and mobile apps.</h1>
+    <div class="col-2 end">
+      <h1 class="pagetitle">Notes on software development and technology.</h1>
     </div>
 
     <?php
