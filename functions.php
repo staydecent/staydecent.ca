@@ -121,7 +121,7 @@ function current_class($str) {
 }
 
 function render($layout) {
-  global $title, $entry, $entries, $config, $page_id, $mod_date;
+  global $title, $entry, $entries, $config, $page_id, $mod_date, $git_hash;
   ob_start();
   include $layout;
   $out = ob_get_contents();

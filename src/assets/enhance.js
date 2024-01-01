@@ -7,6 +7,11 @@
 
   function init() {
     lazyload();
+
+    // custom elements
+    customElements.define("pretty-date", PrettyDate, { extends: "time" });
+
+    // Bind centering of photos
     const photos = document.querySelectorAll('.content img');
     document.addEventListener('click', (ev) => {
       const img = getTag("IMG", ev.target);
@@ -48,7 +53,7 @@
     return null;
   }
 
-  function scrollToTargetAdjusted(target){
+  function scrollToTargetAdjusted(target) {
     const offset = 20;
     const targetPos = target.getBoundingClientRect().top;
     const offsetPosition = targetPos + window.pageYOffset - offset;
@@ -57,4 +62,22 @@
       behavior: "smooth"
     });
   }
+
+  class PrettyDate extends HTMLTimeElement {
+    constructor() {
+      super();
+    }
+
+    connectedCallback() {
+      this._date = new Date(this.dateTime);
+      try {
+        let date = new Date(this.dateTime);
+        let pp = new Intl.DateTimeFormat('en-US', { dateStyle: 'medium', timeStyle: 'medium' }).format(date);
+        this.textContent = pp;
+      } catch (e) {
+        console.error(e);
+      }
+    }
+  }
+
 })();

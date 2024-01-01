@@ -64,6 +64,17 @@ require 'markdown.php';
 
 /**
  * ------------------------------------------------------------------------
+ * Globals
+ * ------------------------------------------------------------------------
+ */
+$git_log = shell_exec('git log -1 --format=format:"%h %aI"'); // 6970fc2 2023-12-30T18:56:50-08:00
+$parts = explode(' ', $git_log);
+$git_hash = $parts[0];
+$mod_date = $parts[1];
+
+
+/**
+ * ------------------------------------------------------------------------
  * Begin build, by iterating Entries
  * ------------------------------------------------------------------------
  */
@@ -88,7 +99,6 @@ while ($entryIterator->valid())
         }
 
         $title = $entry['title'];
-        $mod_date = shell_exec('git log -1 --pretty="format:%cr" ' . $entryIterator->getPathname());
 
         // save entry for template data
         $entries['all'][$entry['date']] = $entry;
@@ -125,10 +135,6 @@ foreach ($dir as $fileinfo)
         && substr($fileinfo->getBasename(), '0', 1) !== '.') 
     {
         $title = get_title($fileinfo->getFilename());
-
-        $mod_date = shell_exec('git log -1 --pretty="format:%cr" ' . $fileinfo->getPathname());
-        // $mod_date = date("M d, Y", $fileinfo->getMTime());
-
         $out = render($fileinfo->getPathname());
         $is_filename = FALSE;
 
