@@ -2,25 +2,22 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 <?php include $config['dirs']['layout'].'/nav.php' ?>
 
-<div class=container>
-  <div class=content>
-
-    <div>
-      <div class="grid">
-        <div class="col">
-          <h1 class=pagetitle>Here's what I'm currently focusing on.</h1>
-        </div>
-
-        <div class=col>
-          <p class="bigger">Leading Engineering at <a href="https://mudwtr.com">MUD\WTR</a>.</p>
-          <p class="bigger">Continuously adjusting how I perceive the world, especially in regards to how I react.</p>
-          <p class=big>Practicing openness, trust, and compassion.</p>
-          <p>This page was inspired by&nbsp;<a href="https://sivers.org/now">Derek Sivers</a>. <em>Updated: 25th December, 2022</em></p>
-        </div>
+<section>
+  <div class=container>
+    <div class=grid-3>
+      <div>
+        <h1 class=pagetitlez>Now</h1>
+      </div>
+      <div>
+        <p class=bigger>Here's what I'm currently focusing on</p>
+        <p class="big"><del datetime="2023-09-01">Leading Engineering at <a href="https://mudwtr.com">MUD\WTR</a>.</del> Taking a sabbatical as of Sept 2023.</p>
+        <p class="big">Continuously adjusting how I perceive the world, especially in regards to how I react.</p>
+        <p class=big>Learning to flow with the universe ✨.</p>
+        <p class=big>Playing video games again.</p>
+        <p>This page was inspired by&nbsp;<a href="https://sivers.org/now">Derek Sivers</a>. <em>Updated: 2nd January, 2024</em></p>
       </div>
     </div>
-
   </div>
-</div>
+</section>
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>

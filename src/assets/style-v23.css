@@ -69,7 +69,8 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.85rem;
+  letter-spacing: -1px;
 }
 
 h4, h5 {
@@ -86,14 +87,22 @@ postamble {
   margin-top: 4vw;
 }
 
+article {
+  padding: 0 6rem 3rem 0;
+
+  &.span-2 {
+    max-width: 680px;
+  }
+}
+
 footer {
   padding: 1em;
 }
 
 pre,
 .note {
-  background-color: var(--offwhite);
-  color: var(--green);
+  background-color: var(--grey-dark);
+  color: var(--offwhite);
   padding: 1em;
   font-size: 0.9em;
   line-height: 1.4;
@@ -102,8 +111,8 @@ pre,
 }
 
 pre {
-  background-color: var(--offwhite);
-  color: var(--green);
+  background-color: var(--grey-dark);
+  color: var(--offwhite);
   padding: 0 0.5em;
 }
 
@@ -150,7 +159,7 @@ a.back {
 }
 
 a.grey {
-  color: #413D44;
+  color: var(--grey-dark);
   text-decoration-line: underline;
   text-decoration-style: dotted;
 }
@@ -184,6 +193,10 @@ a:hover {
   text-decoration: none;
 }
 
+h3 > a {
+  text-decoration: none;
+}
+
 
 /*
   Typography
@@ -196,6 +209,12 @@ a:hover {
 .pagetitle {
   margin-top: 0;
   font-size: 4rem;
+  letter-spacing: -4px;
+  line-height: 1;
+
+  &.margin {
+    margin: 12vh 0 3vh;
+  }
 }
 
 .content h3,
@@ -294,6 +313,10 @@ mark {
   grid-template-columns: repeat(3, 3fr);
   grid-column-gap: 16px;
   grid-row-gap: 16px;
+
+  .span-2 {
+    grid-column: span 2;
+  }
 }
 
 .grid-6 {

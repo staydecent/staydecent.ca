@@ -8,28 +8,34 @@
 </div>
 
 <div class=container>
-  <div class="content repeat-4">
-
-    <div class="col-2 end">
-      <h1 class="pagetitle">Notes on software development and technology.</h1>
-    </div>
-
-    <?php
-      $posts = $entries['code'];
-      krsort($posts);
-      $limit = 0;
-      foreach ($posts as $date => $entry) {
-        if (++$limit > 100) break;
-        ?>
-        <div>
-          <h2><a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h2>
-          <p><?php echo $entry['excerpt'] ?></p>
-        </div>
-        <?php
-      }
-    ?>
-
+  <div class="grid-50 end">
+    <h2 class="pagetitle margin">Notes on software development and technology.</h2>
   </div>
 </div>
+
+<section>
+  <div class=container>
+    <div class=grid-3>
+      <div>&nbsp;</div>
+      <?php
+        $posts = $entries['code'];
+        krsort($posts);
+        $limit = 0;
+        foreach ($posts as $date => $entry) {
+          if (++$limit > 100) break;
+          if ($limit % 3 == 0) {
+            echo '<div>&nbsp;</div>';
+            continue;
+          }
+          ?>
+          <article>
+            <h3><a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h3>
+            <p><?php echo $entry['excerpt'] ?></p>
+          </article>
+          <?php
+        }
+      ?>
+  </div>
+</section>
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>
