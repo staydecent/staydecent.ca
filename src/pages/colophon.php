@@ -6,7 +6,7 @@
   <div class=container>
     <div class=grid-3>
       <div>
-        <h1 class=pagetitlez>Colophon</h1>
+        <h1 class=pagetitle>Colophon</h1>
       </div>
       <div>
         <p class=bigger>Here's how I publish this here website.</p>

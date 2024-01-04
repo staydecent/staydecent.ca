@@ -23,6 +23,8 @@
   --green-transparent: #4f7d01cc;
 
   --blue: #01267d;
+  --red: #C74938;
+  --red-transparent: #C74938aa;
 
   --gutter: 16px;
 }
@@ -50,11 +52,23 @@ a:link {
   color: var(--grey-dark);
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: var(--sans);
   font-weight: 600;
   transform: scaleY(1.4);
   letter-spacing: -2px;
+
+  &.normal {
+    font-size: 1.25rem;
+    letter-spacing: inherit;
+    transform: none;
+    font-weight: 600;
+  }
+
+  &.serif {
+    font-family: var(--serif);
+    font-weight: 400;
+  }
 }
 
 h1 {
@@ -69,8 +83,8 @@ h2 {
 }
 
 h3 {
-  font-size: 1.85rem;
-  letter-spacing: -1px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
 }
 
 h4, h5 {
@@ -85,6 +99,8 @@ p, li {
 
 postamble {
   margin-top: 4vw;
+  text-transform: uppercase;
+  font-weight: 600;  
 }
 
 article {
@@ -193,10 +209,15 @@ a:hover {
   text-decoration: none;
 }
 
-h3 > a {
+.normal > a {
+  color: var(--black);
+  text-transform: uppercase;
   text-decoration: none;
 }
 
+.normal > a:visited {
+  color: var(--grey-dark);
+}
 
 /*
   Typography
@@ -209,12 +230,19 @@ h3 > a {
 .pagetitle {
   margin-top: 0;
   font-size: 4rem;
+  font-family: var(--serif);
+  font-weight: 400;
   letter-spacing: -4px;
   line-height: 1;
 
   &.margin {
     margin: 12vh 0 3vh;
   }
+}
+
+.post > h2 {
+  font-family: var(--serif);
+  font-weight: 400;
 }
 
 .content h3,
@@ -409,6 +437,10 @@ mark {
   padding: 10vh;
 }
 
+.half {
+  max-width: 47.125%;
+}
+
 
 /*
   Viewport
@@ -515,6 +547,10 @@ footer {
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+#blog .vp1-title {
+  color: var(--offwhite); 
 }
 
 #photography .content {

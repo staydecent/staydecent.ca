@@ -1,12 +1,15 @@
+<?php $page_id = 'archives'; ?>
+
 <?php include $config['dirs']['layout'].'/header.php' ?>
+<?php include $config['dirs']['layout'].'/nav.php' ?>
 
-<div role="main" id="main">
-  <article>
-    <header>
-      <h1>Archives</h1>  
-    </header>
-
-    <div class="container-fluid">
+<section>
+  <div class=container>
+    <div class="grid-50 end">
+      <h2 class="pagetitle margin">Archives</h2>
+    </div>
+    <div class=grid-3>
+      <div>&nbsp;</div>
       <ol class="styled">
       <?php
       $posts = all_entries();
@@ -16,17 +19,15 @@
         if (++$limit > 100) break;
         ?>
         <li>
-          <h3><a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h3>
-
-          <p><?php echo $entry['excerpt'] ?><p>
+          <h2 class=normal><a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h2>
         </li>
         <?php
       }
       ?>
       </ol>
     </div>
-  </article>
-</div>
+  </div>
+</section>
 
 <?php 
 $next = array();

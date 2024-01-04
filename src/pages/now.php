@@ -6,7 +6,7 @@
   <div class=container>
     <div class=grid-3>
       <div>
-        <h1 class=pagetitlez>Now</h1>
+        <h1 class=pagetitle>Now</h1>
       </div>
       <div>
         <p class=bigger>Here's what I'm currently focusing on</p>

@@ -18,8 +18,8 @@ define('SOURCE', PHOTOS . $dir);
 // image functions
 
 function max_sizes($width, $height) {
-  $maxwidth = 1440;
-  $maxheight = 1440;
+  $maxwidth = 860;
+  $maxheight = 860;
   $ratio = $width / $height;
 
   if ($maxwidth / $maxheight > $ratio) {
@@ -43,10 +43,10 @@ function resize($imagepath) {
 
   list($maxwidth, $maxheight) = max_sizes($width, $height);
 
-  $sharpen = array([0, -1, 0], [-1, 5, -1], [0, -1, 0]);
-  $divisor = array_sum(array_map('array_sum', $sharpen));
-  $offset = 0;
-  imageconvolution($image, $sharpen, $divisor, $offset); 
+  // $sharpen = array([0, -1, 0], [-1, 5, -1], [0, -1, 0]);
+  // $divisor = array_sum(array_map('array_sum', $sharpen));
+  // $offset = 0;
+  // imageconvolution($image, $sharpen, $divisor, $offset); 
 
   $resized = imagecreatetruecolor($maxwidth, $maxheight);
   imagecopyresampled($resized, $image, 0, 0, 0, 0, $maxwidth, $maxheight, $width, $height);
