@@ -113,6 +113,7 @@ article {
 
 footer {
   padding: 1em;
+  scroll-snap-align: end; /* for homepage snap scrolling */
 }
 
 pre,
@@ -462,11 +463,6 @@ mark {
   position: relative;
   overflow: hidden;
   scroll-snap-align: start;
-}
-
-footer {
-  scroll-snap-align: end;
-/*  min-height: 20vh;*/
 }
 
 .vp1 {
