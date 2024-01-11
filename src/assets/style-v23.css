@@ -265,6 +265,10 @@ a.plain {
   font-weight: 400;
 }
 
+.post img {
+  max-width: 100%;
+}
+
 .content h3,
 .content h4 {
   margin-top: 2em;
