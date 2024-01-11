@@ -24,13 +24,6 @@
     <h1 class=vp1-title style="font-weight: 600; color: #7c8ea8ab; line-height: 1;">
       <a class=plain href="<?php echo SITE_URL ?>photography/sebastion-beach" data-color='f3f8ff'>Sebastion Beach</a>
     </h1>
-    <div class="vp1-content container">
-      <div class="grid-3">
-        <p class=big>Winter</p>
-        <p class=big>2022</p>
-        <p class=big><a class="black plain" href="<?php echo SITE_URL ?>photography/sebastion-beach" data-color='f3f8ff'>&rarr; View photos</a></p>
-      </div>
-    </div>
   </div>
 
   <!-- July Town -->
@@ -43,8 +36,8 @@
       <div class="grid-3">
         <div>&nbsp;</div>
         <div>
-          <h1 class=vp2-title style="color: #C74938;">
-            <a class=plain href="<?php echo SITE_URL ?>photography/july-town" data-color='D0DBD7'>A Small Canadian Town In July</a>
+          <h1 class=vp2-title style="color: #C74938; text-align: center;">
+            <a class=plain href="<?php echo SITE_URL ?>photography/july-town" data-color='D0DBD7'>A Small Canadian Town In&nbsp;July</a>
           </h1>
         </div>
       </div>
@@ -62,7 +55,7 @@
         <div>&nbsp;</div>
         <div>&nbsp;</div>
         <div>
-          <h1 class=vp1-title style="font-size: 8vw; line-height: 1; color: #000;">
+          <h1 class=vp1-title style="font-size: 10vh; line-height: 1; color: #000; margin-left: -4px; margin-top: 1em;">
             <a class=plain href="<?php echo SITE_URL ?>photography/picos-on-portra" data-color='F1E0D0'>Picos on Portra</a>
           </h1>
         </div>
@@ -79,7 +72,7 @@
     <div class="vp1-content container">
       <div class="grid-3">
         <div>
-          <h1 class="vp1-title serif" style="font-size: 8vw; line-height: 1; color: #000; font-weight: 400; margin-left: 0">
+          <h1 class="vp1-title serif" style="font-size: 8vh; line-height: 1; color: #000; font-weight: 400; margin-left: 0">
             <a class=plain href="<?php echo SITE_URL ?>photography/paris-noir" data-color='fff'>Paris Noir</a>
           </h1>
         </div>
@@ -94,7 +87,7 @@
     data-link="<?php echo SITE_URL ?>photography/paris-couleur"
   >
     <div class="vp1-content container">
-      <h1 class="vp1-title serif" style="font-size: 6vw; line-height: 1; color: #2f425c; font-weight: 400; margin: 0 auto;">
+      <h1 class="vp1-title serif" style="font-size: 6vh; line-height: 1; color: #2f425c; font-weight: 400; margin: 0 auto;">
         <a class="level plain" href="<?php echo SITE_URL ?>photography/paris-couleur" data-color='f3e7bd'>
           <span>Paris</span>
           <span>Couleur</span>
@@ -110,13 +103,6 @@
     data-link="<?php echo SITE_URL ?>photography/waves"
   >
     <h1 class=vp1-title style="color: #ffffffaa; line-height: 1;"><a class=plain href="<?php echo SITE_URL ?>photography/waves" data-color='f9f3e1'>Waves</a></h1>
-    <div class="vp1-content container">
-      <div class="grid-3">
-        <p class=big>Winter</p>
-        <p class=big>2020</p>
-        <p class=big><a class="black plain" href="<?php echo SITE_URL ?>photography/waves" data-color='f9f3e1'>&rarr; View photos</a></p>
-      </div>
-    </div>
   </div>
 
   <!-- Black & White -->
@@ -126,8 +112,8 @@
     data-link="<?php echo SITE_URL ?>photography/black-and-white"
   >
     <div class="level">
-      <div style="background: #D6F500; width: 50vw; text-align: center; margin: 0.8rem auto 0;">
-        <h1 class="vp1-title" style="font-size: 2vw; line-height: 1; color: #000; padding: 1px 0; letter-spacing: -1px; margin: 0 auto;">
+      <div style="background: #D6F500; width: 50vh; text-align: center; margin: 0.8rem auto 0;">
+        <h1 class="vp1-title" style="font-size: 2vh; line-height: 1; color: #000; padding: 1px 0; letter-spacing: -1px; margin: 0 auto;">
           <a class="plain level no-padding" href="<?php echo SITE_URL ?>photography/black-and-white" data-color='666'>
             <span>Black</span>
             <span>&amp;</span>
@@ -145,13 +131,6 @@
     data-link="<?php echo SITE_URL ?>photography/maui"
   >
     <h1 class=vp1-title style="font-weight: 600; color: #FBCBC1; line-height: 1;"><a class=plain href="<?php echo SITE_URL ?>photography/maui" data-color='FBCBC1'>MAUI</a></h1>
-    <div class="vp1-content container">
-      <div class="grid-3">
-        <p class=big>Winter</p>
-        <p class=big>2018</p>
-        <p class=big><a class="black plain" href="<?php echo SITE_URL ?>photography/maui" data-color='FBCBC1'>&rarr; View photos</a></p>
-      </div>
-    </div>
   </div>
 
 <?php 

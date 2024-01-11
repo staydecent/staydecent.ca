@@ -61,12 +61,12 @@
   }
 
   function getDataLink(el) {
-    if (el.dataset.link != null) {
+    if (el.dataset != null && el.dataset.link != null) {
       return el;
     }
     while (el.parentNode) {
       el = el.parentNode
-      if (el.dataset.link != null) {
+      if (el.dataset != null && el.dataset.link != null) {
         return el;
       }
     }

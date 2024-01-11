@@ -72,10 +72,14 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 7vh;
   letter-spacing: -4px;
   line-height: 1;
   margin-top: 0.4em;
+
+  @media (max-width: 926px) {
+    letter-spacing: -2px;
+  }
 }
 
 h2 {
@@ -167,10 +171,18 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
+
+  @media (max-width: 926px) {
+    display: block;
+  }
 }
 
 nav a + a {
   margin-left: 1em;
+
+  @media (max-width: 926px) {
+    margin-left: 0;
+  }
 }
 
 footer a {
@@ -325,7 +337,7 @@ mark {
 }
 
 .aside.wide {
-  padding: 0;
+  padding: 1em;
   display: block;
 }
 
@@ -393,6 +405,12 @@ mark {
 
 .content.spaced {
   grid-row-gap: 10vh;
+
+  @media (max-width: 926px) {
+    & > div {
+      margin-bottom: 3em;
+    }
+  }
 }
 
 .content img {
@@ -479,16 +497,26 @@ mark {
   position: relative;
   overflow: hidden;
   scroll-snap-align: start;
-}
 
-.viewport[data-link] {
-  cursor: pointer;
+  &[data-link] {
+    cursor: pointer;
+  }
+
+  @media (max-width: 926px) {
+    .grid-3 {
+      display: block;
+    }
+  }
 }
 
 .vp1 {
   background: linear-gradient(to top, var(--grey-transparent), var(--grey-transparent)), url(/assets/i/squamish.jpeg) center center no-repeat;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 926px) {
+    justify-content: space-between;
+  }
 }
 
 .vp1-title {
@@ -498,6 +526,10 @@ mark {
   top: 3px;
   margin: 0;
   margin-left: -4vw;
+
+  @media (max-width: 926px) {
+    margin-left: 0;
+  }
 }
 
 .vp2-title {
