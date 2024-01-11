@@ -113,6 +113,12 @@ article {
   &.span-2 {
     max-width: 680px;
   }
+
+  @media (max-width: 926px) {
+    & {
+      padding-right: 1rem;
+    }
+  }
 }
 
 footer {
@@ -139,6 +145,7 @@ pre {
   background-color: var(--grey-dark);
   color: var(--offwhite);
   padding: 0 0.5em;
+  overflow-x: scroll;
 }
 
 p > code {
@@ -261,6 +268,13 @@ a.plain {
 
   &.margin {
     margin: 12vh 0 3vh;
+  }
+
+  @media (max-width: 926px) {
+    & {
+      font-size: 5vh;
+      letter-spacing: -2px;
+    }
   }
 }
 
@@ -408,6 +422,10 @@ section .grid-3 {
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 16px;
   grid-row-gap: 16px;
+
+  @media (max-width: 926px) {
+    display: block;
+  }
 }
 
 .content {
