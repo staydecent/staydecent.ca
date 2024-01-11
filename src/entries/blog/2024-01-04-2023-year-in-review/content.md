@@ -14,6 +14,9 @@ It's been a weird year. At times, I've felt I've had the most clarity and other 
 <img class=half src="/assets/media/bestfriend3.jpeg" alt="Angela and I selfie 3" />
 <img class=half src="/assets/media/bestfriend4.jpeg" alt="Angela and I selfie 4" />
 
-<img src="/assets/media/bestfriend5.jpeg" alt="Angela and I selfie 5" />
+<img src="/assets/media/bestfriend7.jpeg" alt="Angela and I selfie 7" />
+
+<img class=half src="/assets/media/bestfriend6.jpeg" alt="Angela and I selfie 6" />
+<img class=half src="/assets/media/bestfriend5.jpeg" alt="Angela and I selfie 5" />
 
 Standing here at my desk, trying to reflect, looking through photos and notes from the year, all I can think of is gratitude for Angela. So, thanks Angela! I'm currently on Sabbatical, honing in on what I want to do and how I can be of service. And, really, all I care about is that I get to spend as many of the coming years as I can with my best friend.

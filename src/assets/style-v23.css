@@ -120,6 +120,10 @@ footer {
   scroll-snap-align: end; /* for homepage snap scrolling */
 }
 
+img {
+  max-width: 100%;
+}
+
 pre,
 .note {
   background-color: var(--grey-dark);
@@ -267,6 +271,10 @@ a.plain {
 
 .post img {
   max-width: 100%;
+
+  &.half {
+    max-width: 47.125%;
+  }
 }
 
 .content h3,
@@ -474,10 +482,6 @@ mark {
 
 .content .text {
   padding: 10vh;
-}
-
-.half {
-  max-width: 47.125%;
 }
 
 

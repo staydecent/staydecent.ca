@@ -16,6 +16,9 @@
         <p>This website is a playground where I mainly explore photography. For me, photography is a means of bringing attention into the current moment, with the intention to capture the magic that exists in even the most mundane of moments. Through curation, I hope to notice how my perspective changes over time.</p>
         <p>See what I'm up to <a href="<?php echo SITE_URL ?>now">now</a>, or find out how I <a href="<?php echo SITE_URL ?>colophon">built </a>this site.</p>
       </div>
+      <div>
+        <img src="/assets/media/about.jpeg" alt="Photo of Adrian sitting in Nature" />
+      </div>
     </div>
   </div>
 </section>
