@@ -11,13 +11,20 @@
     // custom elements
     customElements.define("pretty-date", PrettyDate, { extends: "time" });
 
-    // Bind centering of photos
-    const photos = document.querySelectorAll('.content img');
+    // click events
     document.addEventListener('click', (ev) => {
+      
+      // Bind centering of photos 
       const img = getTag("IMG", ev.target);
       if (img != null) {
         // img.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
         scrollToTargetAdjusted(img);
+      }
+
+      // easier photo click targets
+      const datalinkEl = getDataLink(ev.target);
+      if (datalinkEl != null) {
+        window.location = datalinkEl.dataset.link;
       }
     }, true);
   }
@@ -47,6 +54,19 @@
     while (el.parentNode) {
       el = el.parentNode
       if (el.tagName === tagName) {
+        return el;
+      }
+    }
+    return null;
+  }
+
+  function getDataLink(el) {
+    if (el.dataset.link != null) {
+      return el;
+    }
+    while (el.parentNode) {
+      el = el.parentNode
+      if (el.dataset.link != null) {
         return el;
       }
     }

@@ -12,7 +12,7 @@
 
 <div class='aside wide'>
   <div class=title>
-    <h1>July Town</h1>
+    <h1>A Small Canadian Town In July</h1>
   </div>
 
   <div class=body>
