@@ -388,6 +388,14 @@ mark {
   }
 }
 
+section .grid-3 {
+  @media (max-width: 926px) {
+    & {
+      display: block;
+    }
+  }
+}
+
 .grid-6 {
   display: grid;
   grid-template-columns: repeat(6, 6fr);
