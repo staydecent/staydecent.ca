@@ -74,7 +74,10 @@
   }
 
   function scrollToTargetAdjusted(target) {
-    const offset = 20;
+    const isSmall = target.clientHeight < window.innerHeight / 2;
+    const offset = isSmall
+      ? (target.clientHeight / 1.5)
+      : 29;
     const targetPos = target.getBoundingClientRect().top;
     const offsetPosition = targetPos + window.pageYOffset - offset;
     window.scrollTo({
