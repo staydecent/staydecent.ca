@@ -11,8 +11,8 @@
 
   --offwhite: #E7E7E7;
 
-  --grey: #ACA8B0;
-  --grey-transparent: #ACA8B0aa;
+  --grey: #d7d2bf;
+  --grey-transparent: #d7d2bfaa;
   --grey-dark: #413D44;
   --grey-dark-transparent: #413D44aa;
 
@@ -544,7 +544,7 @@ section .grid-3 {
 }
 
 .vp1 {
-  background: linear-gradient(to top, var(--grey-transparent), var(--grey-transparent)), url(/assets/i/squamish.jpeg) center center no-repeat;
+  background: linear-gradient(to top, #d7d2bfef, #d7d2bfaa), url(/assets/i/squamish.jpeg) center center no-repeat;
   display: flex;
   flex-direction: column;
 
