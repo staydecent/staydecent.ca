@@ -1,0 +1,14 @@
+title: Awareness is the Goal
+---
+
+From the most benign self-help books to ancient philosophy and spiritual texts, the goal is awareness. Every bit of advice for improving your business, or your relationships acts as a tool to help you be more aware. Some of these tools offer specific awareness such as how to listen, or work smarter not harder. While others offer general tools to increase awareness. Most notably, meditation. So, what is awareness?
+
+Is it consciousness? Perhaps. Yet, I think it has it's own distinct feel or flavor. Or, perhaps even a bit narrower of a definition. Awareness is a bit easier to understand than grandioise "[consciousness](https://philosophy.stackexchange.com/questions/4682/what-are-the-differences-between-sentience-consciousness-and-awareness)". The point is, so much of what we do and percieve in the world happens without awareness. Think of your goals, strategies, wishes, wants, fears, distates: are they really yours? Where did they come from? Why do you feel the way you do today? To understand these fully, would be to have complete awareness of ones self.
+
+And, that's the goal. Every bit of increased awareness allows us to act in a way that is for our betterment. To be fully aware of ones boundaries. One's own tasks. With awareness—any increased level of it—comes new freedom. To be aware of _uncounsciouss_ behavior, self-defeating habits, limiting beliefs, our actual, personal motivations means we get to choose. The more aware you are, the more you get to choose. The more free-will you get to exercise.
+
+Looking at self-help books, religion, philosophy, and spirituality in this way can also be freeing. You don't have to evaluate if you _believe_ everything they are saying. You don't have to ask "is this doctrine for me?" You don't have to declare that you are a buddhist, or a minimalist, or a hustler or anything else. You can just try these things out. Like testing a new tool. Does this work for me? Does this thought, practice or concept allow me more awareness of myself and my actions? Great. With increased awareness you'll likely realize that a tool that works for you may not work for another. Or even, that a tool that did work, one day will no longer. 
+
+Awareness if very freeing. It allows you to be fully _you_. And, that's the goal. It's not to be _this_ way or _that_ way. It's not a set of behaviors, beliefs and mannerisms. It is not some idolized way of acting and showing up in the world. You are not here to emulate another. Rather, it is being aware of why you act the way you act. Why you think the way you think. And, with that awareness comes the freedom—the responsibility—to take full accountability for ones actions. For one's entire life.
+
+Awareness is the ultimate goal.
