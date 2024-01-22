@@ -10,7 +10,7 @@
       </div>
       <div>
         <p class=bigger>Here's what I'm currently focusing on</p>
-        <p class="big"><del datetime="2023-09-01">Leading Engineering at <a href="https://mudwtr.com">MUD\WTR</a>.</del> Taking a sabbatical as of Sept 2023.</p>
+        <p class="big"><del datetime="2023-09-01">Leading Engineering at <a href="https://mudwtr.com">MUD\WTR</a>.</del> Taking a <a href="/sabbatical">sabbatical</a> as of Sept 2023.</p>
         <p class="big">Continuously adjusting how I perceive the world, especially in regards to how I react.</p>
         <p class=big>Learning to flow with the universe ✨.</p>
         <p class=big>Playing video games again.</p>

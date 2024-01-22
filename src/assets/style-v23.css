@@ -648,20 +648,6 @@ section .grid-3 {
   background-color: #f3f8ff;
 }
 
-#picos {
-  background-color: #F1E0D0;
-  color: #57491e;
-}
-
-#picos h2 {
-  font-size: 2.25em;
-  font-weight: 400;
-}
-
-#picos a {
-  color: #57491e;
-}
-
 #noir {
   background-color: var(--offwhite);
 }
@@ -684,12 +670,6 @@ section .grid-3 {
 
 #waves {
   background-color: #f9f3e1;
-}
-
-#waves h1,
-#waves p,
-#waves a {
-  color: #909A9C;
 }
 
 #black {
