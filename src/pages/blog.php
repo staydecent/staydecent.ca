@@ -15,11 +15,7 @@
         krsort($posts);
         $limit = 0;
         foreach ($posts as $date => $entry) {
-          if (++$limit > 100) break;
-          if ($limit % 3 == 0) {
-            echo '<div>&nbsp;</div>';
-            continue;
-          }
+          if (++$limit > 1000) break;
           ?>
           <article>
             <h2 class=normal><a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h2 class=normal>
@@ -29,6 +25,9 @@
             </postamble>
           </article>
           <?php
+          if ($limit % 2 == 0) {
+            echo '<div>&nbsp;</div>';
+          }
         }
       ?>
   </div>
