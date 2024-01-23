@@ -16,7 +16,7 @@
   </div>
 
   <div class="body">
-    <p class="bigger">I recently visited Paris for the first time. Really, it was my frist time off the North American continent!</p>
+    <p class="bigger">In 2018, I visited Paris for the first time. Really, it was my frist time off the North American continent!</p>
     <p class=big>After spending three weeks in Spain, my partner and I wandered around Paris for 4 days. These are some selected photos from a two rolls of Kodak ColorPlus 200. All shot with a Yashica FX-D and Yashica ML 50mm/2.</p>
   </div>
 </div>

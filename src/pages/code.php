@@ -6,7 +6,7 @@
 <section>
   <div class=container>
     <div class="grid-50 end">
-      <h2 class="pagetitle margin">Lessons and opinions on software and technology.</h2>
+      <h2 class="pagetitle margin">Lessons and opinions on software development.</h2>
     </div>
     <div class=grid-3>
       <div>&nbsp;</div>

@@ -17,19 +17,14 @@
 
   <!-- July Town -->
   <div
-    class="viewport vp1"
-    style="background: url('<?php echo SITE_URL ?>photography/july-town/images/town_14_dithered.jpg') center center no-repeat, linear-gradient(to top, #D0DBD7aa, #D0DBD7aa); justify-content: flex-end;"
+    class="viewport vp1 vp-july-town"
+    style="background-image: url('<?php echo SITE_URL ?>photography/july-town/images/town_14_dithered.jpg')"
     data-link="<?php echo SITE_URL ?>photography/july-town"
   >
     <div class="vp1-content container">
-      <div class="grid-3">
-        <div>&nbsp;</div>
-        <div>
-          <h1 class=vp2-title style="color: #C74938; text-align: center;">
-            <a class=plain href="<?php echo SITE_URL ?>photography/july-town" data-color='D0DBD7'>A Small Canadian Town In&nbsp;July</a>
-          </h1>
-        </div>
-      </div>
+      <h1 class=vp2-title style="color: #C74938; text-align: center;">
+        <a class=plain href="<?php echo SITE_URL ?>photography/july-town" data-color='D0DBD7'>A Small Canadian Town In&nbsp;July</a>
+      </h1>
     </div>
   </div>
 
@@ -54,8 +49,8 @@
 
   <!-- Paris Noir -->
   <div
-    class="viewport vp1"
-    style="background: url('<?php echo SITE_URL ?>photography/paris-noir/images/parisnoir_7_dithered.jpg') right center no-repeat; justify-content: center; margin-top: 10vh"
+    class="viewport vp1 vp-paris-noir"
+    style="background-image: url('<?php echo SITE_URL ?>photography/paris-noir/images/parisnoir_7_dithered.jpg');"
     data-link="<?php echo SITE_URL ?>photography/paris-noir"
   >
     <div class="vp1-content container">
