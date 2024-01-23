@@ -267,12 +267,12 @@ a.plain {
   line-height: 1;
 
   &.margin {
-    margin: 12vh 0 3vh;
+    margin: 10vw 0 5vw;
   }
 
   @media (max-width: 926px) {
     & {
-      font-size: 5vh;
+      font-size: 10vw;
       letter-spacing: -2px;
     }
   }
@@ -308,6 +308,25 @@ p.big {
 p.bigger {
   font-size: 1.95em;
   margin: 0.7em 0;
+}
+
+blockquote.fancy {
+  font-family: var(--serif);
+  margin-left: 0;
+
+  p {
+    font-family: var(--serif);
+    letter-spacing: -2px;
+    font-size: 2rem;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.r-margin {
+  margin-right: 3rem;
 }
 
 mark {
@@ -545,11 +564,39 @@ section .grid-3 {
 
 .vp1 {
   background: linear-gradient(to top, #d7d2bfef, #d7d2bfaa), url(/assets/i/squamish.jpeg) center center no-repeat;
+  background-repeat: no-repeat;
+  background-position: center center;
   display: flex;
   flex-direction: column;
 
   @media (max-width: 926px) {
     justify-content: space-between;
+    background-position: center left;
+  }
+}
+
+.vp1.vp-july-town {
+  background-color: #D0DBD7aa;
+  justify-content: flex-end;
+
+  @media (max-width: 926px) {
+    background-size: cover;
+    background-position: center center;
+    justify-content: flex-start;
+  }
+}
+
+.vp1.vp-paris-noir {
+  justify-content: center;
+  background-position: right center;
+  margin-top: 10vh;
+  
+  @media (max-width: 926px) {
+    justify-content: flex-start;
+
+    .vp1-content {
+      margin-top: 10rem;
+    }
   }
 }
 
@@ -577,6 +624,10 @@ section .grid-3 {
 .vp1-content.container {
   margin-top: 4vh;
   margin-bottom: 14vh;
+
+  @media (max-width: 926px) {
+    margin-bottom: 1rem;
+  }
 }
 
 /*
