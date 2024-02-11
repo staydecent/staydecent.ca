@@ -1,4 +1,4 @@
-<footer class=container>
+<footer class="container last">
   <div class="grid-3">
     <div>&copy; 2009—<?php echo date("Y"); ?> Adrian Unger</div>
     <nav>

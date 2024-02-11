@@ -2,12 +2,16 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 <?php include $config['dirs']['layout'].'/nav.php' ?>
 
+<div class=container>
+  <div class="grid-50 end">
+    <h1 class="pagetitle margin">Sabbatical</h1>
+  </div>
+</div>
+
 <section>
   <div class=container>
     <div class=grid-3>
-      <div>
-        <h1 class=pagetitle>Sabbatical</h1>
-      </div>
+      <div>&nbsp;</div>
       <div class=r-margin>
         <p class=bigger>Having the luxury to take a sabbatical is a wonderful thing.</p>
         <p>For me, I reached a point where it was clear I wasn't really following my heart when it came to my work. I actually have had the luck of having a wonderful career working with even more wonderful people. Despite this, I still would reach a place where I felt stuck, unfulfilled, and would create my own tension and stories to explain why the job was not for me anymore. Only with my most recent job did I recognize that it was all my own creation. It forced me to really look at my conditioned and unconscious behavior. Thus, the sabbatical.</p>

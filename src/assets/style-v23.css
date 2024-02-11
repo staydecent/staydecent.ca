@@ -2,9 +2,24 @@
   Variables
 */
 
+@font-face {
+  font-family: "InstrumentSerif";
+  src: url("/assets/InstrumentSerif-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "InstrumentSerif";
+  src: url("/assets/InstrumentSerif-Italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+
 :root {
-  --sans: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
-  --serif: times, serif;
+  --sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --serif: 'InstrumentSerif', times, serif;
   
   --white: #FCFCFC;
   --black: #000;
@@ -55,8 +70,8 @@ a:link {
 h1, h2 {
   font-family: var(--sans);
   font-weight: 600;
-  transform: scaleY(1.4);
   letter-spacing: -2px;
+  transform: scaleY(1.4);
 
   &.normal {
     font-size: 1.25rem;
@@ -84,6 +99,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  letter-spacing: -1px;
 }
 
 h3 {
@@ -124,6 +140,11 @@ article {
 footer {
   padding: 1em;
   scroll-snap-align: end; /* for homepage snap scrolling */
+
+  &.last {
+    margin-top: 5vw;
+    border-bottom: 20vw solid var(--black);
+  }
 }
 
 img {
@@ -259,23 +280,19 @@ a.plain {
 }
 
 .pagetitle {
-  margin-top: 0;
-  font-size: 4rem;
   font-family: var(--serif);
   font-weight: 400;
-  letter-spacing: -4px;
   line-height: 1;
+  margin-top: 0;
 
   &.margin {
     margin: 10vw 0 5vw;
   }
+}
 
-  @media (max-width: 926px) {
-    & {
-      font-size: 10vw;
-      letter-spacing: -2px;
-    }
-  }
+.post > p:first-child {
+  font-size: 1.65rem;
+  margin-top: 0;
 }
 
 .post > h2 {
@@ -310,14 +327,20 @@ p.bigger {
   margin: 0.7em 0;
 }
 
+.grid-3 p.bigger {
+  margin-top: 0;
+}
+
 blockquote.fancy {
   font-family: var(--serif);
   margin-left: 0;
+  margin-top: 0;
 
   p {
     font-family: var(--serif);
-    letter-spacing: -2px;
+    font-style: italic;
     font-size: 2rem;
+    margin-top: 0;
 
     &:last-child {
       padding-bottom: 0;
@@ -667,7 +690,10 @@ section .grid-3 {
 @media screen and (max-width: 480px) {
   body {
     font-size: 12px;
-  } 
+  }
+  p {
+    font-size: 1.35em;
+  }
 }
 
 

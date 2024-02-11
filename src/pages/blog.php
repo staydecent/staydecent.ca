@@ -6,7 +6,7 @@
 <section>
   <div class=container>
     <div class="grid-50 end">
-      <h2 class="pagetitle margin">Mostly incomplete thoughts on&nbsp;<em>stuff</em>.</h2>
+      <h1 class="pagetitle margin">Mostly incomplete thoughts on&nbsp;<em>stuff</em>.</h1>
     </div>
     <div class=grid-3>
       <div>&nbsp;</div>
