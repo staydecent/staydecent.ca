@@ -4,17 +4,6 @@
 
 <div class="viewport-scroller">
 
-  <!-- Intro -->
-  <div class="viewport vp1">
-    <h1 class=vp1-title>Welcome</h1>
-    <div class="vp1-content container">
-      <div class="grid-3">
-        <p class="big">Howdy, thanks for stopping by.</p>
-        <p class=big>This is my <a class=black href="/about">digital garden</a> where I share my perspective through <a class=black href="/blog">words</a> and <a class=black href="/photography">photos</a>. Most recently, I <a class=black target=_blank rel=noopener href="https://mudwtr.com">worked</a> as a Product Developer. But, right <a class=black href="/now">now</a>, I'm taking a sabbatical.</p>
-      </div>
-    </div>
-  </div>
-
   <!-- Sebastion Beach -->
   <div
     class="viewport vp1"
@@ -129,8 +118,6 @@
   </div>
 
 <?php 
-
 $in_viewport = true;
 include $config['dirs']['layout'].'/footer.php'
-
 ?>

@@ -67,10 +67,12 @@ a:link {
   color: var(--grey-dark);
 }
 
-h1, h2 {
-  font-family: var(--sans);
+h1 {
+  font-size: 5vw;
   font-weight: 600;
   letter-spacing: -2px;
+  line-height: 1;
+  margin-top: 0.4em;
   transform: scaleY(1.4);
 
   &.normal {
@@ -84,13 +86,15 @@ h1, h2 {
     font-family: var(--serif);
     font-weight: 400;
   }
-}
 
-h1 {
-  font-size: 7vh;
-  letter-spacing: -4px;
-  line-height: 1;
-  margin-top: 0.4em;
+  &.sans {
+    font-family: var(--sans);
+    transform: scaleY(1);
+  }
+
+  &.big {
+    font-size: 15vw;
+  }
 
   @media (max-width: 926px) {
     letter-spacing: -2px;
@@ -98,16 +102,19 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
-  letter-spacing: -1px;
-}
-
-h3 {
+  font-family: var(--sans);
   font-size: 1.25rem;
   text-transform: uppercase;
 }
 
+h3 {
+  font-family: var(--sans);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
 h4, h5 {
+  font-family: var(--sans);
   font-weight: 600;
   font-size: 1rem;
 }
@@ -247,7 +254,7 @@ a.grey:hover {
 a.black {
   color: var(--black);
   text-decoration-line: underline;
-  text-decoration-style: dotted;
+  font-style: italic;
 }
 
 a.plain {
@@ -293,11 +300,6 @@ a.plain {
 .post > p:first-child {
   font-size: 1.65rem;
   margin-top: 0;
-}
-
-.post > h2 {
-  font-family: var(--serif);
-  font-weight: 400;
 }
 
 .post img {
@@ -386,7 +388,7 @@ mark {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-width: 1440px;
-  margin: 6vh auto 2vh;
+  margin: 4vw auto 1vw;
 }
 
 .aside p,
@@ -470,11 +472,20 @@ section .grid-3 {
   }
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.j-end {
+  justify-content: end;
+}
+
 .content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 4vw;
-  grid-row-gap: 2vh;
+  grid-row-gap: 2vw;
   align-items: end;
 }
 
@@ -484,7 +495,7 @@ section .grid-3 {
 }
 
 .content.spaced {
-  grid-row-gap: 10vh;
+  grid-row-gap: 8vw;
 
   @media (max-width: 926px) {
     & > div {
@@ -549,7 +560,7 @@ section .grid-3 {
 }
 
 .content .text {
-  padding: 10vh;
+  padding: 8vw;
 }
 
 
@@ -612,7 +623,7 @@ section .grid-3 {
 .vp1.vp-paris-noir {
   justify-content: center;
   background-position: right center;
-  margin-top: 10vh;
+  margin-top: 8vw;
   
   @media (max-width: 926px) {
     justify-content: flex-start;
@@ -641,12 +652,12 @@ section .grid-3 {
   font-weight: 800;
   color: var(--black);
   margin: 0;
-  padding-top: 6vh;
+  padding-top: 6rem;
 }
 
 .vp1-content.container {
-  margin-top: 4vh;
-  margin-bottom: 14vh;
+  margin-top: 4rem;
+  margin-bottom: 14rem;
 
   @media (max-width: 926px) {
     margin-bottom: 1rem;
