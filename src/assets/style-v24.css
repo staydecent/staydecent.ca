@@ -1,80 +1,7 @@
-@font-face {
-  font-family: 'BeniBlack';
-  src: url('fonts/beni-black.eot');
-  src: url('fonts/beni-black.eot?#iefix') format('embedded-opentype'),
-             url('fonts/beni-black.woff2') format('woff2'),
-       url('fonts/beni-black.woff') format('woff'),
-       url('fonts/beni-black.ttf') format('truetype'),
-       url('fonts/beni-black.svg#youworkforthem') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-/*
-Font:     Guau
-Style:    Bold Condensed
-URL:    https://www.youworkforthem.com/font/T13589/guaubold
-Foundry:  Carlos Campos Verdu
-Foundry:  https://www.youworkforthem.com/designer/1496/carlos-campos-verdu
-Copyright:  Copyright © 2020 by Carlos Campos Verdú. All rights reserved.
-Version:  17
-Created:  January 31, 2021
-License:  https://www.youworkforthem.com/font-license 
-License:  The WebFont(s) listed in this document must follow the YouWorkForThem
-      WebFont license rules. All other parties are strictly restricted 
-      from using the WebFonts(s) listed without a purchased license. 
-      All details above must always remain unaltered and visible in your CSS.
-*/
-
-@font-face {
-  font-family: 'Guau-BoldCondensed';
-  src: url('fonts/guau-bold-condensed.eot');
-  src: url('fonts/guau-bold-condensed.eot?#iefix') format('embedded-opentype'),
-             url('fonts/guau-bold-condensed.woff2') format('woff2'),
-       url('fonts/guau-bold-condensed.woff') format('woff'),
-       url('fonts/guau-bold-condensed.ttf') format('truetype'),
-       url('fonts/guau-bold-condensed.svg#youworkforthem') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-/*
-Font:     FF Prill
-Style:    Regular
-URL:    https://www.youworkforthem.com/font/T11792/prill
-Foundry:  Flatface
-Foundry:  https://www.youworkforthem.com/designer/1325/flatface
-Copyright:  Copyright © FF Prill 2020 by Flatface. All rights reserved.
-Version:  17
-Created:  January 16, 2020
-License:  https://www.youworkforthem.com/font-license 
-License:  The WebFont(s) listed in this document must follow the YouWorkForThem
-      WebFont license rules. All other parties are strictly restricted 
-      from using the WebFonts(s) listed without a purchased license. 
-      All details above must always remain unaltered and visible in your CSS.
-*/
-
-@font-face {
-  font-family: 'FFPrill-Regular';
-  src: url('fonts/ff-prill-regular.eot');
-  src: url('fonts/ff-prill-regular.eot?#iefix') format('embedded-opentype'),
-             url('fonts/ff-prill-regular.woff2') format('woff2'),
-       url('fonts/ff-prill-regular.woff') format('woff'),
-       url('fonts/ff-prill-regular.ttf') format('truetype'),
-       url('fonts/ff-prill-regular.svg#youworkforthem') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-
 :root {
   --sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --serif: times, serif;
-  --display: 'FFPrill-Regular', sans-serif;
-/*  --display: 'Guau-BoldCondensed', sans-serif;*/
-/*  --display: 'BeniBlack', sans-serif;*/
-  
+
   --white: #FAFAFA;
   --black: #0A0A0A;
 
@@ -108,26 +35,6 @@ body {
   margin: 0;
   transition: background-color 1s ease-in-out;
 }
-
-/*h1 {
-  color: var(--primary-transparent);
-  font-family: var(--display);
-  font-size: 4vw;
-  font-weight: normal;
-  font-style: normal;
-  line-height: 1;
-  margin-bottom: 1vw;
-  margin-top: 0;
-  letter-spacing: -2px;
-  text-align: center;
-  transform: scaleY(1.4);
-  padding: 0 6vw;
-
-  &.blur {
-    text-shadow: -2px -2px 2px var(--primary-transparent), 1px 1px 2px  var(--primary-transparent);
-    transform: scaleY(1.4) rotate(-1deg);
-  }
-}*/
 
 h1 {
   font-family: var(--sans);
@@ -176,7 +83,6 @@ p {
   margin-top: 0;
 }
 
-
 a:link {
   color: var(--black);
 }
@@ -213,11 +119,7 @@ h1 a{
 /*
   Layout
 */
-
 section {
-/*  display: grid;*/
-/*  grid-template-columns: 1fr 1fr;*/
-
   display: flex;
 
   & > *:first-child:last-child {
@@ -239,6 +141,15 @@ article {
 footer {
   min-height: 20vh;
   scroll-snap-align: end;
+}
+
+article {
+  margin-right: 10vw;
+
+  & > p:first-child {
+    font-size: 2vw;
+    line-height: 1.5;
+  }
 }
 
 img {
@@ -278,14 +189,18 @@ figure {
     text-align: center;
     letter-spacing: -1px;
   }
+
+  p {
+    font-size: 2vw;
+  }
 }
 
 /*
   Classes
 */
-
 .f-center {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 
   & > * {
@@ -303,6 +218,13 @@ figure {
   }
 }
 
+.display {
+  font-size: 2vw;
+  line-height: 1.4;
+  padding: 0 5vw;
+  margin: 0 auto;
+}
+
 .pt {
   padding-top: var(--gutter2);
 }
@@ -311,27 +233,24 @@ figure {
   word-spacing: 100vw;
 }
 
-
 /*
-  Page specific
+  Photography viewport styles
 */
-
-#index header {
+.photography header {
   z-index: 33;
   position: absolute;
   top: 0;
   width: calc(100% - 32px);
 }
 
-#index main {
+.photography main {
   max-height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: proximity;
-  /*scroll-snap-points-y: repeat(100vh);*/
   scroll-snap-type: y proximity;
 }
 
-#index main > section {
+.photography main > section {
   height: 100vh;
   min-height: 100%;
   max-height: 100%;
@@ -340,6 +259,10 @@ figure {
   scroll-snap-align: start;
 }
 
+
+/*
+  Page specific
+*/
 #ecstasy {
   background-color: #aaa;
 }
@@ -399,17 +322,17 @@ figure {
 
 #shinrinyoku {
   background-color: #433C06;
-}
 
-#shinrinyoku h1,
-#shinrinyoku h2,
-#shinrinyoku .body p,
-#shinrinyoku a {
-  color: #F2CB6C;
-}
+  h1,
+  h2,
+  p,
+  a {
+    color: #F2CB6C;
+  }
 
-#shinrinyoku h2 {
-  margin: 0;
-  font-size: 4em;
-  font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  h2 {
+    margin: 0;
+    font-size: 4em;
+    font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  }
 }
