@@ -1,9 +1,10 @@
 <header>
-  <div class=container>
-    <div class=grid-3>
-      <nav>
-        <a href="/" <?php echo current_class('adrian') ?><?php echo current_class('photography') ?> rel=home>Adrian Unger</a>
-      </nav>
+  <section>
+    <nav>
+      <a href="/" <?php echo current_class('adrian') ?><?php echo current_class('photography') ?> rel=home>Adrian Unger</a>
+    </nav>
+
+    <section>
       <nav>
         <a href="<?php echo SITE_URL ?>photography" <?php echo current_class('adrian') ?><?php echo current_class('photography') ?> data-color='433C06'>Photos</a>
         <a href="<?php echo SITE_URL ?>code" <?php echo current_class('code') ?> data-color='ddd'>Software</a>
@@ -12,9 +13,9 @@
       <nav>
         <a href="<?php echo SITE_URL ?>about">About</a>
         <a rel='alternate' type='application/rss+xml' href='<?php echo SITE_URL ?>feed'>(RSS)</a>
-      </nav>
-    </div>
-  </div>
+      </nav>   
+    </section>
+  </section>
 </header>
 
 <?php /* ?>

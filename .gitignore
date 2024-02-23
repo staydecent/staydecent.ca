@@ -2,6 +2,7 @@
 .sass-chache
 public
 src/photography/**/images/**
+src/assets/fonts/**
 
 # Local Netlify folder
 .netlify

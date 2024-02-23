@@ -11,8 +11,7 @@
     else
       echo $title.' — by Adrian Unger';
 ?></title>
-  <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL ?>/assets/style-v23.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL ?>/assets/style-v24.css">
   <link rel="alternate" type="application/rss+xml" href="<?php echo SITE_URL ?>/feed" />
 </head>
-<body id="<?php echo $page_id; ?>" class="page">
-<div id="site" class='scale-up'>
+<body id="<?php echo $page_id; ?>">

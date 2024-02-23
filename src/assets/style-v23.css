@@ -63,6 +63,14 @@ a:link {
   color: var(--black);
 }
 
+a:visited {
+  color: var(--black);
+}
+
+article a:visited {
+  color: var(--);
+}
+
 .content a:visited {
   color: var(--grey-dark);
 }

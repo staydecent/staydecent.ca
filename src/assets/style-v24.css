@@ -1,0 +1,409 @@
+@font-face {
+  font-family: 'BeniBlack';
+  src: url('fonts/beni-black.eot');
+  src: url('fonts/beni-black.eot?#iefix') format('embedded-opentype'),
+             url('fonts/beni-black.woff2') format('woff2'),
+       url('fonts/beni-black.woff') format('woff'),
+       url('fonts/beni-black.ttf') format('truetype'),
+       url('fonts/beni-black.svg#youworkforthem') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+Font:     Guau
+Style:    Bold Condensed
+URL:    https://www.youworkforthem.com/font/T13589/guaubold
+Foundry:  Carlos Campos Verdu
+Foundry:  https://www.youworkforthem.com/designer/1496/carlos-campos-verdu
+Copyright:  Copyright © 2020 by Carlos Campos Verdú. All rights reserved.
+Version:  17
+Created:  January 31, 2021
+License:  https://www.youworkforthem.com/font-license 
+License:  The WebFont(s) listed in this document must follow the YouWorkForThem
+      WebFont license rules. All other parties are strictly restricted 
+      from using the WebFonts(s) listed without a purchased license. 
+      All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+  font-family: 'Guau-BoldCondensed';
+  src: url('fonts/guau-bold-condensed.eot');
+  src: url('fonts/guau-bold-condensed.eot?#iefix') format('embedded-opentype'),
+             url('fonts/guau-bold-condensed.woff2') format('woff2'),
+       url('fonts/guau-bold-condensed.woff') format('woff'),
+       url('fonts/guau-bold-condensed.ttf') format('truetype'),
+       url('fonts/guau-bold-condensed.svg#youworkforthem') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+Font:     FF Prill
+Style:    Regular
+URL:    https://www.youworkforthem.com/font/T11792/prill
+Foundry:  Flatface
+Foundry:  https://www.youworkforthem.com/designer/1325/flatface
+Copyright:  Copyright © FF Prill 2020 by Flatface. All rights reserved.
+Version:  17
+Created:  January 16, 2020
+License:  https://www.youworkforthem.com/font-license 
+License:  The WebFont(s) listed in this document must follow the YouWorkForThem
+      WebFont license rules. All other parties are strictly restricted 
+      from using the WebFonts(s) listed without a purchased license. 
+      All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+  font-family: 'FFPrill-Regular';
+  src: url('fonts/ff-prill-regular.eot');
+  src: url('fonts/ff-prill-regular.eot?#iefix') format('embedded-opentype'),
+             url('fonts/ff-prill-regular.woff2') format('woff2'),
+       url('fonts/ff-prill-regular.woff') format('woff'),
+       url('fonts/ff-prill-regular.ttf') format('truetype'),
+       url('fonts/ff-prill-regular.svg#youworkforthem') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+:root {
+  --sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --serif: times, serif;
+  --display: 'FFPrill-Regular', sans-serif;
+/*  --display: 'Guau-BoldCondensed', sans-serif;*/
+/*  --display: 'BeniBlack', sans-serif;*/
+  
+  --white: #FAFAFA;
+  --black: #0A0A0A;
+
+  --offwhite: #E7E7E7;
+
+  --grey: #d7d2bf;
+  --grey-transparent: #d7d2bfaa;
+  --grey-dark: #413D44;
+  --grey-dark-transparent: #413D44aa;
+
+  --primary: #D6F500;
+  --primary-transparent: #D6F500cc;
+
+  --green: #4f7d01;
+  --green-transparent: #4f7d01cc;
+
+  --blue: #01267d;
+  --red: #C74938;
+  --red-transparent: #C74938aa;
+
+  --gutter: 16px;
+  --gutter2: 64px;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+  font-family: var(--sans);
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+  transition: background-color 1s ease-in-out;
+}
+
+/*h1 {
+  color: var(--primary-transparent);
+  font-family: var(--display);
+  font-size: 4vw;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  margin-bottom: 1vw;
+  margin-top: 0;
+  letter-spacing: -2px;
+  text-align: center;
+  transform: scaleY(1.4);
+  padding: 0 6vw;
+
+  &.blur {
+    text-shadow: -2px -2px 2px var(--primary-transparent), 1px 1px 2px  var(--primary-transparent);
+    transform: scaleY(1.4) rotate(-1deg);
+  }
+}*/
+
+h1 {
+  font-family: var(--sans);
+  font-size: 5vw;
+  font-weight: 700;
+  letter-spacing: -0.25vw;
+  line-height: 1;
+  text-transform: uppercase;
+  transform: scaleY(1.6);
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: var(--black);
+  font-family: var(--sans);
+  font-size: 3.3vw;
+  font-weight: 700;
+  line-height: 3.2vw;
+}
+
+h3 {
+  font-size: 2vw;
+  line-height: 2.5vw;
+}
+
+h4 {
+  font-size: 1.4vw;
+  line-height: 2.15vw;
+}
+
+h5 {
+  font-size: 1.2vw;
+  font-weight: 400;
+  line-height: 2vw;
+  text-transform: uppercase;
+}
+
+p {
+  color: var(--black);
+  font-family: var(--sans);
+  font-size: 1.2vw;
+  font-weight: 400;
+  line-height: 2vw;
+  margin-top: 0;
+}
+
+
+a:link {
+  color: var(--black);
+}
+
+a:visited {
+  color: var(--black);
+}
+
+article a:visited {
+  color: var(--grey-dark);
+}
+
+nav a {
+  color: var(--black);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.95rem;
+
+  &:hover {
+    background-color: var(--primary-transparent);
+  }
+}
+
+nav a + a {
+  margin-left: var(--gutter);
+}
+
+h1 a{ 
+  text-decoration: none;
+}
+
+
+/*
+  Layout
+*/
+
+section {
+/*  display: grid;*/
+/*  grid-template-columns: 1fr 1fr;*/
+
+  display: flex;
+
+  & > *:first-child:last-child {
+    width: 100%;
+  }
+
+  & > *:first-child,
+  & > *:last-child {
+    width: 50%;
+  }
+}
+
+header,
+footer,
+article {
+  margin: var(--gutter);
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  & img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  &.contain img {
+    object-fit: contain;
+    max-width: 70vw;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+  }
+
+  h1 {
+    padding: 0;
+    margin: 0;
+    z-index: 22;
+    position: absolute;
+    bottom: 6vh;
+    font-size: 2.75vh;
+    width: 100%;
+    text-align: center;
+    letter-spacing: -1px;
+  }
+}
+
+/*
+  Classes
+*/
+
+.f-center {
+  display: flex;
+  justify-content: center;
+
+  & > * {
+    align-self: center;
+    text-align: center;
+  }
+}
+
+.f-end {
+  display: flex;
+  justify-content: flex-end;
+
+  & > * {
+    align-self: flex-end;
+  }
+}
+
+.pt {
+  padding-top: var(--gutter2);
+}
+
+
+/*
+  Page specific
+*/
+
+#index header {
+  z-index: 33;
+  position: absolute;
+  top: 0;
+  width: calc(100% - 32px);
+}
+
+#index main {
+  max-height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: proximity;
+  /*scroll-snap-points-y: repeat(100vh);*/
+  scroll-snap-type: y proximity;
+}
+
+#index main > section {
+  height: 100vh;
+  min-height: 100%;
+  max-height: 100%;
+  position: relative;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+#blog .vp1-title {
+  color: var(--offwhite); 
+}
+
+#photography .content {
+  /* display: block; */
+  align-items: center;
+}
+
+#town {
+  background-color: #D0DBD7;
+}
+
+#sebastion {
+  background-color: #f3f8ff;
+}
+
+#noir {
+  background-color: var(--offwhite);
+}
+
+#noir h1,
+#noir .body p,
+#noir a {
+  color: black;
+}
+
+#paris {
+  background-color: #f3e7bd;
+}
+
+#paris h1,
+#paris .body p,
+#paris a {
+  color: #2f425c;
+}
+
+#waves {
+  background-color: #f9f3e1;
+}
+
+#black {
+  background-color: #666;
+}
+#black h1,
+#black .body p,
+#black a {
+  color: var(--black);
+}
+
+#maui {
+  background-color: #FBCBC1;
+}
+
+#maui h1,
+#maui .body p,
+#maui a {
+  color: black;
+}
+
+#shinrinyoku {
+  background-color: #433C06;
+}
+
+#shinrinyoku h1,
+#shinrinyoku h2,
+#shinrinyoku .body p,
+#shinrinyoku a {
+  color: #F2CB6C;
+}
+
+#shinrinyoku h2 {
+  margin: 0;
+  font-size: 4em;
+  font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
