@@ -4,7 +4,7 @@
 
 <main>
 
-  <section style="background-color: #aaa;">
+  <section id=ecstasy>
     <div class=f-center>
       <h1 class=blur>But why this ecstasy of joy?</h1>
     </div>
@@ -13,11 +13,10 @@
     </figure>
   </section>
 
-  <!-- Sebastion beach -->
-  <section>
+  <section id=sebastion>
     <div class=f-center>
-      <h1>
-        <a style="color: #7c8ea8ab;" href="<?php echo SITE_URL ?>photography/sebastion-beach">Sebastion Beach</a>
+      <h1 class=break>
+        <a href="<?php echo SITE_URL ?>photography/sebastion-beach">Sebastion Beach</a>
       </h1>
     </div>
     <figure>
@@ -27,28 +26,74 @@
     </figure>
   </section>
 
-  <!-- July town -->
-  <section style="background-color: #D0DBD7;">
+  <section id=july-town>
     <figure class=contain>
       <a href="<?php echo SITE_URL ?>photography/july-town">
         <img src="<?php echo $base_url ?>photography/july-town/images/town_14_dithered.jpg" alt="Photo by Adrian Unger">
       </a>
       <h1>
-        <a style="color: #C74938;" href="<?php echo SITE_URL ?>photography/july-town">A Small Canadian Town in July</a>
+        <a href="<?php echo SITE_URL ?>photography/july-town">A Small Canadian Town in July</a>
       </h1>
     </figure>
   </section>
 
-  <!-- Picos -->
-  <section>
+  <section id=picos>
     <div class=f-end>
       <img src="<?php echo $base_url ?>photography/picos-on-portra/images/picos_11_dithered.jpg" alt="Photo by Adrian Unger">
     </div>
     <div class=pt>
-      <h1 style="word-spacing: 100vw;">
+      <h1 class=break>
         <a href="<?php echo SITE_URL ?>photography/picos-on-portra">Picos on Portra</a>
       </h1>
     </div>
+  </section>
+
+  <section id=noir>
+    <div class=f-center>
+      <h1 class=break>
+        <a href="<?php echo SITE_URL ?>photography/paris-noir">Paris Noir</a>
+      </h1>
+    </div>
+    <figure>
+      <a href="<?php echo SITE_URL ?>photography/paris-noir">
+        <img src="<?php echo $base_url ?>photography/paris-noir/images/parisnoir_7_dithered.jpg" alt="Photo by Adrian Unger">
+      </a>        
+    </figure>
+  </section>
+
+  <section id=paris>
+    <div class=f-center>
+      <h1 class=break>
+        <a href="<?php echo SITE_URL ?>photography/paris-couleur">Paris Couleur</a>
+      </h1>
+    </div>
+    <figure>
+      <a href="<?php echo SITE_URL ?>photography/paris-couleur">
+        <img src="<?php echo $base_url ?>photography/paris-couleur/images/pariscouleur_8_dithered.jpg" alt="Photo by Adrian Unger">
+      </a>        
+    </figure>
+  </section>
+
+  <section id=waves>
+    <figure>
+      <a href="<?php echo SITE_URL ?>photography/waves">
+        <img src="<?php echo $base_url ?>photography/waves/images/waves_2.jpg" alt="Photo by Adrian Unger">
+      </a>
+      <h1>
+        <a href="<?php echo SITE_URL ?>photography/waves">Waves</a>
+      </h1>
+    </figure>
+  </section>
+
+  <section id=maui>
+    <figure class=contain>
+      <a href="<?php echo SITE_URL ?>photography/maui">
+        <img src="<?php echo $base_url ?>photography/maui/images/maui_5_dithered.jpg" alt="Photo by Adrian Unger">
+      </a>
+      <h1>
+        <a href="<?php echo SITE_URL ?>photography/maui">Maui</a>
+      </h1>
+    </figure>
   </section>
 
 <?php 

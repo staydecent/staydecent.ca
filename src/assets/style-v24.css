@@ -197,7 +197,7 @@ nav a {
   font-size: 0.95rem;
 
   &:hover {
-    background-color: var(--primary-transparent);
+    text-decoration: underline;
   }
 }
 
@@ -234,6 +234,11 @@ header,
 footer,
 article {
   margin: var(--gutter);
+}
+
+footer {
+  min-height: 20vh;
+  scroll-snap-align: end;
 }
 
 img {
@@ -302,6 +307,10 @@ figure {
   padding-top: var(--gutter2);
 }
 
+.break {
+  word-spacing: 100vw;
+}
+
 
 /*
   Page specific
@@ -331,64 +340,61 @@ figure {
   scroll-snap-align: start;
 }
 
-#blog .vp1-title {
-  color: var(--offwhite); 
-}
-
-#photography .content {
-  /* display: block; */
-  align-items: center;
-}
-
-#town {
-  background-color: #D0DBD7;
+#ecstasy {
+  background-color: #aaa;
 }
 
 #sebastion {
   background-color: #f3f8ff;
+
+  h1,
+  a,
+  p {
+    color: #7c8ea8ab;
+  }
+}
+
+#july-town {
+  background-color: #D0DBD7;
+
+  h1 a {
+    color: #C74938;
+  }
+}
+
+#picos {
 }
 
 #noir {
   background-color: var(--offwhite);
 }
 
-#noir h1,
-#noir .body p,
-#noir a {
-  color: black;
-}
-
 #paris {
   background-color: #f3e7bd;
-}
 
-#paris h1,
-#paris .body p,
-#paris a {
-  color: #2f425c;
+  h1,
+  p,
+  a {
+    color: #2f425c;
+  }
 }
 
 #waves {
   background-color: #f9f3e1;
-}
 
-#black {
-  background-color: #666;
-}
-#black h1,
-#black .body p,
-#black a {
-  color: var(--black);
+  h1 a {
+    color: #ffffffaa;
+  }
 }
 
 #maui {
-  background-color: #FBCBC1;
-}
+  background-color: #83A1B4;
 
-#maui h1,
-#maui .body p,
-#maui a {
-  color: black;
+  h1,
+  p,
+  a {
+    color: #FBCBC1;
+  }
 }
 
 #shinrinyoku {

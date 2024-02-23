@@ -10,16 +10,25 @@
   $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
 ?>
 
-<div class='aside wide'>
-  <div class=title>
-    <h1>Sebastion Beach</h1>
-  </div>
+<main>
 
-  <div class=body>
-    <p class=bigger>Typical winter days captured at Sebastion Beach.</p>
-  </div>
-</div>
+  <section id=sebastion>
+    <div class=f-center>
+      <h1 class=break>Sebastion Beach</h1>
+    </div>
+    <figure>
+      <p class=bigger>Typical winter days captured at Sebastion Beach.</p>
+    </figure>
+  </section>
 
+
+<?php 
+$in_viewport = true;
+include $config['dirs']['layout'].'/footer.php'
+?>
+
+
+<?php /* ?>
 <div class=container>
   <div class="content spaced">
 
@@ -89,5 +98,4 @@
 
   </div>
 </div>
-
-<?php include $config['dirs']['layout'].'/footer.php' ?>
+<?php */ ?>
