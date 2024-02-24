@@ -144,7 +144,16 @@ footer {
 }
 
 article {
-  margin-right: 10vw;
+
+  & p,
+  & h2,
+  & h3,
+  & h4,
+  & blockquote,
+  & ul,
+  & ol {
+    margin-right: 10vw;
+  }
 
   & > p:first-child {
     font-size: 2vw;
