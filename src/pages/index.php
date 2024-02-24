@@ -1,4 +1,7 @@
-<?php $page_id = 'index'; ?>
+<?php
+$page_id = 'index';
+$body_class = 'photography';
+?>
 <?php include $config['dirs']['layout'].'/header.php' ?>
 <?php include $config['dirs']['layout'].'/nav.php' ?>
 

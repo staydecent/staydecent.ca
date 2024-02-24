@@ -1,6 +1,7 @@
 <?php
   $title = 'Waves';
   $page_id = 'waves';
+  $body_class = 'photography';
 ?>
 
 <?php include $config['dirs']['layout'].'/header.php' ?>
@@ -10,68 +11,78 @@
   $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
 ?>
 
-<div class='aside wide'>
-  <div class=title>
-    <h1>Waves</h1>
-  </div>
 
-  <div class="body">
-    <p class="bigger">A cold, but sunny day during winter, we headed to the west coast.</p>
-  </div>
-</div>
+<main>
 
-<div class=container>
-  <div class="content spaced">
-
-    <div class=right>
-      <img src="<?php echo $base_url ?>/images/waves_4.jpg" alt="Waves Photo by Adrian Unger">
+  <section>
+    <div class=f-center>
+      <h1>Waves</h1>
+      <p class=display>A cold, but sunny day during winter, we headed to the west coast.</p>
     </div>
-
-    <div>
-      <img src="<?php echo $base_url ?>/images/waves_2.jpg" alt="Waves Photo by Adrian Unger">
+    <div class=f-center>
+      <img src="<?php echo $base_url ?>/images/waves_4.jpg" alt="Maui Photo by Adrian Unger">
     </div>
+  </section>
 
-    <div class=right>
-      <img src="<?php echo $base_url ?>/images/waves_6.jpg" alt="Waves Photo by Adrian Unger">
-    </div>
+  <section>
+    <img src="<?php echo $base_url ?>/images/waves_2.jpg" alt="Waves Photo by Adrian Unger">
+  </section>
 
-    <div>
-      <img src="<?php echo $base_url ?>/images/waves_7.jpg" alt="Waves Photo by Adrian Unger">
-    </div>
+  <section>
+    <div>&nbsp;</div>
+    <img src="<?php echo $base_url ?>/images/waves_6.jpg" alt="Waves Photo by Adrian Unger">
+  </section>
 
-    <div class=center>
-      <img src="<?php echo $base_url ?>/images/waves_3.jpg" alt="Waves Photo by Adrian Unger">
-    </div>
+  <section>
+    <img src="<?php echo $base_url ?>/images/waves_7.jpg" alt="Waves Photo by Adrian Unger">
+    <div>&nbsp;</div>
+  </section>
 
-    <div class=right>
-      <img src="<?php echo $base_url ?>/images/waves_8.jpg" alt="Waves Photo by Adrian Unger">
-    </div>
+  <section class=center>
+    <img src="<?php echo $base_url ?>/images/waves_8.jpg" alt="Waves Photo by Adrian Unger">
+    <div>&nbsp;</div>
+  </section>
 
-    <div>
-      <img src="<?php echo $base_url ?>/images/waves_5.jpg" alt="Waves Photo by Adrian Unger">
-    </div>
+  <section>
+    <figure class="contain">
+    <img src="<?php echo $base_url ?>/images/waves_3.jpg" alt="Waves Photo by Adrian Unger">
+    </figure>
+  </section>
 
-    <div>
-      <img src="<?php echo $base_url ?>/images/waves_12.jpg" alt="Waves Photo by Adrian Unger">
-    </div>
+  <section>
+    <div>&nbsp;</div>
+    <img src="<?php echo $base_url ?>/images/waves_5.jpg" alt="Waves Photo by Adrian Unger">
+  </section>
 
-    <div class=right>
+  <section>
+    <figure class="contain">
+    <img src="<?php echo $base_url ?>/images/waves_12.jpg" alt="Waves Photo by Adrian Unger">
+    </figure>
+  </section>
+
+
+  <section>
+    <div class=f-end>
       <img src="<?php echo $base_url ?>/images/waves_9.jpg" alt="Waves Photo by Adrian Unger">
     </div>
-
-    <div class=center>
-      <img src="<?php echo $base_url ?>/images/waves_11.jpg" alt="Waves Photo by Adrian Unger">
-    </div>
-
-    <div class=right>
-      <img src="<?php echo $base_url ?>/images/waves_13.jpg" alt="Waves Photo by Adrian Unger">
-    </div>
-
     <div>
-      <img src="<?php echo $base_url ?>/images/waves_10.jpg" alt="Waves Photo by Adrian Unger">
+    <img src="<?php echo $base_url ?>/images/waves_11.jpg" alt="Waves Photo by Adrian Unger">
     </div>
+  </section>
 
-  </div>
-</div>
+  <section>
+    <div>&nbsp;</div>
+    <img src="<?php echo $base_url ?>/images/waves_13.jpg" alt="Waves Photo by Adrian Unger">      
+  </section>
 
-<?php include $config['dirs']['layout'].'/footer.php' ?>
+  <section>
+    <img src="<?php echo $base_url ?>/images/waves_10.jpg" alt="Waves Photo by Adrian Unger">
+    <div>&nbsp;</div>
+      
+  </section>
+
+<?php 
+$in_viewport = true;
+include $config['dirs']['layout'].'/footer.php'
+?>
+

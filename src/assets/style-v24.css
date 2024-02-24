@@ -43,7 +43,7 @@ h1 {
   letter-spacing: -0.25vw;
   line-height: 1;
   text-transform: uppercase;
-  transform: scaleY(1.6);
+  transform: scaleY(1.6) scaleX(0.9);
 }
 
 h2,
