@@ -218,6 +218,12 @@ figure {
   }
 }
 
+.f-between {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 .f-end {
   display: flex;
   justify-content: flex-end;
