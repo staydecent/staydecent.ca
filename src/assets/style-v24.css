@@ -287,7 +287,9 @@ figure {
 
   h1,
   a,
-  p {
+  p,
+  div,
+  time {
     color: #7c8ea8ab;
   }
 }
@@ -295,7 +297,11 @@ figure {
 #july-town {
   background-color: #D0DBD7;
 
-  h1 a {
+  h1,
+  a,
+  p,
+  div,
+  time {
     color: #C74938;
   }
 }
@@ -311,8 +317,10 @@ figure {
   background-color: #f3e7bd;
 
   h1,
+  a,
   p,
-  a {
+  div,
+  time {
     color: #2f425c;
   }
 }
@@ -329,8 +337,10 @@ figure {
   background-color: #83A1B4;
 
   h1,
+  a,
   p,
-  a {
+  div,
+  time {
     color: #FBCBC1;
   }
 }
@@ -340,8 +350,10 @@ figure {
 
   h1,
   h2,
+  a,
   p,
-  a {
+  div,
+  time {
     color: #F2CB6C;
   }
 
