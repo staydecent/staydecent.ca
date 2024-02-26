@@ -2,15 +2,12 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 <?php include $config['dirs']['layout'].'/nav.php' ?>
 
-<div class=container>
-  <div class="grid-50 end">
-    <h1 class="pagetitle margin">About</h1>
-  </div>
-</div>
+<section>
+  <h1>About</h1>
+</section>
 
 <section>
-  <div class=container>
-    <div class=grid-3>
+  <article>
       <div><img src="/assets/media/about.jpeg" alt="Photo of Adrian sitting in Nature" /></div>
       <div>&nbsp;</div>
       <div>
@@ -21,8 +18,7 @@
         <p>This website is a playground where I mainly explore photography. For me, photography is a means of bringing attention into the current moment, with the intention to capture the magic that exists in even the most mundane of moments. Through curation, I hope to notice how my perspective changes over time.</p>
         <p>See what I'm up to <a href="<?php echo SITE_URL ?>now">now</a>, or find out how I <a href="<?php echo SITE_URL ?>colophon">built </a>this site.</p>
       </div>
-    </div>
-  </div>
+  </article>
 </section>
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>

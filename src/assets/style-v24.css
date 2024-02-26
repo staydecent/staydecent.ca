@@ -44,6 +44,10 @@ h1 {
   line-height: 1;
   text-transform: uppercase;
   transform: scaleY(1.6) scaleX(0.9);
+
+  @media (max-width: 720px) {
+    font-size: 10vw;
+  }
 }
 
 h2,
@@ -68,7 +72,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.2vw;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 2vw;
   text-transform: uppercase;
@@ -77,7 +81,7 @@ h5 {
 p {
   color: var(--black);
   font-family: var(--sans);
-  font-size: 1.2vw;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 2vw;
   margin-top: 0;
@@ -122,6 +126,10 @@ h1 a{
 section {
   display: flex;
 
+  @media (max-width: 720px) {
+    display: block;
+  }
+
   & > *:first-child:last-child {
     width: 100%;
   }
@@ -129,8 +137,14 @@ section {
   & > *:first-child,
   & > *:last-child {
     width: 50%;
+
+    @media (max-width: 720px) {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
+
 
 header,
 footer,
@@ -141,6 +155,12 @@ article {
 footer {
   min-height: 20vh;
   scroll-snap-align: end;
+
+  @media (max-width: 720px) {
+    & section > * {
+      margin-bottom: var(--gutter);
+    }
+  }  
 }
 
 article {
@@ -185,6 +205,10 @@ figure {
     object-position: center;
     display: block;
     margin: 0 auto;
+
+    @media (max-width: 720px) {
+      max-width: 100vw;
+    }
   }
 
   h1 {
@@ -238,6 +262,10 @@ figure {
   line-height: 1.4;
   padding: 0 5vw;
   margin: 0 auto;
+
+  @media (max-width: 720px) {
+    font-size: 4vw;
+  }
 }
 
 .pt {
@@ -272,6 +300,18 @@ figure {
   position: relative;
   overflow: hidden;
   scroll-snap-align: start;
+
+  @media (max-width: 720px) {
+    overflow: visible;
+    max-height: auto;
+    height: auto;
+    scroll-snap-align: none;
+
+    & > *:not(img) {
+      height: 100vh;
+      scroll-snap-align: start;
+    }
+  }
 }
 
 
