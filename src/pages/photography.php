@@ -47,8 +47,8 @@
   >
     <div class="vp1-content container">
       <div class="grid-3">
-        <div>&nbsp;</div>
-        <div>&nbsp;</div>
+        <div class=no-mobile>&nbsp;</div>
+        <div class=no-mobile>&nbsp;</div>
         <div>
           <h1 class=vp1-title style="font-size: 10vh; line-height: 1; color: #000; margin-left: -4px; margin-top: 1em;">
             <a class=plain href="<?php echo SITE_URL ?>photography/picos-on-portra" data-color='F1E0D0'>Picos on Portra</a>

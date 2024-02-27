@@ -12,7 +12,7 @@
 <section>
   <div class=container>
     <div class=grid-3>
-      <div>&nbsp;</div>
+      <div class=no-mobile>&nbsp;</div>
       <article class="post span-2">
         <?php echo $entry['body'] ?>
 

@@ -9,7 +9,7 @@
       <h2 class="pagetitle margin">Archives</h2>
     </div>
     <div class=grid-3>
-      <div>&nbsp;</div>
+      <div class=no-mobile>&nbsp;</div>
       <ol class="styled">
       <?php
       $posts = all_entries();

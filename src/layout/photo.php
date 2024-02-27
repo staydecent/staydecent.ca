@@ -2,7 +2,7 @@
 
   <div id="main" class="grid">
     <h1 class="bigger"><?php echo $entry['title'] ?></h1>
-    <div>&nbsp;</div>
+    <div class=no-mobile>&nbsp;</div>
   </div>
   
   <div class="page grid content">

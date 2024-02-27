@@ -11,7 +11,7 @@
 <section>
   <div class=container>
     <div class=grid-3>
-      <div>&nbsp;</div>
+      <div class=no-mobile>&nbsp;</div>
       <div>
         <p class=bigger>Here's what I'm currently focusing on</p>
         <p class="big"><del datetime="2023-09-01">Leading Engineering at <a href="https://mudwtr.com">MUD\WTR</a>.</del> Taking a <a href="/sabbatical">sabbatical</a> as of Sept 2023.</p>

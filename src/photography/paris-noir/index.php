@@ -36,7 +36,7 @@ $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
 
   <section class=right>
     <img src="<?php echo $base_url ?>/images/parisnoir_5.jpg" alt="Paris Photo by Adrian Unger">
-    <div>&nbsp;</div>
+    <div class=no-mobile>&nbsp;</div>
   </section>
 
   <section>
@@ -46,7 +46,7 @@ $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
 
 
   <section>
-    <div>&nbsp;</div>
+    <div class=no-mobile>&nbsp;</div>
     <img src="<?php echo $base_url ?>/images/parisnoir_2.jpg" alt="Paris Photo by Adrian Unger">
   </section>
 
@@ -84,7 +84,7 @@ $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
 
   <section class=x>
     <img src="<?php echo $base_url ?>/images/parisnoir_4.jpg" alt="Paris Photo by Adrian Unger">
-    <div>&nbsp;</div>
+    <div class=no-mobile>&nbsp;</div>
   </section>
 
 <?php 

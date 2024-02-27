@@ -40,7 +40,7 @@ $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
 
   <section>
     <img src="<?php echo $base_url ?>/images/picos_6.jpg" alt="Picos De Europa Photo by Adrian Unger">
-    <div>&nbsp;</div>
+    <div class=no-mobile>&nbsp;</div>
   </section>
 
   <section>
@@ -48,7 +48,7 @@ $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
   </section>
 
   <section>
-    <div>&nbsp;</div>
+    <div class=no-mobile>&nbsp;</div>
     <img src="<?php echo $base_url ?>/images/picos_12.jpg" alt="Picos De Europa Photo by Adrian Unger">      
   </section>
 
@@ -64,11 +64,11 @@ $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
 
   <section>
     <img src="<?php echo $base_url ?>/images/picos_3.jpg" alt="Picos De Europa Photo by Adrian Unger">
-    <div>&nbsp;</div>
+    <div class=no-mobile>&nbsp;</div>
   </section>
 
   <section>
-    <div>&nbsp;</div>
+    <div class=no-mobile>&nbsp;</div>
     <img src="<?php echo $base_url ?>/images/picos_4.jpg" alt="Picos De Europa Photo by Adrian Unger">
   </section>
 
@@ -84,11 +84,11 @@ $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
 
   <section>
     <img src="<?php echo $base_url ?>/images/picos_7.jpg" alt="Picos De Europa Photo by Adrian Unger">
-    <div>&nbsp;</div>
+    <div class=no-mobile>&nbsp;</div>
   </section>
 
   <section>
-    <div>&nbsp;</div>
+    <div class=no-mobile>&nbsp;</div>
     <img src="<?php echo $base_url ?>/images/picos_9.jpg" alt="Picos De Europa Photo by Adrian Unger">
   </section>
 
@@ -97,7 +97,7 @@ $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
   </section>
 
   <section class=center>
-    <div>&nbsp;</div>
+    <div class=no-mobile>&nbsp;</div>
     <img src="<?php echo $base_url ?>/images/picos_13.jpg" alt="Picos De Europa Photo by Adrian Unger">
   </section>
 

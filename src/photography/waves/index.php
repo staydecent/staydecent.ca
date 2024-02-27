@@ -29,18 +29,18 @@
   </section>
 
   <section>
-    <div>&nbsp;</div>
+    <div class=no-mobile>&nbsp;</div>
     <img src="<?php echo $base_url ?>/images/waves_6.jpg" alt="Waves Photo by Adrian Unger">
   </section>
 
   <section>
     <img src="<?php echo $base_url ?>/images/waves_7.jpg" alt="Waves Photo by Adrian Unger">
-    <div>&nbsp;</div>
+    <div class=no-mobile>&nbsp;</div>
   </section>
 
   <section class=center>
     <img src="<?php echo $base_url ?>/images/waves_8.jpg" alt="Waves Photo by Adrian Unger">
-    <div>&nbsp;</div>
+    <div class=no-mobile>&nbsp;</div>
   </section>
 
   <section>
@@ -50,7 +50,7 @@
   </section>
 
   <section>
-    <div>&nbsp;</div>
+    <div class=no-mobile>&nbsp;</div>
     <img src="<?php echo $base_url ?>/images/waves_5.jpg" alt="Waves Photo by Adrian Unger">
   </section>
 
@@ -71,13 +71,13 @@
   </section>
 
   <section>
-    <div>&nbsp;</div>
+    <div class=no-mobile>&nbsp;</div>
     <img src="<?php echo $base_url ?>/images/waves_13.jpg" alt="Waves Photo by Adrian Unger">      
   </section>
 
   <section>
     <img src="<?php echo $base_url ?>/images/waves_10.jpg" alt="Waves Photo by Adrian Unger">
-    <div>&nbsp;</div>
+    <div class=no-mobile>&nbsp;</div>
       
   </section>
 

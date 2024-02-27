@@ -46,33 +46,47 @@ $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
   </section>
 
   <section>
-    <img src="<?php echo $base_url ?>/images/town_15.jpg" alt="July Town Photo by Adrian Unger">
-    <div>&nbsp;</div>
+    <div>
+      <img src="<?php echo $base_url ?>/images/town_15.jpg" alt="July Town Photo by Adrian Unger">
+    </div>
+    <div class=no-mobile>&nbsp;</div>
   </section>
 
   <section>
-    <img src="<?php echo $base_url ?>/images/town_12.jpg" alt="July Town Photo by Adrian Unger">
+    <div>
+      <img src="<?php echo $base_url ?>/images/town_12.jpg" alt="July Town Photo by Adrian Unger">
+    </div>
   </section>
 
   <section>
-    <img src="<?php echo $base_url ?>/images/town_7.jpg" alt="July Town Photo by Adrian Unger">
+    <div>
+      <img src="<?php echo $base_url ?>/images/town_7.jpg" alt="July Town Photo by Adrian Unger">
+    </div>
   </section>
 
   <section>
-    <img src="<?php echo $base_url ?>/images/town_6.jpg" alt="July Town Photo by Adrian Unger">
-    <img src="<?php echo $base_url ?>/images/town_5.jpg" alt="July Town Photo by Adrian Unger">
+    <div>
+      <img src="<?php echo $base_url ?>/images/town_6.jpg" alt="July Town Photo by Adrian Unger">
+    </div>
+    <div>
+      <img src="<?php echo $base_url ?>/images/town_5.jpg" alt="July Town Photo by Adrian Unger">
+    </div>
   </section>
 
   <section>
-    <img src="<?php echo $base_url ?>/images/town_8.jpg" alt="July Town Photo by Adrian Unger">
-    <div>&nbsp;</div>
+    <div>
+      <img src="<?php echo $base_url ?>/images/town_8.jpg" alt="July Town Photo by Adrian Unger">
+    </div>
+    <div class=no-mobile>&nbsp;</div>
   </section>
 
 
   <section>
-    <article class=f-center>
-      <img src="<?php echo $base_url ?>/images/town_4.jpg" alt="July Town Photo by Adrian Unger">
-    </article>
+    <div class="f-center">
+      <article>
+        <img src="<?php echo $base_url ?>/images/town_4.jpg" alt="July Town Photo by Adrian Unger">
+      </article>
+    </div>
     <div class='f-end'>
       <article class=f-center>
         <img src="<?php echo $base_url ?>/images/town_3.jpg" alt="July Town Photo by Adrian Unger">
@@ -81,13 +95,17 @@ $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
   </section>
 
   <section>
-    <img src="<?php echo $base_url ?>/images/town_2.jpg" alt="July Town Photo by Adrian Unger">
-    <div>&nbsp;</div>
+    <div>
+      <img src="<?php echo $base_url ?>/images/town_2.jpg" alt="July Town Photo by Adrian Unger">
+    </div>
+    <div class=no-mobile>&nbsp;</div>
   </section>
 
   <section>
-    <div>&nbsp;</div>
-    <img src="<?php echo $base_url ?>/images/town_21.jpg" alt="July Town Photo by Adrian Unger">
+    <div class=no-mobile>&nbsp;</div>
+    <div>
+      <img src="<?php echo $base_url ?>/images/town_21.jpg" alt="July Town Photo by Adrian Unger">
+    </div>
   </section>
 
   <section>
@@ -97,16 +115,22 @@ $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
   </section>
 
   <section>
-    <img src="<?php echo $base_url ?>/images/town_23.jpg" alt="July Town Photo by Adrian Unger">
+    <div>
+      <img src="<?php echo $base_url ?>/images/town_23.jpg" alt="July Town Photo by Adrian Unger">
+    </div>
   </section>
 
   <section>
-    <img src="<?php echo $base_url ?>/images/town_20.jpg" alt="July Town Photo by Adrian Unger">
-    <img src="<?php echo $base_url ?>/images/town_18.jpg" alt="July Town Photo by Adrian Unger">
+    <div>
+      <img src="<?php echo $base_url ?>/images/town_20.jpg" alt="July Town Photo by Adrian Unger">
+    </div>
+    <div>
+      <img src="<?php echo $base_url ?>/images/town_18.jpg" alt="July Town Photo by Adrian Unger">
+    </div>
   </section>
 
   <section>
-    <div>&nbsp;</div>
+    <div class=no-mobile>&nbsp;</div>
     <div class='f-end'>
       <article class=f-center>
         <img src="<?php echo $base_url ?>/images/town_31.jpg" alt="July Town Photo by Adrian Unger">      
@@ -115,8 +139,10 @@ $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
   </section>
 
   <section>
-    <img src="<?php echo $base_url ?>/images/town_27.jpg" alt="July Town Photo by Adrian Unger">
-    <div>&nbsp;</div>
+    <div>
+      <img src="<?php echo $base_url ?>/images/town_27.jpg" alt="July Town Photo by Adrian Unger">
+    </div>
+    <div class=no-mobile>&nbsp;</div>
   </section>
 
 <?php 

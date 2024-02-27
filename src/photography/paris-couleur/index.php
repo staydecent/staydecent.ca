@@ -26,7 +26,7 @@
 
   <section>
     <img src="<?php echo $base_url ?>/images/pariscouleur_5.jpg" alt="Paris Photo by Adrian Unger">
-    <div>&nbsp;</div>
+    <div class=no-mobile>&nbsp;</div>
   </section>
 
   <section class=center>
@@ -37,7 +37,7 @@
 
   <section class=center>
     <img src="<?php echo $base_url ?>/images/pariscouleur_10.jpg" alt="Paris Photo by Adrian Unger">      
-    <div>&nbsp;</div>
+    <div class=no-mobile>&nbsp;</div>
   </section>
 
 
@@ -45,11 +45,11 @@
     <div class=f-end>
       <img src="<?php echo $base_url ?>/images/pariscouleur_11.jpg" alt="Paris Photo by Adrian Unger">
     </div>
-    <div>&nbsp;</div>
+    <div class=no-mobile>&nbsp;</div>
   </section>
 
   <section>
-    <div>&nbsp;</div>
+    <div class=no-mobile>&nbsp;</div>
 
     <img src="<?php echo $base_url ?>/images/pariscouleur_1.jpg" alt="Paris Photo by Adrian Unger">
   </section>

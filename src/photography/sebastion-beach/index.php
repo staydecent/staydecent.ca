@@ -18,53 +18,75 @@ $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
       <h1 class=break>Sebastion Beach</h1>
       <p class=bigger>Typical winter days captured at Sebastion Beach.</p>
     </div>
-    <img src="<?php echo $base_url ?>/images/sebastion_10.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    <div>
+      <img src="<?php echo $base_url ?>/images/sebastion_10.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    </div>
   </section>
 
   <section>
-    <img src="<?php echo $base_url ?>/images/sebastion_15.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    <div>
+      <img src="<?php echo $base_url ?>/images/sebastion_15.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    </div>
   </section>
 
   <section>
+    <div>
       <img src="<?php echo $base_url ?>/images/sebastion_6.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    </div>
   </section>
 
   <section>
+    <div>
       <img src="<?php echo $base_url ?>/images/sebastion_4.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    </div>
   </section>
 
   <section>
-    <img src="<?php echo $base_url ?>/images/sebastion_5.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    <div>
+      <img src="<?php echo $base_url ?>/images/sebastion_5.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    </div>
   </section>
 
   <section>
-    <img src="<?php echo $base_url ?>/images/sebastion_3.jpg" alt="Sebastion Beach Photo by Adrian Unger">
-    <div>&nbsp;</div>
+    <div>
+      <img src="<?php echo $base_url ?>/images/sebastion_3.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    <div class=no-mobile>&nbsp;</div>
   </section>
 
   <section>
-    <img src="<?php echo $base_url ?>/images/sebastion_7.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    <div>
+      <img src="<?php echo $base_url ?>/images/sebastion_7.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    </div>
   </section>
 
   <section>
-    <img src="<?php echo $base_url ?>/images/sebastion_13.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    <div>
+      <img src="<?php echo $base_url ?>/images/sebastion_13.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    </div>
   </section>
 
   <section>
-    <img src="<?php echo $base_url ?>/images/sebastion_9.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    <div>
+      <img src="<?php echo $base_url ?>/images/sebastion_9.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    </div>
   </section>
 
   <section>
-    <img src="<?php echo $base_url ?>/images/sebastion_11.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    <div>
+      <img src="<?php echo $base_url ?>/images/sebastion_11.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    </div>
   </section>
 
   <section>
-    <img src="<?php echo $base_url ?>/images/sebastion_12.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    <div>
+      <img src="<?php echo $base_url ?>/images/sebastion_12.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    </div>
   </section>
 
   <section>
-    <div>&nbsp;</div>
-    <img src="<?php echo $base_url ?>/images/sebastion_1.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    <div class=no-mobile>&nbsp;</div>
+      <img src="<?php echo $base_url ?>/images/sebastion_1.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    </div>
   </section>
 
   <section>
@@ -74,12 +96,16 @@ $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
   </section>
 
   <section>
-    <img src="<?php echo $base_url ?>/images/sebastion_16.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    <div>
+      <img src="<?php echo $base_url ?>/images/sebastion_16.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    </div>
   </section>
 
   <section>
-    <div>&nbsp;</div>
-    <img src="<?php echo $base_url ?>/images/sebastion_8.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    <div class=no-mobile>&nbsp;</div>
+    <div>
+      <img src="<?php echo $base_url ?>/images/sebastion_8.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    </div>
   </section>
 
   <section>

@@ -42,13 +42,15 @@ $body_class = 'photography';
 
   <section id=picos>
     <div class=f-end>
-      <img src="<?php echo $base_url ?>photography/picos-on-portra/images/picos_11_dithered.jpg" alt="Photo by Adrian Unger">
-    </div>
-    <div class=pt>
       <h1 class=break>
         <a href="<?php echo SITE_URL ?>photography/picos-on-portra">Picos on Portra</a>
       </h1>
     </div>
+    <figure class=contain>
+      <a href="<?php echo SITE_URL ?>photography/picos-on-portra">
+        <img src="<?php echo $base_url ?>photography/picos-on-portra/images/picos_11_dithered.jpg" alt="Photo by Adrian Unger">
+      </a>        
+    </figure>
   </section>
 
   <section id=noir>

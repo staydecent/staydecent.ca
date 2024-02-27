@@ -9,7 +9,7 @@
 <section>
   <article>
       <div><img src="/assets/media/about.jpeg" alt="Photo of Adrian sitting in Nature" /></div>
-      <div>&nbsp;</div>
+      <div class=no-mobile>&nbsp;</div>
       <div>
         <p class="bigger">What could you possibly want to know?! Well, if you haven't figured it out yet, my name is Adrian and this is my website.</p>
 

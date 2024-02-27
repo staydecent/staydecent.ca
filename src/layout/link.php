@@ -12,7 +12,7 @@
 <section>
   <div class=container>
     <div class=grid-3>
-      <div>&nbsp;</div>
+      <div class=no-mobile>&nbsp;</div>
       <article class="post span-2">
         <p class="big"><span class="mark">&rarr;</span> <a href="<?php echo $entry['link'] ?>" target="_blank"><?php echo (array_key_exists('link_title', $entry)) ? $entry['link_title'] : $entry['link'] ?></a></p>
 

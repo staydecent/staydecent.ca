@@ -11,7 +11,7 @@
 <section>
   <div class=container>
     <div class=grid-3>
-      <div>&nbsp;</div>
+      <div class=no-mobile>&nbsp;</div>
       <div class=r-margin>
         <p class=bigger>Having the luxury to take a sabbatical is a wonderful thing.</p>
         <p>For me, I reached a point where it was clear I wasn't really following my heart when it came to my work. I actually have had the luck of having a wonderful career working with even more wonderful people. Despite this, I still would reach a place where I felt stuck, unfulfilled, and would create my own tension and stories to explain why the job was not for me anymore. Only with my most recent job did I recognize that it was all my own creation. It forced me to really look at my conditioned and unconscious behavior. Thus, the sabbatical.</p>
@@ -28,8 +28,8 @@
     </div>
 
     <div class=grid-3>
-      <div>&nbsp;</div>
-      <div>&nbsp;</div>
+      <div class=no-mobile>&nbsp;</div>
+      <div class=no-mobile>&nbsp;</div>
       <div>
         <blockquote class=fancy>
           <p>I don’t know what I’m doing. And if you don’t know what to do, there’s actually a chance of doing something new. As long as you know what you’re doing, nothing much of interest is going to happen.</p>
@@ -39,7 +39,7 @@
     </div>
 
     <div class=grid-3>
-      <div>&nbsp;</div>
+      <div class=no-mobile>&nbsp;</div>
       <div>
         <blockquote class=fancy>
           <p>Developing tenderness towards yourself allows you to see both your problems and your potential accurately. You don’t feel that you have to ignore your problems or exaggerate your potential.</p>
@@ -58,7 +58,7 @@
     </div>
 
     <div class=grid-3>
-      <div>&nbsp;</div>
+      <div class=no-mobile>&nbsp;</div>
       <div>
         <blockquote class=fancy>
           <p>Every man is the sum total of his reactions to experience. As your experiences differ and multiply, you become a different man, and hence your perspective changes. This goes on and on... So it would seem foolish, would it not, to adjust our lives to the demands of a goal we see from a different angle every day? How could we ever hope to accomplish anything... The answer, then, must not deal with goals at all... We do not strive to be firemen, we do not strive to be bankers, nor policemen, nor doctors. WE STRIVE TO BE OURSELVES. But don’t misunderstand me. I don’t mean that we can’t BE firemen, bankers, or doctors...but that we must make the goal conform to the individual, rather than make the individual conform to the goal... Beware of looking for goals: look for a way of life. Decide how you want to live and then see what you can do to make a living WITHIN that way of life.</p>
@@ -81,8 +81,8 @@ and your own consciousness.</p>
     </div>
 
     <div class=grid-3>
-      <div>&nbsp;</div>
-      <div>&nbsp;</div>
+      <div class=no-mobile>&nbsp;</div>
+      <div class=no-mobile>&nbsp;</div>
       <div>
         <blockquote class=fancy>
           <p>To make living itself an art, that is the goal.</p>

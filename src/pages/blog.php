@@ -9,7 +9,7 @@
       <h1 class="pagetitle margin">Mostly incomplete thoughts on&nbsp;<em>stuff</em>.</h1>
     </div>
     <div class=grid-3>
-      <div>&nbsp;</div>
+      <div class=no-mobile>&nbsp;</div>
       <?php
         $posts = $entries['blog'];
         krsort($posts);
@@ -26,7 +26,7 @@
           </article>
           <?php
           if ($limit % 2 == 0) {
-            echo '<div>&nbsp;</div>';
+            echo '<div class=no-mobile>&nbsp;</div>';
           }
         }
       ?>
