@@ -179,7 +179,7 @@ article {
     margin-right: 10vw;
   }
 
-  & > p:first-child {
+  & > p:first-child:not(.vsco) {
     font-size: 2vw;
     line-height: 1.5;
 
@@ -287,6 +287,24 @@ figure {
 
   & + p {
     padding: 0 5vw;
+  }
+}
+
+.vsco {
+  font-family: var(--sans);
+  font-size: 2vw;
+  font-weight: 700;
+  letter-spacing: -0.05vw;
+  line-height: 1;
+  text-transform: uppercase;
+  transform: scaleY(1.4);
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 2rem auto;
+  max-width: 80%;
+
+  @media (max-width: 720px) {
+    font-size: 6vw;
   }
 }
 

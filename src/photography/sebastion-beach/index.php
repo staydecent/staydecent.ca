@@ -24,67 +24,68 @@ $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
   </section>
 
   <section>
-    <div>
+    <figure class=contain>
       <img src="<?php echo $base_url ?>/images/sebastion_15.jpg" alt="Sebastion Beach Photo by Adrian Unger">
-    </div>
+    </figure>
   </section>
 
   <section>
-    <div>
+    <figure>
       <img src="<?php echo $base_url ?>/images/sebastion_6.jpg" alt="Sebastion Beach Photo by Adrian Unger">
-    </div>
+    </figure>
   </section>
 
   <section>
-    <div>
+    <article class=f-center>
       <img src="<?php echo $base_url ?>/images/sebastion_4.jpg" alt="Sebastion Beach Photo by Adrian Unger">
-    </div>
-  </section>
-
-  <section>
-    <div>
-      <img src="<?php echo $base_url ?>/images/sebastion_5.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    </article>
+    <div class='f-end'>
+      <article class=f-center>
+        <img src="<?php echo $base_url ?>/images/sebastion_5.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+      </article>
     </div>
   </section>
 
   <section>
     <div>
       <img src="<?php echo $base_url ?>/images/sebastion_3.jpg" alt="Sebastion Beach Photo by Adrian Unger">
+    </div>
     <div class=no-mobile>&nbsp;</div>
   </section>
 
   <section>
-    <div>
+    <figure>
       <img src="<?php echo $base_url ?>/images/sebastion_7.jpg" alt="Sebastion Beach Photo by Adrian Unger">
-    </div>
+    </figure>
   </section>
 
   <section>
-    <div>
+    <figure class=contain>
       <img src="<?php echo $base_url ?>/images/sebastion_13.jpg" alt="Sebastion Beach Photo by Adrian Unger">
-    </div>
+    </figure>
   </section>
 
   <section>
-    <div>
+    <figure>
       <img src="<?php echo $base_url ?>/images/sebastion_9.jpg" alt="Sebastion Beach Photo by Adrian Unger">
-    </div>
+    </figure>
   </section>
 
   <section>
-    <div>
+    <figure>
       <img src="<?php echo $base_url ?>/images/sebastion_11.jpg" alt="Sebastion Beach Photo by Adrian Unger">
-    </div>
+    </figure>
   </section>
 
   <section>
-    <div>
+    <figure class=contain>
       <img src="<?php echo $base_url ?>/images/sebastion_12.jpg" alt="Sebastion Beach Photo by Adrian Unger">
-    </div>
+    </figure>
   </section>
 
   <section>
     <div class=no-mobile>&nbsp;</div>
+    <div>
       <img src="<?php echo $base_url ?>/images/sebastion_1.jpg" alt="Sebastion Beach Photo by Adrian Unger">
     </div>
   </section>
@@ -96,13 +97,12 @@ $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
   </section>
 
   <section>
-    <div>
+    <div class=f-end>
       <img src="<?php echo $base_url ?>/images/sebastion_16.jpg" alt="Sebastion Beach Photo by Adrian Unger">
     </div>
   </section>
 
   <section>
-    <div class=no-mobile>&nbsp;</div>
     <div>
       <img src="<?php echo $base_url ?>/images/sebastion_8.jpg" alt="Sebastion Beach Photo by Adrian Unger">
     </div>

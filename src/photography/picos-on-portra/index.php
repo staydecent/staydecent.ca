@@ -56,8 +56,7 @@ $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
     <img src="<?php echo $base_url ?>/images/picos_5.jpg" alt="Picos De Europa Photo by Adrian Unger">
     <div class=f-end>
       <article>
-        <p>The scale of the of the place was hard to comprehend.</p>
-        <p>When I spotted a group of people ahead of us, the massive size of the rock walls became clear.</p>        
+        <p class=vsco>The scale of the of the place was hard to comprehend. When I spotted a group of people ahead of us, the massive size of the rock walls became clear.</p>
       </article>
     </div>
   </section>
