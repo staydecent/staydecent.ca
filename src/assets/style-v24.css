@@ -1,5 +1,38 @@
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 700.0;
+*
+* available axes:
+
+* 'wght' (range from 200.0 to 700.0)
+
+*/
+
+@font-face {
+  font-family: 'GeneralSans-Variable';
+  src: url('./fonts/GeneralSans-Variable.woff2') format('woff2'),
+       url('./fonts/GeneralSans-Variable.woff') format('woff'),
+       url('./fonts/GeneralSans-Variable.ttf') format('truetype');
+       font-weight: 200 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeneralSans-Variable';
+  src: url('./fonts/GeneralSans-VariableItalic.woff2') format('woff2'),
+       url('./fonts/GeneralSans-VariableItalic.woff') format('woff'),
+       url('./fonts/GeneralSans-VariableItalic.ttf') format('truetype');
+       font-weight: 200 700;
+       font-display: swap;
+       font-style: italic;
+}
+
+
 :root {
-  --sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --sans: 'GeneralSans-Variable', Helvetica, Arial, sans-serif;
   --serif: times, serif;
 
   --white: #FAFAFA;
@@ -22,15 +55,15 @@
   --red: #C74938;
   --red-transparent: #C74938aa;
 
-  --gutter: 16px;
-  --gutter2: 64px;
+  --gutter: 1rem;
+  --gutter2: 2rem;
 }
 
 body {
   background-color: var(--white);
   color: var(--black);
   font-family: var(--sans);
-  font-size: 16px;
+  font-size: 20px;
   height: 100%;
   margin: 0;
   transition: background-color 1s ease-in-out;
@@ -38,16 +71,10 @@ body {
 
 h1 {
   font-family: var(--sans);
-  font-size: 5vw;
-  font-weight: 700;
-  letter-spacing: -0.25vw;
+  font-size: 5em;
+  font-weight: 600;
   line-height: 1;
-  text-transform: uppercase;
-  transform: scaleY(1.6) scaleX(0.9);
-
-  @media (max-width: 720px) {
-    font-size: 10vw;
-  }
+  margin: 0;
 }
 
 h2,
@@ -57,7 +84,7 @@ h5 {
   color: var(--black);
   font-family: var(--sans);
   font-size: 3.3vw;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 3.2vw;
 }
 
@@ -107,7 +134,7 @@ nav a {
   color: var(--black);
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 0.95rem;
 
   &:hover {
@@ -151,8 +178,7 @@ section {
 
 
 header,
-footer,
-article {
+footer {
   margin: var(--gutter);
 }
 
@@ -232,7 +258,8 @@ figure {
   }
 
   p {
-    font-size: 2vw;
+    font-size: 1.5em;
+    line-height: 1.5;
   }
 }
 
@@ -369,6 +396,12 @@ figure {
 /*
   Page specific
 */
+#intro {
+  .bg {
+    background-color: red;
+  }
+}
+
 #ecstasy {
   background-color: #aaa;
 }

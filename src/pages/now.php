@@ -2,16 +2,12 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 <?php include $config['dirs']['layout'].'/nav.php' ?>
 
-<div class=container>
-  <div class="grid-50 end">
-    <h1 class="pagetitle margin">Now</h1>
-  </div>
-</div>
-
-<section>
-  <div class=container>
-    <div class=grid-3>
-      <div class=no-mobile>&nbsp;</div>
+<main>
+  <section>
+    <div class=f-start>
+      <h1>Now</h1>
+    </div>
+    <figure class=pt>
       <div>
         <p class=bigger>Here's what I'm currently focusing on</p>
         <p class="big"><del datetime="2023-09-01">Leading Engineering at <a href="https://mudwtr.com">MUD\WTR</a>.</del> Taking a <a href="/sabbatical">sabbatical</a> as of Sept 2023.</p>
@@ -20,8 +16,10 @@
         <p class=big>Playing video games again.</p>
         <p>This page was inspired by&nbsp;<a href="https://sivers.org/now">Derek Sivers</a>. <em>Updated: 2nd January, 2024</em></p>
       </div>
-    </div>
-  </div>
-</section>
+    </figure>
+  </section>
 
-<?php include $config['dirs']['layout'].'/footer.php' ?>
+<?php 
+$in_viewport = true;
+include $config['dirs']['layout'].'/footer.php'
+?>
