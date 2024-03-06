@@ -34,6 +34,7 @@
 :root {
   --sans: 'GeneralSans-Variable', Helvetica, Arial, sans-serif;
   --serif: times, serif;
+  --body: 'Liberation Sans', Arial, sans-serif;
 
   --white: #FAFAFA;
   --black: #0A0A0A;
@@ -55,8 +56,8 @@
   --red: #C74938;
   --red-transparent: #C74938aa;
 
-  --gutter: 1rem;
-  --gutter2: 2rem;
+  --gutter: 1em;
+  --gutter2: 2em;
 }
 
 body {
@@ -99,7 +100,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 400;
   line-height: 2vw;
   text-transform: uppercase;
@@ -108,13 +109,13 @@ h5 {
 p {
   color: var(--black);
   font-family: var(--sans);
-  font-size: 1.25rem;
+  font-size: 1.25em;
   font-weight: 400;
   line-height: 2vw;
   margin-top: 0;
 
   @media (max-width: 720px) {
-    font-size: 1rem;
+    font-size: 1em;
   }
 }
 
@@ -134,8 +135,6 @@ nav a {
   color: var(--black);
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 600;
-  font-size: 0.95rem;
 
   &:hover {
     text-decoration: underline;
@@ -154,6 +153,16 @@ h1 a{
 /*
   Layout
 */
+article {
+  & > div {
+    padding: var(--gutter);
+  }
+
+  p {
+    font-family: var(--body);
+  }
+}
+
 section {
   display: flex;
 
@@ -180,6 +189,9 @@ section {
 header,
 footer {
   margin: var(--gutter);
+  font-weight: 600;
+  font-size: 0.85em;
+  text-transform: uppercase;
 }
 
 footer {
@@ -191,28 +203,6 @@ footer {
       margin-bottom: var(--gutter);
     }
   }  
-}
-
-article {
-
-  & p,
-  & h2,
-  & h3,
-  & h4,
-  & blockquote,
-  & ul,
-  & ol {
-    margin-right: 10vw;
-  }
-
-  & > p:first-child:not(.vsco) {
-    font-size: 2vw;
-    line-height: 1.5;
-
-    @media (max-width: 720px) {
-      font-size: 6vw;
-    }
-  }
 }
 
 img {
@@ -306,7 +296,7 @@ figure {
   font-size: 2vw;
   line-height: 1.4;
   padding: 0 5vw;
-  margin: 1rem auto;
+  margin: 1em auto;
 
   @media (max-width: 720px) {
     font-size: 4vw;
@@ -327,7 +317,7 @@ figure {
   transform: scaleY(1.4);
   text-align: justify;
   text-justify: inter-word;
-  margin: 2rem auto;
+  margin: 2em auto;
   max-width: 80%;
 
   @media (max-width: 720px) {
@@ -398,7 +388,46 @@ figure {
 */
 #intro {
   .bg {
-    background-color: red;
+    --speed: 30s;
+    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+
+    filter: blur(calc(var(--size) / 5));
+
+/*    background: #CD4209;*/
+/*    background: conic-gradient(from 45deg, #CD4209, #9D7E45);*/
+
+/*    background: #F2BE92;*/
+/*    background: radial-gradient(at right top, #F2BE92, #6B8FC6);*/
+
+/*    background: #5D6DD3;
+    background: radial-gradient(at left top, #5D6DD3, #E3DC6F);*/
+
+    background: var(--primary);
+    background: radial-gradient(at left bottom, var(--primary), var(--offwhite));
+
+    animation: gradient 15s var(--easing) infinite;
+    background-size: 300% 300%;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 

@@ -1,6 +1,6 @@
 <footer>
   <section>
-    <div>&copy; 2009—<?php echo date("Y"); ?> Adrian Unger</div>
+    <div>&copy; 2009—<?php echo date("Y"); ?></div>
 
     <section>
       <nav>
