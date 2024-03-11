@@ -1,26 +1,35 @@
-<?php $page_id = 'blog'; ?>
+<?php 
+$page_id = 'blog';
+$body_class = 'text';
+?>
 
 <?php include $config['dirs']['layout'].'/header.php' ?>
 <?php include $config['dirs']['layout'].'/nav.php' ?>
 
-<div class=container>
-  <div class="grid-50 end">
-    <h1 class="pagetitle margin"><?php echo $entry['title'] ?></h1>
-  </div>
-</div>
+<main>
 
-<section>
-  <div class=container>
-    <div class=grid-3>
-      <div class=no-mobile>&nbsp;</div>
-      <article class="post span-2">
+  <section id=intro>
+    <article class=f-end>
+      <div>
+        <h1><?php echo $entry['title'] ?></h1>        
+      </div>
+    </article>
+    <div>
+      <postamble datetime="<?php echo date("Y-m-d", $entry['date']) ?>">
+        <span><?php echo date("F j, Y", $entry['date']) ?></span>
+      </postamble>
+    </div>
+  </section>
+
+  <section class="alt">
+    <article>
+      <div>
         <?php echo $entry['body'] ?>
+      </div>
+    </article>
+    <div class="no-mobile"></div>
+  </section>
 
-        <postamble datetime="<?php echo date("Y-m-d", $entry['date']) ?>"><?php echo date("F j, Y", $entry['date']) ?></postamble>
-
-        <?php include $config['dirs']['layout'].'/post-navigation-part.php'; ?>
-      </article>
-  </div>
-</section>
+</main>
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>

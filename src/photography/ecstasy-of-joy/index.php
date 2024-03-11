@@ -1,7 +1,7 @@
 <?php 
 $title = 'But why this ecstasy of joy?';
 $page_id = 'ecstasy';
-$body_class = 'photography';
+$body_class = 'viewport';
 ?>
 
 <?php include $config['dirs']['layout'].'/header.php' ?>

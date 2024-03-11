@@ -1,7 +1,7 @@
 <?php
   $title = 'Waves';
   $page_id = 'waves';
-  $body_class = 'photography';
+  $body_class = 'viewport';
 ?>
 
 <?php include $config['dirs']['layout'].'/header.php' ?>

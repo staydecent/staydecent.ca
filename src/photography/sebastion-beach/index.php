@@ -1,7 +1,7 @@
 <?php 
 $title = 'Sebastion Beach';
 $page_id = 'sebastion';
-$body_class = 'photography';
+$body_class = 'viewport';
 ?>
 
 <?php include $config['dirs']['layout'].'/header.php' ?>

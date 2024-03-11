@@ -1,7 +1,7 @@
 <?php 
 $title = 'July Town';
 $page_id = 'july-town';
-$body_class = 'photography';
+$body_class = 'viewport';
 ?>
 
 <?php include $config['dirs']['layout'].'/header.php' ?>
@@ -29,11 +29,11 @@ $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
   </section>
 
   <section>
-    <div class=f-end>
-      <article>
-        <p>I recently moved to a new town. Like most Canadian towns, it's full of daylight and energy during the month of July, with festivities and evenings that stretch on&nbsp;and&nbsp;on.</p>        
-      </article>
-    </div>
+    <article class=f-end>
+      <div>
+        <p class=h2>I recently moved to a new town. Like most Canadian towns, it's full of daylight and energy during the month of July, with festivities and evenings that stretch on&nbsp;and&nbsp;on.</p>        
+      </div>
+    </article>
     <div class="f-end">
       <img src="<?php echo $base_url ?>/images/town_19.jpg" alt="July Town Photo by Adrian Unger">
     </div>

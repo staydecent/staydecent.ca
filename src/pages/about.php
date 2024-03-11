@@ -1,26 +1,17 @@
 <?php
 $page_id = 'about';
-$body_class = 'photography';
+$body_class = 'viewport';
 ?>
 <?php include $config['dirs']['layout'].'/header.php' ?>
 <?php include $config['dirs']['layout'].'/nav.php' ?>
 
-
 <main>
 
   <section id=intro>
-    <figure>
-      <img src="/assets/media/about.jpeg" alt="Photo of Adrian sitting in Nature" />
-    </figure>
-    <article class=f-end>
-      <div>
-        <h1>About</h1>        
+    <article class=f-between>
+      <div class="pt">
+        <h1>About me</h1>        
       </div>
-    </article>
-  </section>
-
-  <section>
-    <article class=f-end>
       <div>
         <p class="bigger">What could you possibly want to know?! Well, if you haven't figured it out yet, my name is Adrian and this is my website.</p>
 
@@ -29,10 +20,12 @@ $body_class = 'photography';
         <p>This website is a playground where I mainly explore photography. For me, photography is a means of bringing attention into the current moment, with the intention to capture the magic that exists in even the most mundane of moments. Through curation, I hope to notice how my perspective changes over time.</p>
         <p>See what I'm up to <a href="<?php echo SITE_URL ?>now">now</a>, or find out how I <a href="<?php echo SITE_URL ?>colophon">built </a>this site.</p>
       </div>
+      </div>
     </article>
-    <div class="no-mobile">&nbsp;</div>
+    <div class=bg>
+      <img class=blur src="/assets/media/about.jpeg" alt="Photo of Adrian sitting in Nature" />
+    </div>
   </section>
-
 
 <?php 
 $in_viewport = true;

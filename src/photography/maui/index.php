@@ -1,7 +1,7 @@
 <?php 
   $title = 'Maui';
   $page_id = 'maui';
-  $body_class = 'photography';
+  $body_class = 'viewport';
 ?>
 
 <?php include $config['dirs']['layout'].'/header.php' ?>

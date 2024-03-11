@@ -1,41 +1,57 @@
-<?php $page_id = 'sabbatical'; ?>
+<?php
+$page_id = 'sabbatical';
+$body_class = 'viewport';
+?>
 <?php include $config['dirs']['layout'].'/header.php' ?>
 <?php include $config['dirs']['layout'].'/nav.php' ?>
 
-<div class=container>
-  <div class="grid-50 end">
-    <h1 class="pagetitle margin">Sabbatical</h1>
-  </div>
-</div>
+<main>
 
-<section>
-  <div class=container>
-    <div class=grid-3>
-      <div class=no-mobile>&nbsp;</div>
-      <div class=r-margin>
+  <section id=intro>
+    <article class=f-between>
+      <div class="pt">
+        <h1>Sabbatical</h1>        
+      </div>
+      <div>
         <p class=bigger>Having the luxury to take a sabbatical is a wonderful thing.</p>
         <p>For me, I reached a point where it was clear I wasn't really following my heart when it came to my work. I actually have had the luck of having a wonderful career working with even more wonderful people. Despite this, I still would reach a place where I felt stuck, unfulfilled, and would create my own tension and stories to explain why the job was not for me anymore. Only with my most recent job did I recognize that it was all my own creation. It forced me to really look at my conditioned and unconscious behavior. Thus, the sabbatical.</p>
         <p>I can't say anything truly new or profound has come of my time to think and process. Really, it seems most if not all of life's problems have been answered in some way by philosophers and spiritual teachers of the past. In any case, there are a few quips and viewpoints that exemplify the experience I've had. I aim to collect them here and update this as my views change and experience continues to unfold.</p>
       </div>
-      <div>
-        <blockquote class=fancy>
-          <p>It may be that when we no longer know what to do, we have come to our real work and when we no longer know which way to go, we have begun our real journey.</p>
-
-          <p>The mind that is not baffled is not employed. The impeded stream is the one that sings.</p>
-          <cite>—Wendell Berry</cite>
-        </blockquote>
       </div>
+    </article>
+    <div class=bg>
+      <div class="circle"></div>
     </div>
+  </section>
 
+  <section>
+    <article>
+      <blockquote class=pt2>
+        <p>It may be that when we no longer know what to do, we have come to our real work and when we no longer know which way to go, we have begun our real journey.</p>
+
+        <p>The mind that is not baffled is not employed. The impeded stream is the one that sings.</p>
+        <cite>—Wendell Berry</cite>
+      </blockquote>
+    </article>
+    <div>
+      <blockquote class=pt2>
+        <p>I don’t know what I’m doing. And if you don’t know what to do, there’s actually a chance of doing something new. As long as you know what you’re doing, nothing much of interest is going to happen.</p>
+        <cite>—Philip Glass</cite>
+      </blockquote>
+    </div>
+  </section>
+
+<?php 
+$in_viewport = true;
+include $config['dirs']['layout'].'/footer.php'
+?>
+
+
+<?php /* ?>
     <div class=grid-3>
       <div class=no-mobile>&nbsp;</div>
       <div class=no-mobile>&nbsp;</div>
-      <div>
-        <blockquote class=fancy>
-          <p>I don’t know what I’m doing. And if you don’t know what to do, there’s actually a chance of doing something new. As long as you know what you’re doing, nothing much of interest is going to happen.</p>
-          <cite>—Philip Glass</cite>
-        </blockquote>
-      </div>
+
     </div>
 
     <div class=grid-3>
@@ -95,3 +111,5 @@ and your own consciousness.</p>
 </section>
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>
+
+<?php */ ?>

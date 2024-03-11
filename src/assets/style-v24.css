@@ -1,15 +1,3 @@
-
-/**
-* This is a variable font
-* You can controll variable axes as shown below:
-* font-variation-settings: 'wght' 700.0;
-*
-* available axes:
-
-* 'wght' (range from 200.0 to 700.0)
-
-*/
-
 @font-face {
   font-family: 'GeneralSans-Variable';
   src: url('./fonts/GeneralSans-Variable.woff2') format('woff2'),
@@ -58,6 +46,8 @@
 
   --gutter: 1em;
   --gutter2: 2em;
+  --gutter3: 3em;
+  --gutter4: 4em;
 }
 
 body {
@@ -70,23 +60,29 @@ body {
   transition: background-color 1s ease-in-out;
 }
 
-h1 {
+h1,
+.h1 {
   font-family: var(--sans);
   font-size: 5em;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1;
   margin: 0;
+
+  filter: blur(0px);
+  animation: blur 0.65s ease-in-out;
+  animation-iteration-count: 1;
 }
 
+.h2,
 h2,
 h3,
 h4,
 h5 {
   color: var(--black);
   font-family: var(--sans);
-  font-size: 3.3vw;
-  font-weight: 600;
-  line-height: 3.2vw;
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 h3 {
@@ -131,10 +127,17 @@ article a:visited {
   color: var(--grey-dark);
 }
 
+article p {
+  font-family: var(--body);
+}
+
 nav a {
   color: var(--black);
   text-decoration: none;
   text-transform: uppercase;
+
+  animation: blur 0.65s ease-in-out;
+  animation-iteration-count: 1;
 
   &:hover {
     text-decoration: underline;
@@ -145,22 +148,81 @@ nav a + a {
   margin-left: var(--gutter);
 }
 
-h1 a{ 
+h1 a { 
   text-decoration: none;
 }
 
+.normal {
+  padding: 0;
+  margin: 0;
+
+  a,
+  a:visited {
+    color: var(--black);
+    text-decoration: none;  
+  }
+}
+
+blockquote {
+  padding: 0;
+  margin: 0;
+  max-width: 80%;
+  font-family: var(--sans);
+
+  p {
+    font-family: var(--sans);
+    font-weight: 300;
+    font-style: italic;
+    font-size: 2.2em;
+  }
+}
+
+postamble {
+  --size: 200px;
+
+  display: block;
+  margin-top: 15px;
+
+  a,
+  a:visited,
+  span {
+
+    font-weight: 500;
+    font-size: 0.85em;
+    color: var(--black);
+    text-decoration: none;
+
+    padding: 0.5em 1em;
+    margin: 0.25em;
+    border-radius: var(--size);
+    border: none;
+    outline: none;
+    background: var(--offwhite);
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--primary);
+    }
+  }
+}
 
 /*
   Layout
 */
 article {
-  & > div {
-    padding: var(--gutter);
+  & > div,
+  & > blockquote {
+    padding: var(--gutter) var(--gutter2) var(--gutter) var(--gutter);
   }
 
-  p {
-    font-family: var(--body);
+  &:last-child:not(:first-child) > div {
+    padding-left: 0;
   }
+
+/*  p {
+    font-size: 1.15em;
+    line-height: 1.4;
+  }*/
 }
 
 section {
@@ -168,6 +230,10 @@ section {
 
   @media (max-width: 720px) {
     display: block;
+  }
+
+  &.alt {
+    flex-direction: row-reverse;
   }
 
   & > *:first-child:last-child {
@@ -184,7 +250,6 @@ section {
     }
   }
 }
-
 
 header,
 footer {
@@ -292,41 +357,46 @@ figure {
   }
 }
 
-.display {
-  font-size: 2vw;
-  line-height: 1.4;
-  padding: 0 5vw;
-  margin: 1em auto;
+.f-end-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 
-  @media (max-width: 720px) {
-    font-size: 4vw;
-  }
-
-  & + p {
-    padding: 0 5vw;
+  & > * {
+    align-self: start;
   }
 }
 
-.vsco {
-  font-family: var(--sans);
-  font-size: 2vw;
-  font-weight: 700;
-  letter-spacing: -0.05vw;
-  line-height: 1;
-  text-transform: uppercase;
-  transform: scaleY(1.4);
-  text-align: justify;
-  text-justify: inter-word;
-  margin: 2em auto;
-  max-width: 80%;
+.display {
+  font-size: 2em;
+  line-height: 1.4;
+  padding: 0 var(--gutter);
+  margin: 1em auto;
 
   @media (max-width: 720px) {
-    font-size: 6vw;
+    font-size: 2em;
+  }
+
+  & + p {
+    padding: 0 var(--gutter);
   }
 }
 
 .pt {
-  padding-top: var(--gutter2);
+  padding-top: var(--gutter);
+}
+
+.pt2 {
+  padding-top: var(--gutter4);
+}
+
+.w-3-4 {
+  max-width: 75%;
+  margin-left: auto;
+}
+
+.spaced {
+  margin-top: 30vh;
 }
 
 .break {
@@ -339,24 +409,31 @@ figure {
   }
 }
 
+.blur {
+  filter: blur(0px);
+  animation: blur 0.65s ease-in-out;
+  animation-iteration-count: 1;
+}
+
+
 /*
   Photography viewport styles
 */
-.photography header {
+.viewport header {
   z-index: 33;
   position: absolute;
   top: 0;
   width: calc(100% - 32px);
 }
 
-.photography main {
+.viewport main {
   max-height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: proximity;
   scroll-snap-type: y proximity;
 }
 
-.photography main > section {
+.viewport main > section {
   height: 100vh;
   min-height: 100%;
   max-height: 100%;
@@ -386,48 +463,90 @@ figure {
 /*
   Page specific
 */
+
+.text {
+  article p:first-child {
+    text-indent: 5em;
+  }
+}
 #intro {
   .bg {
-    --speed: 30s;
-    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #E4E4D8;
 
-    filter: blur(calc(var(--size) / 5));
-
-/*    background: #CD4209;*/
-/*    background: conic-gradient(from 45deg, #CD4209, #9D7E45);*/
-
-/*    background: #F2BE92;*/
-/*    background: radial-gradient(at right top, #F2BE92, #6B8FC6);*/
-
-/*    background: #5D6DD3;
-    background: radial-gradient(at left top, #5D6DD3, #E3DC6F);*/
-
-    background: var(--primary);
-    background: radial-gradient(at left bottom, var(--primary), var(--offwhite));
-
-    animation: gradient 15s var(--easing) infinite;
-    background-size: 300% 300%;
+    .circle {
+      overflow: hidden;
+      width: 43vw;
+      height: 43vw;
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+      box-shadow: inset 8px 4px 72px #fff261, inset -24px -24px 49px #e6ff29, inset 36px 36px 128px #f4d8b3;
+      transform: translate(-50%, -50%);
+      animation: cycle-circle 10s ease infinite alternate;
+    }
   }
 }
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
+#about #intro {
+  .bg {
+    background-color: #BD8B2C;
   }
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
+#now #intro {
+  .bg {
+    background-color: #8FC5E5;
   }
-  50% {
-    background-position: 100% 50%;
+}
+
+#colophon #intro {
+  .bg {
+    background-color: #E5C6C9;
+  }
+}
+
+#blog #intro {
+  .bg {
+    background-color: #BBA38E;
+  }
+}
+
+
+@keyframes cycle-circle {
+  0% {
+    transform: translate(-50%, -50%);
+    rotate: 0deg;
+    filter: blur(0) hue-rotate(10deg);
+  }
+  70% {
+    filter: blur(15px) hue-rotate(20deg);
   }
   100% {
-    background-position: 0% 50%;
+    transform: rotate(360deg) translate(-50%, -50%);
+    filter: blur(5px) hue-rotate(40deg);
+  }
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(10px);
+  }
+  70% {
+    filter: blur(1px);
+  }
+  100% {
+    filter: blur(0px);
   }
 }
 

@@ -1,7 +1,7 @@
 <?php
 $title = 'Picos on Portra';
 $page_id = 'picos';
-$body_class = 'photography';
+$body_class = 'viewport';
 ?>
 
 <?php include $config['dirs']['layout'].'/header.php' ?>
@@ -54,11 +54,11 @@ $base_url = SITE_URL . str_replace(SOURCE, '', __DIR__);
 
   <section>
     <img src="<?php echo $base_url ?>/images/picos_5.jpg" alt="Picos De Europa Photo by Adrian Unger">
-    <div class=f-end>
-      <article>
-        <p class=vsco>The scale of the of the place was hard to comprehend. When I spotted a group of people ahead of us, the massive size of the rock walls became clear.</p>
-      </article>
-    </div>
+    <article class=f-end>
+      <div>
+        <p class=h2>The scale of the of the place was hard to comprehend. When I spotted a group of people ahead of us, the massive size of the rock walls became clear.</p>
+      </div>
+    </article>
   </section>
 
   <section>

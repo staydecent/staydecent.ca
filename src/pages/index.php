@@ -1,6 +1,6 @@
 <?php
 $page_id = 'index';
-$body_class = 'photography';
+$body_class = 'viewport';
 ?>
 <?php include $config['dirs']['layout'].'/header.php' ?>
 <?php include $config['dirs']['layout'].'/nav.php' ?>
@@ -13,7 +13,9 @@ $body_class = 'photography';
         <h1>Photography and notes by Adrian Unger</h1>        
       </div>
     </article>
-    <div class=bg>&nbsp;</div>
+    <div class=bg>
+      <div class="circle"></div>
+    </div>
   </section>
 
   <section id=ecstasy>
@@ -83,7 +85,7 @@ $body_class = 'photography';
         <a href="<?php echo SITE_URL ?>photography/paris-couleur">Paris Couleur</a>
       </h1>
     </div>
-    <figure>
+    <figure class=f-center>
       <a href="<?php echo SITE_URL ?>photography/paris-couleur">
         <img src="<?php echo $base_url ?>photography/paris-couleur/images/pariscouleur_8_dithered.jpg" alt="Photo by Adrian Unger">
       </a>        

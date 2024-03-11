@@ -1,7 +1,7 @@
 <?php 
   $title = 'Paris Couleur';
   $page_id = 'paris';
-  $body_class = 'photography';
+  $body_class = 'viewport';
 ?>
 
 <?php include $config['dirs']['layout'].'/header.php' ?>
