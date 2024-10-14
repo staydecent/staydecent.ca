@@ -1,0 +1,227 @@
+:root {
+  --sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --serif: times, serif;
+
+  --white: #FAFAFA;
+  --black: #0A0A0A;
+
+  --offwhite: #E7E7E7;
+
+  --grey: #d7d2bf;
+  --grey-transparent: #d7d2bfaa;
+  --grey-dark: #413D44;
+  --grey-dark-transparent: #413D44aa;
+
+  --primary: #D6F500;
+  --primary-transparent: #D6F500cc;
+
+  --green: #4f7d01;
+  --green-transparent: #4f7d01cc;
+
+  --blue: #01267d;
+  --red: #C74938;
+  --red-transparent: #C74938aa;
+
+  --gutter: 16px;
+  --gutter2: 64px;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+  font-family: var(--sans);
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+  transition: background-color 1s ease-in-out;
+}
+
+main {
+  padding: 1em;
+  margin: 0 auto;
+  text-align: left;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1;
+  margin: 0 0 3em;
+  font-weight: normal;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+a:link {
+  color: var(--black);
+}
+
+a:visited {
+  color: var(--black);
+}
+
+article a:visited {
+  color: var(--grey-dark);
+}
+
+nav a {
+  color: var(--black);
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 1rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+nav a + a {
+  margin-left: var(--gutter);
+}
+
+h1 a,
+h2 a,
+a.plain { 
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: calc(100vh - 2rem);
+  content-visibility: auto;
+}
+
+article,
+footer {
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+footer {
+  font-size: 1rem;
+  padding-top: 6rem;
+}
+
+.cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+}
+
+.contain {
+  max-height: 80vh;
+}
+
+.title {
+  width: auto;
+  margin-bottom: 3rem;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
+  flex-direction: column;
+}
+
+.article-intro {
+  font-family: var(--serif);
+  font-weight: 400;
+  text-align: center;
+  font-size: 6vh;
+  letter-spacing: -4px;
+  line-height: 1;
+  transform: scaleY(1.4);
+  margin-bottom: 6rem;
+}
+
+.article-intro h2,
+.article-intro p {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+/*
+  Page specific
+*/
+#ecstasy {
+  background-color: #aaa;
+}
+
+#sebastion {
+  background-color: #f3f8ff;
+}
+
+#july-town {
+  background-color: #D0DBD7;
+
+  h1,
+  a,
+  p,
+  div,
+  time {
+    color: #C74938;
+  }
+}
+
+#picos {
+}
+
+#noir {
+  background-color: var(--offwhite);
+}
+
+#paris {
+  background-color: #f3e7bd;
+
+  h1,
+  a,
+  p,
+  div,
+  time {
+    color: #2f425c;
+  }
+}
+
+#waves {
+  background-color: #f9f3e1;
+
+  h1 a {
+    color: #ffffffaa;
+  }
+}
+
+#maui {
+  background-color: #83A1B4;
+
+  h1,
+  a,
+  p,
+  div,
+  time {
+    color: #FBCBC1;
+  }
+}
+
+#shinrinyoku {
+  background-color: #433C06;
+
+  h1,
+  h2,
+  a,
+  p,
+  div,
+  time {
+    color: #F2CB6C;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 4em;
+    font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  }
+}

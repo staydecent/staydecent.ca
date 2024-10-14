@@ -11,7 +11,30 @@
     else
       echo $title.' — by Adrian Unger';
 ?></title>
-  <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL ?>/assets/style-v24.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL ?>/assets/style-v25.css">
   <link rel="alternate" type="application/rss+xml" href="<?php echo SITE_URL ?>/feed" />
 </head>
 <body id="<?php echo $page_id; ?>" <?php if (isset($body_class)): ?>class="<?php echo $body_class; endif;?>">
+
+<main>
+
+<header>
+  <section class="cols">
+    <div>
+      <h1>
+        <a href="/" <?php echo current_class('adrian') ?><?php echo current_class('photography') ?> rel=home>staydecent</a>        
+      </h1>
+    </div>
+    <div>
+      <nav>
+        <a href="<?php echo SITE_URL ?>photography" <?php echo current_class('adrian') ?><?php echo current_class('photography') ?> data-color='433C06'>Photos</a>
+        <a href="<?php echo SITE_URL ?>code" <?php echo current_class('code') ?> data-color='ddd'>Software</a>
+        <a href="<?php echo SITE_URL ?>blog" <?php echo current_class('blog') ?> data-color='B6CAC0'>Notes</a>
+      </nav>
+      <nav>
+        <a href="<?php echo SITE_URL ?>about">About</a>
+        <a rel='alternate' type='application/rss+xml' href='<?php echo SITE_URL ?>feed'>(RSS)</a>
+      </nav> 
+    </div>
+  </section>
+</header>

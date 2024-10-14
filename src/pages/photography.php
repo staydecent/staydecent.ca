@@ -4,40 +4,6 @@
 
 <div class="viewport-scroller">
 
-  <!-- Intro -->
-  <div class="viewport vp1">
-    <h1 class=vp1-title>Au</h1>
-    <div class="vp1-content container">
-      <div class="grid-3">
-        <p class="big">Howdy, thanks for stopping by.</p>
-        <p class=big>This is my <a class=black href="/about">digital garden</a> where I share my perspective through <a class=black href="/blog">words</a> and <a class=black href="/photography">photos</a>. Most recently, I <a class=black target=_blank rel=noopener href="https://mudwtr.com">worked</a> as a Product Developer. But, right <a class=black href="/now">now</a>, I'm taking a sabbatical.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Sebastion Beach -->
-  <div
-    class="viewport vp1"
-    style="background: url('<?php echo SITE_URL ?>photography/sebastion-beach/images/sebastion_10_dithered.jpg') center center no-repeat;"
-    data-link="<?php echo SITE_URL ?>photography/sebastion-beach"
-  >
-    <h1 class=vp1-title style="font-weight: 600; color: #7c8ea8ab; line-height: 1;">
-      <a class=plain href="<?php echo SITE_URL ?>photography/sebastion-beach" data-color='f3f8ff'>Sebastion Beach</a>
-    </h1>
-  </div>
-
-  <!-- July Town -->
-  <div
-    class="viewport vp1 vp-july-town"
-    style="background-image: url('<?php echo SITE_URL ?>photography/july-town/images/town_14_dithered.jpg')"
-    data-link="<?php echo SITE_URL ?>photography/july-town"
-  >
-    <div class="vp1-content container">
-      <h1 class=vp2-title style="color: #C74938; text-align: center;">
-        <a class=plain href="<?php echo SITE_URL ?>photography/july-town" data-color='D0DBD7'>A Small Canadian Town In&nbsp;July</a>
-      </h1>
-    </div>
-  </div>
 
   <!-- Picos on Portra -->
   <div

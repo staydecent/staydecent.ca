@@ -180,7 +180,7 @@ while ($staticIterator->valid())
         elseif ($ext === 'jpeg' || $ext === 'jpg')
         {
             Parse::copy_file($staticIterator->getPathname(), $new_file, $staticIterator->getBasename());
-            dither($new_file);
+            // dither($new_file);
         }
         else 
         {

@@ -1,107 +1,75 @@
 <?php
 $page_id = 'index';
-$body_class = 'photography';
+$body_class = 'text';
 ?>
 <?php include $config['dirs']['layout'].'/header.php' ?>
-<?php include $config['dirs']['layout'].'/nav.php' ?>
 
-<main>
-
-  <section id=ecstasy>
-    <div class=f-center>
-      <h1 class=blur>But why this ecstasy of joy?</h1>
+<article>
+  <section class="cols">
+    <div>
+      <img class="contain" src="<?php echo SITE_URL ?>photography/sebastion-beach/images/sebastion_10_dithered.jpg">
+      <div class=title>
+        <a class=plain href="<?php echo SITE_URL ?>photography/sebastion-beach">Sebastion Beach &#x21AA;</a>
+      </div>
     </div>
-    <figure>
-      <img src="<?php echo $base_url ?>/assets/media/ecstasy_2.jpeg" alt="Photo by Adrian Unger">        
-    </figure>
-  </section>
 
-  <section id=sebastion>
-    <div class=f-center>
-      <h1 class=break>
-        <a href="<?php echo SITE_URL ?>photography/sebastion-beach">Sebastion Beach</a>
-      </h1>
+    <div>
+      <img class="contain" src="<?php echo SITE_URL ?>photography/july-town/images/town_14_dithered.jpg">
+      <div class=title>
+        <a class=plain href="<?php echo SITE_URL ?>photography/july-town">A Small Canadian Town in July &#x21AA;</a>
+      </div>
     </div>
-    <figure>
-      <a href="<?php echo SITE_URL ?>photography/sebastion-beach">
-        <img src="<?php echo $base_url ?>photography/sebastion-beach/images/sebastion_10_dithered.jpg" alt="Photo by Adrian Unger">
-      </a>        
-    </figure>
-  </section>
 
-  <section id=july-town>
-    <figure class=contain>
-      <a href="<?php echo SITE_URL ?>photography/july-town">
-        <img src="<?php echo $base_url ?>photography/july-town/images/town_14_dithered.jpg" alt="Photo by Adrian Unger">
-      </a>
-      <h1>
-        <a href="<?php echo SITE_URL ?>photography/july-town">A Small Canadian Town in July</a>
-      </h1>
-    </figure>
-  </section>
-
-  <section id=picos>
-    <div class=f-end>
-      <h1 class=break>
-        <a href="<?php echo SITE_URL ?>photography/picos-on-portra">Picos on Portra</a>
-      </h1>
+    <div>
+      <img class="contain" src="<?php echo SITE_URL ?>photography/picos-on-portra/images/picos_11_dithered.jpg">
+      <div class=title>
+        <a class=plain href="<?php echo SITE_URL ?>photography/picos-on-portra">Picos on Portra &#x21AA;</a>
+      </div>
     </div>
-    <figure class=contain>
-      <a href="<?php echo SITE_URL ?>photography/picos-on-portra">
-        <img src="<?php echo $base_url ?>photography/picos-on-portra/images/picos_11_dithered.jpg" alt="Photo by Adrian Unger">
-      </a>        
-    </figure>
-  </section>
 
-  <section id=noir>
-    <div class=f-center>
-      <h1 class=break>
-        <a href="<?php echo SITE_URL ?>photography/paris-noir">Paris Noir</a>
-      </h1>
+    <div class=right>
+      <div>
+        <img class="contain" src="<?php echo SITE_URL ?>photography/paris-noir/images/parisnoir_7_dithered.jpg">
+        <div class=title>
+          <a class=plain href="<?php echo SITE_URL ?>photography/paris-noir">Paris Noir &#x21AA;</a>
+        </div>
+      </div>
     </div>
-    <figure>
-      <a href="<?php echo SITE_URL ?>photography/paris-noir">
-        <img src="<?php echo $base_url ?>photography/paris-noir/images/parisnoir_7_dithered.jpg" alt="Photo by Adrian Unger">
-      </a>        
-    </figure>
-  </section>
 
-  <section id=paris>
-    <div class=f-center>
-      <h1 class=break>
-        <a href="<?php echo SITE_URL ?>photography/paris-couleur">Paris Couleur</a>
-      </h1>
+    <div>
+      <img class="contain" src="<?php echo SITE_URL ?>photography/paris-couleur/images/pariscouleur_8_dithered.jpg">
+      <div class=title>
+        <a class=plain href="<?php echo SITE_URL ?>photography/paris-couleur">Paris Coleur &#x21AA;</a>
+      </div>
     </div>
-    <figure>
-      <a href="<?php echo SITE_URL ?>photography/paris-couleur">
-        <img src="<?php echo $base_url ?>photography/paris-couleur/images/pariscouleur_8_dithered.jpg" alt="Photo by Adrian Unger">
-      </a>        
-    </figure>
+
+    <div>
+      <img class="contain" src="<?php echo SITE_URL ?>photography/waves/images/waves_2_dithered.jpg">
+      <div class=title>
+        <a class=plain href="<?php echo SITE_URL ?>photography/waves">Waves &#x21AA;</a>
+      </div>
+    </div>
+
+    <div>
+      <img class="contain" src="<?php echo SITE_URL ?>photography/maui/images/maui_5_dithered.jpg">
+      <div class=title>
+        <a class=plain href="<?php echo SITE_URL ?>photography/maui">Maui &#x21AA;</a>
+      </div>
+    </div>
+
+    <div class=right>
+      <div>
+        <img class="contain" src="<?php echo SITE_URL ?>photography/black-and-white/images/bnw_10_dithered.jpg">
+        <div class=title>
+          <a class=plain href="<?php echo SITE_URL ?>photography/black-and-white">Black &amp; White &#x21AA;</a>
+        </div>
+      </div>
+    </div>
+
   </section>
 
-  <section id=waves>
-    <figure>
-      <a href="<?php echo SITE_URL ?>photography/waves">
-        <img src="<?php echo $base_url ?>photography/waves/images/waves_2.jpg" alt="Photo by Adrian Unger">
-      </a>
-      <h1>
-        <a href="<?php echo SITE_URL ?>photography/waves">Waves</a>
-      </h1>
-    </figure>
-  </section>
 
-  <section id=maui>
-    <figure class=contain>
-      <a href="<?php echo SITE_URL ?>photography/maui">
-        <img src="<?php echo $base_url ?>photography/maui/images/maui_5_dithered.jpg" alt="Photo by Adrian Unger">
-      </a>
-      <h1>
-        <a href="<?php echo SITE_URL ?>photography/maui">Maui</a>
-      </h1>
-    </figure>
-  </section>
+</article>
 
-<?php 
-$in_viewport = true;
-include $config['dirs']['layout'].'/footer.php'
-?>
+
+<?php include $config['dirs']['layout'].'/footer.php' ?>
