@@ -2,15 +2,14 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 <?php include $config['dirs']['layout'].'/nav.php' ?>
 
-<div class=container>
-  <div class="grid-50 end">
-    <h1 class="pagetitle margin">Sabbatical</h1>
-  </div>
-</div>
 
-<section>
-  <div class=container>
-    <div class=grid-3>
+<article id="sabbatical">
+  <div class="article-intro">
+    <h2 class="center">Sabbatical</h2>
+  </div>
+
+  <section class="cols">
+
       <div class=no-mobile>&nbsp;</div>
       <div class=r-margin>
         <p class=bigger>Having the luxury to take a sabbatical is a wonderful thing.</p>
@@ -91,7 +90,7 @@ and your own consciousness.</p>
       </div>
     </div>
 
-  </div>
-</section>
+  </section>
+</article>
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>

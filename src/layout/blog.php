@@ -3,24 +3,18 @@
 <?php include $config['dirs']['layout'].'/header.php' ?>
 <?php include $config['dirs']['layout'].'/nav.php' ?>
 
-<div class=container>
-  <div class="grid-50 end">
-    <h1 class="pagetitle margin"><?php echo $entry['title'] ?></h1>
+<article id="blog">
+  <div class="article-intro">
+    <h2 class="center"><?php echo $entry['title'] ?></h2>
+    <p><postamble datetime="<?php echo date("Y-m-d", $entry['date']) ?>"><?php echo date("F j, Y", $entry['date']) ?></postamble></p>
   </div>
-</div>
 
-<section>
-  <div class=container>
-    <div class=grid-3>
-      <div class=no-mobile>&nbsp;</div>
-      <article class="post span-2">
-        <?php echo $entry['body'] ?>
-
-        <postamble datetime="<?php echo date("Y-m-d", $entry['date']) ?>"><?php echo date("F j, Y", $entry['date']) ?></postamble>
-
-        <?php include $config['dirs']['layout'].'/post-navigation-part.php'; ?>
-      </article>
-  </div>
-</section>
+  <section class="cols">
+    <div>
+      <?php echo $entry['body'] ?>
+      <?php include $config['dirs']['layout'].'/post-navigation-part.php'; ?>
+    </div>
+    <div>&nbsp;</div>
+  </section>
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>

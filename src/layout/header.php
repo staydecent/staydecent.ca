@@ -27,7 +27,7 @@
     </div>
     <div>
       <nav>
-        <a href="<?php echo SITE_URL ?>photography" <?php echo current_class('adrian') ?><?php echo current_class('photography') ?> data-color='433C06'>Photos</a>
+        <a href="<?php echo SITE_URL ?>" <?php echo current_class('adrian') ?><?php echo current_class('photography') ?> data-color='433C06'>Photos</a>
         <a href="<?php echo SITE_URL ?>code" <?php echo current_class('code') ?> data-color='ddd'>Software</a>
         <a href="<?php echo SITE_URL ?>blog" <?php echo current_class('blog') ?> data-color='B6CAC0'>Notes</a>
       </nav>
