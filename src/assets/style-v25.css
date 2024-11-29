@@ -59,12 +59,22 @@ h2 {
   font-weight: normal;
 }
 
+h3 {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
 a:link {
   color: var(--black);
 }
 
 a:visited {
   color: var(--black);
+}
+
+aside {
+  padding-top: 2rem;
 }
 
 article a:visited {
