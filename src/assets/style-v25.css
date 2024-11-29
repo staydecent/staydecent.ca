@@ -77,13 +77,13 @@ nav a {
   font-weight: normal;
   font-size: 1rem;
 
+  &.current {
+    text-decoration: underline;
+  }
+
   &:hover {
     text-decoration: underline;
   }
-}
-
-nav a + a {
-  margin-left: var(--gutter);
 }
 
 h1 a,

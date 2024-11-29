@@ -27,14 +27,10 @@
     </div>
     <div>
       <nav>
-        <a href="<?php echo SITE_URL ?>" <?php echo current_class('adrian') ?><?php echo current_class('photography') ?> data-color='433C06'>Photos</a>
-        <a href="<?php echo SITE_URL ?>code" <?php echo current_class('code') ?> data-color='ddd'>Software</a>
-        <a href="<?php echo SITE_URL ?>blog" <?php echo current_class('blog') ?> data-color='B6CAC0'>Notes</a>
+        <a href="<?php echo SITE_URL ?>" <?php echo current_class('adrian') ?><?php echo current_class('photography') ?>>Photos</a>,
+        <a href="<?php echo SITE_URL ?>now" <?php echo current_class('now') ?>>Now</a>,
+        <a href="<?php echo SITE_URL ?>about" <?php echo current_class('about') ?>>About</a>
       </nav>
-      <nav>
-        <a href="<?php echo SITE_URL ?>about">About</a>
-        <a rel='alternate' type='application/rss+xml' href='<?php echo SITE_URL ?>feed'>(RSS)</a>
-      </nav> 
     </div>
   </section>
 </header>
