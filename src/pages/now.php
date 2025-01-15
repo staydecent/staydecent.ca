@@ -8,11 +8,12 @@ $body_class = 'text';
   <section class=cols>
     <div>
       <h2>What I'm up to right now</h2>
-      <p class="big"><del datetime="2023-09-01">Leading Engineering at <a href="https://mudwtr.com">MUD\WTR</a>.</del> <del datetime="2024-10-10">Taking a <a href="/sabbatical">sabbatical</a> as of Sept 2023.</del> Starting a company with my partner to offer Spiritual Guidance.</p>
-      <p class="big">Continuously adjusting how I perceive the world, especially in regards to how I react.</p>
-      <p class=big>Learning to flow with the universe ✨.</p>
-      <p class=big>Playing video games again.</p>
-      <p>This page was inspired by&nbsp;<a href="https://sivers.org/now">Derek Sivers</a>. <em>Updated: 21st October, 2024</em></p>
+      <p>Still on <a href="<?php echo SITE_URL ?>sabbatical">sabbatical</a>.</p>
+      <p>Previously I led engineering and digital product at <a href="https://mudwtr.com" target="_blank" rel="noreferrer">MUD\WTR</a>. Full work history on <a href="https://www.linkedin.com/in/adrian-u/" target="_blank" rel="noreferrer">LinkedIn</a>.</p>
+
+      <p>Otherwise, learning to slow down. Write more. Read more. Love me a chill bike ride. Dabbling in Human Design, Numerology, Tarot and Astrology.</p>
+
+      <p>This page was inspired by&nbsp;<a href="https://sivers.org/now">Derek Sivers</a>. <em>Updated: 14th January, 2025</em></p>
     </div>
 
     <div>&nbsp;</div>

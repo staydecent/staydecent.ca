@@ -16,5 +16,6 @@
     </div>
     <div>&nbsp;</div>
   </section>
+</article>
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>

@@ -6,7 +6,7 @@
 <article id="blog">
   <div class="article-intro">
     <h2 class="center">Mostly incomplete thoughts on&nbsp;stuff.</h2>
-    <p class="display">Mainly writing at <a target=_blank href="https://tednet.org">The Existential Detective Network</a> now.</p>
+    <p>I don't want to box myself in, but some common topics: nature, photography, philoshophy, ai, economics, design, etc.</p>
   </div>
 
   <section class="cols">

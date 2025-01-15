@@ -1,0 +1,271 @@
+:root {
+  --sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --serif: times, serif;
+
+  --white: #FAFAFA;
+  --black: #0A0A0A;
+
+  --offwhite: #E7E7E7;
+
+  --grey: #d7d2bf;
+  --grey-transparent: #d7d2bfaa;
+  --grey-dark: #413D44;
+  --grey-dark-transparent: #413D44aa;
+
+  --primary: #D6F500;
+  --primary-transparent: #D6F500cc;
+
+  --green: #4f7d01;
+  --green-transparent: #4f7d01cc;
+
+  --blue: #01267d;
+  --red: #C74938;
+  --red-transparent: #C74938aa;
+
+  --gutter: 16px;
+  --gutter2: 64px;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+
+  background-color: var(--white);
+  color: var(--black);
+
+  transition: background-color 1s ease-in-out;
+
+  font-family: var(--sans);
+  font-kerning: normal;
+  letter-spacing: .012em;
+  line-height: 1.22;
+  font-size: 1rem;
+  text-rendering: optimizeLegibility;
+}
+
+main {
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+h1 {
+  font-size: 1rem;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 1.4rem;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    margin-bottom: 0;
+  }
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  background-color: #3f3;
+}
+
+p {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+p:first-child {
+  margin-top: 0;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+aside {
+  padding-top: 2rem;
+}
+
+article a:visited {
+  color: var(--grey-dark);
+}
+
+nav a {
+  color: var(--black);
+  text-decoration: none;
+
+  &.current {
+    text-decoration: underline;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1 a,
+h2 a,
+a.plain { 
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: calc(100vh - 2rem);
+  content-visibility: auto;
+}
+
+header,
+article,
+footer {
+  padding: 0;
+  max-width: 1140px;
+}
+
+footer {
+  padding-top: 6rem;
+}
+
+.cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+}
+
+@media screen and (max-width: 800px) {
+  article {
+    padding-top: 1rem;
+  }
+
+  .cols {
+    grid-template-columns: 1fr;
+  }
+
+  .cols > div {
+    max-width: 100%;
+  }
+
+  header .cols {
+    grid-gap: 1rem;
+  }
+}
+
+.contain {
+  max-height: 80vh;
+}
+
+.title {
+  width: auto;
+  margin-bottom: 3rem;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
+  flex-direction: column;
+}
+
+.article-intro {
+  padding: 5rem 0;
+  width: 50%;
+}
+
+.article-intro h2 {
+  margin: 0;
+}
+
+
+/*
+  Page specific
+*/
+#ecstasy {
+  background-color: #aaa;
+}
+
+#sebastion {
+  background-color: #f3f8ff;
+}
+
+#july-town {
+  background-color: #D0DBD7;
+
+  h1,
+  a,
+  p,
+  div,
+  time {
+    color: #C74938;
+  }
+}
+
+#picos {
+}
+
+#noir {
+  background-color: var(--offwhite);
+}
+
+#paris {
+  background-color: #f3e7bd;
+
+  h1,
+  a,
+  p,
+  div,
+  time {
+    color: #2f425c;
+  }
+}
+
+#waves {
+  background-color: #f9f3e1;
+}
+
+#maui {
+  background-color: #83A1B4;
+
+  h1,
+  a,
+  p,
+  div,
+  time {
+    color: #FBCBC1;
+  }
+}
+
+#shinrinyoku {
+  background-color: #433C06;
+
+  h1,
+  h2,
+  a,
+  p,
+  div,
+  time {
+    color: #F2CB6C;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 4em;
+    font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  }
+}

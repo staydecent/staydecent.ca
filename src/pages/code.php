@@ -6,7 +6,7 @@
 <article id="code">
   <div class="article-intro">
     <h2 class="center">Lessons and opinions on software development.</h2>
-    <p class="display">(Archived) I am no longer a practicing software developer, thus won't be updating this with any posts.</p>
+    <p class="display">I'm no longer working as a developer, so this area of the site may very well develop cobwebs.</p>
   </div>
 
   <section class="cols">
