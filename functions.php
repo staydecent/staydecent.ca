@@ -90,6 +90,15 @@ function next_entry($entry) {
   return FALSE;
 }
 
+function entry_image($entry) {
+  if (! array_key_exists('image', $entry)) {
+    return '';
+  }
+  $url = SITE_URL . 'assets/media/' . $entry['image'];
+  $alt = (array_key_exists('image_alt', $entry)) ? $entry['image_alt'] : $entry['title'];
+  return "<img src='{$url}' alt='{$alt}' title='{$alt}'>";
+}
+
 function get_cats() {
   global $config;
 

@@ -161,7 +161,15 @@ footer {
     max-width: 100%;
   }
 
+  .cols > .mobile-first {
+    order: -1;
+  }
+
   header .cols {
+    grid-gap: 1rem;
+  }
+
+  footer .cols {
     grid-gap: 1rem;
   }
 }

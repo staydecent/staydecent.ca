@@ -16,7 +16,9 @@
       <?php echo $entry['body'] ?>
       <?php include $config['dirs']['layout'].'/post-navigation-part.php'; ?>
     </div>
-    <div>&nbsp;</div>
+    <div class="mobile-first">
+      <?php echo entry_image($entry) ?>
+    </div>
   </section>
 </article>
 
