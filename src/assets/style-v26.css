@@ -102,6 +102,14 @@ p:last-child {
   margin-bottom: 0;
 }
 
+p.small {
+  margin-top: 0.5rem;
+}
+
+postamble {
+  font-size: 0.7rem;
+}
+
 aside {
   padding-top: 2rem;
 }
@@ -169,11 +177,7 @@ footer {
     order: -1;
   }
 
-  header .cols {
-    grid-gap: 1rem;
-  }
-
-  footer .cols {
+  .cols {
     grid-gap: 1rem;
   }
 }
@@ -202,6 +206,12 @@ footer {
 
 .article-intro h2 {
   margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .article-intro {
+    width: 100%;
+  }
 }
 
 

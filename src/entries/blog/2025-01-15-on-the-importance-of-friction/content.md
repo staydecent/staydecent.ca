@@ -1,4 +1,6 @@
 title: Friction and the internet
+image: friction.jpg
+image_alt: Photo of a dirty window by Adrian Unger
 ---
 
 Friction is an undeniable aspect of our reality. And like any aspect of reality, balance is key. Too much friction is, well, too much. And, too little is, you guessed it, too little. Profound, I know. But, could the web use more?
