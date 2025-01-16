@@ -394,8 +394,8 @@ class Parse {
  */
 
 function max_sizes($width, $height) {
-  $maxwidth = 1088;
-  $maxheight = 1088;
+  $maxwidth = 860;
+  $maxheight = 860;
   $ratio = $width / $height;
 
   if ($maxwidth / $maxheight > $ratio) {
@@ -407,7 +407,7 @@ function max_sizes($width, $height) {
   return array(round($maxwidth), round($maxheight));
 }
 
-function dither($imagepath) {
+function optimize_photo($imagepath) {
   if (!strstr($imagepath, 'photography')) {
     return 'bad file path';
   }
@@ -436,15 +436,14 @@ function dither($imagepath) {
 
   // Dithering and resize
   imagecopyresampled($newimage, $image, 0, 0, 0, 0, $maxwidth, $maxheight, $width, $height);
-  /* ImageCopyMerge($newimage, $image, 0, 0, 0, 0, $width, $height, 100); */
-  imagetruecolortopalette($newimage, true, 4);
+  // imagetruecolortopalette($newimage, true, 4);
 
   // Save the image
-  imagejpeg($newimage, $newpath);
+  imagejpeg($newimage, $newpath, 84);
 
   // Clean up resources
   imagedestroy($newimage);
-  imageDestroy($image);
+  imagedestroy($image);
 
   return $newpath;
 }
