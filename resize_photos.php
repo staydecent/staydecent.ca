@@ -4,6 +4,7 @@ date_default_timezone_set('America/Vancouver');
 
 define('DS', DIRECTORY_SEPARATOR);
 define('ROOT', getcwd() . DS);
+define('SOURCE', ROOT . 'src' . DS);
 define('PHOTOS', ROOT . 'src' . DS . 'photography' . DS);
 
 if ($argc >= 2) {
@@ -12,8 +13,6 @@ if ($argc >= 2) {
 } else {
   exit(1);
 }
-
-define('SOURCE', PHOTOS . $dir);
 
 // image functions
 
@@ -56,7 +55,7 @@ function resize($imagepath) {
 
 // iterate photos to resize in `src/`
 
-$staticIterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator(SOURCE));
+$staticIterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator(SOURCE . $dir));
 
 while ($staticIterator->valid()) {
   if (!$staticIterator->isDot() && substr($staticIterator->getBasename(), '0', 1) !== '.') {
