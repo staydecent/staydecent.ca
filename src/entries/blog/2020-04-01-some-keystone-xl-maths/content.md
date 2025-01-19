@@ -1,4 +1,5 @@
 link: https://www.cbc.ca/news/business/analysis-alberta-invests-in-keystone-1.5516144
+link_title: Why Alberta is throwing billions behind the Keystone XL pipeline
 ---
 
 Alberta's United Conservative government recently announced they are investing $1.5 billion directly into the Keystone XL pipeline, plus a $6 billion loan guarantee. They must feel quite confident that oil prices will go back to historic highs?

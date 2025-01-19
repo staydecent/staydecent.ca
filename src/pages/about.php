@@ -13,11 +13,13 @@ $body_class = 'text';
 
       <aside>
         <h3>Projects</h3>
-        <ul>
-          <li><a href="https://tednet.org/" target=_blank>TEDNET</a></li>
-          <li><a href="https://pathofheart.ca/" target=_blank>Path of Heart</a></li>
-          <li><a href="https://app.prepkitmeals.com/" target=_blank>PrepKit Meals</a></li>
-        </ul>
+        <p> <a href="https://tednet.org/" target=_blank>TEDNET</a>, <a href="https://pathofheart.ca/" target=_blank>Path of Heart</a>, <a href="https://app.prepkitmeals.com/" target=_blank>PrepKit Meals</a></p>
+      </aside>
+
+      <aside>
+        <h3>Contact</h3>
+        <p>Like something I've said? Think I'm a heretic? Let me hear it!</p>
+        <p><a href="mailto:hello&#64;staydecent.ca">hello&#64;staydecent.ca</a></p>
       </aside>
     </div>
 

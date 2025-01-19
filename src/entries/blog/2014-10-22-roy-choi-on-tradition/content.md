@@ -1,4 +1,5 @@
 link: http://www.reddit.com/r/IAmA/comments/2jwvon/iama_roy_choi_i_make_korean_bbq_tacos_and_worked/clftj1p
+link_title: IamA Roy Choi on Reddit
 ---
 
 Roy Choi is a pioneer of awesome street food with the Kogi, korean taco, truck.

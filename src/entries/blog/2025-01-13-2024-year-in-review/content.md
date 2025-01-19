@@ -1,6 +1,6 @@
 title: 2024: Year in Review
 image: 2024_review-oregon_coast.jpg
-image_alt: A stark scene from the Oregon Coast
+image_alt: A stark scene from the Oregon Coast, Photo by Adrian Unger
 ---
 
 Or, the year of the sabbatical. What did I even do for my sabbatical? Well I quit my job for one—well that was in 2023. Then I didn’t really do anything. Of course, I could have gone on some grand adventure. Travelled the world. Gone on a pilgrimage. But I did not.
