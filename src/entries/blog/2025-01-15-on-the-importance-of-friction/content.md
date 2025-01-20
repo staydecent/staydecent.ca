@@ -13,7 +13,7 @@ We don't want to gate-keep people, but I think it's clear having our attention r
 
 > '“Communication within the YouTube Apparatus has no meaning.” The rapid feedback loop between creators and audiences (as constructed by platform metrics) means that the system more and more responds to itself. Rather than trying to go somewhere (as is the case with political ideology), the creator seeks simply intensification, to draw more and more of the world into his whirlpool of content.'
 
-Growing up with the early internet I'm definitely disenchanted with today's landscape. I honestly can't stomach social media any more. Even substack feels icky. People aren't just writing anymore, they're writing so you can "attract your DREAM clients!" "grow your reach 10x!" or sign up to their new "life-changing course with 4000+ students transforming their lives!!!!"
+Growing up with the early internet I'm definitely disenchanted with today's landscape. I honestly can't stomach social media any more. Even substack and newsletters have their icky side. People aren't just writing anymore, they're writing so you can "attract your DREAM clients!" "grow your reach 10x!" or sign up to their new "life-changing course with 4000+ students transforming their lives!!!!"
 
 It's as if the loss of friction in terms of publishing, has moved the effort away from original, heartfelt thinking towards growth and engagement optimization.
 
