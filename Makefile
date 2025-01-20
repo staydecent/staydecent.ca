@@ -9,11 +9,8 @@ local_build:
 prod_build:
 	php build.php ./public https://staydecent.ca
 
-# cat_css:
-# 		cat ./public/assets/css/reset.css ./public/assets/css/vars.css ./public/assets/css/pwa/* > ./public/assets/bundle.css
-
-# cat_js:
-# 		cat ./public/assets/js/lib/* ./public/assets/js/pwa.js > ./public/assets/bundle.js
+cp_feed:
+	cp ./public/feed/index.html ./public/feed.xml && rm -rf ./public/feed
 
 server:
 	php -S localhost:5000 -t public/
@@ -21,8 +18,8 @@ server:
 netlify:
 	netlify deploy --dir=public --prod
 
-dev: local_build server # cat_css cat_js
+dev: local_build cp_feed server
 
-prod: clean prod_build # cat_css cat_js
+prod: clean prod_build cp_feed
 
 deploy: prod_build netlify
