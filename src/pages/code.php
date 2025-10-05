@@ -6,7 +6,6 @@
 <article id="code">
   <div class="article-intro">
     <h2 class="center">Lessons and opinions on software development.</h2>
-    <p class="display">I'm no longer working as a developer, so this area of the site may very well develop cobwebs.</p>
   </div>
 
   <section class="cols">

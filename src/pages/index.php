@@ -5,71 +5,30 @@ $body_class = 'text';
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
 <article>
-  <section class="cols">
+  <div class="article-intro">
+  </div>
+  <section class=cols>
     <div>
-      <img class="contain" src="<?php echo SITE_URL ?>photography/sebastion-beach/images/sebastion_10.jpg">
-      <div class=title>
-        <a class=plain href="<?php echo SITE_URL ?>photography/sebastion-beach">Sebastion Beach →</a>
-      </div>
+      <p>Former <a href="<?php echo SITE_URL ?>code">software developer</a> currently on <a href="<?php echo SITE_URL ?>sabbatical">sabbatical</a>. Interested in philosophy, spirituality, technology and society. I write about existing as a human in our current times over at <a href="https://tednet.org">The Existential Detective Network</a>. I recently started a <a href="<?php echo SITE_URL ?>heybear">new project</a> to share my love of nature through writing and photography.</p>
+      <p>I love to take <a href="<?php echo SITE_URL ?>photography">photos</a> as it helps me slow down and notice the mundane.</p>
+      <p>See what I'm up to <a href="<?php echo SITE_URL ?>now">now</a>, or find out how I <a href="<?php echo SITE_URL ?>colophon">built </a>this site.</p>
+
+      <aside>
+        <h3>Projects</h3>
+        <p> <a href="<?php echo SITE_URL ?>heybear">Hey Bear!</a>, <a href="https://tednet.org/" target=_blank>TEDNET</a>, <a href="https://pathofheart.ca/" target=_blank>Path of Heart</a>, <a href="https://app.prepkitmeals.com/" target=_blank>PrepKit Meals</a></p>
+      </aside>
+
+      <aside>
+        <h3>Contact</h3>
+        <p>Like something I've said? Think I'm a heretic? Let me hear it:</p>
+        <p><a href="mailto:hello&#64;staydecent.ca">hello&#64;staydecent.ca</a></p>
+      </aside>
     </div>
 
-    <div>
-      <img class="contain" src="<?php echo SITE_URL ?>photography/july-town/images/town_14.jpg">
-      <div class=title>
-        <a class=plain href="<?php echo SITE_URL ?>photography/july-town">A Small Canadian Town in July →</a>
-      </div>
+    <div class=mobile-first>
+      <img src="/assets/media/about-VSCO.jpeg" alt="Photo of Adrian sitting in Nature" />
     </div>
-
-    <div>
-      <img class="contain" src="<?php echo SITE_URL ?>photography/picos-on-portra/images/picos_11.jpg">
-      <div class=title>
-        <a class=plain href="<?php echo SITE_URL ?>photography/picos-on-portra">Picos on Portra →</a>
-      </div>
-    </div>
-
-    <div class=right>
-      <div>
-        <img class="contain" src="<?php echo SITE_URL ?>photography/paris-noir/images/parisnoir_7.jpg">
-        <div class=title>
-          <a class=plain href="<?php echo SITE_URL ?>photography/paris-noir">Paris Noir →</a>
-        </div>
-      </div>
-    </div>
-
-    <div>
-      <img class="contain" src="<?php echo SITE_URL ?>photography/paris-couleur/images/pariscouleur_8.jpg">
-      <div class=title>
-        <a class=plain href="<?php echo SITE_URL ?>photography/paris-couleur">Paris Coleur →</a>
-      </div>
-    </div>
-
-    <div>
-      <img class="contain" src="<?php echo SITE_URL ?>photography/waves/images/waves_2.jpg">
-      <div class=title>
-        <a class=plain href="<?php echo SITE_URL ?>photography/waves">Waves →</a>
-      </div>
-    </div>
-
-    <div>
-      <img class="contain" src="<?php echo SITE_URL ?>photography/maui/images/maui_5.jpg">
-      <div class=title>
-        <a class=plain href="<?php echo SITE_URL ?>photography/maui">Maui →</a>
-      </div>
-    </div>
-
-    <div class=right>
-      <div>
-        <img class="contain" src="<?php echo SITE_URL ?>photography/black-and-white/images/bnw_10.jpg">
-        <div class=title>
-          <a class=plain href="<?php echo SITE_URL ?>photography/black-and-white">Black &amp; White →</a>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-
+  </section>  
 </article>
-
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>

@@ -208,6 +208,12 @@ footer {
   margin: 0;
 }
 
+.big {
+  font-size: 4rem;
+  text-align: center;
+  font-family: var(--serif);
+}
+
 @media screen and (max-width: 800px) {
   .article-intro {
     width: 100%;
