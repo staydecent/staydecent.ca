@@ -5,6 +5,9 @@ $body_class = 'text';
 <?php include $config['dirs']['layout'].'/header.php' ?>
 
 <article>
+  <div class="article-intro">
+    <h2>Info.</h2>
+  </div>
   <section class=cols>
     <div>
       <p>Former <a href="<?php echo SITE_URL ?>code">software developer</a> currently on <a href="<?php echo SITE_URL ?>sabbatical">sabbatical</a>. Interested in philosophy, spirituality, technology and society. I write about existing as a human in our current times over at <a href="https://tednet.org">The Existential Detective Network</a>. I write more loosely on my <a href="<?php echo SITE_URL ?>blog">blog</a> here.</p>
