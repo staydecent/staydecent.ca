@@ -6,7 +6,7 @@
 <article id="code">
   <div class="article-intro">
     <h2 class="center"><?php echo $entry['title'] ?></h2>
-    <p><postamble datetime="<?php echo date("Y-m-d", $entry['date']) ?>"><?php echo date("F j, Y", $entry['date']) ?></postamble></p>
+    <p class=small><postamble datetime="<?php echo date("Y-m-d", $entry['date']) ?>"><?php echo date("F j, Y", $entry['date']) ?></postamble></p>
   </div>
 
   <section class="cols">
@@ -14,7 +14,10 @@
       <?php echo $entry['body'] ?>
       <?php include $config['dirs']['layout'].'/post-navigation-part.php'; ?>
     </div>
-    <div>&nbsp;</div>
+    <div class="mobile-first">
+      <?php echo entry_image($entry) ?>
+    </div>
   </section>
+</article>
 
 <?php include $config['dirs']['layout'].'/footer.php' ?>

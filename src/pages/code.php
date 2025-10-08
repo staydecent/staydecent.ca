@@ -18,10 +18,7 @@
         ?>
         <div>
           <h3 class=normal><a href="<?php echo $entry['url']; ?>"><?php echo $entry['title'] ?></a></h3 class=normal>
-          <p><?php echo $entry['excerpt'] ?></p>
-          <postamble datetime="<?php echo date("Y-m-d", $entry['date']) ?>">
-            <a class="black plain" href="<?php echo $entry['url']; ?>"><?php echo date("F j, Y", $entry['date']) ?></a>
-          </postamble>
+          <p><?php echo $entry['excerpt'] ?> <a href="<?php echo $entry['url']; ?>" title="Continue reading: <?php echo $entry['title'] ?>"> →</a></p>
         </div>
         <?php
       }
