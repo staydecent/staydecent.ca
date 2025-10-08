@@ -138,6 +138,11 @@ a.plain {
   text-decoration: none;
 }
 
+.mono {
+  font-family: monospace;
+  font-size: 1.1rem;
+}
+
 img {
   max-width: 100%;
   max-height: calc(100vh - 2rem);
@@ -251,6 +256,7 @@ footer {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
   padding: 1rem;
+  margin: 2rem 0rem 1rem;
 }
 
 .block > h3 {
@@ -258,9 +264,9 @@ footer {
   margin-top: 0;
 }
 
-@media screen and (min-width: : 800px) {
+@media screen and (min-width: 800px) {
   .block {
-    margin: 1rem 3rem 1rem 0rem;
+    margin: 0 1rem 1rem 0;
   }
 }
 

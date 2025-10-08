@@ -12,21 +12,6 @@ $title = 'Hey Bear! Newsletter written by Adrian Unger';
 
   <section class=cols>
     <div>
-      <p><strong>Where I hope to convey the joy, delight and awe that I experience from nature.</strong> It’s remarkable we have a liveable planet at all—ya know, considering how <em>unlivable</em> the rest of the known universe is—let alone a planet with such abundance and majesty! I know of no greater glee than when I am privy to animals simply living their lives. </p>
-
-      <p>It’s also a bit of a selfish project as I enjoy writing and taking photos and this will give me somewhere to house those, rather than letting them rot in some dark corner of Apple's cloud storage.</p>
-
-      <p>I also—a bit presumptuously I might add—feel that, more than ever, we humans could benefit from greater connection to this planet which is an inexorable part of our existence. Even, simply, to bring more attention to the cyclical nature of—<em>ahem</em>—Nature. </p>
-
-      <p>Uncertainty is part of reality just as much as this Earth is. And, we seem to be living in especially uncertain times. Yet, the rhythm of the seasons remains somewhat constant. The sun rises every morning and the moon every night. Opinions and politics don’t change that. Revelling in these rhythms grounds me into actual reality. </p>
-
-      <p>So that’s my goal: to share my delight from the natural world and to revel in the unavoidable rhythms of our reality. It should be fun!</p>
-
-      <p>👋🐻</p>
-
-      <p><small><em>Curious about the name? Read the first issue ;) </em></small></p>
-    </div>
-    <div class=mobile-first>
       <div class="block">
         <h3>Subscribe to Hey Bear!</h3>
         <p>Revelations from Nature. Just honest-to-goodness nuggets of joy and delight with the occasional self-reflection.</p>
@@ -43,6 +28,23 @@ $title = 'Hey Bear! Newsletter written by Adrian Unger';
           <p><small>I'll never spam or share your email with anyone.</small></p>
         </form>
       </div>
+
+      <p><strong>Where I hope to convey the joy, delight and awe that I experience from nature.</strong> It’s remarkable we have a liveable planet at all—ya know, considering how <em>unlivable</em> the rest of the known universe is—let alone a planet with such abundance and majesty! I know of no greater glee than when I am privy to animals simply living their lives. </p>
+
+      <p>It’s also a bit of a selfish project as I enjoy writing and taking photos and this will give me somewhere to house those, rather than letting them rot in some dark corner of Apple's cloud storage.</p>
+
+      <p>I also—a bit presumptuously I might add—feel that, more than ever, we humans could benefit from greater connection to this planet which is an inexorable part of our existence. Even, simply, to bring more attention to the cyclical nature of—<em>ahem</em>—Nature. </p>
+
+      <p>Uncertainty is part of reality just as much as this Earth is. And, we seem to be living in especially uncertain times. Yet, the rhythm of the seasons remains somewhat constant. The sun rises every morning and the moon every night. Opinions and politics don’t change that. Revelling in these rhythms grounds me into actual reality. </p>
+
+      <p>So that’s my goal: to share my delight from the natural world and to revel in the unavoidable rhythms of our reality. It should be fun!</p>
+
+      <p>👋🐻</p>
+
+      <p><small><em>Curious about the name? Read the first issue ;) </em></small></p>
+    </div>
+    <div class=mobile-first>
+      <img class="contain" src="<?php echo SITE_URL ?>assets/media/heybear.jpg">
     </div>
   </section>  
 </article>
