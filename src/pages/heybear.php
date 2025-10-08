@@ -41,13 +41,6 @@ $title = 'Hey Bear! Newsletter written by Adrian Unger';
           <input type="email" name="email" id="bd-email" placeholder="Your email (you@example.com)" />
           <input type="submit" value="Subscribe" />
           <p><small>I'll never spam or share your email with anyone.</small></p>
-          <p>
-            <small>
-            <a href="https://buttondown.com/refer/heybear" target="_blank">
-              Powered by Buttondown.
-            </a>
-            </small>
-          </p>
         </form>
       </div>
     </div>
