@@ -7,7 +7,7 @@ $body_class = 'text';
 <article>
   <section class="cols">
     <div>
-      <img class="contain" src="<?php echo SITE_URL ?>assets/media/heybear.jpg">
+      <img class="contain" src="https://storage.googleapis.com/staydecent/heybear/heybear.jpg">
       <div class=title>
         <a class=plain href="<?php echo SITE_URL ?>heybear">Hey Bear! →</a>
       </div>

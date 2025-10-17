@@ -107,6 +107,10 @@ p.small {
   margin-top: 0.5rem;
 }
 
+.fineprint {
+  font-size: 0.6rem;
+}
+
 pre {
   max-width: 100%;
   overflow-x: scroll;
@@ -268,18 +272,12 @@ footer {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
   padding: 1rem;
-  margin: 2rem 0rem 1rem;
+  margin: 0rem 0rem 1rem;
 }
 
 .block > h3 {
   padding-top: 0;
   margin-top: 0;
-}
-
-@media screen and (min-width: 800px) {
-  .block {
-    margin: 0 1rem 1rem 0;
-  }
 }
 
 

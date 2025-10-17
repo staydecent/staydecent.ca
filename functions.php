@@ -90,13 +90,15 @@ function next_entry($entry) {
   return FALSE;
 }
 
-function entry_image($entry) {
+function entry_image($entry, $cls = '') {
   if (! array_key_exists('image', $entry)) {
     return '';
   }
-  $url = SITE_URL . 'assets/media/' . $entry['image'];
+  $url = stristr($entry['image'], 'http') === FALSE
+    ? SITE_URL . 'assets/media/' . $entry['image']
+    : $entry['image'];
   $alt = (array_key_exists('image_alt', $entry)) ? $entry['image_alt'] : $entry['title'];
-  return "<img src='{$url}' alt='{$alt}' title='{$alt}'>";
+  return "<img class='{$cls}' src='{$url}' alt='{$alt}' title='{$alt}'>";
 }
 
 function get_cats() {
