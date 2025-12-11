@@ -20,7 +20,7 @@ All of this was done on the lovely https://val.town service using their AI assis
 
 > I'd like to create a journal powered by email. It's essentially a clone of OhLife. The Val will handle incoming emails, saving the text of the email as a journal entry. Each journal entry will be saved to a SQLite database. Each entry will save the email address of the incoming email, the contents, and the date it was sent and received.
 
-[Link to screen shot of initial conversation](https://storage.googleapis.com/staydecent/blog/Townie__1.png)
+[→ Link to screen shot of initial conversation](https://storage.googleapis.com/staydecent/blog/Townie__1.png)
 
 Townie checks out the repo (which was blank) and begins working, explaining what it's doing and then documenting in README file. Nice!
 
@@ -28,9 +28,9 @@ I then asked it to add a function to strip out email signatures and quoted email
 
 ## Iterations
 
-The initial Townie creation included a vier for listing out all entries. It was some basic quoted HTML and server code (Val runs Deno I believe). I had seen Hono used in a bunch of Val examples and docs, so I asked Townie to update the viewer.ts file to use jsx and Hono.
+The initial Townie creation included a view for listing out all entries. It was some basic quoted HTML and server code (Val runs Deno I believe). I had seen Hono used in a bunch of Val examples and docs, so I asked Townie to update the viewer.ts file to use jsx and Hono.
 
-[Link to screen shot of conversation iterations](https://storage.googleapis.com/staydecent/blog/Townie__2.png)
+[→ Link to screen shot of conversation iterations](https://storage.googleapis.com/staydecent/blog/Townie__2.png)
 
 Right off the bat, I noticed it using `dangerouslySetInnerHTML` which didn't seem ideal or necessary. That was also an API from React, which we hadn't actually included in the project since Hono supports JSX without it.
 
@@ -42,7 +42,7 @@ I believe Townie is built using Claude Code and, in any case, I imagine many ass
 
 Expecting the entry viewer to get overwhelming over time, I asked Townie to add date filters to the `viewer.ts` file. It added a bunch of boilerplate but was essentially non-functional. The form elements posted as GET request but there was no code to actually apply the GET params as filters on the returned SQL query.
 
-[Link to screen shot of conversation asking for date filters](https://storage.googleapis.com/staydecent/blog/Townie__3.png)
+[→ Link to screen shot of conversation asking for date filters](https://storage.googleapis.com/staydecent/blog/Townie__3.png)
 
 I continued to use Townie to write out the queries and pass the data through, though at this point it was faster for me to just connect the dots rather than figure out how to write what I wanted Townie to do in a prompt. Just telling Townie it didn't work, wasn't enough. 
 

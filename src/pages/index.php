@@ -6,10 +6,18 @@ $body_class = 'text';
 
 <article>
   <section class="cols">
+    <div class="article-intro">
+      <p>Former Digital Product Developer of 17 years turned <abbr title="To be determined, been on sabbatical for a few years now...">TBD</abbr>. I like to take <a class=plain href="<?php echo SITE_URL ?>photography">Photos</a> and write about <a class=plain href="https://buttondown.com/heybear" target="_blank" title="Hey Bear! Newsletter">Nature <span class="mono">↗</span></a>, <a class=plain href="https://tednet.org" target="_blank" title="The Existential Detective Network">Existence <span class="mono">↗</span></a> and <a class=plain href="https://tednet.org" target="_blank" title="Archetypal Numerology">Symbolism <span class="mono">↗</span></a>. Yeehaw.</p>
+    </div>
+  </section>
+</article>
+
+<article>
+  <section class="cols">
     <div>
       <img class="contain" src="https://storage.googleapis.com/staydecent/heybear/heybear.jpg">
       <div class=title>
-        <a class=plain href="<?php echo SITE_URL ?>heybear">Hey Bear! →</a>
+        <a class=plain href="https://buttondown.com/heybear" target="_blank" title="Hey Bear! Newsletter">Hey Bear! <span class="mono">↗</span></a>
       </div>
     </div>
 
