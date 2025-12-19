@@ -149,6 +149,11 @@ a.plain {
   text-decoration: none;
 }
 
+a.ul {
+  text-decoration: none;
+  border-bottom: 1px solid var(--grey);
+}
+
 .mono {
   font-family: monospace;
   font-size: 1.1rem;
