@@ -1,7 +1,7 @@
 title: Recreating OhLife in two days
 ---
 
-Many moons ago, there was a lovely service called [OhLife](https://www.ycombinator.com/companies/ohlife) which has been shutdown for some time now. Recently, I've been missing it as a simple way to journal and relive past entries. So, I recreated it in two days using AI—and what do the kids call it? Vibe coding?
+Many moons ago, there was a lovely service called [OhLife](https://www.ycombinator.com/companies/ohlife) which has been shutdown for some time now. Recently, I've been missing it as a simple way to journal and relive past entries. So, I recreated it in two days using AI—and what do the kids call it... Vibe coding?
 
 When I say two days, I really mean two sessions of sitting down at my computer for maybe an hour or two. Which is quite remarkable. I mean, the concept of OhLife isn't too complicated, but still, pretty cool.
 
@@ -50,4 +50,6 @@ I continued to use Townie to write out the queries and pass the data through, th
 
 Well, it's pretty neat! I quit coding pretty much cold turkey when I went on sabbatical, so coming back without all my muscle memory it was nice to have gentle guidance. 
 
-That said, at least with this basic setup, AI code generation excells at boilerplate but never understood the code well enough for state management and passing data around. I'm sure I could have outlined the exact needs in a prompt, but 15+ years of coding means I was basically thinking in code and would need to translate my thoughts into english for the prompt—which was essentially more work for me.
+That said, at least with this basic setup, AI code generation excells at boilerplate but never understood the code well enough for state management and passing data around. I'm sure I could have outlined the exact needs in a prompt, but 15+ years of coding means I was basically thinking in code and would have needed to translate my thoughts into english for the prompt—which was essentially more work for me.
+
+Anyway, in the end, most of my time was spent designing a custom email template that looked how I wanted. And, now I have a replacement OhLife!
