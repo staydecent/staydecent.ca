@@ -1,0 +1,394 @@
+:root {
+  --sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --serif: times, serif;
+
+  --white: #fafafa;
+  --black: #0a0a0a;
+
+  --offwhite: #ededed;
+  --grey-dark: #413d44;
+
+  --bg: #dedfe0;
+  --fg: #130070;
+
+  --overlay: #565d9436;
+
+  --link-hover-color: #99061C;
+  --link-visited-color: #565d94;
+  --link-bg-color: #AEA5E9;
+
+  --gutter: 16px;
+  --gutter2: 64px;
+}
+
+html {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+  font-size: 16px;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+
+  background-color: var(--bg);
+  color: var(--fg);
+
+  transition: background-color 1s ease-in-out;
+
+  font-family: var(--sans);
+  font-kerning: normal;
+  letter-spacing: .012em;
+  line-height: 1.22;
+  font-size: 1rem;
+  text-rendering: optimizeLegibility;
+}
+
+main {
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+h1 {
+  font-size: 1rem;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 1.4rem;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    margin-bottom: 0;
+  }
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 0.74em;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
+}
+
+a:visited {
+  color: var(--link-visited-color);
+}
+
+a:hover {
+  color: var(--link-hover-color);
+  background-color: var(--link-bg-color);
+  text-decoration: none !important;
+}
+
+a#logo-link:visited {
+  color: var(--fg);
+}
+a#logo-link:hover {
+  color: var(--link-hover-color);
+}
+
+nav a {
+  text-decoration: none;
+}
+
+a:not(#logo-link).current {
+  text-shadow: 0px 0px 3px var(--fg);
+}
+
+h1 a,
+h2 a,
+a.plain { 
+  text-decoration: none;
+}
+
+a.ul {
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+p:first-child {
+  margin-top: 0;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+p.small {
+  margin-top: 0.5rem;
+}
+p.smol {
+  font-size: 0.66rem;
+}
+
+.fineprint {
+  font-size: 0.66rem;
+}
+
+pre {
+  max-width: 100%;
+  overflow-x: scroll;
+  background-color: var(--offwhite);
+  padding: 0 1rem;
+}
+
+postamble {
+  font-size: 0.7rem;
+}
+
+aside {
+  padding-top: 2rem;
+}
+
+.mono {
+  font-family: monospace;
+  font-size: 1.1rem;
+}
+
+img {
+  max-width: 100%;
+  max-height: calc(100vh - 2rem);
+  content-visibility: auto;
+}
+
+header,
+article,
+footer {
+  padding: 0;
+  max-width: 1280px;
+}
+
+footer {
+  padding-top: 10rem;
+}
+
+.cols {
+  display: grid;
+  grid-template-columns: 47% 47%;
+  grid-gap: 6%;
+}
+
+@media screen and (min-width: 1988px) {
+  header,
+  article,
+  footer {
+    padding: 0;
+    max-width: 2000px;
+  }
+
+  footer {
+    padding-top: 10rem;
+  }
+
+  .cols {
+    grid-template-columns: 33% 33% 33%; 
+  }
+
+  #index .cols > div:nth-child(1) { order: 1; }
+  #index .cols > div:nth-child(2) { order: 2; }
+  #index .cols > div:nth-child(3) { order: 3; }
+  #index .cols > div:nth-child(4) { order: 2; }
+  #index .cols > div:nth-child(5) { order: 5; }
+  #index .cols > div:nth-child(6) { order: 6; }
+  #index .cols > div:nth-child(7) { order: 7; }
+  #index .cols > div:nth-child(8) { order: 6; }
+  #index .cols > div:nth-child(9) { order: 9; }
+}
+
+@media screen and (max-width: 800px) {
+  article {
+    padding-top: 1rem;
+  }
+
+  .cols {
+    grid-template-columns: 1fr;
+  }
+
+  .cols > div {
+    max-width: 100%;
+  }
+
+  .cols > .mobile-first {
+    order: -1;
+  }
+
+  .cols {
+    grid-gap: 1rem;
+  }
+}
+
+.contain {
+  max-height: 80vh;
+}
+
+.title {
+  width: auto;
+  margin-bottom: 3rem;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
+  flex-direction: column;
+}
+
+.article-intro {
+  padding: 5rem 0 1rem;
+  width: 68%;
+}
+
+.article-intro h2 {
+  margin: 0;
+  font-size: 3em;
+  font-weight: normal;
+  text-shadow: 0px 0px 1.5px var(--fg);
+}
+
+@media screen and (max-width: 800px) {
+  .article-intro {
+    width: 100%;
+  }
+  .article-intro h2 {
+    font-size: 3rem;
+  }
+}
+
+.note {
+  padding: 1rem;
+  background-color: #FFEBA1;
+}
+
+.block {
+  background-color: white;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 0rem 0rem 1rem;
+}
+
+.block > h3 {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: var(--overlay);
+  z-index: 0;
+}
+
+.overlay > img {
+  position: relative;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  Page specific
+*/
+#ecstasy {
+  background-color: #aaa;
+}
+
+#sebastion {
+  background-color: #f3f8ff;
+}
+
+#july-town {
+  background-color: #D0DBD7;
+
+  h1,
+  a,
+  p,
+  div,
+  time {
+    color: #C74938;
+  }
+}
+
+#picos {
+}
+
+#noir {
+  background-color: var(--offwhite);
+}
+
+#paris {
+  background-color: #f3e7bd;
+
+  h1,
+  a,
+  p,
+  div,
+  time {
+    color: #2f425c;
+  }
+}
+
+#waves {
+  background-color: #f9f3e1;
+}
+
+#maui {
+  background-color: #83A1B4;
+
+  h1,
+  a,
+  p,
+  div,
+  time {
+    color: #FBCBC1;
+  }
+}
+
+#shinrinyoku {
+  background-color: #433C06;
+
+  h1,
+  h2,
+  a,
+  p,
+  div,
+  time {
+    color: #F2CB6C;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 4em;
+    font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  }
+}

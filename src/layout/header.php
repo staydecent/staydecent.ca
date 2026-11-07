@@ -11,7 +11,7 @@
     else
       echo $title.' — by Adrian Unger';
 ?></title>
-  <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL ?>/assets/style-v26.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL ?>/assets/style-v27.css">
   <link rel="alternate" type="application/rss+xml" href="<?php echo SITE_URL ?>/feed" />
 </head>
 <body id="<?php echo $page_id; ?>" <?php if (isset($body_class)): ?>class="<?php echo $body_class; endif;?>">
@@ -21,8 +21,8 @@
   <section class="cols">
     <div>
       <h1>
-        <a href="/" <?php echo current_class('adrian') ?><?php echo current_class('photography') ?> rel=home>Adrian Unger</a>
-        (<a href="<?php echo SITE_URL ?>about">Info.</a>)
+        <a id="logo-link" href="/" <?php echo current_class('adrian') ?><?php echo current_class('photography') ?> rel=home>Adrian Unger</a>
+        (<a href="<?php echo SITE_URL ?>about" <?php echo current_class('about') ?>>Info.</a>)
       </h1>
     </div>
     <div>

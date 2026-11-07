@@ -6,28 +6,32 @@ $body_class = 'text';
 
 <article>
   <div class="article-intro">
-    <h2>Info.</h2>
+    &nbsp;
   </div>
   <section class=cols>
-    <div>
-      <p>Former <a href="<?php echo SITE_URL ?>code">software developer</a> currently on <a href="<?php echo SITE_URL ?>sabbatical">sabbatical</a>. Interested in philosophy, spirituality, technology and society. I write about existing as a human in our current times over at <a href="https://tednet.org">The Existential Detective Network</a>. I recently started a <a href="<?php echo SITE_URL ?>heybear">new project</a> to share my love of nature through writing and photography.</p>
-      <p>I love to take <a href="<?php echo SITE_URL ?>photography">photos</a> as it helps me slow down and notice the mundane.</p>
-      <p>See what I'm up to <a href="<?php echo SITE_URL ?>now">now</a>, or find out how I <a href="<?php echo SITE_URL ?>colophon">built </a>this site.</p>
+    <div class="cols">
+      <div class="overlay mobile-first">
+        <img src="/assets/media/about-VSCO.jpeg" alt="Photo of Adrian sitting in Nature" />
+      </div>
+      <div>&nbsp;</div>
+    </div>
 
-      <aside>
+    <div class="cols">
+      <div>
+        <h2>A little about me</h2>
+        <p>Former <a href="<?php echo SITE_URL ?>code">software developer</a> currently on <a href="<?php echo SITE_URL ?>sabbatical">sabbatical</a>. Interested in philosophy, spirituality, technology and society. I write about existing as a human in our current times over at <a href="https://tednet.org">The Existential Detective Network</a>. I recently started a <a href="<?php echo SITE_URL ?>heybear">new project</a> to share my love of nature through writing and photography.</p>
+        <p>I love to take <a href="<?php echo SITE_URL ?>photography">photos</a> as it helps me slow down and notice the mundane.</p>
+        <p>See what I'm up to <a href="<?php echo SITE_URL ?>now">now</a>, or find out how I <a href="<?php echo SITE_URL ?>colophon">built </a>this site.</p>
+
+      </div>
+      <div>
         <h3>Projects</h3>
         <p> <a href="<?php echo SITE_URL ?>heybear">Hey Bear!</a>, <a href="https://tednet.org/" target=_blank>TEDNET</a>, <a href="https://pathofheart.ca/" target=_blank>Path of Heart</a>, <a href="https://app.prepkitmeals.com/" target=_blank>PrepKit Meals</a></p>
-      </aside>
 
-      <aside>
         <h3>Contact</h3>
         <p>Like something I've said? Think I'm a heretic? Let me hear it:</p>
         <p><a href="mailto:hello&#64;staydecent.ca">hello&#64;staydecent.ca</a></p>
-      </aside>
-    </div>
-
-    <div class=mobile-first>
-      <img src="/assets/media/about-VSCO.jpeg" alt="Photo of Adrian sitting in Nature" />
+      </div>
     </div>
   </section>  
 </article>
