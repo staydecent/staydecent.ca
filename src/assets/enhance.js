@@ -7,9 +7,7 @@
 
   function init() {
     lazyload();
-
-    // custom elements
-    customElements.define("pretty-date", PrettyDate, { extends: "time" });
+    prettydates();
 
     // click events
     document.addEventListener('click', (ev) => {
@@ -20,31 +18,31 @@
         // img.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
         scrollToTargetAdjusted(img);
       }
-
-      // easier photo click targets
-      const datalinkEl = getDataLink(ev.target);
-      if (datalinkEl != null) {
-        window.location = datalinkEl.dataset.link;
-      }
     }, true);
   }
 
   function lazyload() {
-    const imgs = document.querySelectorAll('img');
-    const isInViewport = function (element) {
-      const rect = element.getBoundingClientRect();
-      const html = document.documentElement;
-      if ((rect.top + 100) <= (window.innerHeight || html.clientHeight)) {
-        element.classList.add('fadein');
-        element.classList.remove('notinview');
+    const imagesToLoad = document.querySelectorAll("img[data-src]");
+    imagesToLoad.forEach((img) => {
+      img.setAttribute("src", img.getAttribute("data-src"));
+      img.onload = () => {
+        img.removeAttribute("data-src");
+      };
+    });
+  }
+
+  function prettydates() {
+    const els = document.querySelectorAll("time[datetime]");
+    els.forEach((el) => {
+      try {
+        let date = new Date(el.dateTime);
+        let pp = new Intl.DateTimeFormat('en-US', { dateStyle: 'medium', timeStyle: 'medium' }).format(date);
+        el.textContent = pp;
+        el.setAttribute("title", el.getAttribute("title") + " " + pp);
+      } catch (e) {
+        console.error(e);
       }
-    };
-    imgs.forEach(img => img.classList.add('notinview'));
-    document.addEventListener('scroll', () => {
-      if (!imgs.length) return;
-      imgs.forEach(isInViewport);
-    }, true);
-    Array.from(imgs).slice(0, 2).forEach(isInViewport);
+    });
   }
 
   function getTag(tagName, el) {
@@ -60,20 +58,8 @@
     return null;
   }
 
-  function getDataLink(el) {
-    if (el.dataset != null && el.dataset.link != null) {
-      return el;
-    }
-    while (el.parentNode) {
-      el = el.parentNode
-      if (el.dataset != null && el.dataset.link != null) {
-        return el;
-      }
-    }
-    return null;
-  }
-
   function scrollToTargetAdjusted(target) {
+    console.log('scrollToTargetAdjusted', target)
     const isSmall = target.clientHeight < window.innerHeight / 2;
     const offset = isSmall
       ? (target.clientHeight / 1.5)
@@ -85,22 +71,4 @@
       behavior: "smooth"
     });
   }
-
-  class PrettyDate extends HTMLTimeElement {
-    constructor() {
-      super();
-    }
-
-    connectedCallback() {
-      this._date = new Date(this.dateTime);
-      try {
-        let date = new Date(this.dateTime);
-        let pp = new Intl.DateTimeFormat('en-US', { dateStyle: 'medium', timeStyle: 'medium' }).format(date);
-        this.textContent = pp;
-      } catch (e) {
-        console.error(e);
-      }
-    }
-  }
-
 })();

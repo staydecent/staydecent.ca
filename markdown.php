@@ -1,18 +1,27 @@
 <?php
 
-ini_set("highlight.comment", "#808080");
-ini_set("highlight.default", "#a9b7c6");
-ini_set("highlight.html", "#EAD8E2");
-ini_set("highlight.keyword", "#D6A856");
-ini_set("highlight.string", "#467B43");
+// colorscheme helper: https://browserbasedtools.com/tools/color/color-editor
+ini_set("highlight.comment", "#b0b8d4");
+ini_set("highlight.default", "#f1f3f9");
+ini_set("highlight.html", "#d5adb7");
+ini_set("highlight.keyword", "#08cfb6");
+ini_set("highlight.string", "#c4b997");
 
 
 function highlighter($text)
 {
     $text = trim($text);
-    $text = highlight_string("<?php " . $text, true);
-    $text = str_replace("&lt;?php&nbsp;", "", $text);
+    $fake_php = FALSE;
+    if (strpos($text, "<?php") !== FALSE) {
+        $text = highlight_string($text, TRUE);
+    } else {
+        $text = highlight_string("<?php " . $text, TRUE);
+        $fake_php = TRUE;
+    }
     $text = trim($text);
+    if ($fake_php) {
+        $text = substr($text, 72);
+    }
     return $text;
 }
 

@@ -6,7 +6,7 @@ $body_class = 'text';
 
 <article>
   <div class="article-intro">
-    <h2>What I'm up to<br>right now.</h2>
+    <h1>What I'm up to<br>right now.</h1>
   </div>
   <section class=cols>
     <div>&nbsp;</div>

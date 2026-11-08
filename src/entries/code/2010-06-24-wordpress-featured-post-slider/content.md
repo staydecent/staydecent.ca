@@ -12,17 +12,21 @@ What is it? It's a way of showcasing all of the posts with a [featured image](ht
 
 For a deeper explanation of post thumbnails, read [Mark Jaquith's Post](http://markjaquith.wordpress.com/2009/12/23/new-in-wordpress-2-9-post-thumbnail-images/). For now, here is the code to add support and define the sizes of our post thumbnails:
 
-    add_theme_support( 'post-thumbnails' );
-    set_post_thumbnail_size( 300, 100, true ); // Normal thumb size
-    add_image_size( 'featured-image', 900, 300, true ); // Slider size
+```php
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 300, 100, true ); // Normal thumb size
+add_image_size( 'featured-image', 900, 300, true ); // Slider size
+```
 
 I displayed the slider on the homepage only, but pick a theme file and add the following within the loop:
 
-    <?php if (in_category('10') && has_post_thumbnail()) : // Category 10 is my 'Featured' category ?>
-    <a href="<?php the_permalink() ?>" title="Permalink to <?php the_title() ?>" rel="bookmark">
-        <?php the_post_thumbnail('featured-image'); // Make sure you call the image size you defined in functions.php ?>
-    </a>
-    <?php endif; ?>
+```php
+<?php if (in_category('10') && has_post_thumbnail()) : // Category 10 is my 'Featured' category ?>
+<a href="<?php the_permalink() ?>" title="Permalink to <?php the_title() ?>" rel="bookmark">
+    <?php the_post_thumbnail('featured-image'); // Make sure you call the image size you defined in functions.php ?>
+</a>
+<?php endif; ?>
+```
 
 ### The jQuery Code
 

@@ -9,11 +9,11 @@ $body_class = 'text';
     &nbsp;
   </div>
   <section class=cols>
-    <div class="cols">
-      <div class="overlay mobile-first">
-        <img src="/assets/media/about-VSCO.jpeg" alt="Photo of Adrian sitting in Nature" />
-      </div>
-      <div>&nbsp;</div>
+    <div class="colorize mobile-first">
+      <noscript>
+        <img width="640" height="640" src="/assets/media/about-mdres.webp" alt="Photo of Adrian sitting in Nature" />
+      </noscript>
+      <img width="640" height="640" src="/assets/media/about-lores.webp" data-src="/assets/media/about-mdres.webp" alt="Photo of Adrian sitting in Nature" />
     </div>
 
     <div class="cols">
@@ -25,12 +25,14 @@ $body_class = 'text';
 
       </div>
       <div>
-        <h3>Projects</h3>
-        <p> <a href="<?php echo SITE_URL ?>heybear">Hey Bear!</a>, <a href="https://tednet.org/" target=_blank>TEDNET</a>, <a href="https://pathofheart.ca/" target=_blank>Path of Heart</a>, <a href="https://app.prepkitmeals.com/" target=_blank>PrepKit Meals</a></p>
+        <aside>
+          <h3>Projects</h3>
+          <p> <a href="<?php echo SITE_URL ?>heybear">Hey Bear!</a>, <a href="https://tednet.org/" target=_blank>TEDNET</a>, <a href="https://pathofheart.ca/" target=_blank>Path of Heart</a>, <a href="https://app.prepkitmeals.com/" target=_blank>PrepKit Meals</a></p>
 
-        <h3>Contact</h3>
-        <p>Like something I've said? Think I'm a heretic? Let me hear it:</p>
-        <p><a href="mailto:hello&#64;staydecent.ca">hello&#64;staydecent.ca</a></p>
+          <h3>Contact</h3>
+          <p>Like something I've said? Think I'm a heretic? Let me hear it:</p>
+          <p><a href="mailto:hello&#64;staydecent.ca">hello&#64;staydecent.ca</a></p>
+        </aside>
       </div>
     </div>
   </section>  

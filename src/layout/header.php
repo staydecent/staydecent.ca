@@ -19,11 +19,9 @@
 
 <header>
   <section class="cols">
-    <div>
-      <h1>
-        <a id="logo-link" href="/" <?php echo current_class('adrian') ?><?php echo current_class('photography') ?> rel=home>Adrian Unger</a>
-        (<a href="<?php echo SITE_URL ?>about" <?php echo current_class('about') ?>>Info.</a>)
-      </h1>
+    <div class="site-header">
+      <a id="logo-link" href="/" <?php echo current_class('adrian') ?><?php echo current_class('photography') ?> rel=home>Adrian Unger</a>
+      (<a href="<?php echo SITE_URL ?>about" <?php echo current_class('about') ?>>Info.</a>)
     </div>
     <div>
       <nav>
