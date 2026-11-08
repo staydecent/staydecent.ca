@@ -11,6 +11,6 @@
       <?php endif; ?>
       </span>
     </p>
-    <p>Or, explore the <a href="<?php echo SITE_URL ?>archives">archive</a>, check out my newsletter <a href="https://tednet.org" target=_blank>The Existential Detective Network</a>, get updates here via <a href="<?php echo SITE_URL ?>feed">RSS</a>, or send me an <a href="mailto:hello&#64;staydecent.ca">email</a>.</p>
+    <p>Or, explore the <a href="<?php echo SITE_URL ?>archives">archive</a>, check out my newsletters <a href="https://tednet.org" target=_blank>TEDNET</a> and <a href="https://heybear.staydecent.ca" target=_blank>Hey Bear!</a>, get updates here via <a href="<?php echo SITE_URL ?>feed">RSS</a>, or send me an <a href="mailto:hello&#64;staydecent.ca">email</a>.</p>
   </aside>
 </article>

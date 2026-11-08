@@ -15,30 +15,30 @@ $body_class = 'text';
 <article>
   <section class="cols">
     <div>
-      <img class="contain" src="https://storage.googleapis.com/staydecent/heybear/heybear.jpg">
+      <img class="contain" src="https://media.staydecent.ca/sd/heybear-big.webp">
       <div class=title>
         <a class=plain href="https://buttondown.com/heybear" target="_blank" title="Hey Bear! Newsletter">Hey Bear! <span class="mono">↗</span></a>
       </div>
     </div>
 
     <div>
-      <img class="contain" src="<?php echo SITE_URL ?>assets/media/tednet.jpg">
+      <img class="contain" src="https://media.staydecent.ca/sd/tednet.jpg">
       <div class=title>
         <a class=plain href="https://tednet.org" target="_blank">The Existential Detective Network <span class="mono">↗</span></a>
       </div>
     </div>
 
     <div>
-      <img class="contain" src="<?php echo SITE_URL ?>photography/july-town/images/town_14.jpg">
+      <img class="contain" src="https://media.staydecent.ca/sd/photography/july-town/town_14.jpg">
       <div class=title>
-        <a class=plain href="<?php echo SITE_URL ?>photography">Photography →</a>
+        <a class=plain href="https://media.staydecent.ca/sd/photography">Photography →</a>
       </div>
     </div>
 
     <div>
-      <img class="contain" src="<?php echo SITE_URL ?>assets/media/pathofheart-flowers.jpg">
+      <img class="contain" src="https://media.staydecent.ca/sd/arcnum-gradient-vertical.jpg">
       <div class=title>
-        <a class=plain href="https://pathofheart.ca" target="_blank">Path of Heart <span class="mono">↗</span></a>
+        <a class=plain href="https://archetypalnumerology.com" target="_blank">Archetypal Numerology <span class="mono">↗</span></a>
       </div>
     </div>
 

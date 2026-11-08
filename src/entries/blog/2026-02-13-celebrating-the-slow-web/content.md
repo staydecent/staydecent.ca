@@ -1,9 +1,9 @@
 title: Celebrating the Slow Web
 ---
 
-What if the web could be fun again? What if it could be filled with whimsy and wonder and intention? Well, of course it can, there's nothing stopping us but ourselves. Yet, the web is overwhelming today. It's beyond vast. So, how do we cultivate and celebrate the _slow web_&emdash;and what even is that?
+What if the web could be fun again? What if it could be filled with whimsy and wonder and intention? Well, of course it can, there's nothing stopping us but ourselves. Yet, the web is overwhelming today. It's beyond vast. So, how do we cultivate and celebrate the _slow web_—and what even is that?
 
-Well, first the Slow Web is simply the web without the frantic "streams" of modern social networks. It's not about constant updates and refreshing&emdash;duh, it's the _slow_ web. For me, it also encompasses the Indie Web, or the web without so much corporatization and monetization. It harkens back to people simply sharing their words and creations on a network accessible by nearly anyone.
+Well, first the Slow Web is simply the web without the frantic "streams" of modern social networks. It's not about constant updates and refreshing—duh, it's the _slow_ web. For me, it also encompasses the Indie Web, or the web without so much corporatization and monetization. It harkens back to people simply sharing their words and creations on a network accessible by nearly anyone.
 
 But, I take it _even_ further: it's the web without so much interactivity and JavaScript and tracking and, well, _bloat_. It's just [HTML](https://html.energy/index.html). No need for build steps and downloading all sorts of tooling and libraries. None of this is very strict however. Indeed, I use a build step for all of my static HTML websites. But, again, it's about the intention of simplifying. My build script is a couple simple PHP files that don't require downloading packages or maintaining bleeding edge versions of anything. Indeed, it's largely worked as written some [15  years ago!](https://github.com/staydecent/staydecent.ca/commit/2d99592e403efcc672a8aca447e8fc7473efe920)
 
