@@ -260,6 +260,10 @@ footer {
   padding-top: 10rem;
 }
 
+article + article {
+  padding-top: var(--gutter2);
+}
+
 .cols {
   display: grid;
   grid-template-columns: 47% 47%;
@@ -405,6 +409,12 @@ footer {
 /*
   Page specific
 */
+
+.photography h1 {
+  display: block;
+  max-width: min-content;
+}
+
 #ecstasy {
   background-color: #aaa;
 }
@@ -416,6 +426,8 @@ footer {
 #july-town {
   background-color: #D0DBD7;
 
+  --fg: #C74938;
+
   h1,
   a,
   p,
@@ -426,10 +438,21 @@ footer {
 }
 
 #picos {
+  background-color: #fff8f3;
 }
 
 #noir {
-  background-color: var(--offwhite);
+  background-color: #eee;
+
+  --fg: #000;
+
+  h1,
+  a,
+  p,
+  div,
+  time {
+    color: #000;
+  }
 }
 
 #paris {
@@ -450,18 +473,20 @@ footer {
 
 #maui {
   background-color: #83A1B4;
+  --fg: #FBCBC1;
 
   h1,
   a,
   p,
   div,
   time {
-    color: #FBCBC1;
+    color: var(--fg);
   }
 }
 
 #shinrinyoku {
   background-color: #433C06;
+  --fg: #F2CB6C;
 
   h1,
   h2,
@@ -469,12 +494,6 @@ footer {
   p,
   div,
   time {
-    color: #F2CB6C;
-  }
-
-  h2 {
-    margin: 0;
-    font-size: 4em;
-    font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    color: var(--fg);
   }
 }

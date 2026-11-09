@@ -14,10 +14,11 @@ $body_class = 'text';
 
 <article>
   <section class="cols">
+
     <div>
-      <img class="contain" src="https://media.staydecent.ca/sd/heybear-big.webp">
+      <img class="contain" src="https://media.staydecent.ca/sd/arcnum-falls.jpg">
       <div class=title>
-        <a class=plain href="https://buttondown.com/heybear" target="_blank" title="Hey Bear! Newsletter">Hey Bear! <span class="mono">↗</span></a>
+        <a class=plain href="https://archetypalnumerology.com" target="_blank">Archetypal Numerology <span class="mono">↗</span></a>
       </div>
     </div>
 
@@ -29,16 +30,16 @@ $body_class = 'text';
     </div>
 
     <div>
-      <img class="contain" src="https://media.staydecent.ca/sd/photography/july-town/town_14.jpg">
+      <img class="contain" src="https://media.staydecent.ca/sd/heybear-big.webp">
       <div class=title>
-        <a class=plain href="https://media.staydecent.ca/sd/photography">Photography →</a>
+        <a class=plain href="https://buttondown.com/heybear" target="_blank" title="Hey Bear! Newsletter">Hey Bear! <span class="mono">↗</span></a>
       </div>
     </div>
 
     <div>
-      <img class="contain" src="https://media.staydecent.ca/sd/arcnum-gradient-vertical.jpg">
+      <img class="contain" src="https://media.staydecent.ca/sd/photography/july-town/town_14.jpg">
       <div class=title>
-        <a class=plain href="https://archetypalnumerology.com" target="_blank">Archetypal Numerology <span class="mono">↗</span></a>
+        <a class=plain href="<?php echo SITE_URL ?>photography">Photography →</a>
       </div>
     </div>
 

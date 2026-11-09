@@ -1,3 +1,13 @@
+<?php if (isset($body_class) && $body_class === "photography"): ?>
+<article>
+  <section class="cols">
+    <div>
+      Back to <a href="<?php echo SITE_URL ?>photography">All Photos</a>
+    </div>
+  </section>
+</article>
+<?php endif; ?>
+
 <footer>
   <section class="cols">
     <div>
