@@ -214,6 +214,11 @@ p.smol {
   font-size: 0.66rem;
 }
 
+ins {
+  text-decoration: none;
+  border-bottom: 1px dotted var(--link-visited-color);
+}
+
 code {
   font-size: 0.72rem;
 }

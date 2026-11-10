@@ -1,4 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -e
+set -u
+
+# Usage: ./new_post <blog|code|etc.> "Post title"
+
 # creates an empty post dir/file
 date=$(date +%Y-%m-%d)
 slug=$(echo "$2" | iconv -t ascii//TRANSLIT | sed -E s/[^a-zA-Z0-9]+/-/g | sed -E s/^-+\|-+$//g | tr A-Z a-z)
