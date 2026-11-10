@@ -384,6 +384,10 @@ article .cols {
   aspect-ratio: 3/4;
 }
 
+.three-halfs {
+  aspect-ratio: 3/2;
+}
+
 .title {
   width: auto;
   margin-bottom: 3rem;

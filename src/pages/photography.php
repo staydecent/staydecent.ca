@@ -18,7 +18,7 @@ $body_class = 'photo';
     </div>
 
     <div>
-      <img class="contain" src="https://media.staydecent.ca/sd/photography/july-town/town_14.jpg">
+      <img class="contain three-halfs" src="https://media.staydecent.ca/sd/photography/july-town/town_14.jpg">
       <div class=title>
         <a class=plain href="<?php echo SITE_URL ?>photography/july-town">A Small Canadian Town in July →</a>
       </div>
@@ -71,7 +71,7 @@ $body_class = 'photo';
     </div>
 
     <div>
-      <img class="contain" src="https://media.staydecent.ca/sd/photography/shinrinyoku/shinrinyoku_6.jpg">
+      <img class="contain three-halfs" src="https://media.staydecent.ca/sd/photography/shinrinyoku/shinrinyoku_6.jpg">
       <div class=title>
         <a class=plain href="<?php echo SITE_URL ?>photography/shinrinyoku">Forest Bathing →</a>
       </div>
