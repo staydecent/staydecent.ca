@@ -151,6 +151,25 @@ function ignore($path, $config)  {
   return FALSE;
 }
 
+function pimg($src, $ratio, $attrs) {
+  $str = <<<IDENTIFIER
+    <noscript>
+      <img 
+        class="contain $ratio"
+        src="$src" 
+        $attrs
+      >
+    </noscript>
+    <img 
+      class="contain $ratio"
+      src="$src.webp" 
+      data-src="$src" 
+      $attrs
+    >
+  IDENTIFIER;
+  return $str;
+}
+
 /**
  * Returns "s" unless $num is "1". Used by `relative_date`.]
  */

@@ -277,6 +277,8 @@ ol {
 }
 
 img {
+  width: 100%; /* or max-width: 100%; */
+
   max-width: 100%;
   max-height: calc(100vh - 2rem);
   content-visibility: auto;
@@ -293,7 +295,7 @@ img[data-src] {
 header,
 article,
 footer {
-  padding: 0;
+  padding: 0 0.3em;
   max-width: 1280px;
 }
 
@@ -310,6 +312,10 @@ article + article {
   grid-template-columns: 47% 47%;
   grid-gap: 6%;
   grid-row-gap: 4rem;
+}
+
+article .cols {
+  max-width: 100%;
 }
 
 @media screen and (min-width: 1988px) {
@@ -345,11 +351,13 @@ article + article {
   }
 
   .cols {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
   }
 
   .cols > div {
+    width: 100%;
     max-width: 100%;
+    /*overflow: hidden;*/
   }
 
   .cols > .mobile-first {
@@ -363,6 +371,14 @@ article + article {
 
 .contain {
   max-height: 80vh;
+}
+
+.four-thirds {
+  aspect-ratio: 4/3;
+}
+
+.three-fourths {
+  aspect-ratio: 3/4;
 }
 
 .title {
