@@ -47,7 +47,7 @@ $body_class = 'text';
         );
       ?>
       <div class=title>
-        <a class=plain href="https://buttondown.com/heybear" target="_blank" title="Hey Bear! Newsletter">Hey Bear! <span class="mono">↗</span></a>
+        <a class=plain href="https://heybear.staydecent.ca" target="_blank" title="Hey Bear! Newsletter">Hey Bear! <span class="mono">↗</span></a>
       </div>
     </div>
 
