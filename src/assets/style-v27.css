@@ -357,7 +357,6 @@ article .cols {
   .cols > div {
     width: 100%;
     max-width: 100%;
-    /*overflow: hidden;*/
   }
 
   .cols > .mobile-first {
@@ -365,7 +364,11 @@ article .cols {
   }
 
   .cols {
-    grid-gap: 1rem;
+    grid-row-gap: 3rem;
+  }
+
+  .no-mobile {
+    display: none;
   }
 }
 
@@ -426,6 +429,16 @@ article .cols {
   }
   .article-intro h1 {
     font-size: 3rem;
+
+    &:hover {
+      filter: blur(10px);
+      text-shadow: 0px 0px 15px var(--fg);
+    }
+
+    &:active {
+      filter: none;
+      text-shadow: none;
+    }
   }
 }
 
