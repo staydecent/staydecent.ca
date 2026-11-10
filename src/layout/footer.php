@@ -22,6 +22,10 @@
   </section>
 </footer>
 
+<div class="theme-toggle">
+  <button id="toggle-theme-btn">◑</button>
+</div>
+
 <?php if (isset($in_viewport) && $in_viewport === TRUE): ?></main><?php endif; ?>
 
 <script src="<?php echo SITE_URL ?>assets/enhance.js"></script>

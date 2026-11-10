@@ -8,6 +8,7 @@
   function init() {
     lazyload();
     prettydates();
+    theme();
 
     // click events
     document.addEventListener('click', (ev) => {
@@ -41,6 +42,30 @@
         el.setAttribute("title", el.getAttribute("title") + " " + pp);
       } catch (e) {
         console.error(e);
+      }
+    });
+  }
+
+  function theme() {
+    const toggleThemeBtn = document.getElementById("toggle-theme-btn");
+    const savedPref = window.localStorage.getItem("prefers-color-scheme");
+    const systemThemeDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+    const theme = savedPref != null ? savedPref : systemThemeDark ? "dark" : "light";
+
+    if (theme === "light") {
+      document.body.classList.add("user-selected-light");
+    } else if (theme === "dark") {
+      document.body.classList.add("user-selected-dark");
+    }
+
+    toggleThemeBtn.addEventListener("click", () => {
+      document.body.classList.toggle("user-selected-light");
+      document.body.classList.toggle("user-selected-dark");
+      if (document.body.classList.contains("user-selected-dark")) {
+        window.localStorage.setItem("prefers-color-scheme", "dark");
+      } else {
+        window.localStorage.setItem("prefers-color-scheme", "light");
       }
     });
   }
