@@ -41,11 +41,11 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
-    --bg: #0e0e0e;
+    --bg: #323232;
     --fg: #dedfe0;
     --link-color: #eee;
     --link-visited-color: #8D8E99;
-    --colorize: #83EB81;
+    --colorize: #EBAF81;
 
     .dark-theme-only {display: block;}
     .light-theme-only {display: none;}
@@ -70,11 +70,11 @@ body {
   }
 
   body.user-selected-dark {
-    --bg: #0e0e0e;
+    --bg: #323232;
     --fg: #dedfe0;
     --link-color: #eee;
     --link-visited-color: #8D8E99;
-    --colorize: #83EB81;
+    --colorize: #EBAF81;
 
     .dark-theme-only {display: block;}
     .light-theme-only {display: none;}
