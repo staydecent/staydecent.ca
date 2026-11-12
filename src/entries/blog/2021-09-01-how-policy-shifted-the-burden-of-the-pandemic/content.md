@@ -13,5 +13,5 @@ We don't have a clear picture of all the possible effects of our pandemic polici
 
 ##### Footnotes
 
-[1] Within USA, 100,000 hospitalizations and 4,500 deaths annually are [attributed to RSV](https://www.canada.ca/en/public-health/services/laboratory-biosafety-biosecurity/pathogen-safety-data-sheets-risk-assessment/respiratory-syncytial-virus.html#endnote2). In developed countries, [1% to 3% of all infants](https://www.cps.ca/en/documents/position/preventing-hospitalizations-for-rsv-infections) are hospitalized with RSV infection. The exact numbers for Canada are behind a paywalled study, but [Google surfaces the details](https://storage.googleapis.com/staydecent/blog/Screenshot%202021-09-01%20081358.jpg).
+[1] Within USA, 100,000 hospitalizations and 4,500 deaths annually are [attributed to RSV](https://www.canada.ca/en/public-health/services/laboratory-biosafety-biosecurity/pathogen-safety-data-sheets-risk-assessment/respiratory-syncytial-virus.html#endnote2). In developed countries, [1% to 3% of all infants](https://www.cps.ca/en/documents/position/preventing-hospitalizations-for-rsv-infections) are hospitalized with RSV infection. The exact numbers for Canada are behind a paywalled study, but [Google surfaces the details](https://media.staydecent.ca/sd/blog/rsv-canada-google.jpg).
 

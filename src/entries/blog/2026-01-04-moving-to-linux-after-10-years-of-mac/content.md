@@ -1,5 +1,5 @@
 title: Moving to Linux after 10 years of Mac
-image: https://storage.googleapis.com/staydecent/blog/Terra-Desk.jpg
+image: https://media.staydecent.ca/sd/blog/terra-desk.jpg-big.webp
 image_alt: Photo of a custom built PC on a gray desk, complete with Ducky Yellow Keyboard, Mint Green Gaming Controller and a fun mouse with red, yellow and blue buttons.
 ---
 
@@ -80,7 +80,7 @@ This also wen't better than expected. I watched a couple YouTube's. Looked over 
 
 Fitting it into the small form factor was also easier than expected. I thought I'd be fussing with the cables more, but it all kind of just worked! That said, it wasn't flawless. I was booting into BIOS, yet after a variable amount of time it would freeze. Following attempts to boot would inconsistently make it to BIOS or not boot at all and display some LED errors on the Motherboard. After searching for more info on the LED indicators and unplugging and replugging several components I eventually found that the RAM slots were somewhat stiff and I had to actually push the RAM in more—even though the little clicky-lock-thing had already engaged.
 
-![Photo of the first successful boot of the custom built PC](https://storage.googleapis.com/staydecent/blog/Linux-Terra-Build.jpg)
+![Photo of the first successful boot of the custom built PC](https://media.staydecent.ca/sd/blog/terra-build-inside.jpg-big.webp)
 
 After that, smooth sailing.
 

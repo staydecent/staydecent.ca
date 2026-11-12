@@ -21,7 +21,7 @@ As this was a totally unfamiliar app to me, and the original developers were not
 
 Luckily, for me, the app was hosted on Heroku and had a paid Heroku PostgreSQL database. Lucky, because you can simply click on the Database resource and then choose the "Diagnose" tab to inspect frequent and potentially slow queries. This will show you the SQL queries on the right and 2 graphs on the left. The graphs show _Number of Invocations_ and _Average Time Per Invocation_. Here's a sample from a different app:
 
-![Example Heroku PostgreSQL Diagnostics](https://storage.googleapis.com/staydecent/blog/Screen%20Shot%202018-07-02%20at%2010.37.12%20AM.png)
+![Example Heroku PostgreSQL Diagnostics](https://media.staydecent.ca/sd/blog/heroku-postgres-graphs.png)
 
 Short story: SQL did not appear to be the problem.
 

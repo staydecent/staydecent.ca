@@ -1,6 +1,6 @@
 <?php
 $page_id = 'photography';
-$body_class = 'photo';
+$body_class = 'photography';
 ?>
 <?php include $config['dirs']['layout'].'/header.php' ?>
 

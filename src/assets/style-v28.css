@@ -18,7 +18,8 @@
   --link-hover-color: #000;
   --link-bg-color: #EBD781;
 
-  --site-width: 1440px;
+  --photo-width: 1440px;
+  --text-width: 1280px;
 }
 
 body {
@@ -300,7 +301,13 @@ header,
 article,
 footer {
   padding: 0 0.3em;
-  max-width: var(--site-width);
+  max-width: var(--text-width);
+}
+
+.photography header,
+.photography article,
+.photography footer {
+  max-width: var(--photo-width);
 }
 
 footer {
@@ -349,7 +356,7 @@ article .cols {
   #index .cols > div:nth-child(9) { order: 9; }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {  
   article {
     padding-top: 1rem;
   }
