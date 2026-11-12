@@ -5,7 +5,7 @@
 
 <article id="blog">
   <div class="article-intro">
-    <h1 class="center">Mostly incomplete thoughts on&nbsp;stuff.</h1>
+    <h1 class="center">Mostly incomplete thoughts on stuff and other things.</h1>
   </div>
 
   <section class="cols">

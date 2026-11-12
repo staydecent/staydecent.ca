@@ -52,7 +52,7 @@ $body_class = 'text';
     </div>
 
     <div>
-      <img loading=lazy class="contain four-thirds" src="https://media.staydecent.ca/sd/photography/july-town/town_14.jpg" alt="a towering peak seen from a grimy street alley at dusk">
+      <img loading=lazy class="contain" src="https://media.staydecent.ca/sd/photography/july-town/town_14.jpg" alt="a towering peak seen from a grimy street alley at dusk">
       <div class=title>
         <a class=plain href="<?php echo SITE_URL ?>photography">Photography →</a>
       </div>
