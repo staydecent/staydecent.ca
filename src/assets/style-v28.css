@@ -54,6 +54,9 @@ body {
   body.user-selected-light {
     --bg: #dedfe0;
     --fg: #000;
+    --link-color: #000;
+    --link-visited-color: #6a6a6a;
+    --link-hover-color: #000;
 
     .dark-theme-only {display: none;}
     .light-theme-only {display: block;}
@@ -64,6 +67,9 @@ body {
   body {
     --bg: #dedfe0;
     --fg: #000;
+    --link-color: #000;
+    --link-visited-color: #6a6a6a;
+    --link-hover-color: #000;
 
     .dark-theme-only {display: none;}
     .light-theme-only {display: block;}
